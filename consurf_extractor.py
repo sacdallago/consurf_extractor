@@ -41,24 +41,24 @@ with open("./config.yml", 'r') as stream:
 
 output_config = defaultdict()
 
-for key in configuration:
-    current = deepcopy(configuration[key])
+for group in configuration:
+    current = deepcopy(configuration[group])
 
     data_dir = current.pop('data_dir')
     consurf = parse_consurf(data_dir)
 
-    for key in current:
-        start = int(current[key]['start'])
-        end = int(current[key]['end'])
+    for region in current:
+        start = int(current[region]['start'])
+        end = int(current[region]['end'])
 
         region_consurf = consurf[start:end]
 
         # current[key]['region_consurf'] = region_consurf
-        current[key]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
+        current[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
 
     # current['consurf'] = consurf
     current['data_dir'] = data_dir
-    output_config[key] = current
+    output_config[group] = current
 
 with open("./out_config.yml", 'w') as stream:
     yaml.dump(output_config, stream)

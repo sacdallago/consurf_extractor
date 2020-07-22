@@ -1,18 +1,22 @@
 !!python/object/apply:collections.defaultdict
 dictitems:
-  3ld1:
+  nsp1:
+    2gdt:
+      end: 126
+      region_consurf_average: 6.412280701754386
+      start: 12
     3ld1:
       end: 562
       region_consurf_average: 4.794759825327511
       start: 104
     data_dir: data/P0DTC1
-  dark_region_with_features:
-    dark_region_with_features:
-      end: 11
-      region_consurf_average: 6.6
-      start: 1
+  nsp2:
+    3ld1:
+      end: 562
+      region_consurf_average: 4.794759825327511
+      start: 104
     data_dir: data/P0DTC1
-  macro_domain_region:
+  nsp3:
     Ubl1:
       end: 929
       region_consurf_average: 3.709090909090909
@@ -26,3 +30,9 @@ dictitems:
       end: 1026
       region_consurf_average: 4.552083333333333
       start: 930
+  pp1ab:
+    dark_region_with_features:
+      end: 11
+      region_consurf_average: 6.6
+      start: 1
+    data_dir: data/P0DTC1
