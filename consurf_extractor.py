@@ -3,6 +3,7 @@ import yaml
 from copy import deepcopy
 from collections import defaultdict
 from pathlib import Path
+from pandas import DataFrame
 
 
 def parse_consurf(ppc_root_dir):
@@ -53,12 +54,35 @@ for group in configuration:
 
         region_consurf = consurf[start:end]
 
-        # current[key]['region_consurf'] = region_consurf
         current[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
 
-    # current['consurf'] = consurf
     current['data_dir'] = data_dir
     output_config[group] = current
 
 with open("./out_config.yml", 'w') as stream:
     yaml.dump(output_config, stream)
+
+# Create a dataframe containing the info in tabular form
+
+unnested_items = list()
+
+for group in output_config:
+    current = deepcopy(output_config[group])
+    data_dir = current.pop('data_dir')
+
+    for region in current:
+        unnested_item = deepcopy(current[region])
+
+        unnested_item['group'] = group
+        unnested_item['data_dir'] = data_dir
+        unnested_item['region'] = region
+
+        unnested_items.append(unnested_item)
+
+output_table = DataFrame(unnested_items)
+
+# Reorder for readability
+output_table = output_table[['group', 'region', 'start', 'end', 'region_consurf_average', 'data_dir']]
+
+# Store
+output_table.to_csv('out_table.csv', index=None)
