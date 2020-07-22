@@ -17,11 +17,35 @@ dictitems:
       start: 104
     data_dir: data/P0DTC1
   nsp3:
+    NAB:
+      end: 2020
+      region_consurf_average: 4.323943661971831
+      start: 1879
+    PL-Pro:
+      end: 1878
+      region_consurf_average: 4.629746835443038
+      start: 1563
+    SUD-C:
+      end: 1562
+      region_consurf_average: 4.739130434782608
+      start: 1494
+    SUD-M:
+      end: 1493
+      region_consurf_average: 4.695238095238095
+      start: 1389
     Ubl1:
       end: 929
       region_consurf_average: 3.720720720720721
       start: 819
+    dark_region_1027:
+      end: 1368
+      region_consurf_average: 4.277777777777778
+      start: 1027
     data_dir: data/P0DTC1
+    final_dark_region:
+      end: 2763
+      region_consurf_average: 4.920592193808883
+      start: 2021
     macro_domain_region:
       end: 1193
       region_consurf_average: 3.8682634730538923
@@ -30,6 +54,12 @@ dictitems:
       end: 1026
       region_consurf_average: 4.546391752577319
       start: 930
+  nsp4:
+    data_dir: data/P0DTC1
+    nsp4C:
+      end: 3263
+      region_consurf_average: 6.021978021978022
+      start: 3173
   pp1ab:
     dark_region_with_features:
       end: 11
@@ -40,3 +70,19 @@ dictitems:
       end: 180
       region_consurf_average: 6.072222222222222
       start: 1
+    nsp3:
+      end: 2763
+      region_consurf_average: 4.60668380462725
+      start: 819
+    nsp4:
+      end: 3172
+      region_consurf_average: 4.750611246943765
+      start: 2764
+    nsp5:
+      end: 3569
+      region_consurf_average: 6.071895424836601
+      start: 3264
+    nsp6:
+      end: 3859
+      region_consurf_average: 4.403448275862069
+      start: 3570

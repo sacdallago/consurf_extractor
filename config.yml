@@ -6,6 +6,18 @@ pp1ab:
   nsp1:
     start: 1
     end: 180
+  nsp3:
+    start: 819
+    end: 2763
+  nsp4:
+    start: 2764
+    end: 3172
+  nsp5:
+    start: 3264
+    end: 3569
+  nsp6:
+    start: 3570
+    end: 3859
 nsp1:
   data_dir: "data/P0DTC1"
   2gdt:
@@ -30,3 +42,26 @@ nsp3:
   macro_domain_region:
     start: 1027
     end: 1193
+  dark_region_1027:
+    start: 1027
+    end: 1368
+  SUD-M:
+    start: 1389
+    end: 1493
+  SUD-C:
+    start: 1494
+    end: 1562
+  PL-Pro:
+    start: 1563
+    end: 1878
+  NAB:
+    start: 1879
+    end: 2020
+  final_dark_region:
+    start: 2021
+    end: 2763
+nsp4:
+  data_dir: "data/P0DTC1"
+  nsp4C:
+    start: 3173
+    end: 3263
