@@ -3,36 +3,40 @@ dictitems:
   nsp1:
     2gdt:
       end: 126
-      region_consurf_average: 6.412280701754386
+      region_consurf_average: 6.417391304347826
       start: 12
     3ld1:
       end: 562
-      region_consurf_average: 4.794759825327511
+      region_consurf_average: 4.79520697167756
       start: 104
     data_dir: data/P0DTC1
   nsp2:
     3ld1:
       end: 562
-      region_consurf_average: 4.794759825327511
+      region_consurf_average: 4.79520697167756
       start: 104
     data_dir: data/P0DTC1
   nsp3:
     Ubl1:
       end: 929
-      region_consurf_average: 3.709090909090909
+      region_consurf_average: 3.720720720720721
       start: 819
     data_dir: data/P0DTC1
     macro_domain_region:
       end: 1193
-      region_consurf_average: 3.86144578313253
+      region_consurf_average: 3.8682634730538923
       start: 1027
     unnamed_dark_region:
       end: 1026
-      region_consurf_average: 4.552083333333333
+      region_consurf_average: 4.546391752577319
       start: 930
   pp1ab:
     dark_region_with_features:
       end: 11
-      region_consurf_average: 6.6
+      region_consurf_average: 6.636363636363637
       start: 1
     data_dir: data/P0DTC1
+    nsp1:
+      end: 180
+      region_consurf_average: 6.072222222222222
+      start: 1

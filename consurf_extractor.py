@@ -50,7 +50,20 @@ for group in configuration:
 
     for region in current:
         start = int(current[region]['start'])
+
+        # !!IMPORTANT: UniProt sequence indexing != from CS sequence indexing. 1 = 0
+        start -= 1
+
+        # !!IMPORTANT: end doesn't need to be modified, as python slices excluding upper bound
+        # (and considering that end should be +1, that's exactly what we want!)
         end = int(current[region]['end'])
+
+        # Make sure that start and end are effectively in sequence range, otherwise throw an error!
+        sequence_range = range(len(consurf))
+
+        if start not in sequence_range or end not in sequence_range:
+            raise Exception(f"You are tryin to access region {start+1}-{end}, "
+                            f"but consurf prediction is in range {1}-{len(consurf)}")
 
         region_consurf = consurf[start:end]
 

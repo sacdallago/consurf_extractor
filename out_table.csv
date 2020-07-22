@@ -1,8 +1,9 @@
 group,region,start,end,region_consurf_average,data_dir
-pp1ab,dark_region_with_features,1,11,6.6,data/P0DTC1
-nsp1,2gdt,12,126,6.412280701754386,data/P0DTC1
-nsp1,3ld1,104,562,4.794759825327511,data/P0DTC1
-nsp2,3ld1,104,562,4.794759825327511,data/P0DTC1
-nsp3,Ubl1,819,929,3.709090909090909,data/P0DTC1
-nsp3,unnamed_dark_region,930,1026,4.552083333333333,data/P0DTC1
-nsp3,macro_domain_region,1027,1193,3.86144578313253,data/P0DTC1
+pp1ab,dark_region_with_features,1,11,6.636363636363637,data/P0DTC1
+pp1ab,nsp1,1,180,6.072222222222222,data/P0DTC1
+nsp1,2gdt,12,126,6.417391304347826,data/P0DTC1
+nsp1,3ld1,104,562,4.79520697167756,data/P0DTC1
+nsp2,3ld1,104,562,4.79520697167756,data/P0DTC1
+nsp3,Ubl1,819,929,3.720720720720721,data/P0DTC1
+nsp3,unnamed_dark_region,930,1026,4.546391752577319,data/P0DTC1
+nsp3,macro_domain_region,1027,1193,3.8682634730538923,data/P0DTC1
