@@ -1,0 +1,14 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Corona_M             PF01635.18   220 query                -            222   1.3e-95  319.0   3.1   1   1    8e-100   1.4e-95  318.8   3.1     1   220     4   221     4   221 0.99 Coronavirus M matrix/glycoprotein
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      query.fasta
+# Target file:     /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# Option settings: hmmscan -o query.hmm3pfam --tblout query.hmm3pfamTbl --domtblout query.hmm3pfamDomTbl --acc --notextw --cut_ga --cpu 1 /var/tmp/rost_db/data/pfam/Pfam-A.hmm query.fasta 
+# Current dir:     /var/tmp/5119353.6.default/2QcjxkxkFn
+# Date:            Tue Mar 31 12:52:34 2020
+# [ok]

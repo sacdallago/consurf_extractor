@@ -1,0 +1,273 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= query
+         (61 letters)
+
+Database: big_80 
+           38,856,661 sequences; 11,002,566,987 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+UniRef50_P59634 Non-structural protein 6 n=107 Tax=Coronaviridae...    92   5e-17
+UniRef50_A0A0K1Z0N6 Uncharacterized protein n=2 Tax=Human SARS c...    91   1e-16
+UniRef50_A0A0U1WHK8 Uncharacterized protein n=2 Tax=Human SARS c...    72   5e-11
+UniRef50_A0A3Q8B233 ORF6 n=1 Tax=Human SARS coronavirus TaxID=69...    63   3e-08
+
+>UniRef50_P59634 Non-structural protein 6 n=107 Tax=Coronaviridae
+          TaxID=11118 RepID=NS6_CVHSA
+          Length = 63
+
+ Score = 92.0 bits (227), Expect = 5e-17,   Method: Compositional matrix adjust.
+ Identities = 42/61 (68%), Positives = 54/61 (88%)
+
+Query: 1  MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYSQLDEEQPMEI 60
+          MFHLVDFQVTIAEIL+IIMRTF+++IWNLD II+ I++ L K LT+  YS+LD+E+PME+
+Sbjct: 1  MFHLVDFQVTIAEILIIIMRTFRIAIWNLDVIISSIVRQLFKPLTKKNYSELDDEEPMEL 60
+
+Query: 61 D 61
+          D
+Sbjct: 61 D 61
+
+
+>UniRef50_A0A0K1Z0N6 Uncharacterized protein n=2 Tax=Human SARS
+          coronavirus TaxID=694009 RepID=A0A0K1Z0N6_CVHSA
+          Length = 90
+
+ Score = 90.5 bits (223), Expect = 1e-16,   Method: Compositional matrix adjust.
+ Identities = 43/61 (70%), Positives = 52/61 (85%)
+
+Query: 1  MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYSQLDEEQPMEI 60
+          MFHLVDFQVTIAEIL+IIMRTF+++IWNLD I + I+  L K LT+ KYS+LD+E PMEI
+Sbjct: 1  MFHLVDFQVTIAEILVIIMRTFRIAIWNLDMITSSIVTQLFKPLTKKKYSELDDEVPMEI 60
+
+Query: 61 D 61
+          D
+Sbjct: 61 D 61
+
+
+>UniRef50_A0A0U1WHK8 Uncharacterized protein n=2 Tax=Human SARS
+          coronavirus TaxID=694009 RepID=A0A0U1WHK8_CVHSA
+          Length = 50
+
+ Score = 72.4 bits (176), Expect = 5e-11,   Method: Compositional matrix adjust.
+ Identities = 34/50 (68%), Positives = 42/50 (84%)
+
+Query: 1  MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYS 50
+          MFH VDFQVTIAEIL+IIMRTF+++IWNLD II+ I++ L K LT+  YS
+Sbjct: 1  MFHPVDFQVTIAEILIIIMRTFRIAIWNLDVIISSIVRQLFKPLTKKNYS 50
+
+
+>UniRef50_A0A3Q8B233 ORF6 n=1 Tax=Human SARS coronavirus
+          TaxID=694009 RepID=A0A3Q8B233_CVHSA
+          Length = 63
+
+ Score = 62.8 bits (151), Expect = 3e-08,   Method: Compositional matrix adjust.
+ Identities = 31/61 (50%), Positives = 44/61 (72%)
+
+Query: 1  MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYSQLDEEQPMEI 60
+          MF LV+FQVTIAE+L+IIMR+  + +      +  ++K +SK L  N++S+LDEE PMEI
+Sbjct: 1  MFSLVEFQVTIAELLIIIMRSLGIGLVQFQIRMIALLKIISKHLDRNQHSKLDEEVPMEI 60
+
+Query: 61 D 61
+          D
+Sbjct: 61 D 61
+
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+UniRef50_A0A0K1Z0N6 Uncharacterized protein n=2 Tax=Human SARS c...    86   3e-15
+UniRef50_P59634 Non-structural protein 6 n=107 Tax=Coronaviridae...    80   3e-13
+UniRef50_A0A3Q8B233 ORF6 n=1 Tax=Human SARS coronavirus TaxID=69...    66   3e-09
+UniRef50_A0A0U1WHK8 Uncharacterized protein n=2 Tax=Human SARS c...    64   1e-08
+
+Sequences not found previously or not previously below threshold:
+
+
+CONVERGED!
+>UniRef50_A0A0K1Z0N6 Uncharacterized protein n=2 Tax=Human SARS
+          coronavirus TaxID=694009 RepID=A0A0K1Z0N6_CVHSA
+          Length = 90
+
+ Score = 86.1 bits (212), Expect = 3e-15,   Method: Composition-based stats.
+ Identities = 43/61 (70%), Positives = 52/61 (85%)
+
+Query: 1  MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYSQLDEEQPMEI 60
+          MFHLVDFQVTIAEIL+IIMRTF+++IWNLD I + I+  L K LT+ KYS+LD+E PMEI
+Sbjct: 1  MFHLVDFQVTIAEILVIIMRTFRIAIWNLDMITSSIVTQLFKPLTKKKYSELDDEVPMEI 60
+
+Query: 61 D 61
+          D
+Sbjct: 61 D 61
+
+
+>UniRef50_P59634 Non-structural protein 6 n=107 Tax=Coronaviridae
+          TaxID=11118 RepID=NS6_CVHSA
+          Length = 63
+
+ Score = 79.5 bits (195), Expect = 3e-13,   Method: Composition-based stats.
+ Identities = 42/61 (68%), Positives = 54/61 (88%)
+
+Query: 1  MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYSQLDEEQPMEI 60
+          MFHLVDFQVTIAEIL+IIMRTF+++IWNLD II+ I++ L K LT+  YS+LD+E+PME+
+Sbjct: 1  MFHLVDFQVTIAEILIIIMRTFRIAIWNLDVIISSIVRQLFKPLTKKNYSELDDEEPMEL 60
+
+Query: 61 D 61
+          D
+Sbjct: 61 D 61
+
+
+>UniRef50_A0A3Q8B233 ORF6 n=1 Tax=Human SARS coronavirus
+          TaxID=694009 RepID=A0A3Q8B233_CVHSA
+          Length = 63
+
+ Score = 66.1 bits (160), Expect = 3e-09,   Method: Composition-based stats.
+ Identities = 31/61 (50%), Positives = 44/61 (72%)
+
+Query: 1  MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYSQLDEEQPMEI 60
+          MF LV+FQVTIAE+L+IIMR+  + +      +  ++K +SK L  N++S+LDEE PMEI
+Sbjct: 1  MFSLVEFQVTIAELLIIIMRSLGIGLVQFQIRMIALLKIISKHLDRNQHSKLDEEVPMEI 60
+
+Query: 61 D 61
+          D
+Sbjct: 61 D 61
+
+
+>UniRef50_A0A0U1WHK8 Uncharacterized protein n=2 Tax=Human SARS
+          coronavirus TaxID=694009 RepID=A0A0U1WHK8_CVHSA
+          Length = 50
+
+ Score = 64.1 bits (155), Expect = 1e-08,   Method: Composition-based stats.
+ Identities = 34/50 (68%), Positives = 42/50 (84%)
+
+Query: 1  MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYS 50
+          MFH VDFQVTIAEIL+IIMRTF+++IWNLD II+ I++ L K LT+  YS
+Sbjct: 1  MFHPVDFQVTIAEILIIIMRTFRIAIWNLDVIISSIVRQLFKPLTKKNYS 50
+
+
+  Database: big_80
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,958,422
+  Number of sequences in database:  3,040,876
+  
+  Database: /var/tmp/rost_db/data/big/big_80.01
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 997,145,285
+  Number of sequences in database:  2,854,509
+  
+  Database: /var/tmp/rost_db/data/big/big_80.02
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 997,089,814
+  Number of sequences in database:  2,909,903
+  
+  Database: /var/tmp/rost_db/data/big/big_80.03
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,328,211
+  Number of sequences in database:  3,671,715
+  
+  Database: /var/tmp/rost_db/data/big/big_80.04
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,101,693
+  Number of sequences in database:  3,898,283
+  
+  Database: /var/tmp/rost_db/data/big/big_80.05
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,256,834
+  Number of sequences in database:  3,743,050
+  
+  Database: /var/tmp/rost_db/data/big/big_80.06
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,299,472
+  Number of sequences in database:  3,700,488
+  
+  Database: /var/tmp/rost_db/data/big/big_80.07
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,212,872
+  Number of sequences in database:  3,787,048
+  
+  Database: /var/tmp/rost_db/data/big/big_80.08
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,363,209
+  Number of sequences in database:  3,636,697
+  
+  Database: /var/tmp/rost_db/data/big/big_80.09
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,048,001
+  Number of sequences in database:  3,951,876
+  
+  Database: /var/tmp/rost_db/data/big/big_80.10
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,502,919
+  Number of sequences in database:  3,497,018
+  
+  Database: /var/tmp/rost_db/data/big/big_80.11
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 41,260,255
+  Number of sequences in database:  165,198
+  
+Lambda     K      H
+   0.330    0.152    0.410 
+
+Lambda     K      H
+   0.267   0.0451    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 2,347,883,130
+Number of Sequences: 38856661
+Number of extensions: 60693363
+Number of successful extensions: 233089
+Number of sequences better than  1.0: 4
+Number of HSP's better than  1.0 without gapping: 8
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 233081
+Number of HSP's gapped (non-prelim): 8
+length of query: 61
+length of database: 11,002,566,987
+effective HSP length: 33
+effective length of query: 28
+effective length of database: 9,720,297,174
+effective search space: 272168320872
+effective search space used: 272168320872
+T: 11
+A: 40
+X1: 16 ( 7.6 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 40 (21.8 bits)
+S2: 88 (38.4 bits)

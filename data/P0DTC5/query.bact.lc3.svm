@@ -1,0 +1,5 @@
+query
+Winner inner_membrane
+fimbrium,secreted_cellmembrane,outer_membrane,periplasm,	vs	inner_membrane,	0.00624797364090674 vs. 0.9937520263590932
+fimbrium,inner_membrane,secreted_cellmembrane,outer_membrane,periplasm,	vs	cytoplasm,	0.9998122611945117 vs. 1.8773880548834948E-4
+

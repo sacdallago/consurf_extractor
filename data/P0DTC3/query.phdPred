@@ -1,0 +1,216 @@
+****************************************************************************
+*                                                                          *
+*    PHD: Profile fed neural network systems from HeiDelberg               *
+*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~               *
+*                                                                          *
+*    Prediction of:			                                   *
+* 	secondary structure,   			   by PHDsec		   *
+* 	solvent accessibility, 			   by PHDacc		   *
+* 	and helical transmembrane regions, 	   by PHDhtm		   *
+*                                                                          *
+*    Author:             						   *
+*	Burkhard Rost							   *
+*       EMBL, 69012 Heidelberg, Germany					   *
+*       Internet: Rost@EMBL-Heidelberg.DE				   *
+*                                                                          *
+*    All rights reserved.                                                  *
+*                                                                          *
+****************************************************************************
+*                                                                          *
+*    The network systems are described in:   	                     	   *
+*                                                                          *
+*    PHDsec:    B Rost & C Sander: JMB, 1993, 232, 584-599.		   *
+*    		B Rost & C Sander: Proteins, 1994, 19, 55-72.		   *
+*    PHDacc:  	B Rost & C Sander: Proteins, 1994, 20, 216-226.		   *
+*    PHDhtm:  	B Rost et al.: 	   Prot. Science, 1995, 4, 521-533.	   *
+*                                                                          *
+****************************************************************************
+*                                                                          *
+*    Some statistics                                                       *
+*    ~~~~~~~~~~~~~~~                                                       *
+*                                                                          *
+*    Percentage of amino acids:                                            *
+*    +--------------+--------+--------+--------+--------+--------+         *
+*    | AA:          |    L   |    V   |    T   |    S   |    I   |         *
+*    | % of AA:     |   10.9 |    9.1 |    8.7 |    8.0 |    7.6 |         *
+*    +--------------+--------+--------+--------+--------+--------+         *
+*    | AA:          |    Y   |    G   |    F   |    D   |    A   |         *
+*    | % of AA:     |    6.2 |    5.1 |    5.1 |    4.7 |    4.7 |         *
+*    +--------------+--------+--------+--------+--------+--------+         *
+*    | AA:          |    P   |    K   |    E   |    Q   |    N   |         *
+*    | % of AA:     |    4.4 |    4.0 |    4.0 |    3.3 |    2.9 |         *
+*    +--------------+--------+--------+--------+--------+--------+         *
+*    | AA:          |    H   |    C   |    W   |    R   |    M   |         *
+*    | % of AA:     |    2.9 |    2.5 |    2.2 |    2.2 |    1.5 |         *
+*    +--------------+--------+--------+--------+--------+--------+         *
+*                                                                          *
+*    Percentage of helical trans-membrane predicted:                       *
+*    +--------------+--------+--------+                                    *
+*    | SecStr:      |    H   |    L   |                                    *
+*    | % Predicted: |   32.0 |   68.0 |                                    *
+*    +--------------+--------+--------+                                    *
+*                                                                          *
+****************************************************************************
+*                                                                          *
+*    PHD output for your protein                                           *
+*    ~~~~~~~~~~~~~~~~~~~~~~~~~~~                                           *
+*                                                                          *
+*    Jury on:        4    different architectures (version   8.94_69  ).   *
+*    Note: differently trained architectures, i.e., different versions can *
+*    result in different predictions.                                      *
+*                                                                          *
+****************************************************************************
+*                                                                          *
+*    About the protein                                                     *
+*    ~~~~~~~~~~~~~~~~~                                                     *
+*                                                                          *
+*    HEADER                                                                *
+*    COMPND                                                                *
+*    SOURCE                                                                *
+*    AUTHOR                                                                *
+*    SEQLENGTH   275                                                       *
+*    NCHAIN        1 chain(s) in query data set                            *
+*    NALIGN        1                                                       *
+*    (=number of aligned sequences in HSSP file)                           *
+*                                                                          *
+****************************************************************************
+*                                                                          *
+*    WARNING                                                               *
+*    ~~~~~~~                                                               *
+*                                                                          *
+*    Expected accuracy is about 94% if, and only if, the alignment contain *
+*    sufficient information.  For your sequence there was no homologue in  *
+*    the current version of Swissprot detected.  This implies that the     *
+*    expected accuracy is about  2-5 percentage points lower !             *
+*                                                                          *
+*                                                                          *
+*    protein:       query          length      275                         *
+*                                                                          *
+--- 
+--- ------------------------------------------------------------
+--- PhdTopology prediction of transmembrane helices and topology
+--- ------------------------------------------------------------
+--- 
+--- PhdTopology REFINEMENT AND TOPOLOGY HEADER: ABBREVIATIONS
+--- 
+--- NHTM_BEST    : number of transmembrane helices best model
+--- NHTM_2ND_BEST: number of transmembrane helices 2nd best model
+--- REL_BEST     : reliability of best model (0 is low, 9 high)
+--- HTMTOP_PRD   : topology predicted ('in': intra-cytoplasmic)
+--- HTMTOP_RID   : difference between positive charges
+--- HTMTOP_RIP   : reliability of topology prediction (0-9)
+--- MOD_NHTM     : number of transmembrane helices of model
+--- MOD_STOT     : score for all residues
+--- MOD_SHTM     : score for HTM added at current iteration step
+--- MOD_N-C      : N  -  C  term of HTM added at current step
+--- 
+--- ALGORITHM REF: The refinement is performed by a dynamic pro-
+--- ALGORITHM    : gramming-like procedure: iteratively the best
+--- ALGORITHM    : transmembrane helix (HTM) compatible with the
+--- ALGORITHM    : network output is added (starting from the  0
+--- ALGORITHM    : assumption, i.e.,  no HTM's  in the protein).
+--- ALGORITHM TOP: Topology is predicted by the  positive-inside
+--- ALGORITHM    : rule, i.e., the positive charges are compiled
+--- ALGORITHM    : separately  for all even and all odd  non-HTM
+--- ALGORITHM    : regions.  If the difference (charge even-odd)
+--- ALGORITHM    : is < 0, topology is predicted as 'in'.   That
+--- ALGORITHM    : means, the protein N-term starts on the intra
+--- ALGORITHM    : cytoplasmic side.
+--- 
+--- PhdTopology REFINEMENT HEADER: SUMMARY
+ MOD_NHTM MOD_STOT MOD_SHTM MOD_N-C 
+        1    0.748    0.890    41 -    58	
+        2    0.799    0.891    80 -    97	
+        3    0.866    0.881   103 -   126
+--- 
+--- PhdTopology REFINEMENT AND TOPOLOGY HEADER: SUMMARY
+--- NHTM_BEST    : 3
+--- NHTM_2ND_BEST: 2
+--- REL_BEST     : 6
+--- HTMTOP_PRD   : out
+--- HTMTOP_RID   : 4.440
+--- HTMTOP_RIP   : 4
+--- 
+--- PhdTopology REFINEMENT AND TOPOLOGY PREDICTION: SYMBOLS
+--- AA           : amino acid in one-letter code
+--- PHD htm      : HTM's predicted by the PHD neural network
+---                system (H=HTM, ' '=not HTM)
+--- Rel htm      : Reliability index of prediction (0-9, 0 is low)
+--- detail       : Neural network output in detail
+--- prH htm      : 'Probability' for assigning a helical trans-
+---                membrane region (HTM)
+--- prL htm      : 'Probability' for assigning a non-HTM region
+---          note: 'Probabilites' are scaled to the interval
+---                0-9, e.g., prH=5 means, that the first 
+---                output node is 0.5-0.6
+--- subset       : Subset of more reliable predictions
+--- SUB htm      : All residues for which the expected average
+---                accuracy is > 82% (tables in header).
+---          note: for this subset the following symbols are used:
+---             L: is loop (for which above ' ' is used)
+---           '.': means that no prediction is made for this,
+---                residue as the reliability is:  Rel < 5
+--- other        : predictions derived based on PHDhtm
+--- PHDFhtm      : filtered prediction, i.e., too long HTM's are
+---                split, too short ones are deleted
+--- PHDRhtm      : refinement of neural network output 
+--- PHDThtm      : topology prediction based on refined model
+---                symbols used:
+---             i: intra-cytoplasmic
+---             T: transmembrane region
+---             o: extra-cytoplasmic
+--- 
+--- PhdTopology REFINEMENT AND TOPOLOGY PREDICTION
+                  ....,....1....,....2....,....3....,....4....,....5....,....6
+         AA      |MDLFMRIFTIGTVTLKQGEIKDATPSDFVRATATIPIQASLPFGWLIVGVALLAVFQSAS|
+         PHD htm |                                HHHHHHHHHHHHHHHHHHHHHHHHHHHH|
+         Rel htm |999999999999999999999999999986411245677777777777777777777776|
+ detail: 
+         prH htm |000000000000000000000000000001245677888888888888888888888888|
+         prL htm |999999999999999999999999999998754322111111111111111111111111|
+ subset: SUB htm |LLLLLLLLLLLLLLLLLLLLLLLLLLLLL........HHHHHHHHHHHHHHHHHHHHHH.|
+         PHDRhtm |                                        HHHHHHHHHHHHHHHHHH  |
+         PHDThtm |ooooooooooooooooooooooooooooooooooooooooTTTTTTTTTTTTTTTTTTii|
+                  ....,....7....,....8....,....9....,....10...,....11...,....12
+         AA      |KIITLKKRWQLALSKGVHFVCNLLLLFVTVYSHLLLVAAGLEAPFLYLYALVYFLQSINF|
+         PHD htm |HHHHH          HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH|
+         Rel htm |654303564433432046677888877777777777766656677777777777777777|
+ detail: 
+         prH htm |877653212233233578888999988888888888888878888888888888888888|
+         prL htm |122346787766766421111000011111111111111121111111111111111111|
+ subset: SUB htm |...................HHHHHHHHHHHHHHHHHH......HHHHHHHHHHHHHHHHH|
+         PHDRhtm |                   HHHHHHHHHHHHHHHHHH     HHHHHHHHHHHHHHHHHH|
+         PHDThtm |iiiiiiiiiiiiiiiiiiiTTTTTTTTTTTTTTTTTToooooTTTTTTTTTTTTTTTTTT|
+                  ....,....13...,....14...,....15...,....16...,....17...,....18
+         AA      |VRIIMRLWLCWKCRSKNPLLYDANYFLCWHTNCYDYCIPYNSVTSSIVITSGDGTTSPIS|
+         PHD htm |HHHHHHHHHH                                                  |
+         Rel htm |777776653035678887788999998889999987678887799989999999999999|
+ detail: 
+         prH htm |888888876532110001100000000000000001110001100000000000000000|
+         prL htm |111111123467889998899999999999999998889998899999999999999999|
+ subset: SUB htm |HHHHH........LLLLLLLLLLLLLLLLLLLLLLL.LLLLLLLLLLLLLLLLLLLLLLL|
+         PHDRhtm |HHHHHH                                                      |
+         PHDThtm |TTTTTTiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii|
+                  ....,....19...,....20...,....21...,....22...,....23...,....24
+         AA      |EHDYQIGGYTEKWESGVKDCVVLHSYFTSDYYQLYSTQLSTDTGVEHVTFFIYNKIVDEP|
+         PHD htm |                                                            |
+         Rel htm |999999999999999999999999888899999999999999999998777889999999|
+ detail: 
+         prH htm |000000000000000000000000000000000000000000000000111000000000|
+         prL htm |999999999999999999999999999999999999999999999999888999999999|
+ subset: SUB htm |LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL|
+         PHDRhtm |                                                            |
+         PHDThtm |iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii|
+                  ....,....25...,....26...,....27...,....28...,....29...,....30
+         AA      |EEHVQIHTIDGSSGVVNPVMEPIYDEPTTTTSVPL|
+         PHD htm |                                   |
+         Rel htm |99999999999999999999999999999999999|
+ detail: 
+         prH htm |00000000000000000000000000000000000|
+         prL htm |99999999999999999999999999999999999|
+ subset: SUB htm |LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL|
+         PHDRhtm |                                   |
+         PHDThtm |iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii|
+--- 
+--- PhdTopology REFINEMENT AND TOPOLOGY PREDICTION END
+--- 

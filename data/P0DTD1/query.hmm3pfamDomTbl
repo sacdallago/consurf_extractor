@@ -1,0 +1,31 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+NSP11                PF06471.12   583 query                -           7096         0 1025.4  12.0   1   1         0         0 1024.2  12.0     2   583  5929  6520  5928  6520 0.98 NSP11
+Corona_RPol_N        PF06478.13   350 query                -           7096  3.8e-187  621.4  10.0   1   1  1.1e-189  9.7e-187  620.1  10.0     2   350  4407  4758  4406  4758 0.99 Coronavirus RPol N-terminus
+NSP16                PF06460.12   299 query                -           7096    3e-164  545.3   1.2   1   1  5.8e-167  5.2e-164  544.5   1.2     1   297  6800  7095  6800  7096 0.99 Coronavirus NSP16
+Peptidase_C30        PF05409.13   288 query                -           7096  9.4e-135  448.5   0.3   1   1  2.2e-137    2e-134  447.4   0.3     1   288  3292  3582  3292  3582 0.99 Coronavirus  endopeptidase C30
+Viral_protease       PF08715.10   320 query                -           7096  1.9e-130  434.9   5.8   1   1  5.8e-133  5.2e-130  433.5   5.8     1   320  1564  1882  1564  1882 0.99 Papain like viral protease
+nsp8                 PF08717.10   198 query                -           7096   2.8e-95  317.8   6.5   1   1   7.3e-98   6.5e-95  316.7   6.5     1   198  3943  4140  3943  4140 1.00 nsp8 replicase
+SUD-M                PF11633.8    143 query                -           7096     2e-77  257.7   0.3   1   1   7.2e-80   6.4e-77  256.1   0.3     1   143  1351  1493  1351  1493 1.00 Single-stranded poly(A) binding domain
+Nsp1                 PF11501.8    115 query                -           7096   2.8e-64  214.3   0.8   1   1   9.8e-67   8.8e-64  212.7   0.8     1   115    13   127    13   127 1.00 Non structural protein Nsp1
+NSP10                PF09401.10   122 query                -           7096   2.5e-59  198.7  13.3   1   1   3.1e-62   2.8e-59  198.5  10.8     1   122  4262  4384  4262  4384 0.99 RNA synthesis protein NSP10
+nsp9                 PF08710.10   111 query                -           7096   7.2e-48  161.6   0.0   1   1   2.3e-50   2.1e-47  160.1   0.0     1   111  4141  4253  4141  4253 0.99 nsp9 replicase
+Corona_NSP4_C        PF16348.5     96 query                -           7096   1.4e-40  138.0   1.2   1   1   1.1e-42     1e-39  135.3   1.2     1    95  3166  3261  3166  3262 0.97 Coronavirus nonstructural protein 4 C-terminus
+NAR                  PF16251.5    117 query                -           7096   1.8e-37  128.6   2.3   1   1   4.6e-40   4.1e-37  127.4   0.7     8   117  1922  2019  1909  2019 0.95 Nucleic acid-binding domain (NAR)
+nsp7                 PF08716.10    83 query                -           7096   1.7e-36  124.7   6.8   1   1   8.6e-39   7.7e-36  122.6   6.8     1    83  3860  3942  3860  3942 0.99 nsp7 replicase
+Nsp3_PL2pro          PF12124.8     66 query                -           7096   6.9e-31  105.8   0.2   1   1   4.8e-33   4.3e-30  103.3   0.1     2    66  1498  1561  1497  1561 0.97 Coronavirus polyprotein cleavage domain
+DUF3655              PF12379.8     69 query                -           7096   6.3e-23   80.8  15.7   1   1   1.5e-25   1.3e-22   79.8  15.7     1    68   920   986   920   987 0.96 Protein of unknown function (DUF3655)
+Macro                PF01661.21   118 query                -           7096   3.6e-17   62.5   0.2   1   1   1.5e-19   1.4e-16   60.6   0.2     1   117  1058  1164  1058  1165 0.94 Macro domain
+AAA_30               PF13604.6    192 query                -           7096     7e-07   29.2   0.0   1   1   1.7e-09   1.6e-06   28.0   0.0    18   130  5599  5731  5591  5734 0.75 AAA domain
+Viral_helicase1      PF01443.18   234 query                -           7096   3.7e-06   26.8   0.3   1   1   5.6e-08     5e-05   23.2   0.3    41   230  5672  5896  5634  5900 0.64 Viral (Superfamily 1) RNA helicase
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      query.fasta
+# Target file:     /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# Option settings: hmmscan -o query.hmm3pfam --tblout query.hmm3pfamTbl --domtblout query.hmm3pfamDomTbl --acc --notextw --cut_ga --cpu 1 /var/tmp/rost_db/data/pfam/Pfam-A.hmm query.fasta 
+# Current dir:     /var/tmp/5119353.1.default/rcM2DUVqd6
+# Date:            Wed Apr  1 03:33:20 2020
+# [ok]

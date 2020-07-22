@@ -1,0 +1,9 @@
+query
+Winner memmitochondria
+memmitochondria,	vs	memchloroplast,	0.9990948720883543 vs. 9.051279116457758E-4
+memmitochondria,memchloroplast,	vs	memperoxisome,	0.9934815863449055 vs. 0.006518413655094485
+memmitochondria,memperoxisome,memchloroplast,	vs	memvacuole,	0.9897464586241064 vs. 0.01025354137589363
+memnucleus,	vs	memmitochondria,memperoxisome,memchloroplast,memvacuole,	0.013486048477723845 vs. 0.9865139515222761
+cellmembrane,memer,memgolgi,	vs	memnucleus,memmitochondria,memperoxisome,memchloroplast,memvacuole,	0.31702145473987225 vs. 0.6829785452601278
+cellmembrane,memnucleus,memer,memgolgi,memmitochondria,memperoxisome,memchloroplast,memvacuole,	vs	chloroplast,plastid,mitochondria,secreted,cytoplasm,peroxisome,vacuole,golgi,nucleus,er,	0.7392866714761679 vs. 0.26071332852383206
+

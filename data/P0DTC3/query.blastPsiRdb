@@ -1,0 +1,139 @@
+
+#PERL-RDB
+#SEQLENGTH	 275
+#ID	:	identifier of the aligned (homologous) protein
+#LSEQ2	:	length of the entire sequence of the aligned protein
+#LALI	:	length of the alignment excluding insertions and deletions
+#%IDE	:	percent indentity
+#%SIM	:	percent similarity
+#LGAP	:	total gap length
+#BSCORE	:	blast score (bits)
+#BEXPECT	:	blast expectation value
+#PROTEIN	:	one-line description of aligned protein
+#'!'	:	indicates lower scoring alignment that is combined with 
+#the higher scoring adjacent one  
+##ID	LSEQ2	%IDE	%SIM	LALI	LGAP	BSCORE	BEXPECT	PROTEIN
+sp|P59632|AP3A_CVHSA	274	72	85	274	1	381	e-102	Protein 3a OS=Human SARS coronavirus OX=694009
+sp|Q0Q474|AP3A_BC279	274	74	86	274	1	359	6e-96	Protein 3 OS=Bat coronavirus 279/2005
+sp|Q3I5J4|AP3A_BCRP3	274	74	86	274	1	359	5e-96	Protein 3 OS=Bat coronavirus Rp3/2004
+sp|Q3LZX0|AP3A_BCHK3	274	73	84	274	1	350	3e-93	Protein 3 OS=Bat coronavirus HKU3 OX=442736
+tr|A0A023PTR5|A0A023PTR5_CVHSA	274	76	86	274	1	369	4e-99	Protein 3 OS=Rhinolophus affinis
+tr|A0A088DI21|A0A088DI21_9BETC	245	18	36	238	39	268	8e-69	Uncharacterized protein OS=Bat
+tr|A0A0K1Z039|A0A0K1Z039_CVHSA	274	70	84	274	1	351	8e-94	Uncharacterized protein OS=Bat
+tr|A0A0K1Z045|A0A0K1Z045_CVHSA	274	70	84	274	1	351	8e-94	Uncharacterized protein OS=Bat
+tr|A0A0U1UZ44|A0A0U1UZ44_CVHSA	274	70	84	274	1	349	4e-93	Uncharacterized protein
+tr|A0A0U1UZ48|A0A0U1UZ48_CVHSA	274	70	85	274	1	349	6e-93	Uncharacterized protein
+tr|A0A0U1UZ51|A0A0U1UZ51_CVHSA	274	75	87	274	1	358	9e-96	Uncharacterized protein
+tr|A0A0U1UZ55|A0A0U1UZ55_CVHSA	274	72	85	274	1	354	1e-94	Uncharacterized protein
+tr|A0A0U1UZ59|A0A0U1UZ59_CVHSA	274	71	86	274	1	367	2e-98	Uncharacterized protein
+tr|A0A0U1WHG9|A0A0U1WHG9_CVHSA	274	68	82	274	1	342	7e-91	Uncharacterized protein
+tr|A0A0U2PGC2|A0A0U2PGC2_9BETC	274	74	87	274	1	379	e-102	Uncharacterized protein OS=SARS-like
+tr|A0A166ZL72|A0A166ZL72_9NIDO	274	68	82	274	1	342	7e-91	3a protein OS=Bat coronavirus
+tr|A0A1B3Q5V5|A0A1B3Q5V5_9BETC	228	20	36	131	19	43.6	0.51	NS3 protein OS=Rousettus bat
+tr|A0A1B3Q5W7|A0A1B3Q5W7_9BETC	228	20	36	131	19	43.6	0.49	NS3 protein OS=Rousettus bat
+tr|A0A1W6S798|A0A1W6S798_CVHSA	274	70	85	274	1	358	7e-96	Protein 3 OS=Human SARS coronavirus
+tr|A0A221ZS06|A0A221ZS06_9NIDO	270	67	83	270	1	333	3e-88	Uncharacterized protein OS=Bat
+tr|A0A2D1PX11|A0A2D1PX11_CVHSA	274	71	86	274	1	365	4e-98	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PX24|A0A2D1PX24_CVHSA	274	72	86	274	1	365	8e-98	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PX33|A0A2D1PX33_CVHSA	274	74	87	274	1	379	e-102	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PX49|A0A2D1PX49_CVHSA	274	71	86	274	1	365	6e-98	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PX58|A0A2D1PX58_CVHSA	274	73	87	274	1	377	e-101	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PX81|A0A2D1PX81_CVHSA	274	72	86	274	1	365	5e-98	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PX91|A0A2D1PX91_CVHSA	274	72	86	274	1	365	9e-98	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PX93|A0A2D1PX93_CVHSA	274	72	87	274	1	367	1e-98	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PXC3|A0A2D1PXC3_CVHSA	274	73	86	274	1	380	e-102	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2D1PXD6|A0A2D1PXD6_CVHSA	274	74	86	274	1	381	e-102	ORF3a OS=Bat SARS-like coronavirus
+tr|A0A2P1M5J6|A0A2P1M5J6_BCHK9	230	14	31	184	33	44.7	0.27	Uncharacterized protein OS=Bat
+tr|A0A2R3SUV9|A0A2R3SUV9_CVHSA	275	90	96	275	0	347	2e-92	Uncharacterized protein OS=Bat
+tr|A0A2R3SUX1|A0A2R3SUX1_CVHSA	275	92	96	275	0	361	9e-97	Uncharacterized protein OS=Bat
+tr|A0A2Z4EVL6|A0A2Z4EVL6_9NIDO	238	15	35	199	31	44.0	0.41	ORF3 OS=Bat coronavirus OX=1508220
+tr|A0A2Z4EVN4|A0A2Z4EVN4_9NIDO	238	15	35	199	31	44.7	0.23	ORF3 OS=Bat coronavirus OX=1508220
+tr|A0A3G5BIY0|A0A3G5BIY0_CVHSA	274	72	85	274	1	381	e-102	ORF3a OS=SARS coronavirus Urbani
+tr|A0A3Q8ARD5|A0A3Q8ARD5_CVHSA	268	63	78	268	7	278	8e-72	ORF3a protein OS=Human SARS
+tr|A3EXH5|A3EXH5_BCHK9	230	20	38	147	12	50.1	0.006	Uncharacterized protein NS3 OS=Bat
+tr|A3EXI3|A3EXI3_BCHK9	230	18	31	220	42	49.7	0.007	Uncharacterized protein NS3 OS=Bat
+tr|A3EXJ1|A3EXJ1_BCHK9	228	19	33	151	21	47.0	0.050	Uncharacterized protein NS3 OS=Bat
+tr|B8Q8Q4|B8Q8Q4_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|B8Q8R5|B8Q8R5_CVHSA	274	72	84	274	1	376	e-101	Uncharacterized protein OS=SARS coronavirus
+tr|B8Q8S7|B8Q8S7_CVHSA	274	72	84	274	1	376	e-101	Uncharacterized protein OS=SARS coronavirus
+tr|B8Q8T8|B8Q8T8_CVHSA	274	71	84	274	1	375	e-101	Uncharacterized protein OS=SARS coronavirus
+tr|B8Q8U9|B8Q8U9_CVHSA	274	71	84	274	1	375	e-101	Uncharacterized protein OS=SARS coronavirus
+tr|B8Q8W0|B8Q8W0_CVHSA	274	71	84	274	1	375	e-101	Uncharacterized protein OS=SARS coronavirus
+tr|C4P6Q8|C4P6Q8_CVHSA	274	72	84	274	1	378	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|D2DJW5|D2DJW5_CVHSA	274	71	86	274	1	366	3e-98	Uncharacterized protein OS=SARS coronavirus
+tr|D2DJX9|D2DJX9_9BETC	274	73	84	274	1	354	1e-94	Uncharacterized protein OS=Bat SARS Cov
+tr|D2E1D3|D2E1D3_CVHSA	274	72	85	274	1	381	e-102	Non-structural protein 3a OS=SARS
+tr|D2E1E8|D2E1E8_CVHSA	274	72	85	274	1	381	e-102	Non-structural protein 3a OS=SARS
+tr|D2E1G3|D2E1G3_CVHSA	274	72	85	274	1	377	e-101	Uncharacterized protein OS=SARS coronavirus
+tr|D2E1H8|D2E1H8_CVHSA	274	72	85	274	1	377	e-101	Uncharacterized protein OS=SARS coronavirus
+tr|D2E222|D2E222_CVHSA	274	72	85	274	1	378	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|D2E236|D2E236_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|D2E266|D2E266_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|D2E2D9|D2E2D9_CVHSA	274	72	85	274	1	380	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|D2E2F3|D2E2F3_CVHSA	274	72	85	274	1	378	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|D2E2J7|D2E2J7_CVHSA	274	72	85	274	1	378	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|D3KDM6|D3KDM6_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|D5HJQ2|D5HJQ2_BCHK3	274	73	84	274	1	350	3e-93	Uncharacterized protein OS=Bat SARS
+tr|D5HJR3|D5HJR3_BCHK3	274	72	84	274	1	347	2e-92	Uncharacterized protein OS=Bat SARS
+tr|D5HJS4|D5HJS4_BCHK3	274	73	84	274	1	350	3e-93	Uncharacterized protein OS=Bat SARS
+tr|D5HJT5|D5HJT5_BCHK3	274	73	85	274	1	355	6e-95	Uncharacterized protein OS=Bat SARS
+tr|D5HJU6|D5HJU6_BCHK3	271	73	84	271	4	345	6e-92	Uncharacterized protein OS=Bat SARS
+tr|D5HJV9|D5HJV9_BCHK3	274	72	84	274	1	348	1e-92	Uncharacterized protein OS=Bat SARS
+tr|D5HJX0|D5HJX0_BCHK3	274	72	84	274	1	348	1e-92	Uncharacterized protein OS=Bat SARS
+tr|D5HJY1|D5HJY1_BCHK3	274	73	84	274	1	350	3e-93	Uncharacterized protein OS=Bat SARS
+tr|D5HJZ2|D5HJZ2_BCHK3	274	73	85	274	1	353	3e-94	Uncharacterized protein OS=Bat SARS
+tr|D5HK03|D5HK03_BCHK3	274	72	84	274	1	349	4e-93	Uncharacterized protein OS=Bat SARS
+tr|E0XIZ4|E0XIZ4_9NIDO	271	62	80	271	4	303	2e-79	ORF3 OS=Bat coronavirus BM48-31/BGR/2008
+tr|E0ZN37|E0ZN37_BCHK9	230	18	32	195	42	50.1	0.005	Uncharacterized protein OS=Bat coronavirus
+tr|E0ZN45|E0ZN45_BCHK9	230	19	37	147	12	50.1	0.005	Uncharacterized protein OS=Bat coronavirus
+tr|E0ZN53|E0ZN53_BCHK9	230	18	31	220	42	49.3	0.009	Uncharacterized protein OS=Bat coronavirus
+tr|E0ZN61|E0ZN61_BCHK9	230	19	37	147	12	50.1	0.005	Uncharacterized protein OS=Bat coronavirus
+tr|F1BYM0|F1BYM0_9BETC	249	23	37	237	45	228	2e-56	Putative ORF3 protein OS=Zaria bat
+tr|F1DAZ2|F1DAZ2_9BETC	238	14	33	199	31	43.2	0.70	ORF3 protein OS=Eidolon bat
+tr|F2YKG3|F2YKG3_CVHSA	274	72	85	274	1	378	e-102	Non-structural protein 3a OS=SARS
+tr|J9SEF0|J9SEF0_CVHSA	274	72	85	274	1	378	e-102	Uncharacterized protein OS=Human SARS
+tr|J9TC74|J9TC74_CVHSA	274	72	85	274	1	381	e-102	Protein X1 OS=Human SARS coronavirus
+tr|J9TEM7|J9TEM7_CVHSA	274	72	84	274	1	374	e-101	Uncharacterized protein OS=Human SARS
+tr|Q0Q483|Q0Q483_CVHSA	274	68	84	274	1	346	3e-92	Putative ORF3 OS=Bat CoV 273/2005 OX=389166
+tr|Q0QDX8|Q0QDX8_CVHSA	274	74	86	274	1	359	6e-96	ORF3a OS=Bat SARS CoV Rm1/2004 OX=347536
+tr|Q0QDY9|Q0QDY9_CVHSA	274	68	84	274	1	346	3e-92	ORF3a OS=Bat SARS CoV Rf1/2004 OX=347537
+tr|Q1EFN1|Q1EFN1_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein 1 OS=SARS
+tr|Q1EFP4|Q1EFP4_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein 1 OS=SARS
+tr|Q1T6X5|Q1T6X5_CVHSA	274	72	85	274	1	381	e-102	Orf3a OS=SARS coronavirus Frankfurt 1
+tr|Q3LZT6|Q3LZT6_BCHK3	274	73	84	274	1	350	3e-93	Uncharacterized protein OS=Bat SARS
+tr|Q3LZV2|Q3LZV2_BCHK3	274	73	84	274	1	350	3e-93	Uncharacterized protein OS=Bat SARS
+tr|Q3S2C4|Q3S2C4_CVHSA	274	72	85	274	1	381	e-102	Putative transmembrane protein 3a; Orf3a
+tr|Q3ZTC4|Q3ZTC4_CVHSA	274	72	85	274	1	374	e-100	Orf3 OS=SARS coronavirus civet020 OX=285949
+tr|Q3ZTD9|Q3ZTD9_CVHSA	274	72	85	274	1	374	e-100	Orf3 OS=SARS coronavirus civet010 OX=285946
+tr|Q3ZTF2|Q3ZTF2_CVHSA	274	72	85	274	1	372	e-100	Orf3 OS=Civet SARS CoV 007/2004 OX=285945
+tr|Q4JDQ3|Q4JDQ3_CVHSA	274	72	85	274	1	374	e-100	Uncharacterized protein OS=SARS coronavirus
+tr|Q4JDR6|Q4JDR6_CVHSA	274	72	85	274	1	372	e-100	Orf3 OS=SARS coronavirus A022 OX=304858 PE=4
+tr|Q5DIC4|Q5DIC4_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein 1 OS=SARS
+tr|Q5Y186|Q5Y186_CVHSA	274	72	85	274	1	381	e-102	X1 protein OS=SARS Coronavirus CDC#200301157
+tr|Q692E3|Q692E3_CVHSA	274	72	85	274	1	378	e-102	Orf1 OS=SARS coronavirus TJF OX=284672 PE=4
+tr|Q6GYR0|Q6GYR0_CVHSA	274	72	85	274	1	378	e-101	3a OS=SARS coronavirus LLJ-2004 OX=273522
+tr|Q6JH37|Q6JH37_CVHSA	274	72	85	274	1	381	e-102	3a protein OS=SARS coronavirus Sino3-11
+tr|Q6JH45|Q6JH45_CVHSA	274	72	85	274	1	381	e-102	3a protein OS=SARS coronavirus Sino1-11
+tr|Q6R7Y5|Q6R7Y5_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein 1 OS=SARS
+tr|Q6RCW4|Q6RCW4_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RCX5|Q6RCX5_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RCY6|Q6RCY6_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RCZ7|Q6RCZ7_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RD08|Q6RD08_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RD19|Q6RD19_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RD30|Q6RD30_CVHSA	274	72	85	274	1	378	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RD41|Q6RD41_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RD52|Q6RD52_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6RD63|Q6RD63_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6S8D6|Q6S8D6_CVHSA	274	72	85	274	1	378	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6T1E0|Q6T1E0_CVHSA	88	71	84	88	1	125	1e-25	Orf3 (Fragment) OS=SARS coronavirus CUHK-L2
+tr|Q6TPE7|Q6TPE7_CVHSA	274	73	86	274	1	380	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6VA77|Q6VA77_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6VA88|Q6VA88_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6VA99|Q6VA99_CVHSA	274	72	85	274	1	381	e-102	Uncharacterized protein OS=SARS coronavirus
+tr|Q6WGN2|Q6WGN2_CVHSA	274	72	85	274	1	381	e-102	Putative transmembrane protein 3a OS=SARS
+tr|R9QTH1|R9QTH1_CVHSA	274	72	85	274	1	354	2e-94	ORF3 protein OS=Bat coronavirus
+tr|R9QTJ3|R9QTJ3_CVHSA	274	72	86	274	1	364	1e-97	ORF3 protein OS=Bat coronavirus
+tr|U5WI39|U5WI39_CVHSA	274	74	87	274	1	379	e-102	Uncharacterized protein OS=Bat SARS-like
+tr|U5WIM2|U5WIM2_CVHSA	274	74	87	274	1	379	e-102	Uncharacterized protein OS=Bat SARS-like
+tr|U5WIP3|U5WIP3_CVHSA	274	74	87	274	1	377	e-101	Uncharacterized protein OS=Bat SARS-like

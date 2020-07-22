@@ -1,0 +1,54 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             query.fasta
+# target HMM database:             /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# output directed to file:         query.hmm3pfam
+# per-seq hits tabular output:     query.hmm3pfamTbl
+# per-dom hits tabular output:     query.hmm3pfamDomTbl
+# prefer accessions over names:    yes
+# max ASCII text line length:      unlimited
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query  [L=121]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.4e-53  178.3   0.4    2.9e-53  178.0   0.4    1.1  1  PF08779.10  SARS coronavirus X4 like
+
+
+Domain annotation for each model (and alignments):
+>> PF08779.10  SARS coronavirus X4 like
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  178.0   0.4   1.6e-57   2.9e-53       1      84 []      16      98 ..      16      98 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 178.0 bits;  conditional E-value: 1.6e-57
+                EEEEEEEEETTSEEEEE-SSTT-EEECSS---EETTTEEEEE--SEEEEEE-TTS-EEEEEEEEE-SSS----SSSSS-SSS-- CS
+  PF08779.10  1 elyhyqecvrgttvllkepcpsgtyegnspfhpladnkfaltctsthfafacadgtrhtyqlrarsvspklfirqeevqqelys 84
+                elyhyqecvrgttvllkepc sgtyegnspfhpladnkfaltc st+fafac dg +h yqlrarsvspklfirqeevq elys
+       query 16 ELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFSTQFAFACPDGVKHVYQLRARSVSPKLFIRQEEVQ-ELYS 98
+                8*****************************************************************************6.8987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (121 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                       651  (0.0363099); expected 358.6 (0.02)
+Passed bias filter:                      453  (0.0252663); expected 358.6 (0.02)
+Passed Vit filter:                        38  (0.00211947); expected 17.9 (0.001)
+Passed Fwd filter:                         2  (0.000111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.86u 0.76s 00:00:01.62 Elapsed: 00:00:10.24
+# Mc/sec: 35.90
+//
+[ok]

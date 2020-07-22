@@ -1,0 +1,12 @@
+query	GO:0043169	0.23	cation binding
+query	GO:0051536	0.23	iron-sulfur cluster binding
+query	GO:0043167	0.23	ion binding
+query	GO:0003824	0.23	catalytic activity
+query	GO:0005488	0.23	binding
+query	GO:0046872	0.23	metal ion binding
+query	GO:0051540	0.23	metal cluster binding
+query	GO:0016836	0.20	hydro-lyase activity
+query	GO:0016835	0.20	carbon-oxygen lyase activity
+query	GO:0003855	0.20	3-dehydroquinate dehydratase activity
+query	GO:0051539	0.13	4 iron, 4 sulfur cluster binding
+query	GO:0016829	0.08	lyase activity

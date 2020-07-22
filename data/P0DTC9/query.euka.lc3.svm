@@ -1,0 +1,7 @@
+query
+Winner nucleus
+cytoplasm,	vs	nucleus,	0.05620553042607811 vs. 0.9437944695739219
+chloroplast,plastid,mitochondria,peroxisome,vacuole,	vs	cytoplasm,nucleus,	0.008355569125564368 vs. 0.9916444308744357
+chloroplast,plastid,mitochondria,cytoplasm,peroxisome,vacuole,nucleus,	vs	secreted,golgi,er,	0.9860995674061106 vs. 0.013900432593889341
+cellmembrane,memnucleus,memer,memgolgi,memmitochondria,memperoxisome,memchloroplast,memvacuole,	vs	chloroplast,plastid,mitochondria,secreted,cytoplasm,peroxisome,vacuole,golgi,nucleus,er,	0.009259309513339494 vs. 0.9907406904866606
+

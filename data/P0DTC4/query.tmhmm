@@ -1,0 +1,9 @@
+# query Length: 75
+# query Number of predicted TMHs:  1
+# query Exp number of AAs in TMHs: 25.72521
+# query Exp number, first 60 AAs:  25.70508
+# query Total prob of N-in:        0.58738
+# query POSSIBLE N-term signal sequence
+query	TMHMM2.0	inside	     1    11
+query	TMHMM2.0	TMhelix	    12    34
+query	TMHMM2.0	outside	    35    75

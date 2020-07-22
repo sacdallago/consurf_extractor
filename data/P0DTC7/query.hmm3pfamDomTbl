@@ -1,0 +1,14 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+SARS_X4              PF08779.10    84 query                -            121   2.4e-53  178.3   0.4   1   1   1.6e-57   2.9e-53  178.0   0.4     1    84    16    98    16    98 0.98 SARS coronavirus X4 like
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      query.fasta
+# Target file:     /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# Option settings: hmmscan -o query.hmm3pfam --tblout query.hmm3pfamTbl --domtblout query.hmm3pfamDomTbl --acc --notextw --cut_ga --cpu 1 /var/tmp/rost_db/data/pfam/Pfam-A.hmm query.fasta 
+# Current dir:     /var/tmp/5119353.8.default/vxS8CBP03X
+# Date:            Tue Mar 31 12:53:00 2020
+# [ok]

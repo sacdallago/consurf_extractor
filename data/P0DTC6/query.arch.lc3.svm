@@ -1,0 +1,5 @@
+query
+Winner cytoplasm
+secreted,	vs	cytoplasm,	0.002513674143464181 vs. 0.9974863258565358
+cellmembrane,	vs	secreted,cytoplasm,	0.04559080915606936 vs. 0.9544091908439306
+

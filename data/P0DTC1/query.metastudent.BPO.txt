@@ -1,0 +1,255 @@
+query	GO:1901360	0.57	organic cyclic compound metabolic process
+query	GO:0034641	0.57	cellular nitrogen compound metabolic process
+query	GO:0046483	0.57	heterocycle metabolic process
+query	GO:0006807	0.57	nitrogen compound metabolic process
+query	GO:0006139	0.57	nucleobase-containing compound metabolic process
+query	GO:0008152	0.57	metabolic process
+query	GO:0009987	0.57	cellular process
+query	GO:0006725	0.57	cellular aromatic compound metabolic process
+query	GO:0043170	0.57	macromolecule metabolic process
+query	GO:0090304	0.57	nucleic acid metabolic process
+query	GO:0071704	0.57	organic substance metabolic process
+query	GO:0044238	0.57	primary metabolic process
+query	GO:0044237	0.57	cellular metabolic process
+query	GO:0001172	0.43	transcription, RNA-templated
+query	GO:1901362	0.43	organic cyclic compound biosynthetic process
+query	GO:0019438	0.43	aromatic compound biosynthetic process
+query	GO:1901576	0.43	organic substance biosynthetic process
+query	GO:0044260	0.43	cellular macromolecule metabolic process
+query	GO:0018130	0.43	heterocycle biosynthetic process
+query	GO:0034654	0.43	nucleobase-containing compound biosynthetic process
+query	GO:0016070	0.43	RNA metabolic process
+query	GO:0044271	0.43	cellular nitrogen compound biosynthetic process
+query	GO:0032774	0.43	RNA biosynthetic process
+query	GO:0044249	0.43	cellular biosynthetic process
+query	GO:0009059	0.43	macromolecule biosynthetic process
+query	GO:0009058	0.43	biosynthetic process
+query	GO:0044419	0.37	interspecies interaction between organisms
+query	GO:0019058	0.37	viral life cycle
+query	GO:0051704	0.37	multi-organism process
+query	GO:0044403	0.37	symbiosis, encompassing mutualism through parasitism
+query	GO:0019079	0.37	viral genome replication
+query	GO:0044764	0.37	multi-organism cellular process
+query	GO:0016032	0.37	viral process
+query	GO:0019538	0.35	protein metabolic process
+query	GO:0006508	0.35	proteolysis
+query	GO:0090305	0.30	nucleic acid phosphodiester bond hydrolysis
+query	GO:0006351	0.24	transcription, DNA-templated
+query	GO:0034645	0.24	cellular macromolecule biosynthetic process
+query	GO:0010467	0.24	gene expression
+query	GO:0051716	0.18	cellular response to stimulus
+query	GO:0016071	0.18	mRNA metabolic process
+query	GO:0006950	0.18	response to stress
+query	GO:0044699	0.18	single-organism process
+query	GO:0050896	0.18	response to stimulus
+query	GO:0052309	0.17	negative regulation by organism of innate immune response in other organism involved in symbiotic interaction
+query	GO:0052553	0.17	modulation by symbiont of host immune response
+query	GO:0080090	0.17	regulation of primary metabolic process
+query	GO:0019222	0.17	regulation of metabolic process
+query	GO:0050687	0.17	negative regulation of defense response to virus
+query	GO:0039653	0.17	suppression by virus of host transcription
+query	GO:0039604	0.17	suppression by virus of host translation
+query	GO:0007165	0.17	signal transduction
+query	GO:0007166	0.17	cell surface receptor signaling pathway
+query	GO:0052200	0.17	response to host defenses
+query	GO:0052552	0.17	modulation by organism of immune response of other organism involved in symbiotic interaction
+query	GO:0075136	0.17	response to host
+query	GO:0039520	0.17	induction by virus of host autophagy
+query	GO:0010605	0.17	negative regulation of macromolecule metabolic process
+query	GO:0010604	0.17	positive regulation of macromolecule metabolic process
+query	GO:0009968	0.17	negative regulation of signal transduction
+query	GO:0009966	0.17	regulation of signal transduction
+query	GO:0010608	0.17	posttranscriptional regulation of gene expression
+query	GO:0031323	0.17	regulation of cellular metabolic process
+query	GO:0071310	0.17	cellular response to organic substance
+query	GO:0051817	0.17	modification of morphology or physiology of other organism involved in symbiotic interaction
+query	GO:0044092	0.17	negative regulation of molecular function
+query	GO:0048518	0.17	positive regulation of biological process
+query	GO:0048519	0.17	negative regulation of biological process
+query	GO:0044413	0.17	avoidance of host defenses
+query	GO:0044415	0.17	evasion or tolerance of host defenses
+query	GO:0044414	0.17	suppression of host defenses
+query	GO:0019054	0.17	modulation by virus of host process
+query	GO:0052170	0.17	negative regulation by symbiont of host innate immune response
+query	GO:0060255	0.17	regulation of macromolecule metabolic process
+query	GO:0048583	0.17	regulation of response to stimulus
+query	GO:0061013	0.17	regulation of mRNA catabolic process
+query	GO:0061014	0.17	positive regulation of mRNA catabolic process
+query	GO:0050776	0.17	regulation of immune response
+query	GO:2001141	0.17	regulation of RNA biosynthetic process
+query	GO:0051701	0.17	interaction with host
+query	GO:0051707	0.17	response to other organism
+query	GO:0010033	0.17	response to organic substance
+query	GO:0044700	0.17	single organism signaling
+query	GO:0052173	0.17	response to defenses of other organism involved in symbiotic interaction
+query	GO:0044359	0.17	modulation of molecular function in other organism
+query	GO:0009607	0.17	response to biotic stimulus
+query	GO:0009605	0.17	response to external stimulus
+query	GO:0010506	0.17	regulation of autophagy
+query	GO:0039519	0.17	modulation by virus of host autophagy
+query	GO:0010468	0.17	regulation of gene expression
+query	GO:0002376	0.17	immune system process
+query	GO:0045824	0.17	negative regulation of innate immune response
+query	GO:0019439	0.17	aromatic compound catabolic process
+query	GO:0039595	0.17	induction by virus of catabolism of host mRNA
+query	GO:0060759	0.17	regulation of response to cytokine stimulus
+query	GO:0009896	0.17	positive regulation of catabolic process
+query	GO:0009894	0.17	regulation of catabolic process
+query	GO:0009892	0.17	negative regulation of metabolic process
+query	GO:0009893	0.17	positive regulation of metabolic process
+query	GO:0019080	0.17	viral gene expression
+query	GO:0030682	0.17	evasion or tolerance of host defense response
+query	GO:0019082	0.17	viral protein processing
+query	GO:0019083	0.17	viral transcription
+query	GO:0002831	0.17	regulation of response to biotic stimulus
+query	GO:0002832	0.17	negative regulation of response to biotic stimulus
+query	GO:0080134	0.17	regulation of response to stress
+query	GO:0010629	0.17	negative regulation of gene expression
+query	GO:0044033	0.17	multi-organism metabolic process
+query	GO:0039503	0.17	suppression by virus of host innate immune response
+query	GO:0075111	0.17	negative regulation by symbiont of host receptor-mediated signal transduction
+query	GO:0075112	0.17	modulation by symbiont of host transmembrane receptor-mediated signal transduction
+query	GO:0039507	0.17	suppression by virus of host molecular function
+query	GO:0039506	0.17	modulation by virus of host molecular function
+query	GO:1901575	0.17	organic substance catabolic process
+query	GO:0044265	0.17	cellular macromolecule catabolic process
+query	GO:0052306	0.17	modulation by organism of innate immune response in other organism involved in symbiotic interaction
+query	GO:0071357	0.17	cellular response to type I interferon
+query	GO:0052037	0.17	negative regulation by symbiont of host defense response
+query	GO:0052031	0.17	modulation by symbiont of host defense response
+query	GO:0065007	0.17	biological regulation
+query	GO:0052205	0.17	modulation of molecular function in other organism involved in symbiotic interaction
+query	GO:0001960	0.17	negative regulation of cytokine-mediated signaling pathway
+query	GO:0009057	0.17	macromolecule catabolic process
+query	GO:0065009	0.17	regulation of molecular function
+query	GO:0006914	0.17	autophagy
+query	GO:0034097	0.17	response to cytokine
+query	GO:0009889	0.17	regulation of biosynthetic process
+query	GO:0050794	0.17	regulation of cellular process
+query	GO:0006952	0.17	defense response
+query	GO:0043900	0.17	regulation of multi-organism process
+query	GO:0043901	0.17	negative regulation of multi-organism process
+query	GO:0052255	0.17	modulation by organism of defense response of other organism involved in symbiotic interaction
+query	GO:0039579	0.17	suppression by virus of host ISG15 activity
+query	GO:0034655	0.17	nucleobase-containing compound catabolic process
+query	GO:0031347	0.17	regulation of defense response
+query	GO:0046700	0.17	heterocycle catabolic process
+query	GO:0060761	0.17	negative regulation of response to cytokine stimulus
+query	GO:0052312	0.17	modulation of transcription in other organism involved in symbiotic interaction
+query	GO:0051607	0.17	defense response to virus
+query	GO:0051604	0.17	protein maturation
+query	GO:0071345	0.17	cellular response to cytokine stimulus
+query	GO:0052029	0.17	negative regulation by symbiont of host signal transduction pathway
+query	GO:0075114	0.17	negative regulation by symbiont of host transmembrane receptor-mediated signal transduction
+query	GO:0006355	0.17	regulation of transcription, DNA-templated
+query	GO:0002697	0.17	regulation of immune effector process
+query	GO:0010556	0.17	regulation of macromolecule biosynthetic process
+query	GO:0009615	0.17	response to virus
+query	GO:0043207	0.17	response to external biotic stimulus
+query	GO:0052493	0.17	negative regulation by organism of signal transduction in other organism involved in symbiotic interaction
+query	GO:0051171	0.17	regulation of nitrogen compound metabolic process
+query	GO:0039648	0.17	modulation by virus of host protein ubiquitination
+query	GO:0006955	0.17	immune response
+query	GO:0044248	0.17	cellular catabolic process
+query	GO:0048585	0.17	negative regulation of response to stimulus
+query	GO:0023052	0.17	signaling
+query	GO:0010648	0.17	negative regulation of cell communication
+query	GO:0070887	0.17	cellular response to chemical stimulus
+query	GO:0023051	0.17	regulation of signaling
+query	GO:0034340	0.17	response to type I interferon
+query	GO:0010646	0.17	regulation of cell communication
+query	GO:0052056	0.17	negative regulation by symbiont of host molecular function
+query	GO:0044362	0.17	negative regulation of molecular function in other organism
+query	GO:0052055	0.17	modulation by symbiont of host molecular function
+query	GO:0075528	0.17	modulation by virus of host immune response
+query	GO:0051246	0.17	regulation of protein metabolic process
+query	GO:0010508	0.17	positive regulation of autophagy
+query	GO:0030683	0.17	evasion or tolerance by virus of host immune response
+query	GO:0019048	0.17	modulation by virus of host morphology or physiology
+query	GO:0052564	0.17	response to immune response of other organism involved in symbiotic interaction
+query	GO:0052561	0.17	negative regulation by organism of immune response of other organism involved in symbiotic interaction
+query	GO:0098542	0.17	defense response to other organism
+query	GO:0016485	0.17	protein processing
+query	GO:0052027	0.17	modulation by symbiont of host signal transduction pathway
+query	GO:0039657	0.17	suppression by virus of host gene expression
+query	GO:0039656	0.17	modulation by virus of host gene expression
+query	GO:0044270	0.17	cellular nitrogen compound catabolic process
+query	GO:0075109	0.17	modulation by symbiont of host receptor-mediated signal transduction
+query	GO:0050777	0.17	negative regulation of immune response
+query	GO:0032268	0.17	regulation of cellular protein metabolic process
+query	GO:0001959	0.17	regulation of cytokine-mediated signaling pathway
+query	GO:0019057	0.17	modulation by virus of host translation
+query	GO:0051252	0.17	regulation of RNA metabolic process
+query	GO:0044068	0.17	modulation by symbiont of host cellular process
+query	GO:0051254	0.17	positive regulation of RNA metabolic process
+query	GO:0065008	0.17	regulation of biological quality
+query	GO:0031329	0.17	regulation of cellular catabolic process
+query	GO:0031326	0.17	regulation of cellular biosynthetic process
+query	GO:0031325	0.17	positive regulation of cellular metabolic process
+query	GO:0050688	0.17	regulation of defense response to virus
+query	GO:0019049	0.17	evasion or tolerance of host defenses by virus
+query	GO:0052572	0.17	response to host immune response
+query	GO:0039502	0.17	suppression by virus of host type I interferon-mediated signaling pathway
+query	GO:0044073	0.17	modulation by symbiont of host translation
+query	GO:0051833	0.17	suppression of defenses of other organism involved in symbiotic interaction
+query	GO:0039548	0.17	suppression by virus of host IRF3 activity
+query	GO:0002682	0.17	regulation of immune system process
+query	GO:0048522	0.17	positive regulation of cellular process
+query	GO:0052261	0.17	negative regulation by organism of defense response of other organism involved in symbiotic interaction
+query	GO:1901361	0.17	organic cyclic compound catabolic process
+query	GO:2000112	0.17	regulation of cellular macromolecule biosynthetic process
+query	GO:0044501	0.17	modulation of signal transduction in other organism
+query	GO:0050789	0.17	regulation of biological process
+query	GO:0052204	0.17	negative regulation of molecular function in other organism involved in symbiotic interaction
+query	GO:0031331	0.17	positive regulation of cellular catabolic process
+query	GO:0006401	0.17	RNA catabolic process
+query	GO:0006402	0.17	mRNA catabolic process
+query	GO:0051832	0.17	avoidance of defenses of other organism involved in symbiotic interaction
+query	GO:0019221	0.17	cytokine-mediated signaling pathway
+query	GO:0051834	0.17	evasion or tolerance of defenses of other organism involved in symbiotic interaction
+query	GO:0031348	0.17	negative regulation of defense response
+query	GO:0002683	0.17	negative regulation of immune system process
+query	GO:0007154	0.17	cell communication
+query	GO:0045935	0.17	positive regulation of nucleobase-containing compound metabolic process
+query	GO:0045088	0.17	regulation of innate immune response
+query	GO:0035821	0.17	modification of morphology or physiology of other organism
+query	GO:0044267	0.17	cellular protein metabolic process
+query	GO:0019219	0.17	regulation of nucleobase-containing compound metabolic process
+query	GO:0052562	0.17	negative regulation by symbiont of host immune response
+query	GO:0045087	0.17	innate immune response
+query	GO:0052167	0.17	modulation by symbiont of host innate immune response
+query	GO:0050690	0.17	regulation of defense response to virus by virus
+query	GO:0044763	0.17	single-organism cellular process
+query	GO:0060337	0.17	type I interferon signaling pathway
+query	GO:0051173	0.17	positive regulation of nitrogen compound metabolic process
+query	GO:0042221	0.17	response to chemical
+query	GO:0060338	0.17	regulation of type I interferon-mediated signaling pathway
+query	GO:0060339	0.17	negative regulation of type I interferon-mediated signaling pathway
+query	GO:0009056	0.17	catabolic process
+query	GO:0044003	0.17	modification by symbiont of host morphology or physiology
+query	GO:0052250	0.17	modulation of signal transduction in other organism involved in symbiotic interaction
+query	GO:0019056	0.17	modulation by virus of host transcription
+query	GO:0002698	0.17	negative regulation of immune effector process
+query	GO:0052026	0.17	modulation by symbiont of host transcription
+query	GO:0020012	0.17	evasion or tolerance of host immune response
+query	GO:0048523	0.17	negative regulation of cellular process
+query	GO:0002252	0.17	immune effector process
+query	GO:0006417	0.17	regulation of translation
+query	GO:0051805	0.17	evasion or tolerance of immune response of other organism involved in symbiotic interaction
+query	GO:0051807	0.17	evasion or tolerance of defense response of other organism involved in symbiotic interaction
+query	GO:0023057	0.17	negative regulation of signaling
+query	GO:0006412	0.17	translation
+query	GO:0090503	0.16	RNA phosphodiester bond hydrolysis, exonucleolytic
+query	GO:0090501	0.16	RNA phosphodiester bond hydrolysis
+query	GO:0032259	0.13	methylation
+query	GO:0009452	0.03	7-methylguanosine RNA capping
+query	GO:0044710	0.03	single-organism metabolic process
+query	GO:0006370	0.03	7-methylguanosine mRNA capping
+query	GO:0033554	0.03	cellular response to stress
+query	GO:0036260	0.03	RNA capping
+query	GO:0006302	0.03	double-strand break repair
+query	GO:0006974	0.03	cellular response to DNA damage stimulus
+query	GO:0006281	0.03	DNA repair
+query	GO:0006259	0.03	DNA metabolic process
+query	GO:0006396	0.03	RNA processing
+query	GO:0006397	0.03	mRNA processing

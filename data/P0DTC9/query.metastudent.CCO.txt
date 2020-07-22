@@ -1,0 +1,28 @@
+query	GO:0019013	0.53	viral nucleocapsid
+query	GO:0019012	0.53	virion
+query	GO:0019028	0.53	viral capsid
+query	GO:0044423	0.53	virion part
+query	GO:0043245	0.43	extraorganismal space
+query	GO:0043656	0.43	intracellular region of host
+query	GO:0043657	0.43	host cell
+query	GO:0033643	0.43	host cell part
+query	GO:0033646	0.43	host intracellular part
+query	GO:0030430	0.43	host cell cytoplasm
+query	GO:0018995	0.43	host
+query	GO:0044217	0.43	other organism part
+query	GO:0044216	0.43	other organism cell
+query	GO:0044215	0.43	other organism
+query	GO:0005576	0.43	extracellular region
+query	GO:0044421	0.43	extracellular region part
+query	GO:0033655	0.24	host cell cytoplasm part
+query	GO:0044220	0.24	host cell perinuclear region of cytoplasm
+query	GO:0044172	0.15	host cell endoplasmic reticulum-Golgi intermediate compartment
+query	GO:0044177	0.15	host cell Golgi apparatus
+query	GO:0030529	0.15	ribonucleoprotein complex
+query	GO:0033648	0.15	host intracellular membrane-bounded organelle
+query	GO:0033647	0.15	host intracellular organelle
+query	GO:0032991	0.15	macromolecular complex
+query	GO:0044464	0.15	cell part
+query	GO:0005623	0.15	cell
+query	GO:0005622	0.15	intracellular
+query	GO:0044424	0.15	intracellular part

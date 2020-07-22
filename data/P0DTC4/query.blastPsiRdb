@@ -1,0 +1,168 @@
+
+#PERL-RDB
+#SEQLENGTH	 75
+#ID	:	identifier of the aligned (homologous) protein
+#LSEQ2	:	length of the entire sequence of the aligned protein
+#LALI	:	length of the alignment excluding insertions and deletions
+#%IDE	:	percent indentity
+#%SIM	:	percent similarity
+#LGAP	:	total gap length
+#BSCORE	:	blast score (bits)
+#BEXPECT	:	blast expectation value
+#PROTEIN	:	one-line description of aligned protein
+#'!'	:	indicates lower scoring alignment that is combined with 
+#the higher scoring adjacent one  
+##ID	LSEQ2	%IDE	%SIM	LALI	LGAP	BSCORE	BEXPECT	PROTEIN
+pdb|pdb|2mm4_A	58	91	93	58	0	54.9	5e-05	
+pdb|pdb|5x29_A	58	91	93	58	0	54.9	5e-05	
+pdb|pdb|5x29_B	58	91	93	58	0	54.9	5e-05	
+pdb|pdb|5x29_C	58	91	93	58	0	54.9	5e-05	
+pdb|pdb|5x29_D	58	91	93	58	0	54.9	5e-05	
+pdb|pdb|5x29_E	58	91	93	58	0	54.9	5e-05	
+sp|A3EX99|VEMP_BCHK4	82	46	65	64	0	47.2	0.010	Envelope small membrane protein OS=Bat
+sp|P59637|VEMP_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Human
+sp|Q0Q473|VEMP_BC279	76	92	93	75	1	79.9	2e-12	Envelope small membrane protein OS=Bat
+sp|Q0Q4E8|VEMP_BC133	82	46	65	64	0	47.2	0.010	Envelope small membrane protein OS=Bat
+sp|Q3I5J3|VEMP_BCRP3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+sp|Q3LZW9|VEMP_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|A0A023PSW1|A0A023PSW1_CVHSA	76	92	94	75	1	77.2	1e-11	Envelope small membrane protein
+tr|A0A023Y9K8|A0A023Y9K8_9BETC	82	41	61	65	0	44.1	0.11	Envelope small membrane protein
+tr|A0A075QB33|A0A075QB33_9BETC	82	38	60	65	0	42.2	0.37	Envelope small membrane protein
+tr|A0A088DKU1|A0A088DKU1_9BETC	79	54	74	71	0	66.4	2e-08	Envelope protein OS=Bat
+tr|A0A096XNN8|A0A096XNN8_CVHSA	76	92	93	75	1	79.9	2e-12	Envelope small membrane protein
+tr|A0A0K1Z002|A0A0K1Z002_CVHSA	76	92	93	75	1	79.1	3e-12	Envelope small membrane protein
+tr|A0A0K1Z029|A0A0K1Z029_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A0U1UYZ3|A0A0U1UYZ3_BCHK4	82	46	65	64	0	47.2	0.010	Envelope small membrane protein
+tr|A0A0U1WHH8|A0A0U1WHH8_CVHSA	76	93	96	75	1	75.7	3e-11	Envelope small membrane protein
+tr|A0A0U1WHI5|A0A0U1WHI5_CVHSA	76	92	94	75	1	78.0	6e-12	Envelope small membrane protein
+tr|A0A0U1WHJ9|A0A0U1WHJ9_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A0U1WHK6|A0A0U1WHK6_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A0U1WJX3|A0A0U1WJX3_CVHSA	76	90	94	75	1	77.6	8e-12	Envelope small membrane protein
+tr|A0A0U1WJY0|A0A0U1WJY0_CVHSA	76	92	96	75	1	75.7	3e-11	Envelope small membrane protein
+tr|A0A0U2PTJ4|A0A0U2PTJ4_9BETC	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A166ZL88|A0A166ZL88_9NIDO	76	89	93	75	1	74.9	5e-11	Envelope protein OS=Bat
+tr|A0A166ZLT5|A0A166ZLT5_9NIDO	82	46	65	64	0	47.2	0.010	Envelope protein OS=Bat
+tr|A0A1W5YKU0|A0A1W5YKU0_9NIDO	76	93	94	75	1	78.8	3e-12	Envelope protein OS=Bat
+tr|A0A1W5YKU8|A0A1W5YKU8_9NIDO	76	93	96	75	1	75.7	3e-11	Envelope protein OS=Bat
+tr|A0A1W6ASV6|A0A1W6ASV6_9NIDO	82	41	61	65	0	44.1	0.095	Small envelope protein OS=Bat
+tr|A0A2D1PX21|A0A2D1PX21_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A2D1PX27|A0A2D1PX27_CVHSA	76	93	96	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A2D1PX85|A0A2D1PX85_CVHSA	76	92	94	75	1	78.4	4e-12	Envelope small membrane protein
+tr|A0A2D1PXC9|A0A2D1PXC9_CVHSA	76	94	95	70	0	76.1	2e-11	Envelope small membrane protein
+tr|A0A2I4R885|A0A2I4R885_9NIDO	82	46	61	60	0	44.9	0.063	Envelope protein OS=Hypsugo bat
+tr|A0A2I4R8S5|A0A2I4R8S5_9NIDO	82	47	61	59	0	44.1	0.090	Envelope protein OS=Hypsugo bat
+tr|A0A2I6PIX3|A0A2I6PIX3_9BETC	82	40	61	65	0	43.7	0.12	Envelope small membrane protein
+tr|A0A2R2YRG7|A0A2R2YRG7_9BETC	82	40	60	65	0	42.2	0.32	Envelope small membrane protein
+tr|A0A2R3SUY7|A0A2R3SUY7_CVHSA	75	100	100	75	0	83.4	1e-13	Envelope small membrane protein
+tr|A0A2R4KP78|A0A2R4KP78_9BETC	82	41	56	60	0	41.4	0.63	Envelope small membrane protein
+tr|A0A2R4KP82|A0A2R4KP82_9BETC	82	40	60	65	0	42.9	0.21	Envelope small membrane protein
+tr|A0A3G5BJ03|A0A3G5BJ03_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A3Q8AHU5|A0A3Q8AHU5_CVHSA	76	94	97	75	1	81.1	7e-13	Envelope small membrane protein
+tr|A0A4D6G1C3|A0A4D6G1C3_9BETC	82	46	61	60	0	43.7	0.12	Envelope small membrane protein
+tr|A0A4Y6GLD0|A0A4Y6GLD0_9BETC	76	93	94	75	1	79.1	3e-12	Envelope small membrane protein
+tr|A0A4Y6GLE0|A0A4Y6GLE0_9BETC	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A4Y6GLE3|A0A4Y6GLE3_9BETC	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A4Y6GM94|A0A4Y6GM94_9BETC	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A4Y6GM98|A0A4Y6GM98_9BETC	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein
+tr|A0A5H2WYE1|A0A5H2WYE1_9NIDO	82	41	61	65	0	43.3	0.16	Small envelope protein OS=Bat
+tr|A2TGS2|A2TGS2_CVHSA	76	90	93	75	1	77.6	8e-12	Envelope small membrane protein OS=SARS
+tr|A3EXA8|A3EXA8_BCHK4	82	46	65	64	0	47.2	0.010	Envelope small membrane protein OS=Bat
+tr|A3EXB7|A3EXB7_BCHK4	82	46	65	64	0	47.2	0.010	Envelope small membrane protein OS=Bat
+tr|A3EXC6|A3EXC6_BCHK4	82	46	65	64	0	47.2	0.010	Envelope small membrane protein OS=Bat
+tr|B8Q8Q6|B8Q8Q6_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|B8Q8R7|B8Q8R7_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|B8Q8S9|B8Q8S9_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|B8Q8U0|B8Q8U0_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|B8Q8V1|B8Q8V1_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|B8Q8W2|B8Q8W2_CVHSA	76	92	94	75	1	78.4	5e-12	Envelope small membrane protein OS=SARS
+tr|C4P6R0|C4P6R0_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|D2DJW7|D2DJW7_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|D2E1D5|D2E1D5_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|D2E1F0|D2E1F0_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|D2E224|D2E224_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|D2E253|D2E253_CVHSA	76	92	94	75	1	78.0	7e-12	Envelope small membrane protein OS=SARS
+tr|D2E268|D2E268_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|D2E2J8|D2E2J8_CVHSA	75	92	93	74	1	71.4	5e-10	Envelope protein OS=SARS coronavirus ExoN1
+tr|D2E2M8|D2E2M8_CVHSA	76	92	93	75	1	79.5	2e-12	Envelope small membrane protein OS=SARS
+tr|D2E2S3|D2E2S3_CVHSA	76	92	93	75	1	77.2	9e-12	Envelope small membrane protein OS=SARS
+tr|D2E2T7|D2E2T7_CVHSA	76	92	93	75	1	76.4	2e-11	Envelope small membrane protein OS=SARS
+tr|D3KDM8|D3KDM8_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|D3KDQ6|D3KDQ6_CVHSA	76	92	93	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|D5HJQ3|D5HJQ3_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|D5HJR4|D5HJR4_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|D5HJS5|D5HJS5_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|D5HJT6|D5HJT6_BCHK3	76	92	94	75	1	78.4	4e-12	Envelope small membrane protein OS=Bat
+tr|D5HJU7|D5HJU7_BCHK3	76	90	94	75	1	78.0	6e-12	Envelope small membrane protein OS=Bat
+tr|D5HJW0|D5HJW0_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|D5HJX1|D5HJX1_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|D5HJY2|D5HJY2_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|D5HJZ3|D5HJZ3_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|D5HK04|D5HK04_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|E0XIZ5|E0XIZ5_9NIDO	76	92	97	75	1	77.2	1e-11	Envelope protein OS=Bat coronavirus
+tr|F1BYM1|F1BYM1_9BETC	78	57	72	75	2	84.5	6e-14	Putative envelope protein OS=Zaria bat
+tr|J9TE86|J9TE86_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Human
+tr|Q0Q482|Q0Q482_CVHSA	76	93	96	75	1	75.7	3e-11	Envelope small membrane protein OS=Bat CoV
+tr|Q0QDX7|Q0QDX7_CVHSA	76	92	93	75	1	79.9	2e-12	Envelope small membrane protein OS=Bat
+tr|Q0QDY7|Q0QDY7_CVHSA	76	93	96	75	1	75.7	3e-11	Envelope small membrane protein OS=Bat
+tr|Q19QW7|Q19QW7_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Human
+tr|Q1EFM9|Q1EFM9_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q1EFP2|Q1EFP2_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q1T6X3|Q1T6X3_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q3LZU0|Q3LZU0_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|Q3LZV1|Q3LZV1_BCHK3	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|Q3S2C2|Q3S2C2_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q3ZTC2|Q3ZTC2_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q3ZTD7|Q3ZTD7_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q3ZTF0|Q3ZTF0_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Civet
+tr|Q4JDQ1|Q4JDQ1_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q4JDR4|Q4JDR4_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q5DIC2|Q5DIC2_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q5Y184|Q5Y184_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q5Y298|Q5Y298_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q692E1|Q692E1_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6GYQ8|Q6GYQ8_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6JH35|Q6JH35_CVHSA	76	92	93	75	1	78.8	4e-12	Envelope small membrane protein OS=SARS
+tr|Q6JH43|Q6JH43_CVHSA	75	90	92	74	2	71.4	5e-10	Envelope protein OS=SARS coronavirus
+tr|Q6QJ39|Q6QJ39_CVHSA	76	90	91	70	0	76.1	2e-11	Small envelope protein OS=SARS coronavirus
+tr|Q6R7Y3|Q6R7Y3_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RCW2|Q6RCW2_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RCX3|Q6RCX3_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RCY4|Q6RCY4_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RCZ5|Q6RCZ5_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RD06|Q6RD06_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RD17|Q6RD17_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RD28|Q6RD28_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RD39|Q6RD39_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RD50|Q6RD50_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6RD61|Q6RD61_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6S8D4|Q6S8D4_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRI1|Q6SRI1_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRI5|Q6SRI5_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRI9|Q6SRI9_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRJ3|Q6SRJ3_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRJ7|Q6SRJ7_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRK1|Q6SRK1_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRK5|Q6SRK5_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRK9|Q6SRK9_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRL3|Q6SRL3_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRL7|Q6SRL7_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRM1|Q6SRM1_CVHSA	75	92	93	74	2	74.5	7e-11	Small envelope E protein OS=SARS
+tr|Q6SRM5|Q6SRM5_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRM9|Q6SRM9_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRN3|Q6SRN3_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRN7|Q6SRN7_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRP1|Q6SRP1_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRP5|Q6SRP5_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6SRP9|Q6SRP9_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6T1D9|Q6T1D9_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6TPE5|Q6TPE5_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6VA75|Q6VA75_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6VA86|Q6VA86_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6VA97|Q6VA97_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|Q6WGP2|Q6WGP2_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=SARS
+tr|R9QTJ1|R9QTJ1_CVHSA	76	92	93	75	1	76.1	2e-11	Envelope small membrane protein OS=Bat
+tr|R9QTR5|R9QTR5_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|U5LNK7|U5LNK7_9BETC	82	48	65	60	0	46.0	0.028	Envelope small membrane protein
+tr|U5WI28|U5WI28_CVHSA	76	93	96	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|U5WI54|U5WI54_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat
+tr|U5WLL8|U5WLL8_CVHSA	76	93	94	75	1	78.8	3e-12	Envelope small membrane protein OS=Bat

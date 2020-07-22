@@ -1,0 +1,67 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             query.fasta
+# target HMM database:             /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# output directed to file:         query.hmm3pfam
+# per-seq hits tabular output:     query.hmm3pfamTbl
+# per-dom hits tabular output:     query.hmm3pfamDomTbl
+# prefer accessions over names:    yes
+# max ASCII text line length:      unlimited
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query  [L=1273]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     1e-266  886.3   9.6   1.4e-266  885.9   9.6    1.1  1  PF01601.16  Coronavirus S2 glycoprotein
+    2.8e-75  252.7   3.7    6.6e-75  251.5   3.7    1.7  1  PF09408.10  Spike receptor binding domain
+
+
+Domain annotation for each model (and alignments):
+>> PF01601.16  Coronavirus S2 glycoprotein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  885.9   9.6  1.5e-270  1.4e-266      15     605 .]     686    1270 ..     671    1270 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 885.9 bits;  conditional E-value: 1.5e-270
+                  XXXXEEEEEEEEXXSEEEXXXXXSSEEEEEEEEEEEEEEEEEEXXXXEEEEXHHHHTTSSXHHHHHHHGCGXSHHHHHHHHHHHHHHHHHHHHHHHHTTSSEEESHHSHS..EETTEEGTTTSBTTTSTSSSBHHHHHHHHHHHTTTHHHHHHHBEEEXXXXXXXXEEEXXSSSEEEEXXSSXHHHHHHHHHHHHHHHH.....HHH.SSSSTTHHHHHHHHHHHHTTSHTHHHHHTHHHHHHHHHHHHHHHHHHHHHHHSHHHHHHHHHHHHHHHHHHHHHHHSHHTTSSHSHHHHHHHHSCHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHTTSSXXSSTTTTSSSEEEEEEEEEETTEEEEEEEEEEEEEEEEEEEESEEE.....ETTEEEEESSSEEEE...ESSSE.EEESSSEEEBEXBSTSEEEEEESSSSSSEEESXXBXSSGGGCCXXXXXXXXXXXXSX.XXXXHHHHTTHHHHHHHHHHHHHHHHHHHHHGGGGHHHHHHHTTHHHHHTTTTTTTTTXXXXXXXXXXXXXXXXXXXXXXX...XXXXXXXXXXXXXXXXXXXXXX.XXXXX CS
+  PF01601.16   15 dgslvaivakqlsqgavsaiayvtenvaiPtnftisvtveylqvsmtkvsvdCaryvCggsleCakllkqygsvCktiesalasvarkedaevsellavskkafklaslsavsiGefnlssllpdpssrrkrsliedllfdkvvtsglgtvdaykkCtgglsikdlvCaqkynGllvlPgvltaeklalytaslvggia.....lGaltaavaiPfalalqarlnyvaltqdvllknqkklaasfnkaigniseglatvatalakiqdvvnkqgqalnelvaqlsknfgaissviqdiydrldkieadaqvdrlitGrlaalnvfvsqkltraaevrasrelakqkvneCvksqskrygfCGnGthllslaqaaPnGlvflhvvllPtqyknvtaisglCvkdadatqkavvkaeglalfkqlngkyy.itardmyePriitasdvvqienCdvvfvninkteldtlvpeyidvneelqkllenyk.pnvelpdldkfnatvlnltseidrlqevidnlneslvdleklnrletyikWPWyvWlaialvliivvlllllvcfstgCCgcigClgiscllssCskkkledyepv.kkvkl 605 
+                  + + ++i a+++s ga +++ay+++++aiPtnftisvt+e+l+vsmtk+svdC++y+Cg+s+eC++ll qygs+C+++++al+++a ++d++++e++a++k+++k++ ++   +G+fn+s++lpdps++ krs+iedllf+kv+++++g++++y++C+g++ ++dl+Caqk+nGl+vlP++lt+e++a yt++l++g+      +Ga +aa++iPfa+++++r+n++++tq+vl++nqk +a++fn aig+i+++l+++a al+k+qdvvn+++qaln+lv+qls+nfgaissv++di++rldk+ea++q+drlitGrl++l+++v+q+l+raae+ras++la++k++eCv +qskr++fCG+G+hl+s++q+aP+G+vflhv+++P q+kn+t+++++C     ++ ka +++eg+++    ng+++ +t+r++yeP+iit++++++++nCdvv++++n+t++d+l+pe+++++eel+k+++n++ p+v+l+d++ +na+v+n+++eidrl+ev++nlnesl+dl++l+++e+yikWPWy+Wl+++++li++v++++++c++t+CC+   Cl++ c+++sC+k++++d+epv k+vkl
+       query  686 SVASQSIIAYTMSLGAENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIYKTPPIK--DFGGFNFSQILPDPSKPSKRSFIEDLLFNKVTLADAGFIKQYGDCLGDIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTItsgwtFGA-GAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAIC-----HDGKAHFPREGVFVS---NGTHWfVTQRNFYEPQIITTDNTFVSGNCDVVIGIVNNTVYDPLQPELDSFKEELDKYFKNHTsPDVDLGDISGINASVVNIQKEIDRLNEVAKNLNESLIDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMVTIMLCCMTSCCS---CLKGCCSCGSCCKFDEDDSEPVlKGVKL 1270
+                  5677899*******************************************************************************************************..9********************************************************************************998876678879*9.************************************************************************************************************************************************************************************************.....8999*******9998...899999*******************************************************************************************************************************************...**********************888875 PP
+
+>> PF09408.10  Spike receptor binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  251.5   3.7   7.3e-79   6.6e-75       1     212 []     330     583 ..     330     583 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 251.5 bits;  conditional E-value: 7.3e-79
+  PF09408.10   1 pnlpd.CkieewlnaksvpsplnWERktfsnCnfnlssLlrfvqaesfsCnnidasklyglCFgsvsvDkFaipnsrkvdlqlGnsGflqsanYkidtaatsCqlyyslpkanvtvn.nynpssw................................nrryglndagvfk......qskrdvvysqellnapatvcpcklst..iksqCvnfnlngktgsgvltvgtkrfqcfqalgrdvsdktdsvcdpktle 212
+                 pn+++ C+++e++na++++s+++W+Rk +snC++++s+L+++ ++++f+C++++++kl++lCF++v++D+F+i++++++++++G++G ++++nYk+++++t+C+++++ ++ +  v  nyn+ +                                 n++++l+++g+ +      q++r+vv+s+ell+apatvc++k+st  +k++Cvnfn+ng+tg+gvlt ++k+f +fq++grd+ d+td+v+dp+tle
+       query 330 PNITNlCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKVGgNYNYLYRlfrksnlkpferdisteiyqagstpcngvegfNCYFPLQSYGFQPtngvgyQPYRVVVLSFELLHAPATVCGPKKSTnlVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFGRDIADTTDAVRDPQTLE 583
+                 8****************************************************************************************************************99988777777677****************************************99999*****************************999***********************************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (1273 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1147  (0.0639746); expected 358.6 (0.02)
+Passed bias filter:                      755  (0.0421105); expected 358.6 (0.02)
+Passed Vit filter:                       106  (0.00591221); expected 17.9 (0.001)
+Passed Fwd filter:                        18  (0.00100396); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 2.08u 0.79s 00:00:02.87 Elapsed: 00:00:14.16
+# Mc/sec: 273.12
+//
+[ok]

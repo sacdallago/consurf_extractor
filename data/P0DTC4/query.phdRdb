@@ -1,0 +1,116 @@
+# Perl-RDB
+# 
+# PHDhtm_top: prediction of topology for helical transmembrane proteins
+# 
+# PDBID         : query
+# LENGTH        :    75
+# NHTM_BEST     :      2     (number of helices for best model)
+# NHTM_2ND_BEST :      1     (number of helices for second best model)
+# REL_BEST      :  0.707     (reliability of best model =zscore)
+# REL_BEST_DIFF :  0.062     (reliability of best model =1st-2nd)
+# REL_BEST_DPROJ:      6     (reliability of best model projection of (1st-2nd)
+#
+# MODEL         : iteratively adding transmembrane helices (HTM's)
+# MODEL         : N HTM      , Total Score  , Best HTM   ,    C -     N
+# MODEL_DAT     : 1          , 0.7233       , 0.9111     ,   16 -    40
+# MODEL_DAT     : 2          , 0.7852       , 0.6290     ,   45 -    62
+#
+# HTMTOP_OBS    :  unk       (first loop region)
+# HTMTOP_PRD    :   in       (first loop region, mode=top_fin)
+# HTMTOP_MODPRD :   in       (first loop region, mode=PRHL)
+# HTMTOP_RID    : -5.929     (difference num(K+R), even-odd)
+# HTMTOP_RIP    :      5     (reliability index =int(min{9,2*sqrt((DC)^2)}) )
+# 
+# NOTATION No   : residue number 
+# NOTATION AA   : amino acid one letter code
+# NOTATION PHL  : predicted transmembrane helices
+# NOTATION PHL  :    H=helical membrane, L=no helical transmembrane
+# NOTATION RI_S : reliability of secondary structure prediction , 0-9
+# NOTATION pH   : probability of predicting helix, 0-9
+# NOTATION pL   : probability of predicting loop
+# NOTATION OtH  : network output for helix, 0-100
+# NOTATION OtL  : network output for loop
+# NOTATION PRHL : refined prediction (maximum score model)
+# NOTATION PR2HL: refined prediction (second best maximum score model)
+# NOTATION PTHLA: predicted model for maximal charge difference (all)
+# NOTATION PTHLS: predicted model for maximal charge difference (sep)
+# NOTATION PiTo : predicted topology of transmembrane regions
+# NOTATION PiTo :    i=loop inside, T=transmembrane, o=loop outside
+# 
+No	AA	PHL	RI_H	pH	pL	OtH	OtL	PRHL	PR2HL	PiTo
+4N	1S	1S	1N	1N	1N	3N	3N	1S	1S	1S
+   1	M	L	9	0	9	  2	 97	L	L	i
+   2	Y	L	9	0	9	  2	 97	L	L	i
+   3	S	L	9	0	9	  2	 97	L	L	i
+   4	F	L	9	0	9	  2	 96	L	L	i
+   5	V	L	9	0	9	  3	 96	L	L	i
+   6	S	L	9	0	9	  4	 95	L	L	i
+   7	E	L	8	0	9	  5	 94	L	L	i
+   8	E	L	8	0	9	  7	 92	L	L	i
+   9	T	L	7	1	8	 10	 89	L	L	i
+  10	G	L	6	1	8	 15	 84	L	L	i
+  11	T	L	4	2	7	 28	 71	L	L	i
+  12	L	L	0	4	5	 46	 53	L	L	i
+  13	I	H	3	6	3	 65	 34	L	L	i
+  14	V	H	5	7	2	 75	 24	L	L	i
+  15	N	H	6	8	1	 81	 18	L	L	i
+  16	S	H	7	8	1	 87	 12	H	H	T
+  17	V	H	8	9	0	 90	  9	H	H	T
+  18	L	H	8	9	0	 92	  7	H	H	T
+  19	L	H	8	9	0	 92	  7	H	H	T
+  20	F	H	8	9	0	 93	  6	H	H	T
+  21	L	H	8	9	0	 92	  7	H	H	T
+  22	A	H	8	9	0	 92	  7	H	H	T
+  23	F	H	8	9	0	 91	  8	H	H	T
+  24	V	H	8	9	0	 91	  8	H	H	T
+  25	V	H	8	9	0	 91	  8	H	H	T
+  26	F	H	8	9	0	 91	  8	H	H	T
+  27	L	H	8	9	0	 91	  8	H	H	T
+  28	L	H	8	9	0	 91	  8	H	H	T
+  29	V	H	8	9	0	 90	  9	H	H	T
+  30	T	H	8	9	0	 90	  9	H	H	T
+  31	L	H	8	9	0	 90	  9	H	H	T
+  32	A	H	8	9	0	 90	  9	H	H	T
+  33	I	H	7	8	1	 89	 10	H	H	T
+  34	L	H	7	8	1	 89	 10	H	H	T
+  35	T	H	7	8	1	 89	 10	H	H	T
+  36	A	H	7	8	1	 89	 10	H	H	T
+  37	L	H	7	8	1	 89	 10	H	H	T
+  38	R	H	7	8	1	 88	 11	H	H	T
+  39	L	H	7	8	1	 89	 10	H	H	T
+  40	C	H	7	8	1	 89	 10	H	H	T
+  41	A	H	7	8	1	 89	 10	L	L	o
+  42	Y	H	7	8	1	 89	 10	L	L	o
+  43	C	H	7	8	1	 89	 10	L	L	o
+  44	C	H	7	8	1	 89	 10	L	L	o
+  45	N	H	7	8	1	 89	 10	H	L	T
+  46	I	H	8	9	0	 90	  9	H	L	T
+  47	V	H	7	8	1	 89	 10	H	L	T
+  48	N	H	7	8	1	 89	 10	H	L	T
+  49	V	H	8	9	0	 90	  9	H	L	T
+  50	S	H	8	9	0	 90	  9	H	L	T
+  51	L	H	7	8	1	 89	 10	H	L	T
+  52	V	H	7	8	1	 87	 12	H	L	T
+  53	K	H	6	8	1	 81	 17	H	L	T
+  54	P	H	5	7	2	 77	 22	H	L	T
+  55	S	H	4	7	2	 73	 26	H	L	T
+  56	F	H	2	6	3	 63	 36	H	L	T
+  57	Y	L	0	4	5	 47	 52	H	L	T
+  58	V	L	3	3	6	 30	 69	H	L	T
+  59	Y	L	6	1	8	 18	 81	H	L	T
+  60	S	L	7	1	8	 10	 89	H	L	T
+  61	R	L	8	0	9	  5	 94	H	L	T
+  62	V	L	9	0	9	  3	 96	H	L	T
+  63	K	L	9	0	9	  2	 97	L	L	i
+  64	N	L	9	0	9	  1	 98	L	L	i
+  65	L	L	9	0	9	  1	 98	L	L	i
+  66	N	L	9	0	9	  1	 98	L	L	i
+  67	S	L	9	0	9	  1	 98	L	L	i
+  68	S	L	9	0	9	  0	 99	L	L	i
+  69	R	L	9	0	9	  0	 99	L	L	i
+  70	V	L	9	0	9	  0	 99	L	L	i
+  71	P	L	9	0	9	  1	 98	L	L	i
+  72	D	L	9	0	9	  1	 98	L	L	i
+  73	L	L	9	0	9	  1	 98	L	L	i
+  74	L	L	9	0	9	  1	 98	L	L	i
+  75	V	L	9	0	9	  1	 98	L	L	i

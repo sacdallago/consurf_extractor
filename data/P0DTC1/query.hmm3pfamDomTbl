@@ -1,0 +1,26 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Peptidase_C30        PF05409.13   288 query                -           4405  6.1e-135  449.1   0.3   1   1  8.3e-138  1.1e-134  448.2   0.3     1   288  3292  3582  3292  3582 0.99 Coronavirus  endopeptidase C30
+Viral_protease       PF08715.10   320 query                -           4405  1.2e-130  435.5   5.8   1   1  2.1e-133  2.9e-130  434.3   5.8     1   320  1564  1882  1564  1882 0.99 Papain like viral protease
+nsp8                 PF08717.10   198 query                -           4405   1.7e-95  318.6   6.5   1   1   2.8e-98   3.8e-95  317.4   6.5     1   198  3943  4140  3943  4140 1.00 nsp8 replicase
+SUD-M                PF11633.8    143 query                -           4405   1.2e-77  258.5   0.3   1   1   2.8e-80   3.8e-77  256.8   0.3     1   143  1351  1493  1351  1493 1.00 Single-stranded poly(A) binding domain
+Nsp1                 PF11501.8    115 query                -           4405   5.2e-64  213.5   0.8   1   1   3.8e-67   5.2e-64  213.5   0.8     1   115    13   127    13   127 1.00 Non structural protein Nsp1
+NSP10                PF09401.10   122 query                -           4405   1.2e-59  199.7  13.0   1   1   1.2e-62   1.6e-59  199.3  10.8     1   122  4262  4384  4262  4384 0.99 RNA synthesis protein NSP10
+nsp9                 PF08710.10   111 query                -           4405   3.9e-48  162.5   0.0   1   1   8.9e-51   1.2e-47  160.8   0.0     1   111  4141  4253  4141  4253 0.99 nsp9 replicase
+Corona_NSP4_C        PF16348.5     96 query                -           4405   5.9e-40  136.0   1.2   1   1   4.3e-43   5.9e-40  136.0   1.2     1    95  3166  3261  3166  3262 0.97 Coronavirus nonstructural protein 4 C-terminus
+NAR                  PF16251.5    117 query                -           4405   7.1e-38  129.9   0.7   1   1   1.8e-40   2.4e-37  128.2   0.7     8   117  1922  2019  1909  2019 0.95 Nucleic acid-binding domain (NAR)
+nsp7                 PF08716.10    83 query                -           4405   1.1e-36  125.2   6.8   1   1   3.3e-39   4.6e-36  123.3   6.8     1    83  3860  3942  3860  3942 0.99 nsp7 replicase
+Nsp3_PL2pro          PF12124.8     66 query                -           4405   2.7e-31  107.1   0.3   1   1   1.9e-33   2.6e-30  104.0   0.1     2    66  1498  1561  1497  1561 0.97 Coronavirus polyprotein cleavage domain
+DUF3655              PF12379.8     69 query                -           4405   3.8e-23   81.5  15.7   1   1   5.8e-26   8.1e-23   80.5  15.7     1    68   920   986   920   987 0.96 Protein of unknown function (DUF3655)
+Macro                PF01661.21   118 query                -           4405   1.7e-17   63.5   0.2   1   1     6e-20   8.2e-17   61.3   0.2     1   117  1058  1164  1058  1165 0.94 Macro domain
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      query.fasta
+# Target file:     /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# Option settings: hmmscan -o query.hmm3pfam --tblout query.hmm3pfamTbl --domtblout query.hmm3pfamDomTbl --acc --notextw --cut_ga --cpu 1 /var/tmp/rost_db/data/pfam/Pfam-A.hmm query.fasta 
+# Current dir:     /var/tmp/5119353.2.default/_NJvodvSPO
+# Date:            Tue Mar 31 20:21:23 2020
+# [ok]

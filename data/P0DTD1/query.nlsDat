@@ -1,0 +1,3 @@
+#File contains Motif stat from db for NLS found in unk sequence
+#Motif_Name	No_Found	%oE	%oX	Protein List
+inputSequence	K[GA]K[AG]KK[AG]	Potential	5	100	0	tp2a_crigr,t2fa_drome,tp2a_mouse,cebb_rat,tp2a_rat	nuc,nuc,nuc,nuc,nuc

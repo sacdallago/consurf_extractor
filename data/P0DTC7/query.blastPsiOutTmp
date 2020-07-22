@@ -1,0 +1,417 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= query
+         (121 letters)
+
+Database: big_80 
+           38,856,661 sequences; 11,002,566,987 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+UniRef50_P59635 Protein 7a n=105 Tax=Coronaviridae TaxID=11118 R...   215   6e-54
+UniRef50_UPI0000683900 UPI0000683900 related cluster n=2 Tax=unk...   158   9e-37
+UniRef50_Q5DIB9 Uncharacterized protein 4 n=1 Tax=SARS coronavir...    89   6e-16
+UniRef50_A0A482JZL9 ORF9 n=4 Tax=Coronaviridae TaxID=11118 RepID...    49   9e-04
+
+>UniRef50_P59635 Protein 7a n=105 Tax=Coronaviridae TaxID=11118
+           RepID=NS7A_CVHSA
+          Length = 122
+
+ Score =  215 bits (547), Expect = 6e-54,   Method: Compositional matrix adjust.
+ Identities = 104/122 (85%), Positives = 110/122 (90%), Gaps = 1/122 (0%)
+
+Query: 1   MKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFS 60
+           MKIILFL LI   +CELYHYQECVRGTTVLLKEPC SGTYEGNSPFHPLADNKFALTC S
+Sbjct: 1   MKIILFLTLIVFTSCELYHYQECVRGTTVLLKEPCPSGTYEGNSPFHPLADNKFALTCTS 60
+
+Query: 61  TQFAFACPDGVKHVYQLRARSVSPKLFIRQEEV-QELYSPIFLIVAAIVFITLCFTLKRK 119
+           T FAFAC DG +H YQLRARSVSPKLFIRQEEV QELYSP+FLIVAA+VF+ LCFT+KRK
+Sbjct: 61  THFAFACADGTRHTYQLRARSVSPKLFIRQEEVQQELYSPLFLIVAALVFLILCFTIKRK 120
+
+Query: 120 TE 121
+           TE
+Sbjct: 121 TE 122
+
+
+>UniRef50_UPI0000683900 UPI0000683900 related cluster n=2
+          Tax=unknown TaxID= RepID=UPI0000683900
+          Length = 87
+
+ Score =  158 bits (399), Expect = 9e-37,   Method: Compositional matrix adjust.
+ Identities = 76/84 (90%), Positives = 77/84 (91%), Gaps = 1/84 (1%)
+
+Query: 16 ELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFSTQFAFACPDGVKHVY 75
+          ELYHYQECVRGTTVLLKEPC SGTYEGNSPFHPLADNKFALTC ST FAFAC DG +H Y
+Sbjct: 3  ELYHYQECVRGTTVLLKEPCPSGTYEGNSPFHPLADNKFALTCTSTHFAFACADGTRHTY 62
+
+Query: 76 QLRARSVSPKLFIRQEEV-QELYS 98
+          QLRARSVSPKLFIRQEEV QELYS
+Sbjct: 63 QLRARSVSPKLFIRQEEVQQELYS 86
+
+
+>UniRef50_Q5DIB9 Uncharacterized protein 4 n=1 Tax=SARS
+          coronavirus WH20 TaxID=312027 RepID=Q5DIB9_CVHSA
+          Length = 101
+
+ Score = 89.4 bits (220), Expect = 6e-16,   Method: Compositional matrix adjust.
+ Identities = 46/77 (59%), Positives = 53/77 (68%), Gaps = 6/77 (7%)
+
+Query: 1  MKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFH-PLADNKFALTCF 59
+          MKIILFL LI   +CELYHYQECVRGTTVLLKEPC SGTYEGNSPF  P  +N + +  F
+Sbjct: 1  MKIILFLTLIVFTSCELYHYQECVRGTTVLLKEPCPSGTYEGNSPFAIPCFNNAYYILVF 60
+
+Query: 60 STQFAFACPDGVKHVYQ 76
+          +       P   + +YQ
+Sbjct: 61 TRN-----PGSRRTLYQ 72
+
+
+>UniRef50_A0A482JZL9 ORF9 n=4 Tax=Coronaviridae TaxID=11118
+           RepID=A0A482JZL9_9NIDO
+          Length = 121
+
+ Score = 48.9 bits (115), Expect = 9e-04,   Method: Compositional matrix adjust.
+ Identities = 34/111 (30%), Positives = 53/111 (47%), Gaps = 9/111 (8%)
+
+Query: 13  ATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKF---ALTC-FSTQFAFACP 68
+           A  E++HY +CVRGT+  + +PC  G  E  SP     + ++   A++C   TQ   +CP
+Sbjct: 16  AAPEIHHYIDCVRGTSTTILQPC-DGVIESTSPVQFTPNTQYGSLAVSCSLVTQIRISCP 74
+
+Query: 69  DGVKHVYQLRARSVSPKLFIRQEEVQELYSPIFLIVAAIVFITLCFTLKRK 119
+            G  H + +R  S        Q +  EL     LIV  ++ I L    +R+
+Sbjct: 75  HG-NHTFHVRPVSFRTHTRYSQPQGNELQC---LIVTLLIVIVLYLFFRRR 121
+
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+UniRef50_P59635 Protein 7a n=105 Tax=Coronaviridae TaxID=11118 R...   179   6e-43
+UniRef50_UPI0000683900 UPI0000683900 related cluster n=2 Tax=unk...   134   2e-29
+UniRef50_A0A482JZL9 ORF9 n=4 Tax=Coronaviridae TaxID=11118 RepID...   116   4e-24
+UniRef50_Q5DIB9 Uncharacterized protein 4 n=1 Tax=SARS coronavir...    97   3e-18
+
+Sequences not found previously or not previously below threshold:
+
+UniRef50_A0A482JX75 ORF9 n=1 Tax=Bat coronavirus TaxID=1508220 R...    64   2e-08
+
+>UniRef50_P59635 Protein 7a n=105 Tax=Coronaviridae TaxID=11118
+           RepID=NS7A_CVHSA
+          Length = 122
+
+ Score =  179 bits (453), Expect = 6e-43,   Method: Composition-based stats.
+ Identities = 104/122 (85%), Positives = 110/122 (90%), Gaps = 1/122 (0%)
+
+Query: 1   MKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFS 60
+           MKIILFL LI   +CELYHYQECVRGTTVLLKEPC SGTYEGNSPFHPLADNKFALTC S
+Sbjct: 1   MKIILFLTLIVFTSCELYHYQECVRGTTVLLKEPCPSGTYEGNSPFHPLADNKFALTCTS 60
+
+Query: 61  TQFAFACPDGVKHVYQLRARSVSPKLFIRQEEV-QELYSPIFLIVAAIVFITLCFTLKRK 119
+           T FAFAC DG +H YQLRARSVSPKLFIRQEEV QELYSP+FLIVAA+VF+ LCFT+KRK
+Sbjct: 61  THFAFACADGTRHTYQLRARSVSPKLFIRQEEVQQELYSPLFLIVAALVFLILCFTIKRK 120
+
+Query: 120 TE 121
+           TE
+Sbjct: 121 TE 122
+
+
+>UniRef50_UPI0000683900 UPI0000683900 related cluster n=2
+          Tax=unknown TaxID= RepID=UPI0000683900
+          Length = 87
+
+ Score =  134 bits (336), Expect = 2e-29,   Method: Composition-based stats.
+ Identities = 76/85 (89%), Positives = 77/85 (90%), Gaps = 1/85 (1%)
+
+Query: 15 CELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFSTQFAFACPDGVKHV 74
+           ELYHYQECVRGTTVLLKEPC SGTYEGNSPFHPLADNKFALTC ST FAFAC DG +H 
+Sbjct: 2  PELYHYQECVRGTTVLLKEPCPSGTYEGNSPFHPLADNKFALTCTSTHFAFACADGTRHT 61
+
+Query: 75 YQLRARSVSPKLFIRQEEV-QELYS 98
+          YQLRARSVSPKLFIRQEEV QELYS
+Sbjct: 62 YQLRARSVSPKLFIRQEEVQQELYS 86
+
+
+>UniRef50_A0A482JZL9 ORF9 n=4 Tax=Coronaviridae TaxID=11118
+           RepID=A0A482JZL9_9NIDO
+          Length = 121
+
+ Score =  116 bits (290), Expect = 4e-24,   Method: Composition-based stats.
+ Identities = 34/111 (30%), Positives = 53/111 (47%), Gaps = 9/111 (8%)
+
+Query: 13  ATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKF---ALTC-FSTQFAFACP 68
+           A  E++HY +CVRGT+  + +PC  G  E  SP     + ++   A++C   TQ   +CP
+Sbjct: 16  AAPEIHHYIDCVRGTSTTILQPC-DGVIESTSPVQFTPNTQYGSLAVSCSLVTQIRISCP 74
+
+Query: 69  DGVKHVYQLRARSVSPKLFIRQEEVQELYSPIFLIVAAIVFITLCFTLKRK 119
+            G  H + +R  S        Q +  EL     LIV  ++ I L    +R+
+Sbjct: 75  HG-NHTFHVRPVSFRTHTRYSQPQGNELQC---LIVTLLIVIVLYLFFRRR 121
+
+
+>UniRef50_Q5DIB9 Uncharacterized protein 4 n=1 Tax=SARS
+          coronavirus WH20 TaxID=312027 RepID=Q5DIB9_CVHSA
+          Length = 101
+
+ Score = 97.0 bits (240), Expect = 3e-18,   Method: Composition-based stats.
+ Identities = 46/77 (59%), Positives = 53/77 (68%), Gaps = 6/77 (7%)
+
+Query: 1  MKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFH-PLADNKFALTCF 59
+          MKIILFL LI   +CELYHYQECVRGTTVLLKEPC SGTYEGNSPF  P  +N + +  F
+Sbjct: 1  MKIILFLTLIVFTSCELYHYQECVRGTTVLLKEPCPSGTYEGNSPFAIPCFNNAYYILVF 60
+
+Query: 60 STQFAFACPDGVKHVYQ 76
+          +       P   + +YQ
+Sbjct: 61 TRN-----PGSRRTLYQ 72
+
+
+>UniRef50_A0A482JX75 ORF9 n=1 Tax=Bat coronavirus TaxID=1508220
+           RepID=A0A482JX75_9NIDO
+          Length = 120
+
+ Score = 64.3 bits (155), Expect = 2e-08,   Method: Composition-based stats.
+ Identities = 27/125 (21%), Positives = 60/125 (48%), Gaps = 12/125 (9%)
+
+Query: 1   MKIILFLALIT-LATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFA---- 55
+           M+++  L LI+ + + +++HY +CV G++     PC  G  +  S    + D ++     
+Sbjct: 1   MRVVALLLLISPVFSRQVFHYIDCVAGSSTTFGLPC-EGLIQTQSSVQFVPDQQYGRVGV 59
+
+Query: 56  --LTCFSTQFAFACPDGVKHVYQLRARSVSPKLFIRQEEVQELYSPIFLIVAAIVFITLC 113
+             ++ +   F  +CP G  H + +R+ +    + + Q +  +L   + LI+  ++ + L 
+Sbjct: 60  LCISNYVQTFRISCPHG-NHTFIIRSTTYRTNVRVTQPQSGDL---MMLILCFLIILVLY 115
+
+Query: 114 FTLKR 118
+             L R
+Sbjct: 116 VCLWR 120
+
+
+Searching..................................................done
+
+
+Results from round 3
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+UniRef50_P59635 Protein 7a n=105 Tax=Coronaviridae TaxID=11118 R...   168   8e-40
+UniRef50_UPI0000683900 UPI0000683900 related cluster n=2 Tax=unk...   127   1e-27
+UniRef50_A0A482JX75 ORF9 n=1 Tax=Bat coronavirus TaxID=1508220 R...   119   4e-25
+UniRef50_A0A482JZL9 ORF9 n=4 Tax=Coronaviridae TaxID=11118 RepID...   111   1e-22
+UniRef50_Q5DIB9 Uncharacterized protein 4 n=1 Tax=SARS coronavir...    90   3e-16
+
+Sequences not found previously or not previously below threshold:
+
+
+CONVERGED!
+>UniRef50_P59635 Protein 7a n=105 Tax=Coronaviridae TaxID=11118
+           RepID=NS7A_CVHSA
+          Length = 122
+
+ Score =  168 bits (426), Expect = 8e-40,   Method: Composition-based stats.
+ Identities = 104/122 (85%), Positives = 110/122 (90%), Gaps = 1/122 (0%)
+
+Query: 1   MKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFS 60
+           MKIILFL LI   +CELYHYQECVRGTTVLLKEPC SGTYEGNSPFHPLADNKFALTC S
+Sbjct: 1   MKIILFLTLIVFTSCELYHYQECVRGTTVLLKEPCPSGTYEGNSPFHPLADNKFALTCTS 60
+
+Query: 61  TQFAFACPDGVKHVYQLRARSVSPKLFIRQEEV-QELYSPIFLIVAAIVFITLCFTLKRK 119
+           T FAFAC DG +H YQLRARSVSPKLFIRQEEV QELYSP+FLIVAA+VF+ LCFT+KRK
+Sbjct: 61  THFAFACADGTRHTYQLRARSVSPKLFIRQEEVQQELYSPLFLIVAALVFLILCFTIKRK 120
+
+Query: 120 TE 121
+           TE
+Sbjct: 121 TE 122
+
+
+>UniRef50_UPI0000683900 UPI0000683900 related cluster n=2
+          Tax=unknown TaxID= RepID=UPI0000683900
+          Length = 87
+
+ Score =  127 bits (320), Expect = 1e-27,   Method: Composition-based stats.
+ Identities = 76/85 (89%), Positives = 77/85 (90%), Gaps = 1/85 (1%)
+
+Query: 15 CELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFALTCFSTQFAFACPDGVKHV 74
+           ELYHYQECVRGTTVLLKEPC SGTYEGNSPFHPLADNKFALTC ST FAFAC DG +H 
+Sbjct: 2  PELYHYQECVRGTTVLLKEPCPSGTYEGNSPFHPLADNKFALTCTSTHFAFACADGTRHT 61
+
+Query: 75 YQLRARSVSPKLFIRQEEV-QELYS 98
+          YQLRARSVSPKLFIRQEEV QELYS
+Sbjct: 62 YQLRARSVSPKLFIRQEEVQQELYS 86
+
+
+>UniRef50_A0A482JX75 ORF9 n=1 Tax=Bat coronavirus TaxID=1508220
+           RepID=A0A482JX75_9NIDO
+          Length = 120
+
+ Score =  119 bits (299), Expect = 4e-25,   Method: Composition-based stats.
+ Identities = 27/125 (21%), Positives = 60/125 (48%), Gaps = 12/125 (9%)
+
+Query: 1   MKIILFLALIT-LATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKFA---- 55
+           M+++  L LI+ + + +++HY +CV G++     PC  G  +  S    + D ++     
+Sbjct: 1   MRVVALLLLISPVFSRQVFHYIDCVAGSSTTFGLPC-EGLIQTQSSVQFVPDQQYGRVGV 59
+
+Query: 56  --LTCFSTQFAFACPDGVKHVYQLRARSVSPKLFIRQEEVQELYSPIFLIVAAIVFITLC 113
+             ++ +   F  +CP G  H + +R+ +    + + Q +  +L   + LI+  ++ + L 
+Sbjct: 60  LCISNYVQTFRISCPHG-NHTFIIRSTTYRTNVRVTQPQSGDL---MMLILCFLIILVLY 115
+
+Query: 114 FTLKR 118
+             L R
+Sbjct: 116 VCLWR 120
+
+
+>UniRef50_A0A482JZL9 ORF9 n=4 Tax=Coronaviridae TaxID=11118
+           RepID=A0A482JZL9_9NIDO
+          Length = 121
+
+ Score =  111 bits (277), Expect = 1e-22,   Method: Composition-based stats.
+ Identities = 34/111 (30%), Positives = 53/111 (47%), Gaps = 9/111 (8%)
+
+Query: 13  ATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLADNKF---ALTC-FSTQFAFACP 68
+           A  E++HY +CVRGT+  + +PC  G  E  SP     + ++   A++C   TQ   +CP
+Sbjct: 16  AAPEIHHYIDCVRGTSTTILQPC-DGVIESTSPVQFTPNTQYGSLAVSCSLVTQIRISCP 74
+
+Query: 69  DGVKHVYQLRARSVSPKLFIRQEEVQELYSPIFLIVAAIVFITLCFTLKRK 119
+            G  H + +R  S        Q +  EL     LIV  ++ I L    +R+
+Sbjct: 75  HG-NHTFHVRPVSFRTHTRYSQPQGNELQC---LIVTLLIVIVLYLFFRRR 121
+
+
+>UniRef50_Q5DIB9 Uncharacterized protein 4 n=1 Tax=SARS
+          coronavirus WH20 TaxID=312027 RepID=Q5DIB9_CVHSA
+          Length = 101
+
+ Score = 90.1 bits (222), Expect = 3e-16,   Method: Composition-based stats.
+ Identities = 46/77 (59%), Positives = 53/77 (68%), Gaps = 6/77 (7%)
+
+Query: 1  MKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFH-PLADNKFALTCF 59
+          MKIILFL LI   +CELYHYQECVRGTTVLLKEPC SGTYEGNSPF  P  +N + +  F
+Sbjct: 1  MKIILFLTLIVFTSCELYHYQECVRGTTVLLKEPCPSGTYEGNSPFAIPCFNNAYYILVF 60
+
+Query: 60 STQFAFACPDGVKHVYQ 76
+          +       P   + +YQ
+Sbjct: 61 TRN-----PGSRRTLYQ 72
+
+
+  Database: big_80
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,958,422
+  Number of sequences in database:  3,040,876
+  
+  Database: /var/tmp/rost_db/data/big/big_80.01
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 997,145,285
+  Number of sequences in database:  2,854,509
+  
+  Database: /var/tmp/rost_db/data/big/big_80.02
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 997,089,814
+  Number of sequences in database:  2,909,903
+  
+  Database: /var/tmp/rost_db/data/big/big_80.03
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,328,211
+  Number of sequences in database:  3,671,715
+  
+  Database: /var/tmp/rost_db/data/big/big_80.04
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,101,693
+  Number of sequences in database:  3,898,283
+  
+  Database: /var/tmp/rost_db/data/big/big_80.05
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,256,834
+  Number of sequences in database:  3,743,050
+  
+  Database: /var/tmp/rost_db/data/big/big_80.06
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,299,472
+  Number of sequences in database:  3,700,488
+  
+  Database: /var/tmp/rost_db/data/big/big_80.07
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,212,872
+  Number of sequences in database:  3,787,048
+  
+  Database: /var/tmp/rost_db/data/big/big_80.08
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,363,209
+  Number of sequences in database:  3,636,697
+  
+  Database: /var/tmp/rost_db/data/big/big_80.09
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,048,001
+  Number of sequences in database:  3,951,876
+  
+  Database: /var/tmp/rost_db/data/big/big_80.10
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,502,919
+  Number of sequences in database:  3,497,018
+  
+  Database: /var/tmp/rost_db/data/big/big_80.11
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 41,260,255
+  Number of sequences in database:  165,198
+  
+Lambda     K      H
+   0.320    0.135    0.368 
+
+Lambda     K      H
+   0.267   0.0412    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 6,795,296,902
+Number of Sequences: 38856661
+Number of extensions: 239478123
+Number of successful extensions: 878300
+Number of sequences better than  1.0: 11
+Number of HSP's better than  1.0 without gapping: 12
+Number of HSP's successfully gapped in prelim test: 10
+Number of HSP's that attempted gapping in prelim test: 878219
+Number of HSP's gapped (non-prelim): 69
+length of query: 121
+length of database: 11,002,566,987
+effective HSP length: 85
+effective length of query: 36
+effective length of database: 11,994,718,098
+effective search space: 431809851528
+effective search space used: 431809851528
+T: 11
+A: 40
+X1: 16 ( 7.4 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 40 (21.3 bits)
+S2: 89 (38.9 bits)

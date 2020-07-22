@@ -1,0 +1,221 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             query.fasta
+# target HMM database:             /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# output directed to file:         query.hmm3pfam
+# per-seq hits tabular output:     query.hmm3pfamTbl
+# per-dom hits tabular output:     query.hmm3pfamDomTbl
+# prefer accessions over names:    yes
+# max ASCII text line length:      unlimited
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query  [L=4405]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.1e-135  449.1   0.3   1.1e-134  448.2   0.3    1.5  1  PF05409.13  Coronavirus  endopeptidase C30
+   1.2e-130  435.5   5.8   2.9e-130  434.3   5.8    1.7  1  PF08715.10  Papain like viral protease
+    1.7e-95  318.6   6.5    3.8e-95  317.4   6.5    1.7  1  PF08717.10  nsp8 replicase
+    1.2e-77  258.5   0.3    3.8e-77  256.8   0.3    2.0  1  PF11633.8   Single-stranded poly(A) binding domain
+    5.2e-64  213.5   0.8    5.2e-64  213.5   0.8    2.0  1  PF11501.8   Non structural protein Nsp1
+    1.2e-59  199.7  13.0    1.6e-59  199.3  10.8    2.5  1  PF09401.10  RNA synthesis protein NSP10
+    3.9e-48  162.5   0.0    1.2e-47  160.8   0.0    2.0  1  PF08710.10  nsp9 replicase
+    5.9e-40  136.0   1.2    5.9e-40  136.0   1.2    2.9  1  PF16348.5   Coronavirus nonstructural protein 4 C-terminus
+    7.1e-38  129.9   0.7    2.4e-37  128.2   0.7    2.0  1  PF16251.5   Nucleic acid-binding domain (NAR)
+    1.1e-36  125.2   6.8    4.6e-36  123.3   6.8    2.2  1  PF08716.10  nsp7 replicase
+    2.7e-31  107.1   0.3    2.6e-30  104.0   0.1    2.8  1  PF12124.8   Coronavirus polyprotein cleavage domain
+    3.8e-23   81.5  15.7    8.1e-23   80.5  15.7    1.6  1  PF12379.8   Protein of unknown function (DUF3655)
+    1.7e-17   63.5   0.2    8.2e-17   61.3   0.2    2.3  1  PF01661.21  Macro domain
+
+
+Domain annotation for each model (and alignments):
+>> PF05409.13  Coronavirus  endopeptidase C30
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  448.2   0.3  8.3e-138  1.1e-134       1     288 []    3292    3582 ..    3292    3582 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 448.2 bits;  conditional E-value: 8.3e-138
+                  EEEETTEEEEEGGGGSSTTTSS.--HHHHHHTSTGGGEEEEETTEEEEEEEEEEETTEEEEEESSEETT--SEEE----TT-EEEEEEEETTEEEEEEEEEB-TTS-BESGTTTTETTEEEEEEETTEEEEEEEEEEEETTSEEEEE-TTS-BGGG--SSSSSTTTTTS-B-HHHHHHHHHHHHHTT--TTCSST---HHHHHHHHHCTTB----CCGG..CHHHHHHHT--HHHHHHHHHH.HTTTTTTS-BTTBSS--TSS-HHHHHHHHTTSXXXXXXXXXXXXXXXXX CS
+  PF05409.13    1 GlWLddtvyCPrhviakakdsv.edyedllsiarlhdfsvvsgnvqLtvvsaklkgvlLklkvetanaetPkykfvkvkpGesftilaaYdGvvqgvyevtlrsnktikgsflaGaCGsvGynlekdtvefvYmhhlelsngvhtGtdleGefYGgyvDeevaqlestdqlltdnvvafLYaailnverWfleseevsledfnawakkngftelkaeda..lskLaaktgvsvekllaaikr.lnsgfgGktilgkssledeftpeevvkqlagvklqsgkvkkivkktslw 288 
+                  GlWLdd+vyCPrhvi++++d++ ++yedll+++++h+f v++gnvqL+v+++++++++Lklkv+tan++tPkykfv+++pG++f++la+Y+G+++gvy++++r+n tikgsfl+G+CGsvG+n+++d+v+f+Ymhh+el++gvh+GtdleG+fYG++vD+++aq+++td+++t+nv+a+LYaa++n++rWfl++++++l+dfn +a+k+++++l+++++  l  L+a+tg++v +++a++k+ l++g++G+tilg++ ledeftp++vv+q++gv++qs+ vk+ +k+t++w
+       query 3292 GLWLDDVVYCPRHVICTSEDMLnPNYEDLLIRKSNHNFLVQAGNVQLRVIGHSMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFCYMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYEPLTQDHVdiLGPLSAQTGIAVLDMCASLKElLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQSA-VKRTIKGTHHW 3582
+                  9*********************9***************************************************************************************************************************************************************************************************9999********************89**********************************87.*********99 PP
+
+>> PF08715.10  Papain like viral protease
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  434.3   5.8  2.1e-133  2.9e-130       1     320 []    1564    1882 ..    1564    1882 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 434.3 bits;  conditional E-value: 2.1e-133
+                  C--EEEEEEESSSSSEEEEEEETTS-HHHHHSSEEETTCE-TTSSSGGGGTTTEEEE---SHHHHHHHHHHHHCCCT--CCHHHHHHHHC..CTTS-EEEETTEEEE-S-TTTHHHHHHHHHHCCTT--BSTHCHHHHHHHHHCT--HHHHHHHHHHTT--TTS-B-HHHHHHHHHTTBSSTTTCEEEEEEEECTTEEEEEEEECHHHHEEESSSSHHHHHCEEEEETTTSSEEEEEEEEEECCEEEEEESSSEEEEEEECTTSECEE..EECETTSEEEEEEECTCCEE..CTTCCEEESCEEEEEEEEEEEECEEE---XXXXX CS
+  PF08715.10    1 evkvitifvteDgvnlhsvvvktdkslgqqfGvvyakdkdlskvvpaddvedkellkvpsvDtleseafkdileyatlDesalaiYlsal..akkwkvqqvdgllvlkwaDnnCwvssvlvaLqaakvkFkaqaLdeAwakllaGDaedFvAlvyavarkkvGdlgDaeetltkLakhldaeaakrllkksvcveCgakktelagveavivvaavkldnlktgysipcvcGadatdevveaessfvllsaedlPaaeskledgvalva..fsGsvdkGHYtydtAkkaly..dgaklvkfdkkklsvtavftkeafktetvkPvak 320 
+                  ev++i++f+t+D++nlh++vv++++++gqqfG++y++++d++k++p++ +e+k++ ++p++Dtl+ eaf+   +y+t D s+l++Y+sal  +kkwk++qv+gl+++kwaDnnC++ ++l+ Lq+ ++kF+ +aL++A+++++aG+a++F+Al++a+++k+vG+lgD++et++ L +h+++++ kr+l+ +vc+ Cg+++t+l+gveav+++++++++++k g+ ipc+cG++at+++v++es+fv++sa   P+a++ l++g++++a  ++G++++GHY ++t k++ly  dga l+k +++k+++t+vf+ke ++t+t+kPv++
+       query 1564 EVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTFYVLPNDDTLRVEAFE---YYHTTDPSFLGRYMSALnhTKKWKYPQVNGLTSIKWADNNCYLATALLTLQQIELKFNPPALQDAYYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHANLDSCKRVLN-VVCKTCGQQQTTLKGVEAVMYMGTLSYEQFKKGVQIPCTCGKQATKYLVQQESPFVMMSA---PPAQYELKHGTFTCAseYTGNYQCGHYKHITSKETLYciDGALLTKSSEYKGPITDVFYKENSYTTTIKPVTY 1882
+                  799*******************************************************************...********************************************************************************************************************.************************************************************...***********************************************************************85 PP
+
+>> PF08717.10  nsp8 replicase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  317.4   6.5   2.8e-98   3.8e-95       1     198 []    3943    4140 ..    3943    4140 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 317.4 bits;  conditional E-value: 2.8e-98
+                  SSS-HHHHHHHHHHHHHHHHHHHHHHHCT--HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHCHCCHHHH-HHHHHHHHHHHHHHHHHHHHHT-HHHHHHHHHHHTT-EECCEE--TTT-EEEEEE-SHHHHHHHEETTEEEETTEEEEEEEEE-TTS-B--CCC-SCCCGGGS-S-EEEEEEE-...XXX. CS
+  PF08717.10    1 svasefsalpsyvayekakeeyeeakangssqqelkqlkkalniaksefdrdaavqkklekmaeqaltamykearvedrkskvvsalhsllfsmlrkldsealntildqarnGvvPlsiiPavsaaklvvvvPdkevfkkvveevtvtyagavWeiqevkdadgkevhlkevtaeseanlaWPlivtaeraneavklq 198 
+                  ++asefs+lpsy+a+++a+e+ye+a+ang+s+++lk+lkk+ln+aksefdrdaa+q+klekma+qa+t+myk+ar+ed+++kv+sa++++lf+mlrkld++aln+i+++ar+G+vPl+iiP+++aakl+vv+Pd++++k++++++t+tya+a+Weiq+v+dad+k v+l+e+++++++nlaWPlivta ran+avklq
+       query 3943 AIASEFSSLPSYAAFATAQEAYEQAVANGDSEVVLKKLKKSLNVAKSEFDRDAAMQRKLEKMADQAMTQMYKQARSEDKRAKVTSAMQTMLFTMLRKLDNDALNNIINNARDGCVPLNIIPLTTAAKLMVVIPDYNTYKNTCDGTTFTYASALWEIQQVVDADSKIVQLSEISMDNSPNLAWPLIVTALRANSAVKLQ 4140
+                  69***************************************************************************************************************************************************************************************************8 PP
+
+>> PF11633.8  Single-stranded poly(A) binding domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  256.8   0.3   2.8e-80   3.8e-77       1     143 []    1351    1493 ..    1351    1493 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 256.8 bits;  conditional E-value: 2.8e-80
+                 SEEEE---S-------GGCEE---CHHHHHHHHHHT-EEEEETT-HHHHHHHHHHSTTS---SEEEESSSEEEEE-TTS-HHHHHHHHCCCTS-EEES-TTCCCCTB-HHHHHHHHCT--S-EEEE-SSCHHHHHHHHHHHC- CS
+  PF11633.8    1 safyvlpseapnakeeilgtvswnlremlahaeetrklmpicmdvraimatiqrkykgikiqegivdygvrfffytskepvasiitklnslneplvtmpigyvthgfnleeaarcmrslkapavvsvsspdavttyngyltss 143 
+                 safy+lps   n k+eilgtvswnlremlahaeetrklmp+c++ +ai++tiqrkykgikiqeg+vdyg rf+fytsk  vas+i  ln lne lvtmp+gyvthg+nleeaar mrslk pa vsvsspdavt+yngyltss
+      query 1351 SAFYILPSIISNEKQEILGTVSWNLREMLAHAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLNDLNETLVTMPLGYVTHGLNLEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSS 1493
+                 89*******************************************************************************************************************************************98 PP
+
+>> PF11501.8  Non structural protein Nsp1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  213.5   0.8   3.8e-67   5.2e-64       1     115 []      13     127 ..      13     127 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 213.5 bits;  conditional E-value: 3.8e-67
+                -EEEEEEE--TTT-S---S-SSHHHHHHHHHHHHHHT-EEEE---TTSGGGS-S-EEEEE--SS-----SS---EEEEESS-TTTTSSSS--EEEEE--S---SEEEEEEE---- CS
+  PF11501.8   1 hvqlslpvlqvrdvlvrgfgdsveealsearehlkngtcglvelekgvlpqleqpyvfikrsdalstnhghkvvelvaemdgiqygrsgitlgvlvphvgetpiayrnvllrkng 115
+                hvqlslpvlqvrdvlvrgfgdsvee lsear+hlk+gtcglve+ekgvlpqleqpyvfikrsda ++ hgh +velvae++giqygrsg tlgvlvphvge p+ayr+vllrkng
+      query  13 HVQLSLPVLQVRDVLVRGFGDSVEEVLSEARQHLKDGTCGLVEVEKGVLPQLEQPYVFIKRSDARTAPHGHVMVELVAELEGIQYGRSGETLGVLVPHVGEIPVAYRKVLLRKNG 127
+                9*****************************************************************************************************************8 PP
+
+>> PF09401.10  RNA synthesis protein NSP10
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  199.3  10.8   1.2e-62   1.6e-59       1     122 []    4262    4384 ..    4262    4384 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 199.3 bits;  conditional E-value: 1.2e-62
+                  THHHHHHHHHTSSSHHHHHHHHHHTT--------BEE-SSBS---SEESS---BTTEEEEEHGGG-HHHHHT---SSTTSS-SSTTSEEEEEGG.TT-HHHHHHH--B-TTTSSBTTTB--XX CS
+  PF09401.10    1 snsallslcafavdpakayldyvkeGgkpvtncvkmlashaGsGlaitvkpeantdqdsyGGasvclycrahvehpnldGlcklkGkfvqvptg.akdpvsfalenevckvcglwlnygcscd 122 
+                  +ns++ls+cafavd akay+dy+++Gg+p+tncvkml++h+G+G+aitv+pean+dq+s+GGas+clycr+h++hpn +G+c+lkGk+vq+pt+ a+dpv+f+l+n+vc+vcg+w++ygcscd
+       query 4262 ANSTVLSFCAFAVDAAKAYKDYLASGGQPITNCVKMLCTHTGTGQAITVTPEANMDQESFGGASCCLYCRCHIDHPNPKGFCDLKGKYVQIPTTcANDPVGFTLKNTVCTVCGMWKGYGCSCD 4384
+                  59******************************************************************************************9989**************************7 PP
+
+>> PF08710.10  nsp9 replicase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.8   0.0   8.9e-51   1.2e-47       1     111 []    4141    4253 ..    4141    4253 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 160.8 bits;  conditional E-value: 8.9e-51
+                  XXXB-----EEEEEEEESS.TT-ESEEEEEEEEECTTSEEEEEEEES-S---EEEEE-TTSS.EEEEEB---EEEEEEETTSEEEEEEEEBTT--HHHHHHHHHHHHCHS-C- CS
+  PF08710.10    1 nnellPgklktkavkagat.daeisseakayynneggksvvyallsskdnlkyakfekedgn.vivveLepPcrfvvdtvkgvkvkYLYfvknlntlrrGavlGaisatvrLq 111 
+                  nnel+P++l++++++ag+t +a+++++a ayyn+++g+++v+alls+ ++lk+a+f+k+dg+ +i++eLepPcrfv+dt+kg+kvkYLYf+k+ln+l+rG+vlG+++atvrLq
+       query 4141 NNELSPVALRQMSCAAGTTqTACTDDNALAYYNTTKGGRFVLALLSDLQDLKWARFPKSDGTgTIYTELEPPCRFVTDTPKGPKVKYLYFIKGLNNLNRGMVLGSLAATVRLQ 4253
+                  9******************8889999************************************9*************************************************9 PP
+
+>> PF16348.5  Coronavirus nonstructural protein 4 C-terminus
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  136.0   1.2   4.3e-43   5.9e-40       1      95 [.    3166    3261 ..    3166    3262 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 136.0 bits;  conditional E-value: 4.3e-43
+                 -EETTEE---HHHHHHS-EEE-HHHHHHHHTT..T-HHHHHHHHHTHHHHHS-EEE--HHHHHHHHHHHHHHHHHHHHHS---EEE---EEEEEXXX CS
+  PF16348.5    1 lfeGdefvgtfeeaalstfvidkesyvkLkne..isldklkrylslynkykyysGkldeadyreaayahLakaledfsnsgndvlytPPtvsvtssl 95  
+                 +f+G+ f +tfeeaal+tf+++ke+y+kL+++  ++l++++ryl+lynkyky+sG++d+++yreaa++hLakal+dfsnsg+dvly+PP++s+ts++
+      query 3166 VFNGVSF-STFEEAALCTFLLNKEMYLKLRSDvlLPLTQYNRYLALYNKYKYFSGAMDTTSYREAACCHLAKALNDFSNSGSDVLYQPPQTSITSAV 3261
+                 59*****.************************77799**********************************************************97 PP
+
+>> PF16251.5  Nucleic acid-binding domain (NAR)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.2   0.7   1.8e-40   2.4e-37       8     117 .]    1922    2019 ..    1909    2019 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 128.2 bits;  conditional E-value: 1.8e-40
+                 T-B-..........-SEEEE..SHHHHHHHHHHTT-..-SS-S.EEEEEETT---SSEEEEEGGG--GGGTT-EE-SSSB--E..EBTTB--HHHH..HHHHHH.HHH-B---- CS
+  PF16251.5    8 kasfrtfekvdgvydnfklv..ntkiaedlnaklGfdctkpav.elkvtefpdltGdvvlidddlyvarykkGakllgkpvvwlgheeaalkkltyfnkpsvvc.enkfsvkpv 117 
+                 +as          +dnfk+v  n k+a+dln+ +G+  +kpa+ elkvt+fpdl+Gdvv+id+++y+ ++kkGakll+kp+vw  h+++a++k ty  kp+++c ++++s+kpv
+      query 1922 NAS----------FDNFKFVcdNIKFADDLNQLTGY--KKPASrELKVTFFPDLNGDVVAIDYKHYTPSFKKGAKLLHKPIVW--HVNNATNKATY--KPNTWCiRCLWSTKPV 2019
+                 444..........5******999*************..*********************************************..***********..***************8 PP
+
+>> PF08716.10  nsp7 replicase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  123.3   6.8   3.3e-39   4.6e-36       1      83 []    3860    3942 ..    3860    3942 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 123.3 bits;  conditional E-value: 3.3e-39
+                  TCHHHHCHHHHHHHHHHHCTTGGCTCCHHHHHHHHHHHHHCSSSCHHHHHHHCCCHHHHHCCTTCCCHHHHHHHHCHHHCCC- CS
+  PF08716.10    1 skltdvkCtnvvLlslLqklnvesnsklwaycvelHneilladDleealekllallvvllskdsavdleelvddylenstvLq 83  
+                  sk++dvkCt+vvLls+Lq+l+ves+sklwa+cv+lHn+illa+D++ea+ek+++ll+vlls+++avd+++l++++l+n+++Lq
+       query 3860 SKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILLAKDTTEAFEKMVSLLSVLLSMQGAVDINKLCEEMLDNRATLQ 3942
+                  8*********************************************************************************9 PP
+
+>> PF12124.8  Coronavirus polyprotein cleavage domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  104.0   0.1   1.9e-33   2.6e-30       2      66 .]    1498    1561 ..    1497    1561 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 104.0 bits;  conditional E-value: 1.9e-33
+                 HHHHHHHHHHHTEETTEE----EETTEEEEEEETTEEEEE-SSSS--EEETTEEE-HHHHHHHH- CS
+  PF12124.8    2 eehfvetvslaGsyrdwsysGqrtelGveflkrGdkivyhtlespvefhldGevlsldklkslls 66  
+                 eehf+et+slaGsy+dwsysGq t+lG+eflkrGdk vy+t   p  fhldGev+++d lk+lls
+      query 1498 EEHFIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYTS-NPTTFHLDGEVITFDNLKTLLS 1561
+                 9***************************************95.7*******************98 PP
+
+>> PF12379.8  Protein of unknown function (DUF3655)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.5  15.7   5.8e-26   8.1e-23       1      68 [.     920     986 ..     920     987 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 80.5 bits;  conditional E-value: 5.8e-26
+  PF12379.8   1 mycsfyppdeeeeddaeceeeeidetceheygteddyqglplefgasaetvrveeeeeedwlddtteq 68 
+                mycsfyppde+ee+  +ceeee + + ++eygteddyqg plefga++ +++ eee+eedwldd ++q
+      query 920 MYCSFYPPDEDEEE-GDCEEEEFEPSTQYEYGTEDDYQGKPLEFGATSAALQPEEEQEEDWLDDDSQQ 986
+                9********98875.79***********************************************9887 PP
+
+>> PF01661.21  Macro domain
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.3   0.2     6e-20   8.2e-17       1     117 [.    1058    1164 ..    1058    1165 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 61.3 bits;  conditional E-value: 6e-20
+                  EEEEETTSS-CSHHHHHHHHHHHHHHHHHHHHHHHHHHS--TTSEEEEE-TTSSSSEEEEEESE-TTTSTSTTHHHHHHHHHHHHHHHHHHTT-SEEEEE-TTSSTTSBTHHHHHHH CS
+  PF01661.21    1 VnAaNsrllggggvagaihraagkalkeeckelekkqggcllGeavvtpaynlpakyvihtvgplftsskskeeeellakayknalelaeekgiksvafPaistGifgvpweeaarv 117 
+                  VnAaN +l++gggvaga+++a  +a++ e++++   +g++++G  +v++++nl  k+++h+vgp ++   + e+ +ll++ay+n       ++ + +  P +s+Gifg ++  + rv
+       query 1058 VNAANVYLKHGGGVAGALNKATNNAMQVESDDYIATNGPLKVGGSCVLSGHNLA-KHCLHVVGPNVN---KGEDIQLLKSAYENF------NQHEVLLAPLLSAGIFGADPIHSLRV 1164
+                  9****************************************************9.**********95...8999***********......666799***********998766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (4405 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1053  (0.0587317); expected 358.6 (0.02)
+Passed bias filter:                      453  (0.0252663); expected 358.6 (0.02)
+Passed Vit filter:                        44  (0.00245412); expected 17.9 (0.001)
+Passed Fwd filter:                        16  (0.000892409); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):              13  [number of targets reported over threshold]
+# CPU time: 2.34u 0.52s 00:00:02.86 Elapsed: 00:00:13.53
+# Mc/sec: 989.09
+//
+[ok]

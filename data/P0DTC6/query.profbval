@@ -1,0 +1,104 @@
+* PROFout_out         file from FORTRAN PROF.f (output)
+*    
+*    -------------------------------
+*    Output from neural network (PROF)
+*    -------------------------------
+*     
+*    author: Burkhard Rost, Columbia Univ NYC / LION Heidelberg
+*    fax:    +1-212-305-7932
+*    email:  rost@columbia.edu
+*    www:    http://cubic.bioc.columbia.edu/
+*     
+*    All rights reserved.
+*     
+*    date:                          
+*    
+*    
+*    MODEPRED                     sec
+*    MODENET                      1st,unbal
+*    MODEIN                       win=5,loc=aa
+*    MODEJOB                      mode_of_job
+*    TRN-, TRG-, ERRTYPE              ONLINE,       SIG,   DELTASQ 
+*    NUMIN, -HID, -OUT                 209,      35,       2 
+*    NUMSAM                             61
+*    STPSWPMAX, -MAX, -INF               0,       0,       1 
+*    ERRBINSTOP, -STOP                   0,  0.0000
+*    EPSILON, ALPHA, TEMP           0.0300,  0.3000,  1.0000 
+*    
+* --------------------
+* overall: (A,T25,I8)
+NUMOUT:                        2
+NUMSAM:                       61
+MODEPRED:               sec
+MODENET:                1st,unbal
+MODEIN:                 win=5,loc=aa
+MODEJOB:                mode_of_job
+* --------------------
+* accuracy: (A,T25,I8)
+STPINF:                        1
+STP:                           1
+ERRBIN:                  86.8852
+ERR:                      0.2307
+* --------------------
+* out vec: (I8,A1,100I4)
+       1   98   0
+       2   56  43
+       3   40  59
+       4   44  55
+       5   20  80
+       6   35  64
+       7   24  76
+       8   18  81
+       9   23  76
+      10   21  79
+      11   16  83
+      12   27  73
+      13   20  79
+      14   19  81
+      15   13  86
+      16   16  83
+      17   12  87
+      18   13  86
+      19   23  76
+      20   32  67
+      21   25  74
+      22   33  66
+      23   45  54
+      24   37  62
+      25   24  75
+      26   29  70
+      27   26  74
+      28   24  75
+      29   25  75
+      30   29  70
+      31   24  75
+      32   22  77
+      33   20  79
+      34   26  73
+      35   25  75
+      36   29  69
+      37   33  66
+      38   40  60
+      39   41  59
+      40   33  66
+      41   56  43
+      42   48  53
+      43   61  37
+      44   72  27
+      45   79  20
+      46   74  25
+      47   77  22
+      48   64  35
+      49   59  40
+      50   64  36
+      51   62  37
+      52   65  34
+      53   73  27
+      54   59  42
+      55   75  24
+      56   61  38
+      57   51  48
+      58   76  23
+      59   81  18
+      60   77  22
+      61   76  23

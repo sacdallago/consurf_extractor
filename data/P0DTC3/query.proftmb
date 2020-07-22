@@ -1,0 +1,15 @@
+query          Protein ID
+275            Length
+2.3            Z-score
+8.5            estimated percent chance this protein is a TMB (Accuracy)
+92.3           estimated percent of TMBs achieving at least this Z-score (Coverage)
+
+Sequence       MDLFMRIFTIGTVTLKQGEIKDATPSDFVRATATIPIQASLPFGWLIVGV
+Sequence       ALLAVFQSASKIITLKKRWQLALSKGVHFVCNLLLLFVTVYSHLLLVAAG
+Sequence       LEAPFLYLYALVYFLQSINFVRIIMRLWLCWKCRSKNPLLYDANYFLCWH
+Sequence       TNCYDYCIPYNSVTSSIVITSGDGTTSPISEHDYQIGGYTEKWESGVKDC
+Sequence       VVLHSYFTSDYYQLYSTQLSTDTGVEHVTFFIYNKIVDEPEEHVQIHTID
+Sequence       GSSGVVNPVMEPIYDEPTTTTSVPL
+Prediction     ---Below-threshold protein.  No prediction provided---
+
+

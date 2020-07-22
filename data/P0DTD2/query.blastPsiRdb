@@ -1,0 +1,91 @@
+
+#PERL-RDB
+#SEQLENGTH	 97
+#ID	:	identifier of the aligned (homologous) protein
+#LSEQ2	:	length of the entire sequence of the aligned protein
+#LALI	:	length of the alignment excluding insertions and deletions
+#%IDE	:	percent indentity
+#%SIM	:	percent similarity
+#LGAP	:	total gap length
+#BSCORE	:	blast score (bits)
+#BEXPECT	:	blast expectation value
+#PROTEIN	:	one-line description of aligned protein
+#'!'	:	indicates lower scoring alignment that is combined with 
+#the higher scoring adjacent one  
+##ID	LSEQ2	%IDE	%SIM	LALI	LGAP	BSCORE	BEXPECT	PROTEIN
+pdb|pdb|2cme_A	78	67	74	78	12	102	2e-19	
+pdb|pdb|2cme_B	80	68	75	79	11	104	5e-20	
+pdb|pdb|2cme_C	77	68	74	76	13	101	7e-19	
+pdb|pdb|2cme_D	76	68	74	76	13	101	7e-19	
+pdb|pdb|2cme_E	77	67	74	77	13	101	5e-19	
+pdb|pdb|2cme_F	77	68	74	76	13	101	7e-19	
+pdb|pdb|2cme_G	77	67	74	77	13	101	5e-19	
+pdb|pdb|2cme_H	77	68	74	76	13	101	7e-19	
+sp|P0C5A6|ORF9B_BC279	97	73	82	97	0	127	1e-26	Protein 9b OS=Bat coronavirus 279/2005
+sp|P59636|ORF9B_CVHSA	98	72	84	97	1	131	5e-28	Protein 9b OS=Human SARS coronavirus
+sp|Q3I5I6|ORF9B_BCRP3	97	72	79	97	0	122	2e-25	Protein 9b OS=Bat coronavirus Rp3/2004
+sp|Q3LZX3|ORF9B_BCHK3	97	74	86	97	0	131	5e-28	Protein 9b OS=Bat coronavirus HKU3
+tr|A0A023PUR2|A0A023PUR2_CVHSA	98	76	85	97	1	132	2e-28	Protein 13 OS=Rhinolophus affinis
+tr|A0A0U1WHH6|A0A0U1WHH6_CVHSA	97	65	76	97	0	116	1e-23	Uncharacterized protein
+tr|A0A166ZLF5|A0A166ZLF5_9NIDO	97	67	76	97	0	117	7e-24	9a protein OS=Bat coronavirus
+tr|A0A1W6S783|A0A1W6S783_CVHSA	98	74	84	97	1	132	2e-28	Protein 13 OS=Human SARS
+tr|A0A2R3SUW6|A0A2R3SUW6_CVHSA	97	73	82	97	0	118	3e-24	Uncharacterized protein OS=Bat
+tr|A0A2R3SV11|A0A2R3SV11_CVHSA	97	73	81	97	0	117	1e-23	Uncharacterized protein OS=Bat
+tr|A0A3G5BJ10|A0A3G5BJ10_CVHSA	98	72	84	97	1	131	5e-28	ORF9b OS=SARS coronavirus Urbani
+tr|A0A3Q8AD31|A0A3Q8AD31_CVHSA	96	50	57	91	11	97.6	8e-18	ORF9b OS=Human SARS coronavirus
+tr|B8Q8R1|B8Q8R1_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|B8Q8S3|B8Q8S3_CVHSA	98	71	84	97	1	130	1e-27	Uncharacterized protein OS=SARS
+tr|B8Q8T4|B8Q8T4_CVHSA	98	71	84	97	1	130	1e-27	Uncharacterized protein OS=SARS
+tr|B8Q8U5|B8Q8U5_CVHSA	98	71	84	97	1	130	1e-27	Uncharacterized protein OS=SARS
+tr|B8Q8V6|B8Q8V6_CVHSA	98	71	84	97	1	130	1e-27	Uncharacterized protein OS=SARS
+tr|B8Q8W7|B8Q8W7_CVHSA	98	71	84	97	1	130	1e-27	Uncharacterized protein OS=SARS
+tr|C4P6R8|C4P6R8_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|D2DJX4|D2DJX4_CVHSA	98	71	81	97	1	123	1e-25	Uncharacterized protein N OS=SARS
+tr|D2E1E3|D2E1E3_CVHSA	98	72	84	97	1	131	5e-28	Non-structural protein 9b OS=SARS
+tr|D2E1F8|D2E1F8_CVHSA	98	72	84	97	1	131	5e-28	Non-structural protein 9b OS=SARS
+tr|D2E231|D2E231_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|D2E276|D2E276_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|D3KDN5|D3KDN5_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|D5HJR0|D5HJR0_BCHK3	97	72	85	97	0	131	4e-28	Uncharacterized protein N OS=Bat SARS
+tr|D5HJS1|D5HJS1_BCHK3	97	72	85	97	0	131	4e-28	Uncharacterized protein N OS=Bat SARS
+tr|D5HJT2|D5HJT2_BCHK3	97	72	85	97	0	131	4e-28	Uncharacterized protein N OS=Bat SARS
+tr|D5HJU3|D5HJU3_BCHK3	97	72	82	97	0	130	1e-27	Uncharacterized protein N OS=Bat SARS
+tr|D5HJV6|D5HJV6_BCHK3	97	72	82	97	0	130	1e-27	Uncharacterized protein N OS=Bat SARS
+tr|D5HJW7|D5HJW7_BCHK3	97	73	85	97	0	131	4e-28	Uncharacterized protein N OS=Bat SARS
+tr|D5HJX8|D5HJX8_BCHK3	97	73	85	97	0	131	4e-28	Uncharacterized protein N OS=Bat SARS
+tr|D5HJY9|D5HJY9_BCHK3	97	73	85	97	0	131	4e-28	Uncharacterized protein N OS=Bat SARS
+tr|D5HK00|D5HK00_BCHK3	97	71	85	97	0	130	8e-28	Uncharacterized protein N OS=Bat SARS
+tr|D5HK11|D5HK11_BCHK3	97	72	85	97	0	131	4e-28	Uncharacterized protein N OS=Bat SARS
+tr|Q1T6W9|Q1T6W9_CVHSA	98	72	84	97	1	131	5e-28	Orf9b OS=SARS coronavirus Frankfurt 1
+tr|Q3I5J9|Q3I5J9_CVHSA	97	72	79	97	0	122	2e-25	ORF13 OS=Bat SARS coronavirus Rp2
+tr|Q3I5K2|Q3I5K2_CVHSA	97	73	80	97	0	125	3e-26	ORF13 OS=Bat SARS coronavirus Rp1
+tr|Q3I5K5|Q3I5K5_CVHSA	97	75	83	97	0	129	2e-27	ORF9a OS=Bat SARS CoV Rm1/2004 OX=347536
+tr|Q3I5K9|Q3I5K9_CVHSA	97	70	79	97	0	122	2e-25	ORF9a OS=Bat SARS CoV Rf1/2004 OX=347537
+tr|Q3LZU1|Q3LZU1_BCHK3	97	74	86	97	0	131	5e-28	Uncharacterized protein N OS=Bat SARS
+tr|Q3LZV5|Q3LZV5_BCHK3	97	73	85	97	0	132	2e-28	Uncharacterized protein N OS=Bat SARS
+tr|Q3S2B4|Q3S2B4_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein 9b OS=SARS
+tr|Q3ZTD0|Q3ZTD0_CVHSA	98	72	83	97	1	129	3e-27	Orf12 OS=SARS coronavirus civet010
+tr|Q3ZTE3|Q3ZTE3_CVHSA	98	71	82	97	1	127	9e-27	Orf12 OS=Civet SARS CoV 007/2004 OX=285945
+tr|Q4JDP4|Q4JDP4_CVHSA	98	72	83	97	1	129	3e-27	Uncharacterized protein OS=SARS
+tr|Q4JDQ7|Q4JDQ7_CVHSA	98	71	83	97	1	127	5e-27	Orf12 OS=SARS coronavirus A022 OX=304858
+tr|Q692D6|Q692D6_CVHSA	98	71	84	97	1	131	7e-28	Orf5 OS=SARS coronavirus TJF OX=284672
+tr|Q6GYQ1|Q6GYQ1_CVHSA	98	72	84	97	1	131	5e-28	9b OS=SARS coronavirus LLJ-2004 OX=273522
+tr|Q6R7X8|Q6R7X8_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein 5 OS=SARS
+tr|Q6RCV7|Q6RCV7_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RCW8|Q6RCW8_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RCX9|Q6RCX9_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RCZ0|Q6RCZ0_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RD01|Q6RD01_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RD12|Q6RD12_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RD23|Q6RD23_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RD34|Q6RD34_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RD45|Q6RD45_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6RD56|Q6RD56_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6S8C6|Q6S8C6_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6S8E0|Q6S8E0_CVHSA	98	72	84	97	1	131	5e-28	Sars9b OS=Human SARS coronavirus OX=694009
+tr|Q6T1D1|Q6T1D1_CVHSA	98	72	84	97	1	131	5e-28	Orf13 OS=SARS coronavirus CUHK-L2
+tr|Q6TPD9|Q6TPD9_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6VA70|Q6VA70_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6VA81|Q6VA81_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|Q6VA92|Q6VA92_CVHSA	98	72	84	97	1	131	5e-28	Uncharacterized protein OS=SARS
+tr|S5ZI77|S5ZI77_CVHSA	98	71	83	97	1	128	3e-27	Non-structural protein 9b OS=SARS

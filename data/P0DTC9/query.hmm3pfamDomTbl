@@ -1,0 +1,14 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+Corona_nucleoca      PF00937.18   364 query                -            419    1e-164  547.9  12.3   1   1  6.9e-169  1.2e-164  547.6  12.3     1   364    14   377    14   377 0.99 Coronavirus nucleocapsid protein
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      query.fasta
+# Target file:     /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# Option settings: hmmscan -o query.hmm3pfam --tblout query.hmm3pfamTbl --domtblout query.hmm3pfamDomTbl --acc --notextw --cut_ga --cpu 1 /var/tmp/rost_db/data/pfam/Pfam-A.hmm query.fasta 
+# Current dir:     /var/tmp/5119353.11.default/a19GFiYKUS
+# Date:            Tue Mar 31 13:59:54 2020
+# [ok]

@@ -1,0 +1,6 @@
+# query Length: 61
+# query Number of predicted TMHs:  0
+# query Exp number of AAs in TMHs: 6.09784
+# query Exp number, first 60 AAs:  6.09784
+# query Total prob of N-in:        0.12919
+query	TMHMM2.0	outside	     1    61

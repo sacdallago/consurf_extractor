@@ -1,0 +1,24 @@
+<pre>
+<B>-------------------------------------------------------------</B>
+Pattern-ID: <B>ASN_GLYCOSYLATION</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00001">PS00001</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00001">PDOC00001</A>
+Pattern-DE: N-glycosylation site
+Pattern:    N[^P][ST][^P]
+   38       NETC
+
+Pattern-ID: <B>CK2_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00006">PS00006</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00006">PDOC00006</A>
+Pattern-DE: Casein kinase II phosphorylation site
+Pattern:    [ST].{2}[DE]
+   5        SLID
+
+Pattern-ID: <B>LEUCINE_ZIPPER</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00029">PS00029</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00029">PDOC00029</A>
+Pattern-DE: Leucine zipper pattern
+Pattern:    L.{6}L.{6}L.{6}L
+   4        LSLIDFYLCFLAFLLFLVLIML
+
+Pattern-ID: <B>MICROBODIES_CTER</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00342">PS00342</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00299">PDOC00299</A>
+Pattern-DE: Microbodies C-terminal targeting signal
+Pattern:    [STAGCN][RKH][LIVMAFY]$
+   41       CHA
+
+
+</pre>

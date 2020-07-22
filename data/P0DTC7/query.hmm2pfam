@@ -1,0 +1,36 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 /var/tmp/rost_db/data/pfam_legacy/Pfam_ls
+Sequence file:            query.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: query
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model    Description                                    Score    E-value  N 
+-------- -----------                                    -----    ------- ---
+PF08779.2 SARS coronavirus X4 like                       210.1    5.7e-60   1
+
+Parsed for domains:
+Model    Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+-------- ------- ----- -----    ----- -----      -----  -------
+PF08779.2   1/1      16    98 ..     1    86 []   210.1  5.7e-60
+
+Alignments of top-scoring domains:
+PF08779.2: domain 1 of 1, from 16 to 98: score 210.1, E = 5.7e-60
+                CS    EEEEEEEEETTSEEEEE-SSTTEEEECSS--E.EETTTEEEEE--SE
+                   *->ELYHYQECVRGTTVLLKEPCPSGTYEGNSPFaiPladNkyaltCtst
+                      ELYHYQECVRGTTVLLKEPC SGTYEGNSPF+ PladNk+altC st
+       query    16    ELYHYQECVRGTTVLLKEPCSSGTYEGNSPFH-PLADNKFALTCFST 61   
+
+                CS EEEEE-TTS-EEE.EEEEEES--SSS-SSS-S--TTSXX   
+                   HlvFaradGsRrTLYQllarsvssklFilyeevQlelys<-*
+                    ++Fa+ dG  +  YQl+arsvs+klFi++eevQ elys   
+       query    62 QFAFACPDGVKHV-YQLRARSVSPKLFIRQEEVQ-ELYS    98   
+
+//

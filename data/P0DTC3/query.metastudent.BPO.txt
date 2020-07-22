@@ -1,0 +1,168 @@
+query	GO:0016265	0.52	death
+query	GO:0006811	0.52	ion transport
+query	GO:0006810	0.52	transport
+query	GO:0012501	0.52	programmed cell death
+query	GO:0051234	0.52	establishment of localization
+query	GO:0044699	0.52	single-organism process
+query	GO:0009987	0.52	cellular process
+query	GO:0008219	0.52	cell death
+query	GO:0006915	0.52	apoptotic process
+query	GO:0044765	0.52	single-organism transport
+query	GO:0044763	0.52	single-organism cellular process
+query	GO:0051179	0.52	localization
+query	GO:0071840	0.46	cellular component organization or biogenesis
+query	GO:0016043	0.46	cellular component organization
+query	GO:0055085	0.46	transmembrane transport
+query	GO:0034220	0.46	ion transmembrane transport
+query	GO:0044419	0.32	interspecies interaction between organisms
+query	GO:0044657	0.32	pore formation in membrane of other organism during symbiotic interaction
+query	GO:0044658	0.32	pore formation in membrane of host by symbiont
+query	GO:0051701	0.32	interaction with host
+query	GO:0051704	0.32	multi-organism process
+query	GO:0051673	0.32	membrane disruption in other organism
+query	GO:0065007	0.32	biological regulation
+query	GO:0035915	0.32	pore formation in membrane of other organism
+query	GO:0065008	0.32	regulation of biological quality
+query	GO:0052025	0.32	modification by symbiont of host cell membrane
+query	GO:0039707	0.32	pore formation by virus in membrane of host cell
+query	GO:0044003	0.32	modification by symbiont of host morphology or physiology
+query	GO:0051817	0.32	modification of morphology or physiology of other organism involved in symbiotic interaction
+query	GO:0052332	0.32	modification by organism of membrane in other organism involved in symbiotic interaction
+query	GO:0052188	0.32	modification of cellular component in other organism involved in symbiotic interaction
+query	GO:0052185	0.32	modification of structure of other organism involved in symbiotic interaction
+query	GO:0052043	0.32	modification by symbiont of host cellular component
+query	GO:0052111	0.32	modification by symbiont of host structure
+query	GO:0044403	0.32	symbiosis, encompassing mutualism through parasitism
+query	GO:0035821	0.32	modification of morphology or physiology of other organism
+query	GO:0022607	0.27	cellular component assembly
+query	GO:0065003	0.27	macromolecular complex assembly
+query	GO:0006461	0.27	protein complex assembly
+query	GO:0070271	0.27	protein complex biogenesis
+query	GO:0051259	0.27	protein oligomerization
+query	GO:0043933	0.27	macromolecular complex subunit organization
+query	GO:0071822	0.27	protein complex subunit organization
+query	GO:0044085	0.27	cellular component biogenesis
+query	GO:0044764	0.19	multi-organism cellular process
+query	GO:0016032	0.19	viral process
+query	GO:0044092	0.09	negative regulation of molecular function
+query	GO:0044359	0.09	modulation of molecular function in other organism
+query	GO:0039511	0.09	suppression by virus of host interferon receptor activity
+query	GO:0039508	0.09	suppression by virus of host receptor activity
+query	GO:0039506	0.09	modulation by virus of host molecular function
+query	GO:0052205	0.09	modulation of molecular function in other organism involved in symbiotic interaction
+query	GO:0065009	0.09	regulation of molecular function
+query	GO:0052056	0.09	negative regulation by symbiont of host molecular function
+query	GO:0044362	0.09	negative regulation of molecular function in other organism
+query	GO:0052055	0.09	modulation by symbiont of host molecular function
+query	GO:0019048	0.09	modulation by virus of host morphology or physiology
+query	GO:0039507	0.09	suppression by virus of host molecular function
+query	GO:0052204	0.09	negative regulation of molecular function in other organism involved in symbiotic interaction
+query	GO:0052309	0.06	negative regulation by organism of innate immune response in other organism involved in symbiotic interaction
+query	GO:0052553	0.06	modulation by symbiont of host immune response
+query	GO:0050688	0.06	regulation of defense response to virus
+query	GO:0050687	0.06	negative regulation of defense response to virus
+query	GO:0048583	0.06	regulation of response to stimulus
+query	GO:0031348	0.06	negative regulation of defense response
+query	GO:0007165	0.06	signal transduction
+query	GO:0007166	0.06	cell surface receptor signaling pathway
+query	GO:0052200	0.06	response to host defenses
+query	GO:0052552	0.06	modulation by organism of immune response of other organism involved in symbiotic interaction
+query	GO:0075136	0.06	response to host
+query	GO:0051716	0.06	cellular response to stimulus
+query	GO:0052493	0.06	negative regulation by organism of signal transduction in other organism involved in symbiotic interaction
+query	GO:0009968	0.06	negative regulation of signal transduction
+query	GO:0009966	0.06	regulation of signal transduction
+query	GO:0009615	0.06	response to virus
+query	GO:0048519	0.06	negative regulation of biological process
+query	GO:0044413	0.06	avoidance of host defenses
+query	GO:0044415	0.06	evasion or tolerance of host defenses
+query	GO:0048585	0.06	negative regulation of response to stimulus
+query	GO:0019054	0.06	modulation by virus of host process
+query	GO:0052170	0.06	negative regulation by symbiont of host innate immune response
+query	GO:0051707	0.06	response to other organism
+query	GO:0010033	0.06	response to organic substance
+query	GO:0044700	0.06	single organism signaling
+query	GO:0052173	0.06	response to defenses of other organism involved in symbiotic interaction
+query	GO:0009607	0.06	response to biotic stimulus
+query	GO:0009605	0.06	response to external stimulus
+query	GO:0002376	0.06	immune system process
+query	GO:0007154	0.06	cell communication
+query	GO:0045824	0.06	negative regulation of innate immune response
+query	GO:0010648	0.06	negative regulation of cell communication
+query	GO:0030683	0.06	evasion or tolerance by virus of host immune response
+query	GO:0030682	0.06	evasion or tolerance of host defense response
+query	GO:0002831	0.06	regulation of response to biotic stimulus
+query	GO:0002832	0.06	negative regulation of response to biotic stimulus
+query	GO:0080134	0.06	regulation of response to stress
+query	GO:0039503	0.06	suppression by virus of host innate immune response
+query	GO:0075111	0.06	negative regulation by symbiont of host receptor-mediated signal transduction
+query	GO:0075112	0.06	modulation by symbiont of host transmembrane receptor-mediated signal transduction
+query	GO:0075114	0.06	negative regulation by symbiont of host transmembrane receptor-mediated signal transduction
+query	GO:0052306	0.06	modulation by organism of innate immune response in other organism involved in symbiotic interaction
+query	GO:0071357	0.06	cellular response to type I interferon
+query	GO:0052037	0.06	negative regulation by symbiont of host defense response
+query	GO:0052031	0.06	modulation by symbiont of host defense response
+query	GO:0001960	0.06	negative regulation of cytokine-mediated signaling pathway
+query	GO:0034097	0.06	response to cytokine
+query	GO:0050794	0.06	regulation of cellular process
+query	GO:0006952	0.06	defense response
+query	GO:0043900	0.06	regulation of multi-organism process
+query	GO:0043901	0.06	negative regulation of multi-organism process
+query	GO:0052255	0.06	modulation by organism of defense response of other organism involved in symbiotic interaction
+query	GO:0075109	0.06	modulation by symbiont of host receptor-mediated signal transduction
+query	GO:0006955	0.06	immune response
+query	GO:0060761	0.06	negative regulation of response to cytokine stimulus
+query	GO:0031347	0.06	regulation of defense response
+query	GO:0052167	0.06	modulation by symbiont of host innate immune response
+query	GO:0052250	0.06	modulation of signal transduction in other organism involved in symbiotic interaction
+query	GO:0052027	0.06	modulation by symbiont of host signal transduction pathway
+query	GO:0051607	0.06	defense response to virus
+query	GO:0071345	0.06	cellular response to cytokine stimulus
+query	GO:0052029	0.06	negative regulation by symbiont of host signal transduction pathway
+query	GO:0006950	0.06	response to stress
+query	GO:0002697	0.06	regulation of immune effector process
+query	GO:0043207	0.06	response to external biotic stimulus
+query	GO:0002698	0.06	negative regulation of immune effector process
+query	GO:0060337	0.06	type I interferon signaling pathway
+query	GO:0050690	0.06	regulation of defense response to virus by virus
+query	GO:0023057	0.06	negative regulation of signaling
+query	GO:0023052	0.06	signaling
+query	GO:0060759	0.06	regulation of response to cytokine stimulus
+query	GO:0070887	0.06	cellular response to chemical stimulus
+query	GO:0023051	0.06	regulation of signaling
+query	GO:0010646	0.06	regulation of cell communication
+query	GO:0075528	0.06	modulation by virus of host immune response
+query	GO:0052261	0.06	negative regulation by organism of defense response of other organism involved in symbiotic interaction
+query	GO:0052564	0.06	response to immune response of other organism involved in symbiotic interaction
+query	GO:0052562	0.06	negative regulation by symbiont of host immune response
+query	GO:0052561	0.06	negative regulation by organism of immune response of other organism involved in symbiotic interaction
+query	GO:0098542	0.06	defense response to other organism
+query	GO:0050777	0.06	negative regulation of immune response
+query	GO:0050776	0.06	regulation of immune response
+query	GO:0001959	0.06	regulation of cytokine-mediated signaling pathway
+query	GO:0044068	0.06	modulation by symbiont of host cellular process
+query	GO:0044414	0.06	suppression of host defenses
+query	GO:0044501	0.06	modulation of signal transduction in other organism
+query	GO:0050896	0.06	response to stimulus
+query	GO:0019049	0.06	evasion or tolerance of host defenses by virus
+query	GO:0052572	0.06	response to host immune response
+query	GO:0039502	0.06	suppression by virus of host type I interferon-mediated signaling pathway
+query	GO:0002682	0.06	regulation of immune system process
+query	GO:0050789	0.06	regulation of biological process
+query	GO:0071310	0.06	cellular response to organic substance
+query	GO:0020012	0.06	evasion or tolerance of host immune response
+query	GO:0051833	0.06	suppression of defenses of other organism involved in symbiotic interaction
+query	GO:0051832	0.06	avoidance of defenses of other organism involved in symbiotic interaction
+query	GO:0019221	0.06	cytokine-mediated signaling pathway
+query	GO:0051834	0.06	evasion or tolerance of defenses of other organism involved in symbiotic interaction
+query	GO:0002683	0.06	negative regulation of immune system process
+query	GO:0045088	0.06	regulation of innate immune response
+query	GO:0045087	0.06	innate immune response
+query	GO:0034340	0.06	response to type I interferon
+query	GO:0042221	0.06	response to chemical
+query	GO:0060338	0.06	regulation of type I interferon-mediated signaling pathway
+query	GO:0060339	0.06	negative regulation of type I interferon-mediated signaling pathway
+query	GO:0002252	0.06	immune effector process
+query	GO:0051805	0.06	evasion or tolerance of immune response of other organism involved in symbiotic interaction
+query	GO:0051807	0.06	evasion or tolerance of defense response of other organism involved in symbiotic interaction
+query	GO:0048523	0.06	negative regulation of cellular process

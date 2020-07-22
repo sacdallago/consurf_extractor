@@ -1,0 +1,54 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             query.fasta
+# target HMM database:             /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# output directed to file:         query.hmm3pfam
+# per-seq hits tabular output:     query.hmm3pfamTbl
+# per-dom hits tabular output:     query.hmm3pfamDomTbl
+# prefer accessions over names:    yes
+# max ASCII text line length:      unlimited
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query  [L=97]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.4e-45  151.1   0.4    8.1e-45  151.0   0.4    1.0  1  PF09399.10  SARS lipid binding protein
+
+
+Domain annotation for each model (and alignments):
+>> PF09399.10  SARS lipid binding protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.0   0.4   4.5e-49   8.1e-45       1      98 []       1      97 []       1      97 [] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 151.0 bits;  conditional E-value: 4.5e-49
+                XXXXXXXX-----EEEETTEEEEESXXXXXXXXXXXXSSSEEEEEEE--SS--EEEEEEE--S-SSS-SEEEEE-----EE-S-GGGS-SEEEEEEE- CS
+  PF09399.10  1 mdpnqtnvvppalhlvdpqiqltitrmedamgqgqnsadpkvypiilrlgsqlslsmarrnldslearafqstpivvqmtklatteelpdefvvvtak 98
+                mdp+ ++ + pal lvdpqiql++trme+a+g+ qn   pkvypiilrlgs lsl mar+ l+sle +afq tpi vqmtklatteelpdefvvvt k
+       query  1 MDPKISE-MHPALRLVDPQIQLAVTRMENAVGRDQNNVGPKVYPIILRLGSPLSLNMARKTLNSLEDKAFQLTPIAVQMTKLATTEELPDEFVVVTVK 97
+                6776555.579*************************************************************************************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (97 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                       337  (0.0187964); expected 358.6 (0.02)
+Passed bias filter:                      293  (0.0163422); expected 358.6 (0.02)
+Passed Vit filter:                        19  (0.00105974); expected 17.9 (0.001)
+Passed Fwd filter:                         2  (0.000111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.84u 0.79s 00:00:01.63 Elapsed: 00:00:08.15
+# Mc/sec: 36.16
+//
+[ok]

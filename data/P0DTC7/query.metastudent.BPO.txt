@@ -1,0 +1,24 @@
+query	GO:0019048	0.49	modulation by virus of host morphology or physiology
+query	GO:0060153	0.49	modulation by virus of host cell cycle
+query	GO:0044071	0.49	modulation by symbiont of host cell cycle
+query	GO:0050789	0.49	regulation of biological process
+query	GO:0007049	0.49	cell cycle
+query	GO:0044419	0.49	interspecies interaction between organisms
+query	GO:0065007	0.49	biological regulation
+query	GO:0044699	0.49	single-organism process
+query	GO:0051817	0.49	modification of morphology or physiology of other organism involved in symbiotic interaction
+query	GO:0065008	0.49	regulation of biological quality
+query	GO:0019054	0.49	modulation by virus of host process
+query	GO:0009987	0.49	cellular process
+query	GO:0050794	0.49	regulation of cellular process
+query	GO:0044764	0.49	multi-organism cellular process
+query	GO:0044763	0.49	single-organism cellular process
+query	GO:0051701	0.49	interaction with host
+query	GO:0044003	0.49	modification by symbiont of host morphology or physiology
+query	GO:0051704	0.49	multi-organism process
+query	GO:0051726	0.49	regulation of cell cycle
+query	GO:0044068	0.49	modulation by symbiont of host cellular process
+query	GO:0016032	0.49	viral process
+query	GO:0044403	0.49	symbiosis, encompassing mutualism through parasitism
+query	GO:0035821	0.49	modification of morphology or physiology of other organism
+query	GO:0039646	0.34	modulation by virus of host G0/G1 transition checkpoint

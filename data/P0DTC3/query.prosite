@@ -1,0 +1,29 @@
+<pre>
+<B>-------------------------------------------------------------</B>
+Pattern-ID: <B>PKC_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00005">PS00005</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00005">PDOC00005</A>
+Pattern-DE: Protein kinase C phosphorylation site
+Pattern:    [ST].[RK]
+   14       TLK
+   64       TLK
+   190      TEK
+
+Pattern-ID: <B>CK2_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00006">PS00006</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00006">PDOC00006</A>
+Pattern-DE: Casein kinase II phosphorylation site
+Pattern:    [ST].{2}[DE]
+   24       TPSD
+   170      TSGD
+   180      SEHD
+   223      TGVE
+
+Pattern-ID: <B>MYRISTYL</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00008">PS00008</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00008">PDOC00008</A>
+Pattern-DE: N-myristoylation site
+Pattern:    G[^EDRKHPFYW].{2}[STAGCN][^P]
+   196      GVKDCV
+
+Pattern-ID: <B>LEUCINE_ZIPPER</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00029">PS00029</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00029">PDOC00029</A>
+Pattern-DE: Leucine zipper pattern
+Pattern:    L.{6}L.{6}L.{6}L
+   94       LLLVAAGLEAPFLYLYALVYFL
+
+
+</pre>

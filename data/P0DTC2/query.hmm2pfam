@@ -1,0 +1,115 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 /var/tmp/rost_db/data/pfam_legacy/Pfam_ls
+Sequence file:            query.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: query
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model          Description                              Score    E-value  N 
+--------       -----------                              -----    ------- ---
+PF01601.8      Coronavirus S2 glycoprotein              451.2   1.6e-132   1
+PF09408.2      Spike receptor binding domain            335.8    8.6e-98   1
+
+Parsed for domains:
+Model          Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------       ------- ----- -----    ----- -----      -----  -------
+PF09408.2        1/1     330   583 ..     1   257 []   335.8  8.6e-98
+PF01601.8        1/1     684  1265 ..     1   678 []   451.2 1.6e-132
+
+Alignments of top-scoring domains:
+PF09408.2: domain 1 of 1, from 330 to 583: score 335.8, E = 8.6e-98
+                CS    HHHHHHSTCCHHCT-S----STTSECCES-SS---SCHHHCTTT-SS
+                   *->pNLPdlCnieeWLnaksVPSPLNWERKtFsNCNFNlSsLlrfvqadS
+                      pN+++lC+++e++na+ ++S+++W RK +sNC++++S+L+++  +++
+       query   330    PNITNLCPFGEVFNATRFASVYAWNRKRISNCVADYSVLYNSASFST 376  
+
+                CS SCCTS-GGGS--STT---SCECCEEEEGGGGGGSSSS--SCHCCHT---S
+                   fsCnNiDAsKvYGmCFgSvsiDKFAIPnsRkvDLqlGnsGfLqsfNYKID
+                   f+C++++ +K++++CF +v++D+F+I ++ ++++++G++G ++++NYK++
+       query   377 FKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLP 426  
+
+                CS SSS--CCEEEE-CCCCSEET-BSSSEEE---SS-HHCCTT-SSSS-BSTT
+                   TaatSCqLyYsLpanNVTvnGnynykyrylrhGklrpferdisnvpfspd
+                   +++t+C+ +++  + +  v Gnyny yr +r+  l+pferdis   +   
+       query   427 DDFTGCVIAWNSNNLDSKVGGNYNYLYRLFRKSNLKPFERDISTEIYQAG 476  
+
+                CS S-S--TT STT-B-SEEE- BBTTS-GGGSCEEECCCCHHHHSXXSSXXX
+                   GkpcNPS.sWNRRYGFNdy.fyktqgvggkskhdvVYsqqcfnvpntyCp
+                     pcN  + +N+++++  y+f  t gvg++++++vV+s++++ +p+t+C+
+       query   477 STPCNGVeGFNCYFPLQSYgFQPTNGVGYQPYRVVVLSFELLHAPATVCG 526  
+
+                CS XXXXXXXXSSXXSSXXXXSXSSHHHHHHHTXXXXTTSHHH.....HHHHH
+                   CklpsdlivsqCvsgkkpgsatcpvgtnyrkcfqastqalledvvgdvsd
+                   +k++++l++++Cv+++++g+++++v+t++ k f +++q++     +d  d
+       query   527 PKKSTNLVKNKCVNFNFNGLTGTGVLTESNKKFLPFQQFG-----RDIAD 571  
+
+                CS HHHHHHSTTSSX   
+                   kcdctcdPdpit<-*
+                   ++d ++dP++++   
+       query   572 TTDAVRDPQTLE    583  
+
+PF01601.8: domain 1 of 1, from 684 to 1265: score 451.2, E = 1.6e-132
+                   *->sndtsvctepvltYSsfgvCkdGsisyvnpteveqvvapllnVkPvs
+                          sv++ +++ Y         s+++     v +   ++       
+       query   684    --ARSVASQSIIAYTM-------SLGAE--NSVAYSNNSIA------ 713  
+
+                   TgNvsIPtnFtlsVqvEYiQirmtPVsvdCatYVCNGnlrCrkLLtQYts
+                        IPtnFt+sV++E + + mt+ svdC  Y+C+ +++C  LL QY+s
+       query   714 -----IPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGS 758  
+
+                   ACkTIesALnlsARlEsmelnsmltvskpaglnLAtvssFngdelldPiy
+                    C     AL  +A   +    +     k+  ++++ +  F g+      +
+       query   759 FCTQLNRALTGIAVEQDKNTQEVFAQVKQI-YKTPPIKDF-GG------F 800  
+
+                   nlsllltdSvlGGLkdllPssgskvkkRSaIEDLLFnkVvTsGLGTVDed
+                   n+s +l+          +Ps++s   kRS+IEDLLFnkV     G     
+       query   801 NFSQILP----------DPSKPS---KRSFIEDLLFNKVTLADAG-FIKQ 836  
+
+                   YKkCtaGpdGFvaDLvCArYYNGimVLPGVvdaekmtMYTaSLiGGmALG
+                   Y  C +       DL CA+  NG+ VLP+  ++e+ + YT+ L +G    
+       query   837 YGDCLGDIA--ARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITS 884  
+
+                   GiTGsAvA...IPFAtavQARLNYlALqtDVLqkNQkiLAaSFNkAIGNI
+                   G T +A+A  +IPFA++   R N ++ ++ VL +NQk++A+ FN+AIG  
+       query   885 GWTFGAGAalqIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIG-- 932  
+
+                   tsAfgkVndAItqtseGlnsvAlALtKIQdVVNkQGsaLseLtvqLqkNF
+                               + ++ l s+A+AL K QdVVN+  +aL+ L  qL  NF
+       query   933 ------------KIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNF 970  
+
+                   QAISSSIqdIYnRLDeiqADaQVDRLITGRLsALnvfVSqtLTkYteVra
+                   +AISS++ dI +RLD+++A +Q+DRLITGRL +L  +V q L + +e+ra
+       query   971 GAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRA 1020 
+
+                   sRqLAqqKVNECVKSQSqRYGFCGGNGtHvfSlvnaAPnGlvFlHtvLlP
+                   s  LA  K  ECV  QS+R  FCG  G H++S +++AP G vFlH +++P
+       query  1021 SANLAATKMSECVLGQSKRVDFCG-KGYHLMSFPQSAPHGVVFLHVTYVP 1069 
+
+                   tsfvnVtAisGlCVndGsrtnAlvlrdvplnlfgheifiqvngsYyiTaR
+                    + +n t    +C ++         + +p  +    +    ++ +++T R
+       query  1070 AQEKNFTTAPAICHDG--------KAHFPREGVF--VS--NGTHWFVTQR 1107 
+
+                   dMfePRkpTasDfVqiesCqVtfVNvtktelqtiVpnDYiD.vNktLs..
+                   + +eP ++T          + tfV+++ ++   iV n   D+   +L++ 
+       query  1108 NFYEPQIITT---------DNTFVSGNCDVVIGIVNNTVYDpLQPELDsf 1148 
+
+                   ..eiledlknNytvPdLdl.dndifnaTiLNLtsEIddLEqRSeeLrntt
+                   ++e+   +kn +t Pd dl+d+   na + N+  EId+L +         
+       query  1149 keELDKYFKN-HTSPDVDLgDISGINASVVNIQKEIDRLNE--------- 1188 
+
+                   eeLqslIdNlNdTLVDLewLnrveTYIKWPWYVWLlIglVvIfvIslLlf
+                        + +NlN++L+DL  L   e YIKWPWY+WL     +I ++ +   
+       query  1189 -----VAKNLNESLIDLQELGKYEQYIKWPWYIWLGFIAGLIAIVMVTIM 1233 
+
+                   cclsTGCCGCCcGCfGscPLmsscCkksqfetYediEkVh<-*
+                   +c++T CC C  GC+ sc    scCk        d E V    
+       query  1234 LCCMTSCCSCLKGCC-SC---GSCCKFDED----DSEPVL    1265 
+
+//

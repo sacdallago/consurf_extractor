@@ -1,0 +1,15 @@
+
+#PERL-RDB
+#SEQLENGTH	 38
+#ID	:	identifier of the aligned (homologous) protein
+#LSEQ2	:	length of the entire sequence of the aligned protein
+#LALI	:	length of the alignment excluding insertions and deletions
+#%IDE	:	percent indentity
+#%SIM	:	percent similarity
+#LGAP	:	total gap length
+#BSCORE	:	blast score (bits)
+#BEXPECT	:	blast expectation value
+#PROTEIN	:	one-line description of aligned protein
+#'!'	:	indicates lower scoring alignment that is combined with 
+#the higher scoring adjacent one  
+##ID	LSEQ2	%IDE	%SIM	LALI	LGAP	BSCORE	BEXPECT	PROTEIN

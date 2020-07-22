@@ -1,0 +1,20 @@
+<pre>
+<B>-------------------------------------------------------------</B>
+Pattern-ID: <B>CAMP_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00004">PS00004</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00004">PDOC00004</A>
+Pattern-DE: cAMP- and cGMP-dependent protein kinase phosphorylation site
+Pattern:    [RK]{2}.[ST]
+   117      KRKT
+
+Pattern-ID: <B>PKC_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00005">PS00005</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00005">PDOC00005</A>
+Pattern-DE: Protein kinase C phosphorylation site
+Pattern:    [ST].[RK]
+   83       SPK
+   115      TLK
+
+Pattern-ID: <B>MYRISTYL</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00008">PS00008</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00008">PDOC00008</A>
+Pattern-DE: N-myristoylation site
+Pattern:    G[^EDRKHPFYW].{2}[STAGCN][^P]
+   38       GTYEGN
+
+
+</pre>

@@ -1,0 +1,45 @@
+query	GO:0032774	0.36	RNA biosynthetic process
+query	GO:0090304	0.36	nucleic acid metabolic process
+query	GO:0044249	0.36	cellular biosynthetic process
+query	GO:0034641	0.36	cellular nitrogen compound metabolic process
+query	GO:0006807	0.36	nitrogen compound metabolic process
+query	GO:0034645	0.36	cellular macromolecule biosynthetic process
+query	GO:1901362	0.36	organic cyclic compound biosynthetic process
+query	GO:1901360	0.36	organic cyclic compound metabolic process
+query	GO:1901576	0.36	organic substance biosynthetic process
+query	GO:0044260	0.36	cellular macromolecule metabolic process
+query	GO:0071704	0.36	organic substance metabolic process
+query	GO:0010467	0.36	gene expression
+query	GO:0018130	0.36	heterocycle biosynthetic process
+query	GO:0006139	0.36	nucleobase-containing compound metabolic process
+query	GO:0006725	0.36	cellular aromatic compound metabolic process
+query	GO:0009987	0.36	cellular process
+query	GO:0009058	0.36	biosynthetic process
+query	GO:0009059	0.36	macromolecule biosynthetic process
+query	GO:0008152	0.36	metabolic process
+query	GO:0034654	0.36	nucleobase-containing compound biosynthetic process
+query	GO:0046483	0.36	heterocycle metabolic process
+query	GO:0016070	0.36	RNA metabolic process
+query	GO:0044238	0.36	primary metabolic process
+query	GO:0044271	0.36	cellular nitrogen compound biosynthetic process
+query	GO:0044237	0.36	cellular metabolic process
+query	GO:0043170	0.36	macromolecule metabolic process
+query	GO:0006351	0.36	transcription, DNA-templated
+query	GO:0019438	0.36	aromatic compound biosynthetic process
+query	GO:0019222	0.21	regulation of metabolic process
+query	GO:0031326	0.21	regulation of cellular biosynthetic process
+query	GO:0031323	0.21	regulation of cellular metabolic process
+query	GO:0050789	0.21	regulation of biological process
+query	GO:0080090	0.21	regulation of primary metabolic process
+query	GO:2000112	0.21	regulation of cellular macromolecule biosynthetic process
+query	GO:0065007	0.21	biological regulation
+query	GO:0010468	0.21	regulation of gene expression
+query	GO:0019219	0.21	regulation of nucleobase-containing compound metabolic process
+query	GO:0009889	0.21	regulation of biosynthetic process
+query	GO:0050794	0.21	regulation of cellular process
+query	GO:0051171	0.21	regulation of nitrogen compound metabolic process
+query	GO:2001141	0.21	regulation of RNA biosynthetic process
+query	GO:0060255	0.21	regulation of macromolecule metabolic process
+query	GO:0051252	0.21	regulation of RNA metabolic process
+query	GO:0006355	0.21	regulation of transcription, DNA-templated
+query	GO:0010556	0.21	regulation of macromolecule biosynthetic process

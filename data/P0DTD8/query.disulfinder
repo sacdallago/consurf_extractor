@@ -1,0 +1,43 @@
+<html><body><table>
+<tr><td><br><font size=5>Results for <b>query.blastPsiMat</b></font>
+</td></tr>
+<br><br><tr><td><div style="FONT-FAMILY: Courier"><PRE>
+                    +----------------------------+  
+                    |                            |  
+         .........10........20........30........40..
+<a href="#DISULFIND_AA">AA</a>       MIELSLIDFYLCFLAFLLFLVLIMLIIFWFSLELQDHNETCHA
+<a href="#DISULFIND_DB_state">DB_state</a>            1                            1  
+<a href="#DISULFIND_DB_conf">DB_conf</a>             <FONT style="color:#6f6e6e">3</FONT>                            <FONT style="color:#5f5e5e">4</FONT>  
+
+<a href="#DB_bond">DB_bond</a>   bond(12,41)
+
+<a href="#DISULFIND_Conn_conf">Conn_conf</a> 1<br>
+
+</PRE></div></td></tr><br><br>
+<tr><td><UL>
+<LI><b>Please cite:</b>
+<UL>
+<LI>A. Ceroni, A. Passerini, A. Vullo and P. Frasconi.
+<i>DISULFIND: a Disulfide Bonding State and Cysteine Connectivity Prediction Server</i>,
+Nucleic Acids Research, 34(Web Server issue):W177--W181, 2006.
+</UL>
+<LI><b>Contact information:</b>
+<UL>
+<LI>Questions and comments are very appreciated. Please, send email to: <A href="mailto:cystein@dsi.unifi.it">cystein@dsi.unifi.it</a>
+</UL>
+<LI><b>Abbreviations used:</b>
+<UL>
+<LI><b><a NAME="DISULFIND_AA">AA</a></b>
+amino acid sequence
+<LI><b><a NAME="DISULFIND_DB_state">DB_state</a></b>
+predicted disulfide bonding state (1=disulfide bonded, 0=not disulfide bonded)
+<LI><b><a NAME="DISULFIND_DB_conf">DB_conf</a></b>
+confidence of disulfide bonding state prediction (0=low to 9=high)<br> A red colour means that the viterbi aligner overruled the most likely predition for that residue in order to achieve a consistent prediction at a protein level (even number of disulfide bonded cysteines, as interchain bonds are ignored). See papers for details.
+<LI><b><a NAME="DB_bond">DB_bond</a></b>
+position in sequence of a pair of cysteines predicted to be forming a disulfide bridge.
+<LI><b><a NAME="DISULFIND_Conn_conf">Conn_conf</a></b>
+confidence of connectivity assignment given the predicted disulfide bonding state (real value in [0,1])
+<LI>Copyright 2006, Alessio Ceroni, Andrea Passerini, Alessandro Vullo.
+</UL>
+</UL></td></tr>
+</table></body></html>

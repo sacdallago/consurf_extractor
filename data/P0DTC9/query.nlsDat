@@ -1,0 +1,3 @@
+#File contains Motif stat from db for NLS found in unk sequence
+#Motif_Name	No_Found	%oE	%oX	Protein List
+inputSequence	[GA]Rx[RK]x[RK][RK]x[QM]	Potential	14	100	0	apte_drome,eya_drome,hmgc_human,rag1_human,dbx_mouse,hmgc_mouse,cys3_neucr,prh_petcr,rag1_rabit,rev_sivai,rev_sivam,rev_sivgb,dbp7_yeast,dpoe_yeast	nuc,nuc,nuc,nuc,nuc,nuc,nuc,nuc,nuc,nuc,nuc,nuc,nuc,nuc

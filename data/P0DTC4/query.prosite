@@ -1,0 +1,15 @@
+<pre>
+<B>-------------------------------------------------------------</B>
+Pattern-ID: <B>ASN_GLYCOSYLATION</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00001">PS00001</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00001">PDOC00001</A>
+Pattern-DE: N-glycosylation site
+Pattern:    N[^P][ST][^P]
+   48       NVSL
+   66       NSSR
+
+Pattern-ID: <B>PKC_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00005">PS00005</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00005">PDOC00005</A>
+Pattern-DE: Protein kinase C phosphorylation site
+Pattern:    [ST].[RK]
+   67       SSR
+
+
+</pre>

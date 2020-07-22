@@ -1,0 +1,14 @@
+query	GO:0005488	0.58	binding
+query	GO:0046812	0.58	host cell surface binding
+query	GO:0005102	0.58	receptor binding
+query	GO:0046789	0.58	host cell surface receptor binding
+query	GO:0005515	0.44	protein binding
+query	GO:0030246	0.23	carbohydrate binding
+query	GO:0043169	0.13	cation binding
+query	GO:0046872	0.13	metal ion binding
+query	GO:0043167	0.13	ion binding
+query	GO:0005509	0.13	calcium ion binding
+query	GO:0004871	0.07	signal transducer activity
+query	GO:0060089	0.07	molecular transducer activity
+query	GO:0051082	0.05	unfolded protein binding
+query	GO:0005198	0.04	structural molecule activity

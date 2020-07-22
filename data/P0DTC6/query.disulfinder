@@ -1,0 +1,27 @@
+<html><head><title>Cysteines Disulfide Bonding State and Connectivity Predictor</title></head><body><pre>
+-------------------------------------------------------------------------------
+          Cysteines Disulfide Bonding State and Connectivity Predictor         
+-------------------------------------------------------------------------------
+
+
+Chain identifier: query.blastPsiMat
+
+
+MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYSQLDEEQPMEID
+
+The sequence contains no cysteine !!
+
+-------------------------------------------------------------------------------
+Please cite:
+
+A. Ceroni, A. Passerini, A. Vullo and P. Frasconi.
+"DISULFIND: a Disulfide Bonding State and Cysteine Connectivity Prediction Server"
+Nucleic Acids Research, 34(Web Server issue):W177--W181, 2006.
+
+Questions and comments are very appreciated.
+Please, send email to: cystein@dsi.unifi.it
+
+Copyright 2006, Alessio Ceroni, Andrea Passerini, Alessandro Vullo
+
+-------------------------------------------------------------------------------
+</pre></body></html>

@@ -1,0 +1,114 @@
+#############################################################
+# SomeNA - Prediction of DNA- and RNA-Binding Proteins
+#############################################################
+# Row Format
+#  The first column is the TYPE of the row
+#  #               : Comment
+#
+#  DNA_JURY        : DNA-binding single prediction
+#  RNA_JURY        : RNA-binding single prediction
+#  XNA_JURY        : XNA-binding single prediction
+#  DNA_COMB_JURY   : Combined DNA-binding prediction
+#                    (has XNA-binding as prequisite and excludes RNA-binding; very precise)
+#  RNA_COMB_JURY   : Combined RNA-binding prediction
+#                    (has XNA-binding as prequisite and excludes DNA-binding; very precise)
+#
+#  HEADER          : The header line for the PRP rows
+#
+#  PRP             : Per residue predictions
+#############################################################
+# PRP Column Format
+#  NO              : Amino acid position
+#  RES             : Amino acid one-letter code
+#  DNA_AVG         : Average of direct scores of the DNA models
+#  DNA_JURY        : Fraction of models that predicted DNA-binding
+#  RNA_AVG         : Average of direct scores of the RNA models
+#  RNA_JURY        : Fraction of models that predicted RNA-binding
+#  XNA_AVG         : Average of direct scores of the XNA models
+#  XNA_JURY        : Fraction of models that predicted XNA-binding
+#############################################################
+# Notes
+#  The _JURY suffixed rows and columns can be interpreted as
+#  positive/yes prediction if they show a value above 0.5,
+#  meaning that the majority of network models predicted
+#  the positive class
+#############################################################
+DNA_JURY	1.00
+RNA_JURY	1.00
+XNA_JURY	1.00
+DNA_COMB_JURY	0.40
+RNA_COMB_JURY	0.20
+HEADER	NO	RES	DNA_AVG	DNA_JURY	RNA_AVG	RNA_JURY	XNA_AVG	XNA_JURY
+PRP	1	M	-0.86	0.00	-0.47	0.20	-0.74	0.00
+PRP	2	L	-0.90	0.00	-0.64	0.00	-0.68	0.00
+PRP	3	Q	-0.20	0.20	-0.12	0.40	-0.30	0.20
+PRP	4	S	-0.36	0.20	-0.24	0.20	-0.31	0.40
+PRP	5	C	-0.95	0.00	-0.82	0.00	-0.85	0.00
+PRP	6	Y	-0.63	0.00	-0.40	0.20	-0.57	0.00
+PRP	7	N	-0.75	0.00	-0.66	0.00	-0.69	0.00
+PRP	8	F	-0.86	0.00	-0.66	0.00	-0.79	0.00
+PRP	9	L	-0.92	0.00	-0.88	0.00	-0.91	0.00
+PRP	10	K	-0.51	0.00	-0.53	0.20	-0.57	0.00
+PRP	11	E	-0.88	0.00	-0.75	0.00	-0.78	0.00
+PRP	12	Q	-0.84	0.00	-0.78	0.00	-0.81	0.00
+PRP	13	H	-0.54	0.00	-0.36	0.20	-0.56	0.00
+PRP	14	C	-0.68	0.00	-0.71	0.00	-0.75	0.00
+PRP	15	Q	-0.30	0.20	-0.59	0.00	-0.50	0.00
+PRP	16	K	0.02	0.40	-0.26	0.20	-0.12	0.60
+PRP	17	A	-0.26	0.00	-0.56	0.20	-0.47	0.00
+PRP	18	S	-0.05	0.40	-0.45	0.20	-0.23	0.00
+PRP	19	T	0.05	0.60	-0.40	0.20	-0.07	0.60
+PRP	20	Q	-0.02	0.40	-0.38	0.20	-0.23	0.20
+PRP	21	K	0.26	0.80	-0.09	0.20	0.17	0.80
+PRP	22	G	0.31	1.00	-0.34	0.20	0.08	0.60
+PRP	23	A	-0.44	0.20	-0.64	0.00	-0.47	0.00
+PRP	24	E	-0.47	0.00	-0.60	0.00	-0.41	0.00
+PRP	25	A	-0.42	0.00	-0.58	0.00	-0.50	0.00
+PRP	26	A	-0.46	0.00	-0.55	0.00	-0.47	0.00
+PRP	27	V	-0.91	0.00	-0.87	0.00	-0.89	0.00
+PRP	28	K	0.01	0.60	-0.39	0.00	-0.10	0.40
+PRP	29	P	-0.78	0.00	-0.50	0.00	-0.53	0.00
+PRP	30	L	-0.77	0.00	-0.67	0.00	-0.65	0.00
+PRP	31	L	-0.87	0.00	-0.63	0.00	-0.75	0.00
+PRP	32	V	-0.73	0.00	-0.47	0.20	-0.54	0.00
+PRP	33	P	-0.89	0.00	-0.64	0.00	-0.71	0.00
+PRP	34	H	-0.16	0.20	-0.47	0.00	-0.21	0.20
+PRP	35	H	-0.40	0.20	-0.39	0.20	-0.26	0.00
+PRP	36	V	-0.97	0.00	-0.88	0.00	-0.91	0.00
+PRP	37	V	-0.93	0.00	-0.78	0.00	-0.86	0.00
+PRP	38	A	-0.79	0.00	-0.71	0.00	-0.74	0.00
+PRP	39	T	-0.72	0.00	-0.67	0.00	-0.66	0.00
+PRP	40	V	-0.96	0.00	-0.88	0.00	-0.92	0.00
+PRP	41	Q	-0.92	0.00	-0.70	0.00	-0.82	0.00
+PRP	42	E	-0.94	0.00	-0.78	0.00	-0.83	0.00
+PRP	43	I	-0.96	0.00	-0.92	0.00	-0.95	0.00
+PRP	44	Q	-0.87	0.00	-0.61	0.00	-0.75	0.00
+PRP	45	L	-0.94	0.00	-0.88	0.00	-0.90	0.00
+PRP	46	Q	-0.69	0.00	-0.73	0.00	-0.63	0.00
+PRP	47	A	-0.77	0.00	-0.79	0.00	-0.75	0.00
+PRP	48	A	-0.84	0.00	-0.76	0.00	-0.81	0.00
+PRP	49	V	-0.97	0.00	-0.89	0.00	-0.93	0.00
+PRP	50	G	-0.86	0.00	-0.80	0.00	-0.81	0.00
+PRP	51	E	-0.87	0.00	-0.83	0.00	-0.86	0.00
+PRP	52	L	-0.95	0.00	-0.92	0.00	-0.96	0.00
+PRP	53	L	-0.98	0.00	-0.84	0.00	-0.95	0.00
+PRP	54	L	-0.98	0.00	-0.83	0.00	-0.91	0.00
+PRP	55	L	-0.98	0.00	-0.94	0.00	-0.96	0.00
+PRP	56	E	-0.99	0.00	-0.87	0.00	-0.95	0.00
+PRP	57	W	-0.90	0.00	-0.87	0.00	-0.92	0.00
+PRP	58	L	-0.99	0.00	-0.93	0.00	-0.97	0.00
+PRP	59	A	-0.99	0.00	-0.93	0.00	-0.97	0.00
+PRP	60	M	-0.98	0.00	-0.93	0.00	-0.97	0.00
+PRP	61	A	-0.99	0.00	-0.93	0.00	-0.97	0.00
+PRP	62	V	-0.99	0.00	-0.94	0.00	-0.98	0.00
+PRP	63	M	-0.96	0.00	-0.86	0.00	-0.94	0.00
+PRP	64	L	-0.99	0.00	-0.96	0.00	-0.98	0.00
+PRP	65	L	-0.98	0.00	-0.83	0.00	-0.96	0.00
+PRP	66	L	-0.98	0.00	-0.84	0.00	-0.95	0.00
+PRP	67	L	-0.99	0.00	-0.81	0.00	-0.94	0.00
+PRP	68	C	-0.99	0.00	-0.83	0.00	-0.94	0.00
+PRP	69	C	-1.00	0.00	-0.89	0.00	-0.96	0.00
+PRP	70	C	-1.00	0.00	-0.93	0.00	-0.97	0.00
+PRP	71	L	-1.00	0.00	-0.90	0.00	-0.97	0.00
+PRP	72	T	-0.99	0.00	-0.88	0.00	-0.94	0.00
+PRP	73	D	-0.99	0.00	-0.89	0.00	-0.95	0.00

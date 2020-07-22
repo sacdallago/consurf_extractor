@@ -1,0 +1,33 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NSP11                PF06471.12 query                -                  0 1025.4  12.0         0 1024.2  12.0   1.7   1   0   0   1   1   1   1 NSP11
+Corona_RPol_N        PF06478.13 query                -           3.8e-187  621.4  10.0  9.7e-187  620.1  10.0   1.8   1   0   0   1   1   1   1 Coronavirus RPol N-terminus
+NSP16                PF06460.12 query                -             3e-164  545.3   1.2  5.2e-164  544.5   1.2   1.4   1   0   0   1   1   1   1 Coronavirus NSP16
+Peptidase_C30        PF05409.13 query                -           9.4e-135  448.5   0.3    2e-134  447.4   0.3   1.6   1   0   0   1   1   1   1 Coronavirus  endopeptidase C30
+Viral_protease       PF08715.10 query                -           1.9e-130  434.9   5.8  5.2e-130  433.5   5.8   1.8   1   0   0   1   1   1   1 Papain like viral protease
+nsp8                 PF08717.10 query                -            2.8e-95  317.8   6.5   6.5e-95  316.7   6.5   1.7   1   0   0   1   1   1   1 nsp8 replicase
+SUD-M                PF11633.8  query                -              2e-77  257.7   0.3   6.4e-77  256.1   0.3   2.0   1   0   0   1   1   1   1 Single-stranded poly(A) binding domain
+Nsp1                 PF11501.8  query                -            2.8e-64  214.3   0.8   8.8e-64  212.7   0.8   1.9   1   0   0   1   1   1   1 Non structural protein Nsp1
+NSP10                PF09401.10 query                -            2.5e-59  198.7  13.3   2.8e-59  198.5  10.8   2.6   2   0   0   2   2   1   1 RNA synthesis protein NSP10
+nsp9                 PF08710.10 query                -            7.2e-48  161.6   0.0   2.1e-47  160.1   0.0   1.9   1   0   0   1   1   1   1 nsp9 replicase
+Corona_NSP4_C        PF16348.5  query                -            1.4e-40  138.0   1.2     1e-39  135.3   1.2   2.7   1   0   0   1   1   1   1 Coronavirus nonstructural protein 4 C-terminus
+NAR                  PF16251.5  query                -            1.8e-37  128.6   2.3   4.1e-37  127.4   0.7   2.6   2   0   0   2   2   1   1 Nucleic acid-binding domain (NAR)
+nsp7                 PF08716.10 query                -            1.7e-36  124.7   6.8   7.7e-36  122.6   6.8   2.3   1   0   0   1   1   1   1 nsp7 replicase
+Nsp3_PL2pro          PF12124.8  query                -            6.9e-31  105.8   0.2   4.3e-30  103.3   0.1   2.5   3   0   0   3   3   1   1 Coronavirus polyprotein cleavage domain
+DUF3655              PF12379.8  query                -            6.3e-23   80.8  15.7   1.3e-22   79.8  15.7   1.6   1   0   0   1   1   1   1 Protein of unknown function (DUF3655)
+Macro                PF01661.21 query                -            3.6e-17   62.5   0.2   1.4e-16   60.6   0.2   2.1   1   0   0   1   1   1   1 Macro domain
+AAA_11               PF13086.6  query                -            4.7e-09   36.4   5.2   3.9e-05   23.6   0.0   3.9   3   1   1   4   4   0   0 AAA domain
+AAA_12               PF13087.6  query                -            4.2e-07   29.8   0.0     8e-06   25.6   0.0   2.5   1   1   0   1   1   0   0 AAA domain
+AAA_30               PF13604.6  query                -              7e-07   29.2   0.0   1.6e-06   28.0   0.0   1.5   1   0   0   1   1   1   1 AAA domain
+Viral_helicase1      PF01443.18 query                -            3.7e-06   26.8   0.3     5e-05   23.2   0.3   2.6   1   1   0   1   1   1   1 Viral (Superfamily 1) RNA helicase
+#
+# Program:         hmmscan
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SCAN
+# Query file:      query.fasta
+# Target file:     /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# Option settings: hmmscan -o query.hmm3pfam --tblout query.hmm3pfamTbl --domtblout query.hmm3pfamDomTbl --acc --notextw --cut_ga --cpu 1 /var/tmp/rost_db/data/pfam/Pfam-A.hmm query.fasta 
+# Current dir:     /var/tmp/5119353.1.default/rcM2DUVqd6
+# Date:            Wed Apr  1 03:33:20 2020
+# [ok]

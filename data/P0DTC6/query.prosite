@@ -1,0 +1,26 @@
+<pre>
+<B>-------------------------------------------------------------</B>
+Pattern-ID: <B>ASN_GLYCOSYLATION</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00001">PS00001</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00001">PDOC00001</A>
+Pattern-DE: N-glycosylation site
+Pattern:    N[^P][ST][^P]
+   39       NLSK
+
+Pattern-ID: <B>PKC_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00005">PS00005</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00005">PDOC00005</A>
+Pattern-DE: Protein kinase C phosphorylation site
+Pattern:    [ST].[RK]
+   21       TFK
+
+Pattern-ID: <B>CK2_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00006">PS00006</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00006">PDOC00006</A>
+Pattern-DE: Casein kinase II phosphorylation site
+Pattern:    [ST].{2}[DE]
+   10       TIAE
+   43       SLTE
+   50       SQLD
+
+Pattern-ID: <B>TYR_PHOSPHO_SITE_2</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS60007">PS60007</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00007">PDOC00007</A>
+Pattern-DE: Tyrosine kinase phosphorylation site 2
+Pattern:    [RK].{3}[DE].{2}Y
+   42       KSLTENKY
+
+
+</pre>

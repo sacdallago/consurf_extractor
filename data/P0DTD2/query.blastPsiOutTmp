@@ -1,0 +1,247 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= query
+         (97 letters)
+
+Database: big_80 
+           38,856,661 sequences; 11,002,566,987 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+UniRef50_P59636 Protein 9b n=69 Tax=Coronaviridae TaxID=11118 Re...   139   5e-31
+UniRef50_UPI0000DB4F99 UPI0000DB4F99 related cluster n=2 Tax=unk...   112   7e-23
+UniRef50_A0A3Q8AD31 ORF9b n=1 Tax=Human SARS coronavirus TaxID=6...    76   4e-12
+
+>UniRef50_P59636 Protein 9b n=69 Tax=Coronaviridae TaxID=11118
+          RepID=ORF9B_CVHSA
+          Length = 98
+
+ Score =  139 bits (350), Expect = 5e-31,   Method: Compositional matrix adjust.
+ Identities = 71/98 (72%), Positives = 83/98 (84%), Gaps = 1/98 (1%)
+
+Query: 1  MDP-KISEMHPALRLVDPQIQLAVTRMENAVGRDQNNVGPKVYPIILRLGSPLSLNMARK 59
+          MDP + + + PAL LVDPQIQL +TRME+A+G+ QN+  PKVYPIILRLGS LSL+MAR+
+Sbjct: 1  MDPNQTNVVPPALHLVDPQIQLTITRMEDAMGQGQNSADPKVYPIILRLGSQLSLSMARR 60
+
+Query: 60 TLNSLEDKAFQLTPIAVQMTKLATTEELPDEFVVVTVK 97
+           L+SLE +AFQ TPI VQMTKLATTEELPDEFVVVT K
+Sbjct: 61 NLDSLEARAFQSTPIVVQMTKLATTEELPDEFVVVTAK 98
+
+
+>UniRef50_UPI0000DB4F99 UPI0000DB4F99 related cluster n=2
+          Tax=unknown TaxID= RepID=UPI0000DB4F99
+          Length = 77
+
+ Score =  112 bits (279), Expect = 7e-23,   Method: Compositional matrix adjust.
+ Identities = 61/88 (69%), Positives = 66/88 (75%), Gaps = 13/88 (14%)
+
+Query: 10 PALRLVDPQIQLAVTRMENAVGRDQNNVGPKVYPIILRLGSPLSLNMARKTLNSLEDKAF 69
+          PAL LVDPQIQL +T              PKVYPIILRLGS LSL+MAR+ L+SLE +AF
+Sbjct: 3  PALHLVDPQIQLTIT-------------DPKVYPIILRLGSNLSLSMARRNLDSLEARAF 49
+
+Query: 70 QLTPIAVQMTKLATTEELPDEFVVVTVK 97
+          Q TPI VQMTKLATTEELPDEFVVVT K
+Sbjct: 50 QSTPIVVQMTKLATTEELPDEFVVVTAK 77
+
+
+>UniRef50_A0A3Q8AD31 ORF9b n=1 Tax=Human SARS coronavirus
+          TaxID=694009 RepID=A0A3Q8AD31_CVHSA
+          Length = 96
+
+ Score = 76.3 bits (186), Expect = 4e-12,   Method: Compositional matrix adjust.
+ Identities = 51/102 (50%), Positives = 59/102 (57%), Gaps = 11/102 (10%)
+
+Query: 1  MDPKISEMHPALRLVDPQIQLAVTRMENAVG-----RDQNNVGPKVYPIILRLGSPLSLN 55
+          MD K   M  ALRLV  QI L +TRME  +       D+  +    +P     GSPLSLN
+Sbjct: 1  MDNKDRAMRLALRLVS-QITLTITRMETVLELGLSIEDRKALLTTRHP-----GSPLSLN 54
+
+Query: 56 MARKTLNSLEDKAFQLTPIAVQMTKLATTEELPDEFVVVTVK 97
+          M +K   S EDK  +L P   +MTKLAT EELPDEFVVVT K
+Sbjct: 55 MVKKLSPSREDKVCRLIPTVAKMTKLATIEELPDEFVVVTEK 96
+
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+UniRef50_P59636 Protein 9b n=69 Tax=Coronaviridae TaxID=11118 Re...   131   1e-28
+UniRef50_UPI0000DB4F99 UPI0000DB4F99 related cluster n=2 Tax=unk...   101   1e-19
+UniRef50_A0A3Q8AD31 ORF9b n=1 Tax=Human SARS coronavirus TaxID=6...    98   2e-18
+
+Sequences not found previously or not previously below threshold:
+
+
+CONVERGED!
+>UniRef50_P59636 Protein 9b n=69 Tax=Coronaviridae TaxID=11118
+          RepID=ORF9B_CVHSA
+          Length = 98
+
+ Score =  131 bits (329), Expect = 1e-28,   Method: Composition-based stats.
+ Identities = 71/98 (72%), Positives = 83/98 (84%), Gaps = 1/98 (1%)
+
+Query: 1  MDP-KISEMHPALRLVDPQIQLAVTRMENAVGRDQNNVGPKVYPIILRLGSPLSLNMARK 59
+          MDP + + + PAL LVDPQIQL +TRME+A+G+ QN+  PKVYPIILRLGS LSL+MAR+
+Sbjct: 1  MDPNQTNVVPPALHLVDPQIQLTITRMEDAMGQGQNSADPKVYPIILRLGSQLSLSMARR 60
+
+Query: 60 TLNSLEDKAFQLTPIAVQMTKLATTEELPDEFVVVTVK 97
+           L+SLE +AFQ TPI VQMTKLATTEELPDEFVVVT K
+Sbjct: 61 NLDSLEARAFQSTPIVVQMTKLATTEELPDEFVVVTAK 98
+
+
+>UniRef50_UPI0000DB4F99 UPI0000DB4F99 related cluster n=2
+          Tax=unknown TaxID= RepID=UPI0000DB4F99
+          Length = 77
+
+ Score =  101 bits (252), Expect = 1e-19,   Method: Composition-based stats.
+ Identities = 61/90 (67%), Positives = 67/90 (74%), Gaps = 13/90 (14%)
+
+Query: 8  MHPALRLVDPQIQLAVTRMENAVGRDQNNVGPKVYPIILRLGSPLSLNMARKTLNSLEDK 67
+          + PAL LVDPQIQL +T              PKVYPIILRLGS LSL+MAR+ L+SLE +
+Sbjct: 1  VPPALHLVDPQIQLTIT-------------DPKVYPIILRLGSNLSLSMARRNLDSLEAR 47
+
+Query: 68 AFQLTPIAVQMTKLATTEELPDEFVVVTVK 97
+          AFQ TPI VQMTKLATTEELPDEFVVVT K
+Sbjct: 48 AFQSTPIVVQMTKLATTEELPDEFVVVTAK 77
+
+
+>UniRef50_A0A3Q8AD31 ORF9b n=1 Tax=Human SARS coronavirus
+          TaxID=694009 RepID=A0A3Q8AD31_CVHSA
+          Length = 96
+
+ Score = 97.6 bits (241), Expect = 2e-18,   Method: Composition-based stats.
+ Identities = 51/102 (50%), Positives = 59/102 (57%), Gaps = 11/102 (10%)
+
+Query: 1  MDPKISEMHPALRLVDPQIQLAVTRMENAVG-----RDQNNVGPKVYPIILRLGSPLSLN 55
+          MD K   M  ALRLV  QI L +TRME  +       D+  +    +P     GSPLSLN
+Sbjct: 1  MDNKDRAMRLALRLVS-QITLTITRMETVLELGLSIEDRKALLTTRHP-----GSPLSLN 54
+
+Query: 56 MARKTLNSLEDKAFQLTPIAVQMTKLATTEELPDEFVVVTVK 97
+          M +K   S EDK  +L P   +MTKLAT EELPDEFVVVT K
+Sbjct: 55 MVKKLSPSREDKVCRLIPTVAKMTKLATIEELPDEFVVVTEK 96
+
+
+  Database: big_80
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,958,422
+  Number of sequences in database:  3,040,876
+  
+  Database: /var/tmp/rost_db/data/big/big_80.01
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 997,145,285
+  Number of sequences in database:  2,854,509
+  
+  Database: /var/tmp/rost_db/data/big/big_80.02
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 997,089,814
+  Number of sequences in database:  2,909,903
+  
+  Database: /var/tmp/rost_db/data/big/big_80.03
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,328,211
+  Number of sequences in database:  3,671,715
+  
+  Database: /var/tmp/rost_db/data/big/big_80.04
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,101,693
+  Number of sequences in database:  3,898,283
+  
+  Database: /var/tmp/rost_db/data/big/big_80.05
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,256,834
+  Number of sequences in database:  3,743,050
+  
+  Database: /var/tmp/rost_db/data/big/big_80.06
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,299,472
+  Number of sequences in database:  3,700,488
+  
+  Database: /var/tmp/rost_db/data/big/big_80.07
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,212,872
+  Number of sequences in database:  3,787,048
+  
+  Database: /var/tmp/rost_db/data/big/big_80.08
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,363,209
+  Number of sequences in database:  3,636,697
+  
+  Database: /var/tmp/rost_db/data/big/big_80.09
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,048,001
+  Number of sequences in database:  3,951,876
+  
+  Database: /var/tmp/rost_db/data/big/big_80.10
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,502,919
+  Number of sequences in database:  3,497,018
+  
+  Database: /var/tmp/rost_db/data/big/big_80.11
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 41,260,255
+  Number of sequences in database:  165,198
+  
+Lambda     K      H
+   0.312    0.123    0.317 
+
+Lambda     K      H
+   0.267   0.0362    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 3,009,848,331
+Number of Sequences: 38856661
+Number of extensions: 79497272
+Number of successful extensions: 194015
+Number of sequences better than  1.0: 3
+Number of HSP's better than  1.0 without gapping: 6
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 194006
+Number of HSP's gapped (non-prelim): 6
+length of query: 97
+length of database: 11,002,566,987
+effective HSP length: 65
+effective length of query: 32
+effective length of database: 12,771,851,318
+effective search space: 408699242176
+effective search space used: 408699242176
+T: 11
+A: 40
+X1: 16 ( 7.2 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 41 (21.5 bits)
+S2: 88 (38.7 bits)

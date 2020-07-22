@@ -1,0 +1,2 @@
+query	GO:0009405	0.44	pathogenesis
+query	GO:0051704	0.44	multi-organism process

@@ -1,0 +1,21 @@
+>query
+
+
+               .    :    .    :    .    :    .    :    .    5
+seq        MFHLVDFQVTIAEILLIIMRTFKVSIWNLDYIINLIIKNLSKSLTENKYS
+frame-14   aababcdefgabcdefggabcdefgabcdefaabcdefgababcdefgab
+frame-21   aababcdefgabcdefgabcdefggababcdaaaabcdefgabcdefgab
+frame-28   abcaabcdefgabcdefgabcdefgababcdefgabcdefgabcdefgab
+prob-14    -----------------------------------------222222222
+prob-21    --------------------------------------------------
+prob-28    --------------------------------------------------
+               .    :    .    :    .    :    .    :    .    10
+seq        QLDEEQPMEID
+frame-14   cdefgefggfg
+frame-21   cdefgbcdefg
+frame-28   cdefgbcdefg
+prob-14    22222------
+prob-21    -----------
+prob-28    -----------
+// End
+

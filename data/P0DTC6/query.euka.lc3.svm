@@ -1,0 +1,10 @@
+query
+Winner chloroplast
+chloroplast,	vs	plastid,	0.9119296883862135 vs. 0.08807031161378655
+chloroplast,plastid,	vs	mitochondria,	0.8468911490197549 vs. 0.1531088509802451
+chloroplast,plastid,mitochondria,	vs	peroxisome,	0.9980555049776376 vs. 0.0019444950223625
+chloroplast,plastid,mitochondria,peroxisome,	vs	vacuole,	0.9994335102510307 vs. 5.664897489694529E-4
+chloroplast,plastid,mitochondria,peroxisome,vacuole,	vs	cytoplasm,nucleus,	0.7154628688818157 vs. 0.2845371311181844
+chloroplast,plastid,mitochondria,cytoplasm,peroxisome,vacuole,nucleus,	vs	secreted,golgi,er,	0.971176395712806 vs. 0.02882360428719406
+cellmembrane,memnucleus,memer,memgolgi,memmitochondria,memperoxisome,memchloroplast,memvacuole,	vs	chloroplast,plastid,mitochondria,secreted,cytoplasm,peroxisome,vacuole,golgi,nucleus,er,	0.21839175173869418 vs. 0.7816082482613058
+

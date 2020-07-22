@@ -1,0 +1,34 @@
+<P>
+<TABLE CELLPADDING=2>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>Sequence length</TD>
+ <TD style='background:#ebebeb;font-family:Times,Serif' > 222 </TD></TR>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>Secondary structure</TD>
+ <TD style='background:#ebebeb;font-family:Times,Serif' > Helix=38.3%, Strand=27.0%, Loop=34.7% </TD></TR>
+<TR VALIGN=TOP> <TD BGCOLOR='#ffffff'></TD>
+ <TD BGCOLOR='#ffffff' >&nbsp</TD></TR>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>window size</TD>
+<TD style='background:#ebebeb;font-family:Times,Serif' > 70 </TD></TR>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>Structure content cutoff</TD>
+<TD style='background:#ebebeb;font-family:Times,Serif' > 12% </TD></TR>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>Minimum consecutive exposed residues</TD>
+<TD style='background:#ebebeb;font-family:Times,Serif' > 10 </TD></TR>
+<TR VALIGN=TOP> <TD BGCOLOR='#ffffff'></TD>
+ <TD BGCOLOR='#ffffff' >&nbsp</TD></TR>
+<P>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>NORS</TD>
+ <TD style='background:#ebebeb;font-family:Times,Serif' > N=NORS region </TD></TR>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>Secondary structure</TD>
+ <TD style='background:#ebebeb;font-family:Times,Serif' > H=helix, E=strand, ' '=loop </TD></TR>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>Coiled-coil region</TD>
+ <TD style='background:#ebebeb;font-family:Times,Serif'> c=coils </TD></TR>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>Transmembrane helix</TD>
+ <TD style='background:#ebebeb;font-family:Times,Serif'> m=transmembrane helix </TD></TR>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>Solvent accessibility</TD>
+ <TD style='background:#ebebeb;font-family:Times,Serif'> e=exposed, ' '=buried </TD></TR>
+</TABLE>
+<P>
+<TABLE CELLPADDING=2>
+<TR VALIGN=TOP> <TD style='background:#bcd2ee;font-family:Times,Serif'>NORS region predicted: </TD>
+ <TD style='background:#e0eee0;font-family:Times,Serif' > None </TD></TR>
+</TABLE>
+<P>

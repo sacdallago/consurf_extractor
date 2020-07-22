@@ -1,0 +1,7 @@
+query	GO:0016265	0.47	death
+query	GO:0006915	0.47	apoptotic process
+query	GO:0009987	0.47	cellular process
+query	GO:0012501	0.47	programmed cell death
+query	GO:0044763	0.47	single-organism cellular process
+query	GO:0008219	0.47	cell death
+query	GO:0044699	0.47	single-organism process

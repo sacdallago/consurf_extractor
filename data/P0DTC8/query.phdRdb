@@ -1,0 +1,139 @@
+# Perl-RDB
+# 
+# PHDhtm: prediction of helical transmembrane regions
+# 
+# PDBID         : query
+# LENGTH        :   121
+# NOTATION No   : residue number 
+# NOTATION AA   : amino acid one letter code
+# NOTATION PHL  : predicted transmembrane helices
+# NOTATION PHL  : H=helical membrane, L=no helical transmembrane
+# NOTATION RI_S : reliability of secondary structure prediction , 0-9
+# NOTATION pH   : probability of predicting helix, 0-9
+# NOTATION pL   : probability of predicting loop
+# NOTATION OtH  : network output for helix, 0-100
+# NOTATION OtL  : network output for loop
+# 
+No	AA	PHL 	RI_S	pH	pL	OtH	OtL
+4N	1	1	1N	1N	1N	3N	3N
+   1	M	L	8	0	9	  6	 93
+   2	K	L	8	0	9	  5	 94
+   3	F	L	8	0	9	  6	 93
+   4	L	L	8	0	9	  7	 92
+   5	V	L	8	0	9	 10	 90
+   6	F	L	7	1	8	 13	 86
+   7	L	L	6	1	8	 16	 83
+   8	G	L	6	1	8	 17	 82
+   9	I	L	6	1	8	 18	 81
+  10	I	L	5	2	7	 20	 79
+  11	T	L	6	1	8	 19	 80
+  12	T	L	6	1	8	 16	 83
+  13	V	L	7	1	8	 12	 87
+  14	A	L	8	0	9	  9	 90
+  15	A	L	8	0	9	  6	 93
+  16	F	L	9	0	9	  4	 95
+  17	H	L	9	0	9	  3	 96
+  18	Q	L	9	0	9	  2	 97
+  19	E	L	9	0	9	  1	 98
+  20	C	L	9	0	9	  1	 98
+  21	S	L	9	0	9	  1	 98
+  22	L	L	9	0	9	  1	 98
+  23	Q	L	9	0	9	  1	 98
+  24	S	L	9	0	9	  1	 98
+  25	C	L	9	0	9	  1	 98
+  26	T	L	9	0	9	  1	 98
+  27	Q	L	9	0	9	  1	 98
+  28	H	L	9	0	9	  1	 98
+  29	Q	L	9	0	9	  1	 98
+  30	P	L	9	0	9	  1	 98
+  31	Y	L	9	0	9	  1	 98
+  32	V	L	9	0	9	  1	 98
+  33	V	L	9	0	9	  1	 98
+  34	D	L	9	0	9	  1	 98
+  35	D	L	9	0	9	  0	 98
+  36	P	L	9	0	9	  1	 98
+  37	C	L	9	0	9	  1	 98
+  38	P	L	9	0	9	  1	 98
+  39	I	L	9	0	9	  1	 98
+  40	H	L	9	0	9	  1	 98
+  41	F	L	9	0	9	  1	 98
+  42	Y	L	9	0	9	  1	 98
+  43	S	L	9	0	9	  1	 98
+  44	K	L	9	0	9	  1	 98
+  45	W	L	9	0	9	  1	 98
+  46	Y	L	9	0	9	  1	 98
+  47	I	L	9	0	9	  1	 98
+  48	R	L	9	0	9	  1	 98
+  49	V	L	9	0	9	  1	 98
+  50	G	L	9	0	9	  0	 99
+  51	A	L	9	0	9	  0	 99
+  52	R	L	9	0	9	  0	 99
+  53	K	L	9	0	9	  0	 99
+  54	S	L	9	0	9	  0	 99
+  55	A	L	9	0	9	  0	 99
+  56	P	L	9	0	9	  0	 99
+  57	L	L	9	0	9	  0	 99
+  58	I	L	9	0	9	  0	 99
+  59	E	L	9	0	9	  0	 99
+  60	L	L	9	0	9	  1	 98
+  61	C	L	9	0	9	  1	 98
+  62	V	L	9	0	9	  1	 98
+  63	D	L	9	0	9	  1	 98
+  64	E	L	9	0	9	  1	 98
+  65	A	L	9	0	9	  1	 98
+  66	G	L	9	0	9	  1	 98
+  67	S	L	9	0	9	  1	 98
+  68	K	L	9	0	9	  1	 98
+  69	S	L	9	0	9	  1	 98
+  70	P	L	9	0	9	  1	 98
+  71	I	L	9	0	9	  1	 98
+  72	Q	L	9	0	9	  1	 98
+  73	Y	L	9	0	9	  2	 97
+  74	I	L	9	0	9	  3	 96
+  75	D	L	9	0	9	  4	 95
+  76	I	L	9	0	9	  3	 96
+  77	G	L	9	0	9	  3	 96
+  78	N	L	9	0	9	  3	 96
+  79	Y	L	9	0	9	  3	 96
+  80	T	L	9	0	9	  4	 95
+  81	V	L	9	0	9	  4	 95
+  82	S	L	9	0	9	  4	 95
+  83	C	L	9	0	9	  4	 95
+  84	L	L	9	0	9	  4	 95
+  85	P	L	9	0	9	  4	 95
+  86	F	L	9	0	9	  3	 96
+  87	T	L	9	0	9	  2	 97
+  88	I	L	9	0	9	  3	 96
+  89	N	L	9	0	9	  3	 96
+  90	C	L	9	0	9	  4	 95
+  91	Q	L	9	0	9	  3	 96
+  92	E	L	9	0	9	  2	 97
+  93	P	L	9	0	9	  2	 97
+  94	K	L	9	0	9	  2	 97
+  95	L	L	9	0	9	  2	 97
+  96	G	L	9	0	9	  3	 96
+  97	S	L	9	0	9	  3	 96
+  98	L	L	8	0	9	  5	 94
+  99	V	L	9	0	9	  4	 95
+ 100	V	L	9	0	9	  3	 96
+ 101	R	L	9	0	9	  2	 97
+ 102	C	L	9	0	9	  2	 97
+ 103	S	L	9	0	9	  1	 98
+ 104	F	L	9	0	9	  1	 98
+ 105	Y	L	9	0	9	  1	 98
+ 106	E	L	9	0	9	  1	 98
+ 107	D	L	9	0	9	  1	 98
+ 108	F	L	9	0	9	  1	 98
+ 109	L	L	9	0	9	  1	 98
+ 110	E	L	9	0	9	  1	 98
+ 111	Y	L	9	0	9	  1	 98
+ 112	H	L	9	0	9	  1	 98
+ 113	D	L	9	0	9	  1	 98
+ 114	V	L	9	0	9	  1	 98
+ 115	R	L	9	0	9	  1	 98
+ 116	V	L	9	0	9	  1	 98
+ 117	V	L	9	0	9	  1	 98
+ 118	L	L	9	0	9	  1	 98
+ 119	D	L	9	0	9	  1	 98
+ 120	F	L	9	0	9	  1	 98
+ 121	I	L	9	0	9	  2	 97

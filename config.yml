@@ -1,0 +1,29 @@
+pp1ab:
+  data_dir: "data/P0DTC1"
+  dark_region_with_features:
+    start: 1
+    end: 11
+nsp1:
+  data_dir: "data/P0DTC1"
+  2gdt:
+    start: 12
+    end: 126
+  3ld1:
+    start: 104
+    end: 562
+nsp2:
+  data_dir: "data/P0DTC1"
+  3ld1:
+    start: 104
+    end: 562
+nsp3:
+  data_dir: "data/P0DTC1"
+  Ubl1:
+    start: 819
+    end: 929
+  unnamed_dark_region:
+    start: 930
+    end: 1026
+  macro_domain_region:
+    start: 1027
+    end: 1193

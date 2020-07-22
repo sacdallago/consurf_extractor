@@ -1,0 +1,36 @@
+query	GO:0031224	0.50	intrinsic component of membrane
+query	GO:0016021	0.50	integral component of membrane
+query	GO:0044425	0.50	membrane part
+query	GO:0016020	0.39	membrane
+query	GO:0019012	0.32	virion
+query	GO:0019031	0.25	viral envelope
+query	GO:0036338	0.25	viral membrane
+query	GO:0044423	0.25	virion part
+query	GO:0020002	0.23	host cell plasma membrane
+query	GO:0044279	0.23	other organism membrane
+query	GO:0033655	0.23	host cell cytoplasm part
+query	GO:0043245	0.23	extraorganismal space
+query	GO:0044172	0.23	host cell endoplasmic reticulum-Golgi intermediate compartment
+query	GO:0044173	0.23	host cell endoplasmic reticulum-Golgi intermediate compartment membrane
+query	GO:0043656	0.23	intracellular region of host
+query	GO:0043657	0.23	host cell
+query	GO:0033648	0.23	host intracellular membrane-bounded organelle
+query	GO:0033643	0.23	host cell part
+query	GO:0033646	0.23	host intracellular part
+query	GO:0033647	0.23	host intracellular organelle
+query	GO:0033644	0.23	host cell membrane
+query	GO:0030430	0.23	host cell cytoplasm
+query	GO:0018995	0.23	host
+query	GO:0044217	0.23	other organism part
+query	GO:0044216	0.23	other organism cell
+query	GO:0044215	0.23	other organism
+query	GO:0044218	0.23	other organism cell membrane
+query	GO:0005576	0.23	extracellular region
+query	GO:0044421	0.23	extracellular region part
+query	GO:0055036	0.15	virion membrane
+query	GO:0009295	0.07	nucleoid
+query	GO:0005737	0.07	cytoplasm
+query	GO:0044464	0.07	cell part
+query	GO:0005623	0.07	cell
+query	GO:0005622	0.07	intracellular
+query	GO:0044424	0.07	intracellular part

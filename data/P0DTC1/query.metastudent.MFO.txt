@@ -1,0 +1,75 @@
+query	GO:0005488	0.58	binding
+query	GO:0034062	0.50	RNA polymerase activity
+query	GO:0016779	0.50	nucleotidyltransferase activity
+query	GO:0016772	0.50	transferase activity, transferring phosphorus-containing groups
+query	GO:0003968	0.50	RNA-directed RNA polymerase activity
+query	GO:0003723	0.48	RNA binding
+query	GO:1901363	0.48	heterocyclic compound binding
+query	GO:0003676	0.48	nucleic acid binding
+query	GO:0097159	0.48	organic cyclic compound binding
+query	GO:0003824	0.44	catalytic activity
+query	GO:0070011	0.37	peptidase activity, acting on L-amino acid peptides
+query	GO:0016787	0.35	hydrolase activity
+query	GO:0016740	0.33	transferase activity
+query	GO:0008233	0.32	peptidase activity
+query	GO:0043167	0.32	ion binding
+query	GO:0043169	0.32	cation binding
+query	GO:0046914	0.32	transition metal ion binding
+query	GO:0046872	0.32	metal ion binding
+query	GO:0008270	0.32	zinc ion binding
+query	GO:0004175	0.26	endopeptidase activity
+query	GO:0004197	0.26	cysteine-type endopeptidase activity
+query	GO:1901265	0.24	nucleoside phosphate binding
+query	GO:0000166	0.24	nucleotide binding
+query	GO:0036094	0.24	small molecule binding
+query	GO:0008238	0.22	exopeptidase activity
+query	GO:0008242	0.22	omega peptidase activity
+query	GO:0008234	0.22	cysteine-type peptidase activity
+query	GO:0016788	0.19	hydrolase activity, acting on ester bonds
+query	GO:0004518	0.19	nuclease activity
+query	GO:0004519	0.19	endonuclease activity
+query	GO:0008168	0.17	methyltransferase activity
+query	GO:0016741	0.17	transferase activity, transferring one-carbon groups
+query	GO:0016462	0.16	pyrophosphatase activity
+query	GO:0016818	0.16	hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
+query	GO:0004386	0.16	helicase activity
+query	GO:0017111	0.16	nucleoside-triphosphatase activity
+query	GO:0016817	0.16	hydrolase activity, acting on acid anhydrides
+query	GO:0097367	0.15	carbohydrate derivative binding
+query	GO:0001883	0.15	purine nucleoside binding
+query	GO:0001882	0.15	nucleoside binding
+query	GO:0016796	0.14	exonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 5'-phosphomonoesters
+query	GO:0008408	0.14	3'-5' exonuclease activity
+query	GO:0004527	0.14	exonuclease activity
+query	GO:0004540	0.14	ribonuclease activity
+query	GO:0016896	0.14	exoribonuclease activity, producing 5'-phosphomonoesters
+query	GO:0004532	0.14	exoribonuclease activity
+query	GO:0000175	0.14	3'-5'-exoribonuclease activity
+query	GO:0035639	0.13	purine ribonucleoside triphosphate binding
+query	GO:0043168	0.13	anion binding
+query	GO:0017076	0.13	purine nucleotide binding
+query	GO:0005524	0.13	ATP binding
+query	GO:0032549	0.13	ribonucleoside binding
+query	GO:0030554	0.13	adenyl nucleotide binding
+query	GO:0032559	0.13	adenyl ribonucleotide binding
+query	GO:0032555	0.13	purine ribonucleotide binding
+query	GO:0032550	0.13	purine ribonucleoside binding
+query	GO:0032553	0.13	ribonucleotide binding
+query	GO:0008428	0.05	ribonuclease inhibitor activity
+query	GO:0030234	0.05	enzyme regulator activity
+query	GO:0019213	0.05	deacetylase activity
+query	GO:0004857	0.05	enzyme inhibitor activity
+query	GO:0003677	0.04	DNA binding
+query	GO:0016763	0.04	transferase activity, transferring pentosyl groups
+query	GO:0003950	0.04	NAD+ ADP-ribosyltransferase activity
+query	GO:0003954	0.03	NADH dehydrogenase activity
+query	GO:0016491	0.03	oxidoreductase activity
+query	GO:0050136	0.03	NADH dehydrogenase (quinone) activity
+query	GO:0005515	0.03	protein binding
+query	GO:0008137	0.03	NADH dehydrogenase (ubiquinone) activity
+query	GO:0016798	0.03	hydrolase activity, acting on glycosyl bonds
+query	GO:0016655	0.03	oxidoreductase activity, acting on NAD(P)H, quinone or similar compound as acceptor
+query	GO:0016651	0.03	oxidoreductase activity, acting on NAD(P)H
+query	GO:0016757	0.03	transferase activity, transferring glycosyl groups
+query	GO:0046983	0.03	protein dimerization activity
+query	GO:0046982	0.03	protein heterodimerization activity

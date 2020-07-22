@@ -1,0 +1,7 @@
+query
+Winner cellmembrane
+cellmembrane,	vs	memgolgi,	0.9667703812708847 vs. 0.03322961872911529
+cellmembrane,memgolgi,	vs	memer,	0.6630195345014437 vs. 0.3369804654985563
+cellmembrane,memer,memgolgi,	vs	memnucleus,memmitochondria,memperoxisome,memchloroplast,memvacuole,	0.9522195451823106 vs. 0.04778045481768959
+cellmembrane,memnucleus,memer,memgolgi,memmitochondria,memperoxisome,memchloroplast,memvacuole,	vs	chloroplast,plastid,mitochondria,secreted,cytoplasm,peroxisome,vacuole,golgi,nucleus,er,	0.6226317572606499 vs. 0.3773682427393501
+

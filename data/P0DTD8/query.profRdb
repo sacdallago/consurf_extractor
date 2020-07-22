@@ -1,0 +1,133 @@
+# Perl-RDB 
+# PROFboth
+# 
+# Copyright          : Burkhard Rost, CUBIC NYC / LION Heidelberg
+# Email              : rost@columbia.edu
+# WWW                : http://cubic.bioc.columbia.edu
+# Version            : 2000.02
+# 
+# --------------------------------------------------------------------------------
+# About your protein :
+# 
+# VALUE    PROT_ID   : query
+# VALUE    PROT_NCHN : 1
+# VALUE    PROT_NRES : 43
+# VALUE    PROT_NALI : 1
+# VALUE    PROT_NFAR : 0
+# VALUE    PROT_NFAR50-5: 0
+# VALUE    PROT_NFAR40-5: 0
+# VALUE    PROT_NFAR30-5: 0
+# VALUE    PROT_NFAR5-5: 0
+# 
+# --------------------------------------------------------------------------------
+# About the alignment:
+# 
+# VALUE    ALI_ORIG  : query.hsspPsiFil
+# 
+# --------------------------------------------------------------------------------
+# About PROF specifics:
+# 
+# VALUE    PROF_FPAR : acc=/usr/share/profphd/prof/net/PROFboth_best.par
+# VALUE    PROF_NNET : acc=6
+# 
+# --------------------------------------------------------------------------------
+# Notation used      :
+# 
+# ------------------------------------------------------------------------
+# NOTATION HEADER    : PROTEIN
+# NOTATION PROT_ID   : identifier of protein [w]
+# NOTATION PROT_NRES : number of residues [d]
+# NOTATION PROT_NCHN : number of chains (if PDB protein) [d]
+# NOTATION PROT_NALI : number of proteins aligned in family [d]
+# NOTATION PROT_NFAR : number of distant relatives [d]
+# 
+# ------------------------------------------------------------------------
+# NOTATION HEADER    : ALIGNMENT
+# NOTATION HEADER    : ALIGNMENT: input file
+# 
+# ------------------------------------------------------------------------
+# NOTATION HEADER    : INTERNAL
+# NOTATION PROF_FPAR : name of parameter file, used [w]
+# NOTATION PROF_NNET : number of networks used for prediction [d]
+# 
+# 
+# ------------------------------------------------------------------------
+# NOTATION BODY      : PROTEIN
+# NOTATION NO        : counting residues [d]
+# NOTATION AA        : amino acid one letter code [A-Z!a-z]
+# NOTATION CHN       : protein chain [A-Z!a-z]
+# 
+# ------------------------------------------------------------------------
+# NOTATION BODY      : PROF
+# 
+# ------------------------------------------------------------------------
+# NOTATION BODY      : PROFsec
+# NOTATION OHEL      : observed secondary structure: H=helix, E=extended (sheet), blank=other (loop)
+# NOTATION PHEL      : PROF predicted secondary structure: H=helix, E=extended (sheet), blank=other (loop) PROF = PROF: Profile network prediction HeiDelberg
+# NOTATION RI_S      : reliability index for PROFsec prediction (0=lo 9=high) Note: for the brief presentation strong predictions marked by '*'
+# NOTATION pH        : 'probability' for assigning helix (1=high, 0=low)
+# NOTATION pE        : 'probability' for assigning strand (1=high, 0=low)
+# NOTATION pL        : 'probability' for assigning neither helix, nor strand (1=high, 0=low)
+# NOTATION OtH       : actual neural network output from PROFsec for helix unit
+# NOTATION OtE       : actual neural network output from PROFsec for strand unit
+# NOTATION OtL       : actual neural network output from PROFsec for 'no-regular' unit
+# 
+# ------------------------------------------------------------------------
+# NOTATION BODY      : PROFacc
+# NOTATION OACC      : observed solvent accessibility (acc) in square Angstroem (taken from DSSP: W Kabsch and C Sander, Biopolymers, 22, 2577-2637, 1983)
+# NOTATION PACC      : PROF predicted solvent accessibility (acc) in square Angstroem
+# NOTATION OREL      : observed relative solvent accessibility (acc) in 10 states: a value of n (=0-9) corresponds to a relative acc. of between n*n % and (n+1)*(n+1) % (e.g. for n=5: 16-25%).
+# NOTATION PREL      : PROF predicted relative solvent accessibility (acc) in 10 states: a value of n (=0-9) corresponds to a relative acc. of between n*n % and (n+1)*(n+1) % (e.g. for n=5: 16-25%).
+# NOTATION RI_A      : reliability index for PROFacc prediction (0=low to 9=high) Note: for the brief presentation strong predictions marked by '*'
+# NOTATION Obe       : observerd relative solvent accessibility (acc) in 2 states: b = 0-16%, e = 16-100%.
+# NOTATION Pbe       : PROF predicted  relative solvent accessibility (acc) in 2 states: b = 0-16%, e = 16-100%.
+# NOTATION Obie      : observerd relative solvent accessibility (acc) in 3 states: b = 0-9%, i = 9-36%, e = 36-100%.
+# NOTATION Pbie      : PROF predicted relative solvent accessibility (acc) in 3 states: b = 0-9%, i = 9-36%, e = 36-100%.
+# NOTATION Ot4       : actual neural network output from PROFsec for unit 0 coding for a relative solvent accessibility of 4*4 - 5*5 percent (16-25%). Note: OtN, with N=0-9 give the same information for the other output units!
+# 
+# --------------------------------------------------------------------------------
+# 
+No	AA	OHEL	PHEL	RI_S	OACC	PACC	OREL	PREL	RI_A	pH	pE	pL	Obe	Pbe	Obie	Pbie	OtH	OtE	OtL	Ot0	Ot1	Ot2	Ot3	Ot4	Ot5	Ot6	Ot7	Ot8	Ot9
+1	M	L	L	9	0	169	0	90	4	0	0	9	b	e	b	e	2	1	96	5	5	5	7	9	12	15	18	27	31
+2	I	L	L	1	0	50	0	30	1	2	3	4	b	e	b	i	19	32	43	8	8	10	14	18	21	21	20	17	15
+3	E	L	H	0	0	108	0	56	5	3	2	3	b	e	b	e	36	27	32	1	2	4	7	11	18	26	30	29	26
+4	L	L	H	3	0	0	0	0	0	6	1	2	b	b	b	b	61	15	25	20	20	20	20	19	17	14	13	11	9
+5	S	L	H	3	0	54	0	42	2	5	1	2	b	e	b	e	58	11	28	15	14	14	16	20	22	23	21	17	13
+6	L	L	H	6	0	49	0	30	1	7	0	1	b	e	b	i	77	7	15	19	18	18	20	23	24	21	16	10	7
+7	I	L	H	5	0	10	0	6	2	7	0	1	b	b	b	b	73	7	17	23	23	24	23	20	16	11	7	4	2
+8	D	L	H	6	0	48	0	30	4	8	0	1	b	e	b	i	78	3	14	7	9	13	18	23	27	26	20	12	7
+9	F	L	H	7	0	0	0	0	2	8	0	0	b	b	b	b	85	2	9	27	25	23	20	18	15	12	9	6	4
+10	Y	L	H	8	0	26	0	12	1	9	0	0	b	b	b	i	88	2	7	21	21	23	26	26	23	16	9	4	2
+11	L	L	H	8	0	0	0	0	2	9	0	0	b	b	b	b	93	1	4	26	24	21	19	17	15	12	8	4	2
+12	C	L	H	8	0	0	0	0	3	9	0	0	b	b	b	b	93	1	5	31	27	21	18	16	14	10	6	3	2
+13	F	L	H	8	0	0	0	0	3	9	0	0	b	b	b	b	92	1	6	32	28	22	19	17	14	10	6	3	2
+14	L	L	H	9	0	0	0	0	6	9	0	0	b	b	b	b	94	1	3	34	28	17	13	11	9	7	4	2	1
+15	A	L	H	9	0	0	0	0	7	9	0	0	b	b	b	b	94	1	3	37	29	16	13	11	9	7	5	3	2
+16	F	L	H	8	0	0	0	0	3	9	0	0	b	b	b	b	90	1	5	31	28	23	19	16	12	8	5	2	1
+17	L	L	H	8	0	0	0	0	4	9	0	0	b	b	b	b	91	1	4	33	29	21	17	13	10	7	4	1	0
+18	L	L	H	9	0	0	0	0	6	9	0	0	b	b	b	b	94	1	3	35	29	17	14	11	9	6	4	1	0
+19	F	L	H	8	0	0	0	0	5	9	0	0	b	b	b	b	92	1	5	33	29	21	16	13	10	6	4	2	1
+20	L	L	H	8	0	0	0	0	5	9	0	0	b	b	b	b	91	2	5	34	29	21	17	14	10	7	4	2	1
+21	V	L	H	8	0	0	0	0	9	9	0	0	b	b	b	b	93	1	4	41	32	14	9	7	5	4	2	1	1
+22	L	L	H	9	0	0	0	0	8	9	0	0	b	b	b	b	94	1	3	40	32	19	13	9	6	4	2	1	0
+23	I	L	H	9	0	0	0	0	7	9	0	0	b	b	b	b	94	1	3	39	32	19	14	10	8	5	3	1	0
+24	M	L	H	9	0	0	0	0	7	9	0	0	b	b	b	b	94	1	3	38	30	17	13	11	9	6	4	2	1
+25	L	L	H	9	0	0	0	0	6	9	0	0	b	b	b	b	93	1	3	36	30	19	14	11	8	6	3	1	0
+26	I	L	H	9	0	0	0	0	6	9	0	0	b	b	b	b	93	2	3	37	30	18	14	11	8	5	3	1	0
+27	I	L	H	8	0	0	0	0	4	9	0	0	b	b	b	b	93	2	4	32	28	20	16	13	10	7	4	1	0
+28	F	L	H	8	0	0	0	0	2	9	0	0	b	b	b	b	88	2	7	28	26	22	20	17	15	11	8	4	2
+29	W	L	H	8	0	0	0	0	2	9	0	0	b	b	b	b	90	3	7	26	24	21	19	18	16	13	9	6	4
+30	F	L	H	7	0	0	0	0	2	8	0	1	b	b	b	b	83	4	12	28	26	24	21	19	16	12	9	6	4
+31	S	L	H	3	0	54	0	42	1	6	0	2	b	e	b	e	61	8	28	14	14	13	15	16	18	20	18	15	12
+32	L	L	H	4	0	32	0	20	0	7	0	2	b	e	b	i	69	7	22	12	13	15	19	22	22	21	19	15	12
+33	E	L	H	4	0	81	0	42	2	6	0	2	b	e	b	e	66	8	25	5	6	8	12	17	21	25	25	22	18
+34	L	L	H	3	0	32	0	20	0	6	0	2	b	e	b	i	61	8	28	15	16	17	19	21	21	20	18	15	13
+35	Q	L	H	0	0	110	0	56	2	5	0	4	b	e	b	e	51	7	43	4	5	7	11	16	20	24	25	23	21
+36	D	L	L	2	0	91	0	56	3	3	0	5	b	e	b	e	39	5	59	4	5	7	10	14	19	24	26	26	25
+37	H	L	L	1	0	55	0	30	1	3	0	5	b	e	b	i	41	5	60	6	8	12	17	21	23	23	21	18	16
+38	N	L	L	0	0	113	0	72	1	4	0	4	b	e	b	e	51	8	46	5	7	9	13	16	19	22	24	25	24
+39	E	L	L	0	0	139	0	72	6	4	0	4	b	e	b	e	46	8	48	1	2	3	5	8	13	21	29	33	33
+40	T	L	L	0	0	102	0	72	2	5	0	4	b	e	b	e	55	10	44	6	7	9	12	14	17	21	24	25	25
+41	C	L	L	2	0	27	0	20	1	3	1	5	b	e	b	i	39	12	59	14	16	19	21	22	20	18	14	13	12
+42	H	L	L	6	0	165	0	90	2	1	0	7	b	e	b	e	18	9	78	2	3	6	9	13	16	20	22	27	28
+43	A	L	L	9	0	95	0	90	9	0	0	9	b	e	b	e	3	2	94	1	1	2	3	4	6	10	15	33	42

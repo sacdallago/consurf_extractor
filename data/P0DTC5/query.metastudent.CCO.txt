@@ -1,0 +1,28 @@
+query	GO:0043245	0.61	extraorganismal space
+query	GO:0016020	0.61	membrane
+query	GO:0043657	0.61	host cell
+query	GO:0019012	0.61	virion
+query	GO:0033643	0.61	host cell part
+query	GO:0033644	0.61	host cell membrane
+query	GO:0018995	0.61	host
+query	GO:0044217	0.61	other organism part
+query	GO:0044216	0.61	other organism cell
+query	GO:0044215	0.61	other organism
+query	GO:0044218	0.61	other organism cell membrane
+query	GO:0044279	0.61	other organism membrane
+query	GO:0005576	0.61	extracellular region
+query	GO:0044421	0.61	extracellular region part
+query	GO:0044423	0.61	virion part
+query	GO:0031224	0.52	intrinsic component of membrane
+query	GO:0016021	0.52	integral component of membrane
+query	GO:0019031	0.52	viral envelope
+query	GO:0036338	0.52	viral membrane
+query	GO:0044425	0.52	membrane part
+query	GO:0055036	0.22	virion membrane
+query	GO:0033655	0.22	host cell cytoplasm part
+query	GO:0044177	0.22	host cell Golgi apparatus
+query	GO:0043656	0.22	intracellular region of host
+query	GO:0033646	0.22	host intracellular part
+query	GO:0033645	0.22	host cell endomembrane system
+query	GO:0030430	0.22	host cell cytoplasm
+query	GO:0044178	0.22	host cell Golgi membrane

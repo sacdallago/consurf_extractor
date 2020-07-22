@@ -1,0 +1,248 @@
+BLASTP 2.2.26 [Sep-21-2011]
+
+
+Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer, 
+Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), 
+"Gapped BLAST and PSI-BLAST: a new generation of protein database search
+programs",  Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Altschul, Stephen F., 
+John C. Wootton, E. Michael Gertz, Richa Agarwala, Aleksandr Morgulis,
+Alejandro A. Schaffer, and Yi-Kuo Yu (2005) "Protein database searches
+using compositionally adjusted substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Schaffer, Alejandro A., L. Aravind, Thomas L. Madden,
+Sergei Shavirin, John L. Spouge, Yuri I. Wolf,  
+Eugene V. Koonin, and Stephen F. Altschul (2001), 
+"Improving the accuracy of PSI-BLAST protein database searches with 
+composition-based statistics and other refinements",  Nucleic Acids Res. 29:2994-3005.
+
+Query= query
+         (75 letters)
+
+Database: big_80 
+           38,856,661 sequences; 11,002,566,987 total letters
+
+Searching..................................................done
+
+
+Results from round 1
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+
+UniRef50_Q3LZW9 Envelope small membrane protein n=128 Tax=Corona...   134   1e-29
+UniRef50_F1BYM1 Putative envelope protein n=2 Tax=Betacoronaviru...    87   2e-15
+UniRef50_K9N5R3 Envelope small membrane protein n=43 Tax=Coronav...    45   0.008
+
+>UniRef50_Q3LZW9 Envelope small membrane protein n=128
+          Tax=Coronaviridae TaxID=11118 RepID=VEMP_BCHK3
+          Length = 76
+
+ Score =  134 bits (336), Expect = 1e-29,   Method: Compositional matrix adjust.
+ Identities = 72/76 (94%), Positives = 73/76 (96%), Gaps = 1/76 (1%)
+
+Query: 1  MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKPSFYVYS 60
+          MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKP+ YVYS
+Sbjct: 1  MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKPTVYVYS 60
+
+Query: 61 RVKNLNSSR-VPDLLV 75
+          RVKNLNSS  VPDLLV
+Sbjct: 61 RVKNLNSSEGVPDLLV 76
+
+
+>UniRef50_F1BYM1 Putative envelope protein n=2 Tax=Betacoronavirus
+          TaxID=694002 RepID=F1BYM1_9BETC
+          Length = 78
+
+ Score = 86.7 bits (213), Expect = 2e-15,   Method: Compositional matrix adjust.
+ Identities = 44/77 (57%), Positives = 56/77 (72%), Gaps = 2/77 (2%)
+
+Query: 1  MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKPSFYVYS 60
+          MYSFVS+E GTLIVN V L    VV L+V  A LT LRLC +CCNIVN  LV+PS+YVY+
+Sbjct: 1  MYSFVSQEIGTLIVNIVFLIFGCVVLLIVAAATLTCLRLCGFCCNIVNQGLVRPSYYVYT 60
+
+Query: 61 RVKNL--NSSRVPDLLV 75
+          + ++L  NS +  +L+V
+Sbjct: 61 KAQDLYANSRQGSELIV 77
+
+
+>UniRef50_K9N5R3 Envelope small membrane protein n=43
+          Tax=Coronaviridae TaxID=11118 RepID=VEMP_CVEMC
+          Length = 82
+
+ Score = 45.1 bits (105), Expect = 0.008,   Method: Compositional matrix adjust.
+ Identities = 27/75 (36%), Positives = 38/75 (50%), Gaps = 4/75 (5%)
+
+Query: 1  MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKPSFYVYS 60
+          M  FV E  G  IVN  +  +   + LLV +A LTA RLC  C    N  LV+P+ Y+Y+
+Sbjct: 1  MLPFVQERIGLFIVNFFIFTVVCAITLLVCMAFLTATRLCVQCMTGFNTLLVQPALYLYN 60
+
+Query: 61 RVKN----LNSSRVP 71
+            ++       S+ P
+Sbjct: 61 TGRSVYVKFQDSKPP 75
+
+
+Searching..................................................done
+
+
+Results from round 2
+
+
+                                                                 Score    E
+Sequences producing significant alignments:                      (bits) Value
+Sequences used in model and found again:
+
+UniRef50_F1BYM1 Putative envelope protein n=2 Tax=Betacoronaviru...    85   1e-14
+UniRef50_Q3LZW9 Envelope small membrane protein n=128 Tax=Corona...    79   5e-13
+
+Sequences not found previously or not previously below threshold:
+
+UniRef50_K9N5R3 Envelope small membrane protein n=43 Tax=Coronav...    39   0.37 
+
+
+CONVERGED!
+>UniRef50_F1BYM1 Putative envelope protein n=2 Tax=Betacoronavirus
+          TaxID=694002 RepID=F1BYM1_9BETC
+          Length = 78
+
+ Score = 84.5 bits (208), Expect = 1e-14,   Method: Composition-based stats.
+ Identities = 44/77 (57%), Positives = 56/77 (72%), Gaps = 2/77 (2%)
+
+Query: 1  MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKPSFYVYS 60
+          MYSFVS+E GTLIVN V L    VV L+V  A LT LRLC +CCNIVN  LV+PS+YVY+
+Sbjct: 1  MYSFVSQEIGTLIVNIVFLIFGCVVLLIVAAATLTCLRLCGFCCNIVNQGLVRPSYYVYT 60
+
+Query: 61 RVKNL--NSSRVPDLLV 75
+          + ++L  NS +  +L+V
+Sbjct: 61 KAQDLYANSRQGSELIV 77
+
+
+>UniRef50_Q3LZW9 Envelope small membrane protein n=128
+          Tax=Coronaviridae TaxID=11118 RepID=VEMP_BCHK3
+          Length = 76
+
+ Score = 78.8 bits (193), Expect = 5e-13,   Method: Composition-based stats.
+ Identities = 71/76 (93%), Positives = 72/76 (94%), Gaps = 1/76 (1%)
+
+Query: 1  MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKPSFYVYS 60
+          MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKP+ YVYS
+Sbjct: 1  MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKPTVYVYS 60
+
+Query: 61 RVKNLNSSRV-PDLLV 75
+          RVKNLNSS   PDLLV
+Sbjct: 61 RVKNLNSSEGVPDLLV 76
+
+
+>UniRef50_K9N5R3 Envelope small membrane protein n=43
+          Tax=Coronaviridae TaxID=11118 RepID=VEMP_CVEMC
+          Length = 82
+
+ Score = 39.5 bits (91), Expect = 0.37,   Method: Composition-based stats.
+ Identities = 25/65 (38%), Positives = 36/65 (55%)
+
+Query: 1  MYSFVSEETGTLIVNSVLLFLAFVVFLLVTLAILTALRLCAYCCNIVNVSLVKPSFYVYS 60
+          M  FV E  G  IVN  +  +   + LLV +A LTA RLC  C    N  LV+P+ Y+Y+
+Sbjct: 1  MLPFVQERIGLFIVNFFIFTVVCAITLLVCMAFLTATRLCVQCMTGFNTLLVQPALYLYN 60
+
+Query: 61 RVKNL 65
+            +++
+Sbjct: 61 TGRSV 65
+
+
+  Database: big_80
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,958,422
+  Number of sequences in database:  3,040,876
+  
+  Database: /var/tmp/rost_db/data/big/big_80.01
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 997,145,285
+  Number of sequences in database:  2,854,509
+  
+  Database: /var/tmp/rost_db/data/big/big_80.02
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 997,089,814
+  Number of sequences in database:  2,909,903
+  
+  Database: /var/tmp/rost_db/data/big/big_80.03
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,328,211
+  Number of sequences in database:  3,671,715
+  
+  Database: /var/tmp/rost_db/data/big/big_80.04
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,101,693
+  Number of sequences in database:  3,898,283
+  
+  Database: /var/tmp/rost_db/data/big/big_80.05
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,256,834
+  Number of sequences in database:  3,743,050
+  
+  Database: /var/tmp/rost_db/data/big/big_80.06
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,299,472
+  Number of sequences in database:  3,700,488
+  
+  Database: /var/tmp/rost_db/data/big/big_80.07
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,212,872
+  Number of sequences in database:  3,787,048
+  
+  Database: /var/tmp/rost_db/data/big/big_80.08
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,363,209
+  Number of sequences in database:  3,636,697
+  
+  Database: /var/tmp/rost_db/data/big/big_80.09
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,048,001
+  Number of sequences in database:  3,951,876
+  
+  Database: /var/tmp/rost_db/data/big/big_80.10
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 996,502,919
+  Number of sequences in database:  3,497,018
+  
+  Database: /var/tmp/rost_db/data/big/big_80.11
+    Posted date:  Feb 17, 2020  3:10 AM
+  Number of letters in database: 41,260,255
+  Number of sequences in database:  165,198
+  
+Lambda     K      H
+   0.338    0.153    0.444 
+
+Lambda     K      H
+   0.267   0.0458    0.140 
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Number of Hits to DB: 3,049,435,791
+Number of Sequences: 38856661
+Number of extensions: 99561408
+Number of successful extensions: 472589
+Number of sequences better than  1.0: 9
+Number of HSP's better than  1.0 without gapping: 17
+Number of HSP's successfully gapped in prelim test: 0
+Number of HSP's that attempted gapping in prelim test: 472569
+Number of HSP's gapped (non-prelim): 17
+length of query: 75
+length of database: 11,002,566,987
+effective HSP length: 45
+effective length of query: 30
+effective length of database: 9,254,017,242
+effective search space: 277620517260
+effective search space used: 277620517260
+T: 11
+A: 40
+X1: 16 ( 7.8 bits)
+X2: 38 (14.6 bits)
+X3: 64 (24.7 bits)
+S1: 40 (22.2 bits)
+S2: 88 (38.3 bits)

@@ -1,0 +1,86 @@
+
+#PERL-RDB
+#SEQLENGTH	 121
+#ID	:	identifier of the aligned (homologous) protein
+#LSEQ2	:	length of the entire sequence of the aligned protein
+#LALI	:	length of the alignment excluding insertions and deletions
+#%IDE	:	percent indentity
+#%SIM	:	percent similarity
+#LGAP	:	total gap length
+#BSCORE	:	blast score (bits)
+#BEXPECT	:	blast expectation value
+#PROTEIN	:	one-line description of aligned protein
+#'!'	:	indicates lower scoring alignment that is combined with 
+#the higher scoring adjacent one  
+##ID	LSEQ2	%IDE	%SIM	LALI	LGAP	BSCORE	BEXPECT	PROTEIN
+sp|Q0Q469|NS8_BC279	121	57	77	121	0	184	7e-44	Non-structural protein 8 OS=Bat coronavirus
+sp|Q3I5I8|NS8_BCRP3	121	56	77	121	0	182	2e-43	Non-structural protein 8 OS=Bat coronavirus
+sp|Q3LZX5|NS8_BCHK3	121	57	77	121	0	182	4e-43	Non-structural protein 8 OS=Bat coronavirus
+sp|Q80H93|NS8B_CVHSA	84	26	43	69	9	91.2	8e-16	Non-structural protein 8b OS=Human SARS
+tr|A0A023PSW4|A0A023PSW4_CVHSA	121	57	79	121	0	171	4e-40	Protein 10b OS=Rhinolophus affinis
+tr|A0A0K1Z007|A0A0K1Z007_CVHSA	122	28	44	114	11	146	1e-32	Uncharacterized protein OS=Bat
+tr|A0A0K1Z034|A0A0K1Z034_CVHSA	122	28	44	114	11	146	1e-32	Uncharacterized protein OS=Bat
+tr|A0A0U1UYX9|A0A0U1UYX9_CVHSA	122	28	44	114	11	143	2e-31	Uncharacterized protein
+tr|A0A0U1UYY2|A0A0U1UYY2_CVHSA	122	28	44	114	11	138	4e-30	Uncharacterized protein
+tr|A0A0U1UYY4|A0A0U1UYY4_CVHSA	121	49	68	121	0	161	6e-37	Uncharacterized protein
+tr|A0A0U1UYY6|A0A0U1UYY6_CVHSA	122	29	47	113	11	141	6e-31	Uncharacterized protein
+tr|A0A0U1UYY8|A0A0U1UYY8_CVHSA	122	29	47	113	11	144	1e-31	Uncharacterized protein
+tr|A0A0U2HVH5|A0A0U2HVH5_9BETC	121	57	76	121	0	172	2e-40	Uncharacterized protein OS=SARS-like
+tr|A0A1W6S782|A0A1W6S782_CVHSA	122	26	46	112	11	137	9e-30	Protein 10 OS=Human SARS coronavirus
+tr|A0A2D1PX45|A0A2D1PX45_CVHSA	92	25	42	69	9	91.2	7e-16	ORF8b OS=Bat SARS-like coronavirus
+tr|A0A2D1PX56|A0A2D1PX56_CVHSA	122	28	47	113	11	142	2e-31	ORF8 OS=Bat SARS-like coronavirus
+tr|A0A2D1PX59|A0A2D1PX59_CVHSA	121	57	76	121	0	172	2e-40	ORF8 OS=Bat SARS-like coronavirus
+tr|A0A2D1PX66|A0A2D1PX66_CVHSA	47	29	54	42	2	50.4	0.001	ORF8a OS=Bat SARS-like coronavirus
+tr|A0A2D1PX96|A0A2D1PX96_CVHSA	121	57	76	121	0	172	4e-40	ORF8 OS=Bat SARS-like coronavirus
+tr|A0A2D1PXA7|A0A2D1PXA7_CVHSA	121	58	77	121	0	175	3e-41	ORF8 OS=Bat SARS-like coronavirus
+tr|A0A2D1PXD4|A0A2D1PXD4_CVHSA	121	57	77	121	0	175	4e-41	ORF8 OS=Bat SARS-like coronavirus
+tr|A0A2D1PXE1|A0A2D1PXE1_CVHSA	121	57	76	121	0	174	8e-41	ORF8 OS=Bat SARS-like coronavirus
+tr|A0A2D1PXH6|A0A2D1PXH6_CVHSA	121	57	76	121	0	172	2e-40	ORF8 OS=Bat SARS-like coronavirus
+tr|A0A2R3SUZ9|A0A2R3SUZ9_CVHSA	121	94	97	121	0	175	3e-41	Uncharacterized protein OS=Bat
+tr|A0A3G5BJ13|A0A3G5BJ13_CVHSA	84	26	43	69	9	91.2	8e-16	ORF8b OS=SARS coronavirus Urbani
+tr|A0A3G5BJ24|A0A3G5BJ24_CVHSA	84	26	43	69	9	90.9	9e-16	ORF8b OS=SARS coronavirus Urbani
+tr|C4P6R6|C4P6R6_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein OS=SARS coronavirus
+tr|D2DJX2|D2DJX2_CVHSA	121	58	78	121	0	174	5e-41	Uncharacterized protein OS=SARS coronavirus
+tr|D2DJY0|D2DJY0_9BETC	121	57	76	121	0	182	2e-43	Uncharacterized protein OS=Bat SARS Cov
+tr|D2E1E1|D2E1E1_CVHSA	84	26	43	69	9	91.2	8e-16	Non-structural protein 8b OS=SARS
+tr|D2E1F6|D2E1F6_CVHSA	84	26	43	69	9	91.2	8e-16	Non-structural protein 8b OS=SARS
+tr|D2E244|D2E244_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein OS=SARS coronavirus
+tr|D2E274|D2E274_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein OS=SARS coronavirus
+tr|D3KDN3|D3KDN3_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein OS=SARS coronavirus
+tr|D5HJQ8|D5HJQ8_BCHK3	121	56	77	120	0	180	6e-43	Uncharacterized protein OS=Bat SARS
+tr|D5HJR9|D5HJR9_BCHK3	121	57	77	121	0	182	4e-43	Uncharacterized protein OS=Bat SARS
+tr|D5HJT0|D5HJT0_BCHK3	121	56	77	120	0	180	6e-43	Uncharacterized protein OS=Bat SARS
+tr|D5HJU1|D5HJU1_BCHK3	121	57	77	121	0	181	4e-43	Uncharacterized protein OS=Bat SARS
+tr|D5HJV2|D5HJV2_BCHK3	52	50	80	51	0	83.5	1e-13	Uncharacterized protein OS=Bat SARS
+tr|D5HJV4|D5HJV4_BCHK3	47	68	80	47	0	75.1	6e-11	Uncharacterized protein OS=Bat SARS
+tr|D5HJW5|D5HJW5_BCHK3	121	57	77	121	0	182	4e-43	Uncharacterized protein OS=Bat SARS
+tr|D5HJX6|D5HJX6_BCHK3	121	57	77	121	0	182	4e-43	Uncharacterized protein OS=Bat SARS
+tr|D5HJY7|D5HJY7_BCHK3	121	57	77	121	0	182	4e-43	Uncharacterized protein OS=Bat SARS
+tr|D5HJZ8|D5HJZ8_BCHK3	121	57	77	121	0	182	4e-43	Uncharacterized protein OS=Bat SARS
+tr|D5HK09|D5HK09_BCHK3	121	57	77	121	0	182	4e-43	Uncharacterized protein OS=Bat SARS
+tr|Q0Q478|Q0Q478_CVHSA	122	28	45	114	11	142	4e-31	Putative ORF8 OS=Bat CoV 273/2005 OX=389166
+tr|Q1EFM3|Q1EFM3_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein 7 OS=SARS
+tr|Q1EFM4|Q1EFM4_CVHSA	39	29	53	39	2	42.7	0.30	Uncharacterized protein 6 OS=SARS
+tr|Q1EFN6|Q1EFN6_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein 7 OS=SARS
+tr|Q1EFN7|Q1EFN7_CVHSA	39	29	53	39	2	42.7	0.30	Uncharacterized protein 6 OS=SARS
+tr|Q3I5K7|Q3I5K7_CVHSA	121	57	77	121	0	184	7e-44	ORF8 OS=Bat SARS CoV Rm1/2004 OX=347536 PE=4
+tr|Q3I5L1|Q3I5L1_CVHSA	122	28	45	114	11	140	1e-30	ORF8 OS=Bat SARS CoV Rf1/2004 OX=347537 PE=4
+tr|Q3LZU3|Q3LZU3_BCHK3	121	57	77	121	0	182	4e-43	Uncharacterized protein OS=Bat SARS
+tr|Q3LZV7|Q3LZV7_BCHK3	121	57	77	121	0	182	4e-43	Uncharacterized protein OS=Bat SARS
+tr|Q3S2B6|Q3S2B6_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein 8b OS=SARS
+tr|Q3ZTB7|Q3ZTB7_CVHSA	122	29	46	112	11	139	2e-30	Orf10 OS=SARS coronavirus civet020 OX=285949
+tr|Q3ZTD2|Q3ZTD2_CVHSA	122	29	47	113	11	142	3e-31	Orf10 OS=SARS coronavirus civet010 OX=285946
+tr|Q3ZTE5|Q3ZTE5_CVHSA	122	29	47	113	11	142	3e-31	Orf10 OS=Civet SARS CoV 007/2004 OX=285945
+tr|Q4JDP6|Q4JDP6_CVHSA	122	29	47	113	11	142	3e-31	Uncharacterized protein OS=SARS coronavirus
+tr|Q4JDQ9|Q4JDQ9_CVHSA	122	29	47	112	11	140	8e-31	Orf10 OS=SARS coronavirus A022 OX=304858
+tr|Q5Y180|Q5Y180_CVHSA	84	26	43	69	9	91.2	8e-16	X5 protein OS=SARS Coronavirus CDC#200301157
+tr|Q6GYQ3|Q6GYQ3_CVHSA	87	26	43	69	9	91.2	8e-16	Uncharacterized protein OS=SARS coronavirus
+tr|Q6S8C8|Q6S8C8_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein OS=SARS coronavirus
+tr|Q6S8E2|Q6S8E2_CVHSA	84	26	43	69	9	91.2	8e-16	Protein X5 OS=Human SARS coronavirus
+tr|Q6T1D3|Q6T1D3_CVHSA	84	26	43	69	9	91.2	8e-16	Orf11 OS=SARS coronavirus CUHK-L2 OX=260550
+tr|Q6T1D4|Q6T1D4_CVHSA	39	29	53	39	2	42.7	0.30	Orf10 OS=SARS coronavirus CUHK-L2
+tr|Q6TPE1|Q6TPE1_CVHSA	122	29	47	113	11	142	2e-31	Uncharacterized protein OS=SARS coronavirus
+tr|Q76XZ6|Q76XZ6_CVHSA	84	26	43	69	9	91.2	8e-16	Uncharacterized protein 8b OS=SARS
+tr|U5WI34|U5WI34_CVHSA	121	58	77	121	0	175	3e-41	Uncharacterized protein OS=Bat SARS-like
+tr|U5WLD0|U5WLD0_CVHSA	121	57	77	121	0	175	4e-41	Uncharacterized protein OS=Bat SARS-like
+tr|U5WLM2|U5WLM2_CVHSA	121	57	77	121	0	175	4e-41	Uncharacterized protein OS=Bat SARS-like

@@ -1,0 +1,19 @@
+query	GO:0097159	0.53	organic cyclic compound binding
+query	GO:0005488	0.53	binding
+query	GO:0003676	0.53	nucleic acid binding
+query	GO:0003723	0.53	RNA binding
+query	GO:1901363	0.53	heterocyclic compound binding
+query	GO:0008135	0.05	translation factor activity, nucleic acid binding
+query	GO:0003743	0.05	translation initiation factor activity
+query	GO:1901265	0.04	nucleoside phosphate binding
+query	GO:0036094	0.04	small molecule binding
+query	GO:0000166	0.04	nucleotide binding
+query	GO:0016787	0.03	hydrolase activity
+query	GO:0016818	0.03	hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides
+query	GO:0005515	0.03	protein binding
+query	GO:0016462	0.03	pyrophosphatase activity
+query	GO:0003924	0.03	GTPase activity
+query	GO:0017111	0.03	nucleoside-triphosphatase activity
+query	GO:0016817	0.03	hydrolase activity, acting on acid anhydrides
+query	GO:0003824	0.03	catalytic activity
+query	GO:0042802	0.03	identical protein binding

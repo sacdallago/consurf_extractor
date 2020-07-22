@@ -1,0 +1,4461 @@
+# Perl-RDB
+# 
+# PHDhtm_top: prediction of topology for helical transmembrane proteins
+# 
+# PDBID         : query
+# LENGTH        :  4405
+# NHTM_BEST     :     17     (number of helices for best model)
+# NHTM_2ND_BEST :     16     (number of helices for second best model)
+# REL_BEST      :  1.244     (reliability of best model =zscore)
+# REL_BEST_DIFF :  0.000     (reliability of best model =1st-2nd)
+# REL_BEST_DPROJ:      0     (reliability of best model projection of (1st-2nd)
+#
+# MODEL         : iteratively adding transmembrane helices (HTM's)
+# MODEL         : N HTM      , Total Score  , Best HTM   ,    C -     N
+# MODEL_DAT     : 1          , 0.9032       , 0.9107     , 2322 -  2346
+# MODEL_DAT     : 2          , 0.9079       , 0.9115     , 3125 -  3149
+# MODEL_DAT     : 3          , 0.9114       , 0.9107     , 3045 -  3063
+# MODEL_DAT     : 4          , 0.9149       , 0.9022     , 3610 -  3628
+# MODEL_DAT     : 5          , 0.9182       , 0.9018     , 2378 -  2395
+# MODEL_DAT     : 6          , 0.9214       , 0.9007     , 3078 -  3095
+# MODEL_DAT     : 7          , 0.9247       , 0.9012     , 3779 -  3796
+# MODEL_DAT     : 8          , 0.9280       , 0.8821     , 3583 -  3601
+# MODEL_DAT     : 9          , 0.9311       , 0.8805     , 2230 -  2247
+# MODEL_DAT     : 10         , 0.9343       , 0.8849     , 2773 -  2790
+# MODEL_DAT     : 11         , 0.9371       , 0.8520     , 3634 -  3651
+# MODEL_DAT     : 12         , 0.9398       , 0.8109     , 3744 -  3762
+# MODEL_DAT     : 13         , 0.9423       , 0.8014     , 3100 -  3117
+# MODEL_DAT     : 14         , 0.9448       , 0.8092     , 3680 -  3697
+# MODEL_DAT     : 15         , 0.9470       , 0.7710     , 2351 -  2368
+# MODEL_DAT     : 16         , 0.9477       , 0.5815     , 3708 -  3725
+# MODEL_DAT     : 17         , 0.9479       , 0.5216     , 2166 -  2183
+#
+# HTMTOP_OBS    :  unk       (first loop region)
+# HTMTOP_PRD    :  out       (first loop region, mode=top_fin)
+# HTMTOP_MODPRD :  out       (first loop region, mode=PRHL)
+# HTMTOP_RID    :  4.706     (difference num(K+R), even-odd)
+# HTMTOP_RIP    :      4     (reliability index =int(min{9,2*sqrt((DC)^2)}) )
+# 
+# NOTATION No   : residue number 
+# NOTATION AA   : amino acid one letter code
+# NOTATION PHL  : predicted transmembrane helices
+# NOTATION PHL  :    H=helical membrane, L=no helical transmembrane
+# NOTATION RI_S : reliability of secondary structure prediction , 0-9
+# NOTATION pH   : probability of predicting helix, 0-9
+# NOTATION pL   : probability of predicting loop
+# NOTATION OtH  : network output for helix, 0-100
+# NOTATION OtL  : network output for loop
+# NOTATION PRHL : refined prediction (maximum score model)
+# NOTATION PR2HL: refined prediction (second best maximum score model)
+# NOTATION PTHLA: predicted model for maximal charge difference (all)
+# NOTATION PTHLS: predicted model for maximal charge difference (sep)
+# NOTATION PiTo : predicted topology of transmembrane regions
+# NOTATION PiTo :    i=loop inside, T=transmembrane, o=loop outside
+# 
+No	AA	PHL	RI_H	pH	pL	OtH	OtL	PRHL	PR2HL	PiTo
+4N	1S	1S	1N	1N	1N	3N	3N	1S	1S	1S
+   1	M	L	9	0	9	  3	 96	L	L	o
+   2	E	L	9	0	9	  2	 97	L	L	o
+   3	S	L	9	0	9	  1	 98	L	L	o
+   4	L	L	9	0	9	  1	 98	L	L	o
+   5	V	L	9	0	9	  1	 98	L	L	o
+   6	P	L	9	0	9	  1	 98	L	L	o
+   7	G	L	9	0	9	  1	 98	L	L	o
+   8	F	L	9	0	9	  1	 98	L	L	o
+   9	N	L	9	0	9	  1	 98	L	L	o
+  10	E	L	9	0	9	  1	 98	L	L	o
+  11	K	L	9	0	9	  1	 98	L	L	o
+  12	T	L	9	0	9	  1	 98	L	L	o
+  13	H	L	9	0	9	  1	 98	L	L	o
+  14	V	L	9	0	9	  1	 98	L	L	o
+  15	Q	L	9	0	9	  1	 98	L	L	o
+  16	L	L	9	0	9	  1	 98	L	L	o
+  17	S	L	9	0	9	  1	 98	L	L	o
+  18	L	L	9	0	9	  1	 98	L	L	o
+  19	P	L	9	0	9	  1	 98	L	L	o
+  20	V	L	9	0	9	  1	 98	L	L	o
+  21	L	L	9	0	9	  1	 98	L	L	o
+  22	Q	L	9	0	9	  1	 98	L	L	o
+  23	V	L	9	0	9	  1	 98	L	L	o
+  24	R	L	9	0	9	  1	 98	L	L	o
+  25	D	L	9	0	9	  1	 98	L	L	o
+  26	V	L	9	0	9	  1	 98	L	L	o
+  27	L	L	9	0	9	  1	 98	L	L	o
+  28	V	L	9	0	9	  1	 98	L	L	o
+  29	R	L	9	0	9	  1	 98	L	L	o
+  30	G	L	9	0	9	  1	 98	L	L	o
+  31	F	L	9	0	9	  1	 98	L	L	o
+  32	G	L	9	0	9	  1	 98	L	L	o
+  33	D	L	9	0	9	  1	 98	L	L	o
+  34	S	L	9	0	9	  1	 98	L	L	o
+  35	V	L	9	0	9	  1	 98	L	L	o
+  36	E	L	9	0	9	  1	 98	L	L	o
+  37	E	L	9	0	9	  1	 98	L	L	o
+  38	V	L	9	0	9	  1	 98	L	L	o
+  39	L	L	9	0	9	  1	 98	L	L	o
+  40	S	L	9	0	9	  1	 98	L	L	o
+  41	E	L	9	0	9	  1	 98	L	L	o
+  42	A	L	9	0	9	  1	 98	L	L	o
+  43	R	L	9	0	9	  1	 98	L	L	o
+  44	Q	L	9	0	9	  1	 98	L	L	o
+  45	H	L	9	0	9	  1	 98	L	L	o
+  46	L	L	9	0	9	  1	 98	L	L	o
+  47	K	L	9	0	9	  1	 98	L	L	o
+  48	D	L	9	0	9	  1	 98	L	L	o
+  49	G	L	9	0	9	  1	 98	L	L	o
+  50	T	L	9	0	9	  1	 98	L	L	o
+  51	C	L	9	0	9	  1	 98	L	L	o
+  52	G	L	9	0	9	  1	 98	L	L	o
+  53	L	L	9	0	9	  1	 98	L	L	o
+  54	V	L	9	0	9	  1	 98	L	L	o
+  55	E	L	9	0	9	  1	 98	L	L	o
+  56	V	L	9	0	9	  1	 98	L	L	o
+  57	E	L	9	0	9	  1	 98	L	L	o
+  58	K	L	9	0	9	  1	 98	L	L	o
+  59	G	L	9	0	9	  1	 98	L	L	o
+  60	V	L	9	0	9	  1	 98	L	L	o
+  61	L	L	9	0	9	  1	 98	L	L	o
+  62	P	L	9	0	9	  1	 98	L	L	o
+  63	Q	L	9	0	9	  1	 98	L	L	o
+  64	L	L	9	0	9	  1	 98	L	L	o
+  65	E	L	9	0	9	  1	 98	L	L	o
+  66	Q	L	9	0	9	  1	 98	L	L	o
+  67	P	L	9	0	9	  1	 98	L	L	o
+  68	Y	L	9	0	9	  1	 98	L	L	o
+  69	V	L	9	0	9	  1	 98	L	L	o
+  70	F	L	9	0	9	  1	 98	L	L	o
+  71	I	L	9	0	9	  1	 98	L	L	o
+  72	K	L	9	0	9	  1	 98	L	L	o
+  73	R	L	9	0	9	  1	 98	L	L	o
+  74	S	L	9	0	9	  1	 98	L	L	o
+  75	D	L	9	0	9	  1	 98	L	L	o
+  76	A	L	9	0	9	  1	 98	L	L	o
+  77	R	L	9	0	9	  1	 98	L	L	o
+  78	T	L	9	0	9	  1	 98	L	L	o
+  79	A	L	9	0	9	  1	 98	L	L	o
+  80	P	L	9	0	9	  1	 98	L	L	o
+  81	H	L	9	0	9	  1	 98	L	L	o
+  82	G	L	9	0	9	  1	 98	L	L	o
+  83	H	L	9	0	9	  1	 98	L	L	o
+  84	V	L	9	0	9	  1	 98	L	L	o
+  85	M	L	9	0	9	  1	 98	L	L	o
+  86	V	L	9	0	9	  1	 98	L	L	o
+  87	E	L	9	0	9	  1	 98	L	L	o
+  88	L	L	9	0	9	  1	 98	L	L	o
+  89	V	L	9	0	9	  1	 98	L	L	o
+  90	A	L	9	0	9	  1	 98	L	L	o
+  91	E	L	9	0	9	  1	 98	L	L	o
+  92	L	L	9	0	9	  1	 98	L	L	o
+  93	E	L	9	0	9	  1	 98	L	L	o
+  94	G	L	9	0	9	  1	 98	L	L	o
+  95	I	L	9	0	9	  1	 98	L	L	o
+  96	Q	L	9	0	9	  1	 98	L	L	o
+  97	Y	L	9	0	9	  1	 98	L	L	o
+  98	G	L	9	0	9	  1	 98	L	L	o
+  99	R	L	9	0	9	  1	 98	L	L	o
+ 100	S	L	9	0	9	  1	 98	L	L	o
+ 101	G	L	9	0	9	  1	 98	L	L	o
+ 102	E	L	9	0	9	  1	 98	L	L	o
+ 103	T	L	9	0	9	  1	 98	L	L	o
+ 104	L	L	9	0	9	  1	 98	L	L	o
+ 105	G	L	9	0	9	  1	 98	L	L	o
+ 106	V	L	9	0	9	  1	 98	L	L	o
+ 107	L	L	9	0	9	  1	 98	L	L	o
+ 108	V	L	9	0	9	  1	 98	L	L	o
+ 109	P	L	9	0	9	  1	 98	L	L	o
+ 110	H	L	9	0	9	  1	 98	L	L	o
+ 111	V	L	9	0	9	  2	 97	L	L	o
+ 112	G	L	9	0	9	  2	 97	L	L	o
+ 113	E	L	9	0	9	  2	 97	L	L	o
+ 114	I	L	9	0	9	  3	 96	L	L	o
+ 115	P	L	9	0	9	  3	 96	L	L	o
+ 116	V	L	9	0	9	  2	 97	L	L	o
+ 117	A	L	9	0	9	  1	 98	L	L	o
+ 118	Y	L	9	0	9	  1	 98	L	L	o
+ 119	R	L	9	0	9	  1	 98	L	L	o
+ 120	K	L	9	0	9	  1	 98	L	L	o
+ 121	V	L	9	0	9	  1	 98	L	L	o
+ 122	L	L	9	0	9	  1	 98	L	L	o
+ 123	L	L	9	0	9	  1	 98	L	L	o
+ 124	R	L	9	0	9	  1	 98	L	L	o
+ 125	K	L	9	0	9	  1	 98	L	L	o
+ 126	N	L	9	0	9	  1	 98	L	L	o
+ 127	G	L	9	0	9	  1	 98	L	L	o
+ 128	N	L	9	0	9	  1	 98	L	L	o
+ 129	K	L	9	0	9	  1	 98	L	L	o
+ 130	G	L	9	0	9	  1	 98	L	L	o
+ 131	A	L	9	0	9	  1	 98	L	L	o
+ 132	G	L	9	0	9	  1	 98	L	L	o
+ 133	G	L	9	0	9	  1	 98	L	L	o
+ 134	H	L	9	0	9	  1	 98	L	L	o
+ 135	S	L	9	0	9	  1	 98	L	L	o
+ 136	Y	L	9	0	9	  1	 98	L	L	o
+ 137	G	L	9	0	9	  1	 98	L	L	o
+ 138	A	L	9	0	9	  1	 98	L	L	o
+ 139	D	L	9	0	9	  1	 98	L	L	o
+ 140	L	L	9	0	9	  1	 98	L	L	o
+ 141	K	L	9	0	9	  1	 98	L	L	o
+ 142	S	L	9	0	9	  1	 98	L	L	o
+ 143	F	L	9	0	9	  1	 98	L	L	o
+ 144	D	L	9	0	9	  1	 98	L	L	o
+ 145	L	L	9	0	9	  1	 98	L	L	o
+ 146	G	L	9	0	9	  1	 98	L	L	o
+ 147	D	L	9	0	9	  1	 98	L	L	o
+ 148	E	L	9	0	9	  1	 98	L	L	o
+ 149	L	L	9	0	9	  1	 98	L	L	o
+ 150	G	L	9	0	9	  1	 98	L	L	o
+ 151	T	L	9	0	9	  1	 98	L	L	o
+ 152	D	L	9	0	9	  1	 98	L	L	o
+ 153	P	L	9	0	9	  1	 98	L	L	o
+ 154	Y	L	9	0	9	  1	 98	L	L	o
+ 155	E	L	9	0	9	  1	 98	L	L	o
+ 156	D	L	9	0	9	  1	 98	L	L	o
+ 157	F	L	9	0	9	  1	 98	L	L	o
+ 158	Q	L	9	0	9	  1	 98	L	L	o
+ 159	E	L	9	0	9	  1	 98	L	L	o
+ 160	N	L	9	0	9	  1	 98	L	L	o
+ 161	W	L	9	0	9	  1	 98	L	L	o
+ 162	N	L	9	0	9	  1	 98	L	L	o
+ 163	T	L	9	0	9	  1	 98	L	L	o
+ 164	K	L	9	0	9	  1	 98	L	L	o
+ 165	H	L	9	0	9	  1	 98	L	L	o
+ 166	S	L	9	0	9	  1	 98	L	L	o
+ 167	S	L	9	0	9	  1	 98	L	L	o
+ 168	G	L	9	0	9	  1	 98	L	L	o
+ 169	V	L	9	0	9	  1	 98	L	L	o
+ 170	T	L	9	0	9	  1	 98	L	L	o
+ 171	R	L	9	0	9	  1	 98	L	L	o
+ 172	E	L	9	0	9	  1	 98	L	L	o
+ 173	L	L	9	0	9	  1	 98	L	L	o
+ 174	M	L	9	0	9	  1	 98	L	L	o
+ 175	R	L	9	0	9	  1	 98	L	L	o
+ 176	E	L	9	0	9	  1	 98	L	L	o
+ 177	L	L	9	0	9	  1	 98	L	L	o
+ 178	N	L	9	0	9	  1	 98	L	L	o
+ 179	G	L	9	0	9	  1	 98	L	L	o
+ 180	G	L	9	0	9	  1	 98	L	L	o
+ 181	A	L	9	0	9	  1	 98	L	L	o
+ 182	Y	L	9	0	9	  1	 98	L	L	o
+ 183	T	L	9	0	9	  1	 98	L	L	o
+ 184	R	L	9	0	9	  1	 98	L	L	o
+ 185	Y	L	9	0	9	  1	 98	L	L	o
+ 186	V	L	9	0	9	  1	 98	L	L	o
+ 187	D	L	9	0	9	  1	 98	L	L	o
+ 188	N	L	9	0	9	  1	 98	L	L	o
+ 189	N	L	9	0	9	  1	 98	L	L	o
+ 190	F	L	9	0	9	  1	 98	L	L	o
+ 191	C	L	9	0	9	  1	 98	L	L	o
+ 192	G	L	9	0	9	  1	 98	L	L	o
+ 193	P	L	9	0	9	  1	 98	L	L	o
+ 194	D	L	9	0	9	  1	 98	L	L	o
+ 195	G	L	9	0	9	  1	 98	L	L	o
+ 196	Y	L	9	0	9	  1	 98	L	L	o
+ 197	P	L	9	0	9	  1	 98	L	L	o
+ 198	L	L	9	0	9	  1	 98	L	L	o
+ 199	E	L	9	0	9	  1	 98	L	L	o
+ 200	C	L	9	0	9	  1	 98	L	L	o
+ 201	I	L	9	0	9	  1	 98	L	L	o
+ 202	K	L	9	0	9	  1	 98	L	L	o
+ 203	D	L	9	0	9	  1	 98	L	L	o
+ 204	L	L	9	0	9	  1	 98	L	L	o
+ 205	L	L	9	0	9	  1	 98	L	L	o
+ 206	A	L	9	0	9	  1	 98	L	L	o
+ 207	R	L	9	0	9	  1	 98	L	L	o
+ 208	A	L	9	0	9	  1	 98	L	L	o
+ 209	G	L	9	0	9	  1	 98	L	L	o
+ 210	K	L	9	0	9	  1	 98	L	L	o
+ 211	A	L	9	0	9	  1	 98	L	L	o
+ 212	S	L	9	0	9	  1	 98	L	L	o
+ 213	C	L	9	0	9	  1	 98	L	L	o
+ 214	T	L	9	0	9	  1	 98	L	L	o
+ 215	L	L	9	0	9	  1	 98	L	L	o
+ 216	S	L	9	0	9	  1	 98	L	L	o
+ 217	E	L	9	0	9	  1	 98	L	L	o
+ 218	Q	L	9	0	9	  1	 98	L	L	o
+ 219	L	L	9	0	9	  1	 98	L	L	o
+ 220	D	L	9	0	9	  1	 98	L	L	o
+ 221	F	L	9	0	9	  1	 98	L	L	o
+ 222	I	L	9	0	9	  1	 98	L	L	o
+ 223	D	L	9	0	9	  1	 98	L	L	o
+ 224	T	L	9	0	9	  1	 98	L	L	o
+ 225	K	L	9	0	9	  1	 98	L	L	o
+ 226	R	L	9	0	9	  1	 98	L	L	o
+ 227	G	L	9	0	9	  1	 98	L	L	o
+ 228	V	L	9	0	9	  1	 98	L	L	o
+ 229	Y	L	9	0	9	  1	 98	L	L	o
+ 230	C	L	9	0	9	  1	 98	L	L	o
+ 231	C	L	9	0	9	  1	 98	L	L	o
+ 232	R	L	9	0	9	  1	 98	L	L	o
+ 233	E	L	9	0	9	  1	 98	L	L	o
+ 234	H	L	9	0	9	  1	 98	L	L	o
+ 235	E	L	9	0	9	  1	 98	L	L	o
+ 236	H	L	9	0	9	  1	 98	L	L	o
+ 237	E	L	9	0	9	  1	 98	L	L	o
+ 238	I	L	9	0	9	  1	 98	L	L	o
+ 239	A	L	9	0	9	  1	 98	L	L	o
+ 240	W	L	9	0	9	  1	 98	L	L	o
+ 241	Y	L	9	0	9	  1	 98	L	L	o
+ 242	T	L	9	0	9	  1	 98	L	L	o
+ 243	E	L	9	0	9	  1	 98	L	L	o
+ 244	R	L	9	0	9	  1	 98	L	L	o
+ 245	S	L	9	0	9	  1	 98	L	L	o
+ 246	E	L	9	0	9	  1	 98	L	L	o
+ 247	K	L	9	0	9	  1	 98	L	L	o
+ 248	S	L	9	0	9	  1	 98	L	L	o
+ 249	Y	L	9	0	9	  1	 98	L	L	o
+ 250	E	L	9	0	9	  1	 98	L	L	o
+ 251	L	L	9	0	9	  1	 98	L	L	o
+ 252	Q	L	9	0	9	  1	 98	L	L	o
+ 253	T	L	9	0	9	  1	 98	L	L	o
+ 254	P	L	9	0	9	  1	 98	L	L	o
+ 255	F	L	9	0	9	  1	 98	L	L	o
+ 256	E	L	9	0	9	  1	 98	L	L	o
+ 257	I	L	9	0	9	  1	 98	L	L	o
+ 258	K	L	9	0	9	  1	 98	L	L	o
+ 259	L	L	9	0	9	  1	 98	L	L	o
+ 260	A	L	9	0	9	  1	 98	L	L	o
+ 261	K	L	9	0	9	  1	 98	L	L	o
+ 262	K	L	9	0	9	  1	 98	L	L	o
+ 263	F	L	9	0	9	  1	 98	L	L	o
+ 264	D	L	9	0	9	  1	 98	L	L	o
+ 265	T	L	9	0	9	  1	 98	L	L	o
+ 266	F	L	9	0	9	  1	 98	L	L	o
+ 267	N	L	9	0	9	  1	 98	L	L	o
+ 268	G	L	9	0	9	  1	 98	L	L	o
+ 269	E	L	9	0	9	  1	 98	L	L	o
+ 270	C	L	9	0	9	  1	 98	L	L	o
+ 271	P	L	9	0	9	  1	 98	L	L	o
+ 272	N	L	9	0	9	  1	 98	L	L	o
+ 273	F	L	9	0	9	  1	 98	L	L	o
+ 274	V	L	9	0	9	  1	 98	L	L	o
+ 275	F	L	9	0	9	  2	 97	L	L	o
+ 276	P	L	9	0	9	  4	 95	L	L	o
+ 277	L	L	9	0	9	  4	 95	L	L	o
+ 278	N	L	9	0	9	  4	 95	L	L	o
+ 279	S	L	9	0	9	  3	 96	L	L	o
+ 280	I	L	9	0	9	  2	 97	L	L	o
+ 281	I	L	9	0	9	  2	 97	L	L	o
+ 282	K	L	9	0	9	  1	 98	L	L	o
+ 283	T	L	9	0	9	  1	 98	L	L	o
+ 284	I	L	9	0	9	  1	 98	L	L	o
+ 285	Q	L	9	0	9	  1	 98	L	L	o
+ 286	P	L	9	0	9	  1	 98	L	L	o
+ 287	R	L	9	0	9	  1	 98	L	L	o
+ 288	V	L	9	0	9	  1	 98	L	L	o
+ 289	E	L	9	0	9	  1	 98	L	L	o
+ 290	K	L	9	0	9	  1	 98	L	L	o
+ 291	K	L	9	0	9	  1	 98	L	L	o
+ 292	K	L	9	0	9	  1	 98	L	L	o
+ 293	L	L	9	0	9	  1	 98	L	L	o
+ 294	D	L	9	0	9	  1	 98	L	L	o
+ 295	G	L	9	0	9	  1	 98	L	L	o
+ 296	F	L	9	0	9	  1	 98	L	L	o
+ 297	M	L	9	0	9	  1	 98	L	L	o
+ 298	G	L	9	0	9	  1	 98	L	L	o
+ 299	R	L	9	0	9	  1	 98	L	L	o
+ 300	I	L	9	0	9	  1	 98	L	L	o
+ 301	R	L	9	0	9	  1	 98	L	L	o
+ 302	S	L	9	0	9	  1	 98	L	L	o
+ 303	V	L	9	0	9	  1	 98	L	L	o
+ 304	Y	L	9	0	9	  1	 98	L	L	o
+ 305	P	L	9	0	9	  1	 98	L	L	o
+ 306	V	L	9	0	9	  1	 98	L	L	o
+ 307	A	L	9	0	9	  1	 98	L	L	o
+ 308	S	L	9	0	9	  1	 98	L	L	o
+ 309	P	L	9	0	9	  1	 98	L	L	o
+ 310	N	L	9	0	9	  1	 98	L	L	o
+ 311	E	L	9	0	9	  1	 98	L	L	o
+ 312	C	L	9	0	9	  1	 98	L	L	o
+ 313	N	L	9	0	9	  1	 98	L	L	o
+ 314	Q	L	9	0	9	  1	 98	L	L	o
+ 315	M	L	9	0	9	  1	 98	L	L	o
+ 316	C	L	9	0	9	  1	 98	L	L	o
+ 317	L	L	9	0	9	  1	 98	L	L	o
+ 318	S	L	9	0	9	  1	 98	L	L	o
+ 319	T	L	9	0	9	  1	 98	L	L	o
+ 320	L	L	9	0	9	  1	 98	L	L	o
+ 321	M	L	9	0	9	  1	 98	L	L	o
+ 322	K	L	9	0	9	  1	 98	L	L	o
+ 323	C	L	9	0	9	  1	 98	L	L	o
+ 324	D	L	9	0	9	  1	 98	L	L	o
+ 325	H	L	9	0	9	  1	 98	L	L	o
+ 326	C	L	9	0	9	  1	 98	L	L	o
+ 327	G	L	9	0	9	  1	 98	L	L	o
+ 328	E	L	9	0	9	  1	 98	L	L	o
+ 329	T	L	9	0	9	  1	 98	L	L	o
+ 330	S	L	9	0	9	  1	 98	L	L	o
+ 331	W	L	9	0	9	  1	 98	L	L	o
+ 332	Q	L	9	0	9	  1	 98	L	L	o
+ 333	T	L	9	0	9	  1	 98	L	L	o
+ 334	G	L	9	0	9	  1	 98	L	L	o
+ 335	D	L	9	0	9	  1	 98	L	L	o
+ 336	F	L	9	0	9	  1	 98	L	L	o
+ 337	V	L	9	0	9	  1	 98	L	L	o
+ 338	K	L	9	0	9	  1	 98	L	L	o
+ 339	A	L	9	0	9	  1	 98	L	L	o
+ 340	T	L	9	0	9	  1	 98	L	L	o
+ 341	C	L	9	0	9	  1	 98	L	L	o
+ 342	E	L	9	0	9	  1	 98	L	L	o
+ 343	F	L	9	0	9	  1	 98	L	L	o
+ 344	C	L	9	0	9	  1	 98	L	L	o
+ 345	G	L	9	0	9	  1	 98	L	L	o
+ 346	T	L	9	0	9	  1	 98	L	L	o
+ 347	E	L	9	0	9	  1	 98	L	L	o
+ 348	N	L	9	0	9	  1	 98	L	L	o
+ 349	L	L	9	0	9	  1	 98	L	L	o
+ 350	T	L	9	0	9	  1	 98	L	L	o
+ 351	K	L	9	0	9	  1	 98	L	L	o
+ 352	E	L	9	0	9	  1	 98	L	L	o
+ 353	G	L	9	0	9	  1	 98	L	L	o
+ 354	A	L	9	0	9	  1	 98	L	L	o
+ 355	T	L	9	0	9	  1	 98	L	L	o
+ 356	T	L	9	0	9	  1	 98	L	L	o
+ 357	C	L	9	0	9	  1	 98	L	L	o
+ 358	G	L	9	0	9	  1	 98	L	L	o
+ 359	Y	L	9	0	9	  1	 98	L	L	o
+ 360	L	L	9	0	9	  1	 98	L	L	o
+ 361	P	L	9	0	9	  1	 98	L	L	o
+ 362	Q	L	9	0	9	  1	 98	L	L	o
+ 363	N	L	9	0	9	  1	 98	L	L	o
+ 364	A	L	9	0	9	  1	 98	L	L	o
+ 365	V	L	9	0	9	  1	 98	L	L	o
+ 366	V	L	9	0	9	  1	 98	L	L	o
+ 367	K	L	9	0	9	  1	 98	L	L	o
+ 368	I	L	9	0	9	  1	 98	L	L	o
+ 369	Y	L	9	0	9	  1	 98	L	L	o
+ 370	C	L	9	0	9	  1	 98	L	L	o
+ 371	P	L	9	0	9	  1	 98	L	L	o
+ 372	A	L	9	0	9	  1	 98	L	L	o
+ 373	C	L	9	0	9	  1	 98	L	L	o
+ 374	H	L	9	0	9	  1	 98	L	L	o
+ 375	N	L	9	0	9	  1	 98	L	L	o
+ 376	S	L	9	0	9	  1	 98	L	L	o
+ 377	E	L	9	0	9	  1	 98	L	L	o
+ 378	V	L	9	0	9	  1	 98	L	L	o
+ 379	G	L	9	0	9	  1	 98	L	L	o
+ 380	P	L	9	0	9	  1	 98	L	L	o
+ 381	E	L	9	0	9	  1	 98	L	L	o
+ 382	H	L	9	0	9	  1	 98	L	L	o
+ 383	S	L	9	0	9	  1	 98	L	L	o
+ 384	L	L	9	0	9	  1	 98	L	L	o
+ 385	A	L	9	0	9	  1	 98	L	L	o
+ 386	E	L	9	0	9	  1	 98	L	L	o
+ 387	Y	L	9	0	9	  1	 98	L	L	o
+ 388	H	L	9	0	9	  1	 98	L	L	o
+ 389	N	L	9	0	9	  1	 98	L	L	o
+ 390	E	L	9	0	9	  1	 98	L	L	o
+ 391	S	L	9	0	9	  1	 98	L	L	o
+ 392	G	L	9	0	9	  1	 98	L	L	o
+ 393	L	L	9	0	9	  1	 98	L	L	o
+ 394	K	L	9	0	9	  1	 98	L	L	o
+ 395	T	L	9	0	9	  1	 98	L	L	o
+ 396	I	L	9	0	9	  1	 98	L	L	o
+ 397	L	L	9	0	9	  1	 98	L	L	o
+ 398	R	L	9	0	9	  1	 98	L	L	o
+ 399	K	L	9	0	9	  1	 98	L	L	o
+ 400	G	L	9	0	9	  1	 98	L	L	o
+ 401	G	L	9	0	9	  1	 98	L	L	o
+ 402	R	L	9	0	9	  1	 98	L	L	o
+ 403	T	L	9	0	9	  1	 98	L	L	o
+ 404	I	L	9	0	9	  1	 98	L	L	o
+ 405	A	L	9	0	9	  2	 97	L	L	o
+ 406	F	L	9	0	9	  2	 97	L	L	o
+ 407	G	L	9	0	9	  3	 96	L	L	o
+ 408	G	L	9	0	9	  4	 95	L	L	o
+ 409	C	L	8	0	9	  7	 92	L	L	o
+ 410	V	L	7	1	8	 10	 89	L	L	o
+ 411	F	L	7	1	8	 13	 86	L	L	o
+ 412	S	L	6	1	8	 15	 84	L	L	o
+ 413	Y	L	5	2	7	 21	 78	L	L	o
+ 414	V	L	5	2	7	 22	 77	L	L	o
+ 415	G	L	5	2	7	 22	 77	L	L	o
+ 416	C	L	6	1	8	 19	 80	L	L	o
+ 417	H	L	6	1	8	 16	 83	L	L	o
+ 418	N	L	7	1	8	 13	 85	L	L	o
+ 419	K	L	8	0	9	  6	 93	L	L	o
+ 420	C	L	9	0	9	  4	 95	L	L	o
+ 421	A	L	9	0	9	  3	 96	L	L	o
+ 422	Y	L	9	0	9	  3	 96	L	L	o
+ 423	W	L	9	0	9	  3	 96	L	L	o
+ 424	V	L	9	0	9	  2	 97	L	L	o
+ 425	P	L	9	0	9	  1	 98	L	L	o
+ 426	R	L	9	0	9	  1	 98	L	L	o
+ 427	A	L	9	0	9	  1	 98	L	L	o
+ 428	S	L	9	0	9	  1	 98	L	L	o
+ 429	A	L	9	0	9	  1	 98	L	L	o
+ 430	N	L	9	0	9	  1	 98	L	L	o
+ 431	I	L	9	0	9	  1	 98	L	L	o
+ 432	G	L	9	0	9	  1	 98	L	L	o
+ 433	C	L	9	0	9	  1	 98	L	L	o
+ 434	N	L	9	0	9	  1	 98	L	L	o
+ 435	H	L	9	0	9	  1	 98	L	L	o
+ 436	T	L	9	0	9	  1	 98	L	L	o
+ 437	G	L	9	0	9	  1	 98	L	L	o
+ 438	V	L	9	0	9	  1	 98	L	L	o
+ 439	V	L	9	0	9	  1	 98	L	L	o
+ 440	G	L	9	0	9	  1	 98	L	L	o
+ 441	E	L	9	0	9	  1	 98	L	L	o
+ 442	G	L	9	0	9	  1	 98	L	L	o
+ 443	S	L	9	0	9	  1	 98	L	L	o
+ 444	E	L	9	0	9	  1	 98	L	L	o
+ 445	G	L	9	0	9	  1	 98	L	L	o
+ 446	L	L	9	0	9	  1	 98	L	L	o
+ 447	N	L	9	0	9	  1	 98	L	L	o
+ 448	D	L	9	0	9	  1	 98	L	L	o
+ 449	N	L	9	0	9	  1	 98	L	L	o
+ 450	L	L	9	0	9	  1	 98	L	L	o
+ 451	L	L	9	0	9	  1	 98	L	L	o
+ 452	E	L	9	0	9	  1	 98	L	L	o
+ 453	I	L	9	0	9	  1	 98	L	L	o
+ 454	L	L	9	0	9	  1	 98	L	L	o
+ 455	Q	L	9	0	9	  1	 98	L	L	o
+ 456	K	L	9	0	9	  1	 98	L	L	o
+ 457	E	L	9	0	9	  1	 98	L	L	o
+ 458	K	L	9	0	9	  1	 98	L	L	o
+ 459	V	L	9	0	9	  1	 98	L	L	o
+ 460	N	L	9	0	9	  1	 98	L	L	o
+ 461	I	L	9	0	9	  1	 98	L	L	o
+ 462	N	L	9	0	9	  1	 98	L	L	o
+ 463	I	L	9	0	9	  1	 98	L	L	o
+ 464	V	L	9	0	9	  1	 98	L	L	o
+ 465	G	L	9	0	9	  1	 98	L	L	o
+ 466	D	L	9	0	9	  1	 98	L	L	o
+ 467	F	L	9	0	9	  2	 97	L	L	o
+ 468	K	L	9	0	9	  3	 96	L	L	o
+ 469	L	L	8	0	9	  5	 94	L	L	o
+ 470	N	L	8	0	9	  6	 93	L	L	o
+ 471	E	L	8	0	9	  8	 91	L	L	o
+ 472	E	L	6	1	8	 17	 82	L	L	o
+ 473	I	L	3	3	6	 30	 69	L	L	o
+ 474	A	L	2	3	6	 37	 62	L	L	o
+ 475	I	L	0	4	5	 45	 54	L	L	o
+ 476	I	H	0	5	4	 51	 48	L	L	o
+ 477	L	H	1	5	4	 55	 44	L	L	o
+ 478	A	H	1	5	4	 56	 43	L	L	o
+ 479	S	H	1	5	4	 55	 44	L	L	o
+ 480	F	H	0	5	4	 53	 46	L	L	o
+ 481	S	H	0	5	4	 53	 46	L	L	o
+ 482	A	H	0	5	4	 54	 45	L	L	o
+ 483	S	L	1	4	5	 43	 56	L	L	o
+ 484	T	L	4	2	7	 29	 70	L	L	o
+ 485	S	L	5	2	7	 23	 76	L	L	o
+ 486	A	L	6	1	8	 18	 81	L	L	o
+ 487	F	L	7	1	8	 10	 89	L	L	o
+ 488	V	L	8	0	9	  6	 93	L	L	o
+ 489	E	L	9	0	9	  3	 96	L	L	o
+ 490	T	L	9	0	9	  2	 97	L	L	o
+ 491	V	L	9	0	9	  1	 98	L	L	o
+ 492	K	L	9	0	9	  1	 98	L	L	o
+ 493	G	L	9	0	9	  1	 98	L	L	o
+ 494	L	L	9	0	9	  1	 98	L	L	o
+ 495	D	L	9	0	9	  1	 98	L	L	o
+ 496	Y	L	9	0	9	  1	 98	L	L	o
+ 497	K	L	9	0	9	  1	 98	L	L	o
+ 498	A	L	9	0	9	  1	 98	L	L	o
+ 499	F	L	9	0	9	  1	 98	L	L	o
+ 500	K	L	9	0	9	  1	 98	L	L	o
+ 501	Q	L	9	0	9	  1	 98	L	L	o
+ 502	I	L	9	0	9	  1	 98	L	L	o
+ 503	V	L	9	0	9	  1	 98	L	L	o
+ 504	E	L	9	0	9	  1	 98	L	L	o
+ 505	S	L	9	0	9	  1	 98	L	L	o
+ 506	C	L	9	0	9	  1	 98	L	L	o
+ 507	G	L	9	0	9	  1	 98	L	L	o
+ 508	N	L	9	0	9	  1	 98	L	L	o
+ 509	F	L	9	0	9	  1	 98	L	L	o
+ 510	K	L	9	0	9	  1	 98	L	L	o
+ 511	V	L	9	0	9	  1	 98	L	L	o
+ 512	T	L	9	0	9	  1	 98	L	L	o
+ 513	K	L	9	0	9	  1	 98	L	L	o
+ 514	G	L	9	0	9	  1	 98	L	L	o
+ 515	K	L	9	0	9	  1	 98	L	L	o
+ 516	A	L	9	0	9	  1	 98	L	L	o
+ 517	K	L	9	0	9	  1	 98	L	L	o
+ 518	K	L	9	0	9	  1	 98	L	L	o
+ 519	G	L	9	0	9	  1	 98	L	L	o
+ 520	A	L	9	0	9	  1	 98	L	L	o
+ 521	W	L	9	0	9	  1	 98	L	L	o
+ 522	N	L	9	0	9	  1	 98	L	L	o
+ 523	I	L	9	0	9	  1	 98	L	L	o
+ 524	G	L	9	0	9	  1	 98	L	L	o
+ 525	E	L	9	0	9	  1	 98	L	L	o
+ 526	Q	L	9	0	9	  1	 98	L	L	o
+ 527	K	L	9	0	9	  1	 98	L	L	o
+ 528	S	L	9	0	9	  1	 98	L	L	o
+ 529	I	L	9	0	9	  1	 98	L	L	o
+ 530	L	L	9	0	9	  1	 98	L	L	o
+ 531	S	L	9	0	9	  1	 98	L	L	o
+ 532	P	L	9	0	9	  2	 97	L	L	o
+ 533	L	L	9	0	9	  2	 97	L	L	o
+ 534	Y	L	9	0	9	  4	 95	L	L	o
+ 535	A	L	8	0	9	  6	 93	L	L	o
+ 536	F	L	7	1	8	 10	 89	L	L	o
+ 537	A	L	6	1	8	 15	 84	L	L	o
+ 538	S	L	6	1	8	 18	 80	L	L	o
+ 539	E	L	6	1	8	 18	 81	L	L	o
+ 540	A	L	7	1	8	 14	 85	L	L	o
+ 541	A	L	7	1	8	 11	 88	L	L	o
+ 542	R	L	8	0	9	  9	 90	L	L	o
+ 543	V	L	8	0	9	  9	 90	L	L	o
+ 544	V	L	8	0	9	  6	 93	L	L	o
+ 545	R	L	9	0	9	  4	 95	L	L	o
+ 546	S	L	9	0	9	  3	 96	L	L	o
+ 547	I	L	9	0	9	  3	 96	L	L	o
+ 548	F	L	9	0	9	  2	 97	L	L	o
+ 549	S	L	9	0	9	  1	 98	L	L	o
+ 550	R	L	9	0	9	  1	 98	L	L	o
+ 551	T	L	9	0	9	  1	 98	L	L	o
+ 552	L	L	9	0	9	  1	 98	L	L	o
+ 553	E	L	9	0	9	  1	 98	L	L	o
+ 554	T	L	9	0	9	  1	 98	L	L	o
+ 555	A	L	9	0	9	  1	 98	L	L	o
+ 556	Q	L	9	0	9	  1	 98	L	L	o
+ 557	N	L	9	0	9	  1	 98	L	L	o
+ 558	S	L	9	0	9	  1	 98	L	L	o
+ 559	V	L	9	0	9	  1	 98	L	L	o
+ 560	R	L	9	0	9	  1	 98	L	L	o
+ 561	V	L	9	0	9	  1	 98	L	L	o
+ 562	L	L	9	0	9	  1	 98	L	L	o
+ 563	Q	L	9	0	9	  1	 98	L	L	o
+ 564	K	L	9	0	9	  1	 98	L	L	o
+ 565	A	L	9	0	9	  1	 98	L	L	o
+ 566	A	L	9	0	9	  1	 98	L	L	o
+ 567	I	L	9	0	9	  1	 98	L	L	o
+ 568	T	L	9	0	9	  1	 98	L	L	o
+ 569	I	L	9	0	9	  1	 98	L	L	o
+ 570	L	L	9	0	9	  1	 98	L	L	o
+ 571	D	L	9	0	9	  1	 98	L	L	o
+ 572	G	L	9	0	9	  1	 98	L	L	o
+ 573	I	L	9	0	9	  1	 98	L	L	o
+ 574	S	L	9	0	9	  1	 98	L	L	o
+ 575	Q	L	9	0	9	  1	 98	L	L	o
+ 576	Y	L	9	0	9	  1	 98	L	L	o
+ 577	S	L	9	0	9	  1	 98	L	L	o
+ 578	L	L	9	0	9	  1	 98	L	L	o
+ 579	R	L	9	0	9	  1	 98	L	L	o
+ 580	L	L	9	0	9	  1	 98	L	L	o
+ 581	I	L	9	0	9	  1	 98	L	L	o
+ 582	D	L	9	0	9	  1	 98	L	L	o
+ 583	A	L	9	0	9	  1	 98	L	L	o
+ 584	M	L	9	0	9	  1	 98	L	L	o
+ 585	M	L	9	0	9	  2	 97	L	L	o
+ 586	F	L	9	0	9	  2	 97	L	L	o
+ 587	T	L	9	0	9	  3	 96	L	L	o
+ 588	S	L	8	0	9	  6	 94	L	L	o
+ 589	D	L	8	0	9	  9	 90	L	L	o
+ 590	L	L	7	1	8	 10	 89	L	L	o
+ 591	A	L	8	0	9	  7	 92	L	L	o
+ 592	T	L	9	0	9	  4	 95	L	L	o
+ 593	N	L	9	0	9	  3	 96	L	L	o
+ 594	N	L	9	0	9	  3	 96	L	L	o
+ 595	L	L	9	0	9	  4	 95	L	L	o
+ 596	V	L	8	0	9	  5	 94	L	L	o
+ 597	V	L	8	0	9	  8	 91	L	L	o
+ 598	M	L	7	1	8	 11	 88	L	L	o
+ 599	A	L	7	1	8	 12	 87	L	L	o
+ 600	Y	L	8	0	9	  9	 90	L	L	o
+ 601	I	L	9	0	9	  4	 95	L	L	o
+ 602	T	L	9	0	9	  3	 96	L	L	o
+ 603	G	L	9	0	9	  2	 97	L	L	o
+ 604	G	L	9	0	9	  2	 97	L	L	o
+ 605	V	L	9	0	9	  2	 97	L	L	o
+ 606	V	L	9	0	9	  2	 97	L	L	o
+ 607	Q	L	9	0	9	  2	 97	L	L	o
+ 608	L	L	9	0	9	  2	 97	L	L	o
+ 609	T	L	9	0	9	  2	 97	L	L	o
+ 610	S	L	9	0	9	  2	 97	L	L	o
+ 611	Q	L	9	0	9	  2	 97	L	L	o
+ 612	W	L	9	0	9	  1	 98	L	L	o
+ 613	L	L	9	0	9	  1	 98	L	L	o
+ 614	T	L	9	0	9	  1	 98	L	L	o
+ 615	N	L	9	0	9	  1	 98	L	L	o
+ 616	I	L	9	0	9	  1	 98	L	L	o
+ 617	F	L	9	0	9	  2	 97	L	L	o
+ 618	G	L	9	0	9	  2	 97	L	L	o
+ 619	T	L	9	0	9	  2	 97	L	L	o
+ 620	V	L	9	0	9	  2	 97	L	L	o
+ 621	Y	L	9	0	9	  1	 98	L	L	o
+ 622	E	L	9	0	9	  1	 98	L	L	o
+ 623	K	L	9	0	9	  1	 98	L	L	o
+ 624	L	L	9	0	9	  1	 98	L	L	o
+ 625	K	L	9	0	9	  1	 98	L	L	o
+ 626	P	L	9	0	9	  1	 98	L	L	o
+ 627	V	L	9	0	9	  1	 98	L	L	o
+ 628	L	L	9	0	9	  1	 98	L	L	o
+ 629	D	L	9	0	9	  1	 98	L	L	o
+ 630	W	L	9	0	9	  1	 98	L	L	o
+ 631	L	L	9	0	9	  1	 98	L	L	o
+ 632	E	L	9	0	9	  1	 98	L	L	o
+ 633	E	L	9	0	9	  1	 98	L	L	o
+ 634	K	L	9	0	9	  1	 98	L	L	o
+ 635	F	L	9	0	9	  1	 98	L	L	o
+ 636	K	L	9	0	9	  1	 98	L	L	o
+ 637	E	L	9	0	9	  1	 98	L	L	o
+ 638	G	L	9	0	9	  1	 98	L	L	o
+ 639	V	L	9	0	9	  1	 98	L	L	o
+ 640	E	L	9	0	9	  1	 98	L	L	o
+ 641	F	L	9	0	9	  1	 98	L	L	o
+ 642	L	L	9	0	9	  1	 98	L	L	o
+ 643	R	L	9	0	9	  1	 98	L	L	o
+ 644	D	L	9	0	9	  1	 98	L	L	o
+ 645	G	L	9	0	9	  1	 98	L	L	o
+ 646	W	L	9	0	9	  1	 98	L	L	o
+ 647	E	L	9	0	9	  1	 98	L	L	o
+ 648	I	L	9	0	9	  2	 97	L	L	o
+ 649	V	L	9	0	9	  2	 97	L	L	o
+ 650	K	L	9	0	9	  4	 95	L	L	o
+ 651	F	L	8	0	9	  7	 92	L	L	o
+ 652	I	L	8	0	9	  7	 91	L	L	o
+ 653	S	L	8	0	9	  6	 93	L	L	o
+ 654	T	L	8	0	9	  5	 94	L	L	o
+ 655	C	L	9	0	9	  4	 95	L	L	o
+ 656	A	L	9	0	9	  3	 96	L	L	o
+ 657	C	L	9	0	9	  3	 96	L	L	o
+ 658	E	L	9	0	9	  3	 96	L	L	o
+ 659	I	L	9	0	9	  3	 96	L	L	o
+ 660	V	L	9	0	9	  2	 97	L	L	o
+ 661	G	L	9	0	9	  2	 97	L	L	o
+ 662	G	L	9	0	9	  2	 97	L	L	o
+ 663	Q	L	9	0	9	  1	 98	L	L	o
+ 664	I	L	9	0	9	  2	 97	L	L	o
+ 665	V	L	9	0	9	  2	 97	L	L	o
+ 666	T	L	9	0	9	  2	 98	L	L	o
+ 667	C	L	9	0	9	  1	 98	L	L	o
+ 668	A	L	9	0	9	  1	 98	L	L	o
+ 669	K	L	9	0	9	  1	 98	L	L	o
+ 670	E	L	9	0	9	  1	 98	L	L	o
+ 671	I	L	9	0	9	  2	 97	L	L	o
+ 672	K	L	9	0	9	  2	 97	L	L	o
+ 673	E	L	9	0	9	  2	 97	L	L	o
+ 674	S	L	9	0	9	  2	 97	L	L	o
+ 675	V	L	9	0	9	  3	 96	L	L	o
+ 676	Q	L	8	0	9	  6	 94	L	L	o
+ 677	T	L	8	0	9	  7	 92	L	L	o
+ 678	F	L	8	0	9	  9	 90	L	L	o
+ 679	F	L	7	1	8	 12	 87	L	L	o
+ 680	K	L	7	1	8	 13	 86	L	L	o
+ 681	L	L	6	1	8	 16	 83	L	L	o
+ 682	V	L	7	1	8	 12	 87	L	L	o
+ 683	N	L	7	1	8	 14	 86	L	L	o
+ 684	K	L	6	1	8	 19	 80	L	L	o
+ 685	F	L	2	3	6	 36	 63	L	L	o
+ 686	L	L	0	4	5	 47	 52	L	L	o
+ 687	A	L	0	4	5	 46	 53	L	L	o
+ 688	L	L	1	4	5	 42	 58	L	L	o
+ 689	C	L	3	3	6	 32	 67	L	L	o
+ 690	A	L	3	3	6	 32	 67	L	L	o
+ 691	D	L	5	2	7	 23	 76	L	L	o
+ 692	S	L	6	1	8	 18	 81	L	L	o
+ 693	I	L	5	2	7	 22	 77	L	L	o
+ 694	I	L	5	2	7	 24	 75	L	L	o
+ 695	I	L	4	2	7	 25	 74	L	L	o
+ 696	G	L	6	1	8	 18	 81	L	L	o
+ 697	G	L	8	0	9	  9	 90	L	L	o
+ 698	A	L	8	0	9	  5	 94	L	L	o
+ 699	K	L	9	0	9	  3	 96	L	L	o
+ 700	L	L	9	0	9	  2	 97	L	L	o
+ 701	K	L	9	0	9	  2	 97	L	L	o
+ 702	A	L	9	0	9	  1	 98	L	L	o
+ 703	L	L	9	0	9	  1	 98	L	L	o
+ 704	N	L	9	0	9	  1	 98	L	L	o
+ 705	L	L	9	0	9	  1	 98	L	L	o
+ 706	G	L	9	0	9	  1	 98	L	L	o
+ 707	E	L	9	0	9	  1	 98	L	L	o
+ 708	T	L	9	0	9	  1	 98	L	L	o
+ 709	F	L	9	0	9	  1	 98	L	L	o
+ 710	V	L	9	0	9	  1	 98	L	L	o
+ 711	T	L	9	0	9	  1	 98	L	L	o
+ 712	H	L	9	0	9	  1	 98	L	L	o
+ 713	S	L	9	0	9	  1	 98	L	L	o
+ 714	K	L	9	0	9	  1	 98	L	L	o
+ 715	G	L	9	0	9	  1	 98	L	L	o
+ 716	L	L	9	0	9	  1	 98	L	L	o
+ 717	Y	L	9	0	9	  1	 98	L	L	o
+ 718	R	L	9	0	9	  1	 98	L	L	o
+ 719	K	L	9	0	9	  1	 98	L	L	o
+ 720	C	L	9	0	9	  1	 98	L	L	o
+ 721	V	L	9	0	9	  1	 98	L	L	o
+ 722	K	L	9	0	9	  1	 98	L	L	o
+ 723	S	L	9	0	9	  1	 98	L	L	o
+ 724	R	L	9	0	9	  1	 98	L	L	o
+ 725	E	L	9	0	9	  1	 98	L	L	o
+ 726	E	L	9	0	9	  1	 98	L	L	o
+ 727	T	L	9	0	9	  1	 98	L	L	o
+ 728	G	L	9	0	9	  1	 98	L	L	o
+ 729	L	L	9	0	9	  1	 98	L	L	o
+ 730	L	L	9	0	9	  1	 98	L	L	o
+ 731	M	L	9	0	9	  1	 98	L	L	o
+ 732	P	L	9	0	9	  1	 98	L	L	o
+ 733	L	L	9	0	9	  1	 98	L	L	o
+ 734	K	L	9	0	9	  1	 98	L	L	o
+ 735	A	L	9	0	9	  1	 98	L	L	o
+ 736	P	L	9	0	9	  1	 98	L	L	o
+ 737	K	L	9	0	9	  1	 98	L	L	o
+ 738	E	L	9	0	9	  1	 98	L	L	o
+ 739	I	L	9	0	9	  1	 98	L	L	o
+ 740	I	L	9	0	9	  1	 98	L	L	o
+ 741	F	L	9	0	9	  1	 98	L	L	o
+ 742	L	L	9	0	9	  1	 98	L	L	o
+ 743	E	L	9	0	9	  1	 98	L	L	o
+ 744	G	L	9	0	9	  1	 98	L	L	o
+ 745	E	L	9	0	9	  1	 98	L	L	o
+ 746	T	L	9	0	9	  1	 98	L	L	o
+ 747	L	L	9	0	9	  1	 98	L	L	o
+ 748	P	L	9	0	9	  1	 98	L	L	o
+ 749	T	L	9	0	9	  1	 98	L	L	o
+ 750	E	L	9	0	9	  1	 98	L	L	o
+ 751	V	L	9	0	9	  1	 98	L	L	o
+ 752	L	L	9	0	9	  1	 98	L	L	o
+ 753	T	L	9	0	9	  1	 98	L	L	o
+ 754	E	L	9	0	9	  1	 98	L	L	o
+ 755	E	L	9	0	9	  1	 98	L	L	o
+ 756	V	L	9	0	9	  1	 98	L	L	o
+ 757	V	L	9	0	9	  1	 98	L	L	o
+ 758	L	L	9	0	9	  1	 98	L	L	o
+ 759	K	L	9	0	9	  1	 98	L	L	o
+ 760	T	L	9	0	9	  1	 98	L	L	o
+ 761	G	L	9	0	9	  1	 98	L	L	o
+ 762	D	L	9	0	9	  1	 98	L	L	o
+ 763	L	L	9	0	9	  1	 98	L	L	o
+ 764	Q	L	9	0	9	  1	 98	L	L	o
+ 765	P	L	9	0	9	  1	 98	L	L	o
+ 766	L	L	9	0	9	  1	 98	L	L	o
+ 767	E	L	9	0	9	  1	 98	L	L	o
+ 768	Q	L	9	0	9	  1	 98	L	L	o
+ 769	P	L	9	0	9	  1	 98	L	L	o
+ 770	T	L	9	0	9	  1	 98	L	L	o
+ 771	S	L	9	0	9	  1	 98	L	L	o
+ 772	E	L	9	0	9	  1	 98	L	L	o
+ 773	A	L	9	0	9	  1	 98	L	L	o
+ 774	V	L	9	0	9	  1	 98	L	L	o
+ 775	E	L	9	0	9	  1	 98	L	L	o
+ 776	A	L	9	0	9	  1	 98	L	L	o
+ 777	P	L	9	0	9	  1	 98	L	L	o
+ 778	L	L	9	0	9	  1	 98	L	L	o
+ 779	V	L	9	0	9	  1	 98	L	L	o
+ 780	G	L	9	0	9	  1	 98	L	L	o
+ 781	T	L	9	0	9	  2	 97	L	L	o
+ 782	P	L	9	0	9	  3	 96	L	L	o
+ 783	V	L	9	0	9	  4	 95	L	L	o
+ 784	C	L	9	0	9	  3	 96	L	L	o
+ 785	I	L	9	0	9	  3	 96	L	L	o
+ 786	N	L	9	0	9	  3	 96	L	L	o
+ 787	G	L	9	0	9	  2	 97	L	L	o
+ 788	L	L	9	0	9	  2	 97	L	L	o
+ 789	M	L	9	0	9	  2	 97	L	L	o
+ 790	L	L	9	0	9	  2	 97	L	L	o
+ 791	L	L	9	0	9	  1	 98	L	L	o
+ 792	E	L	9	0	9	  1	 98	L	L	o
+ 793	I	L	9	0	9	  1	 98	L	L	o
+ 794	K	L	9	0	9	  1	 98	L	L	o
+ 795	D	L	9	0	9	  1	 98	L	L	o
+ 796	T	L	9	0	9	  1	 98	L	L	o
+ 797	E	L	9	0	9	  1	 98	L	L	o
+ 798	K	L	9	0	9	  1	 98	L	L	o
+ 799	Y	L	9	0	9	  1	 98	L	L	o
+ 800	C	L	9	0	9	  1	 98	L	L	o
+ 801	A	L	9	0	9	  1	 98	L	L	o
+ 802	L	L	9	0	9	  1	 98	L	L	o
+ 803	A	L	9	0	9	  1	 98	L	L	o
+ 804	P	L	9	0	9	  1	 98	L	L	o
+ 805	N	L	9	0	9	  1	 98	L	L	o
+ 806	M	L	9	0	9	  1	 98	L	L	o
+ 807	M	L	9	0	9	  1	 98	L	L	o
+ 808	V	L	9	0	9	  1	 98	L	L	o
+ 809	T	L	9	0	9	  1	 98	L	L	o
+ 810	N	L	9	0	9	  1	 98	L	L	o
+ 811	N	L	9	0	9	  1	 98	L	L	o
+ 812	T	L	9	0	9	  1	 98	L	L	o
+ 813	F	L	9	0	9	  1	 98	L	L	o
+ 814	T	L	9	0	9	  1	 98	L	L	o
+ 815	L	L	9	0	9	  1	 98	L	L	o
+ 816	K	L	9	0	9	  1	 98	L	L	o
+ 817	G	L	9	0	9	  1	 98	L	L	o
+ 818	G	L	9	0	9	  1	 98	L	L	o
+ 819	A	L	9	0	9	  1	 98	L	L	o
+ 820	P	L	9	0	9	  1	 98	L	L	o
+ 821	T	L	9	0	9	  1	 98	L	L	o
+ 822	K	L	9	0	9	  1	 98	L	L	o
+ 823	V	L	9	0	9	  1	 98	L	L	o
+ 824	T	L	9	0	9	  1	 98	L	L	o
+ 825	F	L	9	0	9	  1	 98	L	L	o
+ 826	G	L	9	0	9	  1	 98	L	L	o
+ 827	D	L	9	0	9	  1	 98	L	L	o
+ 828	D	L	9	0	9	  1	 98	L	L	o
+ 829	T	L	9	0	9	  1	 98	L	L	o
+ 830	V	L	9	0	9	  1	 98	L	L	o
+ 831	I	L	9	0	9	  1	 98	L	L	o
+ 832	E	L	9	0	9	  1	 98	L	L	o
+ 833	V	L	9	0	9	  1	 98	L	L	o
+ 834	Q	L	9	0	9	  1	 98	L	L	o
+ 835	G	L	9	0	9	  1	 98	L	L	o
+ 836	Y	L	9	0	9	  1	 98	L	L	o
+ 837	K	L	9	0	9	  1	 98	L	L	o
+ 838	S	L	9	0	9	  1	 98	L	L	o
+ 839	V	L	9	0	9	  1	 98	L	L	o
+ 840	N	L	9	0	9	  1	 98	L	L	o
+ 841	I	L	9	0	9	  1	 98	L	L	o
+ 842	T	L	9	0	9	  1	 98	L	L	o
+ 843	F	L	9	0	9	  1	 98	L	L	o
+ 844	E	L	9	0	9	  1	 98	L	L	o
+ 845	L	L	9	0	9	  1	 98	L	L	o
+ 846	D	L	9	0	9	  1	 98	L	L	o
+ 847	E	L	9	0	9	  1	 98	L	L	o
+ 848	R	L	9	0	9	  1	 98	L	L	o
+ 849	I	L	9	0	9	  1	 98	L	L	o
+ 850	D	L	9	0	9	  1	 98	L	L	o
+ 851	K	L	9	0	9	  1	 98	L	L	o
+ 852	V	L	9	0	9	  1	 98	L	L	o
+ 853	L	L	9	0	9	  1	 98	L	L	o
+ 854	N	L	9	0	9	  1	 98	L	L	o
+ 855	E	L	9	0	9	  1	 98	L	L	o
+ 856	K	L	9	0	9	  1	 98	L	L	o
+ 857	C	L	9	0	9	  1	 98	L	L	o
+ 858	S	L	9	0	9	  1	 98	L	L	o
+ 859	A	L	9	0	9	  1	 98	L	L	o
+ 860	Y	L	9	0	9	  1	 98	L	L	o
+ 861	T	L	9	0	9	  1	 98	L	L	o
+ 862	V	L	9	0	9	  1	 98	L	L	o
+ 863	E	L	9	0	9	  1	 98	L	L	o
+ 864	L	L	9	0	9	  1	 98	L	L	o
+ 865	G	L	9	0	9	  1	 98	L	L	o
+ 866	T	L	9	0	9	  1	 98	L	L	o
+ 867	E	L	9	0	9	  1	 98	L	L	o
+ 868	V	L	9	0	9	  1	 98	L	L	o
+ 869	N	L	9	0	9	  1	 98	L	L	o
+ 870	E	L	9	0	9	  1	 98	L	L	o
+ 871	F	L	9	0	9	  1	 98	L	L	o
+ 872	A	L	9	0	9	  1	 98	L	L	o
+ 873	C	L	9	0	9	  1	 98	L	L	o
+ 874	V	L	9	0	9	  2	 97	L	L	o
+ 875	V	L	9	0	9	  2	 97	L	L	o
+ 876	A	L	9	0	9	  2	 97	L	L	o
+ 877	D	L	9	0	9	  2	 97	L	L	o
+ 878	A	L	9	0	9	  2	 97	L	L	o
+ 879	V	L	9	0	9	  2	 97	L	L	o
+ 880	I	L	9	0	9	  2	 97	L	L	o
+ 881	K	L	9	0	9	  2	 97	L	L	o
+ 882	T	L	9	0	9	  2	 97	L	L	o
+ 883	L	L	9	0	9	  1	 98	L	L	o
+ 884	Q	L	9	0	9	  1	 98	L	L	o
+ 885	P	L	9	0	9	  1	 98	L	L	o
+ 886	V	L	9	0	9	  1	 98	L	L	o
+ 887	S	L	9	0	9	  1	 98	L	L	o
+ 888	E	L	9	0	9	  1	 98	L	L	o
+ 889	L	L	9	0	9	  1	 98	L	L	o
+ 890	L	L	9	0	9	  1	 98	L	L	o
+ 891	T	L	9	0	9	  1	 98	L	L	o
+ 892	P	L	9	0	9	  1	 98	L	L	o
+ 893	L	L	9	0	9	  1	 98	L	L	o
+ 894	G	L	9	0	9	  1	 98	L	L	o
+ 895	I	L	9	0	9	  1	 98	L	L	o
+ 896	D	L	9	0	9	  1	 98	L	L	o
+ 897	L	L	9	0	9	  1	 98	L	L	o
+ 898	D	L	9	0	9	  1	 98	L	L	o
+ 899	E	L	9	0	9	  1	 98	L	L	o
+ 900	W	L	9	0	9	  1	 98	L	L	o
+ 901	S	L	9	0	9	  1	 98	L	L	o
+ 902	M	L	9	0	9	  1	 98	L	L	o
+ 903	A	L	9	0	9	  1	 98	L	L	o
+ 904	T	L	9	0	9	  1	 98	L	L	o
+ 905	Y	L	9	0	9	  1	 98	L	L	o
+ 906	Y	L	9	0	9	  1	 98	L	L	o
+ 907	L	L	9	0	9	  1	 98	L	L	o
+ 908	F	L	9	0	9	  1	 98	L	L	o
+ 909	D	L	9	0	9	  1	 98	L	L	o
+ 910	E	L	9	0	9	  1	 98	L	L	o
+ 911	S	L	9	0	9	  1	 98	L	L	o
+ 912	G	L	9	0	9	  1	 98	L	L	o
+ 913	E	L	9	0	9	  1	 98	L	L	o
+ 914	F	L	9	0	9	  1	 98	L	L	o
+ 915	K	L	9	0	9	  1	 98	L	L	o
+ 916	L	L	9	0	9	  1	 98	L	L	o
+ 917	A	L	9	0	9	  1	 98	L	L	o
+ 918	S	L	9	0	9	  1	 98	L	L	o
+ 919	H	L	9	0	9	  1	 98	L	L	o
+ 920	M	L	9	0	9	  1	 98	L	L	o
+ 921	Y	L	9	0	9	  1	 98	L	L	o
+ 922	C	L	9	0	9	  1	 98	L	L	o
+ 923	S	L	9	0	9	  1	 98	L	L	o
+ 924	F	L	9	0	9	  1	 98	L	L	o
+ 925	Y	L	9	0	9	  1	 98	L	L	o
+ 926	P	L	9	0	9	  1	 98	L	L	o
+ 927	P	L	9	0	9	  1	 98	L	L	o
+ 928	D	L	9	0	9	  1	 98	L	L	o
+ 929	E	L	9	0	9	  1	 98	L	L	o
+ 930	D	L	9	0	9	  1	 98	L	L	o
+ 931	E	L	9	0	9	  1	 98	L	L	o
+ 932	E	L	9	0	9	  1	 98	L	L	o
+ 933	E	L	9	0	9	  1	 98	L	L	o
+ 934	G	L	9	0	9	  1	 98	L	L	o
+ 935	D	L	9	0	9	  1	 98	L	L	o
+ 936	C	L	9	0	9	  1	 98	L	L	o
+ 937	E	L	9	0	9	  1	 98	L	L	o
+ 938	E	L	9	0	9	  1	 98	L	L	o
+ 939	E	L	9	0	9	  1	 98	L	L	o
+ 940	E	L	9	0	9	  1	 98	L	L	o
+ 941	F	L	9	0	9	  1	 98	L	L	o
+ 942	E	L	9	0	9	  1	 98	L	L	o
+ 943	P	L	9	0	9	  1	 98	L	L	o
+ 944	S	L	9	0	9	  1	 98	L	L	o
+ 945	T	L	9	0	9	  1	 98	L	L	o
+ 946	Q	L	9	0	9	  1	 98	L	L	o
+ 947	Y	L	9	0	9	  1	 98	L	L	o
+ 948	E	L	9	0	9	  1	 98	L	L	o
+ 949	Y	L	9	0	9	  1	 98	L	L	o
+ 950	G	L	9	0	9	  1	 98	L	L	o
+ 951	T	L	9	0	9	  1	 98	L	L	o
+ 952	E	L	9	0	9	  1	 98	L	L	o
+ 953	D	L	9	0	9	  1	 98	L	L	o
+ 954	D	L	9	0	9	  1	 98	L	L	o
+ 955	Y	L	9	0	9	  1	 98	L	L	o
+ 956	Q	L	9	0	9	  1	 98	L	L	o
+ 957	G	L	9	0	9	  1	 98	L	L	o
+ 958	K	L	9	0	9	  1	 98	L	L	o
+ 959	P	L	9	0	9	  1	 98	L	L	o
+ 960	L	L	9	0	9	  1	 98	L	L	o
+ 961	E	L	9	0	9	  1	 98	L	L	o
+ 962	F	L	9	0	9	  1	 98	L	L	o
+ 963	G	L	9	0	9	  1	 98	L	L	o
+ 964	A	L	9	0	9	  1	 98	L	L	o
+ 965	T	L	9	0	9	  1	 98	L	L	o
+ 966	S	L	9	0	9	  1	 98	L	L	o
+ 967	A	L	9	0	9	  1	 98	L	L	o
+ 968	A	L	9	0	9	  1	 98	L	L	o
+ 969	L	L	9	0	9	  1	 98	L	L	o
+ 970	Q	L	9	0	9	  1	 98	L	L	o
+ 971	P	L	9	0	9	  1	 98	L	L	o
+ 972	E	L	9	0	9	  1	 98	L	L	o
+ 973	E	L	9	0	9	  1	 98	L	L	o
+ 974	E	L	9	0	9	  1	 98	L	L	o
+ 975	Q	L	9	0	9	  1	 98	L	L	o
+ 976	E	L	9	0	9	  1	 98	L	L	o
+ 977	E	L	9	0	9	  1	 98	L	L	o
+ 978	D	L	9	0	9	  1	 98	L	L	o
+ 979	W	L	9	0	9	  1	 98	L	L	o
+ 980	L	L	9	0	9	  1	 98	L	L	o
+ 981	D	L	9	0	9	  1	 98	L	L	o
+ 982	D	L	9	0	9	  1	 98	L	L	o
+ 983	D	L	9	0	9	  1	 98	L	L	o
+ 984	S	L	9	0	9	  1	 98	L	L	o
+ 985	Q	L	9	0	9	  1	 98	L	L	o
+ 986	Q	L	9	0	9	  1	 98	L	L	o
+ 987	T	L	9	0	9	  1	 98	L	L	o
+ 988	V	L	9	0	9	  1	 98	L	L	o
+ 989	G	L	9	0	9	  1	 98	L	L	o
+ 990	Q	L	9	0	9	  1	 98	L	L	o
+ 991	Q	L	9	0	9	  1	 98	L	L	o
+ 992	D	L	9	0	9	  1	 98	L	L	o
+ 993	G	L	9	0	9	  1	 98	L	L	o
+ 994	S	L	9	0	9	  1	 98	L	L	o
+ 995	E	L	9	0	9	  1	 98	L	L	o
+ 996	D	L	9	0	9	  1	 98	L	L	o
+ 997	N	L	9	0	9	  1	 98	L	L	o
+ 998	Q	L	9	0	9	  1	 98	L	L	o
+ 999	T	L	9	0	9	  1	 98	L	L	o
+1000	T	L	9	0	9	  1	 98	L	L	o
+1001	T	L	9	0	9	  1	 98	L	L	o
+1002	I	L	9	0	9	  1	 98	L	L	o
+1003	Q	L	9	0	9	  1	 98	L	L	o
+1004	T	L	9	0	9	  1	 98	L	L	o
+1005	I	L	9	0	9	  1	 98	L	L	o
+1006	V	L	9	0	9	  1	 98	L	L	o
+1007	E	L	9	0	9	  1	 98	L	L	o
+1008	V	L	9	0	9	  1	 98	L	L	o
+1009	Q	L	9	0	9	  1	 98	L	L	o
+1010	P	L	9	0	9	  1	 98	L	L	o
+1011	Q	L	9	0	9	  1	 98	L	L	o
+1012	L	L	9	0	9	  1	 98	L	L	o
+1013	E	L	9	0	9	  1	 98	L	L	o
+1014	M	L	9	0	9	  1	 98	L	L	o
+1015	E	L	9	0	9	  1	 98	L	L	o
+1016	L	L	9	0	9	  1	 98	L	L	o
+1017	T	L	9	0	9	  1	 98	L	L	o
+1018	P	L	9	0	9	  1	 98	L	L	o
+1019	V	L	9	0	9	  1	 98	L	L	o
+1020	V	L	9	0	9	  1	 98	L	L	o
+1021	Q	L	9	0	9	  1	 98	L	L	o
+1022	T	L	9	0	9	  1	 98	L	L	o
+1023	I	L	9	0	9	  1	 98	L	L	o
+1024	E	L	9	0	9	  1	 98	L	L	o
+1025	V	L	9	0	9	  1	 98	L	L	o
+1026	N	L	9	0	9	  1	 98	L	L	o
+1027	S	L	9	0	9	  1	 98	L	L	o
+1028	F	L	9	0	9	  1	 98	L	L	o
+1029	S	L	9	0	9	  1	 98	L	L	o
+1030	G	L	9	0	9	  1	 98	L	L	o
+1031	Y	L	9	0	9	  1	 98	L	L	o
+1032	L	L	9	0	9	  1	 98	L	L	o
+1033	K	L	9	0	9	  1	 98	L	L	o
+1034	L	L	9	0	9	  1	 98	L	L	o
+1035	T	L	9	0	9	  1	 98	L	L	o
+1036	D	L	9	0	9	  1	 98	L	L	o
+1037	N	L	9	0	9	  1	 98	L	L	o
+1038	V	L	9	0	9	  1	 98	L	L	o
+1039	Y	L	9	0	9	  1	 98	L	L	o
+1040	I	L	9	0	9	  1	 98	L	L	o
+1041	K	L	9	0	9	  1	 98	L	L	o
+1042	N	L	9	0	9	  1	 98	L	L	o
+1043	A	L	9	0	9	  1	 98	L	L	o
+1044	D	L	9	0	9	  1	 98	L	L	o
+1045	I	L	9	0	9	  1	 98	L	L	o
+1046	V	L	9	0	9	  1	 98	L	L	o
+1047	E	L	9	0	9	  1	 98	L	L	o
+1048	E	L	9	0	9	  1	 98	L	L	o
+1049	A	L	9	0	9	  1	 98	L	L	o
+1050	K	L	9	0	9	  1	 98	L	L	o
+1051	K	L	9	0	9	  1	 98	L	L	o
+1052	V	L	9	0	9	  1	 98	L	L	o
+1053	K	L	9	0	9	  1	 98	L	L	o
+1054	P	L	9	0	9	  1	 98	L	L	o
+1055	T	L	9	0	9	  1	 98	L	L	o
+1056	V	L	9	0	9	  1	 98	L	L	o
+1057	V	L	9	0	9	  1	 98	L	L	o
+1058	V	L	9	0	9	  1	 98	L	L	o
+1059	N	L	9	0	9	  1	 98	L	L	o
+1060	A	L	9	0	9	  1	 98	L	L	o
+1061	A	L	9	0	9	  1	 98	L	L	o
+1062	N	L	9	0	9	  1	 98	L	L	o
+1063	V	L	9	0	9	  1	 98	L	L	o
+1064	Y	L	9	0	9	  1	 98	L	L	o
+1065	L	L	9	0	9	  1	 98	L	L	o
+1066	K	L	9	0	9	  1	 98	L	L	o
+1067	H	L	9	0	9	  1	 98	L	L	o
+1068	G	L	9	0	9	  1	 98	L	L	o
+1069	G	L	9	0	9	  1	 98	L	L	o
+1070	G	L	9	0	9	  1	 98	L	L	o
+1071	V	L	9	0	9	  1	 98	L	L	o
+1072	A	L	9	0	9	  1	 98	L	L	o
+1073	G	L	9	0	9	  2	 97	L	L	o
+1074	A	L	9	0	9	  2	 97	L	L	o
+1075	L	L	9	0	9	  1	 98	L	L	o
+1076	N	L	9	0	9	  1	 98	L	L	o
+1077	K	L	9	0	9	  1	 98	L	L	o
+1078	A	L	9	0	9	  1	 98	L	L	o
+1079	T	L	9	0	9	  1	 98	L	L	o
+1080	N	L	9	0	9	  1	 98	L	L	o
+1081	N	L	9	0	9	  1	 98	L	L	o
+1082	A	L	9	0	9	  1	 98	L	L	o
+1083	M	L	9	0	9	  1	 98	L	L	o
+1084	Q	L	9	0	9	  1	 98	L	L	o
+1085	V	L	9	0	9	  1	 98	L	L	o
+1086	E	L	9	0	9	  1	 98	L	L	o
+1087	S	L	9	0	9	  1	 98	L	L	o
+1088	D	L	9	0	9	  1	 98	L	L	o
+1089	D	L	9	0	9	  1	 98	L	L	o
+1090	Y	L	9	0	9	  1	 98	L	L	o
+1091	I	L	9	0	9	  1	 98	L	L	o
+1092	A	L	9	0	9	  1	 98	L	L	o
+1093	T	L	9	0	9	  1	 98	L	L	o
+1094	N	L	9	0	9	  1	 98	L	L	o
+1095	G	L	9	0	9	  1	 98	L	L	o
+1096	P	L	9	0	9	  1	 98	L	L	o
+1097	L	L	9	0	9	  1	 98	L	L	o
+1098	K	L	9	0	9	  1	 98	L	L	o
+1099	V	L	9	0	9	  1	 98	L	L	o
+1100	G	L	9	0	9	  1	 98	L	L	o
+1101	G	L	9	0	9	  1	 98	L	L	o
+1102	S	L	9	0	9	  1	 98	L	L	o
+1103	C	L	9	0	9	  1	 98	L	L	o
+1104	V	L	9	0	9	  1	 98	L	L	o
+1105	L	L	9	0	9	  1	 98	L	L	o
+1106	S	L	9	0	9	  1	 98	L	L	o
+1107	G	L	9	0	9	  1	 98	L	L	o
+1108	H	L	9	0	9	  1	 98	L	L	o
+1109	N	L	9	0	9	  1	 98	L	L	o
+1110	L	L	9	0	9	  1	 98	L	L	o
+1111	A	L	9	0	9	  1	 98	L	L	o
+1112	K	L	9	0	9	  1	 98	L	L	o
+1113	H	L	9	0	9	  1	 98	L	L	o
+1114	C	L	9	0	9	  1	 98	L	L	o
+1115	L	L	9	0	9	  1	 98	L	L	o
+1116	H	L	9	0	9	  1	 98	L	L	o
+1117	V	L	9	0	9	  1	 98	L	L	o
+1118	V	L	9	0	9	  1	 98	L	L	o
+1119	G	L	9	0	9	  1	 98	L	L	o
+1120	P	L	9	0	9	  1	 98	L	L	o
+1121	N	L	9	0	9	  1	 98	L	L	o
+1122	V	L	9	0	9	  1	 98	L	L	o
+1123	N	L	9	0	9	  1	 98	L	L	o
+1124	K	L	9	0	9	  1	 98	L	L	o
+1125	G	L	9	0	9	  1	 98	L	L	o
+1126	E	L	9	0	9	  1	 98	L	L	o
+1127	D	L	9	0	9	  1	 98	L	L	o
+1128	I	L	9	0	9	  1	 98	L	L	o
+1129	Q	L	9	0	9	  1	 98	L	L	o
+1130	L	L	9	0	9	  1	 98	L	L	o
+1131	L	L	9	0	9	  1	 98	L	L	o
+1132	K	L	9	0	9	  1	 98	L	L	o
+1133	S	L	9	0	9	  1	 98	L	L	o
+1134	A	L	9	0	9	  1	 98	L	L	o
+1135	Y	L	9	0	9	  1	 98	L	L	o
+1136	E	L	9	0	9	  1	 98	L	L	o
+1137	N	L	9	0	9	  1	 98	L	L	o
+1138	F	L	9	0	9	  1	 98	L	L	o
+1139	N	L	9	0	9	  1	 98	L	L	o
+1140	Q	L	9	0	9	  1	 98	L	L	o
+1141	H	L	9	0	9	  1	 98	L	L	o
+1142	E	L	9	0	9	  1	 98	L	L	o
+1143	V	L	9	0	9	  2	 97	L	L	o
+1144	L	L	9	0	9	  3	 96	L	L	o
+1145	L	L	9	0	9	  4	 95	L	L	o
+1146	A	L	8	0	9	  7	 92	L	L	o
+1147	P	L	7	1	8	 12	 87	L	L	o
+1148	L	L	6	1	8	 19	 80	L	L	o
+1149	L	L	5	2	7	 22	 77	L	L	o
+1150	S	L	5	2	7	 21	 78	L	L	o
+1151	A	L	6	1	8	 19	 80	L	L	o
+1152	G	L	6	1	8	 17	 82	L	L	o
+1153	I	L	6	1	8	 17	 82	L	L	o
+1154	F	L	6	1	8	 16	 83	L	L	o
+1155	G	L	7	1	8	 13	 86	L	L	o
+1156	A	L	7	1	8	 10	 89	L	L	o
+1157	D	L	8	0	9	  6	 93	L	L	o
+1158	P	L	8	0	9	  5	 94	L	L	o
+1159	I	L	9	0	9	  3	 96	L	L	o
+1160	H	L	9	0	9	  2	 97	L	L	o
+1161	S	L	9	0	9	  2	 97	L	L	o
+1162	L	L	9	0	9	  2	 97	L	L	o
+1163	R	L	9	0	9	  1	 98	L	L	o
+1164	V	L	9	0	9	  1	 98	L	L	o
+1165	C	L	9	0	9	  2	 98	L	L	o
+1166	V	L	9	0	9	  2	 97	L	L	o
+1167	D	L	9	0	9	  2	 97	L	L	o
+1168	T	L	9	0	9	  2	 97	L	L	o
+1169	V	L	9	0	9	  2	 97	L	L	o
+1170	R	L	9	0	9	  2	 97	L	L	o
+1171	T	L	9	0	9	  2	 97	L	L	o
+1172	N	L	9	0	9	  2	 97	L	L	o
+1173	V	L	9	0	9	  2	 97	L	L	o
+1174	Y	L	9	0	9	  2	 97	L	L	o
+1175	L	L	9	0	9	  2	 97	L	L	o
+1176	A	L	9	0	9	  2	 97	L	L	o
+1177	V	L	9	0	9	  2	 98	L	L	o
+1178	F	L	9	0	9	  1	 98	L	L	o
+1179	D	L	9	0	9	  1	 98	L	L	o
+1180	K	L	9	0	9	  1	 98	L	L	o
+1181	N	L	9	0	9	  1	 98	L	L	o
+1182	L	L	9	0	9	  1	 98	L	L	o
+1183	Y	L	9	0	9	  1	 98	L	L	o
+1184	D	L	9	0	9	  1	 98	L	L	o
+1185	K	L	9	0	9	  1	 98	L	L	o
+1186	L	L	9	0	9	  1	 98	L	L	o
+1187	V	L	9	0	9	  1	 98	L	L	o
+1188	S	L	9	0	9	  1	 98	L	L	o
+1189	S	L	9	0	9	  1	 98	L	L	o
+1190	F	L	9	0	9	  1	 98	L	L	o
+1191	L	L	9	0	9	  1	 98	L	L	o
+1192	E	L	9	0	9	  1	 98	L	L	o
+1193	M	L	9	0	9	  1	 98	L	L	o
+1194	K	L	9	0	9	  1	 98	L	L	o
+1195	S	L	9	0	9	  1	 98	L	L	o
+1196	E	L	9	0	9	  1	 98	L	L	o
+1197	K	L	9	0	9	  1	 98	L	L	o
+1198	Q	L	9	0	9	  1	 98	L	L	o
+1199	V	L	9	0	9	  1	 98	L	L	o
+1200	E	L	9	0	9	  1	 98	L	L	o
+1201	Q	L	9	0	9	  1	 98	L	L	o
+1202	K	L	9	0	9	  1	 98	L	L	o
+1203	I	L	9	0	9	  1	 98	L	L	o
+1204	A	L	9	0	9	  1	 98	L	L	o
+1205	E	L	9	0	9	  1	 98	L	L	o
+1206	I	L	9	0	9	  1	 98	L	L	o
+1207	P	L	9	0	9	  1	 98	L	L	o
+1208	K	L	9	0	9	  1	 98	L	L	o
+1209	E	L	9	0	9	  1	 98	L	L	o
+1210	E	L	9	0	9	  1	 98	L	L	o
+1211	V	L	9	0	9	  1	 98	L	L	o
+1212	K	L	9	0	9	  1	 98	L	L	o
+1213	P	L	9	0	9	  1	 98	L	L	o
+1214	F	L	9	0	9	  1	 98	L	L	o
+1215	I	L	9	0	9	  1	 98	L	L	o
+1216	T	L	9	0	9	  1	 98	L	L	o
+1217	E	L	9	0	9	  1	 98	L	L	o
+1218	S	L	9	0	9	  1	 98	L	L	o
+1219	K	L	9	0	9	  1	 98	L	L	o
+1220	P	L	9	0	9	  1	 98	L	L	o
+1221	S	L	9	0	9	  1	 98	L	L	o
+1222	V	L	9	0	9	  1	 98	L	L	o
+1223	E	L	9	0	9	  1	 98	L	L	o
+1224	Q	L	9	0	9	  1	 98	L	L	o
+1225	R	L	9	0	9	  1	 98	L	L	o
+1226	K	L	9	0	9	  1	 98	L	L	o
+1227	Q	L	9	0	9	  1	 98	L	L	o
+1228	D	L	9	0	9	  1	 98	L	L	o
+1229	D	L	9	0	9	  1	 98	L	L	o
+1230	K	L	9	0	9	  1	 98	L	L	o
+1231	K	L	9	0	9	  1	 98	L	L	o
+1232	I	L	9	0	9	  1	 98	L	L	o
+1233	K	L	9	0	9	  1	 98	L	L	o
+1234	A	L	9	0	9	  1	 98	L	L	o
+1235	C	L	9	0	9	  1	 98	L	L	o
+1236	V	L	9	0	9	  1	 98	L	L	o
+1237	E	L	9	0	9	  1	 98	L	L	o
+1238	E	L	9	0	9	  1	 98	L	L	o
+1239	V	L	9	0	9	  1	 98	L	L	o
+1240	T	L	9	0	9	  1	 98	L	L	o
+1241	T	L	9	0	9	  1	 98	L	L	o
+1242	T	L	9	0	9	  1	 98	L	L	o
+1243	L	L	9	0	9	  1	 98	L	L	o
+1244	E	L	9	0	9	  1	 98	L	L	o
+1245	E	L	9	0	9	  1	 98	L	L	o
+1246	T	L	9	0	9	  1	 98	L	L	o
+1247	K	L	9	0	9	  1	 98	L	L	o
+1248	F	L	9	0	9	  1	 98	L	L	o
+1249	L	L	9	0	9	  1	 98	L	L	o
+1250	T	L	9	0	9	  1	 98	L	L	o
+1251	E	L	9	0	9	  1	 98	L	L	o
+1252	N	L	9	0	9	  1	 98	L	L	o
+1253	L	L	9	0	9	  1	 98	L	L	o
+1254	L	L	9	0	9	  1	 98	L	L	o
+1255	L	L	9	0	9	  1	 98	L	L	o
+1256	Y	L	9	0	9	  1	 98	L	L	o
+1257	I	L	9	0	9	  1	 98	L	L	o
+1258	D	L	9	0	9	  1	 98	L	L	o
+1259	I	L	9	0	9	  1	 98	L	L	o
+1260	N	L	9	0	9	  1	 98	L	L	o
+1261	G	L	9	0	9	  1	 98	L	L	o
+1262	N	L	9	0	9	  1	 98	L	L	o
+1263	L	L	9	0	9	  1	 98	L	L	o
+1264	H	L	9	0	9	  1	 98	L	L	o
+1265	P	L	9	0	9	  1	 98	L	L	o
+1266	D	L	9	0	9	  1	 98	L	L	o
+1267	S	L	9	0	9	  1	 98	L	L	o
+1268	A	L	9	0	9	  1	 98	L	L	o
+1269	T	L	9	0	9	  1	 98	L	L	o
+1270	L	L	9	0	9	  1	 98	L	L	o
+1271	V	L	9	0	9	  1	 98	L	L	o
+1272	S	L	9	0	9	  1	 98	L	L	o
+1273	D	L	9	0	9	  1	 98	L	L	o
+1274	I	L	9	0	9	  1	 98	L	L	o
+1275	D	L	9	0	9	  1	 98	L	L	o
+1276	I	L	9	0	9	  1	 98	L	L	o
+1277	T	L	9	0	9	  1	 98	L	L	o
+1278	F	L	9	0	9	  1	 98	L	L	o
+1279	L	L	9	0	9	  1	 98	L	L	o
+1280	K	L	9	0	9	  1	 98	L	L	o
+1281	K	L	9	0	9	  1	 98	L	L	o
+1282	D	L	9	0	9	  1	 98	L	L	o
+1283	A	L	9	0	9	  1	 98	L	L	o
+1284	P	L	9	0	9	  1	 98	L	L	o
+1285	Y	L	9	0	9	  1	 98	L	L	o
+1286	I	L	9	0	9	  1	 98	L	L	o
+1287	V	L	9	0	9	  1	 98	L	L	o
+1288	G	L	9	0	9	  1	 98	L	L	o
+1289	D	L	9	0	9	  1	 98	L	L	o
+1290	V	L	9	0	9	  1	 98	L	L	o
+1291	V	L	9	0	9	  1	 98	L	L	o
+1292	Q	L	9	0	9	  1	 98	L	L	o
+1293	E	L	9	0	9	  1	 98	L	L	o
+1294	G	L	9	0	9	  1	 98	L	L	o
+1295	V	L	9	0	9	  1	 98	L	L	o
+1296	L	L	9	0	9	  1	 98	L	L	o
+1297	T	L	9	0	9	  1	 98	L	L	o
+1298	A	L	9	0	9	  1	 98	L	L	o
+1299	V	L	9	0	9	  1	 98	L	L	o
+1300	V	L	9	0	9	  1	 98	L	L	o
+1301	I	L	9	0	9	  1	 98	L	L	o
+1302	P	L	9	0	9	  1	 98	L	L	o
+1303	T	L	9	0	9	  1	 98	L	L	o
+1304	K	L	9	0	9	  1	 98	L	L	o
+1305	K	L	9	0	9	  1	 98	L	L	o
+1306	A	L	9	0	9	  1	 98	L	L	o
+1307	G	L	9	0	9	  1	 98	L	L	o
+1308	G	L	9	0	9	  1	 98	L	L	o
+1309	T	L	9	0	9	  1	 98	L	L	o
+1310	T	L	9	0	9	  1	 98	L	L	o
+1311	E	L	9	0	9	  1	 98	L	L	o
+1312	M	L	9	0	9	  1	 98	L	L	o
+1313	L	L	9	0	9	  1	 98	L	L	o
+1314	A	L	9	0	9	  1	 98	L	L	o
+1315	K	L	9	0	9	  1	 98	L	L	o
+1316	A	L	9	0	9	  1	 98	L	L	o
+1317	L	L	9	0	9	  1	 98	L	L	o
+1318	R	L	9	0	9	  1	 98	L	L	o
+1319	K	L	9	0	9	  1	 98	L	L	o
+1320	V	L	9	0	9	  1	 98	L	L	o
+1321	P	L	9	0	9	  1	 98	L	L	o
+1322	T	L	9	0	9	  1	 98	L	L	o
+1323	D	L	9	0	9	  1	 98	L	L	o
+1324	N	L	9	0	9	  1	 98	L	L	o
+1325	Y	L	9	0	9	  1	 98	L	L	o
+1326	I	L	9	0	9	  1	 98	L	L	o
+1327	T	L	9	0	9	  1	 98	L	L	o
+1328	T	L	9	0	9	  1	 98	L	L	o
+1329	Y	L	9	0	9	  1	 98	L	L	o
+1330	P	L	9	0	9	  1	 98	L	L	o
+1331	G	L	9	0	9	  1	 98	L	L	o
+1332	Q	L	9	0	9	  1	 98	L	L	o
+1333	G	L	9	0	9	  1	 98	L	L	o
+1334	L	L	9	0	9	  1	 98	L	L	o
+1335	N	L	9	0	9	  1	 98	L	L	o
+1336	G	L	9	0	9	  1	 98	L	L	o
+1337	Y	L	9	0	9	  1	 98	L	L	o
+1338	T	L	9	0	9	  1	 98	L	L	o
+1339	V	L	9	0	9	  1	 98	L	L	o
+1340	E	L	9	0	9	  1	 98	L	L	o
+1341	E	L	9	0	9	  1	 98	L	L	o
+1342	A	L	9	0	9	  1	 98	L	L	o
+1343	K	L	9	0	9	  1	 98	L	L	o
+1344	T	L	9	0	9	  1	 98	L	L	o
+1345	V	L	9	0	9	  1	 98	L	L	o
+1346	L	L	9	0	9	  1	 98	L	L	o
+1347	K	L	9	0	9	  1	 98	L	L	o
+1348	K	L	9	0	9	  1	 98	L	L	o
+1349	C	L	9	0	9	  1	 98	L	L	o
+1350	K	L	9	0	9	  1	 98	L	L	o
+1351	S	L	9	0	9	  1	 98	L	L	o
+1352	A	L	9	0	9	  1	 98	L	L	o
+1353	F	L	9	0	9	  1	 98	L	L	o
+1354	Y	L	9	0	9	  1	 98	L	L	o
+1355	I	L	9	0	9	  1	 98	L	L	o
+1356	L	L	9	0	9	  1	 98	L	L	o
+1357	P	L	9	0	9	  1	 98	L	L	o
+1358	S	L	9	0	9	  1	 98	L	L	o
+1359	I	L	9	0	9	  1	 98	L	L	o
+1360	I	L	9	0	9	  1	 98	L	L	o
+1361	S	L	9	0	9	  1	 98	L	L	o
+1362	N	L	9	0	9	  1	 98	L	L	o
+1363	E	L	9	0	9	  1	 98	L	L	o
+1364	K	L	9	0	9	  1	 98	L	L	o
+1365	Q	L	9	0	9	  1	 98	L	L	o
+1366	E	L	9	0	9	  1	 98	L	L	o
+1367	I	L	9	0	9	  1	 98	L	L	o
+1368	L	L	9	0	9	  1	 98	L	L	o
+1369	G	L	9	0	9	  1	 98	L	L	o
+1370	T	L	9	0	9	  1	 98	L	L	o
+1371	V	L	9	0	9	  1	 98	L	L	o
+1372	S	L	9	0	9	  1	 98	L	L	o
+1373	W	L	9	0	9	  1	 98	L	L	o
+1374	N	L	9	0	9	  1	 98	L	L	o
+1375	L	L	9	0	9	  1	 98	L	L	o
+1376	R	L	9	0	9	  1	 98	L	L	o
+1377	E	L	9	0	9	  1	 98	L	L	o
+1378	M	L	9	0	9	  1	 98	L	L	o
+1379	L	L	9	0	9	  1	 98	L	L	o
+1380	A	L	9	0	9	  1	 98	L	L	o
+1381	H	L	9	0	9	  1	 98	L	L	o
+1382	A	L	9	0	9	  1	 98	L	L	o
+1383	E	L	9	0	9	  1	 98	L	L	o
+1384	E	L	9	0	9	  1	 98	L	L	o
+1385	T	L	9	0	9	  1	 98	L	L	o
+1386	R	L	9	0	9	  1	 98	L	L	o
+1387	K	L	9	0	9	  1	 98	L	L	o
+1388	L	L	9	0	9	  1	 98	L	L	o
+1389	M	L	9	0	9	  1	 98	L	L	o
+1390	P	L	9	0	9	  1	 98	L	L	o
+1391	V	L	9	0	9	  1	 98	L	L	o
+1392	C	L	9	0	9	  1	 98	L	L	o
+1393	V	L	9	0	9	  1	 98	L	L	o
+1394	E	L	9	0	9	  1	 98	L	L	o
+1395	T	L	9	0	9	  1	 98	L	L	o
+1396	K	L	9	0	9	  1	 98	L	L	o
+1397	A	L	9	0	9	  2	 97	L	L	o
+1398	I	L	9	0	9	  3	 96	L	L	o
+1399	V	L	9	0	9	  3	 96	L	L	o
+1400	S	L	9	0	9	  3	 96	L	L	o
+1401	T	L	9	0	9	  3	 96	L	L	o
+1402	I	L	9	0	9	  2	 97	L	L	o
+1403	Q	L	9	0	9	  1	 98	L	L	o
+1404	R	L	9	0	9	  1	 98	L	L	o
+1405	K	L	9	0	9	  1	 98	L	L	o
+1406	Y	L	9	0	9	  1	 98	L	L	o
+1407	K	L	9	0	9	  1	 98	L	L	o
+1408	G	L	9	0	9	  1	 98	L	L	o
+1409	I	L	9	0	9	  1	 98	L	L	o
+1410	K	L	9	0	9	  1	 98	L	L	o
+1411	I	L	9	0	9	  1	 98	L	L	o
+1412	Q	L	9	0	9	  1	 98	L	L	o
+1413	E	L	9	0	9	  1	 98	L	L	o
+1414	G	L	9	0	9	  1	 98	L	L	o
+1415	V	L	9	0	9	  1	 98	L	L	o
+1416	V	L	9	0	9	  1	 98	L	L	o
+1417	D	L	9	0	9	  1	 98	L	L	o
+1418	Y	L	9	0	9	  1	 98	L	L	o
+1419	G	L	9	0	9	  1	 98	L	L	o
+1420	A	L	9	0	9	  1	 98	L	L	o
+1421	R	L	9	0	9	  1	 98	L	L	o
+1422	F	L	9	0	9	  1	 98	L	L	o
+1423	Y	L	9	0	9	  1	 98	L	L	o
+1424	F	L	9	0	9	  1	 98	L	L	o
+1425	Y	L	9	0	9	  1	 98	L	L	o
+1426	T	L	9	0	9	  1	 98	L	L	o
+1427	S	L	9	0	9	  1	 98	L	L	o
+1428	K	L	9	0	9	  1	 98	L	L	o
+1429	T	L	9	0	9	  1	 98	L	L	o
+1430	T	L	9	0	9	  1	 98	L	L	o
+1431	V	L	9	0	9	  1	 98	L	L	o
+1432	A	L	9	0	9	  1	 98	L	L	o
+1433	S	L	9	0	9	  1	 98	L	L	o
+1434	L	L	9	0	9	  1	 98	L	L	o
+1435	I	L	9	0	9	  1	 98	L	L	o
+1436	N	L	9	0	9	  1	 98	L	L	o
+1437	T	L	9	0	9	  1	 98	L	L	o
+1438	L	L	9	0	9	  1	 98	L	L	o
+1439	N	L	9	0	9	  1	 98	L	L	o
+1440	D	L	9	0	9	  1	 98	L	L	o
+1441	L	L	9	0	9	  1	 98	L	L	o
+1442	N	L	9	0	9	  1	 98	L	L	o
+1443	E	L	9	0	9	  1	 98	L	L	o
+1444	T	L	9	0	9	  1	 98	L	L	o
+1445	L	L	9	0	9	  1	 98	L	L	o
+1446	V	L	9	0	9	  1	 98	L	L	o
+1447	T	L	9	0	9	  1	 98	L	L	o
+1448	M	L	9	0	9	  2	 97	L	L	o
+1449	P	L	9	0	9	  2	 97	L	L	o
+1450	L	L	9	0	9	  2	 97	L	L	o
+1451	G	L	9	0	9	  2	 97	L	L	o
+1452	Y	L	9	0	9	  2	 97	L	L	o
+1453	V	L	9	0	9	  2	 97	L	L	o
+1454	T	L	9	0	9	  2	 97	L	L	o
+1455	H	L	9	0	9	  2	 97	L	L	o
+1456	G	L	9	0	9	  1	 98	L	L	o
+1457	L	L	9	0	9	  1	 98	L	L	o
+1458	N	L	9	0	9	  1	 98	L	L	o
+1459	L	L	9	0	9	  1	 98	L	L	o
+1460	E	L	9	0	9	  1	 98	L	L	o
+1461	E	L	9	0	9	  1	 98	L	L	o
+1462	A	L	9	0	9	  1	 98	L	L	o
+1463	A	L	9	0	9	  1	 98	L	L	o
+1464	R	L	9	0	9	  1	 98	L	L	o
+1465	Y	L	9	0	9	  1	 98	L	L	o
+1466	M	L	9	0	9	  1	 98	L	L	o
+1467	R	L	9	0	9	  1	 98	L	L	o
+1468	S	L	9	0	9	  1	 98	L	L	o
+1469	L	L	9	0	9	  1	 98	L	L	o
+1470	K	L	9	0	9	  1	 98	L	L	o
+1471	V	L	9	0	9	  1	 98	L	L	o
+1472	P	L	9	0	9	  1	 98	L	L	o
+1473	A	L	9	0	9	  1	 98	L	L	o
+1474	T	L	9	0	9	  1	 98	L	L	o
+1475	V	L	9	0	9	  1	 98	L	L	o
+1476	S	L	9	0	9	  1	 98	L	L	o
+1477	V	L	9	0	9	  1	 98	L	L	o
+1478	S	L	9	0	9	  1	 98	L	L	o
+1479	S	L	9	0	9	  1	 98	L	L	o
+1480	P	L	9	0	9	  1	 98	L	L	o
+1481	D	L	9	0	9	  1	 98	L	L	o
+1482	A	L	9	0	9	  1	 98	L	L	o
+1483	V	L	9	0	9	  1	 98	L	L	o
+1484	T	L	9	0	9	  1	 98	L	L	o
+1485	A	L	9	0	9	  1	 98	L	L	o
+1486	Y	L	9	0	9	  1	 98	L	L	o
+1487	N	L	9	0	9	  1	 98	L	L	o
+1488	G	L	9	0	9	  1	 98	L	L	o
+1489	Y	L	9	0	9	  1	 98	L	L	o
+1490	L	L	9	0	9	  1	 98	L	L	o
+1491	T	L	9	0	9	  1	 98	L	L	o
+1492	S	L	9	0	9	  1	 98	L	L	o
+1493	S	L	9	0	9	  1	 98	L	L	o
+1494	S	L	9	0	9	  1	 98	L	L	o
+1495	K	L	9	0	9	  1	 98	L	L	o
+1496	T	L	9	0	9	  1	 98	L	L	o
+1497	P	L	9	0	9	  1	 98	L	L	o
+1498	E	L	9	0	9	  1	 98	L	L	o
+1499	E	L	9	0	9	  1	 98	L	L	o
+1500	H	L	9	0	9	  1	 98	L	L	o
+1501	F	L	9	0	9	  1	 98	L	L	o
+1502	I	L	9	0	9	  1	 98	L	L	o
+1503	E	L	9	0	9	  1	 98	L	L	o
+1504	T	L	9	0	9	  1	 98	L	L	o
+1505	I	L	9	0	9	  1	 98	L	L	o
+1506	S	L	9	0	9	  1	 98	L	L	o
+1507	L	L	9	0	9	  1	 98	L	L	o
+1508	A	L	9	0	9	  1	 98	L	L	o
+1509	G	L	9	0	9	  1	 98	L	L	o
+1510	S	L	9	0	9	  1	 98	L	L	o
+1511	Y	L	9	0	9	  1	 98	L	L	o
+1512	K	L	9	0	9	  1	 98	L	L	o
+1513	D	L	9	0	9	  1	 98	L	L	o
+1514	W	L	9	0	9	  1	 98	L	L	o
+1515	S	L	9	0	9	  1	 98	L	L	o
+1516	Y	L	9	0	9	  1	 98	L	L	o
+1517	S	L	9	0	9	  1	 98	L	L	o
+1518	G	L	9	0	9	  1	 98	L	L	o
+1519	Q	L	9	0	9	  1	 98	L	L	o
+1520	S	L	9	0	9	  1	 98	L	L	o
+1521	T	L	9	0	9	  1	 98	L	L	o
+1522	Q	L	9	0	9	  1	 98	L	L	o
+1523	L	L	9	0	9	  1	 98	L	L	o
+1524	G	L	9	0	9	  1	 98	L	L	o
+1525	I	L	9	0	9	  1	 98	L	L	o
+1526	E	L	9	0	9	  1	 98	L	L	o
+1527	F	L	9	0	9	  1	 98	L	L	o
+1528	L	L	9	0	9	  1	 98	L	L	o
+1529	K	L	9	0	9	  1	 98	L	L	o
+1530	R	L	9	0	9	  1	 98	L	L	o
+1531	G	L	9	0	9	  1	 98	L	L	o
+1532	D	L	9	0	9	  1	 98	L	L	o
+1533	K	L	9	0	9	  1	 98	L	L	o
+1534	S	L	9	0	9	  1	 98	L	L	o
+1535	V	L	9	0	9	  1	 98	L	L	o
+1536	Y	L	9	0	9	  1	 98	L	L	o
+1537	Y	L	9	0	9	  1	 98	L	L	o
+1538	T	L	9	0	9	  1	 98	L	L	o
+1539	S	L	9	0	9	  1	 98	L	L	o
+1540	N	L	9	0	9	  1	 98	L	L	o
+1541	P	L	9	0	9	  1	 98	L	L	o
+1542	T	L	9	0	9	  1	 98	L	L	o
+1543	T	L	9	0	9	  1	 98	L	L	o
+1544	F	L	9	0	9	  1	 98	L	L	o
+1545	H	L	9	0	9	  1	 98	L	L	o
+1546	L	L	9	0	9	  1	 98	L	L	o
+1547	D	L	9	0	9	  1	 98	L	L	o
+1548	G	L	9	0	9	  1	 98	L	L	o
+1549	E	L	9	0	9	  1	 98	L	L	o
+1550	V	L	9	0	9	  1	 98	L	L	o
+1551	I	L	9	0	9	  1	 98	L	L	o
+1552	T	L	9	0	9	  1	 98	L	L	o
+1553	F	L	9	0	9	  1	 98	L	L	o
+1554	D	L	9	0	9	  1	 98	L	L	o
+1555	N	L	9	0	9	  1	 98	L	L	o
+1556	L	L	9	0	9	  1	 98	L	L	o
+1557	K	L	9	0	9	  1	 98	L	L	o
+1558	T	L	9	0	9	  1	 98	L	L	o
+1559	L	L	9	0	9	  1	 98	L	L	o
+1560	L	L	9	0	9	  1	 98	L	L	o
+1561	S	L	9	0	9	  1	 98	L	L	o
+1562	L	L	9	0	9	  1	 98	L	L	o
+1563	R	L	9	0	9	  1	 98	L	L	o
+1564	E	L	9	0	9	  1	 98	L	L	o
+1565	V	L	9	0	9	  1	 98	L	L	o
+1566	R	L	9	0	9	  1	 98	L	L	o
+1567	T	L	9	0	9	  1	 98	L	L	o
+1568	I	L	9	0	9	  1	 98	L	L	o
+1569	K	L	9	0	9	  1	 98	L	L	o
+1570	V	L	9	0	9	  1	 98	L	L	o
+1571	F	L	9	0	9	  1	 98	L	L	o
+1572	T	L	9	0	9	  1	 98	L	L	o
+1573	T	L	9	0	9	  1	 98	L	L	o
+1574	V	L	9	0	9	  1	 98	L	L	o
+1575	D	L	9	0	9	  1	 98	L	L	o
+1576	N	L	9	0	9	  1	 98	L	L	o
+1577	I	L	9	0	9	  1	 98	L	L	o
+1578	N	L	9	0	9	  1	 98	L	L	o
+1579	L	L	9	0	9	  1	 98	L	L	o
+1580	H	L	9	0	9	  1	 98	L	L	o
+1581	T	L	9	0	9	  1	 98	L	L	o
+1582	Q	L	9	0	9	  1	 98	L	L	o
+1583	V	L	9	0	9	  1	 98	L	L	o
+1584	V	L	9	0	9	  1	 98	L	L	o
+1585	D	L	9	0	9	  1	 98	L	L	o
+1586	M	L	9	0	9	  1	 98	L	L	o
+1587	S	L	9	0	9	  1	 98	L	L	o
+1588	M	L	9	0	9	  1	 98	L	L	o
+1589	T	L	9	0	9	  1	 98	L	L	o
+1590	Y	L	9	0	9	  1	 98	L	L	o
+1591	G	L	9	0	9	  1	 98	L	L	o
+1592	Q	L	9	0	9	  1	 98	L	L	o
+1593	Q	L	9	0	9	  1	 98	L	L	o
+1594	F	L	9	0	9	  1	 98	L	L	o
+1595	G	L	9	0	9	  1	 98	L	L	o
+1596	P	L	9	0	9	  1	 98	L	L	o
+1597	T	L	9	0	9	  1	 98	L	L	o
+1598	Y	L	9	0	9	  1	 98	L	L	o
+1599	L	L	9	0	9	  1	 98	L	L	o
+1600	D	L	9	0	9	  1	 98	L	L	o
+1601	G	L	9	0	9	  1	 98	L	L	o
+1602	A	L	9	0	9	  1	 98	L	L	o
+1603	D	L	9	0	9	  1	 98	L	L	o
+1604	V	L	9	0	9	  1	 98	L	L	o
+1605	T	L	9	0	9	  1	 98	L	L	o
+1606	K	L	9	0	9	  1	 98	L	L	o
+1607	I	L	9	0	9	  1	 98	L	L	o
+1608	K	L	9	0	9	  1	 98	L	L	o
+1609	P	L	9	0	9	  1	 98	L	L	o
+1610	H	L	9	0	9	  1	 98	L	L	o
+1611	N	L	9	0	9	  1	 98	L	L	o
+1612	S	L	9	0	9	  1	 98	L	L	o
+1613	H	L	9	0	9	  1	 98	L	L	o
+1614	E	L	9	0	9	  1	 98	L	L	o
+1615	G	L	9	0	9	  1	 98	L	L	o
+1616	K	L	9	0	9	  1	 98	L	L	o
+1617	T	L	9	0	9	  1	 98	L	L	o
+1618	F	L	9	0	9	  1	 98	L	L	o
+1619	Y	L	9	0	9	  1	 98	L	L	o
+1620	V	L	9	0	9	  1	 98	L	L	o
+1621	L	L	9	0	9	  1	 98	L	L	o
+1622	P	L	9	0	9	  1	 98	L	L	o
+1623	N	L	9	0	9	  1	 98	L	L	o
+1624	D	L	9	0	9	  1	 98	L	L	o
+1625	D	L	9	0	9	  1	 98	L	L	o
+1626	T	L	9	0	9	  1	 98	L	L	o
+1627	L	L	9	0	9	  1	 98	L	L	o
+1628	R	L	9	0	9	  1	 98	L	L	o
+1629	V	L	9	0	9	  1	 98	L	L	o
+1630	E	L	9	0	9	  1	 98	L	L	o
+1631	A	L	9	0	9	  1	 98	L	L	o
+1632	F	L	9	0	9	  1	 98	L	L	o
+1633	E	L	9	0	9	  1	 98	L	L	o
+1634	Y	L	9	0	9	  1	 98	L	L	o
+1635	Y	L	9	0	9	  1	 98	L	L	o
+1636	H	L	9	0	9	  1	 98	L	L	o
+1637	T	L	9	0	9	  1	 98	L	L	o
+1638	T	L	9	0	9	  1	 98	L	L	o
+1639	D	L	9	0	9	  1	 98	L	L	o
+1640	P	L	9	0	9	  1	 98	L	L	o
+1641	S	L	9	0	9	  1	 98	L	L	o
+1642	F	L	9	0	9	  1	 98	L	L	o
+1643	L	L	9	0	9	  1	 98	L	L	o
+1644	G	L	9	0	9	  1	 98	L	L	o
+1645	R	L	9	0	9	  1	 98	L	L	o
+1646	Y	L	9	0	9	  1	 98	L	L	o
+1647	M	L	9	0	9	  1	 98	L	L	o
+1648	S	L	9	0	9	  1	 98	L	L	o
+1649	A	L	9	0	9	  1	 98	L	L	o
+1650	L	L	9	0	9	  1	 98	L	L	o
+1651	N	L	9	0	9	  1	 98	L	L	o
+1652	H	L	9	0	9	  1	 98	L	L	o
+1653	T	L	9	0	9	  1	 98	L	L	o
+1654	K	L	9	0	9	  1	 98	L	L	o
+1655	K	L	9	0	9	  1	 98	L	L	o
+1656	W	L	9	0	9	  1	 98	L	L	o
+1657	K	L	9	0	9	  1	 98	L	L	o
+1658	Y	L	9	0	9	  1	 98	L	L	o
+1659	P	L	9	0	9	  1	 98	L	L	o
+1660	Q	L	9	0	9	  1	 98	L	L	o
+1661	V	L	9	0	9	  1	 98	L	L	o
+1662	N	L	9	0	9	  1	 98	L	L	o
+1663	G	L	9	0	9	  1	 98	L	L	o
+1664	L	L	9	0	9	  1	 98	L	L	o
+1665	T	L	9	0	9	  1	 98	L	L	o
+1666	S	L	9	0	9	  1	 98	L	L	o
+1667	I	L	9	0	9	  1	 98	L	L	o
+1668	K	L	9	0	9	  1	 98	L	L	o
+1669	W	L	9	0	9	  1	 98	L	L	o
+1670	A	L	9	0	9	  1	 98	L	L	o
+1671	D	L	9	0	9	  2	 97	L	L	o
+1672	N	L	9	0	9	  2	 97	L	L	o
+1673	N	L	9	0	9	  3	 96	L	L	o
+1674	C	L	9	0	9	  3	 96	L	L	o
+1675	Y	L	9	0	9	  4	 95	L	L	o
+1676	L	L	8	0	9	  8	 91	L	L	o
+1677	A	L	7	1	8	 13	 86	L	L	o
+1678	T	L	5	2	7	 20	 79	L	L	o
+1679	A	L	5	2	7	 24	 75	L	L	o
+1680	L	L	4	2	7	 28	 71	L	L	o
+1681	L	L	3	3	6	 30	 69	L	L	o
+1682	T	L	4	2	7	 27	 72	L	L	o
+1683	L	L	6	1	8	 19	 80	L	L	o
+1684	Q	L	8	0	9	  9	 90	L	L	o
+1685	Q	L	8	0	9	  5	 94	L	L	o
+1686	I	L	9	0	9	  4	 95	L	L	o
+1687	E	L	9	0	9	  3	 96	L	L	o
+1688	L	L	9	0	9	  3	 96	L	L	o
+1689	K	L	9	0	9	  2	 97	L	L	o
+1690	F	L	9	0	9	  2	 97	L	L	o
+1691	N	L	9	0	9	  1	 98	L	L	o
+1692	P	L	9	0	9	  1	 98	L	L	o
+1693	P	L	9	0	9	  1	 98	L	L	o
+1694	A	L	9	0	9	  1	 98	L	L	o
+1695	L	L	9	0	9	  1	 98	L	L	o
+1696	Q	L	9	0	9	  1	 98	L	L	o
+1697	D	L	9	0	9	  1	 98	L	L	o
+1698	A	L	9	0	9	  1	 98	L	L	o
+1699	Y	L	9	0	9	  1	 98	L	L	o
+1700	Y	L	9	0	9	  1	 98	L	L	o
+1701	R	L	9	0	9	  1	 98	L	L	o
+1702	A	L	9	0	9	  1	 98	L	L	o
+1703	R	L	9	0	9	  1	 98	L	L	o
+1704	A	L	9	0	9	  1	 98	L	L	o
+1705	G	L	9	0	9	  1	 98	L	L	o
+1706	E	L	9	0	9	  1	 98	L	L	o
+1707	A	L	9	0	9	  1	 98	L	L	o
+1708	A	L	9	0	9	  1	 98	L	L	o
+1709	N	L	9	0	9	  2	 97	L	L	o
+1710	F	L	9	0	9	  4	 95	L	L	o
+1711	C	L	8	0	9	  8	 91	L	L	o
+1712	A	L	6	1	8	 15	 84	L	L	o
+1713	L	L	6	1	8	 18	 81	L	L	o
+1714	I	L	6	1	8	 19	 80	L	L	o
+1715	L	L	6	1	8	 16	 82	L	L	o
+1716	A	L	7	1	8	 11	 88	L	L	o
+1717	Y	L	8	0	9	  6	 93	L	L	o
+1718	C	L	9	0	9	  3	 96	L	L	o
+1719	N	L	9	0	9	  2	 97	L	L	o
+1720	K	L	9	0	9	  2	 97	L	L	o
+1721	T	L	9	0	9	  2	 97	L	L	o
+1722	V	L	9	0	9	  2	 97	L	L	o
+1723	G	L	9	0	9	  1	 98	L	L	o
+1724	E	L	9	0	9	  1	 98	L	L	o
+1725	L	L	9	0	9	  1	 98	L	L	o
+1726	G	L	9	0	9	  1	 98	L	L	o
+1727	D	L	9	0	9	  1	 98	L	L	o
+1728	V	L	9	0	9	  1	 98	L	L	o
+1729	R	L	9	0	9	  1	 98	L	L	o
+1730	E	L	9	0	9	  1	 98	L	L	o
+1731	T	L	9	0	9	  1	 98	L	L	o
+1732	M	L	9	0	9	  1	 98	L	L	o
+1733	S	L	9	0	9	  1	 98	L	L	o
+1734	Y	L	9	0	9	  1	 98	L	L	o
+1735	L	L	9	0	9	  1	 98	L	L	o
+1736	F	L	9	0	9	  1	 98	L	L	o
+1737	Q	L	9	0	9	  1	 98	L	L	o
+1738	H	L	9	0	9	  1	 98	L	L	o
+1739	A	L	9	0	9	  1	 98	L	L	o
+1740	N	L	9	0	9	  1	 98	L	L	o
+1741	L	L	9	0	9	  1	 98	L	L	o
+1742	D	L	9	0	9	  1	 98	L	L	o
+1743	S	L	9	0	9	  1	 98	L	L	o
+1744	C	L	9	0	9	  1	 98	L	L	o
+1745	K	L	9	0	9	  1	 98	L	L	o
+1746	R	L	9	0	9	  1	 98	L	L	o
+1747	V	L	9	0	9	  1	 98	L	L	o
+1748	L	L	9	0	9	  1	 98	L	L	o
+1749	N	L	9	0	9	  1	 98	L	L	o
+1750	V	L	9	0	9	  1	 98	L	L	o
+1751	V	L	9	0	9	  1	 98	L	L	o
+1752	C	L	9	0	9	  1	 98	L	L	o
+1753	K	L	9	0	9	  1	 98	L	L	o
+1754	T	L	9	0	9	  1	 98	L	L	o
+1755	C	L	9	0	9	  1	 98	L	L	o
+1756	G	L	9	0	9	  1	 98	L	L	o
+1757	Q	L	9	0	9	  1	 98	L	L	o
+1758	Q	L	9	0	9	  1	 98	L	L	o
+1759	Q	L	9	0	9	  1	 98	L	L	o
+1760	T	L	9	0	9	  1	 98	L	L	o
+1761	T	L	9	0	9	  1	 98	L	L	o
+1762	L	L	9	0	9	  1	 98	L	L	o
+1763	K	L	9	0	9	  1	 98	L	L	o
+1764	G	L	9	0	9	  1	 98	L	L	o
+1765	V	L	9	0	9	  1	 98	L	L	o
+1766	E	L	9	0	9	  1	 98	L	L	o
+1767	A	L	9	0	9	  1	 98	L	L	o
+1768	V	L	9	0	9	  1	 98	L	L	o
+1769	M	L	9	0	9	  1	 98	L	L	o
+1770	Y	L	9	0	9	  1	 98	L	L	o
+1771	M	L	9	0	9	  1	 98	L	L	o
+1772	G	L	9	0	9	  1	 98	L	L	o
+1773	T	L	9	0	9	  1	 98	L	L	o
+1774	L	L	9	0	9	  1	 98	L	L	o
+1775	S	L	9	0	9	  1	 98	L	L	o
+1776	Y	L	9	0	9	  1	 98	L	L	o
+1777	E	L	9	0	9	  1	 98	L	L	o
+1778	Q	L	9	0	9	  1	 98	L	L	o
+1779	F	L	9	0	9	  1	 98	L	L	o
+1780	K	L	9	0	9	  1	 98	L	L	o
+1781	K	L	9	0	9	  1	 98	L	L	o
+1782	G	L	9	0	9	  1	 98	L	L	o
+1783	V	L	9	0	9	  1	 98	L	L	o
+1784	Q	L	9	0	9	  1	 98	L	L	o
+1785	I	L	9	0	9	  1	 98	L	L	o
+1786	P	L	9	0	9	  1	 98	L	L	o
+1787	C	L	9	0	9	  1	 98	L	L	o
+1788	T	L	9	0	9	  1	 98	L	L	o
+1789	C	L	9	0	9	  1	 98	L	L	o
+1790	G	L	9	0	9	  1	 98	L	L	o
+1791	K	L	9	0	9	  1	 98	L	L	o
+1792	Q	L	9	0	9	  1	 98	L	L	o
+1793	A	L	9	0	9	  1	 98	L	L	o
+1794	T	L	9	0	9	  1	 98	L	L	o
+1795	K	L	9	0	9	  1	 98	L	L	o
+1796	Y	L	9	0	9	  1	 98	L	L	o
+1797	L	L	9	0	9	  1	 98	L	L	o
+1798	V	L	9	0	9	  1	 98	L	L	o
+1799	Q	L	9	0	9	  1	 98	L	L	o
+1800	Q	L	9	0	9	  1	 98	L	L	o
+1801	E	L	9	0	9	  1	 98	L	L	o
+1802	S	L	9	0	9	  1	 98	L	L	o
+1803	P	L	9	0	9	  1	 98	L	L	o
+1804	F	L	9	0	9	  1	 98	L	L	o
+1805	V	L	9	0	9	  1	 98	L	L	o
+1806	M	L	9	0	9	  1	 98	L	L	o
+1807	M	L	9	0	9	  1	 98	L	L	o
+1808	S	L	9	0	9	  1	 98	L	L	o
+1809	A	L	9	0	9	  1	 98	L	L	o
+1810	P	L	9	0	9	  1	 98	L	L	o
+1811	P	L	9	0	9	  1	 98	L	L	o
+1812	A	L	9	0	9	  1	 98	L	L	o
+1813	Q	L	9	0	9	  1	 98	L	L	o
+1814	Y	L	9	0	9	  1	 98	L	L	o
+1815	E	L	9	0	9	  1	 98	L	L	o
+1816	L	L	9	0	9	  1	 98	L	L	o
+1817	K	L	9	0	9	  1	 98	L	L	o
+1818	H	L	9	0	9	  1	 98	L	L	o
+1819	G	L	9	0	9	  1	 98	L	L	o
+1820	T	L	9	0	9	  1	 98	L	L	o
+1821	F	L	9	0	9	  1	 98	L	L	o
+1822	T	L	9	0	9	  1	 98	L	L	o
+1823	C	L	9	0	9	  1	 98	L	L	o
+1824	A	L	9	0	9	  1	 98	L	L	o
+1825	S	L	9	0	9	  1	 98	L	L	o
+1826	E	L	9	0	9	  1	 98	L	L	o
+1827	Y	L	9	0	9	  1	 98	L	L	o
+1828	T	L	9	0	9	  1	 98	L	L	o
+1829	G	L	9	0	9	  1	 98	L	L	o
+1830	N	L	9	0	9	  1	 98	L	L	o
+1831	Y	L	9	0	9	  1	 98	L	L	o
+1832	Q	L	9	0	9	  1	 98	L	L	o
+1833	C	L	9	0	9	  1	 98	L	L	o
+1834	G	L	9	0	9	  1	 98	L	L	o
+1835	H	L	9	0	9	  1	 98	L	L	o
+1836	Y	L	9	0	9	  1	 98	L	L	o
+1837	K	L	9	0	9	  1	 98	L	L	o
+1838	H	L	9	0	9	  1	 98	L	L	o
+1839	I	L	9	0	9	  1	 98	L	L	o
+1840	T	L	9	0	9	  1	 98	L	L	o
+1841	S	L	9	0	9	  1	 98	L	L	o
+1842	K	L	9	0	9	  1	 98	L	L	o
+1843	E	L	9	0	9	  1	 98	L	L	o
+1844	T	L	9	0	9	  1	 98	L	L	o
+1845	L	L	9	0	9	  1	 98	L	L	o
+1846	Y	L	9	0	9	  1	 98	L	L	o
+1847	C	L	9	0	9	  1	 98	L	L	o
+1848	I	L	9	0	9	  1	 98	L	L	o
+1849	D	L	9	0	9	  1	 98	L	L	o
+1850	G	L	9	0	9	  1	 98	L	L	o
+1851	A	L	9	0	9	  1	 98	L	L	o
+1852	L	L	9	0	9	  1	 98	L	L	o
+1853	L	L	9	0	9	  1	 98	L	L	o
+1854	T	L	9	0	9	  1	 98	L	L	o
+1855	K	L	9	0	9	  1	 98	L	L	o
+1856	S	L	9	0	9	  1	 98	L	L	o
+1857	S	L	9	0	9	  1	 98	L	L	o
+1858	E	L	9	0	9	  1	 98	L	L	o
+1859	Y	L	9	0	9	  1	 98	L	L	o
+1860	K	L	9	0	9	  1	 98	L	L	o
+1861	G	L	9	0	9	  1	 98	L	L	o
+1862	P	L	9	0	9	  1	 98	L	L	o
+1863	I	L	9	0	9	  1	 98	L	L	o
+1864	T	L	9	0	9	  1	 98	L	L	o
+1865	D	L	9	0	9	  1	 98	L	L	o
+1866	V	L	9	0	9	  1	 98	L	L	o
+1867	F	L	9	0	9	  1	 98	L	L	o
+1868	Y	L	9	0	9	  1	 98	L	L	o
+1869	K	L	9	0	9	  1	 98	L	L	o
+1870	E	L	9	0	9	  1	 98	L	L	o
+1871	N	L	9	0	9	  1	 98	L	L	o
+1872	S	L	9	0	9	  1	 98	L	L	o
+1873	Y	L	9	0	9	  1	 98	L	L	o
+1874	T	L	9	0	9	  1	 98	L	L	o
+1875	T	L	9	0	9	  1	 98	L	L	o
+1876	T	L	9	0	9	  1	 98	L	L	o
+1877	I	L	9	0	9	  1	 98	L	L	o
+1878	K	L	9	0	9	  1	 98	L	L	o
+1879	P	L	9	0	9	  1	 98	L	L	o
+1880	V	L	9	0	9	  1	 98	L	L	o
+1881	T	L	9	0	9	  1	 98	L	L	o
+1882	Y	L	9	0	9	  1	 98	L	L	o
+1883	K	L	9	0	9	  1	 98	L	L	o
+1884	L	L	9	0	9	  1	 98	L	L	o
+1885	D	L	9	0	9	  1	 98	L	L	o
+1886	G	L	9	0	9	  1	 98	L	L	o
+1887	V	L	9	0	9	  1	 98	L	L	o
+1888	V	L	9	0	9	  1	 98	L	L	o
+1889	C	L	9	0	9	  1	 98	L	L	o
+1890	T	L	9	0	9	  1	 98	L	L	o
+1891	E	L	9	0	9	  1	 98	L	L	o
+1892	I	L	9	0	9	  1	 98	L	L	o
+1893	D	L	9	0	9	  1	 98	L	L	o
+1894	P	L	9	0	9	  1	 98	L	L	o
+1895	K	L	9	0	9	  1	 98	L	L	o
+1896	L	L	9	0	9	  1	 98	L	L	o
+1897	D	L	9	0	9	  1	 98	L	L	o
+1898	N	L	9	0	9	  1	 98	L	L	o
+1899	Y	L	9	0	9	  1	 98	L	L	o
+1900	Y	L	9	0	9	  1	 98	L	L	o
+1901	K	L	9	0	9	  1	 98	L	L	o
+1902	K	L	9	0	9	  1	 98	L	L	o
+1903	D	L	9	0	9	  1	 98	L	L	o
+1904	N	L	9	0	9	  1	 98	L	L	o
+1905	S	L	9	0	9	  1	 98	L	L	o
+1906	Y	L	9	0	9	  1	 98	L	L	o
+1907	F	L	9	0	9	  1	 98	L	L	o
+1908	T	L	9	0	9	  1	 98	L	L	o
+1909	E	L	9	0	9	  1	 98	L	L	o
+1910	Q	L	9	0	9	  1	 98	L	L	o
+1911	P	L	9	0	9	  1	 98	L	L	o
+1912	I	L	9	0	9	  1	 98	L	L	o
+1913	D	L	9	0	9	  1	 98	L	L	o
+1914	L	L	9	0	9	  1	 98	L	L	o
+1915	V	L	9	0	9	  1	 98	L	L	o
+1916	P	L	9	0	9	  1	 98	L	L	o
+1917	N	L	9	0	9	  1	 98	L	L	o
+1918	Q	L	9	0	9	  1	 98	L	L	o
+1919	P	L	9	0	9	  1	 98	L	L	o
+1920	Y	L	9	0	9	  1	 98	L	L	o
+1921	P	L	9	0	9	  1	 98	L	L	o
+1922	N	L	9	0	9	  1	 98	L	L	o
+1923	A	L	9	0	9	  1	 98	L	L	o
+1924	S	L	9	0	9	  1	 98	L	L	o
+1925	F	L	9	0	9	  1	 98	L	L	o
+1926	D	L	9	0	9	  1	 98	L	L	o
+1927	N	L	9	0	9	  1	 98	L	L	o
+1928	F	L	9	0	9	  1	 98	L	L	o
+1929	K	L	9	0	9	  1	 98	L	L	o
+1930	F	L	9	0	9	  1	 98	L	L	o
+1931	V	L	9	0	9	  1	 98	L	L	o
+1932	C	L	9	0	9	  1	 98	L	L	o
+1933	D	L	9	0	9	  1	 98	L	L	o
+1934	N	L	9	0	9	  1	 98	L	L	o
+1935	I	L	9	0	9	  1	 98	L	L	o
+1936	K	L	9	0	9	  1	 98	L	L	o
+1937	F	L	9	0	9	  1	 98	L	L	o
+1938	A	L	9	0	9	  1	 98	L	L	o
+1939	D	L	9	0	9	  1	 98	L	L	o
+1940	D	L	9	0	9	  1	 98	L	L	o
+1941	L	L	9	0	9	  1	 98	L	L	o
+1942	N	L	9	0	9	  1	 98	L	L	o
+1943	Q	L	9	0	9	  1	 98	L	L	o
+1944	L	L	9	0	9	  1	 98	L	L	o
+1945	T	L	9	0	9	  1	 98	L	L	o
+1946	G	L	9	0	9	  1	 98	L	L	o
+1947	Y	L	9	0	9	  1	 98	L	L	o
+1948	K	L	9	0	9	  1	 98	L	L	o
+1949	K	L	9	0	9	  1	 98	L	L	o
+1950	P	L	9	0	9	  1	 98	L	L	o
+1951	A	L	9	0	9	  1	 98	L	L	o
+1952	S	L	9	0	9	  1	 98	L	L	o
+1953	R	L	9	0	9	  1	 98	L	L	o
+1954	E	L	9	0	9	  1	 98	L	L	o
+1955	L	L	9	0	9	  1	 98	L	L	o
+1956	K	L	9	0	9	  1	 98	L	L	o
+1957	V	L	9	0	9	  1	 98	L	L	o
+1958	T	L	9	0	9	  1	 98	L	L	o
+1959	F	L	9	0	9	  1	 98	L	L	o
+1960	F	L	9	0	9	  1	 98	L	L	o
+1961	P	L	9	0	9	  1	 98	L	L	o
+1962	D	L	9	0	9	  1	 98	L	L	o
+1963	L	L	9	0	9	  1	 98	L	L	o
+1964	N	L	9	0	9	  1	 98	L	L	o
+1965	G	L	9	0	9	  1	 98	L	L	o
+1966	D	L	9	0	9	  1	 98	L	L	o
+1967	V	L	9	0	9	  1	 98	L	L	o
+1968	V	L	9	0	9	  1	 98	L	L	o
+1969	A	L	9	0	9	  1	 98	L	L	o
+1970	I	L	9	0	9	  1	 98	L	L	o
+1971	D	L	9	0	9	  1	 98	L	L	o
+1972	Y	L	9	0	9	  1	 98	L	L	o
+1973	K	L	9	0	9	  1	 98	L	L	o
+1974	H	L	9	0	9	  1	 98	L	L	o
+1975	Y	L	9	0	9	  1	 98	L	L	o
+1976	T	L	9	0	9	  1	 98	L	L	o
+1977	P	L	9	0	9	  1	 98	L	L	o
+1978	S	L	9	0	9	  1	 98	L	L	o
+1979	F	L	9	0	9	  1	 98	L	L	o
+1980	K	L	9	0	9	  1	 98	L	L	o
+1981	K	L	9	0	9	  1	 98	L	L	o
+1982	G	L	9	0	9	  1	 98	L	L	o
+1983	A	L	9	0	9	  1	 98	L	L	o
+1984	K	L	9	0	9	  1	 98	L	L	o
+1985	L	L	9	0	9	  1	 98	L	L	o
+1986	L	L	9	0	9	  1	 98	L	L	o
+1987	H	L	9	0	9	  1	 98	L	L	o
+1988	K	L	9	0	9	  1	 98	L	L	o
+1989	P	L	9	0	9	  1	 98	L	L	o
+1990	I	L	9	0	9	  1	 98	L	L	o
+1991	V	L	9	0	9	  1	 98	L	L	o
+1992	W	L	9	0	9	  1	 98	L	L	o
+1993	H	L	9	0	9	  1	 98	L	L	o
+1994	V	L	9	0	9	  1	 98	L	L	o
+1995	N	L	9	0	9	  1	 98	L	L	o
+1996	N	L	9	0	9	  1	 98	L	L	o
+1997	A	L	9	0	9	  1	 98	L	L	o
+1998	T	L	9	0	9	  1	 98	L	L	o
+1999	N	L	9	0	9	  1	 98	L	L	o
+2000	K	L	9	0	9	  1	 98	L	L	o
+2001	A	L	9	0	9	  1	 98	L	L	o
+2002	T	L	9	0	9	  1	 98	L	L	o
+2003	Y	L	9	0	9	  1	 98	L	L	o
+2004	K	L	9	0	9	  1	 98	L	L	o
+2005	P	L	9	0	9	  1	 98	L	L	o
+2006	N	L	9	0	9	  1	 98	L	L	o
+2007	T	L	9	0	9	  1	 98	L	L	o
+2008	W	L	9	0	9	  1	 98	L	L	o
+2009	C	L	9	0	9	  1	 98	L	L	o
+2010	I	L	9	0	9	  1	 98	L	L	o
+2011	R	L	9	0	9	  1	 98	L	L	o
+2012	C	L	9	0	9	  1	 98	L	L	o
+2013	L	L	9	0	9	  1	 98	L	L	o
+2014	W	L	9	0	9	  1	 98	L	L	o
+2015	S	L	9	0	9	  1	 98	L	L	o
+2016	T	L	9	0	9	  1	 98	L	L	o
+2017	K	L	9	0	9	  1	 98	L	L	o
+2018	P	L	9	0	9	  1	 98	L	L	o
+2019	V	L	9	0	9	  1	 98	L	L	o
+2020	E	L	9	0	9	  1	 98	L	L	o
+2021	T	L	9	0	9	  1	 98	L	L	o
+2022	S	L	9	0	9	  1	 98	L	L	o
+2023	N	L	9	0	9	  1	 98	L	L	o
+2024	S	L	9	0	9	  1	 98	L	L	o
+2025	F	L	9	0	9	  1	 98	L	L	o
+2026	D	L	9	0	9	  1	 98	L	L	o
+2027	V	L	9	0	9	  1	 98	L	L	o
+2028	L	L	9	0	9	  1	 98	L	L	o
+2029	K	L	9	0	9	  1	 98	L	L	o
+2030	S	L	9	0	9	  1	 98	L	L	o
+2031	E	L	9	0	9	  1	 98	L	L	o
+2032	D	L	9	0	9	  1	 98	L	L	o
+2033	A	L	9	0	9	  1	 98	L	L	o
+2034	Q	L	9	0	9	  1	 98	L	L	o
+2035	G	L	9	0	9	  1	 98	L	L	o
+2036	M	L	9	0	9	  1	 98	L	L	o
+2037	D	L	9	0	9	  1	 98	L	L	o
+2038	N	L	9	0	9	  1	 98	L	L	o
+2039	L	L	9	0	9	  1	 98	L	L	o
+2040	A	L	9	0	9	  1	 98	L	L	o
+2041	C	L	9	0	9	  1	 98	L	L	o
+2042	E	L	9	0	9	  1	 98	L	L	o
+2043	D	L	9	0	9	  1	 98	L	L	o
+2044	L	L	9	0	9	  1	 98	L	L	o
+2045	K	L	9	0	9	  1	 98	L	L	o
+2046	P	L	9	0	9	  1	 98	L	L	o
+2047	V	L	9	0	9	  1	 98	L	L	o
+2048	S	L	9	0	9	  1	 98	L	L	o
+2049	E	L	9	0	9	  1	 98	L	L	o
+2050	E	L	9	0	9	  1	 98	L	L	o
+2051	V	L	9	0	9	  1	 98	L	L	o
+2052	V	L	9	0	9	  1	 98	L	L	o
+2053	E	L	9	0	9	  1	 98	L	L	o
+2054	N	L	9	0	9	  1	 98	L	L	o
+2055	P	L	9	0	9	  1	 98	L	L	o
+2056	T	L	9	0	9	  1	 98	L	L	o
+2057	I	L	9	0	9	  1	 98	L	L	o
+2058	Q	L	9	0	9	  1	 98	L	L	o
+2059	K	L	9	0	9	  1	 98	L	L	o
+2060	D	L	9	0	9	  1	 98	L	L	o
+2061	V	L	9	0	9	  1	 98	L	L	o
+2062	L	L	9	0	9	  1	 98	L	L	o
+2063	E	L	9	0	9	  1	 98	L	L	o
+2064	C	L	9	0	9	  1	 98	L	L	o
+2065	N	L	9	0	9	  1	 98	L	L	o
+2066	V	L	9	0	9	  1	 98	L	L	o
+2067	K	L	9	0	9	  1	 98	L	L	o
+2068	T	L	9	0	9	  1	 98	L	L	o
+2069	T	L	9	0	9	  1	 98	L	L	o
+2070	E	L	9	0	9	  1	 98	L	L	o
+2071	V	L	9	0	9	  1	 98	L	L	o
+2072	V	L	9	0	9	  1	 98	L	L	o
+2073	G	L	9	0	9	  1	 98	L	L	o
+2074	D	L	9	0	9	  1	 98	L	L	o
+2075	I	L	9	0	9	  1	 98	L	L	o
+2076	I	L	9	0	9	  1	 98	L	L	o
+2077	L	L	9	0	9	  1	 98	L	L	o
+2078	K	L	9	0	9	  1	 98	L	L	o
+2079	P	L	9	0	9	  1	 98	L	L	o
+2080	A	L	9	0	9	  1	 98	L	L	o
+2081	N	L	9	0	9	  1	 98	L	L	o
+2082	N	L	9	0	9	  1	 98	L	L	o
+2083	S	L	9	0	9	  1	 98	L	L	o
+2084	L	L	9	0	9	  1	 98	L	L	o
+2085	K	L	9	0	9	  1	 98	L	L	o
+2086	I	L	9	0	9	  1	 98	L	L	o
+2087	T	L	9	0	9	  1	 98	L	L	o
+2088	E	L	9	0	9	  1	 98	L	L	o
+2089	E	L	9	0	9	  1	 98	L	L	o
+2090	V	L	9	0	9	  1	 98	L	L	o
+2091	G	L	9	0	9	  1	 98	L	L	o
+2092	H	L	9	0	9	  1	 98	L	L	o
+2093	T	L	9	0	9	  1	 98	L	L	o
+2094	D	L	9	0	9	  1	 98	L	L	o
+2095	L	L	9	0	9	  1	 98	L	L	o
+2096	M	L	9	0	9	  1	 98	L	L	o
+2097	A	L	9	0	9	  1	 98	L	L	o
+2098	A	L	9	0	9	  1	 98	L	L	o
+2099	Y	L	9	0	9	  1	 98	L	L	o
+2100	V	L	9	0	9	  1	 98	L	L	o
+2101	D	L	9	0	9	  1	 98	L	L	o
+2102	N	L	9	0	9	  1	 98	L	L	o
+2103	S	L	9	0	9	  1	 98	L	L	o
+2104	S	L	9	0	9	  1	 98	L	L	o
+2105	L	L	9	0	9	  1	 98	L	L	o
+2106	T	L	9	0	9	  1	 98	L	L	o
+2107	I	L	9	0	9	  1	 98	L	L	o
+2108	K	L	9	0	9	  1	 98	L	L	o
+2109	K	L	9	0	9	  1	 98	L	L	o
+2110	P	L	9	0	9	  1	 98	L	L	o
+2111	N	L	9	0	9	  1	 98	L	L	o
+2112	E	L	9	0	9	  1	 98	L	L	o
+2113	L	L	9	0	9	  1	 98	L	L	o
+2114	S	L	9	0	9	  1	 98	L	L	o
+2115	R	L	9	0	9	  1	 98	L	L	o
+2116	V	L	9	0	9	  1	 98	L	L	o
+2117	L	L	9	0	9	  1	 98	L	L	o
+2118	G	L	9	0	9	  1	 98	L	L	o
+2119	L	L	9	0	9	  1	 98	L	L	o
+2120	K	L	9	0	9	  1	 98	L	L	o
+2121	T	L	9	0	9	  1	 98	L	L	o
+2122	L	L	9	0	9	  1	 98	L	L	o
+2123	A	L	9	0	9	  1	 98	L	L	o
+2124	T	L	9	0	9	  1	 98	L	L	o
+2125	H	L	9	0	9	  1	 98	L	L	o
+2126	G	L	9	0	9	  1	 98	L	L	o
+2127	L	L	9	0	9	  1	 98	L	L	o
+2128	A	L	9	0	9	  1	 98	L	L	o
+2129	A	L	9	0	9	  1	 98	L	L	o
+2130	V	L	9	0	9	  1	 98	L	L	o
+2131	N	L	9	0	9	  1	 98	L	L	o
+2132	S	L	9	0	9	  1	 98	L	L	o
+2133	V	L	9	0	9	  1	 98	L	L	o
+2134	P	L	9	0	9	  1	 98	L	L	o
+2135	W	L	9	0	9	  1	 98	L	L	o
+2136	D	L	9	0	9	  1	 98	L	L	o
+2137	T	L	9	0	9	  1	 98	L	L	o
+2138	I	L	9	0	9	  1	 98	L	L	o
+2139	A	L	9	0	9	  1	 98	L	L	o
+2140	N	L	9	0	9	  1	 98	L	L	o
+2141	Y	L	9	0	9	  1	 98	L	L	o
+2142	A	L	9	0	9	  1	 98	L	L	o
+2143	K	L	9	0	9	  1	 98	L	L	o
+2144	P	L	9	0	9	  1	 98	L	L	o
+2145	F	L	9	0	9	  1	 98	L	L	o
+2146	L	L	9	0	9	  1	 98	L	L	o
+2147	N	L	9	0	9	  1	 98	L	L	o
+2148	K	L	9	0	9	  1	 98	L	L	o
+2149	V	L	9	0	9	  1	 98	L	L	o
+2150	V	L	9	0	9	  1	 98	L	L	o
+2151	S	L	9	0	9	  1	 98	L	L	o
+2152	T	L	9	0	9	  1	 98	L	L	o
+2153	T	L	9	0	9	  1	 98	L	L	o
+2154	T	L	9	0	9	  1	 98	L	L	o
+2155	N	L	9	0	9	  1	 98	L	L	o
+2156	I	L	9	0	9	  1	 98	L	L	o
+2157	V	L	9	0	9	  1	 98	L	L	o
+2158	T	L	9	0	9	  1	 98	L	L	o
+2159	R	L	9	0	9	  1	 98	L	L	o
+2160	C	L	9	0	9	  1	 98	L	L	o
+2161	L	L	9	0	9	  2	 97	L	L	o
+2162	N	L	9	0	9	  2	 97	L	L	o
+2163	R	L	9	0	9	  4	 95	L	L	o
+2164	V	L	8	0	9	  5	 94	L	L	o
+2165	C	L	8	0	9	  9	 90	L	L	o
+2166	T	L	6	1	8	 19	 80	H	L	T
+2167	N	L	4	2	7	 30	 70	H	L	T
+2168	Y	L	1	4	5	 44	 56	H	L	T
+2169	M	H	0	5	4	 51	 48	H	L	T
+2170	P	H	1	5	4	 59	 40	H	L	T
+2171	Y	H	3	6	3	 65	 34	H	L	T
+2172	F	H	4	7	2	 71	 28	H	L	T
+2173	F	H	5	7	2	 75	 24	H	L	T
+2174	T	H	5	7	2	 75	 25	H	L	T
+2175	L	H	5	7	2	 76	 23	H	L	T
+2176	L	H	5	7	2	 75	 24	H	L	T
+2177	L	H	3	6	3	 69	 30	H	L	T
+2178	Q	H	2	6	3	 60	 39	H	L	T
+2179	L	L	0	4	5	 48	 51	H	L	T
+2180	C	L	2	3	6	 38	 61	H	L	T
+2181	T	L	4	2	7	 29	 70	H	L	T
+2182	F	L	4	2	7	 29	 70	H	L	T
+2183	T	L	6	1	8	 18	 81	H	L	T
+2184	R	L	8	0	9	  7	 92	L	L	i
+2185	S	L	8	0	9	  5	 94	L	L	i
+2186	T	L	9	0	9	  3	 96	L	L	i
+2187	N	L	9	0	9	  2	 97	L	L	i
+2188	S	L	9	0	9	  1	 98	L	L	i
+2189	R	L	9	0	9	  1	 98	L	L	i
+2190	I	L	9	0	9	  1	 98	L	L	i
+2191	K	L	9	0	9	  1	 98	L	L	i
+2192	A	L	9	0	9	  1	 98	L	L	i
+2193	S	L	9	0	9	  1	 98	L	L	i
+2194	M	L	9	0	9	  1	 98	L	L	i
+2195	P	L	9	0	9	  1	 98	L	L	i
+2196	T	L	9	0	9	  1	 98	L	L	i
+2197	T	L	9	0	9	  1	 98	L	L	i
+2198	I	L	9	0	9	  2	 97	L	L	i
+2199	A	L	9	0	9	  3	 96	L	L	i
+2200	K	L	9	0	9	  4	 95	L	L	i
+2201	N	L	9	0	9	  4	 95	L	L	i
+2202	T	L	8	0	9	  5	 94	L	L	i
+2203	V	L	9	0	9	  4	 95	L	L	i
+2204	K	L	9	0	9	  4	 95	L	L	i
+2205	S	L	8	0	9	  7	 92	L	L	i
+2206	V	L	7	1	8	 11	 88	L	L	i
+2207	G	L	7	1	8	 12	 87	L	L	i
+2208	K	L	7	1	8	 13	 86	L	L	i
+2209	F	L	7	1	8	 14	 85	L	L	i
+2210	C	L	7	1	8	 13	 86	L	L	i
+2211	L	L	7	1	8	 10	 89	L	L	i
+2212	E	L	8	0	9	  5	 94	L	L	i
+2213	A	L	8	0	9	  5	 94	L	L	i
+2214	S	L	8	0	9	  8	 91	L	L	i
+2215	F	L	7	1	8	 11	 88	L	L	i
+2216	N	L	7	1	8	 11	 88	L	L	i
+2217	Y	L	8	0	9	  9	 90	L	L	i
+2218	L	L	8	0	9	  7	 92	L	L	i
+2219	K	L	8	0	9	  7	 92	L	L	i
+2220	S	L	8	0	9	  8	 92	L	L	i
+2221	P	L	8	0	9	  8	 91	L	L	i
+2222	N	L	7	1	8	 12	 87	L	L	i
+2223	F	L	6	1	8	 19	 80	L	L	i
+2224	S	L	4	2	7	 27	 72	L	L	i
+2225	K	L	3	3	6	 32	 67	L	L	i
+2226	L	L	2	3	6	 37	 62	L	L	i
+2227	I	L	1	4	5	 44	 55	L	L	i
+2228	N	L	0	4	5	 48	 51	L	L	i
+2229	I	H	1	5	4	 58	 41	L	L	i
+2230	I	H	4	7	2	 72	 27	H	H	T
+2231	I	H	6	8	1	 81	 18	H	H	T
+2232	W	H	7	8	1	 85	 14	H	H	T
+2233	F	H	7	8	1	 87	 12	H	H	T
+2234	L	H	7	8	1	 88	 11	H	H	T
+2235	L	H	7	8	1	 89	 10	H	H	T
+2236	L	H	8	9	0	 90	  9	H	H	T
+2237	S	H	8	9	0	 90	  9	H	H	T
+2238	V	H	8	9	0	 90	  9	H	H	T
+2239	C	H	8	9	0	 90	  9	H	H	T
+2240	L	H	8	9	0	 91	  8	H	H	T
+2241	G	H	8	9	0	 91	  8	H	H	T
+2242	S	H	8	9	0	 91	  8	H	H	T
+2243	L	H	8	9	0	 90	  9	H	H	T
+2244	I	H	7	8	1	 89	 10	H	H	T
+2245	Y	H	7	8	1	 88	 11	H	H	T
+2246	S	H	7	8	1	 85	 14	H	H	T
+2247	T	H	6	8	1	 82	 17	H	H	T
+2248	A	H	5	7	2	 75	 24	L	L	o
+2249	A	H	2	6	3	 63	 36	L	L	o
+2250	L	L	0	4	5	 49	 50	L	L	o
+2251	G	L	1	4	5	 40	 59	L	L	o
+2252	V	L	3	3	6	 30	 69	L	L	o
+2253	L	L	6	1	8	 19	 80	L	L	o
+2254	M	L	7	1	8	 12	 87	L	L	o
+2255	S	L	8	0	9	  7	 92	L	L	o
+2256	N	L	8	0	9	  5	 94	L	L	o
+2257	L	L	9	0	9	  3	 96	L	L	o
+2258	G	L	9	0	9	  2	 97	L	L	o
+2259	M	L	9	0	9	  1	 98	L	L	o
+2260	P	L	9	0	9	  1	 98	L	L	o
+2261	S	L	9	0	9	  1	 98	L	L	o
+2262	Y	L	9	0	9	  1	 98	L	L	o
+2263	C	L	9	0	9	  1	 98	L	L	o
+2264	T	L	9	0	9	  1	 98	L	L	o
+2265	G	L	9	0	9	  1	 98	L	L	o
+2266	Y	L	9	0	9	  1	 98	L	L	o
+2267	R	L	9	0	9	  1	 98	L	L	o
+2268	E	L	9	0	9	  1	 98	L	L	o
+2269	G	L	9	0	9	  1	 98	L	L	o
+2270	Y	L	9	0	9	  1	 98	L	L	o
+2271	L	L	9	0	9	  1	 98	L	L	o
+2272	N	L	9	0	9	  1	 98	L	L	o
+2273	S	L	9	0	9	  1	 98	L	L	o
+2274	T	L	9	0	9	  1	 98	L	L	o
+2275	N	L	9	0	9	  1	 98	L	L	o
+2276	V	L	9	0	9	  1	 98	L	L	o
+2277	T	L	9	0	9	  1	 98	L	L	o
+2278	I	L	9	0	9	  1	 98	L	L	o
+2279	A	L	9	0	9	  1	 98	L	L	o
+2280	T	L	9	0	9	  1	 98	L	L	o
+2281	Y	L	9	0	9	  1	 98	L	L	o
+2282	C	L	9	0	9	  1	 98	L	L	o
+2283	T	L	9	0	9	  1	 98	L	L	o
+2284	G	L	9	0	9	  1	 98	L	L	o
+2285	S	L	9	0	9	  1	 98	L	L	o
+2286	I	L	9	0	9	  1	 98	L	L	o
+2287	P	L	9	0	9	  1	 98	L	L	o
+2288	C	L	9	0	9	  1	 98	L	L	o
+2289	S	L	9	0	9	  1	 98	L	L	o
+2290	V	L	9	0	9	  1	 98	L	L	o
+2291	C	L	9	0	9	  1	 98	L	L	o
+2292	L	L	9	0	9	  1	 98	L	L	o
+2293	S	L	9	0	9	  1	 98	L	L	o
+2294	G	L	9	0	9	  1	 98	L	L	o
+2295	L	L	9	0	9	  1	 98	L	L	o
+2296	D	L	9	0	9	  1	 98	L	L	o
+2297	S	L	9	0	9	  1	 98	L	L	o
+2298	L	L	9	0	9	  1	 98	L	L	o
+2299	D	L	9	0	9	  1	 98	L	L	o
+2300	T	L	9	0	9	  1	 98	L	L	o
+2301	Y	L	9	0	9	  1	 98	L	L	o
+2302	P	L	9	0	9	  1	 98	L	L	o
+2303	S	L	9	0	9	  1	 98	L	L	o
+2304	L	L	9	0	9	  1	 98	L	L	o
+2305	E	L	9	0	9	  1	 98	L	L	o
+2306	T	L	9	0	9	  1	 98	L	L	o
+2307	I	L	9	0	9	  1	 98	L	L	o
+2308	Q	L	9	0	9	  1	 98	L	L	o
+2309	I	L	9	0	9	  1	 98	L	L	o
+2310	T	L	9	0	9	  1	 98	L	L	o
+2311	I	L	9	0	9	  1	 98	L	L	o
+2312	S	L	9	0	9	  1	 98	L	L	o
+2313	S	L	9	0	9	  2	 97	L	L	o
+2314	F	L	9	0	9	  4	 95	L	L	o
+2315	K	L	8	0	9	  6	 93	L	L	o
+2316	W	L	7	1	8	 10	 89	L	L	o
+2317	D	L	6	1	8	 15	 84	L	L	o
+2318	L	L	4	2	7	 26	 73	L	L	o
+2319	T	L	1	4	5	 44	 55	L	L	o
+2320	A	H	2	6	3	 64	 35	L	L	o
+2321	F	H	5	7	2	 76	 23	L	L	o
+2322	G	H	6	8	1	 83	 16	H	H	T
+2323	L	H	7	8	1	 88	 11	H	H	T
+2324	V	H	8	9	0	 90	  9	H	H	T
+2325	A	H	8	9	0	 92	  7	H	H	T
+2326	E	H	8	9	0	 92	  7	H	H	T
+2327	W	H	8	9	0	 92	  7	H	H	T
+2328	F	H	8	9	0	 92	  7	H	H	T
+2329	L	H	8	9	0	 92	  7	H	H	T
+2330	A	H	8	9	0	 91	  8	H	H	T
+2331	Y	H	8	9	0	 91	  8	H	H	T
+2332	I	H	8	9	0	 91	  8	H	H	T
+2333	L	H	8	9	0	 90	  9	H	H	T
+2334	F	H	8	9	0	 90	  9	H	H	T
+2335	T	H	8	9	0	 90	  9	H	H	T
+2336	R	H	8	9	0	 90	  9	H	H	T
+2337	F	H	8	9	0	 90	  9	H	H	T
+2338	F	H	8	9	0	 90	  9	H	H	T
+2339	Y	H	8	9	0	 90	  9	H	H	T
+2340	V	H	8	9	0	 90	  9	H	H	T
+2341	L	H	8	9	0	 90	  9	H	H	T
+2342	G	H	8	9	0	 90	  9	H	H	T
+2343	L	H	8	9	0	 90	  9	H	H	T
+2344	A	H	8	9	0	 90	  9	H	H	T
+2345	A	H	8	9	0	 90	  9	H	H	T
+2346	I	H	8	9	0	 90	  9	H	H	T
+2347	M	H	8	9	0	 90	  9	L	L	i
+2348	Q	H	8	9	0	 90	  9	L	L	i
+2349	L	H	7	8	1	 89	 10	L	L	i
+2350	F	H	7	8	1	 89	 10	L	L	i
+2351	F	H	7	8	1	 88	 11	H	H	T
+2352	S	H	7	8	1	 86	 13	H	H	T
+2353	Y	H	7	8	1	 85	 14	H	H	T
+2354	F	H	6	8	1	 82	 17	H	H	T
+2355	A	H	6	8	1	 81	 18	H	H	T
+2356	V	H	6	8	1	 80	 19	H	H	T
+2357	H	H	5	7	2	 79	 20	H	H	T
+2358	F	H	6	8	1	 80	 19	H	H	T
+2359	I	H	6	8	1	 81	 18	H	H	T
+2360	S	H	5	7	2	 79	 20	H	H	T
+2361	N	H	5	7	2	 77	 22	H	H	T
+2362	S	H	5	7	2	 76	 23	H	H	T
+2363	W	H	5	7	2	 75	 24	H	H	T
+2364	L	H	5	7	2	 75	 24	H	H	T
+2365	M	H	4	7	2	 71	 28	H	H	T
+2366	W	H	2	6	3	 62	 37	H	H	T
+2367	L	H	2	6	3	 60	 39	H	H	T
+2368	I	H	1	5	4	 57	 42	H	H	T
+2369	I	H	1	5	4	 55	 44	L	L	o
+2370	N	H	0	5	4	 53	 46	L	L	o
+2371	L	L	0	4	5	 49	 50	L	L	o
+2372	V	L	0	4	5	 48	 51	L	L	o
+2373	Q	L	0	4	5	 49	 50	L	L	o
+2374	M	H	0	5	4	 50	 49	L	L	o
+2375	A	H	1	5	4	 57	 42	L	L	o
+2376	P	H	3	6	3	 68	 31	L	L	o
+2377	I	H	5	7	2	 78	 21	L	L	o
+2378	S	H	6	8	1	 83	 16	H	H	T
+2379	A	H	7	8	1	 86	 13	H	H	T
+2380	M	H	7	8	1	 88	 11	H	H	T
+2381	V	H	8	9	0	 90	  9	H	H	T
+2382	R	H	8	9	0	 91	  8	H	H	T
+2383	M	H	8	9	0	 91	  8	H	H	T
+2384	Y	H	8	9	0	 92	  7	H	H	T
+2385	I	H	8	9	0	 91	  8	H	H	T
+2386	F	H	8	9	0	 91	  8	H	H	T
+2387	F	H	8	9	0	 91	  8	H	H	T
+2388	A	H	8	9	0	 91	  8	H	H	T
+2389	S	H	8	9	0	 91	  8	H	H	T
+2390	F	H	8	9	0	 91	  8	H	H	T
+2391	Y	H	8	9	0	 91	  8	H	H	T
+2392	Y	H	8	9	0	 90	  9	H	H	T
+2393	V	H	7	8	1	 89	 10	H	H	T
+2394	W	H	7	8	1	 87	 12	H	H	T
+2395	K	H	6	8	1	 83	 16	H	H	T
+2396	S	H	5	7	2	 76	 23	L	L	i
+2397	Y	H	3	6	3	 65	 34	L	L	i
+2398	V	L	0	4	5	 48	 51	L	L	i
+2399	H	L	2	3	6	 36	 63	L	L	i
+2400	V	L	3	3	6	 33	 66	L	L	i
+2401	V	L	4	2	7	 26	 72	L	L	i
+2402	D	L	6	1	8	 15	 84	L	L	i
+2403	G	L	7	1	8	 13	 86	L	L	i
+2404	C	L	8	0	9	  5	 94	L	L	i
+2405	N	L	9	0	9	  3	 96	L	L	i
+2406	S	L	9	0	9	  2	 97	L	L	i
+2407	S	L	9	0	9	  1	 98	L	L	i
+2408	T	L	9	0	9	  1	 98	L	L	i
+2409	C	L	9	0	9	  1	 98	L	L	i
+2410	M	L	9	0	9	  1	 98	L	L	i
+2411	M	L	9	0	9	  1	 98	L	L	i
+2412	C	L	9	0	9	  1	 98	L	L	i
+2413	Y	L	9	0	9	  1	 98	L	L	i
+2414	K	L	9	0	9	  1	 98	L	L	i
+2415	R	L	9	0	9	  1	 98	L	L	i
+2416	N	L	9	0	9	  1	 98	L	L	i
+2417	R	L	9	0	9	  1	 98	L	L	i
+2418	A	L	9	0	9	  1	 98	L	L	i
+2419	T	L	9	0	9	  1	 98	L	L	i
+2420	R	L	9	0	9	  1	 98	L	L	i
+2421	V	L	9	0	9	  1	 98	L	L	i
+2422	E	L	9	0	9	  1	 98	L	L	i
+2423	C	L	9	0	9	  1	 98	L	L	i
+2424	T	L	9	0	9	  1	 98	L	L	i
+2425	T	L	9	0	9	  1	 98	L	L	i
+2426	I	L	9	0	9	  1	 98	L	L	i
+2427	V	L	9	0	9	  1	 98	L	L	i
+2428	N	L	9	0	9	  1	 98	L	L	i
+2429	G	L	9	0	9	  1	 98	L	L	i
+2430	V	L	9	0	9	  1	 98	L	L	i
+2431	R	L	9	0	9	  1	 98	L	L	i
+2432	R	L	9	0	9	  1	 98	L	L	i
+2433	S	L	9	0	9	  1	 98	L	L	i
+2434	F	L	9	0	9	  1	 98	L	L	i
+2435	Y	L	9	0	9	  1	 98	L	L	i
+2436	V	L	9	0	9	  1	 98	L	L	i
+2437	Y	L	9	0	9	  1	 98	L	L	i
+2438	A	L	9	0	9	  1	 98	L	L	i
+2439	N	L	9	0	9	  1	 98	L	L	i
+2440	G	L	9	0	9	  1	 98	L	L	i
+2441	G	L	9	0	9	  1	 98	L	L	i
+2442	K	L	9	0	9	  1	 98	L	L	i
+2443	G	L	9	0	9	  1	 98	L	L	i
+2444	F	L	9	0	9	  1	 98	L	L	i
+2445	C	L	9	0	9	  1	 98	L	L	i
+2446	K	L	9	0	9	  1	 98	L	L	i
+2447	L	L	9	0	9	  1	 98	L	L	i
+2448	H	L	9	0	9	  1	 98	L	L	i
+2449	N	L	9	0	9	  1	 98	L	L	i
+2450	W	L	9	0	9	  1	 98	L	L	i
+2451	N	L	9	0	9	  1	 98	L	L	i
+2452	C	L	9	0	9	  1	 98	L	L	i
+2453	V	L	9	0	9	  1	 98	L	L	i
+2454	N	L	9	0	9	  1	 98	L	L	i
+2455	C	L	9	0	9	  1	 98	L	L	i
+2456	D	L	9	0	9	  1	 98	L	L	i
+2457	T	L	9	0	9	  1	 98	L	L	i
+2458	F	L	9	0	9	  1	 98	L	L	i
+2459	C	L	9	0	9	  1	 98	L	L	i
+2460	A	L	9	0	9	  1	 98	L	L	i
+2461	G	L	9	0	9	  1	 98	L	L	i
+2462	S	L	9	0	9	  1	 98	L	L	i
+2463	T	L	9	0	9	  1	 98	L	L	i
+2464	F	L	9	0	9	  1	 98	L	L	i
+2465	I	L	9	0	9	  1	 98	L	L	i
+2466	S	L	9	0	9	  1	 98	L	L	i
+2467	D	L	9	0	9	  1	 98	L	L	i
+2468	E	L	9	0	9	  1	 98	L	L	i
+2469	V	L	9	0	9	  1	 98	L	L	i
+2470	A	L	9	0	9	  1	 98	L	L	i
+2471	R	L	9	0	9	  1	 98	L	L	i
+2472	D	L	9	0	9	  1	 98	L	L	i
+2473	L	L	9	0	9	  1	 98	L	L	i
+2474	S	L	9	0	9	  1	 98	L	L	i
+2475	L	L	9	0	9	  1	 98	L	L	i
+2476	Q	L	9	0	9	  1	 98	L	L	i
+2477	F	L	9	0	9	  1	 98	L	L	i
+2478	K	L	9	0	9	  1	 98	L	L	i
+2479	R	L	9	0	9	  1	 98	L	L	i
+2480	P	L	9	0	9	  1	 98	L	L	i
+2481	I	L	9	0	9	  1	 98	L	L	i
+2482	N	L	9	0	9	  1	 98	L	L	i
+2483	P	L	9	0	9	  1	 98	L	L	i
+2484	T	L	9	0	9	  1	 98	L	L	i
+2485	D	L	9	0	9	  1	 98	L	L	i
+2486	Q	L	9	0	9	  1	 98	L	L	i
+2487	S	L	9	0	9	  1	 98	L	L	i
+2488	S	L	9	0	9	  1	 98	L	L	i
+2489	Y	L	9	0	9	  1	 98	L	L	i
+2490	I	L	9	0	9	  1	 98	L	L	i
+2491	V	L	9	0	9	  1	 98	L	L	i
+2492	D	L	9	0	9	  1	 98	L	L	i
+2493	S	L	9	0	9	  1	 98	L	L	i
+2494	V	L	9	0	9	  1	 98	L	L	i
+2495	T	L	9	0	9	  1	 98	L	L	i
+2496	V	L	9	0	9	  1	 98	L	L	i
+2497	K	L	9	0	9	  1	 98	L	L	i
+2498	N	L	9	0	9	  1	 98	L	L	i
+2499	G	L	9	0	9	  1	 98	L	L	i
+2500	S	L	9	0	9	  1	 98	L	L	i
+2501	I	L	9	0	9	  1	 98	L	L	i
+2502	H	L	9	0	9	  1	 98	L	L	i
+2503	L	L	9	0	9	  1	 98	L	L	i
+2504	Y	L	9	0	9	  1	 98	L	L	i
+2505	F	L	9	0	9	  1	 98	L	L	i
+2506	D	L	9	0	9	  1	 98	L	L	i
+2507	K	L	9	0	9	  1	 98	L	L	i
+2508	A	L	9	0	9	  1	 98	L	L	i
+2509	G	L	9	0	9	  1	 98	L	L	i
+2510	Q	L	9	0	9	  1	 98	L	L	i
+2511	K	L	9	0	9	  1	 98	L	L	i
+2512	T	L	9	0	9	  1	 98	L	L	i
+2513	Y	L	9	0	9	  1	 98	L	L	i
+2514	E	L	9	0	9	  1	 98	L	L	i
+2515	R	L	9	0	9	  1	 98	L	L	i
+2516	H	L	9	0	9	  1	 98	L	L	i
+2517	S	L	9	0	9	  1	 98	L	L	i
+2518	L	L	9	0	9	  1	 98	L	L	i
+2519	S	L	9	0	9	  1	 98	L	L	i
+2520	H	L	9	0	9	  1	 98	L	L	i
+2521	F	L	9	0	9	  1	 98	L	L	i
+2522	V	L	9	0	9	  1	 98	L	L	i
+2523	N	L	9	0	9	  1	 98	L	L	i
+2524	L	L	9	0	9	  1	 98	L	L	i
+2525	D	L	9	0	9	  1	 98	L	L	i
+2526	N	L	9	0	9	  1	 98	L	L	i
+2527	L	L	9	0	9	  1	 98	L	L	i
+2528	R	L	9	0	9	  1	 98	L	L	i
+2529	A	L	9	0	9	  1	 98	L	L	i
+2530	N	L	9	0	9	  1	 98	L	L	i
+2531	N	L	9	0	9	  1	 98	L	L	i
+2532	T	L	9	0	9	  1	 98	L	L	i
+2533	K	L	9	0	9	  1	 98	L	L	i
+2534	G	L	9	0	9	  1	 98	L	L	i
+2535	S	L	9	0	9	  1	 98	L	L	i
+2536	L	L	9	0	9	  1	 98	L	L	i
+2537	P	L	9	0	9	  1	 98	L	L	i
+2538	I	L	9	0	9	  1	 98	L	L	i
+2539	N	L	9	0	9	  1	 98	L	L	i
+2540	V	L	9	0	9	  1	 98	L	L	i
+2541	I	L	9	0	9	  1	 98	L	L	i
+2542	V	L	9	0	9	  1	 98	L	L	i
+2543	F	L	9	0	9	  1	 98	L	L	i
+2544	D	L	9	0	9	  1	 98	L	L	i
+2545	G	L	9	0	9	  1	 98	L	L	i
+2546	K	L	9	0	9	  1	 98	L	L	i
+2547	S	L	9	0	9	  1	 98	L	L	i
+2548	K	L	9	0	9	  1	 98	L	L	i
+2549	C	L	9	0	9	  1	 98	L	L	i
+2550	E	L	9	0	9	  1	 98	L	L	i
+2551	E	L	9	0	9	  1	 98	L	L	i
+2552	S	L	9	0	9	  1	 98	L	L	i
+2553	S	L	9	0	9	  1	 98	L	L	i
+2554	A	L	9	0	9	  1	 98	L	L	i
+2555	K	L	9	0	9	  1	 98	L	L	i
+2556	S	L	9	0	9	  1	 98	L	L	i
+2557	A	L	9	0	9	  2	 97	L	L	i
+2558	S	L	9	0	9	  2	 97	L	L	i
+2559	V	L	9	0	9	  3	 96	L	L	i
+2560	Y	L	9	0	9	  4	 95	L	L	i
+2561	Y	L	8	0	9	  6	 92	L	L	i
+2562	S	L	7	1	8	 10	 89	L	L	i
+2563	Q	L	7	1	8	 10	 89	L	L	i
+2564	L	L	8	0	9	  8	 91	L	L	i
+2565	M	L	8	0	9	  5	 94	L	L	i
+2566	C	L	9	0	9	  4	 95	L	L	i
+2567	Q	L	9	0	9	  4	 95	L	L	i
+2568	P	L	9	0	9	  3	 96	L	L	i
+2569	I	L	9	0	9	  3	 96	L	L	i
+2570	L	L	9	0	9	  3	 96	L	L	i
+2571	L	L	9	0	9	  3	 96	L	L	i
+2572	L	L	9	0	9	  2	 97	L	L	i
+2573	D	L	9	0	9	  2	 97	L	L	i
+2574	Q	L	9	0	9	  2	 97	L	L	i
+2575	A	L	9	0	9	  2	 98	L	L	i
+2576	L	L	9	0	9	  1	 98	L	L	i
+2577	V	L	9	0	9	  1	 98	L	L	i
+2578	S	L	9	0	9	  1	 98	L	L	i
+2579	D	L	9	0	9	  1	 98	L	L	i
+2580	V	L	9	0	9	  1	 98	L	L	i
+2581	G	L	9	0	9	  1	 98	L	L	i
+2582	D	L	9	0	9	  1	 98	L	L	i
+2583	S	L	9	0	9	  1	 98	L	L	i
+2584	A	L	9	0	9	  1	 98	L	L	i
+2585	E	L	9	0	9	  1	 98	L	L	i
+2586	V	L	9	0	9	  1	 98	L	L	i
+2587	A	L	9	0	9	  1	 98	L	L	i
+2588	V	L	9	0	9	  1	 98	L	L	i
+2589	K	L	9	0	9	  1	 98	L	L	i
+2590	M	L	9	0	9	  1	 98	L	L	i
+2591	F	L	9	0	9	  1	 98	L	L	i
+2592	D	L	9	0	9	  1	 98	L	L	i
+2593	A	L	9	0	9	  1	 98	L	L	i
+2594	Y	L	9	0	9	  1	 98	L	L	i
+2595	V	L	9	0	9	  1	 98	L	L	i
+2596	N	L	9	0	9	  1	 98	L	L	i
+2597	T	L	9	0	9	  1	 98	L	L	i
+2598	F	L	9	0	9	  1	 98	L	L	i
+2599	S	L	9	0	9	  1	 98	L	L	i
+2600	S	L	9	0	9	  1	 98	L	L	i
+2601	T	L	9	0	9	  1	 98	L	L	i
+2602	F	L	9	0	9	  1	 98	L	L	i
+2603	N	L	9	0	9	  1	 98	L	L	i
+2604	V	L	9	0	9	  1	 98	L	L	i
+2605	P	L	9	0	9	  1	 98	L	L	i
+2606	M	L	9	0	9	  1	 98	L	L	i
+2607	E	L	9	0	9	  1	 98	L	L	i
+2608	K	L	9	0	9	  1	 98	L	L	i
+2609	L	L	9	0	9	  1	 98	L	L	i
+2610	K	L	9	0	9	  1	 98	L	L	i
+2611	T	L	9	0	9	  1	 98	L	L	i
+2612	L	L	9	0	9	  1	 98	L	L	i
+2613	V	L	9	0	9	  1	 98	L	L	i
+2614	A	L	9	0	9	  1	 98	L	L	i
+2615	T	L	9	0	9	  1	 98	L	L	i
+2616	A	L	9	0	9	  1	 98	L	L	i
+2617	E	L	9	0	9	  1	 98	L	L	i
+2618	A	L	9	0	9	  1	 98	L	L	i
+2619	E	L	9	0	9	  1	 98	L	L	i
+2620	L	L	9	0	9	  1	 98	L	L	i
+2621	A	L	9	0	9	  1	 98	L	L	i
+2622	K	L	9	0	9	  1	 98	L	L	i
+2623	N	L	9	0	9	  1	 98	L	L	i
+2624	V	L	9	0	9	  1	 98	L	L	i
+2625	S	L	9	0	9	  1	 98	L	L	i
+2626	L	L	9	0	9	  1	 98	L	L	i
+2627	D	L	9	0	9	  1	 98	L	L	i
+2628	N	L	9	0	9	  1	 98	L	L	i
+2629	V	L	9	0	9	  1	 98	L	L	i
+2630	L	L	9	0	9	  1	 98	L	L	i
+2631	S	L	9	0	9	  1	 98	L	L	i
+2632	T	L	9	0	9	  1	 98	L	L	i
+2633	F	L	9	0	9	  1	 98	L	L	i
+2634	I	L	9	0	9	  1	 98	L	L	i
+2635	S	L	9	0	9	  1	 98	L	L	i
+2636	A	L	9	0	9	  1	 98	L	L	i
+2637	A	L	9	0	9	  1	 98	L	L	i
+2638	R	L	9	0	9	  1	 98	L	L	i
+2639	Q	L	9	0	9	  1	 98	L	L	i
+2640	G	L	9	0	9	  1	 98	L	L	i
+2641	F	L	9	0	9	  1	 98	L	L	i
+2642	V	L	9	0	9	  1	 98	L	L	i
+2643	D	L	9	0	9	  1	 98	L	L	i
+2644	S	L	9	0	9	  1	 98	L	L	i
+2645	D	L	9	0	9	  1	 98	L	L	i
+2646	V	L	9	0	9	  1	 98	L	L	i
+2647	E	L	9	0	9	  1	 98	L	L	i
+2648	T	L	9	0	9	  1	 98	L	L	i
+2649	K	L	9	0	9	  1	 98	L	L	i
+2650	D	L	9	0	9	  1	 98	L	L	i
+2651	V	L	9	0	9	  1	 98	L	L	i
+2652	V	L	9	0	9	  1	 98	L	L	i
+2653	E	L	9	0	9	  1	 98	L	L	i
+2654	C	L	9	0	9	  1	 98	L	L	i
+2655	L	L	9	0	9	  1	 98	L	L	i
+2656	K	L	9	0	9	  1	 98	L	L	i
+2657	L	L	9	0	9	  1	 98	L	L	i
+2658	S	L	9	0	9	  1	 98	L	L	i
+2659	H	L	9	0	9	  1	 98	L	L	i
+2660	Q	L	9	0	9	  1	 98	L	L	i
+2661	S	L	9	0	9	  1	 98	L	L	i
+2662	D	L	9	0	9	  1	 98	L	L	i
+2663	I	L	9	0	9	  1	 98	L	L	i
+2664	E	L	9	0	9	  1	 98	L	L	i
+2665	V	L	9	0	9	  1	 98	L	L	i
+2666	T	L	9	0	9	  1	 98	L	L	i
+2667	G	L	9	0	9	  1	 98	L	L	i
+2668	D	L	9	0	9	  1	 98	L	L	i
+2669	S	L	9	0	9	  1	 98	L	L	i
+2670	C	L	9	0	9	  1	 98	L	L	i
+2671	N	L	9	0	9	  1	 98	L	L	i
+2672	N	L	9	0	9	  1	 98	L	L	i
+2673	Y	L	9	0	9	  1	 98	L	L	i
+2674	M	L	9	0	9	  1	 98	L	L	i
+2675	L	L	9	0	9	  1	 98	L	L	i
+2676	T	L	9	0	9	  1	 98	L	L	i
+2677	Y	L	9	0	9	  1	 98	L	L	i
+2678	N	L	9	0	9	  1	 98	L	L	i
+2679	K	L	9	0	9	  1	 98	L	L	i
+2680	V	L	9	0	9	  1	 98	L	L	i
+2681	E	L	9	0	9	  1	 98	L	L	i
+2682	N	L	9	0	9	  1	 98	L	L	i
+2683	M	L	9	0	9	  1	 98	L	L	i
+2684	T	L	9	0	9	  1	 98	L	L	i
+2685	P	L	9	0	9	  1	 98	L	L	i
+2686	R	L	9	0	9	  1	 98	L	L	i
+2687	D	L	9	0	9	  1	 98	L	L	i
+2688	L	L	9	0	9	  1	 98	L	L	i
+2689	G	L	9	0	9	  1	 98	L	L	i
+2690	A	L	9	0	9	  1	 98	L	L	i
+2691	C	L	9	0	9	  1	 98	L	L	i
+2692	I	L	9	0	9	  1	 98	L	L	i
+2693	D	L	9	0	9	  1	 98	L	L	i
+2694	C	L	9	0	9	  1	 98	L	L	i
+2695	S	L	9	0	9	  1	 98	L	L	i
+2696	A	L	9	0	9	  1	 98	L	L	i
+2697	R	L	9	0	9	  1	 98	L	L	i
+2698	H	L	9	0	9	  1	 98	L	L	i
+2699	I	L	9	0	9	  1	 98	L	L	i
+2700	N	L	9	0	9	  1	 98	L	L	i
+2701	A	L	9	0	9	  1	 98	L	L	i
+2702	Q	L	9	0	9	  1	 98	L	L	i
+2703	V	L	9	0	9	  1	 98	L	L	i
+2704	A	L	9	0	9	  1	 98	L	L	i
+2705	K	L	9	0	9	  1	 98	L	L	i
+2706	S	L	9	0	9	  1	 98	L	L	i
+2707	H	L	9	0	9	  1	 98	L	L	i
+2708	N	L	9	0	9	  1	 98	L	L	i
+2709	I	L	9	0	9	  2	 97	L	L	i
+2710	A	L	9	0	9	  3	 96	L	L	i
+2711	L	L	9	0	9	  4	 95	L	L	i
+2712	I	L	8	0	9	  5	 94	L	L	i
+2713	W	L	9	0	9	  3	 96	L	L	i
+2714	N	L	9	0	9	  2	 97	L	L	i
+2715	V	L	9	0	9	  2	 97	L	L	i
+2716	K	L	9	0	9	  1	 98	L	L	i
+2717	D	L	9	0	9	  1	 98	L	L	i
+2718	F	L	9	0	9	  1	 98	L	L	i
+2719	M	L	9	0	9	  1	 98	L	L	i
+2720	S	L	9	0	9	  1	 98	L	L	i
+2721	L	L	9	0	9	  1	 98	L	L	i
+2722	S	L	9	0	9	  1	 98	L	L	i
+2723	E	L	9	0	9	  1	 98	L	L	i
+2724	Q	L	9	0	9	  1	 98	L	L	i
+2725	L	L	9	0	9	  1	 98	L	L	i
+2726	R	L	9	0	9	  1	 98	L	L	i
+2727	K	L	9	0	9	  1	 98	L	L	i
+2728	Q	L	9	0	9	  1	 98	L	L	i
+2729	I	L	9	0	9	  1	 98	L	L	i
+2730	R	L	9	0	9	  1	 98	L	L	i
+2731	S	L	9	0	9	  1	 98	L	L	i
+2732	A	L	9	0	9	  1	 98	L	L	i
+2733	A	L	9	0	9	  1	 98	L	L	i
+2734	K	L	9	0	9	  1	 98	L	L	i
+2735	K	L	9	0	9	  1	 98	L	L	i
+2736	N	L	9	0	9	  1	 98	L	L	i
+2737	N	L	9	0	9	  1	 98	L	L	i
+2738	L	L	9	0	9	  1	 98	L	L	i
+2739	P	L	9	0	9	  1	 98	L	L	i
+2740	F	L	9	0	9	  1	 98	L	L	i
+2741	K	L	9	0	9	  1	 98	L	L	i
+2742	L	L	9	0	9	  1	 98	L	L	i
+2743	T	L	9	0	9	  1	 98	L	L	i
+2744	C	L	9	0	9	  1	 98	L	L	i
+2745	A	L	9	0	9	  1	 98	L	L	i
+2746	T	L	9	0	9	  1	 98	L	L	i
+2747	T	L	9	0	9	  1	 98	L	L	i
+2748	R	L	9	0	9	  1	 98	L	L	i
+2749	Q	L	9	0	9	  1	 98	L	L	i
+2750	V	L	9	0	9	  1	 98	L	L	i
+2751	V	L	9	0	9	  1	 98	L	L	i
+2752	N	L	9	0	9	  1	 98	L	L	i
+2753	V	L	9	0	9	  1	 98	L	L	i
+2754	V	L	9	0	9	  1	 98	L	L	i
+2755	T	L	9	0	9	  1	 98	L	L	i
+2756	T	L	9	0	9	  1	 98	L	L	i
+2757	K	L	9	0	9	  1	 98	L	L	i
+2758	I	L	9	0	9	  1	 98	L	L	i
+2759	A	L	9	0	9	  1	 98	L	L	i
+2760	L	L	9	0	9	  1	 98	L	L	i
+2761	K	L	9	0	9	  1	 98	L	L	i
+2762	G	L	9	0	9	  1	 98	L	L	i
+2763	G	L	9	0	9	  1	 98	L	L	i
+2764	K	L	9	0	9	  1	 98	L	L	i
+2765	I	L	9	0	9	  2	 97	L	L	i
+2766	V	L	9	0	9	  2	 97	L	L	i
+2767	N	L	9	0	9	  3	 96	L	L	i
+2768	N	L	8	0	9	  5	 94	L	L	i
+2769	W	L	7	1	8	 10	 89	L	L	i
+2770	L	L	6	1	8	 18	 81	L	L	i
+2771	K	L	4	2	7	 29	 70	L	L	i
+2772	Q	L	0	4	5	 48	 51	L	L	i
+2773	L	H	3	6	3	 67	 32	H	H	T
+2774	I	H	5	7	2	 78	 21	H	H	T
+2775	K	H	6	8	1	 85	 15	H	H	T
+2776	V	H	7	8	1	 88	 11	H	H	T
+2777	T	H	8	9	0	 90	  9	H	H	T
+2778	L	H	8	9	0	 92	  7	H	H	T
+2779	V	H	8	9	0	 92	  7	H	H	T
+2780	F	H	8	9	0	 92	  7	H	H	T
+2781	L	H	8	9	0	 92	  7	H	H	T
+2782	F	H	8	9	0	 92	  7	H	H	T
+2783	V	H	8	9	0	 92	  7	H	H	T
+2784	A	H	8	9	0	 92	  7	H	H	T
+2785	A	H	8	9	0	 92	  7	H	H	T
+2786	I	H	8	9	0	 91	  8	H	H	T
+2787	F	H	8	9	0	 90	  9	H	H	T
+2788	Y	H	7	8	1	 89	 10	H	H	T
+2789	L	H	7	8	1	 85	 14	H	H	T
+2790	I	H	5	7	2	 78	 20	H	H	T
+2791	T	H	3	6	3	 66	 32	L	L	o
+2792	P	H	0	5	4	 53	 46	L	L	o
+2793	V	L	2	3	6	 39	 60	L	L	o
+2794	H	L	4	2	7	 26	 73	L	L	o
+2795	V	L	6	1	8	 16	 83	L	L	o
+2796	M	L	7	1	8	 10	 89	L	L	o
+2797	S	L	8	0	9	  6	 93	L	L	o
+2798	K	L	9	0	9	  3	 96	L	L	o
+2799	H	L	9	0	9	  2	 97	L	L	o
+2800	T	L	9	0	9	  1	 98	L	L	o
+2801	D	L	9	0	9	  1	 98	L	L	o
+2802	F	L	9	0	9	  1	 98	L	L	o
+2803	S	L	9	0	9	  1	 98	L	L	o
+2804	S	L	9	0	9	  1	 98	L	L	o
+2805	E	L	9	0	9	  1	 98	L	L	o
+2806	I	L	9	0	9	  1	 98	L	L	o
+2807	I	L	9	0	9	  1	 98	L	L	o
+2808	G	L	9	0	9	  1	 98	L	L	o
+2809	Y	L	9	0	9	  1	 98	L	L	o
+2810	K	L	9	0	9	  1	 98	L	L	o
+2811	A	L	9	0	9	  1	 98	L	L	o
+2812	I	L	9	0	9	  1	 98	L	L	o
+2813	D	L	9	0	9	  1	 98	L	L	o
+2814	G	L	9	0	9	  1	 98	L	L	o
+2815	G	L	9	0	9	  1	 98	L	L	o
+2816	V	L	9	0	9	  1	 98	L	L	o
+2817	T	L	9	0	9	  1	 98	L	L	o
+2818	R	L	9	0	9	  1	 98	L	L	o
+2819	D	L	9	0	9	  1	 98	L	L	o
+2820	I	L	9	0	9	  1	 98	L	L	o
+2821	A	L	9	0	9	  1	 98	L	L	o
+2822	S	L	9	0	9	  1	 98	L	L	o
+2823	T	L	9	0	9	  1	 98	L	L	o
+2824	D	L	9	0	9	  1	 98	L	L	o
+2825	T	L	9	0	9	  1	 98	L	L	o
+2826	C	L	9	0	9	  1	 98	L	L	o
+2827	F	L	9	0	9	  1	 98	L	L	o
+2828	A	L	9	0	9	  1	 98	L	L	o
+2829	N	L	9	0	9	  1	 98	L	L	o
+2830	K	L	9	0	9	  1	 98	L	L	o
+2831	H	L	9	0	9	  1	 98	L	L	o
+2832	A	L	9	0	9	  1	 98	L	L	o
+2833	D	L	9	0	9	  1	 98	L	L	o
+2834	F	L	9	0	9	  1	 98	L	L	o
+2835	D	L	9	0	9	  1	 98	L	L	o
+2836	T	L	9	0	9	  1	 98	L	L	o
+2837	W	L	9	0	9	  1	 98	L	L	o
+2838	F	L	9	0	9	  1	 98	L	L	o
+2839	S	L	9	0	9	  1	 98	L	L	o
+2840	Q	L	9	0	9	  1	 98	L	L	o
+2841	R	L	9	0	9	  1	 98	L	L	o
+2842	G	L	9	0	9	  1	 98	L	L	o
+2843	G	L	9	0	9	  1	 98	L	L	o
+2844	S	L	9	0	9	  1	 98	L	L	o
+2845	Y	L	9	0	9	  1	 98	L	L	o
+2846	T	L	9	0	9	  1	 98	L	L	o
+2847	N	L	9	0	9	  1	 98	L	L	o
+2848	D	L	9	0	9	  1	 98	L	L	o
+2849	K	L	9	0	9	  1	 98	L	L	o
+2850	A	L	9	0	9	  1	 98	L	L	o
+2851	C	L	9	0	9	  1	 98	L	L	o
+2852	P	L	9	0	9	  1	 98	L	L	o
+2853	L	L	9	0	9	  1	 98	L	L	o
+2854	I	L	9	0	9	  1	 98	L	L	o
+2855	A	L	9	0	9	  2	 97	L	L	o
+2856	A	L	9	0	9	  2	 97	L	L	o
+2857	V	L	9	0	9	  2	 97	L	L	o
+2858	I	L	9	0	9	  2	 97	L	L	o
+2859	T	L	9	0	9	  2	 97	L	L	o
+2860	R	L	9	0	9	  1	 98	L	L	o
+2861	E	L	9	0	9	  1	 98	L	L	o
+2862	V	L	9	0	9	  1	 98	L	L	o
+2863	G	L	9	0	9	  1	 98	L	L	o
+2864	F	L	9	0	9	  1	 98	L	L	o
+2865	V	L	9	0	9	  1	 98	L	L	o
+2866	V	L	9	0	9	  1	 98	L	L	o
+2867	P	L	9	0	9	  1	 98	L	L	o
+2868	G	L	9	0	9	  1	 98	L	L	o
+2869	L	L	9	0	9	  1	 98	L	L	o
+2870	P	L	9	0	9	  1	 98	L	L	o
+2871	G	L	9	0	9	  2	 97	L	L	o
+2872	T	L	9	0	9	  3	 96	L	L	o
+2873	I	L	9	0	9	  4	 95	L	L	o
+2874	L	L	8	0	9	  6	 93	L	L	o
+2875	R	L	8	0	9	  6	 93	L	L	o
+2876	T	L	8	0	9	  5	 94	L	L	o
+2877	T	L	9	0	9	  4	 95	L	L	o
+2878	N	L	9	0	9	  3	 96	L	L	o
+2879	G	L	9	0	9	  4	 95	L	L	o
+2880	D	L	9	0	9	  4	 95	L	L	o
+2881	F	L	8	0	9	  6	 93	L	L	o
+2882	L	L	8	0	9	  6	 93	L	L	o
+2883	H	L	8	0	9	  5	 94	L	L	o
+2884	F	L	9	0	9	  5	 95	L	L	o
+2885	L	L	9	0	9	  3	 96	L	L	o
+2886	P	L	9	0	9	  3	 96	L	L	o
+2887	R	L	9	0	9	  2	 97	L	L	o
+2888	V	L	9	0	9	  2	 97	L	L	o
+2889	F	L	9	0	9	  2	 97	L	L	o
+2890	S	L	9	0	9	  1	 98	L	L	o
+2891	A	L	9	0	9	  1	 98	L	L	o
+2892	V	L	9	0	9	  1	 98	L	L	o
+2893	G	L	9	0	9	  1	 98	L	L	o
+2894	N	L	9	0	9	  1	 98	L	L	o
+2895	I	L	9	0	9	  1	 98	L	L	o
+2896	C	L	9	0	9	  1	 98	L	L	o
+2897	Y	L	9	0	9	  1	 98	L	L	o
+2898	T	L	9	0	9	  1	 98	L	L	o
+2899	P	L	9	0	9	  1	 98	L	L	o
+2900	S	L	9	0	9	  1	 98	L	L	o
+2901	K	L	9	0	9	  1	 98	L	L	o
+2902	L	L	9	0	9	  1	 98	L	L	o
+2903	I	L	9	0	9	  1	 98	L	L	o
+2904	E	L	9	0	9	  1	 98	L	L	o
+2905	Y	L	9	0	9	  1	 98	L	L	o
+2906	T	L	9	0	9	  1	 98	L	L	o
+2907	D	L	9	0	9	  1	 98	L	L	o
+2908	F	L	9	0	9	  1	 98	L	L	o
+2909	A	L	9	0	9	  1	 98	L	L	o
+2910	T	L	9	0	9	  1	 98	L	L	o
+2911	S	L	9	0	9	  1	 98	L	L	o
+2912	A	L	9	0	9	  2	 97	L	L	o
+2913	C	L	9	0	9	  2	 97	L	L	o
+2914	V	L	9	0	9	  3	 96	L	L	o
+2915	L	L	9	0	9	  4	 95	L	L	o
+2916	A	L	9	0	9	  4	 95	L	L	o
+2917	A	L	9	0	9	  4	 95	L	L	o
+2918	E	L	9	0	9	  4	 95	L	L	o
+2919	C	L	9	0	9	  3	 96	L	L	o
+2920	T	L	9	0	9	  4	 95	L	L	o
+2921	I	L	9	0	9	  4	 95	L	L	o
+2922	F	L	9	0	9	  4	 95	L	L	o
+2923	K	L	9	0	9	  3	 96	L	L	o
+2924	D	L	9	0	9	  2	 97	L	L	o
+2925	A	L	9	0	9	  2	 97	L	L	o
+2926	S	L	9	0	9	  1	 98	L	L	o
+2927	G	L	9	0	9	  1	 98	L	L	o
+2928	K	L	9	0	9	  1	 98	L	L	o
+2929	P	L	9	0	9	  1	 98	L	L	o
+2930	V	L	9	0	9	  1	 98	L	L	o
+2931	P	L	9	0	9	  1	 98	L	L	o
+2932	Y	L	9	0	9	  1	 98	L	L	o
+2933	C	L	9	0	9	  1	 98	L	L	o
+2934	Y	L	9	0	9	  1	 98	L	L	o
+2935	D	L	9	0	9	  1	 98	L	L	o
+2936	T	L	9	0	9	  1	 98	L	L	o
+2937	N	L	9	0	9	  1	 98	L	L	o
+2938	V	L	9	0	9	  1	 98	L	L	o
+2939	L	L	9	0	9	  1	 98	L	L	o
+2940	E	L	9	0	9	  1	 98	L	L	o
+2941	G	L	9	0	9	  1	 98	L	L	o
+2942	S	L	9	0	9	  1	 98	L	L	o
+2943	V	L	9	0	9	  1	 98	L	L	o
+2944	A	L	9	0	9	  1	 98	L	L	o
+2945	Y	L	9	0	9	  1	 98	L	L	o
+2946	E	L	9	0	9	  1	 98	L	L	o
+2947	S	L	9	0	9	  1	 98	L	L	o
+2948	L	L	9	0	9	  1	 98	L	L	o
+2949	R	L	9	0	9	  1	 98	L	L	o
+2950	P	L	9	0	9	  1	 98	L	L	o
+2951	D	L	9	0	9	  1	 98	L	L	o
+2952	T	L	9	0	9	  1	 98	L	L	o
+2953	R	L	9	0	9	  1	 98	L	L	o
+2954	Y	L	9	0	9	  1	 98	L	L	o
+2955	V	L	9	0	9	  1	 98	L	L	o
+2956	L	L	9	0	9	  1	 98	L	L	o
+2957	M	L	9	0	9	  1	 98	L	L	o
+2958	D	L	9	0	9	  1	 98	L	L	o
+2959	G	L	9	0	9	  1	 98	L	L	o
+2960	S	L	9	0	9	  1	 98	L	L	o
+2961	I	L	9	0	9	  1	 98	L	L	o
+2962	I	L	9	0	9	  1	 98	L	L	o
+2963	Q	L	9	0	9	  1	 98	L	L	o
+2964	F	L	9	0	9	  1	 98	L	L	o
+2965	P	L	9	0	9	  1	 98	L	L	o
+2966	N	L	9	0	9	  1	 98	L	L	o
+2967	T	L	9	0	9	  2	 97	L	L	o
+2968	Y	L	9	0	9	  2	 97	L	L	o
+2969	L	L	9	0	9	  2	 97	L	L	o
+2970	E	L	9	0	9	  2	 97	L	L	o
+2971	G	L	9	0	9	  2	 97	L	L	o
+2972	S	L	9	0	9	  2	 97	L	L	o
+2973	V	L	9	0	9	  1	 98	L	L	o
+2974	R	L	9	0	9	  1	 98	L	L	o
+2975	V	L	9	0	9	  1	 98	L	L	o
+2976	V	L	9	0	9	  1	 98	L	L	o
+2977	T	L	9	0	9	  1	 98	L	L	o
+2978	T	L	9	0	9	  1	 98	L	L	o
+2979	F	L	9	0	9	  1	 98	L	L	o
+2980	D	L	9	0	9	  1	 98	L	L	o
+2981	S	L	9	0	9	  1	 98	L	L	o
+2982	E	L	9	0	9	  1	 98	L	L	o
+2983	Y	L	9	0	9	  1	 98	L	L	o
+2984	C	L	9	0	9	  1	 98	L	L	o
+2985	R	L	9	0	9	  1	 98	L	L	o
+2986	H	L	9	0	9	  1	 98	L	L	o
+2987	G	L	9	0	9	  1	 98	L	L	o
+2988	T	L	9	0	9	  1	 98	L	L	o
+2989	C	L	9	0	9	  1	 98	L	L	o
+2990	E	L	9	0	9	  1	 98	L	L	o
+2991	R	L	9	0	9	  1	 98	L	L	o
+2992	S	L	9	0	9	  1	 98	L	L	o
+2993	E	L	9	0	9	  1	 98	L	L	o
+2994	A	L	9	0	9	  1	 98	L	L	o
+2995	G	L	9	0	9	  1	 98	L	L	o
+2996	V	L	9	0	9	  1	 98	L	L	o
+2997	C	L	9	0	9	  1	 98	L	L	o
+2998	V	L	9	0	9	  1	 98	L	L	o
+2999	S	L	9	0	9	  1	 98	L	L	o
+3000	T	L	9	0	9	  1	 98	L	L	o
+3001	S	L	9	0	9	  1	 98	L	L	o
+3002	G	L	9	0	9	  1	 98	L	L	o
+3003	R	L	9	0	9	  1	 98	L	L	o
+3004	W	L	9	0	9	  1	 98	L	L	o
+3005	V	L	9	0	9	  1	 98	L	L	o
+3006	L	L	9	0	9	  1	 98	L	L	o
+3007	N	L	9	0	9	  1	 98	L	L	o
+3008	N	L	9	0	9	  1	 98	L	L	o
+3009	D	L	9	0	9	  1	 98	L	L	o
+3010	Y	L	9	0	9	  1	 98	L	L	o
+3011	Y	L	9	0	9	  1	 98	L	L	o
+3012	R	L	9	0	9	  1	 98	L	L	o
+3013	S	L	9	0	9	  1	 98	L	L	o
+3014	L	L	9	0	9	  1	 98	L	L	o
+3015	P	L	9	0	9	  1	 98	L	L	o
+3016	G	L	9	0	9	  1	 98	L	L	o
+3017	V	L	9	0	9	  1	 98	L	L	o
+3018	F	L	9	0	9	  1	 98	L	L	o
+3019	C	L	9	0	9	  1	 98	L	L	o
+3020	G	L	9	0	9	  1	 98	L	L	o
+3021	V	L	9	0	9	  2	 97	L	L	o
+3022	D	L	9	0	9	  2	 97	L	L	o
+3023	A	L	9	0	9	  3	 96	L	L	o
+3024	V	L	8	0	9	  5	 94	L	L	o
+3025	N	L	7	1	8	 11	 88	L	L	o
+3026	L	L	5	2	7	 22	 77	L	L	o
+3027	L	L	4	2	7	 26	 73	L	L	o
+3028	T	L	4	2	7	 27	 72	L	L	o
+3029	N	L	4	2	7	 28	 71	L	L	o
+3030	M	L	3	3	6	 33	 66	L	L	o
+3031	F	L	2	3	6	 39	 60	L	L	o
+3032	T	L	1	4	5	 44	 55	L	L	o
+3033	P	H	1	5	4	 56	 43	L	L	o
+3034	L	H	1	5	4	 57	 42	L	L	o
+3035	I	H	0	5	4	 54	 45	L	L	o
+3036	Q	H	0	5	4	 50	 49	L	L	o
+3037	P	L	0	4	5	 47	 52	L	L	o
+3038	I	L	0	4	5	 49	 50	L	L	o
+3039	G	H	1	5	4	 55	 44	L	L	o
+3040	A	H	2	6	3	 61	 39	L	L	o
+3041	L	H	2	6	3	 64	 35	L	L	o
+3042	D	H	4	7	2	 70	 29	L	L	o
+3043	I	H	5	7	2	 77	 22	L	L	o
+3044	S	H	6	8	1	 82	 17	L	L	o
+3045	A	H	7	8	1	 85	 14	H	H	T
+3046	S	H	7	8	1	 87	 12	H	H	T
+3047	I	H	7	8	1	 89	 10	H	H	T
+3048	V	H	8	9	0	 90	  9	H	H	T
+3049	A	H	8	9	0	 91	  8	H	H	T
+3050	G	H	8	9	0	 91	  8	H	H	T
+3051	G	H	8	9	0	 91	  8	H	H	T
+3052	I	H	8	9	0	 91	  8	H	H	T
+3053	V	H	8	9	0	 91	  8	H	H	T
+3054	A	H	8	9	0	 91	  8	H	H	T
+3055	I	H	8	9	0	 91	  8	H	H	T
+3056	V	H	8	9	0	 92	  7	H	H	T
+3057	V	H	8	9	0	 92	  7	H	H	T
+3058	T	H	8	9	0	 92	  7	H	H	T
+3059	C	H	8	9	0	 92	  7	H	H	T
+3060	L	H	8	9	0	 91	  8	H	H	T
+3061	A	H	8	9	0	 90	  9	H	H	T
+3062	Y	H	7	8	1	 89	 10	H	H	T
+3063	Y	H	7	8	1	 87	 12	H	H	T
+3064	F	H	6	8	1	 82	 17	L	L	i
+3065	M	H	4	7	2	 70	 29	L	L	i
+3066	R	L	0	4	5	 47	 52	L	L	i
+3067	F	L	2	3	6	 36	 63	L	L	i
+3068	R	L	4	2	7	 27	 71	L	L	i
+3069	R	L	4	2	7	 27	 72	L	L	i
+3070	A	L	3	3	6	 32	 67	L	L	i
+3071	F	L	4	2	7	 28	 71	L	L	i
+3072	G	L	5	2	7	 23	 76	L	L	i
+3073	E	L	4	2	7	 26	 73	L	L	i
+3074	Y	L	2	3	6	 38	 61	L	L	i
+3075	S	L	0	4	5	 49	 50	L	L	i
+3076	H	H	3	6	3	 67	 32	L	L	i
+3077	V	H	5	7	2	 78	 21	L	L	i
+3078	V	H	6	8	1	 84	 15	H	H	T
+3079	A	H	7	8	1	 87	 12	H	H	T
+3080	F	H	7	8	1	 89	 10	H	H	T
+3081	N	H	8	9	0	 91	  8	H	H	T
+3082	T	H	8	9	0	 92	  7	H	H	T
+3083	L	H	8	9	0	 92	  7	H	H	T
+3084	L	H	8	9	0	 92	  7	H	H	T
+3085	F	H	8	9	0	 91	  8	H	H	T
+3086	L	H	8	9	0	 91	  8	H	H	T
+3087	M	H	8	9	0	 90	  9	H	H	T
+3088	S	H	8	9	0	 90	  9	H	H	T
+3089	F	H	7	8	1	 89	 10	H	H	T
+3090	T	H	7	8	1	 89	 10	H	H	T
+3091	V	H	7	8	1	 89	 10	H	H	T
+3092	L	H	7	8	1	 88	 11	H	H	T
+3093	C	H	7	8	1	 88	 11	H	H	T
+3094	L	H	7	8	1	 87	 12	H	H	T
+3095	T	H	7	8	1	 86	 13	H	H	T
+3096	P	H	6	8	1	 84	 15	L	L	o
+3097	V	H	6	8	1	 82	 17	L	L	o
+3098	Y	H	6	8	1	 82	 17	L	L	o
+3099	S	H	7	8	1	 85	 14	L	L	o
+3100	F	H	7	8	1	 87	 12	H	H	T
+3101	L	H	7	8	1	 88	 11	H	H	T
+3102	P	H	7	8	1	 89	 10	H	H	T
+3103	G	H	7	8	1	 90	 10	H	H	T
+3104	V	H	8	9	0	 90	  9	H	H	T
+3105	Y	H	8	9	0	 91	  8	H	H	T
+3106	S	H	8	9	0	 91	  8	H	H	T
+3107	V	H	8	9	0	 91	  8	H	H	T
+3108	I	H	8	9	0	 91	  8	H	H	T
+3109	Y	H	8	9	0	 90	  9	H	H	T
+3110	L	H	7	8	1	 89	 10	H	H	T
+3111	Y	H	7	8	1	 86	 13	H	H	T
+3112	L	H	6	8	1	 81	 18	H	H	T
+3113	T	H	4	7	2	 74	 25	H	H	T
+3114	F	H	2	6	3	 64	 35	H	H	T
+3115	Y	H	0	5	4	 53	 46	H	H	T
+3116	L	L	0	4	5	 46	 53	H	H	T
+3117	T	L	2	3	6	 38	 61	H	H	T
+3118	N	L	4	2	7	 28	 71	L	L	i
+3119	D	L	3	3	6	 30	 69	L	L	i
+3120	V	L	1	4	5	 44	 55	L	L	i
+3121	S	H	1	5	4	 57	 42	L	L	i
+3122	F	H	3	6	3	 69	 30	L	L	i
+3123	L	H	5	7	2	 78	 21	L	L	i
+3124	A	H	6	8	1	 82	 17	L	L	i
+3125	H	H	7	8	1	 86	 13	H	H	T
+3126	I	H	7	8	1	 89	 10	H	H	T
+3127	Q	H	8	9	0	 90	  9	H	H	T
+3128	W	H	8	9	0	 91	  8	H	H	T
+3129	M	H	8	9	0	 91	  8	H	H	T
+3130	V	H	8	9	0	 90	  9	H	H	T
+3131	M	H	8	9	0	 90	  9	H	H	T
+3132	F	H	8	9	0	 90	  9	H	H	T
+3133	T	H	8	9	0	 90	  9	H	H	T
+3134	P	H	8	9	0	 90	  9	H	H	T
+3135	L	H	8	9	0	 90	  9	H	H	T
+3136	V	H	8	9	0	 91	  8	H	H	T
+3137	P	H	8	9	0	 91	  8	H	H	T
+3138	F	H	8	9	0	 90	  9	H	H	T
+3139	W	H	8	9	0	 91	  8	H	H	T
+3140	I	H	8	9	0	 91	  8	H	H	T
+3141	T	H	8	9	0	 91	  8	H	H	T
+3142	I	H	8	9	0	 91	  8	H	H	T
+3143	A	H	8	9	0	 91	  8	H	H	T
+3144	Y	H	8	9	0	 91	  8	H	H	T
+3145	I	H	8	9	0	 91	  8	H	H	T
+3146	I	H	8	9	0	 91	  8	H	H	T
+3147	C	H	8	9	0	 90	  9	H	H	T
+3148	I	H	8	9	0	 90	  9	H	H	T
+3149	S	H	7	8	1	 89	 10	H	H	T
+3150	T	H	7	8	1	 88	 11	L	L	o
+3151	K	H	6	8	1	 84	 15	L	L	o
+3152	H	H	5	7	2	 78	 21	L	L	o
+3153	F	H	3	6	3	 67	 32	L	L	o
+3154	Y	H	0	5	4	 54	 45	L	L	o
+3155	W	H	0	5	4	 52	 47	L	L	o
+3156	F	L	0	4	5	 45	 54	L	L	o
+3157	F	L	3	3	6	 32	 67	L	L	o
+3158	S	L	6	1	8	 15	 84	L	L	o
+3159	N	L	8	0	9	  7	 91	L	L	o
+3160	Y	L	9	0	9	  4	 95	L	L	o
+3161	L	L	9	0	9	  3	 96	L	L	o
+3162	K	L	9	0	9	  2	 97	L	L	o
+3163	R	L	9	0	9	  1	 98	L	L	o
+3164	R	L	9	0	9	  1	 98	L	L	o
+3165	V	L	9	0	9	  1	 98	L	L	o
+3166	V	L	9	0	9	  1	 98	L	L	o
+3167	F	L	9	0	9	  1	 98	L	L	o
+3168	N	L	9	0	9	  1	 98	L	L	o
+3169	G	L	9	0	9	  1	 98	L	L	o
+3170	V	L	9	0	9	  1	 98	L	L	o
+3171	S	L	9	0	9	  1	 98	L	L	o
+3172	F	L	9	0	9	  1	 98	L	L	o
+3173	S	L	9	0	9	  1	 98	L	L	o
+3174	T	L	9	0	9	  1	 98	L	L	o
+3175	F	L	9	0	9	  1	 98	L	L	o
+3176	E	L	9	0	9	  1	 98	L	L	o
+3177	E	L	9	0	9	  1	 98	L	L	o
+3178	A	L	9	0	9	  1	 98	L	L	o
+3179	A	L	9	0	9	  1	 98	L	L	o
+3180	L	L	9	0	9	  1	 98	L	L	o
+3181	C	L	9	0	9	  1	 98	L	L	o
+3182	T	L	9	0	9	  2	 97	L	L	o
+3183	F	L	9	0	9	  2	 97	L	L	o
+3184	L	L	9	0	9	  2	 97	L	L	o
+3185	L	L	9	0	9	  2	 97	L	L	o
+3186	N	L	9	0	9	  1	 98	L	L	o
+3187	K	L	9	0	9	  1	 98	L	L	o
+3188	E	L	9	0	9	  1	 98	L	L	o
+3189	M	L	9	0	9	  1	 98	L	L	o
+3190	Y	L	9	0	9	  1	 98	L	L	o
+3191	L	L	9	0	9	  1	 98	L	L	o
+3192	K	L	9	0	9	  1	 98	L	L	o
+3193	L	L	9	0	9	  1	 98	L	L	o
+3194	R	L	9	0	9	  1	 98	L	L	o
+3195	S	L	9	0	9	  1	 98	L	L	o
+3196	D	L	9	0	9	  1	 98	L	L	o
+3197	V	L	9	0	9	  1	 98	L	L	o
+3198	L	L	9	0	9	  1	 98	L	L	o
+3199	L	L	9	0	9	  1	 98	L	L	o
+3200	P	L	9	0	9	  1	 98	L	L	o
+3201	L	L	9	0	9	  1	 98	L	L	o
+3202	T	L	9	0	9	  1	 98	L	L	o
+3203	Q	L	9	0	9	  1	 98	L	L	o
+3204	Y	L	9	0	9	  1	 98	L	L	o
+3205	N	L	9	0	9	  1	 98	L	L	o
+3206	R	L	9	0	9	  1	 98	L	L	o
+3207	Y	L	9	0	9	  1	 98	L	L	o
+3208	L	L	9	0	9	  1	 98	L	L	o
+3209	A	L	9	0	9	  1	 98	L	L	o
+3210	L	L	9	0	9	  1	 98	L	L	o
+3211	Y	L	9	0	9	  1	 98	L	L	o
+3212	N	L	9	0	9	  1	 98	L	L	o
+3213	K	L	9	0	9	  1	 98	L	L	o
+3214	Y	L	9	0	9	  1	 98	L	L	o
+3215	K	L	9	0	9	  1	 98	L	L	o
+3216	Y	L	9	0	9	  1	 98	L	L	o
+3217	F	L	9	0	9	  1	 98	L	L	o
+3218	S	L	9	0	9	  1	 98	L	L	o
+3219	G	L	9	0	9	  1	 98	L	L	o
+3220	A	L	9	0	9	  1	 98	L	L	o
+3221	M	L	9	0	9	  1	 98	L	L	o
+3222	D	L	9	0	9	  1	 98	L	L	o
+3223	T	L	9	0	9	  1	 98	L	L	o
+3224	T	L	9	0	9	  1	 98	L	L	o
+3225	S	L	9	0	9	  1	 98	L	L	o
+3226	Y	L	9	0	9	  1	 98	L	L	o
+3227	R	L	9	0	9	  1	 98	L	L	o
+3228	E	L	9	0	9	  1	 98	L	L	o
+3229	A	L	9	0	9	  1	 98	L	L	o
+3230	A	L	9	0	9	  1	 98	L	L	o
+3231	C	L	9	0	9	  1	 98	L	L	o
+3232	C	L	9	0	9	  1	 98	L	L	o
+3233	H	L	9	0	9	  1	 98	L	L	o
+3234	L	L	9	0	9	  1	 98	L	L	o
+3235	A	L	9	0	9	  1	 98	L	L	o
+3236	K	L	9	0	9	  1	 98	L	L	o
+3237	A	L	9	0	9	  1	 98	L	L	o
+3238	L	L	9	0	9	  1	 98	L	L	o
+3239	N	L	9	0	9	  1	 98	L	L	o
+3240	D	L	9	0	9	  1	 98	L	L	o
+3241	F	L	9	0	9	  1	 98	L	L	o
+3242	S	L	9	0	9	  1	 98	L	L	o
+3243	N	L	9	0	9	  1	 98	L	L	o
+3244	S	L	9	0	9	  1	 98	L	L	o
+3245	G	L	9	0	9	  1	 98	L	L	o
+3246	S	L	9	0	9	  1	 98	L	L	o
+3247	D	L	9	0	9	  1	 98	L	L	o
+3248	V	L	9	0	9	  1	 98	L	L	o
+3249	L	L	9	0	9	  1	 98	L	L	o
+3250	Y	L	9	0	9	  1	 98	L	L	o
+3251	Q	L	9	0	9	  1	 98	L	L	o
+3252	P	L	9	0	9	  1	 98	L	L	o
+3253	P	L	9	0	9	  1	 98	L	L	o
+3254	Q	L	9	0	9	  1	 98	L	L	o
+3255	T	L	9	0	9	  1	 98	L	L	o
+3256	S	L	9	0	9	  1	 98	L	L	o
+3257	I	L	9	0	9	  1	 98	L	L	o
+3258	T	L	9	0	9	  1	 98	L	L	o
+3259	S	L	9	0	9	  2	 97	L	L	o
+3260	A	L	9	0	9	  1	 98	L	L	o
+3261	V	L	9	0	9	  1	 98	L	L	o
+3262	L	L	9	0	9	  1	 98	L	L	o
+3263	Q	L	9	0	9	  1	 98	L	L	o
+3264	S	L	9	0	9	  1	 98	L	L	o
+3265	G	L	9	0	9	  1	 98	L	L	o
+3266	F	L	9	0	9	  1	 98	L	L	o
+3267	R	L	9	0	9	  1	 98	L	L	o
+3268	K	L	9	0	9	  1	 98	L	L	o
+3269	M	L	9	0	9	  1	 98	L	L	o
+3270	A	L	9	0	9	  1	 98	L	L	o
+3271	F	L	9	0	9	  1	 98	L	L	o
+3272	P	L	9	0	9	  1	 98	L	L	o
+3273	S	L	9	0	9	  1	 98	L	L	o
+3274	G	L	9	0	9	  1	 98	L	L	o
+3275	K	L	9	0	9	  1	 98	L	L	o
+3276	V	L	9	0	9	  1	 98	L	L	o
+3277	E	L	9	0	9	  1	 98	L	L	o
+3278	G	L	9	0	9	  1	 98	L	L	o
+3279	C	L	9	0	9	  1	 98	L	L	o
+3280	M	L	9	0	9	  1	 98	L	L	o
+3281	V	L	9	0	9	  1	 98	L	L	o
+3282	Q	L	9	0	9	  1	 98	L	L	o
+3283	V	L	9	0	9	  1	 98	L	L	o
+3284	T	L	9	0	9	  1	 98	L	L	o
+3285	C	L	9	0	9	  2	 97	L	L	o
+3286	G	L	9	0	9	  2	 97	L	L	o
+3287	T	L	9	0	9	  1	 98	L	L	o
+3288	T	L	9	0	9	  1	 98	L	L	o
+3289	T	L	9	0	9	  1	 98	L	L	o
+3290	L	L	9	0	9	  1	 98	L	L	o
+3291	N	L	9	0	9	  1	 98	L	L	o
+3292	G	L	9	0	9	  1	 98	L	L	o
+3293	L	L	9	0	9	  1	 98	L	L	o
+3294	W	L	9	0	9	  1	 98	L	L	o
+3295	L	L	9	0	9	  1	 98	L	L	o
+3296	D	L	9	0	9	  1	 98	L	L	o
+3297	D	L	9	0	9	  1	 98	L	L	o
+3298	V	L	9	0	9	  1	 98	L	L	o
+3299	V	L	9	0	9	  1	 98	L	L	o
+3300	Y	L	9	0	9	  1	 98	L	L	o
+3301	C	L	9	0	9	  1	 98	L	L	o
+3302	P	L	9	0	9	  1	 98	L	L	o
+3303	R	L	9	0	9	  1	 98	L	L	o
+3304	H	L	9	0	9	  1	 98	L	L	o
+3305	V	L	9	0	9	  1	 98	L	L	o
+3306	I	L	9	0	9	  1	 98	L	L	o
+3307	C	L	9	0	9	  1	 98	L	L	o
+3308	T	L	9	0	9	  1	 98	L	L	o
+3309	S	L	9	0	9	  1	 98	L	L	o
+3310	E	L	9	0	9	  1	 98	L	L	o
+3311	D	L	9	0	9	  1	 98	L	L	o
+3312	M	L	9	0	9	  1	 98	L	L	o
+3313	L	L	9	0	9	  1	 98	L	L	o
+3314	N	L	9	0	9	  1	 98	L	L	o
+3315	P	L	9	0	9	  1	 98	L	L	o
+3316	N	L	9	0	9	  1	 98	L	L	o
+3317	Y	L	9	0	9	  1	 98	L	L	o
+3318	E	L	9	0	9	  1	 98	L	L	o
+3319	D	L	9	0	9	  1	 98	L	L	o
+3320	L	L	9	0	9	  1	 98	L	L	o
+3321	L	L	9	0	9	  1	 98	L	L	o
+3322	I	L	9	0	9	  1	 98	L	L	o
+3323	R	L	9	0	9	  1	 98	L	L	o
+3324	K	L	9	0	9	  1	 98	L	L	o
+3325	S	L	9	0	9	  1	 98	L	L	o
+3326	N	L	9	0	9	  1	 98	L	L	o
+3327	H	L	9	0	9	  1	 98	L	L	o
+3328	N	L	9	0	9	  1	 98	L	L	o
+3329	F	L	9	0	9	  1	 98	L	L	o
+3330	L	L	9	0	9	  1	 98	L	L	o
+3331	V	L	9	0	9	  1	 98	L	L	o
+3332	Q	L	9	0	9	  1	 98	L	L	o
+3333	A	L	9	0	9	  1	 98	L	L	o
+3334	G	L	9	0	9	  1	 98	L	L	o
+3335	N	L	9	0	9	  1	 98	L	L	o
+3336	V	L	9	0	9	  1	 98	L	L	o
+3337	Q	L	9	0	9	  1	 98	L	L	o
+3338	L	L	9	0	9	  1	 98	L	L	o
+3339	R	L	9	0	9	  1	 98	L	L	o
+3340	V	L	9	0	9	  1	 98	L	L	o
+3341	I	L	9	0	9	  2	 97	L	L	o
+3342	G	L	9	0	9	  2	 97	L	L	o
+3343	H	L	9	0	9	  2	 97	L	L	o
+3344	S	L	9	0	9	  2	 97	L	L	o
+3345	M	L	9	0	9	  2	 97	L	L	o
+3346	Q	L	9	0	9	  2	 98	L	L	o
+3347	N	L	9	0	9	  1	 98	L	L	o
+3348	C	L	9	0	9	  1	 98	L	L	o
+3349	V	L	9	0	9	  1	 98	L	L	o
+3350	L	L	9	0	9	  1	 98	L	L	o
+3351	K	L	9	0	9	  1	 98	L	L	o
+3352	L	L	9	0	9	  1	 98	L	L	o
+3353	K	L	9	0	9	  1	 98	L	L	o
+3354	V	L	9	0	9	  1	 98	L	L	o
+3355	D	L	9	0	9	  1	 98	L	L	o
+3356	T	L	9	0	9	  1	 98	L	L	o
+3357	A	L	9	0	9	  1	 98	L	L	o
+3358	N	L	9	0	9	  1	 98	L	L	o
+3359	P	L	9	0	9	  1	 98	L	L	o
+3360	K	L	9	0	9	  1	 98	L	L	o
+3361	T	L	9	0	9	  1	 98	L	L	o
+3362	P	L	9	0	9	  1	 98	L	L	o
+3363	K	L	9	0	9	  1	 98	L	L	o
+3364	Y	L	9	0	9	  1	 98	L	L	o
+3365	K	L	9	0	9	  1	 98	L	L	o
+3366	F	L	9	0	9	  1	 98	L	L	o
+3367	V	L	9	0	9	  1	 98	L	L	o
+3368	R	L	9	0	9	  1	 98	L	L	o
+3369	I	L	9	0	9	  1	 98	L	L	o
+3370	Q	L	9	0	9	  1	 98	L	L	o
+3371	P	L	9	0	9	  1	 98	L	L	o
+3372	G	L	9	0	9	  1	 98	L	L	o
+3373	Q	L	9	0	9	  1	 98	L	L	o
+3374	T	L	9	0	9	  1	 98	L	L	o
+3375	F	L	9	0	9	  1	 98	L	L	o
+3376	S	L	9	0	9	  2	 97	L	L	o
+3377	V	L	9	0	9	  3	 96	L	L	o
+3378	L	L	9	0	9	  4	 95	L	L	o
+3379	A	L	9	0	9	  4	 95	L	L	o
+3380	C	L	9	0	9	  3	 96	L	L	o
+3381	Y	L	9	0	9	  3	 96	L	L	o
+3382	N	L	9	0	9	  3	 96	L	L	o
+3383	G	L	9	0	9	  3	 96	L	L	o
+3384	S	L	9	0	9	  3	 96	L	L	o
+3385	P	L	9	0	9	  3	 96	L	L	o
+3386	S	L	9	0	9	  2	 97	L	L	o
+3387	G	L	9	0	9	  2	 97	L	L	o
+3388	V	L	9	0	9	  2	 97	L	L	o
+3389	Y	L	9	0	9	  1	 98	L	L	o
+3390	Q	L	9	0	9	  1	 98	L	L	o
+3391	C	L	9	0	9	  1	 98	L	L	o
+3392	A	L	9	0	9	  1	 98	L	L	o
+3393	M	L	9	0	9	  1	 98	L	L	o
+3394	R	L	9	0	9	  1	 98	L	L	o
+3395	P	L	9	0	9	  1	 98	L	L	o
+3396	N	L	9	0	9	  1	 98	L	L	o
+3397	F	L	9	0	9	  1	 98	L	L	o
+3398	T	L	9	0	9	  1	 98	L	L	o
+3399	I	L	9	0	9	  1	 98	L	L	o
+3400	K	L	9	0	9	  1	 98	L	L	o
+3401	G	L	9	0	9	  1	 98	L	L	o
+3402	S	L	9	0	9	  1	 98	L	L	o
+3403	F	L	9	0	9	  1	 98	L	L	o
+3404	L	L	9	0	9	  1	 98	L	L	o
+3405	N	L	9	0	9	  1	 98	L	L	o
+3406	G	L	9	0	9	  1	 98	L	L	o
+3407	S	L	9	0	9	  1	 98	L	L	o
+3408	C	L	9	0	9	  1	 98	L	L	o
+3409	G	L	9	0	9	  1	 98	L	L	o
+3410	S	L	9	0	9	  1	 98	L	L	o
+3411	V	L	9	0	9	  1	 98	L	L	o
+3412	G	L	9	0	9	  2	 97	L	L	o
+3413	F	L	9	0	9	  3	 96	L	L	o
+3414	N	L	9	0	9	  3	 96	L	L	o
+3415	I	L	9	0	9	  3	 96	L	L	o
+3416	D	L	9	0	9	  2	 97	L	L	o
+3417	Y	L	9	0	9	  2	 97	L	L	o
+3418	D	L	9	0	9	  1	 98	L	L	o
+3419	C	L	9	0	9	  1	 98	L	L	o
+3420	V	L	9	0	9	  1	 98	L	L	o
+3421	S	L	9	0	9	  1	 98	L	L	o
+3422	F	L	9	0	9	  1	 98	L	L	o
+3423	C	L	9	0	9	  1	 98	L	L	o
+3424	Y	L	9	0	9	  1	 98	L	L	o
+3425	M	L	9	0	9	  1	 98	L	L	o
+3426	H	L	9	0	9	  1	 98	L	L	o
+3427	H	L	9	0	9	  1	 98	L	L	o
+3428	M	L	9	0	9	  1	 98	L	L	o
+3429	E	L	9	0	9	  1	 98	L	L	o
+3430	L	L	9	0	9	  1	 98	L	L	o
+3431	P	L	9	0	9	  1	 98	L	L	o
+3432	T	L	9	0	9	  1	 98	L	L	o
+3433	G	L	9	0	9	  1	 98	L	L	o
+3434	V	L	9	0	9	  1	 98	L	L	o
+3435	H	L	9	0	9	  1	 98	L	L	o
+3436	A	L	9	0	9	  1	 98	L	L	o
+3437	G	L	9	0	9	  1	 98	L	L	o
+3438	T	L	9	0	9	  1	 98	L	L	o
+3439	D	L	9	0	9	  1	 98	L	L	o
+3440	L	L	9	0	9	  1	 98	L	L	o
+3441	E	L	9	0	9	  1	 98	L	L	o
+3442	G	L	9	0	9	  1	 98	L	L	o
+3443	N	L	9	0	9	  1	 98	L	L	o
+3444	F	L	9	0	9	  1	 98	L	L	o
+3445	Y	L	9	0	9	  1	 98	L	L	o
+3446	G	L	9	0	9	  1	 98	L	L	o
+3447	P	L	9	0	9	  1	 98	L	L	o
+3448	F	L	9	0	9	  1	 98	L	L	o
+3449	V	L	9	0	9	  1	 98	L	L	o
+3450	D	L	9	0	9	  1	 98	L	L	o
+3451	R	L	9	0	9	  1	 98	L	L	o
+3452	Q	L	9	0	9	  1	 98	L	L	o
+3453	T	L	9	0	9	  1	 98	L	L	o
+3454	A	L	9	0	9	  1	 98	L	L	o
+3455	Q	L	9	0	9	  1	 98	L	L	o
+3456	A	L	9	0	9	  1	 98	L	L	o
+3457	A	L	9	0	9	  1	 98	L	L	o
+3458	G	L	9	0	9	  1	 98	L	L	o
+3459	T	L	9	0	9	  2	 97	L	L	o
+3460	D	L	9	0	9	  2	 97	L	L	o
+3461	T	L	9	0	9	  3	 96	L	L	o
+3462	T	L	8	0	9	  5	 94	L	L	o
+3463	I	L	7	1	8	 11	 88	L	L	o
+3464	T	L	6	1	8	 15	 84	L	L	o
+3465	V	L	5	2	7	 21	 78	L	L	o
+3466	N	L	1	4	5	 40	 59	L	L	o
+3467	V	H	0	5	4	 53	 47	L	L	o
+3468	L	H	1	5	4	 59	 40	L	L	o
+3469	A	H	1	5	4	 58	 41	L	L	o
+3470	W	H	1	5	4	 56	 43	L	L	o
+3471	L	H	1	5	4	 58	 41	L	L	o
+3472	Y	H	2	6	3	 64	 35	L	L	o
+3473	A	H	3	6	3	 69	 30	L	L	o
+3474	A	H	2	6	3	 64	 35	L	L	o
+3475	V	H	1	5	4	 56	 43	L	L	o
+3476	I	L	1	4	5	 43	 56	L	L	o
+3477	N	L	4	2	7	 29	 70	L	L	o
+3478	G	L	5	2	7	 24	 75	L	L	o
+3479	D	L	7	1	8	 13	 86	L	L	o
+3480	R	L	8	0	9	  9	 90	L	L	o
+3481	W	L	8	0	9	  6	 93	L	L	o
+3482	F	L	9	0	9	  4	 95	L	L	o
+3483	L	L	9	0	9	  2	 97	L	L	o
+3484	N	L	9	0	9	  1	 98	L	L	o
+3485	R	L	9	0	9	  1	 98	L	L	o
+3486	F	L	9	0	9	  1	 98	L	L	o
+3487	T	L	9	0	9	  1	 98	L	L	o
+3488	T	L	9	0	9	  1	 98	L	L	o
+3489	T	L	9	0	9	  1	 98	L	L	o
+3490	L	L	9	0	9	  1	 98	L	L	o
+3491	N	L	9	0	9	  1	 98	L	L	o
+3492	D	L	9	0	9	  1	 98	L	L	o
+3493	F	L	9	0	9	  1	 98	L	L	o
+3494	N	L	9	0	9	  1	 98	L	L	o
+3495	L	L	9	0	9	  1	 98	L	L	o
+3496	V	L	9	0	9	  1	 98	L	L	o
+3497	A	L	9	0	9	  1	 98	L	L	o
+3498	M	L	9	0	9	  1	 98	L	L	o
+3499	K	L	9	0	9	  1	 98	L	L	o
+3500	Y	L	9	0	9	  1	 98	L	L	o
+3501	N	L	9	0	9	  1	 98	L	L	o
+3502	Y	L	9	0	9	  1	 98	L	L	o
+3503	E	L	9	0	9	  1	 98	L	L	o
+3504	P	L	9	0	9	  1	 98	L	L	o
+3505	L	L	9	0	9	  1	 98	L	L	o
+3506	T	L	9	0	9	  1	 98	L	L	o
+3507	Q	L	9	0	9	  1	 98	L	L	o
+3508	D	L	9	0	9	  1	 98	L	L	o
+3509	H	L	9	0	9	  1	 98	L	L	o
+3510	V	L	9	0	9	  1	 98	L	L	o
+3511	D	L	9	0	9	  1	 98	L	L	o
+3512	I	L	9	0	9	  1	 98	L	L	o
+3513	L	L	9	0	9	  1	 98	L	L	o
+3514	G	L	9	0	9	  1	 98	L	L	o
+3515	P	L	9	0	9	  1	 98	L	L	o
+3516	L	L	9	0	9	  1	 98	L	L	o
+3517	S	L	9	0	9	  2	 97	L	L	o
+3518	A	L	9	0	9	  2	 97	L	L	o
+3519	Q	L	9	0	9	  2	 97	L	L	o
+3520	T	L	9	0	9	  2	 97	L	L	o
+3521	G	L	9	0	9	  2	 97	L	L	o
+3522	I	L	9	0	9	  2	 97	L	L	o
+3523	A	L	9	0	9	  2	 97	L	L	o
+3524	V	L	9	0	9	  2	 97	L	L	o
+3525	L	L	9	0	9	  2	 97	L	L	o
+3526	D	L	9	0	9	  2	 97	L	L	o
+3527	M	L	9	0	9	  2	 97	L	L	o
+3528	C	L	9	0	9	  2	 97	L	L	o
+3529	A	L	9	0	9	  1	 98	L	L	o
+3530	S	L	9	0	9	  1	 98	L	L	o
+3531	L	L	9	0	9	  1	 98	L	L	o
+3532	K	L	9	0	9	  1	 98	L	L	o
+3533	E	L	9	0	9	  1	 98	L	L	o
+3534	L	L	9	0	9	  1	 98	L	L	o
+3535	L	L	9	0	9	  1	 98	L	L	o
+3536	Q	L	9	0	9	  1	 98	L	L	o
+3537	N	L	9	0	9	  1	 98	L	L	o
+3538	G	L	9	0	9	  1	 98	L	L	o
+3539	M	L	9	0	9	  1	 98	L	L	o
+3540	N	L	9	0	9	  1	 98	L	L	o
+3541	G	L	9	0	9	  1	 98	L	L	o
+3542	R	L	9	0	9	  1	 98	L	L	o
+3543	T	L	9	0	9	  1	 98	L	L	o
+3544	I	L	9	0	9	  1	 98	L	L	o
+3545	L	L	9	0	9	  1	 98	L	L	o
+3546	G	L	9	0	9	  1	 98	L	L	o
+3547	S	L	9	0	9	  1	 98	L	L	o
+3548	A	L	9	0	9	  1	 98	L	L	o
+3549	L	L	9	0	9	  1	 98	L	L	o
+3550	L	L	9	0	9	  1	 98	L	L	o
+3551	E	L	9	0	9	  1	 98	L	L	o
+3552	D	L	9	0	9	  1	 98	L	L	o
+3553	E	L	9	0	9	  1	 98	L	L	o
+3554	F	L	9	0	9	  1	 98	L	L	o
+3555	T	L	9	0	9	  1	 98	L	L	o
+3556	P	L	9	0	9	  1	 98	L	L	o
+3557	F	L	9	0	9	  1	 98	L	L	o
+3558	D	L	9	0	9	  1	 98	L	L	o
+3559	V	L	9	0	9	  1	 98	L	L	o
+3560	V	L	9	0	9	  1	 98	L	L	o
+3561	R	L	9	0	9	  1	 98	L	L	o
+3562	Q	L	9	0	9	  1	 98	L	L	o
+3563	C	L	9	0	9	  1	 98	L	L	o
+3564	S	L	9	0	9	  1	 98	L	L	o
+3565	G	L	9	0	9	  1	 98	L	L	o
+3566	V	L	9	0	9	  1	 98	L	L	o
+3567	T	L	9	0	9	  1	 98	L	L	o
+3568	F	L	9	0	9	  1	 98	L	L	o
+3569	Q	L	9	0	9	  1	 98	L	L	o
+3570	S	L	9	0	9	  1	 98	L	L	o
+3571	A	L	9	0	9	  1	 98	L	L	o
+3572	V	L	9	0	9	  1	 98	L	L	o
+3573	K	L	9	0	9	  1	 98	L	L	o
+3574	R	L	9	0	9	  1	 98	L	L	o
+3575	T	L	9	0	9	  2	 97	L	L	o
+3576	I	L	9	0	9	  4	 95	L	L	o
+3577	K	L	8	0	9	  5	 94	L	L	o
+3578	G	L	8	0	9	  7	 92	L	L	o
+3579	T	L	7	1	8	 11	 88	L	L	o
+3580	H	L	5	2	7	 23	 76	L	L	o
+3581	H	L	1	4	5	 42	 57	L	L	o
+3582	W	H	2	6	3	 63	 36	L	L	o
+3583	L	H	5	7	2	 77	 22	H	H	T
+3584	L	H	6	8	1	 84	 15	H	H	T
+3585	L	H	7	8	1	 88	 11	H	H	T
+3586	T	H	8	9	0	 91	  8	H	H	T
+3587	I	H	8	9	0	 92	  7	H	H	T
+3588	L	H	8	9	0	 92	  7	H	H	T
+3589	T	H	8	9	0	 93	  6	H	H	T
+3590	S	H	8	9	0	 92	  7	H	H	T
+3591	L	H	8	9	0	 92	  7	H	H	T
+3592	L	H	8	9	0	 91	  8	H	H	T
+3593	V	H	8	9	0	 91	  8	H	H	T
+3594	L	H	8	9	0	 90	  9	H	H	T
+3595	V	H	8	9	0	 90	  9	H	H	T
+3596	Q	H	7	8	1	 89	 10	H	H	T
+3597	S	H	7	8	1	 88	 11	H	H	T
+3598	T	H	7	8	1	 85	 14	H	H	T
+3599	Q	H	6	8	1	 80	 19	H	H	T
+3600	W	H	5	7	2	 78	 21	H	H	T
+3601	S	H	5	7	2	 77	 23	H	H	T
+3602	L	H	5	7	2	 77	 22	L	L	i
+3603	F	H	5	7	2	 76	 23	L	L	i
+3604	F	H	4	7	2	 72	 27	L	L	i
+3605	F	H	3	6	3	 69	 30	L	L	i
+3606	L	H	3	6	3	 68	 31	L	L	i
+3607	Y	H	4	7	2	 70	 29	L	L	i
+3608	E	H	4	7	2	 72	 27	L	L	i
+3609	N	H	5	7	2	 77	 22	L	L	i
+3610	A	H	6	8	1	 82	 17	H	H	T
+3611	F	H	7	8	1	 85	 14	H	H	T
+3612	L	H	7	8	1	 88	 11	H	H	T
+3613	P	H	7	8	1	 89	 10	H	H	T
+3614	F	H	8	9	0	 90	  9	H	H	T
+3615	A	H	8	9	0	 91	  8	H	H	T
+3616	M	H	8	9	0	 91	  8	H	H	T
+3617	G	H	8	9	0	 91	  8	H	H	T
+3618	I	H	8	9	0	 91	  8	H	H	T
+3619	I	H	8	9	0	 91	  8	H	H	T
+3620	A	H	8	9	0	 91	  8	H	H	T
+3621	M	H	8	9	0	 91	  8	H	H	T
+3622	S	H	8	9	0	 91	  8	H	H	T
+3623	A	H	8	9	0	 91	  8	H	H	T
+3624	F	H	8	9	0	 91	  8	H	H	T
+3625	A	H	8	9	0	 90	  9	H	H	T
+3626	M	H	7	8	1	 89	 10	H	H	T
+3627	M	H	7	8	1	 88	 11	H	H	T
+3628	F	H	7	8	1	 86	 13	H	H	T
+3629	V	H	6	8	1	 80	 19	L	L	o
+3630	K	H	4	7	2	 72	 27	L	L	o
+3631	H	H	3	6	3	 69	 30	L	L	o
+3632	K	H	3	6	3	 67	 32	L	L	o
+3633	H	H	4	7	2	 71	 28	L	L	o
+3634	A	H	4	7	2	 74	 26	H	H	T
+3635	F	H	4	7	2	 73	 26	H	H	T
+3636	L	H	4	7	2	 73	 26	H	H	T
+3637	C	H	5	7	2	 78	 21	H	H	T
+3638	L	H	6	8	1	 83	 16	H	H	T
+3639	F	H	7	8	1	 85	 14	H	H	T
+3640	L	H	7	8	1	 86	 13	H	H	T
+3641	L	H	7	8	1	 87	 12	H	H	T
+3642	P	H	7	8	1	 89	 10	H	H	T
+3643	S	H	8	9	0	 90	  9	H	H	T
+3644	L	H	8	9	0	 90	  8	H	H	T
+3645	A	H	8	9	0	 91	  8	H	H	T
+3646	T	H	8	9	0	 91	  8	H	H	T
+3647	V	H	8	9	0	 90	  9	H	H	T
+3648	A	H	7	8	1	 89	 10	H	H	T
+3649	Y	H	7	8	1	 87	 12	H	H	T
+3650	F	H	6	8	1	 84	 15	H	H	T
+3651	N	H	5	7	2	 78	 21	H	H	T
+3652	M	H	4	7	2	 70	 29	L	L	i
+3653	V	H	2	6	3	 63	 36	L	L	i
+3654	Y	H	1	5	4	 56	 43	L	L	i
+3655	M	L	0	4	5	 45	 54	L	L	i
+3656	P	L	2	3	6	 37	 62	L	L	i
+3657	A	L	3	3	6	 33	 66	L	L	i
+3658	S	L	4	2	7	 28	 71	L	L	i
+3659	W	L	4	2	7	 26	 73	L	L	i
+3660	V	L	5	2	7	 22	 77	L	L	i
+3661	M	L	6	1	8	 17	 82	L	L	i
+3662	R	L	7	1	8	 14	 85	L	L	i
+3663	I	L	7	1	8	 10	 89	L	L	i
+3664	M	L	8	0	9	  6	 93	L	L	i
+3665	T	L	9	0	9	  4	 95	L	L	i
+3666	W	L	9	0	9	  3	 96	L	L	i
+3667	L	L	9	0	9	  4	 95	L	L	i
+3668	D	L	9	0	9	  4	 95	L	L	i
+3669	M	L	9	0	9	  4	 95	L	L	i
+3670	V	L	9	0	9	  4	 95	L	L	i
+3671	D	L	9	0	9	  4	 95	L	L	i
+3672	T	L	8	0	9	  6	 93	L	L	i
+3673	S	L	8	0	9	  7	 92	L	L	i
+3674	L	L	8	0	9	  8	 91	L	L	i
+3675	S	L	7	1	8	 10	 89	L	L	i
+3676	G	L	6	1	8	 16	 83	L	L	i
+3677	F	L	5	2	7	 21	 78	L	L	i
+3678	K	L	4	2	7	 25	 74	L	L	i
+3679	L	L	3	3	6	 31	 68	L	L	i
+3680	K	L	1	4	5	 40	 59	H	H	T
+3681	D	H	1	5	4	 59	 40	H	H	T
+3682	C	H	5	7	2	 76	 23	H	H	T
+3683	V	H	6	8	1	 83	 16	H	H	T
+3684	M	H	7	8	1	 87	 12	H	H	T
+3685	Y	H	7	8	1	 89	 10	H	H	T
+3686	A	H	8	9	0	 90	  9	H	H	T
+3687	S	H	8	9	0	 91	  8	H	H	T
+3688	A	H	8	9	0	 91	  8	H	H	T
+3689	V	H	8	9	0	 92	  7	H	H	T
+3690	V	H	8	9	0	 92	  7	H	H	T
+3691	L	H	8	9	0	 91	  8	H	H	T
+3692	L	H	8	9	0	 90	  9	H	H	T
+3693	I	H	7	8	1	 88	 11	H	H	T
+3694	L	H	6	8	1	 84	 15	H	H	T
+3695	M	H	5	7	2	 78	 21	H	H	T
+3696	T	H	3	6	3	 68	 31	H	H	T
+3697	A	H	0	5	4	 53	 46	H	H	T
+3698	R	L	2	3	6	 39	 60	L	L	o
+3699	T	L	3	3	6	 33	 66	L	L	o
+3700	V	L	4	2	7	 27	 72	L	L	o
+3701	Y	L	6	1	8	 19	 80	L	L	o
+3702	D	L	6	1	8	 15	 84	L	L	o
+3703	D	L	7	1	8	 13	 86	L	L	o
+3704	G	L	7	1	8	 13	 86	L	L	o
+3705	A	L	7	1	8	 14	 85	L	L	o
+3706	R	L	6	1	8	 15	 83	L	L	o
+3707	R	L	6	1	8	 19	 80	L	L	o
+3708	V	L	3	3	6	 30	 69	H	H	T
+3709	W	L	0	4	5	 45	 54	H	H	T
+3710	T	H	0	5	4	 52	 47	H	H	T
+3711	L	H	1	5	4	 59	 40	H	H	T
+3712	M	H	3	6	3	 65	 34	H	H	T
+3713	N	H	4	7	2	 70	 29	H	H	T
+3714	V	H	5	7	2	 76	 23	H	H	T
+3715	L	H	5	7	2	 79	 20	H	H	T
+3716	T	H	6	8	1	 80	 19	H	H	T
+3717	L	H	6	8	1	 80	 19	H	H	T
+3718	V	H	5	7	2	 78	 21	H	H	T
+3719	Y	H	4	7	2	 71	 28	H	H	T
+3720	K	H	2	6	3	 61	 38	H	H	T
+3721	V	H	1	5	4	 55	 44	H	H	T
+3722	Y	L	1	4	5	 44	 55	H	H	T
+3723	Y	L	2	3	6	 36	 63	H	H	T
+3724	G	L	3	3	6	 30	 68	H	H	T
+3725	N	L	4	2	7	 25	 74	H	H	T
+3726	A	L	5	2	7	 21	 78	L	L	i
+3727	L	L	6	1	8	 18	 81	L	L	i
+3728	D	L	6	1	8	 16	 83	L	L	i
+3729	Q	L	6	1	8	 16	 83	L	L	i
+3730	A	L	5	2	7	 21	 78	L	L	i
+3731	I	L	4	2	7	 28	 71	L	L	i
+3732	S	L	3	3	6	 33	 66	L	L	i
+3733	M	L	2	3	6	 36	 63	L	L	i
+3734	W	L	1	4	5	 43	 57	L	L	i
+3735	A	H	0	5	4	 53	 46	L	L	i
+3736	L	H	1	5	4	 59	 40	L	L	i
+3737	I	H	2	6	3	 62	 37	L	L	i
+3738	I	H	3	6	3	 66	 33	L	L	i
+3739	S	H	5	7	2	 75	 24	L	L	i
+3740	V	H	5	7	2	 78	 21	L	L	i
+3741	T	H	5	7	2	 78	 21	L	L	i
+3742	S	H	5	7	2	 75	 24	L	L	i
+3743	N	H	4	7	2	 72	 27	L	L	i
+3744	Y	H	4	7	2	 71	 28	H	H	T
+3745	S	H	4	7	2	 72	 27	H	H	T
+3746	G	H	4	7	2	 75	 25	H	H	T
+3747	V	H	5	7	2	 76	 23	H	H	T
+3748	V	H	5	7	2	 79	 20	H	H	T
+3749	T	H	6	8	1	 81	 18	H	H	T
+3750	T	H	6	8	1	 84	 15	H	H	T
+3751	V	H	7	8	1	 85	 14	H	H	T
+3752	M	H	7	8	1	 86	 13	H	H	T
+3753	F	H	7	8	1	 86	 13	H	H	T
+3754	L	H	7	8	1	 86	 13	H	H	T
+3755	A	H	7	8	1	 85	 14	H	H	T
+3756	R	H	6	8	1	 84	 15	H	H	T
+3757	G	H	6	8	1	 83	 16	H	H	T
+3758	I	H	6	8	1	 81	 18	H	H	T
+3759	V	H	5	7	2	 79	 20	H	H	T
+3760	F	H	5	7	2	 78	 21	H	H	T
+3761	M	H	5	7	2	 78	 21	H	H	T
+3762	C	H	5	7	2	 77	 22	H	H	T
+3763	V	H	4	7	2	 73	 26	L	L	o
+3764	E	H	2	6	3	 64	 35	L	L	o
+3765	Y	H	1	5	4	 57	 42	L	L	o
+3766	C	H	0	5	4	 50	 49	L	L	o
+3767	P	H	0	5	4	 50	 49	L	L	o
+3768	I	H	0	5	4	 52	 47	L	L	o
+3769	F	H	0	5	4	 53	 46	L	L	o
+3770	F	H	1	5	4	 55	 44	L	L	o
+3771	I	H	1	5	4	 56	 44	L	L	o
+3772	T	H	1	5	4	 57	 42	L	L	o
+3773	G	H	1	5	4	 57	 42	L	L	o
+3774	N	H	2	6	3	 61	 38	L	L	o
+3775	T	H	3	6	3	 66	 33	L	L	o
+3776	L	H	4	7	2	 74	 25	L	L	o
+3777	Q	H	5	7	2	 77	 22	L	L	o
+3778	C	H	6	8	1	 83	 16	L	L	o
+3779	I	H	7	8	1	 87	 12	H	H	T
+3780	M	H	7	8	1	 88	 11	H	H	T
+3781	L	H	7	8	1	 89	 10	H	H	T
+3782	V	H	7	8	1	 89	 10	H	H	T
+3783	Y	H	8	9	0	 90	  9	H	H	T
+3784	C	H	8	9	0	 90	  9	H	H	T
+3785	F	H	8	9	0	 91	  8	H	H	T
+3786	L	H	8	9	0	 90	  9	H	H	T
+3787	G	H	8	9	0	 90	  9	H	H	T
+3788	Y	H	7	8	1	 89	 10	H	H	T
+3789	F	H	7	8	1	 89	 10	H	H	T
+3790	C	H	7	8	1	 89	 10	H	H	T
+3791	T	H	7	8	1	 89	 10	H	H	T
+3792	C	H	7	8	1	 89	 10	H	H	T
+3793	Y	H	7	8	1	 89	 10	H	H	T
+3794	F	H	8	9	0	 90	  9	H	H	T
+3795	G	H	8	9	0	 90	  9	H	H	T
+3796	L	H	7	8	1	 88	 11	H	H	T
+3797	F	H	7	8	1	 86	 13	L	L	i
+3798	C	H	6	8	1	 83	 16	L	L	i
+3799	L	H	5	7	2	 76	 23	L	L	i
+3800	L	H	2	6	3	 64	 35	L	L	i
+3801	N	L	1	4	5	 41	 58	L	L	i
+3802	R	L	5	2	7	 24	 75	L	L	i
+3803	Y	L	4	2	7	 25	 74	L	L	i
+3804	F	L	3	3	6	 31	 68	L	L	i
+3805	R	L	3	3	6	 34	 65	L	L	i
+3806	L	L	3	3	6	 34	 65	L	L	i
+3807	T	L	4	2	7	 25	 74	L	L	i
+3808	L	L	6	1	8	 18	 81	L	L	i
+3809	G	L	8	0	9	  7	 92	L	L	i
+3810	V	L	9	0	9	  3	 96	L	L	i
+3811	Y	L	9	0	9	  2	 97	L	L	i
+3812	D	L	9	0	9	  2	 97	L	L	i
+3813	Y	L	9	0	9	  2	 97	L	L	i
+3814	L	L	9	0	9	  2	 97	L	L	i
+3815	V	L	9	0	9	  1	 98	L	L	i
+3816	S	L	9	0	9	  1	 98	L	L	i
+3817	T	L	9	0	9	  1	 98	L	L	i
+3818	Q	L	9	0	9	  1	 98	L	L	i
+3819	E	L	9	0	9	  1	 98	L	L	i
+3820	F	L	9	0	9	  1	 98	L	L	i
+3821	R	L	9	0	9	  1	 98	L	L	i
+3822	Y	L	9	0	9	  1	 98	L	L	i
+3823	M	L	9	0	9	  1	 98	L	L	i
+3824	N	L	9	0	9	  1	 98	L	L	i
+3825	S	L	9	0	9	  1	 98	L	L	i
+3826	Q	L	9	0	9	  1	 98	L	L	i
+3827	G	L	9	0	9	  1	 98	L	L	i
+3828	L	L	9	0	9	  1	 98	L	L	i
+3829	L	L	9	0	9	  1	 98	L	L	i
+3830	P	L	9	0	9	  1	 98	L	L	i
+3831	P	L	9	0	9	  1	 98	L	L	i
+3832	K	L	9	0	9	  1	 98	L	L	i
+3833	N	L	9	0	9	  1	 98	L	L	i
+3834	S	L	9	0	9	  1	 98	L	L	i
+3835	I	L	9	0	9	  1	 98	L	L	i
+3836	D	L	9	0	9	  2	 97	L	L	i
+3837	A	L	9	0	9	  3	 96	L	L	i
+3838	F	L	9	0	9	  3	 96	L	L	i
+3839	K	L	9	0	9	  3	 96	L	L	i
+3840	L	L	9	0	9	  2	 97	L	L	i
+3841	N	L	9	0	9	  2	 96	L	L	i
+3842	I	L	9	0	9	  3	 96	L	L	i
+3843	K	L	8	0	9	  5	 94	L	L	i
+3844	L	L	8	0	9	  7	 92	L	L	i
+3845	L	L	8	0	9	  8	 91	L	L	i
+3846	G	L	8	0	9	  6	 93	L	L	i
+3847	V	L	8	0	9	  5	 94	L	L	i
+3848	G	L	9	0	9	  4	 95	L	L	i
+3849	G	L	9	0	9	  2	 97	L	L	i
+3850	K	L	9	0	9	  2	 97	L	L	i
+3851	P	L	9	0	9	  2	 97	L	L	i
+3852	C	L	9	0	9	  2	 97	L	L	i
+3853	I	L	9	0	9	  1	 98	L	L	i
+3854	K	L	9	0	9	  1	 98	L	L	i
+3855	V	L	9	0	9	  1	 98	L	L	i
+3856	A	L	9	0	9	  1	 98	L	L	i
+3857	T	L	9	0	9	  1	 98	L	L	i
+3858	V	L	9	0	9	  1	 98	L	L	i
+3859	Q	L	9	0	9	  1	 98	L	L	i
+3860	S	L	9	0	9	  1	 98	L	L	i
+3861	K	L	9	0	9	  1	 98	L	L	i
+3862	M	L	9	0	9	  1	 98	L	L	i
+3863	S	L	9	0	9	  1	 98	L	L	i
+3864	D	L	9	0	9	  1	 98	L	L	i
+3865	V	L	9	0	9	  1	 98	L	L	i
+3866	K	L	9	0	9	  2	 97	L	L	i
+3867	C	L	9	0	9	  1	 98	L	L	i
+3868	T	L	9	0	9	  2	 97	L	L	i
+3869	S	L	9	0	9	  2	 97	L	L	i
+3870	V	L	9	0	9	  4	 95	L	L	i
+3871	V	L	8	0	9	  8	 91	L	L	i
+3872	L	L	7	1	8	 11	 88	L	L	i
+3873	L	L	6	1	8	 15	 84	L	L	i
+3874	S	L	6	1	8	 16	 83	L	L	i
+3875	V	L	6	1	8	 16	 83	L	L	i
+3876	L	L	7	1	8	 10	 88	L	L	i
+3877	Q	L	8	0	9	  5	 94	L	L	i
+3878	Q	L	9	0	9	  2	 97	L	L	i
+3879	L	L	9	0	9	  2	 97	L	L	i
+3880	R	L	9	0	9	  2	 97	L	L	i
+3881	V	L	9	0	9	  2	 97	L	L	i
+3882	E	L	9	0	9	  1	 98	L	L	i
+3883	S	L	9	0	9	  1	 98	L	L	i
+3884	S	L	9	0	9	  1	 98	L	L	i
+3885	S	L	9	0	9	  1	 98	L	L	i
+3886	K	L	9	0	9	  1	 98	L	L	i
+3887	L	L	9	0	9	  1	 98	L	L	i
+3888	W	L	9	0	9	  1	 98	L	L	i
+3889	A	L	9	0	9	  1	 98	L	L	i
+3890	Q	L	9	0	9	  1	 98	L	L	i
+3891	C	L	9	0	9	  1	 98	L	L	i
+3892	V	L	9	0	9	  1	 98	L	L	i
+3893	Q	L	9	0	9	  1	 98	L	L	i
+3894	L	L	9	0	9	  1	 98	L	L	i
+3895	H	L	9	0	9	  1	 98	L	L	i
+3896	N	L	9	0	9	  1	 98	L	L	i
+3897	D	L	9	0	9	  1	 98	L	L	i
+3898	I	L	9	0	9	  1	 98	L	L	i
+3899	L	L	9	0	9	  1	 98	L	L	i
+3900	L	L	9	0	9	  1	 98	L	L	i
+3901	A	L	9	0	9	  1	 98	L	L	i
+3902	K	L	9	0	9	  1	 98	L	L	i
+3903	D	L	9	0	9	  1	 98	L	L	i
+3904	T	L	9	0	9	  1	 98	L	L	i
+3905	T	L	9	0	9	  1	 98	L	L	i
+3906	E	L	9	0	9	  1	 98	L	L	i
+3907	A	L	9	0	9	  2	 97	L	L	i
+3908	F	L	9	0	9	  2	 97	L	L	i
+3909	E	L	9	0	9	  3	 96	L	L	i
+3910	K	L	9	0	9	  4	 95	L	L	i
+3911	M	L	8	0	9	  6	 93	L	L	i
+3912	V	L	8	0	9	  9	 90	L	L	i
+3913	S	L	7	1	8	 12	 87	L	L	i
+3914	L	L	6	1	8	 17	 82	L	L	i
+3915	L	L	5	2	7	 22	 77	L	L	i
+3916	S	L	4	2	7	 25	 74	L	L	i
+3917	V	L	4	2	7	 26	 73	L	L	i
+3918	L	L	5	2	7	 21	 78	L	L	i
+3919	L	L	7	1	8	 14	 85	L	L	i
+3920	S	L	7	1	8	 10	 89	L	L	i
+3921	M	L	8	0	9	  6	 93	L	L	i
+3922	Q	L	9	0	9	  4	 95	L	L	i
+3923	G	L	9	0	9	  3	 96	L	L	i
+3924	A	L	9	0	9	  3	 96	L	L	i
+3925	V	L	9	0	9	  2	 97	L	L	i
+3926	D	L	9	0	9	  1	 98	L	L	i
+3927	I	L	9	0	9	  1	 98	L	L	i
+3928	N	L	9	0	9	  1	 98	L	L	i
+3929	K	L	9	0	9	  1	 98	L	L	i
+3930	L	L	9	0	9	  1	 98	L	L	i
+3931	C	L	9	0	9	  1	 98	L	L	i
+3932	E	L	9	0	9	  1	 98	L	L	i
+3933	E	L	9	0	9	  1	 98	L	L	i
+3934	M	L	9	0	9	  1	 98	L	L	i
+3935	L	L	9	0	9	  1	 98	L	L	i
+3936	D	L	9	0	9	  1	 98	L	L	i
+3937	N	L	9	0	9	  1	 98	L	L	i
+3938	R	L	9	0	9	  1	 98	L	L	i
+3939	A	L	9	0	9	  1	 98	L	L	i
+3940	T	L	9	0	9	  1	 98	L	L	i
+3941	L	L	9	0	9	  1	 98	L	L	i
+3942	Q	L	9	0	9	  1	 98	L	L	i
+3943	A	L	9	0	9	  1	 98	L	L	i
+3944	I	L	9	0	9	  1	 98	L	L	i
+3945	A	L	9	0	9	  1	 98	L	L	i
+3946	S	L	9	0	9	  1	 98	L	L	i
+3947	E	L	9	0	9	  1	 98	L	L	i
+3948	F	L	9	0	9	  1	 98	L	L	i
+3949	S	L	9	0	9	  1	 98	L	L	i
+3950	S	L	9	0	9	  1	 98	L	L	i
+3951	L	L	9	0	9	  1	 98	L	L	i
+3952	P	L	9	0	9	  1	 98	L	L	i
+3953	S	L	9	0	9	  1	 98	L	L	i
+3954	Y	L	9	0	9	  1	 98	L	L	i
+3955	A	L	9	0	9	  1	 98	L	L	i
+3956	A	L	9	0	9	  1	 98	L	L	i
+3957	F	L	9	0	9	  1	 98	L	L	i
+3958	A	L	9	0	9	  1	 98	L	L	i
+3959	T	L	9	0	9	  1	 98	L	L	i
+3960	A	L	9	0	9	  1	 98	L	L	i
+3961	Q	L	9	0	9	  1	 98	L	L	i
+3962	E	L	9	0	9	  1	 98	L	L	i
+3963	A	L	9	0	9	  1	 98	L	L	i
+3964	Y	L	9	0	9	  1	 98	L	L	i
+3965	E	L	9	0	9	  1	 98	L	L	i
+3966	Q	L	9	0	9	  1	 98	L	L	i
+3967	A	L	9	0	9	  1	 98	L	L	i
+3968	V	L	9	0	9	  1	 98	L	L	i
+3969	A	L	9	0	9	  1	 98	L	L	i
+3970	N	L	9	0	9	  1	 98	L	L	i
+3971	G	L	9	0	9	  1	 98	L	L	i
+3972	D	L	9	0	9	  1	 98	L	L	i
+3973	S	L	9	0	9	  1	 98	L	L	i
+3974	E	L	9	0	9	  1	 98	L	L	i
+3975	V	L	9	0	9	  1	 98	L	L	i
+3976	V	L	9	0	9	  1	 98	L	L	i
+3977	L	L	9	0	9	  1	 98	L	L	i
+3978	K	L	9	0	9	  1	 98	L	L	i
+3979	K	L	9	0	9	  1	 98	L	L	i
+3980	L	L	9	0	9	  1	 98	L	L	i
+3981	K	L	9	0	9	  1	 98	L	L	i
+3982	K	L	9	0	9	  1	 98	L	L	i
+3983	S	L	9	0	9	  1	 98	L	L	i
+3984	L	L	9	0	9	  1	 98	L	L	i
+3985	N	L	9	0	9	  1	 98	L	L	i
+3986	V	L	9	0	9	  1	 98	L	L	i
+3987	A	L	9	0	9	  1	 98	L	L	i
+3988	K	L	9	0	9	  1	 98	L	L	i
+3989	S	L	9	0	9	  1	 98	L	L	i
+3990	E	L	9	0	9	  1	 98	L	L	i
+3991	F	L	9	0	9	  1	 98	L	L	i
+3992	D	L	9	0	9	  1	 98	L	L	i
+3993	R	L	9	0	9	  1	 98	L	L	i
+3994	D	L	9	0	9	  1	 98	L	L	i
+3995	A	L	9	0	9	  1	 98	L	L	i
+3996	A	L	9	0	9	  1	 98	L	L	i
+3997	M	L	9	0	9	  1	 98	L	L	i
+3998	Q	L	9	0	9	  1	 98	L	L	i
+3999	R	L	9	0	9	  1	 98	L	L	i
+4000	K	L	9	0	9	  1	 98	L	L	i
+4001	L	L	9	0	9	  1	 98	L	L	i
+4002	E	L	9	0	9	  1	 98	L	L	i
+4003	K	L	9	0	9	  1	 98	L	L	i
+4004	M	L	9	0	9	  1	 98	L	L	i
+4005	A	L	9	0	9	  1	 98	L	L	i
+4006	D	L	9	0	9	  1	 98	L	L	i
+4007	Q	L	9	0	9	  1	 98	L	L	i
+4008	A	L	9	0	9	  1	 98	L	L	i
+4009	M	L	9	0	9	  1	 98	L	L	i
+4010	T	L	9	0	9	  1	 98	L	L	i
+4011	Q	L	9	0	9	  1	 98	L	L	i
+4012	M	L	9	0	9	  1	 98	L	L	i
+4013	Y	L	9	0	9	  1	 98	L	L	i
+4014	K	L	9	0	9	  1	 98	L	L	i
+4015	Q	L	9	0	9	  1	 98	L	L	i
+4016	A	L	9	0	9	  1	 98	L	L	i
+4017	R	L	9	0	9	  1	 98	L	L	i
+4018	S	L	9	0	9	  1	 98	L	L	i
+4019	E	L	9	0	9	  1	 98	L	L	i
+4020	D	L	9	0	9	  1	 98	L	L	i
+4021	K	L	9	0	9	  1	 98	L	L	i
+4022	R	L	9	0	9	  1	 98	L	L	i
+4023	A	L	9	0	9	  1	 98	L	L	i
+4024	K	L	9	0	9	  1	 98	L	L	i
+4025	V	L	9	0	9	  1	 98	L	L	i
+4026	T	L	9	0	9	  1	 98	L	L	i
+4027	S	L	9	0	9	  1	 98	L	L	i
+4028	A	L	9	0	9	  2	 97	L	L	i
+4029	M	L	9	0	9	  3	 96	L	L	i
+4030	Q	L	9	0	9	  4	 95	L	L	i
+4031	T	L	8	0	9	  5	 94	L	L	i
+4032	M	L	8	0	9	  6	 93	L	L	i
+4033	L	L	8	0	9	  5	 94	L	L	i
+4034	F	L	9	0	9	  4	 95	L	L	i
+4035	T	L	9	0	9	  3	 96	L	L	i
+4036	M	L	9	0	9	  2	 97	L	L	i
+4037	L	L	9	0	9	  1	 98	L	L	i
+4038	R	L	9	0	9	  1	 98	L	L	i
+4039	K	L	9	0	9	  1	 98	L	L	i
+4040	L	L	9	0	9	  1	 98	L	L	i
+4041	D	L	9	0	9	  1	 98	L	L	i
+4042	N	L	9	0	9	  1	 98	L	L	i
+4043	D	L	9	0	9	  1	 98	L	L	i
+4044	A	L	9	0	9	  1	 98	L	L	i
+4045	L	L	9	0	9	  1	 98	L	L	i
+4046	N	L	9	0	9	  1	 98	L	L	i
+4047	N	L	9	0	9	  1	 98	L	L	i
+4048	I	L	9	0	9	  1	 98	L	L	i
+4049	I	L	9	0	9	  1	 98	L	L	i
+4050	N	L	9	0	9	  1	 98	L	L	i
+4051	N	L	9	0	9	  1	 98	L	L	i
+4052	A	L	9	0	9	  1	 98	L	L	i
+4053	R	L	9	0	9	  1	 98	L	L	i
+4054	D	L	9	0	9	  2	 97	L	L	i
+4055	G	L	9	0	9	  3	 96	L	L	i
+4056	C	L	8	0	9	  5	 94	L	L	i
+4057	V	L	8	0	9	  6	 93	L	L	i
+4058	P	L	8	0	9	  7	 92	L	L	i
+4059	L	L	7	1	8	 11	 88	L	L	i
+4060	N	L	6	1	8	 19	 80	L	L	i
+4061	I	L	3	3	6	 31	 68	L	L	i
+4062	I	L	1	4	5	 40	 59	L	L	i
+4063	P	L	1	4	5	 43	 56	L	L	i
+4064	L	L	0	4	5	 48	 51	L	L	i
+4065	T	H	0	5	4	 50	 49	L	L	i
+4066	T	L	0	4	5	 47	 51	L	L	i
+4067	A	L	1	4	5	 40	 59	L	L	i
+4068	A	L	5	2	7	 23	 76	L	L	i
+4069	K	L	6	1	8	 16	 83	L	L	i
+4070	L	L	6	1	8	 17	 82	L	L	i
+4071	M	L	6	1	8	 17	 82	L	L	i
+4072	V	L	7	1	8	 13	 86	L	L	i
+4073	V	L	8	0	9	  9	 90	L	L	i
+4074	I	L	8	0	9	  7	 92	L	L	i
+4075	P	L	9	0	9	  3	 96	L	L	i
+4076	D	L	9	0	9	  2	 97	L	L	i
+4077	Y	L	9	0	9	  1	 98	L	L	i
+4078	N	L	9	0	9	  1	 98	L	L	i
+4079	T	L	9	0	9	  1	 98	L	L	i
+4080	Y	L	9	0	9	  1	 98	L	L	i
+4081	K	L	9	0	9	  1	 98	L	L	i
+4082	N	L	9	0	9	  1	 98	L	L	i
+4083	T	L	9	0	9	  1	 98	L	L	i
+4084	C	L	9	0	9	  1	 98	L	L	i
+4085	D	L	9	0	9	  1	 98	L	L	i
+4086	G	L	9	0	9	  1	 98	L	L	i
+4087	T	L	9	0	9	  1	 98	L	L	i
+4088	T	L	9	0	9	  2	 97	L	L	i
+4089	F	L	9	0	9	  2	 97	L	L	i
+4090	T	L	9	0	9	  3	 96	L	L	i
+4091	Y	L	9	0	9	  4	 95	L	L	i
+4092	A	L	8	0	9	  6	 93	L	L	i
+4093	S	L	8	0	9	  7	 92	L	L	i
+4094	A	L	8	0	9	  6	 93	L	L	i
+4095	L	L	9	0	9	  3	 96	L	L	i
+4096	W	L	9	0	9	  2	 97	L	L	i
+4097	E	L	9	0	9	  1	 98	L	L	i
+4098	I	L	9	0	9	  1	 98	L	L	i
+4099	Q	L	9	0	9	  1	 98	L	L	i
+4100	Q	L	9	0	9	  1	 98	L	L	i
+4101	V	L	9	0	9	  1	 98	L	L	i
+4102	V	L	9	0	9	  1	 98	L	L	i
+4103	D	L	9	0	9	  1	 98	L	L	i
+4104	A	L	9	0	9	  1	 98	L	L	i
+4105	D	L	9	0	9	  1	 98	L	L	i
+4106	S	L	9	0	9	  1	 98	L	L	i
+4107	K	L	9	0	9	  1	 98	L	L	i
+4108	I	L	9	0	9	  1	 98	L	L	i
+4109	V	L	9	0	9	  1	 98	L	L	i
+4110	Q	L	9	0	9	  1	 98	L	L	i
+4111	L	L	9	0	9	  1	 98	L	L	i
+4112	S	L	9	0	9	  1	 98	L	L	i
+4113	E	L	9	0	9	  1	 98	L	L	i
+4114	I	L	9	0	9	  1	 98	L	L	i
+4115	S	L	9	0	9	  1	 98	L	L	i
+4116	M	L	9	0	9	  1	 98	L	L	i
+4117	D	L	9	0	9	  1	 98	L	L	i
+4118	N	L	9	0	9	  1	 98	L	L	i
+4119	S	L	9	0	9	  1	 98	L	L	i
+4120	P	L	9	0	9	  1	 98	L	L	i
+4121	N	L	9	0	9	  1	 98	L	L	i
+4122	L	L	9	0	9	  1	 98	L	L	i
+4123	A	L	9	0	9	  1	 98	L	L	i
+4124	W	L	9	0	9	  1	 98	L	L	i
+4125	P	L	9	0	9	  1	 98	L	L	i
+4126	L	L	9	0	9	  1	 98	L	L	i
+4127	I	L	9	0	9	  1	 98	L	L	i
+4128	V	L	9	0	9	  1	 98	L	L	i
+4129	T	L	9	0	9	  1	 98	L	L	i
+4130	A	L	9	0	9	  1	 98	L	L	i
+4131	L	L	9	0	9	  1	 98	L	L	i
+4132	R	L	9	0	9	  1	 98	L	L	i
+4133	A	L	9	0	9	  1	 98	L	L	i
+4134	N	L	9	0	9	  1	 98	L	L	i
+4135	S	L	9	0	9	  1	 98	L	L	i
+4136	A	L	9	0	9	  1	 98	L	L	i
+4137	V	L	9	0	9	  1	 98	L	L	i
+4138	K	L	9	0	9	  1	 98	L	L	i
+4139	L	L	9	0	9	  1	 98	L	L	i
+4140	Q	L	9	0	9	  1	 98	L	L	i
+4141	N	L	9	0	9	  1	 98	L	L	i
+4142	N	L	9	0	9	  1	 98	L	L	i
+4143	E	L	9	0	9	  1	 98	L	L	i
+4144	L	L	9	0	9	  1	 98	L	L	i
+4145	S	L	9	0	9	  1	 98	L	L	i
+4146	P	L	9	0	9	  1	 98	L	L	i
+4147	V	L	9	0	9	  1	 98	L	L	i
+4148	A	L	9	0	9	  1	 98	L	L	i
+4149	L	L	9	0	9	  1	 98	L	L	i
+4150	R	L	9	0	9	  1	 98	L	L	i
+4151	Q	L	9	0	9	  1	 98	L	L	i
+4152	M	L	9	0	9	  1	 98	L	L	i
+4153	S	L	9	0	9	  1	 98	L	L	i
+4154	C	L	9	0	9	  1	 98	L	L	i
+4155	A	L	9	0	9	  1	 98	L	L	i
+4156	A	L	9	0	9	  1	 98	L	L	i
+4157	G	L	9	0	9	  1	 98	L	L	i
+4158	T	L	9	0	9	  1	 98	L	L	i
+4159	T	L	9	0	9	  1	 98	L	L	i
+4160	Q	L	9	0	9	  1	 98	L	L	i
+4161	T	L	9	0	9	  1	 98	L	L	i
+4162	A	L	9	0	9	  1	 98	L	L	i
+4163	C	L	9	0	9	  1	 98	L	L	i
+4164	T	L	9	0	9	  1	 98	L	L	i
+4165	D	L	9	0	9	  1	 98	L	L	i
+4166	D	L	9	0	9	  1	 98	L	L	i
+4167	N	L	9	0	9	  1	 98	L	L	i
+4168	A	L	9	0	9	  1	 98	L	L	i
+4169	L	L	9	0	9	  1	 98	L	L	i
+4170	A	L	9	0	9	  1	 98	L	L	i
+4171	Y	L	9	0	9	  1	 98	L	L	i
+4172	Y	L	9	0	9	  1	 98	L	L	i
+4173	N	L	9	0	9	  1	 98	L	L	i
+4174	T	L	9	0	9	  1	 98	L	L	i
+4175	T	L	9	0	9	  1	 98	L	L	i
+4176	K	L	9	0	9	  1	 98	L	L	i
+4177	G	L	9	0	9	  1	 98	L	L	i
+4178	G	L	9	0	9	  1	 98	L	L	i
+4179	R	L	9	0	9	  1	 98	L	L	i
+4180	F	L	9	0	9	  1	 98	L	L	i
+4181	V	L	9	0	9	  1	 98	L	L	i
+4182	L	L	9	0	9	  1	 98	L	L	i
+4183	A	L	9	0	9	  1	 98	L	L	i
+4184	L	L	9	0	9	  1	 98	L	L	i
+4185	L	L	9	0	9	  1	 98	L	L	i
+4186	S	L	9	0	9	  1	 98	L	L	i
+4187	D	L	9	0	9	  1	 98	L	L	i
+4188	L	L	9	0	9	  1	 98	L	L	i
+4189	Q	L	9	0	9	  1	 98	L	L	i
+4190	D	L	9	0	9	  1	 98	L	L	i
+4191	L	L	9	0	9	  1	 98	L	L	i
+4192	K	L	9	0	9	  1	 98	L	L	i
+4193	W	L	9	0	9	  1	 98	L	L	i
+4194	A	L	9	0	9	  1	 98	L	L	i
+4195	R	L	9	0	9	  1	 98	L	L	i
+4196	F	L	9	0	9	  1	 98	L	L	i
+4197	P	L	9	0	9	  1	 98	L	L	i
+4198	K	L	9	0	9	  1	 98	L	L	i
+4199	S	L	9	0	9	  1	 98	L	L	i
+4200	D	L	9	0	9	  1	 98	L	L	i
+4201	G	L	9	0	9	  1	 98	L	L	i
+4202	T	L	9	0	9	  1	 98	L	L	i
+4203	G	L	9	0	9	  1	 98	L	L	i
+4204	T	L	9	0	9	  1	 98	L	L	i
+4205	I	L	9	0	9	  1	 98	L	L	i
+4206	Y	L	9	0	9	  1	 98	L	L	i
+4207	T	L	9	0	9	  1	 98	L	L	i
+4208	E	L	9	0	9	  1	 98	L	L	i
+4209	L	L	9	0	9	  1	 98	L	L	i
+4210	E	L	9	0	9	  1	 98	L	L	i
+4211	P	L	9	0	9	  1	 98	L	L	i
+4212	P	L	9	0	9	  1	 98	L	L	i
+4213	C	L	9	0	9	  1	 98	L	L	i
+4214	R	L	9	0	9	  1	 98	L	L	i
+4215	F	L	9	0	9	  1	 98	L	L	i
+4216	V	L	9	0	9	  1	 98	L	L	i
+4217	T	L	9	0	9	  1	 98	L	L	i
+4218	D	L	9	0	9	  1	 98	L	L	i
+4219	T	L	9	0	9	  1	 98	L	L	i
+4220	P	L	9	0	9	  1	 98	L	L	i
+4221	K	L	9	0	9	  1	 98	L	L	i
+4222	G	L	9	0	9	  1	 98	L	L	i
+4223	P	L	9	0	9	  1	 98	L	L	i
+4224	K	L	9	0	9	  1	 98	L	L	i
+4225	V	L	9	0	9	  2	 97	L	L	i
+4226	K	L	9	0	9	  2	 97	L	L	i
+4227	Y	L	9	0	9	  2	 97	L	L	i
+4228	L	L	9	0	9	  2	 97	L	L	i
+4229	Y	L	9	0	9	  3	 96	L	L	i
+4230	F	L	9	0	9	  2	 97	L	L	i
+4231	I	L	9	0	9	  2	 97	L	L	i
+4232	K	L	9	0	9	  1	 98	L	L	i
+4233	G	L	9	0	9	  1	 98	L	L	i
+4234	L	L	9	0	9	  1	 98	L	L	i
+4235	N	L	9	0	9	  1	 98	L	L	i
+4236	N	L	9	0	9	  2	 97	L	L	i
+4237	L	L	9	0	9	  2	 97	L	L	i
+4238	N	L	9	0	9	  1	 98	L	L	i
+4239	R	L	9	0	9	  1	 98	L	L	i
+4240	G	L	9	0	9	  2	 97	L	L	i
+4241	M	L	9	0	9	  3	 95	L	L	i
+4242	V	L	8	0	9	  6	 93	L	L	i
+4243	L	L	8	0	9	  8	 91	L	L	i
+4244	G	L	8	0	9	  9	 90	L	L	i
+4245	S	L	7	1	8	 10	 89	L	L	i
+4246	L	L	8	0	9	  9	 90	L	L	i
+4247	A	L	8	0	9	  5	 94	L	L	i
+4248	A	L	9	0	9	  3	 96	L	L	i
+4249	T	L	9	0	9	  2	 97	L	L	i
+4250	V	L	9	0	9	  2	 97	L	L	i
+4251	R	L	9	0	9	  1	 98	L	L	i
+4252	L	L	9	0	9	  1	 98	L	L	i
+4253	Q	L	9	0	9	  1	 98	L	L	i
+4254	A	L	9	0	9	  1	 98	L	L	i
+4255	G	L	9	0	9	  1	 98	L	L	i
+4256	N	L	9	0	9	  1	 98	L	L	i
+4257	A	L	9	0	9	  1	 98	L	L	i
+4258	T	L	9	0	9	  1	 98	L	L	i
+4259	E	L	9	0	9	  1	 98	L	L	i
+4260	V	L	9	0	9	  1	 98	L	L	i
+4261	P	L	9	0	9	  1	 98	L	L	i
+4262	A	L	9	0	9	  1	 98	L	L	i
+4263	N	L	9	0	9	  1	 98	L	L	i
+4264	S	L	9	0	9	  2	 97	L	L	i
+4265	T	L	9	0	9	  2	 97	L	L	i
+4266	V	L	9	0	9	  3	 96	L	L	i
+4267	L	L	9	0	9	  3	 96	L	L	i
+4268	S	L	9	0	9	  3	 96	L	L	i
+4269	F	L	9	0	9	  4	 95	L	L	i
+4270	C	L	9	0	9	  4	 95	L	L	i
+4271	A	L	9	0	9	  4	 95	L	L	i
+4272	F	L	9	0	9	  3	 96	L	L	i
+4273	A	L	9	0	9	  2	 97	L	L	i
+4274	V	L	9	0	9	  2	 97	L	L	i
+4275	D	L	9	0	9	  1	 98	L	L	i
+4276	A	L	9	0	9	  1	 98	L	L	i
+4277	A	L	9	0	9	  1	 98	L	L	i
+4278	K	L	9	0	9	  1	 98	L	L	i
+4279	A	L	9	0	9	  1	 98	L	L	i
+4280	Y	L	9	0	9	  1	 98	L	L	i
+4281	K	L	9	0	9	  1	 98	L	L	i
+4282	D	L	9	0	9	  1	 98	L	L	i
+4283	Y	L	9	0	9	  1	 98	L	L	i
+4284	L	L	9	0	9	  1	 98	L	L	i
+4285	A	L	9	0	9	  1	 98	L	L	i
+4286	S	L	9	0	9	  1	 98	L	L	i
+4287	G	L	9	0	9	  1	 98	L	L	i
+4288	G	L	9	0	9	  1	 98	L	L	i
+4289	Q	L	9	0	9	  1	 98	L	L	i
+4290	P	L	9	0	9	  1	 98	L	L	i
+4291	I	L	9	0	9	  1	 98	L	L	i
+4292	T	L	9	0	9	  1	 98	L	L	i
+4293	N	L	9	0	9	  1	 98	L	L	i
+4294	C	L	9	0	9	  1	 98	L	L	i
+4295	V	L	9	0	9	  1	 98	L	L	i
+4296	K	L	9	0	9	  1	 98	L	L	i
+4297	M	L	9	0	9	  1	 98	L	L	i
+4298	L	L	9	0	9	  1	 98	L	L	i
+4299	C	L	9	0	9	  1	 98	L	L	i
+4300	T	L	9	0	9	  1	 98	L	L	i
+4301	H	L	9	0	9	  1	 98	L	L	i
+4302	T	L	9	0	9	  1	 98	L	L	i
+4303	G	L	9	0	9	  1	 98	L	L	i
+4304	T	L	9	0	9	  1	 98	L	L	i
+4305	G	L	9	0	9	  1	 98	L	L	i
+4306	Q	L	9	0	9	  1	 98	L	L	i
+4307	A	L	9	0	9	  1	 98	L	L	i
+4308	I	L	9	0	9	  1	 98	L	L	i
+4309	T	L	9	0	9	  1	 98	L	L	i
+4310	V	L	9	0	9	  1	 98	L	L	i
+4311	T	L	9	0	9	  1	 98	L	L	i
+4312	P	L	9	0	9	  1	 98	L	L	i
+4313	E	L	9	0	9	  1	 98	L	L	i
+4314	A	L	9	0	9	  1	 98	L	L	i
+4315	N	L	9	0	9	  1	 98	L	L	i
+4316	M	L	9	0	9	  1	 98	L	L	i
+4317	D	L	9	0	9	  1	 98	L	L	i
+4318	Q	L	9	0	9	  1	 98	L	L	i
+4319	E	L	9	0	9	  1	 98	L	L	i
+4320	S	L	9	0	9	  1	 98	L	L	i
+4321	F	L	9	0	9	  1	 98	L	L	i
+4322	G	L	9	0	9	  1	 98	L	L	i
+4323	G	L	9	0	9	  1	 98	L	L	i
+4324	A	L	9	0	9	  1	 98	L	L	i
+4325	S	L	9	0	9	  1	 98	L	L	i
+4326	C	L	9	0	9	  1	 98	L	L	i
+4327	C	L	9	0	9	  1	 98	L	L	i
+4328	L	L	9	0	9	  1	 98	L	L	i
+4329	Y	L	9	0	9	  1	 98	L	L	i
+4330	C	L	9	0	9	  1	 98	L	L	i
+4331	R	L	9	0	9	  1	 98	L	L	i
+4332	C	L	9	0	9	  1	 98	L	L	i
+4333	H	L	9	0	9	  1	 98	L	L	i
+4334	I	L	9	0	9	  1	 98	L	L	i
+4335	D	L	9	0	9	  1	 98	L	L	i
+4336	H	L	9	0	9	  1	 98	L	L	i
+4337	P	L	9	0	9	  1	 98	L	L	i
+4338	N	L	9	0	9	  1	 98	L	L	i
+4339	P	L	9	0	9	  1	 98	L	L	i
+4340	K	L	9	0	9	  1	 98	L	L	i
+4341	G	L	9	0	9	  1	 98	L	L	i
+4342	F	L	9	0	9	  1	 98	L	L	i
+4343	C	L	9	0	9	  1	 98	L	L	i
+4344	D	L	9	0	9	  1	 98	L	L	i
+4345	L	L	9	0	9	  1	 98	L	L	i
+4346	K	L	9	0	9	  1	 98	L	L	i
+4347	G	L	9	0	9	  1	 98	L	L	i
+4348	K	L	9	0	9	  1	 98	L	L	i
+4349	Y	L	9	0	9	  1	 98	L	L	i
+4350	V	L	9	0	9	  1	 98	L	L	i
+4351	Q	L	9	0	9	  1	 98	L	L	i
+4352	I	L	9	0	9	  1	 98	L	L	i
+4353	P	L	9	0	9	  1	 98	L	L	i
+4354	T	L	9	0	9	  1	 98	L	L	i
+4355	T	L	9	0	9	  1	 98	L	L	i
+4356	C	L	9	0	9	  1	 98	L	L	i
+4357	A	L	9	0	9	  1	 98	L	L	i
+4358	N	L	9	0	9	  1	 98	L	L	i
+4359	D	L	9	0	9	  1	 98	L	L	i
+4360	P	L	9	0	9	  1	 98	L	L	i
+4361	V	L	9	0	9	  1	 98	L	L	i
+4362	G	L	9	0	9	  1	 98	L	L	i
+4363	F	L	9	0	9	  1	 98	L	L	i
+4364	T	L	9	0	9	  1	 98	L	L	i
+4365	L	L	9	0	9	  1	 98	L	L	i
+4366	K	L	9	0	9	  1	 98	L	L	i
+4367	N	L	9	0	9	  1	 98	L	L	i
+4368	T	L	9	0	9	  1	 98	L	L	i
+4369	V	L	9	0	9	  1	 98	L	L	i
+4370	C	L	9	0	9	  1	 98	L	L	i
+4371	T	L	9	0	9	  2	 97	L	L	i
+4372	V	L	9	0	9	  3	 96	L	L	i
+4373	C	L	9	0	9	  3	 96	L	L	i
+4374	G	L	9	0	9	  3	 96	L	L	i
+4375	M	L	9	0	9	  2	 97	L	L	i
+4376	W	L	9	0	9	  2	 97	L	L	i
+4377	K	L	9	0	9	  2	 97	L	L	i
+4378	G	L	9	0	9	  1	 98	L	L	i
+4379	Y	L	9	0	9	  1	 98	L	L	i
+4380	G	L	9	0	9	  1	 98	L	L	i
+4381	C	L	9	0	9	  1	 98	L	L	i
+4382	S	L	9	0	9	  1	 98	L	L	i
+4383	C	L	9	0	9	  1	 98	L	L	i
+4384	D	L	9	0	9	  1	 98	L	L	i
+4385	Q	L	9	0	9	  1	 98	L	L	i
+4386	L	L	9	0	9	  1	 98	L	L	i
+4387	R	L	9	0	9	  1	 98	L	L	i
+4388	E	L	9	0	9	  1	 98	L	L	i
+4389	P	L	9	0	9	  1	 98	L	L	i
+4390	M	L	9	0	9	  1	 98	L	L	i
+4391	L	L	9	0	9	  1	 98	L	L	i
+4392	Q	L	9	0	9	  1	 98	L	L	i
+4393	S	L	9	0	9	  1	 98	L	L	i
+4394	A	L	9	0	9	  1	 98	L	L	i
+4395	D	L	9	0	9	  1	 98	L	L	i
+4396	A	L	9	0	9	  1	 98	L	L	i
+4397	Q	L	9	0	9	  1	 98	L	L	i
+4398	S	L	9	0	9	  1	 98	L	L	i
+4399	F	L	9	0	9	  1	 98	L	L	i
+4400	L	L	9	0	9	  1	 98	L	L	i
+4401	N	L	9	0	9	  1	 98	L	L	i
+4402	G	L	9	0	9	  1	 98	L	L	i
+4403	F	L	9	0	9	  1	 98	L	L	i
+4404	A	L	9	0	9	  1	 98	L	L	i
+4405	V	L	9	0	9	  2	 97	L	L	i

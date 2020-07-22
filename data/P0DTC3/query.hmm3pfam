@@ -1,0 +1,53 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             query.fasta
+# target HMM database:             /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# output directed to file:         query.hmm3pfam
+# per-seq hits tabular output:     query.hmm3pfamTbl
+# per-dom hits tabular output:     query.hmm3pfamDomTbl
+# prefer accessions over names:    yes
+# max ASCII text line length:      unlimited
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query  [L=275]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+   1.3e-142  474.2   5.9   1.5e-142  474.0   5.9    1.0  1  PF11289.8  Coronavirus accessory protein 3a
+
+
+Domain annotation for each model (and alignments):
+>> PF11289.8  Coronavirus accessory protein 3a
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  474.0   5.9  8.3e-147  1.5e-142       1     273 []       1     274 [.       1     274 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 474.0 bits;  conditional E-value: 8.3e-147
+  PF11289.8   1 mdlfmrfftlgsitaqpvkidnaspastvhatatiplqaslpfgwlvigvaflavfqsatkiialnkrwqlalykgfqficnllllfvtiyshlllvaagmeaqflylyaliyflqcinacriimrcwlcwkcksknpllydanyfvcwhthnydycipynsvtdtivvtegdgistpklkedyqiggysedrhsgvkdyvvvhgyftevyyqlestqittdtgienatffifnklvkdpp.nvqihtidgssgvanpamdpiydepttttsvp 273
+                mdlfmr+ft+g++t +  +i +a+p+  v+atatip+qaslpfgwl++gva+lavfqsa+kii+l+krwqlal kg++f+cnllllfvt+yshlllvaag+ea flylyal+yflq in +riimr wlcwkc+sknpllydanyf+cwht  ydycipynsvt +iv+t gdg ++p  + dyqiggy+e   sgvkd vv+h yft  yyql stq++tdtg+e  tffi+nk+v +p   vqihtidgssgv np m+piydepttttsvp
+      query   1 MDLFMRIFTIGTVTLKQGEIKDATPSDFVRATATIPIQASLPFGWLIVGVALLAVFQSASKIITLKKRWQLALSKGVHFVCNLLLLFVTVYSHLLLVAAGLEAPFLYLYALVYFLQSINFVRIIMRLWLCWKCRSKNPLLYDANYFLCWHTNCYDYCIPYNSVTSSIVITSGDGTTSPISEHDYQIGGYTEKWESGVKDCVVLHSYFTSDYYQLYSTQLSTDTGVEHVTFFIYNKIVDEPEeHVQIHTIDGSSGVVNPVMEPIYDEPTTTTSVP 274
+                9**********************************************************************************************************************************************************************************************************************************************9736******************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (275 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                       579  (0.032294); expected 358.6 (0.02)
+Passed bias filter:                      286  (0.0159518); expected 358.6 (0.02)
+Passed Vit filter:                        29  (0.00161749); expected 17.9 (0.001)
+Passed Fwd filter:                         1  (5.57756e-05); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.94u 0.76s 00:00:01.70 Elapsed: 00:00:09.38
+# Mc/sec: 89.07
+//
+[ok]

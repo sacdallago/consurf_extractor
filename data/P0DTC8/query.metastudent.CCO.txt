@@ -1,0 +1,15 @@
+query	GO:0018995	0.40	host
+query	GO:0033648	0.40	host intracellular membrane-bounded organelle
+query	GO:0044217	0.40	other organism part
+query	GO:0044216	0.40	other organism cell
+query	GO:0044215	0.40	other organism
+query	GO:0033643	0.40	host cell part
+query	GO:0043656	0.40	intracellular region of host
+query	GO:0043657	0.40	host cell
+query	GO:0033647	0.40	host intracellular organelle
+query	GO:0005576	0.40	extracellular region
+query	GO:0030430	0.40	host cell cytoplasm
+query	GO:0042025	0.40	host cell nucleus
+query	GO:0043245	0.40	extraorganismal space
+query	GO:0033646	0.40	host intracellular part
+query	GO:0044421	0.40	extracellular region part

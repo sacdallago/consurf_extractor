@@ -1,0 +1,54 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             query.fasta
+# target HMM database:             /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# output directed to file:         query.hmm3pfam
+# per-seq hits tabular output:     query.hmm3pfamTbl
+# per-dom hits tabular output:     query.hmm3pfamDomTbl
+# prefer accessions over names:    yes
+# max ASCII text line length:      unlimited
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query  [L=419]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model      Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     1e-164  547.9  12.3   1.2e-164  547.6  12.3    1.0  1  PF00937.18  Coronavirus nucleocapsid protein
+
+
+Domain annotation for each model (and alignments):
+>> PF00937.18  Coronavirus nucleocapsid protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  547.6  12.3  6.9e-169  1.2e-164       1     364 []      14     377 ..      14     377 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 547.6 bits;  conditional E-value: 6.9e-169
+                 XXXXXXXXXXXXXXXXXXXXX.XXXX.XXXXSXSSXBXX-SB-EEEE-STTS-----TT--S---TTS-GGG-EEEEEEE-SEEE-TTT-EEE---EEEEEETTSSTTTTS-TT---TTEEEEE-TTSBTTS-TTTS-B-TTT---B-----TT---STTEEETT-.SXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX......XXXXXXX...XXXSXCGCGSSXXXXSXGGGXXXBTTSXHHHHHXXBSSST...SBXXHHHHHHGGGSTTHHHHHTTSXXHHHHHHHSEEEEEEETTEXXXXXXXEEEEEEEEEEEXTTSTTHHHHHHHHHHHBTGGGGSXTTXXXXXXXXXXX CS
+  PF00937.18   1 kitfgdrtesgdnnqnrGrsnarpkq.rattlpnndavlsffsaitqeqgkkelrlaegqgvPiaiginkdeqiGyyrrairrvrivdGqrkeLaprWyfyyLGtGPhadakygdkieGvfWvaregalnkpksdigtrdpsnneakplrladGtvlPqgfyvegs.grsraasrsgsrsrsrsrnrarsssrgrspastakndveeeiaalvLekLgk......dkgqqkq...vtkksakearkkidskPrqkrtatkqydvtqafGkrgpeq...nfGdsdlvkqGtaakqyPqiaelaPsvsafffgsklelekkesGdevkkdlteltysgavkldaktpqfkdivkllneqidayktadvvePkedkkdkrq 364
+                 +itfg++ +s+  nqn+ rs+ar+kq r+++lpnn+a  s+f+a+tq +gk+ l++++gqgvPi++++++d+qiGyyrra+rr+r++dG++k+L+prWyfyyLGtGP+a+++yg++++G++Wva+egaln+pk++igtr+p+nn+a++l+l++Gt+lP+gfy+egs g+s+a+srs+srsr  srn++++ssrg spa++a n+++ ++a+l+L++L++      +kgqq+q   vtkksa+ea+k    kPrqkrtatk y+vtqafG+rgpeq   nfGd++l++qGt++k++Pqia++aPs+saff++s++++e+++sG       t+lty+ga+kld+k+p+fkd+v+lln++idaykt++++ePk+dkk+k +
+       query  14 RITFGGPSDSTGSNQNGERSGARSKQrRPQGLPNNTA--SWFTALTQ-HGKEDLKFPRGQGVPINTNSSPDDQIGYYRRATRRIRGGDGKMKDLSPRWYFYYLGTGPEAGLPYGANKDGIIWVATEGALNTPKDHIGTRNPANNAAIVLQLPQGTTLPKGFYAEGSrGGSQASSRSSSRSRNSSRNSTPGSSRGTSPARMAGNGGDAALALLLLDRLNQleskmsGKGQQQQgqtVTKKSAAEASK----KPRQKRTATKAYNVTQAFGRRGPEQtqgNFGDQELIRQGTDYKHWPQIAQFAPSASAFFGMSRIGMEVTPSG-------TWLTYTGAIKLDDKDPNFKDQVILLNKHIDAYKTFPPTEPKKDKKKKAD 377
+                 69************************99*********..********.***************************************************************************************************************************************************************************************999************....************************************************************************.......**********************************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (419 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                      1264  (0.0705003); expected 358.6 (0.02)
+Passed bias filter:                      526  (0.0293379); expected 358.6 (0.02)
+Passed Vit filter:                        35  (0.00195214); expected 17.9 (0.001)
+Passed Fwd filter:                         2  (0.000111551); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.58u 0.59s 00:00:01.17 Elapsed: 00:00:10.14
+# Mc/sec: 125.53
+//
+[ok]

@@ -1,0 +1,312 @@
+# Perl-RDB 
+# PROFboth
+# 
+# Copyright          : Burkhard Rost, CUBIC NYC / LION Heidelberg
+# Email              : rost@columbia.edu
+# WWW                : http://cubic.bioc.columbia.edu
+# Version            : 2000.02
+# 
+# --------------------------------------------------------------------------------
+# About your protein :
+# 
+# VALUE    PROT_ID   : query
+# VALUE    PROT_NCHN : 1
+# VALUE    PROT_NRES : 222
+# VALUE    PROT_NALI : 13
+# VALUE    PROT_NFAR : 12
+# VALUE    PROT_NFAR50-5: 9
+# VALUE    PROT_NFAR40-5: 9
+# VALUE    PROT_NFAR30-5: 9
+# VALUE    PROT_NFAR5-5: 0
+# 
+# --------------------------------------------------------------------------------
+# About the alignment:
+# 
+# VALUE    ALI_ORIG  : query.hsspPsiFil
+# 
+# --------------------------------------------------------------------------------
+# About PROF specifics:
+# 
+# VALUE    PROF_FPAR : acc=/usr/share/profphd/prof/net/PROFboth_best.par
+# VALUE    PROF_NNET : acc=6
+# 
+# --------------------------------------------------------------------------------
+# Notation used      :
+# 
+# ------------------------------------------------------------------------
+# NOTATION HEADER    : PROTEIN
+# NOTATION PROT_ID   : identifier of protein [w]
+# NOTATION PROT_NRES : number of residues [d]
+# NOTATION PROT_NCHN : number of chains (if PDB protein) [d]
+# NOTATION PROT_NALI : number of proteins aligned in family [d]
+# NOTATION PROT_NFAR : number of distant relatives [d]
+# 
+# ------------------------------------------------------------------------
+# NOTATION HEADER    : ALIGNMENT
+# NOTATION HEADER    : ALIGNMENT: input file
+# 
+# ------------------------------------------------------------------------
+# NOTATION HEADER    : INTERNAL
+# NOTATION PROF_FPAR : name of parameter file, used [w]
+# NOTATION PROF_NNET : number of networks used for prediction [d]
+# 
+# 
+# ------------------------------------------------------------------------
+# NOTATION BODY      : PROTEIN
+# NOTATION NO        : counting residues [d]
+# NOTATION AA        : amino acid one letter code [A-Z!a-z]
+# NOTATION CHN       : protein chain [A-Z!a-z]
+# 
+# ------------------------------------------------------------------------
+# NOTATION BODY      : PROF
+# 
+# ------------------------------------------------------------------------
+# NOTATION BODY      : PROFsec
+# NOTATION OHEL      : observed secondary structure: H=helix, E=extended (sheet), blank=other (loop)
+# NOTATION PHEL      : PROF predicted secondary structure: H=helix, E=extended (sheet), blank=other (loop) PROF = PROF: Profile network prediction HeiDelberg
+# NOTATION RI_S      : reliability index for PROFsec prediction (0=lo 9=high) Note: for the brief presentation strong predictions marked by '*'
+# NOTATION pH        : 'probability' for assigning helix (1=high, 0=low)
+# NOTATION pE        : 'probability' for assigning strand (1=high, 0=low)
+# NOTATION pL        : 'probability' for assigning neither helix, nor strand (1=high, 0=low)
+# NOTATION OtH       : actual neural network output from PROFsec for helix unit
+# NOTATION OtE       : actual neural network output from PROFsec for strand unit
+# NOTATION OtL       : actual neural network output from PROFsec for 'no-regular' unit
+# 
+# ------------------------------------------------------------------------
+# NOTATION BODY      : PROFacc
+# NOTATION OACC      : observed solvent accessibility (acc) in square Angstroem (taken from DSSP: W Kabsch and C Sander, Biopolymers, 22, 2577-2637, 1983)
+# NOTATION PACC      : PROF predicted solvent accessibility (acc) in square Angstroem
+# NOTATION OREL      : observed relative solvent accessibility (acc) in 10 states: a value of n (=0-9) corresponds to a relative acc. of between n*n % and (n+1)*(n+1) % (e.g. for n=5: 16-25%).
+# NOTATION PREL      : PROF predicted relative solvent accessibility (acc) in 10 states: a value of n (=0-9) corresponds to a relative acc. of between n*n % and (n+1)*(n+1) % (e.g. for n=5: 16-25%).
+# NOTATION RI_A      : reliability index for PROFacc prediction (0=low to 9=high) Note: for the brief presentation strong predictions marked by '*'
+# NOTATION Obe       : observerd relative solvent accessibility (acc) in 2 states: b = 0-16%, e = 16-100%.
+# NOTATION Pbe       : PROF predicted  relative solvent accessibility (acc) in 2 states: b = 0-16%, e = 16-100%.
+# NOTATION Obie      : observerd relative solvent accessibility (acc) in 3 states: b = 0-9%, i = 9-36%, e = 36-100%.
+# NOTATION Pbie      : PROF predicted relative solvent accessibility (acc) in 3 states: b = 0-9%, i = 9-36%, e = 36-100%.
+# NOTATION Ot4       : actual neural network output from PROFsec for unit 0 coding for a relative solvent accessibility of 4*4 - 5*5 percent (16-25%). Note: OtN, with N=0-9 give the same information for the other output units!
+# 
+# --------------------------------------------------------------------------------
+# 
+No	AA	OHEL	PHEL	RI_S	OACC	PACC	OREL	PREL	RI_A	pH	pE	pL	Obe	Pbe	Obie	Pbie	OtH	OtE	OtL	Ot0	Ot1	Ot2	Ot3	Ot4	Ot5	Ot6	Ot7	Ot8	Ot9
+1	M	L	L	9	0	169	0	90	3	0	0	9	b	e	b	e	0	1	97	9	9	9	11	13	14	15	16	22	25
+2	A	L	L	7	0	95	0	90	2	0	0	8	b	e	b	e	4	10	87	4	5	6	10	13	18	21	23	27	28
+3	D	L	L	8	0	68	0	42	0	0	0	8	b	e	b	e	6	7	87	7	8	9	13	17	21	23	23	23	22
+4	S	L	L	6	0	54	0	42	0	1	0	7	b	e	b	e	13	9	78	8	9	11	15	18	20	22	22	22	21
+5	N	L	L	5	0	141	0	90	2	1	1	7	b	e	b	e	16	12	75	5	6	7	10	13	17	21	24	28	29
+6	G	L	L	6	0	25	0	30	1	1	1	7	b	e	b	i	11	15	77	12	12	14	18	20	22	22	20	18	16
+7	T	L	L	4	0	42	0	30	0	0	2	6	b	e	b	i	8	24	72	12	12	14	17	18	20	20	20	18	17
+8	I	L	L	3	0	20	0	12	2	0	2	6	b	b	b	i	9	27	66	15	17	19	22	21	19	14	10	7	5
+9	T	L	L	5	0	59	0	42	3	1	0	7	b	e	b	e	17	5	76	6	7	9	13	18	23	25	21	13	7
+10	V	L	H	7	0	42	0	30	2	8	0	1	b	e	b	i	85	1	14	10	12	15	20	23	24	21	16	10	7
+11	E	L	H	9	0	108	0	56	6	9	0	0	b	e	b	e	94	0	4	1	2	3	6	9	15	24	32	30	27
+12	E	L	H	9	0	81	0	42	3	9	0	0	b	e	b	e	95	0	3	6	7	12	17	23	26	27	21	13	7
+13	L	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	95	0	3	43	33	15	9	7	5	3	2	1	0
+14	K	L	H	9	0	61	0	30	3	9	0	0	b	e	b	i	95	0	3	9	10	13	19	23	26	25	18	10	3
+15	K	L	H	9	0	114	0	56	6	9	0	0	b	e	b	e	94	0	3	1	1	2	4	9	16	27	32	25	18
+16	L	L	H	8	0	19	0	12	1	9	0	0	b	b	b	i	93	0	5	18	19	21	23	23	19	15	9	5	3
+17	L	L	H	8	0	0	0	0	4	9	0	0	b	b	b	b	91	0	8	34	30	23	18	14	10	7	4	2	1
+18	E	L	H	7	0	108	0	56	4	8	0	1	b	e	b	e	86	1	14	1	2	3	7	13	20	28	29	25	20
+19	Q	L	H	5	0	83	0	42	2	7	0	2	b	e	b	e	79	1	21	8	9	11	15	18	22	24	23	19	15
+20	W	L	H	4	0	0	0	0	0	6	0	2	b	b	b	b	69	1	29	26	26	26	24	20	14	9	5	3	2
+21	N	L	H	4	0	47	0	30	2	6	0	2	b	e	b	i	71	2	30	16	16	16	18	21	23	23	20	15	12
+22	L	L	H	6	0	0	0	0	0	8	0	1	b	b	b	b	82	3	15	23	23	22	22	20	17	14	10	6	4
+23	V	L	H	7	0	0	0	0	5	8	0	1	b	b	b	b	86	4	10	33	27	18	15	13	11	9	7	5	4
+24	I	L	H	8	0	0	0	0	3	9	0	0	b	b	b	b	92	2	6	31	28	21	18	15	12	9	6	3	2
+25	G	L	H	8	0	0	0	0	6	9	0	0	b	b	b	b	92	2	5	34	28	17	14	12	10	7	4	2	1
+26	F	L	H	8	0	0	0	0	8	9	0	0	b	b	b	b	93	2	4	40	32	16	11	8	6	4	2	1	0
+27	L	L	H	8	0	0	0	0	9	9	0	0	b	b	b	b	93	3	4	43	34	18	12	8	5	3	1	0	0
+28	F	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	94	1	4	42	33	18	12	8	5	3	1	0	0
+29	L	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	94	1	4	41	32	17	11	8	5	3	1	0	0
+30	T	L	H	9	0	0	0	0	8	9	0	0	b	b	b	b	94	1	3	40	32	18	12	9	6	3	1	0	0
+31	W	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	95	1	2	43	34	17	11	7	5	2	1	0	0
+32	I	L	H	8	0	0	0	0	7	9	0	0	b	b	b	b	93	3	4	37	30	17	13	10	7	4	2	1	0
+33	C	L	H	8	0	0	0	0	7	8	0	0	b	b	b	b	91	5	6	38	30	17	12	10	7	5	3	1	0
+34	L	L	H	7	0	0	0	0	8	8	0	0	b	b	b	b	87	7	8	40	32	18	12	9	6	4	2	1	1
+35	L	L	H	6	0	0	0	0	9	7	0	1	b	b	b	b	80	10	12	44	35	18	11	7	5	3	2	1	1
+36	Q	L	H	5	0	0	0	0	2	6	1	1	b	b	b	b	72	12	20	28	25	21	19	16	13	10	7	4	3
+37	F	L	H	2	0	0	0	0	1	5	1	3	b	b	b	b	55	15	33	25	24	21	20	18	15	11	7	5	4
+38	A	L	L	1	0	0	0	0	2	3	1	5	b	b	b	b	38	14	52	27	24	19	18	17	15	13	10	8	6
+39	Y	L	L	1	0	4	0	2	0	3	1	4	b	b	b	b	37	19	50	21	22	22	22	21	17	13	10	8	8
+40	A	L	L	0	0	21	0	20	0	4	1	4	b	e	b	i	44	18	45	19	18	17	19	20	20	18	17	16	15
+41	N	L	L	0	0	47	0	30	0	3	2	4	b	e	b	i	39	22	46	11	11	13	16	19	21	21	21	20	20
+42	R	L	L	0	0	74	0	30	0	3	2	3	b	e	b	i	39	26	41	10	11	13	16	19	21	21	20	18	16
+43	N	L	L	1	0	3	0	2	0	2	3	4	b	b	b	b	27	32	47	21	22	22	22	20	18	15	12	9	8
+44	R	L	E	0	0	29	0	12	1	2	3	3	b	b	b	i	30	43	35	17	18	20	23	23	22	18	12	7	4
+45	F	L	E	2	0	0	0	0	3	3	5	1	b	b	b	b	35	58	20	33	30	23	20	16	13	8	5	2	1
+46	L	L	E	0	0	0	0	0	5	4	4	1	b	b	b	b	49	50	13	34	29	20	17	13	10	7	4	2	1
+47	Y	L	H	2	0	0	0	0	3	5	3	0	b	b	b	b	66	37	10	30	27	22	20	18	14	9	6	3	2
+48	I	L	H	5	0	0	0	0	7	7	2	0	b	b	b	b	80	22	7	39	32	19	15	11	8	5	2	1	0
+49	I	L	H	7	0	0	0	0	9	8	1	0	b	b	b	b	85	11	6	46	36	17	10	6	4	2	1	0	0
+50	K	L	H	8	0	41	0	20	2	8	0	0	b	e	b	i	89	5	5	18	18	19	23	25	23	16	9	3	1
+51	L	L	H	8	0	0	0	0	8	9	0	0	b	b	b	b	92	2	4	39	31	16	11	8	5	3	2	1	0
+52	I	L	H	8	0	0	0	0	9	9	0	0	b	b	b	b	92	2	5	46	35	14	8	5	3	1	0	0	0
+53	F	L	H	8	0	0	0	0	9	9	0	0	b	b	b	b	91	3	4	44	34	16	10	7	4	2	1	0	0
+54	L	L	H	8	0	0	0	0	9	9	0	0	b	b	b	b	91	3	5	41	32	16	11	7	5	3	2	1	0
+55	W	L	H	7	0	0	0	0	5	8	0	0	b	b	b	b	87	4	10	35	30	21	16	13	9	5	3	1	0
+56	L	L	H	6	0	0	0	0	7	8	0	1	b	b	b	b	81	3	16	40	33	20	14	9	6	3	1	0	0
+57	L	L	H	5	0	0	0	0	7	7	0	2	b	b	b	b	77	5	21	39	32	20	14	10	7	4	2	1	1
+58	W	L	H	4	0	0	0	0	3	6	0	2	b	b	b	b	68	5	28	32	29	23	19	15	10	6	3	1	0
+59	P	L	H	6	0	0	0	0	4	7	0	1	b	b	b	b	79	4	19	31	27	20	16	13	11	8	6	4	3
+60	V	L	H	7	0	0	0	0	5	8	0	1	b	b	b	b	86	4	10	33	28	19	15	12	9	7	4	2	1
+61	T	L	H	8	0	0	0	0	4	8	0	0	b	b	b	b	89	6	7	31	27	20	17	14	12	9	6	4	3
+62	L	L	H	8	0	0	0	0	6	9	0	0	b	b	b	b	90	4	5	36	30	18	13	10	8	5	3	2	1
+63	A	L	H	8	0	0	0	0	6	9	0	0	b	b	b	b	91	4	5	36	30	17	13	11	8	6	4	2	2
+64	C	L	H	8	0	0	0	0	4	9	0	0	b	b	b	b	92	4	6	31	28	20	17	14	11	8	5	2	1
+65	F	L	H	8	0	0	0	0	5	8	0	0	b	b	b	b	88	6	7	33	28	19	16	13	11	8	5	3	2
+66	V	L	H	7	0	0	0	0	9	8	0	0	b	b	b	b	86	7	9	42	33	17	11	7	5	3	2	1	0
+67	L	L	H	7	0	0	0	0	6	8	0	1	b	b	b	b	84	8	11	36	31	21	16	12	9	6	4	2	1
+68	A	L	H	5	0	0	0	0	4	7	0	1	b	b	b	b	78	7	19	31	26	19	16	14	12	9	7	5	4
+69	A	L	H	4	0	0	0	0	6	6	1	2	b	b	b	b	69	13	21	35	29	19	15	12	10	8	6	5	4
+70	V	L	H	4	0	0	0	0	4	6	2	1	b	b	b	b	63	21	20	32	28	21	18	16	13	10	7	5	4
+71	Y	L	H	1	0	0	0	0	0	4	2	2	b	b	b	b	49	25	31	25	24	23	22	20	16	11	7	5	4
+72	R	L	L	0	0	74	0	30	2	3	1	4	b	e	b	i	40	20	44	14	14	14	17	20	22	22	19	15	13
+73	I	L	L	0	0	33	0	20	1	3	2	4	b	e	b	i	40	22	46	16	16	18	21	22	21	18	15	12	10
+74	N	L	L	0	0	65	0	42	1	3	1	4	b	e	b	e	40	18	49	13	13	14	16	19	21	22	21	17	15
+75	W	L	H	2	0	27	0	12	0	5	1	3	b	b	b	i	54	18	34	21	21	21	22	21	19	16	13	10	9
+76	I	L	H	4	0	0	0	0	2	6	1	2	b	b	b	b	66	13	24	26	24	19	19	18	16	13	10	8	7
+77	T	L	H	5	0	0	0	0	2	7	1	1	b	b	b	b	73	13	16	27	25	19	19	17	16	13	10	7	5
+78	G	L	H	6	0	0	0	0	4	7	0	1	b	b	b	b	76	9	14	31	27	20	17	14	12	8	5	3	2
+79	G	L	H	7	0	0	0	0	5	8	0	1	b	b	b	b	83	7	11	34	29	19	16	13	10	7	4	2	1
+80	I	L	H	7	0	0	0	0	7	8	0	0	b	b	b	b	85	8	8	38	31	18	13	10	7	5	2	1	0
+81	A	L	H	7	0	0	0	0	6	8	0	0	b	b	b	b	87	9	6	35	29	18	15	12	9	6	3	1	1
+82	I	L	H	8	0	0	0	0	9	8	0	0	b	b	b	b	90	7	4	43	33	15	10	7	5	3	2	1	0
+83	A	L	H	8	0	0	0	0	8	9	0	0	b	b	b	b	93	4	3	41	33	17	13	9	6	4	2	1	0
+84	M	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	95	1	3	43	33	15	9	6	4	3	1	0	0
+85	A	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	94	1	3	44	33	13	8	5	4	3	2	1	1
+86	C	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	94	2	3	43	33	14	9	6	4	2	1	0	0
+87	L	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	95	1	3	45	35	16	9	6	4	2	1	0	0
+88	V	L	H	8	0	0	0	0	9	9	0	0	b	b	b	b	93	1	5	41	32	15	11	8	5	3	2	1	0
+89	G	L	H	9	0	0	0	0	9	9	0	0	b	b	b	b	94	1	4	41	32	14	10	7	6	4	2	1	1
+90	L	L	H	9	0	0	0	0	6	9	0	0	b	b	b	b	94	0	4	37	31	19	14	10	7	4	2	1	0
+91	M	L	H	8	0	0	0	0	7	9	0	0	b	b	b	b	92	2	5	38	30	17	12	9	6	4	2	1	0
+92	W	L	H	8	0	0	0	0	7	9	0	0	b	b	b	b	93	1	6	39	33	20	14	10	7	4	2	0	0
+93	L	L	H	8	0	0	0	0	8	9	0	0	b	b	b	b	93	1	5	41	33	18	13	9	6	3	1	0	0
+94	S	L	H	8	0	0	0	0	4	9	0	0	b	b	b	b	93	2	5	31	27	18	15	13	11	8	5	2	1
+95	Y	L	H	8	0	0	0	0	4	9	0	0	b	b	b	b	92	2	6	33	29	22	18	14	9	6	3	1	0
+96	F	L	H	8	0	0	0	0	7	9	0	0	b	b	b	b	91	2	6	40	33	21	15	10	6	3	1	0	0
+97	I	L	H	8	0	0	0	0	6	9	0	0	b	b	b	b	92	3	5	36	31	20	15	12	8	5	3	1	0
+98	A	L	H	8	0	0	0	0	2	8	0	0	b	b	b	b	90	4	7	27	25	20	18	17	15	12	8	4	3
+99	S	L	H	7	0	0	0	0	8	8	0	1	b	b	b	b	86	4	10	40	32	17	12	9	6	4	2	1	0
+100	F	L	H	7	0	0	0	0	7	8	0	0	b	b	b	b	85	5	9	39	32	18	13	10	7	4	2	1	1
+101	R	L	H	7	0	29	0	12	0	8	1	0	b	b	b	i	82	11	9	22	22	23	25	24	21	15	9	4	2
+102	L	L	H	7	0	0	0	0	7	8	0	1	b	b	b	b	82	9	11	38	31	18	12	9	7	5	3	2	1
+103	F	L	H	6	0	0	0	0	3	7	1	1	b	b	b	b	82	13	11	31	28	22	19	16	12	8	5	3	2
+104	A	L	H	5	0	0	0	0	3	7	1	1	b	b	b	b	75	16	15	28	24	19	17	16	14	12	9	7	6
+105	R	L	H	3	0	0	0	0	0	6	1	2	b	b	b	b	64	17	25	21	21	20	21	20	19	15	12	8	6
+106	T	L	H	0	0	0	0	0	2	4	1	3	b	b	b	b	48	19	41	27	25	20	18	15	12	10	7	5	4
+107	R	L	L	1	0	74	0	30	2	3	2	4	b	e	b	i	38	22	48	14	14	16	20	22	23	21	18	14	12
+108	S	L	L	2	0	0	0	0	1	2	2	5	b	b	b	b	29	25	54	25	24	21	21	19	17	15	12	10	9
+109	M	L	L	0	0	0	0	0	0	3	2	3	b	b	b	b	37	30	43	23	22	20	21	20	18	16	14	12	10
+110	W	L	L	0	0	0	0	0	0	3	3	3	b	b	b	b	34	35	42	25	24	22	22	20	17	13	10	8	7
+111	S	L	L	0	0	0	0	0	0	2	3	3	b	b	b	b	26	42	41	23	22	20	20	19	18	16	14	12	10
+112	F	L	L	1	0	0	0	0	2	1	3	4	b	b	b	b	15	39	52	28	26	22	20	18	15	11	9	8	7
+113	N	L	L	7	0	31	0	20	1	0	1	8	b	e	b	i	6	13	83	16	17	18	21	23	22	19	14	10	8
+114	P	L	L	3	0	40	0	30	0	2	1	5	b	e	b	i	31	11	62	16	16	17	19	20	21	20	19	18	17
+115	E	L	L	2	0	139	0	72	1	3	1	5	b	e	b	e	34	12	62	8	8	10	13	15	18	20	22	23	23
+116	T	L	L	2	0	0	0	0	0	3	1	5	b	b	b	b	36	18	57	23	23	23	22	20	18	14	11	9	8
+117	N	L	L	1	0	47	0	30	1	3	2	4	b	e	b	i	34	26	48	15	15	16	19	20	22	21	19	15	12
+118	I	L	E	1	0	0	0	0	2	2	4	3	b	b	b	b	22	50	31	28	26	23	21	19	15	12	8	6	5
+119	L	L	E	4	0	0	0	0	3	2	6	1	b	b	b	b	21	69	15	31	28	23	20	17	14	10	7	4	3
+120	L	L	E	5	0	0	0	0	4	1	6	1	b	b	b	b	15	72	16	32	28	21	18	15	13	10	7	4	3
+121	N	L	E	5	0	0	0	0	1	1	6	1	b	b	b	b	12	70	19	25	23	19	19	18	16	13	10	7	5
+122	V	L	E	4	0	0	0	0	3	0	6	2	b	b	b	b	9	66	26	32	28	22	19	17	14	10	7	4	3
+123	P	L	E	1	0	40	0	30	1	0	5	3	b	e	b	i	10	54	39	15	15	16	19	21	22	22	20	17	15
+124	L	L	L	0	0	0	0	0	0	1	3	4	b	b	b	b	16	42	48	21	21	21	21	21	20	17	14	12	11
+125	H	L	L	4	0	132	0	72	3	1	2	6	b	e	b	e	11	24	69	4	5	6	9	13	18	22	26	29	29
+126	G	L	L	6	0	47	0	56	1	0	1	7	b	e	b	e	7	15	80	13	13	13	15	17	20	21	22	22	22
+127	T	L	L	1	0	42	0	30	1	0	4	5	b	e	b	i	9	43	55	9	10	13	17	20	23	23	21	17	14
+128	I	L	E	4	0	50	0	30	1	0	7	2	b	e	b	i	6	74	25	15	15	16	19	21	22	21	19	15	12
+129	L	L	E	5	0	19	0	12	0	0	7	2	b	b	b	i	5	77	22	20	20	20	21	21	19	16	12	8	6
+130	T	L	E	2	0	0	0	0	2	0	6	3	b	b	b	b	8	62	33	27	25	21	20	18	15	12	9	6	5
+131	R	L	E	0	0	49	0	20	1	0	5	4	b	e	b	i	6	52	45	18	19	20	23	24	23	17	11	6	3
+132	P	L	L	1	0	0	0	0	1	0	3	5	b	b	b	b	9	37	56	26	23	21	20	19	18	15	13	11	10
+133	L	L	L	2	0	0	0	0	0	1	3	5	b	b	b	b	12	35	60	24	23	21	21	19	17	13	10	8	7
+134	L	L	L	4	0	49	0	30	1	0	2	6	b	e	b	i	10	26	68	14	15	16	19	21	22	21	18	15	13
+135	E	L	L	7	0	174	0	90	4	0	1	8	b	e	b	e	9	11	81	1	2	3	6	9	15	21	27	33	36
+136	S	L	L	8	0	117	0	90	1	0	0	8	b	e	b	e	8	7	88	5	6	7	11	14	18	21	24	26	27
+137	E	L	L	7	0	139	0	72	4	0	1	8	b	e	b	e	8	12	83	3	3	5	7	11	16	22	27	30	30
+138	L	L	L	2	0	49	0	30	1	0	3	5	b	e	b	i	9	36	58	14	14	15	18	19	20	20	18	15	12
+139	V	L	E	5	0	0	0	0	0	0	7	2	b	b	b	b	5	75	23	24	24	24	23	21	17	13	8	5	3
+140	I	L	E	7	0	0	0	0	7	0	8	1	b	b	b	b	4	84	12	40	33	20	14	10	8	5	2	1	0
+141	G	L	E	7	0	0	0	0	3	0	8	0	b	b	b	b	4	86	8	31	27	19	18	15	13	9	6	3	2
+142	A	L	E	8	0	0	0	0	8	0	8	0	b	b	b	b	3	88	7	39	31	16	12	10	8	5	3	2	1
+143	V	L	E	8	0	0	0	0	4	0	8	0	b	b	b	b	3	89	7	32	27	20	17	15	13	9	6	3	2
+144	I	L	E	7	0	0	0	0	5	0	8	1	b	b	b	b	3	87	10	34	29	21	17	14	10	7	4	3	2
+145	L	L	E	5	0	32	0	20	1	0	7	1	b	e	b	i	6	76	19	18	18	19	22	24	23	19	14	9	6
+146	R	L	E	0	0	74	0	30	1	1	4	4	b	e	b	i	11	48	41	9	10	12	16	19	23	23	22	18	15
+147	G	L	L	2	0	0	0	0	0	0	3	5	b	b	b	b	9	34	59	22	21	20	20	20	19	17	15	13	12
+148	H	L	E	2	0	55	0	30	2	0	5	3	b	e	b	i	5	61	38	8	9	12	17	22	25	24	21	16	12
+149	L	L	E	5	0	0	0	0	4	0	7	1	b	b	b	b	6	79	21	34	30	22	18	14	11	8	6	5	4
+150	R	L	E	6	0	74	0	30	3	0	8	1	b	e	b	i	5	82	15	10	11	14	20	25	27	24	19	12	8
+151	I	L	E	5	0	0	0	0	3	0	7	1	b	b	b	b	7	77	20	29	27	22	19	16	13	10	7	5	4
+152	A	L	E	2	0	31	0	30	1	0	5	3	b	e	b	i	9	58	36	14	14	16	19	21	22	21	18	14	11
+153	G	L	L	1	0	0	0	0	2	1	3	5	b	b	b	b	13	37	53	26	23	19	17	16	15	14	12	10	9
+154	H	L	E	1	0	22	0	12	0	2	4	3	b	b	b	i	21	48	35	20	20	20	21	21	20	18	15	12	10
+155	H	L	E	3	0	55	0	30	2	1	5	2	b	e	b	i	17	59	27	14	15	16	20	22	24	23	21	17	15
+156	L	L	E	1	0	0	0	0	2	2	4	3	b	b	b	b	23	48	35	27	25	21	20	18	17	13	10	8	6
+157	G	L	L	1	0	0	0	0	0	1	3	4	b	b	b	b	18	38	51	21	20	19	20	21	20	18	15	13	12
+158	R	L	L	1	0	138	0	56	2	1	3	4	b	e	b	e	18	38	51	8	8	9	12	15	19	22	24	24	23
+159	C	L	L	1	0	16	0	12	1	1	3	4	b	b	b	i	17	38	52	19	21	23	24	22	18	14	10	8	7
+160	D	L	L	3	0	91	0	56	2	1	2	5	b	e	b	e	19	27	57	6	7	8	11	15	19	22	24	22	21
+161	I	L	L	0	0	33	0	20	1	3	2	4	b	e	b	i	40	22	46	16	17	17	20	21	21	18	16	14	13
+162	K	L	L	1	0	184	0	90	3	3	1	5	b	e	b	e	35	17	54	4	4	5	8	11	15	20	25	30	31
+163	D	L	L	1	0	117	0	72	3	3	1	5	b	e	b	e	40	15	55	4	4	6	9	13	17	21	25	27	27
+164	L	L	L	7	0	0	0	0	1	0	1	7	b	b	b	b	10	12	82	28	27	25	23	20	15	10	7	4	3
+165	P	L	L	6	0	16	0	12	0	1	1	7	b	b	b	i	13	14	76	20	20	20	21	20	19	17	15	12	10
+166	K	L	L	3	0	114	0	56	3	1	2	6	b	e	b	e	14	25	61	4	5	6	9	13	18	23	25	24	22
+167	E	L	E	4	0	58	0	30	2	1	6	2	b	e	b	i	14	67	22	9	11	15	20	23	24	22	17	11	8
+168	I	L	E	7	0	0	0	0	5	0	8	1	b	b	b	b	6	83	13	34	29	20	16	14	10	7	4	2	1
+169	T	L	E	8	0	0	0	0	1	0	9	0	b	b	b	b	3	91	7	26	24	19	20	19	18	14	10	6	4
+170	V	L	E	8	0	0	0	0	6	0	9	0	b	b	b	b	2	91	8	36	30	20	15	13	11	8	6	4	3
+171	A	L	E	5	0	0	0	0	3	0	7	2	b	b	b	b	3	77	24	31	27	21	18	16	14	11	8	6	5
+172	T	L	L	0	0	42	0	30	2	0	4	5	b	e	b	i	5	45	53	11	12	13	17	20	23	22	19	15	12
+173	S	L	L	4	0	72	0	56	2	1	2	6	b	e	b	e	14	25	65	11	10	11	13	15	19	21	23	23	23
+174	R	L	L	2	0	104	0	42	1	2	2	4	b	e	b	e	22	32	53	8	9	11	15	19	22	24	22	20	18
+175	T	L	E	2	0	42	0	30	1	1	5	3	b	e	b	i	18	54	33	16	16	15	18	20	22	21	19	16	14
+176	L	L	E	4	0	0	0	0	2	1	6	2	b	b	b	b	14	66	23	29	26	22	20	18	15	12	9	6	5
+177	S	L	E	5	0	0	0	0	0	1	7	1	b	b	b	b	11	73	15	22	21	19	19	20	19	17	14	10	8
+178	Y	L	E	6	0	0	0	0	1	1	7	1	b	b	b	b	12	78	13	25	24	21	21	20	18	15	12	8	6
+179	Y	L	E	6	0	44	0	20	1	1	7	1	b	e	b	i	12	78	14	19	19	19	22	24	23	20	15	10	7
+180	K	L	E	5	0	61	0	30	2	1	7	1	b	e	b	i	15	73	16	11	12	14	17	20	23	23	20	16	13
+181	L	L	E	3	0	49	0	30	1	2	5	2	b	e	b	i	22	61	21	13	13	15	18	20	22	22	20	16	14
+182	G	L	E	2	0	35	0	42	1	2	4	2	b	e	b	e	22	51	31	10	11	12	15	18	22	23	23	20	18
+183	A	L	E	1	0	44	0	42	2	2	4	2	b	e	b	e	31	46	31	9	10	12	16	19	22	24	23	20	17
+184	S	L	E	2	0	72	0	56	2	2	4	2	b	e	b	e	23	52	31	9	10	11	14	17	21	24	25	22	20
+185	Q	L	E	1	0	59	0	30	1	2	4	2	b	e	b	i	24	51	32	11	12	14	17	20	23	23	22	18	16
+186	R	L	E	2	0	138	0	56	4	1	5	2	b	e	b	e	20	53	31	4	5	7	10	15	21	26	29	26	23
+187	V	L	E	0	0	42	0	30	1	1	4	3	b	e	b	i	19	46	40	13	14	16	19	21	22	22	19	16	14
+188	A	L	L	2	0	76	0	72	1	1	3	5	b	e	b	e	14	33	58	9	9	10	13	15	18	20	22	24	24
+189	G	L	L	5	0	75	0	90	1	1	1	7	b	e	b	e	11	20	73	6	6	7	11	14	18	21	24	26	27
+190	D	L	L	6	0	117	0	72	2	0	1	7	b	e	b	e	8	17	78	6	6	7	10	13	18	22	24	26	26
+191	S	L	L	4	0	54	0	42	1	0	2	6	b	e	b	e	8	25	69	11	11	12	15	18	20	22	21	19	17
+192	G	L	E	0	0	0	0	0	3	0	5	4	b	b	b	b	7	51	43	29	25	20	18	17	16	14	11	8	6
+193	F	L	E	4	0	0	0	0	3	0	6	2	b	b	b	b	6	69	24	29	26	21	19	17	15	11	8	4	3
+194	A	L	E	7	0	0	0	0	7	0	8	1	b	b	b	b	6	83	10	39	31	18	14	12	10	8	6	4	2
+195	A	L	E	7	0	0	0	0	4	0	8	0	b	b	b	b	6	83	9	31	26	18	17	17	15	11	8	5	3
+196	Y	L	E	6	0	0	0	0	2	0	8	1	b	b	b	b	8	80	11	31	28	23	22	19	15	9	5	3	2
+197	S	L	E	6	0	26	0	20	0	1	7	1	b	e	b	i	12	75	15	20	19	18	21	22	21	17	12	7	4
+198	R	L	E	3	0	74	0	30	2	2	5	1	b	e	b	i	24	59	19	13	14	15	19	22	23	22	18	13	9
+199	Y	L	E	0	0	66	0	30	2	3	3	3	b	e	b	i	37	38	34	13	14	16	20	23	24	22	19	16	14
+200	R	L	L	0	0	104	0	42	0	3	2	3	b	e	b	e	39	28	42	6	7	9	13	17	21	24	24	23	21
+201	I	L	L	1	0	50	0	30	0	3	2	4	b	e	b	i	38	23	52	13	14	15	18	20	21	21	19	19	18
+202	G	L	L	4	0	60	0	72	0	1	1	6	b	e	b	e	21	19	68	11	11	12	14	16	19	20	21	22	22
+203	N	L	L	4	0	113	0	72	1	2	2	5	b	e	b	e	22	22	64	8	9	10	13	16	19	22	23	24	23
+204	Y	L	L	2	0	44	0	20	1	1	2	5	b	e	b	i	21	31	57	13	14	17	21	22	22	19	17	16	14
+205	K	L	L	1	0	147	0	72	2	1	3	5	b	e	b	e	15	37	55	6	7	8	11	14	18	21	24	25	25
+206	L	L	L	2	0	32	0	20	1	1	3	5	b	e	b	i	19	34	55	15	16	17	20	21	21	18	15	13	11
+207	N	L	L	3	0	87	0	56	1	1	2	5	b	e	b	e	14	28	62	8	9	11	14	17	20	21	22	22	21
+208	T	L	L	4	0	79	0	56	1	1	2	6	b	e	b	e	15	25	66	8	9	12	15	18	20	21	22	22	22
+209	D	L	L	5	0	117	0	72	1	1	1	7	b	e	b	e	13	17	74	5	6	8	12	15	19	22	23	24	24
+210	H	L	L	6	0	132	0	72	1	0	1	7	b	e	b	e	10	14	78	7	8	11	15	17	20	21	22	24	24
+211	S	L	L	6	0	117	0	90	2	1	0	8	b	e	b	e	12	8	81	6	7	8	12	14	17	19	22	26	28
+212	S	L	L	7	0	117	0	90	1	1	0	8	b	e	b	e	11	6	85	7	8	10	13	16	18	20	22	25	26
+213	S	L	L	6	0	93	0	72	1	1	0	7	b	e	b	e	15	6	82	7	7	9	13	16	19	21	23	25	25
+214	S	L	L	5	0	117	0	90	2	2	0	7	b	e	b	e	22	8	75	5	6	7	10	13	16	20	24	27	28
+215	D	L	L	3	0	117	0	72	3	2	1	6	b	e	b	e	31	11	66	5	5	7	10	13	17	22	26	28	28
+216	N	L	L	3	0	65	0	42	2	2	2	5	b	e	b	e	28	23	58	7	9	11	16	19	22	24	22	19	16
+217	I	L	E	1	0	33	0	20	1	1	4	3	b	e	b	i	20	50	36	16	17	19	21	23	22	20	16	12	10
+218	A	L	E	4	0	31	0	30	1	1	6	2	b	e	b	i	15	65	24	14	14	15	18	20	22	22	20	16	13
+219	L	L	E	3	0	0	0	0	1	1	6	2	b	b	b	b	15	62	24	24	22	20	20	20	18	15	12	10	8
+220	L	L	E	3	0	32	0	20	0	1	6	2	b	e	b	i	10	61	29	20	19	19	20	21	20	19	16	13	11
+221	V	L	E	1	0	0	0	0	2	0	5	4	b	b	b	b	8	52	41	26	24	20	19	17	16	14	12	10	9
+222	Q	L	L	7	0	178	0	90	1	0	1	8	b	e	b	e	2	14	86	4	4	5	7	10	13	18	20	23	24

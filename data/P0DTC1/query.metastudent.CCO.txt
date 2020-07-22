@@ -1,0 +1,39 @@
+query	GO:0018995	0.59	host
+query	GO:0043245	0.59	extraorganismal space
+query	GO:0043657	0.59	host cell
+query	GO:0033643	0.59	host cell part
+query	GO:0044216	0.59	other organism cell
+query	GO:0044217	0.59	other organism part
+query	GO:0044215	0.59	other organism
+query	GO:0005576	0.59	extracellular region
+query	GO:0044421	0.59	extracellular region part
+query	GO:0033644	0.51	host cell membrane
+query	GO:0044218	0.51	other organism cell membrane
+query	GO:0044279	0.51	other organism membrane
+query	GO:0043656	0.45	intracellular region of host
+query	GO:0033646	0.45	host intracellular part
+query	GO:0030430	0.45	host cell cytoplasm
+query	GO:0016020	0.37	membrane
+query	GO:0031224	0.32	intrinsic component of membrane
+query	GO:0016021	0.32	integral component of membrane
+query	GO:0044425	0.32	membrane part
+query	GO:0033655	0.26	host cell cytoplasm part
+query	GO:0044220	0.23	host cell perinuclear region of cytoplasm
+query	GO:0033648	0.16	host intracellular membrane-bounded organelle
+query	GO:0033647	0.16	host intracellular organelle
+query	GO:0044172	0.13	host cell endoplasmic reticulum-Golgi intermediate compartment
+query	GO:0044464	0.11	cell part
+query	GO:0043229	0.11	intracellular organelle
+query	GO:0005634	0.11	nucleus
+query	GO:0043227	0.11	membrane-bounded organelle
+query	GO:0043226	0.11	organelle
+query	GO:0043231	0.11	intracellular membrane-bounded organelle
+query	GO:0005623	0.11	cell
+query	GO:0005622	0.11	intracellular
+query	GO:0044424	0.11	intracellular part
+query	GO:0020002	0.10	host cell plasma membrane
+query	GO:0044161	0.09	host cell cytoplasmic vesicle
+query	GO:0005737	0.08	cytoplasm
+query	GO:0044174	0.08	host cell endosome
+query	GO:0005739	0.07	mitochondrion
+query	GO:0044444	0.07	cytoplasmic part

@@ -1,0 +1,32 @@
+query	GO:0019062	0.57	virion attachment to host cell
+query	GO:0019058	0.57	viral life cycle
+query	GO:0044419	0.57	interspecies interaction between organisms
+query	GO:0044650	0.57	adhesion of symbiont to host cell
+query	GO:0022610	0.57	biological adhesion
+query	GO:0009987	0.57	cellular process
+query	GO:0044764	0.57	multi-organism cellular process
+query	GO:0051701	0.57	interaction with host
+query	GO:0051704	0.57	multi-organism process
+query	GO:0016032	0.57	viral process
+query	GO:0044403	0.57	symbiosis, encompassing mutualism through parasitism
+query	GO:0044406	0.57	adhesion to host
+query	GO:0051825	0.57	adhesion to other organism involved in symbiotic interaction
+query	GO:0061025	0.47	membrane fusion
+query	GO:0061024	0.47	membrane organization
+query	GO:0071840	0.47	cellular component organization or biogenesis
+query	GO:0016043	0.47	cellular component organization
+query	GO:0009405	0.43	pathogenesis
+query	GO:0039663	0.32	membrane fusion involved in viral entry into host cell
+query	GO:0046813	0.32	receptor-mediated virion attachment to host cell
+query	GO:0044803	0.32	multi-organism membrane organization
+query	GO:0044800	0.32	multi-organism membrane fusion
+query	GO:0046718	0.27	viral entry into host cell
+query	GO:0052126	0.27	movement in host environment
+query	GO:0040011	0.27	locomotion
+query	GO:0030260	0.27	entry into host cell
+query	GO:0052192	0.27	movement in environment of other organism involved in symbiotic interaction
+query	GO:0051828	0.27	entry into other organism involved in symbiotic interaction
+query	GO:0044409	0.27	entry into host
+query	GO:0051806	0.27	entry into cell of other organism involved in symbiotic interaction
+query	GO:0039654	0.21	fusion of virus membrane with host endosome membrane
+query	GO:0019064	0.16	fusion of virus membrane with host plasma membrane

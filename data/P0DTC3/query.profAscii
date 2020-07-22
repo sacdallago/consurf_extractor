@@ -1,0 +1,240 @@
+#                                                                      #
+# ==================================================================== #
+# PROF predictions for query                                           #
+# ==================================================================== #
+#                                                                      #
+# -------------------------------------------------------------------- #
+# SYNOPSIS of prediction                                               #
+# -------------------------------------------------------------------- #
+#                                                                      #
+# PROFsec summary                                                      #
+#                                                                      #
+# overall your protein can be classified as:                           #
+#                                                                      #
+# >>>   mixed  <<<                                                     #
+#                                                                      #
+# given the following classes:                                         #
+# 'all-alpha':   %H > 45% AND %E <  5%                                 #
+# 'all-beta':    %H <  5% AND %E > 45%                                 #
+# 'alpha-beta':  %H > 30% AND %E > 20%                                 #
+# 'mixed':       all others                                            #
+#                                                                      #
+# Predicted secondary structure composition:                           #
+# +-----------------+-------+-------+-------+                          #
+# | sec str type    |     H |     E |     L |                          #
+# | % in protein    |  24.7 |  36.7 |  38.5 |                          #
+# +-----------------+-------+-------+-------+                          #
+#                                                                      #
+#                                                                      #
+# Predicted solvent accessibility composition (core/surface ratio):    #
+#   Classes used:                                                      #
+#     e: residues exposed with more than 16% of their surface          #
+#     b: all other residues.                                           #
+# +--------------+-------+-------+                                     #
+# | acc type     |     b |     e |                                     #
+# | % in protein |  58.2 |  41.8 |                                     #
+# +--------------+-------+-------+                                     #
+#                                                                      #
+# -------------------------------------------------------------------- #
+# HEADER information                                                   #
+# -------------------------------------------------------------------- #
+#                                                                      #
+# ...................                                                  #
+# About your protein:                                                  #
+# ...................                                                  #
+#                                                                      #
+# prot_id        : query                                               #
+# prot_nres      : 275                                                 #
+# prot_nali      : 4                                                   #
+# prot_nchn      : 1                                                   #
+# prot_nfar      : 3                                                   #
+#                                                                      #
+# .........................                                            #
+# About the alignment used:                                            #
+# .........................                                            #
+#                                                                      #
+# ali_orig       : query.hsspPsiFil                                    #
+#                                                                      #
+# .....................................                                #
+# Residue composition for your protein:                                #
+# .....................................                                #
+#                                                                      #
+# +-----------------+-------+-------+-------+-------+-------+          #
+# | amino acid type |     A |     C |     D |     E |     F |          #
+# | % in protein    |   4.7 |   2.5 |   4.7 |   4.0 |   5.1 |          #
+# +-----------------+-------+-------+-------+-------+-------+          #
+# | amino acid type |     G |     H |     I |     K |     L |          #
+# | % in protein    |   5.1 |   2.9 |   7.6 |   4.0 |  10.9 |          #
+# +-----------------+-------+-------+-------+-------+-------+          #
+# | amino acid type |     M |     N |     P |     Q |     R |          #
+# | % in protein    |   1.4 |   2.9 |   4.4 |   3.3 |   2.2 |          #
+# +-----------------+-------+-------+-------+-------+-------+          #
+# | amino acid type |     S |     T |     V |     W |     Y |          #
+# | % in protein    |   8.0 |   8.7 |   9.1 |   2.2 |   6.2 |          #
+# +-----------------+-------+-------+-------+-------+-------+          #
+#                                                                      #
+# .............................                                        #
+# About  the PROF methods used:                                        #
+# .............................                                        #
+#                                                                      #
+# prof_fpar      : acc=/usr/share/profphd/prof/net/PROFboth_best.par   #
+# prof_nnet      : acc=6                                               #
+#                                                                      #
+# ....................                                                 #
+# Copyright & Contact:                                                 #
+# ....................                                                 #
+#                                                                      #
+# -> Copyright:Burkhard Rost, ROSTLAB                                  #
+# -> Email:    info@rostlab.org                                        #
+# -> WWW:      http://rostlab.org                                      #
+# -> Fax:                                                              #
+#                                                                      #
+# .............                                                        #
+# Please quote:                                                        #
+# .............                                                        #
+#                                                                      #
+# -> PROF:      B Rost (1996) Methods in Enzymology, 266:525-539       #
+# -> PROFsec:   B Rost & C Sander (1993) J Mol Biol, 232:584-599       #
+# -> PROFacc:   B Rost & C Sander (1994) Proteins, 20:216-226          #
+#                                                                      #
+#                                                                      #
+# -------------------------------------------------------------------- #
+# ABBREVIATIONS used:                                                  #
+# -------------------------------------------------------------------- #
+#                                                                      #
+# AA        : amino acid sequence                                      #
+# OBS_sec   : observed secondary structure: H=helix, E=extended        #
+#             (sheet), blank=other (loop)                              #
+# PROF_sec  : PROF predicted secondary structure: H=helix, E=extended  #
+#             (sheet), blank=other (loop)                              #
+#             PROF = PROF: Profile network prediction HeiDelberg       #
+# Rel_sec   : reliability index for PROFsec prediction (0=low          #
+#             to 9=high)                                               #
+#             Note: for the brief presentation strong predictions      #
+#             marked by '*'                                            #
+# SUB_sec   : subset of the PROFsec prediction, for all residues       #
+#             with an expected average accuracy > 82% (tables          #
+#             in header)                                               #
+#             NOTE: for this subset the following symbols are used:    #
+#               L: is loop (for which above ' ' is used)               #
+#               .: means that no prediction is made for this           #
+#             residue, as the reliability is:  Rel < 5                 #
+#  pH_sec   : 'probability' for assigning helix (1=high, 0=low)        #
+#  pE_sec   : 'probability' for assigning strand (1=high, 0=low)       #
+#  pL_sec   : 'probability' for assigning neither helix, nor           #
+#             strand (1=high, 0=low)                                   #
+# O_2_acc   : observerd relative solvent accessibility (acc)           #
+#             in 2 states: b = 0-16%, e = 16-100%.                     #
+# P_2_acc   : PROF predicted  relative solvent accessibility           #
+#             (acc) in 2 states: b = 0-16%, e = 16-100%.               #
+# O_3_acc   : observerd relative solvent accessibility (acc)           #
+#             in 3 states: b = 0-9%, i = 9-36%, e = 36-100%.           #
+# P_3_acc   : PROF predicted relative solvent accessibility            #
+#             (acc) in 3 states: b = 0-9%, i = 9-36%, e = 36-100%.     #
+# OBS_acc   : observed relative solvent accessibility (acc)            #
+#             in 10 states: a value of n (=0-9) corresponds            #
+#             to a relative acc. of between n*n % and (n+1)*(n+1)      #
+#             % (e.g. for n=5: 16-25%).                                #
+# PROF_acc  : PROF predicted relative solvent accessibility            #
+#             (acc) in 10 states: a value of n (=0-9) corresponds      #
+#             to a relative acc. of between n*n % and (n+1)*(n+1)      #
+#             % (e.g. for n=5: 16-25%).                                #
+# Rel_acc   : reliability index for PROFacc prediction (0=low          #
+#             to 9=high)                                               #
+#             Note: for the brief presentation strong predictions      #
+#             marked by '*'                                            #
+# SUB_acc   : subset of the PROFacc prediction, for all residues       #
+#             with an expected average correlation > 0.69 (tables      #
+#             in header)                                               #
+#             NOTE: for this subset the following symbols are used:    #
+#               I: is intermediate (for which above ' ' is used)       #
+#               .: means that no prediction is made for this           #
+#             residue, as the reliability is:  Rel < 4                 #
+#                                                                      #
+# prot_id   : identifier of protein [w]                                #
+# prot_nres : number of residues [d]                                   #
+# prot_nali : number of proteins aligned in family [d]                 #
+# prot_nchn : number of chains (if PDB protein) [d]                    #
+# prot_nfar : number of distant relatives [d]                          #
+# ali_orig  : input file                                               #
+# prof_fpar : name of parameter file, used [w]                         #
+# prof_nnet : number of networks used for prediction [d]               #
+# prof_skip : note: sequence stretches with less than 9 are            #
+#             not predicted, the symbol '*' is used!                   #
+#                                                                      #
+# ==================================================================== #
+# PROF_BODY with predictions for query                                 #
+# ==================================================================== #
+#                                                                      #
+# ---------------------
+# PROF results (normal)
+# ---------------------
+# 
+                   
+                   ....,....1....,....2....,....3....,....4....,....5....,....6 
+         AA       |MDLFMRIFTIGTVTLKQGEIKDATPSDFVRATATIPIQASLPFGWLIVGVALLAVFQSAS|
+         OBS_sec  |                                                            |
+         PROF_sec |   EEEEEEE EEEEEEEE         EEEE    EEEE  EEEEEEHHHHHHHHH   |
+         Rel_sec  |950011222101111101001367665213210011021002013321234467752013|
+ subset: SUB_sec  |LL....................LLLLL.........................HHHH....|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eebbbibbbbbibebeeieieeeieeeiiebebeiebibibbbbbbbbbbbbbbbbbibe|
+         Rel_acc  |113322422211020211122310132113030212113130344769694988390102|
+ subset: SUB_acc  |......b....................................bbbbbbbbbbb.b....|
+
+                   
+                   ....,....7....,....8....,....9....,....10...,....11...,....12 
+         AA       |KIITLKKRWQLALSKGVHFVCNLLLLFVTVYSHLLLVAAGLEAPFLYLYALVYFLQSINF|
+         OBS_sec  |                                                            |
+         PROF_sec | HHHHHHHHHHHHHH   EEE  EEHHHHHHHHHHHHHHH    HHHHHHHHHHHHHHHH|
+         Rel_sec  |113444678987741200111000012456655677764011202556888887777655|
+ subset: SUB_sec  |......HHHHHHH...............HHHHHHHHHH.......HHHHHHHHHHHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ebbbbiiibbbbbiebbbbbbbbbbbbbbbbbbbbbbbbiiebbbbbbibbbbbbbbbbb|
+         Rel_acc  |220370225124711111676497988638372478661012032639296929956626|
+ subset: SUB_acc  |....b...b..bb.....bbbbbbbbbb.b.b.bbbbb.......b.b.bbb.bbbbb.b|
+
+                   
+                   ....,....13...,....14...,....15...,....16...,....17...,....18 
+         AA       |VRIIMRLWLCWKCRSKNPLLYDANYFLCWHTNCYDYCIPYNSVTSSIVITSGDGTTSPIS|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHH          EEEEEE    EEEEE      EEEEE    EEEEEE|
+         Rel_sec  |544455664334103376202555168872477325440355443256632762010021|
+ subset: SUB_sec  |H...HHHH........LL...LLL.EEEE..LL..E....LL....EEE..LL.......|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbbbbibibeibbbiibebbbbbbieiiibbbbbiebeiibbbbeieebbiiii|
+         Rel_acc  |528772938642121111311011399942020221664101001154900021001102|
+ subset: SUB_acc  |b.bbb.b.bbb..............bbbb.......bbb.......bbb...........|
+
+                   
+                   ....,....19...,....20...,....21...,....22...,....23...,....24 
+         AA       |EHDYQIGGYTEKWESGVKDCVVLHSYFTSDYYQLYSTQLSTDTGVEHVTFFIYNKIVDEP|
+         OBS_sec  |                                                            |
+         PROF_sec |   EEE  EEEEEEEEEEEEEEEEEEEEEEEEEEE         EEEEEEEEEE      |
+         Rel_sec  |143132122441002344478887654103567502001223330336566530001685|
+ subset: SUB_sec  |...................EEEEEEE....EEEE.............EEEEE.....LLL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeebibbbiiieieiibebibibbbibieiibibiiieiiibbibibbbbbbbbibbeee|
+         Rel_acc  |222023020133020123149090330213002411000000102217794961221322|
+ subset: SUB_acc  |...................ib.b..........b.............bbbbbb.......|
+
+                   
+                   ....,....25...,....26...,....27...,....28 
+         AA       |EEHVQIHTIDGSSGVVNPVMEPIYDEPTTTTSVPL|
+         OBS_sec  |                                   |
+         PROF_sec |    EEEEE                          |
+         Rel_sec  |11110232205655226544665457664212359|
+ subset: SUB_sec  |..........LLLL..LL..LLL.LLLL.....LL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeibiibbbibeeeeieieiiibieiieieiebee|
+         Rel_acc  |33031113310200101012102112000113013|
+ subset: SUB_acc  |...................................|
+
+
+# --------------------------------------------------------------------
+

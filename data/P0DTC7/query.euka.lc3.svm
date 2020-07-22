@@ -1,0 +1,7 @@
+query
+Winner secreted
+secreted,	vs	golgi,	0.9993060318656929 vs. 6.939681343071764E-4
+secreted,golgi,	vs	er,	0.999255886747734 vs. 7.441132522658959E-4
+chloroplast,plastid,mitochondria,cytoplasm,peroxisome,vacuole,nucleus,	vs	secreted,golgi,er,	0.024991106674114055 vs. 0.9750088933258859
+cellmembrane,memnucleus,memer,memgolgi,memmitochondria,memperoxisome,memchloroplast,memvacuole,	vs	chloroplast,plastid,mitochondria,secreted,cytoplasm,peroxisome,vacuole,golgi,nucleus,er,	0.48242380717089556 vs. 0.5175761928291045
+

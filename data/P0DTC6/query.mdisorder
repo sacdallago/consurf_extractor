@@ -1,0 +1,77 @@
+Number Residue NORSnet NORS2st PROFbval bval2st Ucon Ucon2st MD_raw   MD_rel  MD2st 
+    1	M	0.02	-	0.99	D	0.14	-	0.707	7	D
+    2	F	0.01	-	0.56	D	0.13	-	0.687	6	D
+    3	H	0.00	-	0.41	-	0.13	-	0.677	6	D
+    4	L	0.01	-	0.45	-	0.13	-	0.657	5	D
+    5	V	0.00	-	0.20	-	0.13	-	0.616	4	D
+    6	D	0.01	-	0.35	-	0.13	-	0.606	3	D
+    7	F	0.02	-	0.24	-	0.15	-	0.586	2	D
+    8	Q	0.01	-	0.18	-	0.13	-	0.535	0	D
+    9	V	0.01	-	0.23	-	0.13	-	0.545	1	D
+   10	T	0.01	-	0.21	-	0.13	-	0.560	1	D
+   11	I	0.01	-	0.17	-	0.13	-	0.545	1	D
+   12	A	0.01	-	0.27	-	0.13	-	0.485	1	-
+   13	E	0.01	-	0.20	-	0.15	-	0.485	1	-
+   14	I	0.01	-	0.19	-	0.13	-	0.444	2	-
+   15	L	0.01	-	0.14	-	0.13	-	0.430	3	-
+   16	L	0.01	-	0.17	-	0.14	-	0.414	3	-
+   17	I	0.01	-	0.12	-	0.13	-	0.404	3	-
+   18	I	0.00	-	0.14	-	0.14	-	0.354	5	-
+   19	M	0.00	-	0.23	-	0.13	-	0.394	4	-
+   20	R	0.00	-	0.33	-	0.13	-	0.450	2	-
+   21	T	0.00	-	0.26	-	0.13	-	0.404	3	-
+   22	F	0.01	-	0.34	-	0.13	-	0.404	3	-
+   23	K	0.01	-	0.46	-	0.13	-	0.424	3	-
+   24	V	0.01	-	0.38	-	0.17	-	0.374	4	-
+   25	S	0.01	-	0.24	-	0.14	-	0.390	4	-
+   26	I	0.01	-	0.29	-	0.13	-	0.384	4	-
+   27	W	0.01	-	0.26	-	0.13	-	0.424	3	-
+   28	N	0.00	-	0.24	-	0.13	-	0.420	3	-
+   29	L	0.00	-	0.25	-	0.13	-	0.394	4	-
+   30	D	0.00	-	0.29	-	0.14	-	0.424	3	-
+   31	Y	0.01	-	0.24	-	0.14	-	0.434	2	-
+   32	I	0.00	-	0.23	-	0.13	-	0.475	1	-
+   33	I	0.00	-	0.20	-	0.13	-	0.535	0	D
+   34	N	0.01	-	0.27	-	0.13	-	0.515	0	-
+   35	L	0.01	-	0.25	-	0.13	-	0.530	0	D
+   36	I	0.01	-	0.30	-	0.14	-	0.505	0	-
+   37	I	0.01	-	0.34	-	0.18	-	0.444	2	-
+   38	K	0.01	-	0.40	-	0.18	-	0.586	2	D
+   39	N	0.01	-	0.41	-	0.17	-	0.616	4	D
+   40	L	0.02	-	0.34	-	0.27	-	0.596	3	D
+   41	S	0.01	-	0.56	D	0.40	-	0.616	4	D
+   42	K	0.02	-	0.47	D	0.68	D	0.640	5	D
+   43	S	0.04	-	0.62	D	0.41	-	0.600	3	D
+   44	L	0.05	-	0.72	D	0.41	-	0.620	4	D
+   45	T	0.06	-	0.80	D	0.62	D	0.660	5	D
+   46	E	0.07	-	0.74	D	0.41	-	0.697	7	D
+   47	N	0.09	-	0.78	D	0.39	-	0.717	8	D
+   48	K	0.08	-	0.65	D	0.44	-	0.717	8	D
+   49	Y	0.11	-	0.59	D	0.71	D	0.737	9	D
+   50	S	0.12	-	0.64	D	0.76	D	0.727	8	D
+   51	Q	0.15	-	0.62	D	0.70	D	0.727	8	D
+   52	L	0.18	-	0.66	D	0.51	-	0.717	8	D
+   53	D	0.17	-	0.73	D	0.48	-	0.727	8	D
+   54	E	0.18	-	0.58	D	0.48	-	0.737	9	D
+   55	E	0.07	-	0.76	D	0.54	-	0.727	8	D
+   56	Q	0.09	-	0.61	D	0.50	-	0.727	8	D
+   57	P	0.07	-	0.52	D	0.70	D	0.737	9	D
+   58	M	0.06	-	0.77	D	0.61	D	0.727	8	D
+   59	E	0.07	-	0.81	D	0.50	-	0.646	5	D
+   60	I	0.08	-	0.78	D	0.38	-	0.636	4	D
+   61	D	0.19	-	0.77	D	0.32	-	0.576	2	D
+
+
+Key for output
+----------------
+Number - residue number
+Residue - amino-acid type
+NORSnet - raw score by NORSnet (prediction of unstructured loops)
+NORS2st - two-state prediction by NORSnet; D=disordered
+PROFbval - raw score by PROFbval (prediction of residue flexibility from sequence)
+Bval2st - two-state prediction by PROFbval
+Ucon - raw score by Ucon (prediction of protein disorder using predicted internal contacts)
+Ucon2st - two-state prediction by Ucon
+MD - raw score by MD (prediction of protein disorder using orthogonal sources)
+MD_rel - reliability of the prediction by MD; values range from 0-9. 9=strong prediction
+MD2st - two-state prediction by MD

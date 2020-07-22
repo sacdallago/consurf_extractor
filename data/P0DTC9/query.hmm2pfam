@@ -1,0 +1,66 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 /var/tmp/rost_db/data/pfam_legacy/Pfam_ls
+Sequence file:            query.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: query
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+PF00937.10      Coronavirus nucleocapsid protein        236.2    8.3e-68   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+PF00937.10        1/1      20   412 ..     1   481 []   236.2  8.3e-68
+
+Alignments of top-scoring domains:
+PF00937.10: domain 1 of 1, from 20 to 412: score 236.2, E = 8.3e-68
+                   *->waDapapilklsrgrgnqrgrkgntipnsGsvvPHlSwFspltlkqk
+                       +D++    +++  r+ +r +++ + +  G     +SwF +l  + +
+       query    20    PSDST--GSNQNGERSGARSKQR-RPQ--GLPNNTASWFTAL-TQHG 60   
+
+                   skewkvfegngVPinkgnKdsqQiGYWnrQkRRsfrtrkGqRkelpdrWy
+                   +   k+  g+gVPin +  +  QiGY +r  R   r ++G+ k+l++rWy
+       query    61 KEDLKFPRGQGVPINTNSSPDDQIGYYRRATR-RIRGGDGKMKDLSPRWY 109  
+
+                   FYYLGTGPHaDakfgDridGVVWVAkdGAdtkptglgvrRDPdnfeqipl
+                   FYYLGTGP a++ +g   dG++WVA +GA + p   +++R P+n+ +i l
+       query   110 FYYLGTGPEAGLPYGANKDGIIWVATEGALNTPKDHIGTRNPANNAAIVL 159  
+
+                   rFsqglPsvVevVeenlPpdFraesrgRSRsnGnnrSrSgSnnRGrsqSr
+                      qg         + lP +F+ae++ R +s+      ++S    rs+Sr
+       query   160 QLPQG---------TTLPKGFYAEGS-RGGSQ------ASS----RSSSR 189  
+
+                   ppsqnrGnnqGrGasqnrGGnnnnNNrsRs....sSrgRqrSnnekGvtS
+                   +                        N sR+++++sSrg  +++  +    
+       query   190 S-----------------------RNSSRNstpgSSRGTSPARMAG---- 212  
+
+                   dDdierAvkavLkkLGkdsnkekqk.srskpkqekSdnsskkriskskar
+                   +   ++ +++ L+ L   + k   k+++++            +++k +a 
+       query   213 NGGDAALALLLLDRLNQLESKMSGKgQQQQG----------QTVTKKSAA 252  
+
+                   etaekkdlknkprwkrtPgkevtgdVtqcFGpRgkgq.apNFGDsemven
+                   e ++k      pr+krt+ k    +Vtq FG Rg+ q+++NFGD e++  
+       query   253 EASKK------PRQKRTATKA--YNVTQAFGRRGPEQtQGNFGDQELIRQ 294  
+
+                   GvkakrypqlAeLVPsvaAlLFGskLeLvkknSrvaakeqgDgleltftf
+                   G++ k+ pq+A  +Ps +A +FG         Sr+  + ++ g  lt+t+
+       query   295 GTDYKHWPQIAQFAPSASA-FFG--------MSRIGMEVTPSGTWLTYTG 335  
+
+                   kvvvdrtlPkfdpkvkilleqvDAykrtrgkadvakpksqrksrsktssa
+                   ++  d  +P f   v +l+  +DAyk t ++ ++ k+k++++  ++ +++
+       query   336 AIKLDDKDPNFKDQVILLNKHIDAYK-TFPPTEPKKDKKKKADETQALPQ 384  
+
+                   taepkqdevkkvskvkeetdEvDkalveddtqvEiidEvd<-*
+                     ++kq+ v    +  ++++        dd +  ++  +    
+       query   385 -RQKKQQTVT---LLPAADL--------DDFSKQLQQSMS    412  
+
+//

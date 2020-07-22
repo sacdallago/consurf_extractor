@@ -1,0 +1,29 @@
+>query
+
+
+               .    :    .    :    .    :    .    :    .    5
+seq        MKIILFLALITLATCELYHYQECVRGTTVLLKEPCSSGTYEGNSPFHPLA
+frame-14   ababcdefgabcdefgabcdefgefgabcdefggefgbcdefgababcab
+frame-21   ababcdefgabcdefgabcdefgabcdefgefgdefgdefgfggbabcab
+frame-28   aaabcdefgabcdefgabcdefgabcdefgabcdefgbcdefggbabcab
+prob-14    --------------------------------------------------
+prob-21    --------------------------------------------------
+prob-28    --------------------------------------------------
+               .    :    .    :    .    :    .    :    .    10
+seq        DNKFALTCFSTQFAFACPDGVKHVYQLRARSVSPKLFIRQEEVQELYSPI
+frame-14   cdefgabcdefgfgcdabcdefgabcdefgcdabcdefgabcdefgfggd
+frame-21   cdefgabcdabcdefgabcdaabababcdefgabcdefgabcdefgefga
+frame-28   cdabcdefgabcdefgabcdeabcdefgabcdefgabcdefgabcdefgd
+prob-14    --------------------------------------------------
+prob-21    --------------------------------------------------
+prob-28    --------------------------------------------------
+               .    :    .    :    .    :    .    :    .    15
+seq        FLIVAAIVFITLCFTLKRKTE
+frame-14   efgefabcdefgabcdefggg
+frame-21   bcdefgdefgefgabcdefgg
+frame-28   efgefgabcdefgabcdefgg
+prob-14    ---------------------
+prob-21    ---------------------
+prob-28    ---------------------
+// End
+

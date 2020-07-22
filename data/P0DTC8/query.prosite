@@ -1,0 +1,20 @@
+<pre>
+<B>-------------------------------------------------------------</B>
+Pattern-ID: <B>ASN_GLYCOSYLATION</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00001">PS00001</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00001">PDOC00001</A>
+Pattern-DE: N-glycosylation site
+Pattern:    N[^P][ST][^P]
+   78       NYTV
+
+Pattern-ID: <B>CK2_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00006">PS00006</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00006">PDOC00006</A>
+Pattern-DE: Casein kinase II phosphorylation site
+Pattern:    [ST].{2}[DE]
+   103      SFYE
+
+Pattern-ID: <B>MYRISTYL</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00008">PS00008</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00008">PDOC00008</A>
+Pattern-DE: N-myristoylation site
+Pattern:    G[^EDRKHPFYW].{2}[STAGCN][^P]
+   8        GIITTV
+   50       GARKSA
+
+
+</pre>

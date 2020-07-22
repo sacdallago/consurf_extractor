@@ -1,0 +1,57 @@
+<pre>
+<B>-------------------------------------------------------------</B>
+Pattern-ID: <B>ASN_GLYCOSYLATION</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00001">PS00001</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00001">PDOC00001</A>
+Pattern-DE: N-glycosylation site
+Pattern:    N[^P][ST][^P]
+   47       NNTA
+   192      NSSR
+   269      NVTQ
+
+Pattern-ID: <B>CAMP_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00004">PS00004</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00004">PDOC00004</A>
+Pattern-DE: cAMP- and cGMP-dependent protein kinase phosphorylation site
+Pattern:    [RK]{2}.[ST]
+   88       RRAT
+
+Pattern-ID: <B>PKC_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00005">PS00005</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00005">PDOC00005</A>
+Pattern-DE: Protein kinase C phosphorylation site
+Pattern:    [ST].[RK]
+   91       TRR
+   105      SPR
+   141      TPK
+   183      SSR
+   187      SSR
+   193      SSR
+   201      SSR
+   235      SGK
+   247      TKK
+   255      SKK
+
+Pattern-ID: <B>CK2_PHOSPHO_SITE</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00006">PS00006</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00006">PDOC00006</A>
+Pattern-DE: Casein kinase II phosphorylation site
+Pattern:    [ST].{2}[DE]
+   78       SSPD
+   115      TGPE
+   141      TPKD
+   250      SAAE
+   412      SSAD
+
+Pattern-ID: <B>MYRISTYL</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00008">PS00008</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00008">PDOC00008</A>
+Pattern-DE: N-myristoylation site
+Pattern:    G[^EDRKHPFYW].{2}[STAGCN][^P]
+   25       GSNQNG
+   44       GLPNNT
+   71       GVPINT
+   120      GLPYGA
+   175      GSRGGS
+   200      GSSRGT
+   214      GGDAAL
+   243      GQTVTK
+   328      GTWLTY
+
+Pattern-ID: <B>AMIDATION</B> <A HREF="http://www.expasy.ch/cgi-bin/get-prosite-entry?PS00009">PS00009</A> <A HREF="http://www.expasy.ch/cgi-bin/get-prodoc-entry?PDOC00009">PDOC00009</A>
+Pattern-DE: Amidation site
+Pattern:    .G[RK][RK]
+   274      FGRR
+
+
+</pre>

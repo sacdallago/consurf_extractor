@@ -1,0 +1,264 @@
+# Perl-RDB
+# 
+# PHDhtm_top: prediction of topology for helical transmembrane proteins
+# 
+# PDBID         : query
+# LENGTH        :    222
+# NHTM_BEST     :      3     (number of helices for best model)
+# NHTM_2ND_BEST :      2     (number of helices for second best model)
+# REL_BEST      :  0.942     (reliability of best model =zscore)
+# REL_BEST_DIFF :  0.062     (reliability of best model =1st-2nd)
+# REL_BEST_DPROJ:      6     (reliability of best model projection of (1st-2nd)
+#
+# MODEL         : iteratively adding transmembrane helices (HTM's)
+# MODEL         : N HTM      , Total Score  , Best HTM   ,    C -     N
+# MODEL_DAT     : 1          , 0.7173       , 0.8903     ,   77 -    98
+# MODEL_DAT     : 2          , 0.8031       , 0.8808     ,   46 -    70
+# MODEL_DAT     : 3          , 0.8650       , 0.8822     ,   23 -    40
+#
+# HTMTOP_OBS    :  unk       (first loop region)
+# HTMTOP_PRD    :  out       (first loop region, mode=top_fin)
+# HTMTOP_MODPRD :  out       (first loop region, mode=PRHL)
+# HTMTOP_RID    :  8.857     (difference num(K+R), even-odd)
+# HTMTOP_RIP    :      8     (reliability index =int(min{9,2*sqrt((DC)^2)}) )
+# 
+# NOTATION No   : residue number 
+# NOTATION AA   : amino acid one letter code
+# NOTATION PHL  : predicted transmembrane helices
+# NOTATION PHL  :    H=helical membrane, L=no helical transmembrane
+# NOTATION RI_S : reliability of secondary structure prediction , 0-9
+# NOTATION pH   : probability of predicting helix, 0-9
+# NOTATION pL   : probability of predicting loop
+# NOTATION OtH  : network output for helix, 0-100
+# NOTATION OtL  : network output for loop
+# NOTATION PRHL : refined prediction (maximum score model)
+# NOTATION PR2HL: refined prediction (second best maximum score model)
+# NOTATION PTHLA: predicted model for maximal charge difference (all)
+# NOTATION PTHLS: predicted model for maximal charge difference (sep)
+# NOTATION PiTo : predicted topology of transmembrane regions
+# NOTATION PiTo :    i=loop inside, T=transmembrane, o=loop outside
+# 
+No	AA	PHL	RI_H	pH	pL	OtH	OtL	PRHL	PR2HL	PiTo
+4N	1S	1S	1N	1N	1N	3N	3N	1S	1S	1S
+   1	M	L	9	0	9	  2	 97	L	L	o
+   2	A	L	9	0	9	  1	 98	L	L	o
+   3	D	L	9	0	9	  1	 98	L	L	o
+   4	S	L	9	0	9	  1	 98	L	L	o
+   5	N	L	9	0	9	  1	 98	L	L	o
+   6	G	L	9	0	9	  1	 98	L	L	o
+   7	T	L	9	0	9	  1	 98	L	L	o
+   8	I	L	9	0	9	  1	 98	L	L	o
+   9	T	L	9	0	9	  1	 98	L	L	o
+  10	V	L	9	0	9	  1	 98	L	L	o
+  11	E	L	9	0	9	  1	 98	L	L	o
+  12	E	L	9	0	9	  1	 98	L	L	o
+  13	L	L	9	0	9	  1	 98	L	L	o
+  14	K	L	9	0	9	  1	 98	L	L	o
+  15	K	L	9	0	9	  2	 97	L	L	o
+  16	L	L	9	0	9	  4	 95	L	L	o
+  17	L	L	8	0	9	  6	 93	L	L	o
+  18	E	L	8	0	9	  8	 91	L	L	o
+  19	Q	L	7	1	8	 11	 88	L	L	o
+  20	W	L	6	1	8	 18	 81	L	L	o
+  21	N	L	2	3	6	 36	 64	L	L	o
+  22	L	H	2	6	3	 61	 38	L	L	o
+  23	V	H	5	7	2	 76	 23	H	L	T
+  24	I	H	6	8	1	 83	 16	H	L	T
+  25	G	H	7	8	1	 87	 12	H	L	T
+  26	F	H	7	8	1	 89	 10	H	L	T
+  27	L	H	8	9	0	 91	  8	H	L	T
+  28	F	H	8	9	0	 92	  7	H	L	T
+  29	L	H	8	9	0	 92	  7	H	L	T
+  30	T	H	8	9	0	 91	  8	H	L	T
+  31	W	H	8	9	0	 91	  8	H	L	T
+  32	I	H	8	9	0	 90	  9	H	L	T
+  33	C	H	7	8	1	 89	 10	H	L	T
+  34	L	H	7	8	1	 89	 10	H	L	T
+  35	L	H	7	8	1	 89	 10	H	L	T
+  36	Q	H	7	8	1	 88	 11	H	L	T
+  37	F	H	7	8	1	 87	 12	H	L	T
+  38	A	H	7	8	1	 86	 13	H	L	T
+  39	Y	H	6	8	1	 83	 16	H	L	T
+  40	A	H	5	7	2	 79	 20	H	L	T
+  41	N	H	4	7	2	 74	 25	L	L	i
+  42	R	H	3	6	3	 69	 30	L	L	i
+  43	N	H	4	7	2	 72	 27	L	L	i
+  44	R	H	5	7	2	 76	 23	L	L	i
+  45	F	H	6	8	1	 80	 19	L	L	i
+  46	L	H	6	8	1	 83	 16	H	H	T
+  47	Y	H	7	8	1	 85	 14	H	H	T
+  48	I	H	7	8	1	 86	 13	H	H	T
+  49	I	H	7	8	1	 87	 12	H	H	T
+  50	K	H	7	8	1	 88	 11	H	H	T
+  51	L	H	7	8	1	 88	 11	H	H	T
+  52	I	H	7	8	1	 89	 10	H	H	T
+  53	F	H	7	8	1	 88	 11	H	H	T
+  54	L	H	7	8	1	 88	 11	H	H	T
+  55	W	H	7	8	1	 88	 11	H	H	T
+  56	L	H	7	8	1	 88	 11	H	H	T
+  57	L	H	7	8	1	 88	 11	H	H	T
+  58	W	H	7	8	1	 88	 11	H	H	T
+  59	P	H	7	8	1	 88	 11	H	H	T
+  60	V	H	7	8	1	 87	 12	H	H	T
+  61	T	H	7	8	1	 87	 12	H	H	T
+  62	L	H	7	8	1	 87	 12	H	H	T
+  63	A	H	7	8	1	 87	 12	H	H	T
+  64	C	H	7	8	1	 87	 12	H	H	T
+  65	F	H	7	8	1	 87	 12	H	H	T
+  66	V	H	7	8	1	 87	 12	H	H	T
+  67	L	H	7	8	1	 87	 12	H	H	T
+  68	A	H	7	8	1	 87	 12	H	H	T
+  69	A	H	7	8	1	 87	 12	H	H	T
+  70	V	H	7	8	1	 88	 11	H	H	T
+  71	Y	H	7	8	1	 87	 12	L	L	o
+  72	R	H	7	8	1	 87	 12	L	L	o
+  73	I	H	7	8	1	 87	 12	L	L	o
+  74	N	H	7	8	1	 87	 12	L	L	o
+  75	W	H	7	8	1	 87	 12	L	L	o
+  76	I	H	7	8	1	 87	 12	L	L	o
+  77	T	H	7	8	1	 87	 12	H	H	T
+  78	G	H	7	8	1	 88	 11	H	H	T
+  79	G	H	7	8	1	 88	 11	H	H	T
+  80	I	H	7	8	1	 88	 11	H	H	T
+  81	A	H	7	8	1	 88	 11	H	H	T
+  82	I	H	7	8	1	 88	 11	H	H	T
+  83	A	H	7	8	1	 88	 11	H	H	T
+  84	M	H	7	8	1	 88	 11	H	H	T
+  85	A	H	7	8	1	 88	 11	H	H	T
+  86	C	H	7	8	1	 88	 11	H	H	T
+  87	L	H	7	8	1	 88	 11	H	H	T
+  88	V	H	7	8	1	 88	 11	H	H	T
+  89	G	H	7	8	1	 88	 11	H	H	T
+  90	L	H	7	8	1	 88	 11	H	H	T
+  91	M	H	7	8	1	 88	 11	H	H	T
+  92	W	H	7	8	1	 88	 11	H	H	T
+  93	L	H	7	8	1	 88	 11	H	H	T
+  94	S	H	7	8	1	 89	 10	H	H	T
+  95	Y	H	7	8	1	 89	 10	H	H	T
+  96	F	H	7	8	1	 89	 10	H	H	T
+  97	I	H	7	8	1	 89	 10	H	H	T
+  98	A	H	7	8	1	 88	 11	H	H	T
+  99	S	H	7	8	1	 85	 14	L	L	i
+ 100	F	H	5	7	2	 78	 21	L	L	i
+ 101	R	H	4	7	2	 73	 26	L	L	i
+ 102	L	H	3	6	3	 68	 31	L	L	i
+ 103	F	H	2	6	3	 61	 38	L	L	i
+ 104	A	L	1	4	5	 43	 56	L	L	i
+ 105	R	L	4	2	7	 25	 74	L	L	i
+ 106	T	L	6	1	8	 18	 81	L	L	i
+ 107	R	L	7	1	8	 12	 87	L	L	i
+ 108	S	L	8	0	9	  8	 91	L	L	i
+ 109	M	L	8	0	9	  8	 91	L	L	i
+ 110	W	L	8	0	9	  8	 91	L	L	i
+ 111	S	L	8	0	9	  5	 94	L	L	i
+ 112	F	L	8	0	9	  5	 94	L	L	i
+ 113	N	L	9	0	9	  3	 96	L	L	i
+ 114	P	L	9	0	9	  2	 97	L	L	i
+ 115	E	L	9	0	9	  1	 98	L	L	i
+ 116	T	L	9	0	9	  1	 98	L	L	i
+ 117	N	L	9	0	9	  2	 97	L	L	i
+ 118	I	L	9	0	9	  3	 96	L	L	i
+ 119	L	L	8	0	9	  6	 92	L	L	i
+ 120	L	L	8	0	9	  6	 93	L	L	i
+ 121	N	L	8	0	9	  6	 93	L	L	i
+ 122	V	L	8	0	9	  5	 94	L	L	i
+ 123	P	L	9	0	9	  4	 95	L	L	i
+ 124	L	L	9	0	9	  4	 95	L	L	i
+ 125	H	L	9	0	9	  3	 96	L	L	i
+ 126	G	L	9	0	9	  4	 95	L	L	i
+ 127	T	L	9	0	9	  4	 95	L	L	i
+ 128	I	L	8	0	9	  6	 93	L	L	i
+ 129	L	L	8	0	9	  6	 93	L	L	i
+ 130	T	L	8	0	9	  6	 93	L	L	i
+ 131	R	L	8	0	9	  6	 93	L	L	i
+ 132	P	L	8	0	9	  9	 90	L	L	i
+ 133	L	L	7	1	8	 11	 88	L	L	i
+ 134	L	L	7	1	8	 13	 86	L	L	i
+ 135	E	L	7	1	8	 12	 87	L	L	i
+ 136	S	L	6	1	8	 15	 84	L	L	i
+ 137	E	L	6	1	8	 18	 81	L	L	i
+ 138	L	L	5	2	7	 24	 75	L	L	i
+ 139	V	L	4	2	7	 29	 70	L	L	i
+ 140	I	L	2	3	6	 36	 63	L	L	i
+ 141	G	L	0	4	5	 45	 54	L	L	i
+ 142	A	H	0	5	4	 50	 49	L	L	i
+ 143	V	L	0	4	5	 47	 52	L	L	i
+ 144	I	L	2	3	6	 35	 64	L	L	i
+ 145	L	L	6	1	8	 19	 80	L	L	i
+ 146	R	L	6	1	8	 16	 83	L	L	i
+ 147	G	L	5	2	7	 20	 79	L	L	i
+ 148	H	L	5	2	7	 20	 78	L	L	i
+ 149	L	L	5	2	7	 20	 79	L	L	i
+ 150	R	L	7	1	8	 10	 89	L	L	i
+ 151	I	L	8	0	9	  7	 92	L	L	i
+ 152	A	L	9	0	9	  4	 95	L	L	i
+ 153	G	L	9	0	9	  2	 97	L	L	i
+ 154	H	L	9	0	9	  1	 98	L	L	i
+ 155	H	L	9	0	9	  1	 98	L	L	i
+ 156	L	L	9	0	9	  1	 98	L	L	i
+ 157	G	L	9	0	9	  1	 98	L	L	i
+ 158	R	L	9	0	9	  1	 98	L	L	i
+ 159	C	L	9	0	9	  1	 98	L	L	i
+ 160	D	L	9	0	9	  1	 98	L	L	i
+ 161	I	L	9	0	9	  1	 98	L	L	i
+ 162	K	L	9	0	9	  1	 98	L	L	i
+ 163	D	L	9	0	9	  1	 98	L	L	i
+ 164	L	L	9	0	9	  1	 98	L	L	i
+ 165	P	L	9	0	9	  1	 98	L	L	i
+ 166	K	L	9	0	9	  1	 98	L	L	i
+ 167	E	L	9	0	9	  2	 97	L	L	i
+ 168	I	L	9	0	9	  2	 97	L	L	i
+ 169	T	L	9	0	9	  3	 96	L	L	i
+ 170	V	L	9	0	9	  4	 95	L	L	i
+ 171	A	L	8	0	9	  6	 93	L	L	i
+ 172	T	L	8	0	9	  6	 93	L	L	i
+ 173	S	L	8	0	9	  8	 91	L	L	i
+ 174	R	L	8	0	9	  9	 90	L	L	i
+ 175	T	L	8	0	9	  8	 90	L	L	i
+ 176	L	L	8	0	9	  8	 91	L	L	i
+ 177	S	L	8	0	9	  6	 93	L	L	i
+ 178	Y	L	8	0	9	  5	 94	L	L	i
+ 179	Y	L	9	0	9	  2	 97	L	L	i
+ 180	K	L	9	0	9	  1	 98	L	L	i
+ 181	L	L	9	0	9	  1	 98	L	L	i
+ 182	G	L	9	0	9	  1	 98	L	L	i
+ 183	A	L	9	0	9	  1	 98	L	L	i
+ 184	S	L	9	0	9	  1	 98	L	L	i
+ 185	Q	L	9	0	9	  1	 98	L	L	i
+ 186	R	L	9	0	9	  1	 98	L	L	i
+ 187	V	L	9	0	9	  1	 98	L	L	i
+ 188	A	L	9	0	9	  1	 98	L	L	i
+ 189	G	L	9	0	9	  1	 98	L	L	i
+ 190	D	L	9	0	9	  1	 98	L	L	i
+ 191	S	L	9	0	9	  1	 98	L	L	i
+ 192	G	L	9	0	9	  2	 97	L	L	i
+ 193	F	L	9	0	9	  2	 97	L	L	i
+ 194	A	L	9	0	9	  2	 97	L	L	i
+ 195	A	L	9	0	9	  2	 97	L	L	i
+ 196	Y	L	9	0	9	  2	 97	L	L	i
+ 197	S	L	9	0	9	  2	 97	L	L	i
+ 198	R	L	9	0	9	  1	 98	L	L	i
+ 199	Y	L	9	0	9	  1	 98	L	L	i
+ 200	R	L	9	0	9	  1	 98	L	L	i
+ 201	I	L	9	0	9	  1	 98	L	L	i
+ 202	G	L	9	0	9	  1	 98	L	L	i
+ 203	N	L	9	0	9	  1	 98	L	L	i
+ 204	Y	L	9	0	9	  1	 98	L	L	i
+ 205	K	L	9	0	9	  1	 98	L	L	i
+ 206	L	L	9	0	9	  1	 98	L	L	i
+ 207	N	L	9	0	9	  1	 98	L	L	i
+ 208	T	L	9	0	9	  1	 98	L	L	i
+ 209	D	L	9	0	9	  1	 98	L	L	i
+ 210	H	L	9	0	9	  1	 98	L	L	i
+ 211	S	L	9	0	9	  1	 98	L	L	i
+ 212	S	L	9	0	9	  1	 98	L	L	i
+ 213	S	L	9	0	9	  1	 98	L	L	i
+ 214	S	L	9	0	9	  1	 98	L	L	i
+ 215	D	L	9	0	9	  1	 98	L	L	i
+ 216	N	L	9	0	9	  1	 98	L	L	i
+ 217	I	L	9	0	9	  1	 98	L	L	i
+ 218	A	L	9	0	9	  1	 98	L	L	i
+ 219	L	L	9	0	9	  1	 98	L	L	i
+ 220	L	L	9	0	9	  1	 98	L	L	i
+ 221	V	L	9	0	9	  1	 98	L	L	i
+ 222	Q	L	9	0	9	  1	 98	L	L	i

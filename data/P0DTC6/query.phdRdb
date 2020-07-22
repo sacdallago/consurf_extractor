@@ -1,0 +1,101 @@
+# Perl-RDB
+# 
+# PHDhtm_top: prediction of topology for helical transmembrane proteins
+# 
+# PDBID         : query
+# LENGTH        :    61
+# NHTM_BEST     :      1     (number of helices for best model)
+# NHTM_2ND_BEST :      0     (number of helices for second best model)
+# REL_BEST      :  0.000     (reliability of best model =zscore)
+# REL_BEST_DIFF :  0.337     (reliability of best model =1st-2nd)
+# REL_BEST_DPROJ:      9     (reliability of best model projection of (1st-2nd)
+#
+# MODEL         : iteratively adding transmembrane helices (HTM's)
+# MODEL         : N HTM      , Total Score  , Best HTM   ,    C -     N
+# MODEL_DAT     : 1          , 0.8554       , 0.9111     ,   13 -    37
+#
+# HTMTOP_OBS    :  unk       (first loop region)
+# HTMTOP_PRD    :  out       (first loop region, mode=top_fin)
+# HTMTOP_MODPRD :  out       (first loop region, mode=PRHL)
+# HTMTOP_RID    : 15.250     (difference num(K+R), even-odd)
+# HTMTOP_RIP    :      9     (reliability index =int(min{9,2*sqrt((DC)^2)}) )
+# 
+# NOTATION No   : residue number 
+# NOTATION AA   : amino acid one letter code
+# NOTATION PHL  : predicted transmembrane helices
+# NOTATION PHL  :    H=helical membrane, L=no helical transmembrane
+# NOTATION RI_S : reliability of secondary structure prediction , 0-9
+# NOTATION pH   : probability of predicting helix, 0-9
+# NOTATION pL   : probability of predicting loop
+# NOTATION OtH  : network output for helix, 0-100
+# NOTATION OtL  : network output for loop
+# NOTATION PRHL : refined prediction (maximum score model)
+# NOTATION PR2HL: refined prediction (second best maximum score model)
+# NOTATION PTHLA: predicted model for maximal charge difference (all)
+# NOTATION PTHLS: predicted model for maximal charge difference (sep)
+# NOTATION PiTo : predicted topology of transmembrane regions
+# NOTATION PiTo :    i=loop inside, T=transmembrane, o=loop outside
+# 
+No	AA	PHL	RI_H	pH	pL	OtH	OtL	PRHL	PR2HL	PiTo
+4N	1S	1S	1N	1N	1N	3N	3N	1S	1S	1S
+   1	M	L	8	0	9	  7	 92	L	L	o
+   2	F	L	8	0	9	  7	 92	L	L	o
+   3	H	L	8	0	9	  7	 92	L	L	o
+   4	L	L	8	0	9	  9	 90	L	L	o
+   5	V	L	7	1	8	 11	 88	L	L	o
+   6	D	L	6	1	8	 17	 82	L	L	o
+   7	F	L	3	3	6	 30	 69	L	L	o
+   8	Q	L	1	4	5	 44	 55	L	L	o
+   9	V	H	1	5	4	 59	 40	L	L	o
+  10	T	H	3	6	3	 69	 30	L	L	o
+  11	I	H	4	7	2	 74	 25	L	L	o
+  12	A	H	6	8	1	 80	 19	L	L	o
+  13	E	H	7	8	1	 85	 14	H	L	T
+  14	I	H	7	8	1	 89	 10	H	L	T
+  15	L	H	8	9	0	 91	  8	H	L	T
+  16	L	H	8	9	0	 92	  7	H	L	T
+  17	I	H	8	9	0	 92	  7	H	L	T
+  18	I	H	8	9	0	 92	  7	H	L	T
+  19	M	H	8	9	0	 91	  8	H	L	T
+  20	R	H	8	9	0	 91	  8	H	L	T
+  21	T	H	8	9	0	 91	  8	H	L	T
+  22	F	H	8	9	0	 91	  8	H	L	T
+  23	K	H	8	9	0	 90	  9	H	L	T
+  24	V	H	8	9	0	 90	  9	H	L	T
+  25	S	H	8	9	0	 90	  9	H	L	T
+  26	I	H	8	9	0	 90	  9	H	L	T
+  27	W	H	8	9	0	 90	  9	H	L	T
+  28	N	H	8	9	0	 90	  9	H	L	T
+  29	L	H	8	9	0	 90	  9	H	L	T
+  30	D	H	8	9	0	 91	  8	H	L	T
+  31	Y	H	8	9	0	 92	  7	H	L	T
+  32	I	H	8	9	0	 92	  7	H	L	T
+  33	I	H	8	9	0	 92	  7	H	L	T
+  34	N	H	8	9	0	 91	  8	H	L	T
+  35	L	H	8	9	0	 90	  9	H	L	T
+  36	I	H	7	8	1	 87	 11	H	L	T
+  37	I	H	6	8	1	 84	 15	H	L	T
+  38	K	H	5	7	2	 75	 24	L	L	i
+  39	N	H	2	6	3	 61	 38	L	L	i
+  40	L	L	1	4	5	 42	 57	L	L	i
+  41	S	L	5	2	7	 22	 77	L	L	i
+  42	K	L	7	1	8	 13	 86	L	L	i
+  43	S	L	8	0	9	  8	 91	L	L	i
+  44	L	L	8	0	9	  5	 94	L	L	i
+  45	T	L	9	0	9	  3	 96	L	L	i
+  46	E	L	9	0	9	  2	 97	L	L	i
+  47	N	L	9	0	9	  1	 98	L	L	i
+  48	K	L	9	0	9	  1	 98	L	L	i
+  49	Y	L	9	0	9	  1	 98	L	L	i
+  50	S	L	9	0	9	  0	 99	L	L	i
+  51	Q	L	9	0	9	  1	 98	L	L	i
+  52	L	L	9	0	9	  0	 99	L	L	i
+  53	D	L	9	0	9	  0	 99	L	L	i
+  54	E	L	9	0	9	  0	 99	L	L	i
+  55	E	L	9	0	9	  0	 99	L	L	i
+  56	Q	L	9	0	9	  0	 99	L	L	i
+  57	P	L	9	0	9	  0	 99	L	L	i
+  58	M	L	9	0	9	  1	 98	L	L	i
+  59	E	L	9	0	9	  1	 98	L	L	i
+  60	I	L	9	0	9	  1	 98	L	L	i
+  61	D	L	9	0	9	  1	 98	L	L	i

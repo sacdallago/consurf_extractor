@@ -1,0 +1,9 @@
+query	GO:0022891	0.53	substrate-specific transmembrane transporter activity
+query	GO:0022892	0.53	substrate-specific transporter activity
+query	GO:0005215	0.53	transporter activity
+query	GO:0005216	0.53	ion channel activity
+query	GO:0015075	0.53	ion transmembrane transporter activity
+query	GO:0022857	0.53	transmembrane transporter activity
+query	GO:0015267	0.53	channel activity
+query	GO:0022803	0.53	passive transmembrane transporter activity
+query	GO:0022838	0.53	substrate-specific channel activity

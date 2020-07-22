@@ -1,0 +1,38 @@
+hmmpfam - search one or more sequences against HMM database
+HMMER 2.3.2 (Oct 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 /var/tmp/rost_db/data/pfam_legacy/Pfam_ls
+Sequence file:            query.fasta
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query sequence: query
+Accession:      [none]
+Description:    [none]
+
+Scores for sequence family classification (score includes all domains):
+Model           Description                             Score    E-value  N 
+--------        -----------                             -----    ------- ---
+PF09399.2       SARS lipid binding protein              204.3    3.2e-58   1
+
+Parsed for domains:
+Model           Domain  seq-f seq-t    hmm-f hmm-t      score  E-value
+--------        ------- ----- -----    ----- -----      -----  -------
+PF09399.2         1/1       1    97 []     1    97 []   204.3  3.2e-58
+
+Alignments of top-scoring domains:
+PF09399.2: domain 1 of 1, from 1 to 97: score 204.3, E = 3.2e-58
+                   *->mDPktnvvpPALHLvDPqiqltitRmEDAvvhgqnnAdpkvYPiiLR
+                      mDPk++ + PAL LvDPqiql +tRmE Av+++qnn +pkvYPiiLR
+       query     1    MDPKISEMHPALRLVDPQIQLAVTRMENAVGRDQNNVGPKVYPIILR 47   
+
+                   LGsqLsLsmvrrnldsLeaRaFqstPivvkmtKLAttEELPDEFvvvtaK
+                   LGs LsL m+r+ l+sLe +aFq tPi v+mtKLAttEELPDEFvvvt+K
+       query    48 LGSPLSLNMARKTLNSLEDKAFQLTPIAVQMTKLATTEELPDEFVVVTVK 97   
+
+                   <-*
+                      
+       query     -     -    
+
+//

@@ -1,0 +1,2 @@
+query	GO:0039660	0.39	structural constituent of virion
+query	GO:0005198	0.39	structural molecule activity

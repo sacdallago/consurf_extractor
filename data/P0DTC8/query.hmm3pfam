@@ -1,0 +1,53 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             query.fasta
+# target HMM database:             /var/tmp/rost_db/data/pfam/Pfam-A.hmm
+# output directed to file:         query.hmm3pfam
+# per-seq hits tabular output:     query.hmm3pfamTbl
+# per-dom hits tabular output:     query.hmm3pfamDomTbl
+# prefer accessions over names:    yes
+# max ASCII text line length:      unlimited
+# model-specific thresholding:     GA cutoffs
+# number of worker threads:        1
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       query  [L=121]
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model     Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------  -----------
+    3.4e-44  150.2   1.3    3.8e-44  150.0   1.3    1.0  1  PF12093.8  Coronavirus NS8 protein
+
+
+Domain annotation for each model (and alignments):
+>> PF12093.8  Coronavirus NS8 protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  150.0   1.3   2.1e-48   3.8e-44       1     118 []       1     118 [.       1     118 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 150.0 bits;  conditional E-value: 2.1e-48
+  PF12093.8   1 mkllivltllslvscihketvvqecaenkpyvledpcpigyqsewfikiksrksarlvalcegdygkvlpihyerfgtyviscepleincqdpavgalivrcsydyetvefrdvlvvl 118
+                mk+l+ l+++++v   h+e+++q c++ +pyv++dpcpi+++s+w+i++++rksa l++lc  + g + pi y   g+y++sc p +incq+p  g+l+vrcs+  ++ e++dv+vvl
+      query   1 MKFLVFLGIITTVAAFHQECSLQSCTQHQPYVVDDPCPIHFYSKWYIRVGARKSAPLIELCVDEAGSKSPIQYIDIGNYTVSCLPFTINCQEPKLGSLVVRCSFYEDFLEYHDVRVVL 118
+                9********************************************************************************************************************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (121 residues searched)
+Target model(s):                       17929  (3037991 nodes)
+Passed MSV filter:                       375  (0.0209158); expected 358.6 (0.02)
+Passed bias filter:                      293  (0.0163422); expected 358.6 (0.02)
+Passed Vit filter:                        19  (0.00105974); expected 17.9 (0.001)
+Passed Fwd filter:                         1  (5.57756e-05); expected 0.2 (1e-05)
+Initial search space (Z):              17929  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.44u 0.44s 00:00:00.88 Elapsed: 00:00:05.94
+# Mc/sec: 61.89
+//
+[ok]

@@ -1,0 +1,1722 @@
+#                                                                      #
+# ==================================================================== #
+# PROF predictions for query                                           #
+# ==================================================================== #
+#                                                                      #
+# -------------------------------------------------------------------- #
+# SYNOPSIS of prediction                                               #
+# -------------------------------------------------------------------- #
+#                                                                      #
+# PROFsec summary                                                      #
+#                                                                      #
+# overall your protein can be classified as:                           #
+#                                                                      #
+# >>>   alpha-beta  <<<                                                #
+#                                                                      #
+# given the following classes:                                         #
+# 'all-alpha':   %H > 45% AND %E <  5%                                 #
+# 'all-beta':    %H <  5% AND %E > 45%                                 #
+# 'alpha-beta':  %H > 30% AND %E > 20%                                 #
+# 'mixed':       all others                                            #
+#                                                                      #
+# Predicted secondary structure composition:                           #
+# +-----------------+-------+-------+-------+                          #
+# | sec str type    |     H |     E |     L |                          #
+# | % in protein    |  30.6 |  26.6 |  42.8 |                          #
+# +-----------------+-------+-------+-------+                          #
+#                                                                      #
+#                                                                      #
+# Predicted solvent accessibility composition (core/surface ratio):    #
+#   Classes used:                                                      #
+#     e: residues exposed with more than 16% of their surface          #
+#     b: all other residues.                                           #
+# +--------------+-------+-------+                                     #
+# | acc type     |     b |     e |                                     #
+# | % in protein |  57.6 |  42.4 |                                     #
+# +--------------+-------+-------+                                     #
+#                                                                      #
+# -------------------------------------------------------------------- #
+# HEADER information                                                   #
+# -------------------------------------------------------------------- #
+#                                                                      #
+# ...................                                                  #
+# About your protein:                                                  #
+# ...................                                                  #
+#                                                                      #
+# prot_id        : query                                               #
+# prot_nres      : 7096                                                #
+# prot_nali      : 2498                                                #
+# prot_nchn      : 1                                                   #
+# prot_nfar      : 2465                                                #
+#                                                                      #
+# .........................                                            #
+# About the alignment used:                                            #
+# .........................                                            #
+#                                                                      #
+# ali_orig       : query.hsspPsiFil                                    #
+#                                                                      #
+# .....................................                                #
+# Residue composition for your protein:                                #
+# .....................................                                #
+#                                                                      #
+# +-----------------+-------+-------+-------+-------+-------+          #
+# | amino acid type |     A |     C |     D |     E |     F |          #
+# | % in protein    |   6.9 |   3.2 |   5.5 |   4.8 |   4.9 |          #
+# +-----------------+-------+-------+-------+-------+-------+          #
+# | amino acid type |     G |     H |     I |     K |     L |          #
+# | % in protein    |   5.8 |   2.0 |   4.8 |   6.1 |   9.4 |          #
+# +-----------------+-------+-------+-------+-------+-------+          #
+# | amino acid type |     M |     N |     P |     Q |     R |          #
+# | % in protein    |   2.4 |   5.4 |   3.9 |   3.4 |   3.4 |          #
+# +-----------------+-------+-------+-------+-------+-------+          #
+# | amino acid type |     S |     T |     V |     W |     Y |          #
+# | % in protein    |   6.4 |   7.4 |   8.4 |   1.1 |   4.7 |          #
+# +-----------------+-------+-------+-------+-------+-------+          #
+#                                                                      #
+# .............................                                        #
+# About  the PROF methods used:                                        #
+# .............................                                        #
+#                                                                      #
+# prof_fpar      : acc=/usr/share/profphd/prof/net/PROFboth_best.par   #
+# prof_nnet      : acc=6                                               #
+#                                                                      #
+# ....................                                                 #
+# Copyright & Contact:                                                 #
+# ....................                                                 #
+#                                                                      #
+# -> Copyright:Burkhard Rost, ROSTLAB                                  #
+# -> Email:    info@rostlab.org                                        #
+# -> WWW:      http://rostlab.org                                      #
+# -> Fax:                                                              #
+#                                                                      #
+# .............                                                        #
+# Please quote:                                                        #
+# .............                                                        #
+#                                                                      #
+# -> PROF:      B Rost (1996) Methods in Enzymology, 266:525-539       #
+# -> PROFsec:   B Rost & C Sander (1993) J Mol Biol, 232:584-599       #
+# -> PROFacc:   B Rost & C Sander (1994) Proteins, 20:216-226          #
+#                                                                      #
+#                                                                      #
+# -------------------------------------------------------------------- #
+# ABBREVIATIONS used:                                                  #
+# -------------------------------------------------------------------- #
+#                                                                      #
+# AA        : amino acid sequence                                      #
+# OBS_sec   : observed secondary structure: H=helix, E=extended        #
+#             (sheet), blank=other (loop)                              #
+# PROF_sec  : PROF predicted secondary structure: H=helix, E=extended  #
+#             (sheet), blank=other (loop)                              #
+#             PROF = PROF: Profile network prediction HeiDelberg       #
+# Rel_sec   : reliability index for PROFsec prediction (0=low          #
+#             to 9=high)                                               #
+#             Note: for the brief presentation strong predictions      #
+#             marked by '*'                                            #
+# SUB_sec   : subset of the PROFsec prediction, for all residues       #
+#             with an expected average accuracy > 82% (tables          #
+#             in header)                                               #
+#             NOTE: for this subset the following symbols are used:    #
+#               L: is loop (for which above ' ' is used)               #
+#               .: means that no prediction is made for this           #
+#             residue, as the reliability is:  Rel < 5                 #
+#  pH_sec   : 'probability' for assigning helix (1=high, 0=low)        #
+#  pE_sec   : 'probability' for assigning strand (1=high, 0=low)       #
+#  pL_sec   : 'probability' for assigning neither helix, nor           #
+#             strand (1=high, 0=low)                                   #
+# O_2_acc   : observerd relative solvent accessibility (acc)           #
+#             in 2 states: b = 0-16%, e = 16-100%.                     #
+# P_2_acc   : PROF predicted  relative solvent accessibility           #
+#             (acc) in 2 states: b = 0-16%, e = 16-100%.               #
+# O_3_acc   : observerd relative solvent accessibility (acc)           #
+#             in 3 states: b = 0-9%, i = 9-36%, e = 36-100%.           #
+# P_3_acc   : PROF predicted relative solvent accessibility            #
+#             (acc) in 3 states: b = 0-9%, i = 9-36%, e = 36-100%.     #
+# OBS_acc   : observed relative solvent accessibility (acc)            #
+#             in 10 states: a value of n (=0-9) corresponds            #
+#             to a relative acc. of between n*n % and (n+1)*(n+1)      #
+#             % (e.g. for n=5: 16-25%).                                #
+# PROF_acc  : PROF predicted relative solvent accessibility            #
+#             (acc) in 10 states: a value of n (=0-9) corresponds      #
+#             to a relative acc. of between n*n % and (n+1)*(n+1)      #
+#             % (e.g. for n=5: 16-25%).                                #
+# Rel_acc   : reliability index for PROFacc prediction (0=low          #
+#             to 9=high)                                               #
+#             Note: for the brief presentation strong predictions      #
+#             marked by '*'                                            #
+# SUB_acc   : subset of the PROFacc prediction, for all residues       #
+#             with an expected average correlation > 0.69 (tables      #
+#             in header)                                               #
+#             NOTE: for this subset the following symbols are used:    #
+#               I: is intermediate (for which above ' ' is used)       #
+#               .: means that no prediction is made for this           #
+#             residue, as the reliability is:  Rel < 4                 #
+#                                                                      #
+# prot_id   : identifier of protein [w]                                #
+# prot_nres : number of residues [d]                                   #
+# prot_nali : number of proteins aligned in family [d]                 #
+# prot_nchn : number of chains (if PDB protein) [d]                    #
+# prot_nfar : number of distant relatives [d]                          #
+# ali_orig  : input file                                               #
+# prof_fpar : name of parameter file, used [w]                         #
+# prof_nnet : number of networks used for prediction [d]               #
+# prof_skip : note: sequence stretches with less than 9 are            #
+#             not predicted, the symbol '*' is used!                   #
+#                                                                      #
+# ==================================================================== #
+# PROF_BODY with predictions for query                                 #
+# ==================================================================== #
+#                                                                      #
+# ---------------------
+# PROF results (normal)
+# ---------------------
+# 
+                   
+                   ....,....1....,....2....,....3....,....4....,....5....,....6 
+         AA       |MESLVPGFNEKTHVQLSLPVLQVRDVLVRGFGDSVEEVLSEARQHLKDGTCGLVEVEKGV|
+         OBS_sec  |                                                            |
+         PROF_sec |   EEE      EEEEEE EEEE  EEEE     HHHHHHHHHHHHHH    EEEEE   |
+         Rel_sec  |941033012110357530123203324512465388898888998760675068861464|
+ subset: SUB_sec  |L............EEE...........E...LL.HHHHHHHHHHHHH.LLL.EEEE..L.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeebiiibeeeibbibibbbbibeebbbibbiiibiebbeibieibeeeebbbbibieii|
+         Rel_acc  |211111105221033413112211102410011251393349055533111336352200|
+ subset: SUB_acc  |........e......b...........b......b..b..ib.eib.......b.b....|
+
+                   
+                   ....,....7....,....8....,....9....,....10...,....11...,....12 
+         AA       |LPQLEQPYVFIKRSDARTAPHGHVMVELVAELEGIQYGRSGETLGVLVPHVGEIPVAYRK|
+         OBS_sec  |                                                            |
+         PROF_sec |       EEEEEEE         EEEEEEEE   EEE     EEEEEEE      EEEEE|
+         Rel_sec  |123457636888503434665403577776205423212431366674032422101357|
+ subset: SUB_sec  |....LLL.EEEEE.....LLL...EEEEEE..L..........EEEE...........EE|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieebeibbbbbibbibieibieiibbbbbbiiebbibbibbibbbbbbbibieibibiii|
+         Rel_acc  |001130318891101100101011332537201201131022268796500010013002|
+ subset: SUB_acc  |........bbb................b.b.............bbbbbb...........|
+
+                   
+                   ....,....13...,....14...,....15...,....16...,....17...,....18 
+         AA       |VLLRKNGNKGAGGHSYGADLKSFDLGDELGTDPYEDFQENWNTKHSSGVTRELMRELNGG|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEE                             HHHH         HHHHHHHHHH   |
+         Rel_sec  |877533554443100011310003464347774002112435432430478898774278|
+ subset: SUB_sec  |EEEE..LL.................L...LLL.........L.......HHHHHHH..LL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbiebeeebbbbbbbbbbeibeieeeiieiiieibeeeieieibibbbiibbeibibb|
+         Rel_acc  |739012011012201220011221110201112131213122100201253385224200|
+ subset: SUB_acc  |b.b..............................................b..bb..b...|
+
+                   
+                   ....,....19...,....20...,....21...,....22...,....23...,....24 
+         AA       |AYTRYVDNNFCGPDGYPLECIKDLLARAGKASCTLSEQLDFIDTKRGVYCCREHEHEIAW|
+         OBS_sec  |                                                            |
+         PROF_sec | EEEEE           HHHHHHHHHH       HHHHHHHHH    EEEEE   EEEEE|
+         Rel_sec  |512200243445677617888988875065454304668775303652565234304655|
+ subset: SUB_sec  |L..........LLLLL.HHHHHHHHHH.LL.L....HHHHHH...LL.EEE......EEE|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibbibbbibbbbiebibbebbiibbbebbeiebebbebbeibieeebbbbbiiiebibbb|
+         Rel_acc  |112104110121101322259238923123122230233302112222034101213636|
+ subset: SUB_acc  |.....b.............bb..bb.........................b......b.b|
+
+                   
+                   ....,....25...,....26...,....27...,....28...,....29...,....30 
+         AA       |YTERSEKSYELQTPFEIKLAKKFDTFNGECPNFVFPLNSIIKTIQPRVEKKKLDGFMGRI|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEE          EEEEEEEEE         EEEE   EEEEEE           EEEE|
+         Rel_sec  |654034553333402555211103335655532431352467763000001112201123|
+ subset: SUB_sec  |EE....LL.......EEE........LLLLL......L..EEEE................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbiieeeieiibibebeibeeiieieeebbibbbbbibibibbiiieeeeeieibbbib|
+         Rel_acc  |130011321210013342203210013120011682313263333021433202000223|
+ subset: SUB_acc  |................b................bb.....b.......e...........|
+
+                   
+                   ....,....31...,....32...,....33...,....34...,....35...,....36 
+         AA       |RSVYPVASPNECNQMCLSTLMKCDHCGETSWQTGDFVKATCEFCGTENLTKEGATTCGYL|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEE        HHHHHHEEE            HHHH                    EE|
+         Rel_sec  |233102474321103120000023456543112203310111134333554453322010|
+ subset: SUB_sec  |.......L.................LLL....................LL..L.......|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iibbibbbieebiibbbbbbbibbibbiibbbbbibbebbbbbbbieibieeibibbbbb|
+         Rel_acc  |101002010311113233533240020112213201212310031011103011022204|
+ subset: SUB_acc  |..................b...b....................................b|
+
+                   
+                   ....,....37...,....38...,....39...,....40...,....41...,....42 
+         AA       |PQNAVVKIYCPACHNSEVGPEHSLAEYHNESGLKTILRKGGRTIAFGGCVFSYVGCHNKC|
+         OBS_sec  |                                                            |
+         PROF_sec |    EEE                HHHHH     EEEEE   EEEEE  EEEEE       |
+         Rel_sec  |233211013422346676642212222101340012004870675223255220343550|
+ subset: SUB_sec  |..............LLLLL....................LL.EEE....EE......LL.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieibbbibibebiieeeiiiebbbbibbeeeebeibieeeiibbbbbbbbbbbbbbieii|
+         Rel_acc  |000101110000000141110102120022120526031112143633376813120211|
+ subset: SUB_acc  |................e................e.b.......b.b...bbb........|
+
+                   
+                   ....,....43...,....44...,....45...,....46...,....47...,....48 
+         AA       |AYWVPRASANIGCNHTGVVGEGSEGLNDNLLEILQKEKVNINIVGDFKLNEEIAIILASF|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEEEEE        EE       HHHHHHHHHHHH         EE   EEEEEE  |
+         Rel_sec  |345321100012122210202543220458888776320555200001010023332033|
+ subset: SUB_sec  |..E..................L......HHHHHHHH...LLL..................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbibibibbiiibbbbbiiieebieibiebbeebeiebbbbbbbebeeibbbbbbii|
+         Rel_acc  |204630321101101033221011101527340621021200142022121124342111|
+ subset: SUB_acc  |..bb.......................e.b.e.b.........b.........b.b....|
+
+                   
+                   ....,....49...,....50...,....51...,....52...,....53...,....54 
+         AA       |SASTSAFVETVKGLDYKAFKQIVESCGNFKVTKGKAKKGAWNIGEQKSILSPLYAFASEA|
+         OBS_sec  |                                                            |
+         PROF_sec |    EEEHHHH           HHH    EEE                          HH|
+         Rel_sec  |444000101110233112310000003201001445432113565432012211233101|
+ subset: SUB_sec  |...................................L......LLL...............|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eiebebbieibeeieieebeibbiibieiebiieeiieibieieeieibbbbbbiiiieb|
+         Rel_acc  |111010312132313021021121011213011010001011110001001020010110|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....55...,....56...,....57...,....58...,....59...,....60 
+         AA       |ARVVRSIFSRTLETAQNSVRVLQKAAITILDGISQYSLRLIDAMMFTSDLATNNLVVMAY|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHH          HHHHHHHHHHHHHHHHHHHHH                  HHHHHH|
+         Rel_sec  |211110211010010257888776423443100010011122111232124442011233|
+ subset: SUB_sec  |................HHHHHHHH....................................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieibeebbeebbeibeebbeibieibiebbeibieibieibiibiieieiieiiibbiee|
+         Rel_acc  |141122101200201223633304131323422121111001001000100011101011|
+ subset: SUB_acc  |.e................b....e......e.............................|
+
+                   
+                   ....,....61...,....62...,....63...,....64...,....65...,....66 
+         AA       |ITGGVVQLTSQWLTNIFGTVYEKLKPVLDWLEEKFKEGVEFLRDGWEIVKFISTCACEIV|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH  HHHHHHHH   EEEE|
+         Rel_sec  |322334444555544555445556666665443234433221021000011000103554|
+ subset: SUB_sec  |.........HHHH..HHH..HHHHHHHHHH...........................EE.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bieebiebbeeibeebbiibbeebeebieibeeebeeibeibeeiiebbebbieibbibb|
+         Rel_acc  |103131303130313241241523324131324223302311100022130311200031|
+ subset: SUB_acc  |................b..b.e....b.....e...........................|
+
+                   
+                   ....,....67...,....68...,....69...,....70...,....71...,....72 
+         AA       |GGQIVTCAKEIKESVQTFFKLVNKFLALCADSIIIGGAKLKALNLGETFVTHSKGLYRKC|
+         OBS_sec  |                                                            |
+         PROF_sec |E  EEHHHHHHHHHHHHHHHHHHHHHHHH  EEEE    EEEEEE  EEEEEHHHHHHHH|
+         Rel_sec  |100000123467888888878776543200103310220001210101111100024555|
+ subset: SUB_sec  |..........HHHHHHHHHHHHHHH................................HHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iiebiibbeibeebbeibbeibeebieeieeeieiieeeieebibiibbbbbbeibieib|
+         Rel_acc  |013012104243315335142533102111121201203121021021131110121421|
+ subset: SUB_acc  |........e.b...b..b.e.b...................................e..|
+
+                   
+                   ....,....73...,....74...,....75...,....76...,....77...,....78 
+         AA       |VKSREETGLLMPLKAPKEIIFLEGETLPTEVLTEEVVLKTGDLQPLEQPTSEAVEAPLVG|
+         OBS_sec  |                                                            |
+         PROF_sec |HHH    EEEEEE     EEEEE   HHHHHHHHHHHHHHHHHHHHH     EE      |
+         Rel_sec  |420234403442014530467412311134556777776543200100000000011012|
+ subset: SUB_sec  |...............L...EE.........HHHHHHHHHH....................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieeieebebibeieieeeibibibiieibeebieibieibiebeeieiebieibeeeiie|
+         Rel_acc  |141123221221121122231410021032231235032223122020201110111000|
+ subset: SUB_acc  |.e...................b.............b........................|
+
+                   
+                   ....,....79...,....80...,....81...,....82...,....83...,....84 
+         AA       |TPVCINGLMLLEIKDTEKYCALAPNMMVTNNTFTLKGGAPTKVTFGDDTVIEVQGYKSVN|
+         OBS_sec  |                                                            |
+         PROF_sec |  EEEEEEEEEEE   EEEEEEEE    EEEEEEEE   EEEEEE  HHH HHH   EEE|
+         Rel_sec  |220120001222202202454310112100235641252023553000100000011022|
+ subset: SUB_sec  |...................E............EE...L....EE................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iibbbiiibbieieeeeebbibbieieiiebibibeeeeiiebiiieeibieieebeeie|
+         Rel_acc  |100000110012132012010001102011120222100022020013121200213202|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....85...,....86...,....87...,....88...,....89...,....90 
+         AA       |ITFELDERIDKVLNEKCSAYTVELGTEVNEFACVVADAVIKTLQPVSELLTPLGIDLDEW|
+         OBS_sec  |                                                            |
+         PROF_sec |EEE   HHHHHHH      EEEEEEE     EEEEEEEEHHHHHHHHH   EEEEEEEEE|
+         Rel_sec  |211011002232102122002222200112014553210110000110011123433222|
+ subset: SUB_sec  |.................................EE.........................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iiieieeibeebbeeeeeebibeeiieieeiibbbbibbieibeebieibeebeiebeei|
+         Rel_acc  |021202312250021210112021113033010011103130221412002112020321|
+ subset: SUB_acc  |..........e..................................b..............|
+
+                   
+                   ....,....91...,....92...,....93...,....94...,....95...,....96 
+         AA       |SMATYYLFDESGEFKLASHMYCSFYPPDEDEEEGDCEEEEFEPSTQYEYGTEDDYQGKPL|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEEEEEE   EEEEEEEEEEE                     EEEE         EE|
+         Rel_sec  |121356653013101333444431144310000112222112110010000011123202|
+ subset: SUB_sec  |....EEEE....................................................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iiiibibieeeeeiebbiibbbiiieeeeeeeieeieeeeieeeieieiiieeeieeeeb|
+         Rel_acc  |111002122122302000100010110201100101011101110111100111020111|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....97...,....98...,....99...,....100..,....101..,....102 
+         AA       |EFGATSAALQPEEEQEEDWLDDDSQQTVGQQDGSEDNQTTTIQTIVEVQPQLEMELTPVV|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEEEEEEE HHHHH                      EEEEEEE              |
+         Rel_sec  |321000111001000000001100011111111222100012211001333233434444|
+ subset: SUB_sec  |............................................................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eiieeeeeieeeeeeeeeiieeeieeeieiieeeeeeiiieiieiieieeeeeieieeii|
+         Rel_acc  |211111110111220122002030112000000012101110210111101110110001|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....103..,....104..,....105..,....106..,....107..,....108 
+         AA       |QTIEVNSFSGYLKLTDNVYIKNADIVEEAKKVKPTVVVNAANVYLKHGGGVAGALNKATN|
+         OBS_sec  |                                                            |
+         PROF_sec |      EEEEE     EEEEEE             EEEEHHHHHHH   HHHHHHHHH  |
+         Rel_sec  |545542013311356257886312101112333204540012322113236788865235|
+ subset: SUB_sec  |L.LL.........LL.EEEEE...............E.............HHHHHHH..L|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeieieeiiiiieeeiibbbbbbbbbeieeebibbbbbbbbbbbbibbbbbbbbbbibbb|
+         Rel_acc  |220201111101201136392030311002131319995872035012347549921131|
+ subset: SUB_acc  |.................b.b...............bbbbbb...b....bbbbbb.....|
+
+                   
+                   ....,....109..,....110..,....111..,....112..,....113..,....114 
+         AA       |NAMQVESDDYIATNGPLKVGGSCVLSGHNLAKHCLHVVGPNVNKGEDIQLLKSAYENFNQ|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHH       EEEEE       EEEEEE       HHHHHHHHHHHHH  |
+         Rel_sec  |025787888764115444540355134333312566413335762047788888875203|
+ subset: SUB_sec  |..HHHHHHHHH...L...L...EE.........EEE.....LLL...HHHHHHHHHH...|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eibiebbiebbeeeeebebbibibbibiibbibbbbbbbbbbieeeeieibeebbeibbe|
+         Rel_acc  |126330933042300231021405211112210996965300131321328236532312|
+ subset: SUB_acc  |..b...b...b..........b.b.........bbbbbb...........b..bb.....|
+
+                   
+                   ....,....115..,....116..,....117..,....118..,....119..,....120 
+         AA       |HEVLLAPLLSAGIFGADPIHSLRVCVDTVRTNVYLAVFDKNLYDKLVSSFLEMKSEKQVE|
+         OBS_sec  |                                                            |
+         PROF_sec |  EEEE           HHHHHHHHHHHHHHHHHHH     HHHHHEEEEEE   HHHHH|
+         Rel_sec  |531111010112214531578888999888877541135210011001122014403456|
+ subset: SUB_sec  |L..............L..HHHHHHHHHHHHHHHH....L...................HH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibbbbbbbbbbbbbbbibibbibbbibbiibbiiiiieeeibiibbibbbiieeeeibi|
+         Rel_acc  |224596674523422010007923972393305201102231122301221212215223|
+ subset: SUB_acc  |..bbbbbbbb..b.......bb..bb..b...b.......................e...|
+
+                   
+                   ....,....121..,....122..,....123..,....124..,....125..,....126 
+         AA       |QKIAEIPKEEVKPFITESKPSVEQRKQDDKKIKACVEEVTTTLEETKFLTENLLLYIDIN|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHH                                   EEEEEE      EEEEEEEE|
+         Rel_sec  |553101445555555565655444555544232200122113554112100000234551|
+ subset: SUB_sec  |HH......LLLLLLLLLLLLL...LLLL..............EE.............EE.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eibeeiieeeieeiieeeeeeieeeeeeeeeieeibeeieiebeiieiebeeiiiibibi|
+         Rel_acc  |513241132203110011111111121222212000220002031140203202002021|
+ subset: SUB_acc  |e...e.........................................e.............|
+
+                   
+                   ....,....127..,....128..,....129..,....130..,....131..,....132 
+         AA       |GNLHPDSATLVSDIDITFLKKDAPYIVGDVVQEGVLTAVVIPTKKAGGTTEMLAKALRKV|
+         OBS_sec  |                                                            |
+         PROF_sec |            HHHHHHHHH   HHHHHHHH   EEEEEE       HHHHHHHHHHH |
+         Rel_sec  |111434332234023777654060235654313631345412333332035777765440|
+ subset: SUB_sec  |...............HHHHH..L...HHH....L....E...........HHHHHHH...|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieiieeieieiiebbibbbeeebeebbeibbeeeibbbbbbiieeieebiebbiebbeei|
+         Rel_acc  |100100001100322203324203411222033111123121001021023052414342|
+ subset: SUB_acc  |....................e...e...........................b.e.b.e.|
+
+                   
+                   ....,....133..,....134..,....135..,....136..,....137..,....138 
+         AA       |PTDNYITTYPGQGLNGYTVEEAKTVLKKCKSAFYILPSIISNEKQEILGTVSWNLREMLA|
+         OBS_sec  |                                                            |
+         PROF_sec |    EEE           HHHHHHHHHHHHHHHHH          EEEEEEE  HHHHHH|
+         Rel_sec  |444101112233333553367888887754321001233355541256653012124544|
+ subset: SUB_sec  |...............LL..HHHHHHHHHH...........LLL...EEEE.......H..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eieibbbbbbbbbbbiieieibbebbiibbeibiibeeiieeeeiibbbbbiiebeebbe|
+         Rel_acc  |203012334130100012222832362223212110121011101120322111022204|
+ subset: SUB_acc  |........b............b...b.................................e|
+
+                   
+                   ....,....139..,....140..,....141..,....142..,....143..,....144 
+         AA       |HAEETRKLMPVCVETKAIVSTIQRKYKGIKIQEGVVDYGARFYFYTSKTTVASLINTLND|
+         OBS_sec  |                                                            |
+         PROF_sec |HHH                                    EEEEEEE       EEEEEE |
+         Rel_sec  |210013443322345332233123444311121000233035542022211201245520|
+ subset: SUB_sec  |..............L..........................EE.............EE..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibeeeeeeieiiieieeiieeieeeieeieieeeiieiebibibiieeeeeiibbbbbii|
+         Rel_acc  |211201231100110300101001001112111101100122210101021010000112|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....145..,....146..,....147..,....148..,....149..,....150 
+         AA       |LNETLVTMPLGYVTHGLNLEEAARYMRSLKVPATVSVSSPDAVTAYNGYLTSSSKTPEEH|
+         OBS_sec  |                                                            |
+         PROF_sec |    EEEEEEEE           EEEE     EEEEE     EE   EEEEE     EEE|
+         Rel_sec  |132023332210024410000000111024622566302220001211454125431134|
+ subset: SUB_sec  |..............................L..EEE.............E...L......|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieieibibbbibbeeeiebeibbeibeeieiebbbibiieebbebbibbbiiieeeeeii|
+         Rel_acc  |020100020110011222101302002102111121111220010011010101201211|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....151..,....152..,....153..,....154..,....155..,....156 
+         AA       |FIETISLAGSYKDWSYSGQSTQLGIEFLKRGDKSVYYTSNPTTFHLDGEVITFDNLKTLL|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEEE        HHHHHHHHHHHHHH    EEEEE   EEE     EEEEHHHHHHH|
+         Rel_sec  |677764114433210000123433221111562356522330000013112210122221|
+ subset: SUB_sec  |EEEEE.........................LL..EEE.......................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbibbibbiieeeieieeebiebbiibieieeeibbbiieeeeiiieeeebebeibeebi|
+         Rel_acc  |011031001000211001101212134031131132310211111121311203213221|
+ subset: SUB_acc  |..........................b.................................|
+
+                   
+                   ....,....157..,....158..,....159..,....160..,....161..,....162 
+         AA       |SLREVRTIKVFTTVDNINLHTQVVDMSMTYGQQFGPTYLDGADVTKIKPHNSHEGKTFYV|
+         OBS_sec  |                                                            |
+         PROF_sec |      EEEEEEEE   EEEEEEEE   EE      EEE                 EEEE|
+         Rel_sec  |022331347887631400124564200000111342231143213345543335515788|
+ subset: SUB_sec  |........EEEEE........EE........................LL....LL.EEEE|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ebieieebibibbbibbbbbbibbeieiibieibbbbbbibiebieieeieeieiibbbb|
+         Rel_acc  |201301223635002121303110201120001221314120111310000112112634|
+ subset: SUB_acc  |.........b.b..........................b..................b.b|
+
+                   
+                   ....,....163..,....164..,....165..,....166..,....167..,....168 
+         AA       |LPNDDTLRVEAFEYYHTTDPSFLGRYMSALNHTKKWKYPQVNGLTSIKWADNNCYLATAL|
+         OBS_sec  |                                                            |
+         PROF_sec |EE   HHHHHHHHHH    HHHHHHHHHHHHHH  EEEEEE  EEEEE     HHHHHHH|
+         Rel_sec  |403430235555530455657887778776420100133313425553023412467888|
+ subset: SUB_sec  |........HHHHH...LLLHHHHHHHHHHH..............EEE........HHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |biieeeeiiebbeibiiiibebbbibbbbbiibiebebbibeibbbbibbibbbbbbbbb|
+         Rel_acc  |311131011334121010102062262250201224300201100162001006396998|
+ subset: SUB_acc  |...........b..........b..b..b......b..........b......b.bbbbb|
+
+                   
+                   ....,....169..,....170..,....171..,....172..,....173..,....174 
+         AA       |LTLQQIELKFNPPALQDAYYRARAGEAANFCALILAYCNKTVGELGDVRETMSYLFQHAN|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHH     HHHHHHHHHHH   HHHHHHHHHHHH         HHHHHHHHHHHH |
+         Rel_sec  |889852011276258888887642663567776555522323552217899998887512|
+ subset: SUB_sec  |HHHHH.....LL.HHHHHHHHH..LL.HHHHHHHHHH.....LL...HHHHHHHHHHH..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbibebebeiebbbibbbibibbibbbbbbbbbbbbieeibeiiibeebbiibbeibe|
+         Rel_acc  |789221224311127127502020031339899958031100010124136933824212|
+ subset: SUB_acc  |bbb.....e.....b..bb..........bbbbbbb...........b..bb..b.e...|
+
+                   
+                   ....,....175..,....176..,....177..,....178..,....179..,....180 
+         AA       |LDSCKRVLNVVCKTCGQQQTTLKGVEAVMYMGTLSYEQFKKGVQIPCTCGKQATKYLVQQ|
+         OBS_sec  |                                                            |
+         PROF_sec | HHHHHHHHH HHH   EEEEE   EEEEEEEEE         EEEEEE    EEEEEEE|
+         Rel_sec  |000010000001103420012101115786543100000244034532044310145540|
+ subset: SUB_sec  |..........................EEEEE..............E..........EE..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bebbiibbibbbeibeieeiebebbbbbbbbbbbiieebeeeiibbbbbbiebbiibbii|
+         Rel_acc  |320221132315101013013212309764642211110221211171201000121221|
+ subset: SUB_acc  |...........b..............bbbbbb..............b.............|
+
+                   
+                   ....,....181..,....182..,....183..,....184..,....185..,....186 
+         AA       |ESPFVMMSAPPAQYELKHGTFTCASEYTGNYQCGHYKHITSKETLYCIDGALLTKSSEYK|
+         OBS_sec  |                                                            |
+         PROF_sec |   EEEEE    EEEE   EEEEEEEEE       EEEEE   EEEEE   EEEE     |
+         Rel_sec  |462688734653133202315777765303234301344301025765043000023255|
+ subset: SUB_sec  |.L.EEEE..LL.........EEEEEEE.................EEEE..........LL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ebbbbbbbbeeeeieieeeibbbbbbbbbibbbbbbbbbbbeebbbbbbbiebieieeie|
+         Rel_acc  |201589620102112032123375535141002322232102113243010202100303|
+ subset: SUB_acc  |...bbbb...............bbb.b.b.................b.............|
+
+                   
+                   ....,....187..,....188..,....189..,....190..,....191..,....192 
+         AA       |GPITDVFYKENSYTTTIKPVTYKLDGVVCTEIDPKLDNYYKKDNSYFTEQPIDLVPNQPY|
+         OBS_sec  |                                                            |
+         PROF_sec |  EEEEEEE  EEEEEEEEEEEEE  EEEEEE HHHHHHH                    |
+         Rel_sec  |630345542001443333677753541332201346532113553223354212346666|
+ subset: SUB_sec  |L....EE...........EEEEE.L..........HH.....LL.....L......LLLL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iebbibbbeeieieiibeibibebeeieiiebeeebeebbeeeeeibieibbebieeiei|
+         Rel_acc  |121103313211120103213131111222203404130132201201010000102021|
+ subset: SUB_acc  |.................................e.b........................|
+
+                   
+                   ....,....193..,....194..,....195..,....196..,....197..,....198 
+         AA       |PNASFDNFKFVCDNIKFADDLNQLTGYKKPASRELKVTFFPDLNGDVVAIDYKHYTPSFK|
+         OBS_sec  |                                                            |
+         PROF_sec |      HHHHHHHHHHHHHHHHHH            EEEE      EEEEEE    EE  |
+         Rel_sec  |654200011122101012122101044554332000122015567546765100000002|
+ subset: SUB_sec  |LL.........................LL............LLLLL.EEEE.........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeiiiebbeibieiiebbeebeeiieieeeeeeebebbbbbeiebbbbbbibeiiiiebe|
+         Rel_acc  |101121032100311413425121122213111542312000120053571001011022|
+ subset: SUB_acc  |...............e..e.b............eb...........b.bb..........|
+
+                   
+                   ....,....199..,....200..,....201..,....202..,....203..,....204 
+         AA       |KGAKLLHKPIVWHVNNATNKATYKPNTWCIRCLWSTKPVETSNSFDVLKSEDAQGMDNLA|
+         OBS_sec  |                                                            |
+         PROF_sec |   EEEE  EEEE       EEE    EEEEEEE           EEEEE          |
+         Rel_sec  |561566312011011111103541563145443203454246640133320234444343|
+ subset: SUB_sec  |LL.EEE...............E..LL...E.......L...LL.................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ebbibbbibbibibeiiieeiiiiibbbbbbbbbiiiibeieeebibbebieieeieibi|
+         Rel_acc  |101200110010000001211212001136024001100010213321312101011030|
+ subset: SUB_acc  |.............................b..b...........................|
+
+                   
+                   ....,....205..,....206..,....207..,....208..,....209..,....210 
+         AA       |CEDLKPVSEEVVENPTIQKDVLECNVKTTEVVGDIILKPANNSLKITEEVGHTDLMAAYV|
+         OBS_sec  |                                                            |
+         PROF_sec |      EE   EEEEEE    EE       EE  EEEE      EEEE     HHHHHEE|
+         Rel_sec  |233320010211222320210100110010002214503667401210134200001101|
+ subset: SUB_sec  |....................................E..LLL..................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieeieibieeeieibibeeeiieieieiieibiibbbiieeeebebieeiebbibbibbb|
+         Rel_acc  |122041013320110111220110113011000201221131323121301000300213|
+ subset: SUB_acc  |....e.......................................................|
+
+                   
+                   ....,....211..,....212..,....213..,....214..,....215..,....216 
+         AA       |DNSSLTIKKPNELSRVLGLKTLATHGLAAVNSVPWDTIANYAKPFLNKVVSTTTNIVTRC|
+         OBS_sec  |                                                            |
+         PROF_sec |E   EEEE    HHHH   EEEEEE  EEEEE  HHHHHHHHHHHHHHHHHHHHHHHHHH|
+         Rel_sec  |067636641452001102102321020355411124566555554311100123445555|
+ subset: SUB_sec  |.LLL.EE...L.................EE......HHHHHHHH............HHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieeebbbiiieebbebbebbibbiibbbbbbbbbieibiebbeibbeebbeibieibbeb|
+         Rel_acc  |201103412102201210001001110334000013151305200001001112115121|
+ subset: SUB_acc  |......b......................b.......b...b..............b...|
+
+                   
+                   ....,....217..,....218..,....219..,....220..,....221..,....222 
+         AA       |LNRVCTNYMPYFFTLLLQLCTFTRSTNSRIKASMPTTIAKNTVKSVGKFCLEASFNYLKS|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHHHHHHHHHHHH    EEEEE  EEEEEEEEEEHHHHHHHHHHHHHHH|
+         Rel_sec  |655667678877655444322110145235640321444455320135666777876521|
+ subset: SUB_sec  |HHHHHHHHHHHHHHH...........L..EE.........EE.....HHHHHHHHHHH..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |biibbbbbbibbbbbbbbbbibbeieeiebibeieeebeiiibiibbibbbibbbebbii|
+         Rel_acc  |512352175029744742511223100033311010102112131533063206120321|
+ subset: SUB_acc  |b...b..bb..bbbbbb.b..........................b...b...b......|
+
+                   
+                   ....,....223..,....224..,....225..,....226..,....227..,....228 
+         AA       |PNFSKLINIIIWFLLLSVCLGSLIYSTAALGVLMSNLGMPSYCTGYREGYLNSTNVTIAT|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH         HHH            |
+         Rel_sec  |101212211123445444455566657777766520365421110000000122211000|
+ subset: SUB_sec  |..............H....HHHHHHHHHHHHHHH...LL.....................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iibbebbibbbbbbbbbbbbbbbbbbbbbbbbbbbibbbbbbbiibbibbiiiiibbiib|
+         Rel_acc  |113024403565757534585367365568326511001010101001101000000010|
+ subset: SUB_acc  |.....bb..bbbbbbb.bbbb.bb.bbbbb..bb..........................|
+
+                   
+                   ....,....229..,....230..,....231..,....232..,....233..,....234 
+         AA       |YCTGSIPCSVCLSGLDSLDTYPSLETIQITISSFKWDLTAFGLVAEWFLAYILFTRFFYV|
+         OBS_sec  |                                                            |
+         PROF_sec |     EEEEEE      HHH    EEEEEEEEE    HHHHHHHHHHHHHHHHHHHHHHH|
+         Rel_sec  |124620231210121000002221024432100000101221135667788787666555|
+ subset: SUB_sec  |...L........................................HHHHHHHHHHHHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbibbbbbibbbibbibbeibebbibbiiiiebbebibbbbbbbbbbbbbbbbbbbbbbb|
+         Rel_acc  |120103280554121113002102220102010020111363789498665668647757|
+ subset: SUB_acc  |.......b.bbb............................b.bbbbbbbbbbbbbbbbbb|
+
+                   
+                   ....,....235..,....236..,....237..,....238..,....239..,....240 
+         AA       |LGLAAIMQLFFSYFAVHFISNSWLMWLIINLVQMAPISAMVRMYIFFASFYYVWKSYVHV|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH    HHHHHHHEEHHHHHHHHHHHHHHH|
+         Rel_sec  |677777777765432110001234556565520132011101000124577777666554|
+ subset: SUB_sec  |HHHHHHHHHHHH............HHHHHHH.................HHHHHHHHHHH.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbibbibbbbb|
+         Rel_acc  |558536925863374326343346736842341221323563668795694286238037|
+ subset: SUB_acc  |bbbb.bb.bbb..bb..b.b..bbb.bbb..b.......bb.bbbbbbbbb.bb..b..b|
+
+                   
+                   ....,....241..,....242..,....243..,....244..,....245..,....246 
+         AA       |VDGCNSSTCMMCYKRNRATRVECTTIVNGVRRSFYVYANGGKGFCKLHNWNCVNCDTFCA|
+         OBS_sec  |                                                            |
+         PROF_sec |HH       HHHHH      EEEEEEEE  EEEEEEEE   HHHHHH   EEE       |
+         Rel_sec  |412566420111000135411577775020026888623502121101211111345465|
+ subset: SUB_sec  |...LLL...........L...EEEEEE.....EEEEE..L................L.LL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbeibibbbbbeieeieebibbbbbbbiiibbbbbbbbbiibbeibibbbibbbbbii|
+         Rel_acc  |403311003005100020222341764032131519371102224220120501401001|
+ subset: SUB_acc  |b..........b..........b.bbb......b.b.b......b......b..b.....|
+
+                   
+                   ....,....247..,....248..,....249..,....250..,....251..,....252 
+         AA       |GSTFISDEVARDLSLQFKRPINPTDQSSYIVDSVTVKNGSIHLYFDKAGQKTYERHSLSH|
+         OBS_sec  |                                                            |
+         PROF_sec |      HHHHHHHHHHH          EEEEEEEEEE  EEEEEEE     EEEEE    |
+         Rel_sec  |422013578876534421222566630457756774144488886304420000000000|
+ subset: SUB_sec  |......HHHHHHH........LLLL...EEEEEEE.....EEEEE...............|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbiibbeebbeibeiebibbbbbbbbbiibibeebibibbbiiebieibiiibbee|
+         Rel_acc  |012352117822623323111211116121612433200334904110022001100002|
+ subset: SUB_acc  |....b...bb..b.............b...b..b.......ib.b...............|
+
+                   
+                   ....,....253..,....254..,....255..,....256..,....257..,....258 
+         AA       |FVNLDNLRANNTKGSLPINVIVFDGKSKCEESSAKSASVYYSQLMCQPILLLDQALVSDV|
+         OBS_sec  |                                                            |
+         PROF_sec |EEE                EEEEE     HHHHHHHHHHHHHHHH   EEEEEHHHHH  |
+         Rel_sec  |010000000013354564158870676200334544421234420464244411232002|
+ subset: SUB_sec  |.............L.LL..EEEE.LLL......H............L.............|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |biiieibeeeiieiiiibbbbbbbieieieieibibbbbbbbbbbbibbbbbbbbbbeei|
+         Rel_acc  |012122122101201110189972110301221421878588245213437931132110|
+ subset: SUB_acc  |...................bbbb..........b..bbbbbb.bb...b.bb........|
+
+                   
+                   ....,....259..,....260..,....261..,....262..,....263..,....264 
+         AA       |GDSAEVAVKMFDAYVNTFSSTFNVPMEKLKTLVATAEAELAKNVSLDNVLSTFISAARQG|
+         OBS_sec  |                                                            |
+         PROF_sec |   HHHHHHHHHHHHHHHH      HHHHHHHHHHHHHHHH        HHHHHHHHHH |
+         Rel_sec  |444023356778777643200243434444444211212211322221011345543200|
+ subset: SUB_sec  |.......HHHHHHHHH.....................................HH.....|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeeiebbbebbibbbibbiibbeieieebeebbebbeiebieebeieeibebbiebbeee|
+         Rel_acc  |201110602542285234000101115132220112101101231002001151225201|
+ subset: SUB_acc  |......b..bb..bb..b........e.........................b...b...|
+
+                   
+                   ....,....265..,....266..,....267..,....268..,....269..,....270 
+         AA       |FVDSDVETKDVVECLKLSHQSDIEVTGDSCNNYMLTYNKVENMTPRDLGACIDCSARHIN|
+         OBS_sec  |                                                            |
+         PROF_sec |       HHHHHHHHHHHH   EEEE                  HHHHHHHHH   HHHH|
+         Rel_sec  |123333505677777754204514321343442100023344461125555330201001|
+ subset: SUB_sec  |......L.HHHHHHHHH....L.....................L...HHHH.........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibeiebeieebbibbibbbeiebibbbibbbbbbbbbbeieebieibbbbbbibbbeibb|
+         Rel_acc  |012122223161359206121221611021111321112013022211317511121130|
+ subset: SUB_acc  |..........b..bb..b......b.........................bb........|
+
+                   
+                   ....,....271..,....272..,....273..,....274..,....275..,....276 
+         AA       |AQVAKSHNIALIWNVKDFMSLSEQLRKQIRSAAKKNNLPFKLTCATTRQVVNVVTTKIAL|
+         OBS_sec  |                                                            |
+         PROF_sec |HHEE     EEEEEHHHHHHH HHHHHHHHHHHH    EEEEEE   EEEEEEEEEEEEE|
+         Rel_sec  |110014761144430245531078889888753016625887411200012110235652|
+ subset: SUB_sec  |......LL.........HH...HHHHHHHHHH...LL.EEEE..............EEE.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibbeeeebbbbbbbeibiebbeebieibiebbeeeebibbbbbbibiiibibbbbibbb|
+         Rel_acc  |112111112279734125133452623393314322232809520102000030221202|
+ subset: SUB_acc  |..........bbb.b..b...be.b...b...b......b.bb.................|
+
+                   
+                   ....,....277..,....278..,....279..,....280..,....281..,....282 
+         AA       |KGGKIVNNWLKQLIKVTLVFLFVAAIFYLITPVHVMSKHTDFSSEIIGYKAIDGGVTRDI|
+         OBS_sec  |                                                            |
+         PROF_sec |      HHHHHHHHHHHHHHHHHHHHHHHHH EE              EEEEE   EEEE|
+         Rel_sec  |256532256788888888888888776531000012433210132111246304301120|
+ subset: SUB_sec  |.LLL...HHHHHHHHHHHHHHHHHHHHH......................E.........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeieiiiebbibbbbbbbbbbbbbbbbbbbbbbbbbieiieieiibbbbibbibbbbieb|
+         Rel_acc  |110212223622873789998996795364312010110021110002423612223212|
+ subset: SUB_acc  |.........b..bb.bbbbbbbbbbbb.bb..................b..b........|
+
+                   
+                   ....,....283..,....284..,....285..,....286..,....287..,....288 
+         AA       |ASTDTCFANKHADFDTWFSQRGGSYTNDKACPLIAAVITREVGFVVPGLPGTILRTTNGD|
+         OBS_sec  |                                                            |
+         PROF_sec |         HHHHHHHHHHHH           EEEEEEEE   EEEE      EEE    |
+         Rel_sec  |344200001001113566531362035566525777763003314402441001220661|
+ subset: SUB_sec  |...............HHHH...L...LLLLL.EEEEEE...................LL.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieeiibbbbibeebiebbieibieiiiiebbbbbbbbbiiebibbbbbbbbbbbbbbeii|
+         Rel_acc  |102103211100152214233001110110349999740220001533323054210012|
+ subset: SUB_acc  |.............b...b.............bbbbbbb.......b......bb......|
+
+                   
+                   ....,....289..,....290..,....291..,....292..,....293..,....294 
+         AA       |FLHFLPRVFSAVGNICYTPSKLIEYTDFATSACVLAAECTIFKDASGKPVPYCYDTNVLE|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEEEEE    EEEE   EEEE       HHH HHHHHHHH     EEEEEE      |
+         Rel_sec  |355531100035304321330220122221011001233311013663122431132202|
+ subset: SUB_sec  |.EEE.......L.................................LL.............|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbibbbibbibbbbieibbibiibbibbbbbbbbbbbbeeieeeibbbbbbbbbbe|
+         Rel_acc  |474742122010203431011011000000225583617226111301102372100000|
+ subset: SUB_acc  |bbbbb..........b................bbb.b.b..b..........b.......|
+
+                   
+                   ....,....295..,....296..,....297..,....298..,....299..,....300 
+         AA       |GSVAYESLRPDTRYVLMDGSIIQFPNTYLEGSVRVVTTFDSEYCRHGTCERSEAGVCVST|
+         OBS_sec  |                                                            |
+         PROF_sec |           EEEEE    EEEE HHHH    EEEEEE   EEEEEEEE     EEEEE|
+         Rel_sec  |332200015432566316724642113211650577752010211002220465236531|
+ subset: SUB_sec  |........L...EEE..LL..E........LL.EEEEE..............LL..EE..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibibbibbbbbbibibbeieibibbiibbeibbibbibieiibbbbbibieiebbbbbbb|
+         Rel_acc  |001000030301201202012224210620202358232021040231321020335621|
+ subset: SUB_acc  |.......................b...b......bb.......b............bb..|
+
+                   
+                   ....,....301..,....302..,....303..,....304..,....305..,....306 
+         AA       |SGRWVLNNDYYRSLPGVFCGVDAVNLLTNMFTPLIQPIGALDISASIVAGGIVAIVVTCL|
+         OBS_sec  |                                                            |
+         PROF_sec | EEEEEE          EE  HHHHHHHHHHHHHH  HHHHHHHHHHHHHHHHHHHHHHH|
+         Rel_sec  |104665234213356512121034556755422102200232335556677888888888|
+ subset: SUB_sec  |...EEE.......LLL........HHHHHH..............HHHHHHHHHHHHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iiibbbiieiiiiiibbbbbbibbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         Rel_acc  |112242011101110113430132177325523332222430465388768999999999|
+ subset: SUB_acc  |....b.............b......bb..bb........b..bbb.bbbbbbbbbbbbbb|
+
+                   
+                   ....,....307..,....308..,....309..,....310..,....311..,....312 
+         AA       |AYYFMRFRRAFGEYSHVVAFNTLLFLMSFTVLCLTPVYSFLPGVYSVIYLYLTFYLTNDV|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHEEEE     EEHHHHHHHHHHHHHH    H|
+         Rel_sec  |888888888764445788888878877431011003321000112322111110102430|
+ subset: SUB_sec  |HHHHHHHHHHH...HHHHHHHHHHHHH.................................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbibbebbiibbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbiiib|
+         Rel_acc  |956763902072134359988999488577766631001456697899696955220110|
+ subset: SUB_acc  |bbbbb.b...b...b.bbbbbbbbbbbbbbbbbb.....bbbbbbbbbbbbbbb......|
+
+                   
+                   ....,....313..,....314..,....315..,....316..,....317..,....318 
+         AA       |SFLAHIQWMVMFTPLVPFWITIAYIICISTKHFYWFFSNYLKRRVVFNGVSFSTFEEAAL|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHHHHHHHHHEEEEEEEEE EEEEEEEE   EEEEE  EEE  HHHHHH|
+         Rel_sec  |111122211000011122210001111100001222330021145414301012213322|
+ subset: SUB_sec  |............................................E...............|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbibbbbbbiiebeiibbiiiibbbbbiibbi|
+         Rel_acc  |247558689978646644587997998674025315511102222001011121210651|
+ subset: SUB_acc  |.bbbbbbbbbbbbbbbbbbbbbbbbbbbbb..b..bb....................bb.|
+
+                   
+                   ....,....319..,....320..,....321..,....322..,....323..,....324 
+         AA       |CTFLLNKEMYLKLRSDVLLPLTQYNRYLALYNKYKYFSGAMDTTSYREAACCHLAKALND|
+         OBS_sec  |                                                            |
+         PROF_sec |HHEE  HHHHHHHHHH    HHHHHHHHHHH  EEE      HHHHHHHHHHHHHHHHHH|
+         Rel_sec  |001105034544444305664677665552022022025667077888888889988887|
+ subset: SUB_sec  |.....L...H.......LLL.HHHHHHHH.........LLLL.HHHHHHHHHHHHHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbiebbbibbbibbbeieibiebbebbiebebiebeiiieibiibbbbbbbibbie|
+         Rel_acc  |335250111402641202120228132320012320010101241332692629934933|
+ subset: SUB_acc  |..b.b....b..bb.........b...................e....bb.b.bb.bb..|
+
+                   
+                   ....,....325..,....326..,....327..,....328..,....329..,....330 
+         AA       |FSNSGSDVLYQPPQTSITSAVLQSGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVY|
+         OBS_sec  |                                                            |
+         PROF_sec |HH     EEEE       HHHHHHHHHHH      EEEEEEEEEE       EEE  EEE|
+         Rel_sec  |520576044405643211156775465511676740145788862221002023022232|
+ subset: SUB_sec  |H..LLL.....LL......HHHHH.HHH..LLLL....EEEEEE................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bieeebibbbbbbebibbbbbbbibbeibbbieiebiibbbbbbbibbbbbbbbbibbbb|
+         Rel_acc  |303021224212010101220611272210001021212271722100132652310161|
+ subset: SUB_acc  |........b............b...b..............b.b........bb.....b.|
+
+                   
+                   ....,....331..,....332..,....333..,....334..,....335..,....336 
+         AA       |CPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGHSMQNCVLKLKVDTANPK|
+         OBS_sec  |                                                            |
+         PROF_sec |   EEEE         HHHHHH     EEEEEE  EEEEEEEEEE  EEEEEEEEE    |
+         Rel_sec  |021023013323465312210001243168874021578876642111688886312565|
+ subset: SUB_sec  |.............LL.............EEEE....EEEEEEE.....EEEEEE...LLL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbieeieiiebiibbbiiibbibbbbbiebibibbbbibibbbbibibiieeee|
+         Rel_acc  |540185420010000101111110000162911110254701020231164735310013|
+ subset: SUB_acc  |bb..bbb.....................b.b......bib.........bib.b......|
+
+                   
+                   ....,....337..,....338..,....339..,....340..,....341..,....342 
+         AA       |TPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCV|
+         OBS_sec  |                                                            |
+         PROF_sec |    EEEEE    EEEEEEEE    EEEEEEEE    EEEEEEE       EEEE   EE|
+         Rel_sec  |553003453146414788751364002566662255236532112434542035404246|
+ subset: SUB_sec  |LL.....E...L...EEEEE..L....EEEEE..LL..EE........L....E.....E|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eiebebiebeeeiibbbbbbbibbbbbbbbbbbbbibbbibbbbbbbbbbbbbibebiib|
+         Rel_acc  |103330130220126368760110113523633000004153312311332330120217|
+ subset: SUB_acc  |..............b.bbbb.......b..b.......b.b..................b|
+
+                   
+                   ....,....343..,....344..,....345..,....346..,....347..,....348 
+         AA       |SFCYMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDR|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEEEEE                                   HHHHHHHHHHHH    |
+         Rel_sec  |788633200256310022445310123213321100256530003478888888740563|
+ subset: SUB_sec  |EEEE......LL........L................LLL......HHHHHHHHH..LL.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbbbieibibbbibebibbbbbiieeebiiieeeiibbbbbbbbbbbbbbiiie|
+         Rel_acc  |296563260201100122100312010010021021100210222279959797722011|
+ subset: SUB_acc  |.bbbb..b......................................bbbbbbbbb.....|
+
+                   
+                   ....,....349..,....350..,....351..,....352..,....353..,....354 
+         AA       |WFLNRFTTTLNDFNLVAMKYNYEPLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMN|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEE     HHHHHHHHHH          HHHHHHHHH    HHHHHHHHHHHHHH    |
+         Rel_sec  |233124311123436663235433443310244443201452068889889987522467|
+ subset: SUB_sec  |..............HHH...L...................L..HHHHHHHHHHHH...LL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibbiiieibbiibbiibbeiebeeieieiiebbeibbeeiebibbibbebbiebbeeeie|
+         Rel_acc  |012101010211522070221200010310223125121012261375229333022121|
+ subset: SUB_acc  |............b...b..................b.......b..bb..b.........|
+
+                   
+                   ....,....355..,....356..,....357..,....358..,....359..,....360 
+         AA       |GRTILGSALLEDEFTPFDVVRQCSGVTFQSAVKRTIKGTHHWLLLTILTSLLVLVQSTQW|
+         OBS_sec  |                                                            |
+         PROF_sec |  EEE           HHHHHHH  EEEEE EEEEEEEHHHHHHHHHHHHHHHHHHHHHE|
+         Rel_sec  |630210121223445023432101012210001111000145666666555444321000|
+ subset: SUB_sec  |L.............L..........................HHHHHHHHHH.........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibbbbbbibeeebibiibbibbbbbibiieieeebeibbbbbbbbbbbbbbbbbbbbbb|
+         Rel_acc  |001533101111233112641021131200113120110211785489779765635332|
+ subset: SUB_acc  |...b..............bb......................bbbbbbbbbbbbb.b...|
+
+                   
+                   ....,....361..,....362..,....363..,....364..,....365..,....366 
+         AA       |SLFFFLYENAFLPFAMGIIAMSAFAMMFVKHKHAFLCLFLLPSLATVAYFNMVYMPASWV|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEE    HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHEEEEEEEEEEEEHHHHH|
+         Rel_sec  |123332021101122345555555543221122223332221102333221232103467|
+ subset: SUB_sec  |.................HHHHHHHH.................................HH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbiibbbbbbbbbbbbbbbbbbbbibibbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         Rel_acc  |454535011012488878798788624341013457564764366567432332522134|
+ subset: SUB_acc  |bbbb.b......bbbbbbbbbbbbb.b.b....bbbbbbbbb.bbbbbb.....b....b|
+
+                   
+                   ....,....367..,....368..,....369..,....370..,....371..,....372 
+         AA       |MRIMTWLDMVDTSLSGFKLKDCVMYASAVVLLILMTARTVYDDGARRVWTLMNVLTLVYK|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHEEEEEHHHHEEEEEEEEEEEEEEEEEEEE  EEEEEEHHHHHHHHHH|
+         Rel_sec  |767666532210000000011011110122333344566630001222101334322100|
+ subset: SUB_sec  |HHHHHHH.............................EEEE....................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibbbbbibbibbbbbbibiibbbbbbbbbbbbbbbbbbbbiibbbbbbbbbbbbbbbbb|
+         Rel_acc  |216214212210422220400576778666665634213311102035546558755943|
+ subset: SUB_acc  |..b..b......b.....b..bbbbbbbbbbbbb.b...........bbbbbbbbbbbb.|
+
+                   
+                   ....,....373..,....374..,....375..,....376..,....377..,....378 
+         AA       |VYYGNALDQAISMWALIISVTSNYSGVVTTVMFLARGIVFMCVEYCPIFFITGNTLQCIM|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEE  HHHHHHHHHHHHH    HHHHHHHHHHEEEEEEEEEEEEEEEEE   EEEEE|
+         Rel_sec  |000000000222221122220121011001111100133444433322323202102344|
+ subset: SUB_sec  |............................................................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbiibbbbbbbbbbbbbibbbbbbbbbbbbbbbbbbbbbbbbbbbbbbibbibbb|
+         Rel_acc  |654312201343665676333100125555743671264355312132342101011337|
+ subset: SUB_acc  |bbb.......b.bbbbbb........bbbbbb.bb..bb.bb.......b.........b|
+
+                   
+                   ....,....379..,....380..,....381..,....382..,....383..,....384 
+         AA       |LVYCFLGYFCTCYFGLFCLLNRYFRLTLGVYDYLVSTQEFRYMNSQGLLPPKNSIDAFKL|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEEEEEEHHHHHHHHHHHHHEEEE   EEEEEEHHHHHHHHH        HHHHHHH|
+         Rel_sec  |332221000000111111112100000130224640144432331156677531455543|
+ subset: SUB_sec  |.................................E............LLLLLL...HHH..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbbbbbbbbbbbbbbibbibbbbibibibbibbbibbbbiibiiieibiibbbb|
+         Rel_acc  |774666534656356863683133120101032253101520320001010222013913|
+ subset: SUB_acc  |bbbbbbb.bbbb.bbbb.bb..............b....b.................b..|
+
+                   
+                   ....,....385..,....386..,....387..,....388..,....389..,....390 
+         AA       |NIKLLGVGGKPCIKVATVQSKMSDVKCTSVVLLSVLQQLRVESSSKLWAQCVQLHNDILL|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHEEE    EEEEEEEE       EEEEEEHHHH    EE  HHHHHHHHHHHHHH  |
+         Rel_sec  |100002045301257543101332210012210011122110010467766543200003|
+ subset: SUB_sec  |........L....EEE..............................HHHHHH........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbibbbbiieiibibbbbbbebeebebbbbbbbbbbieiebebibebbiibbibbbibbb|
+         Rel_acc  |242633400311325222112012013345775233121221120313106413412311|
+ subset: SUB_acc  |.b.b..b.......b.............bbbbb.................bb..b.....|
+
+                   
+                   ....,....391..,....392..,....393..,....394..,....395..,....396 
+         AA       |AKDTTEAFEKMVSLLSVLLSMQGAVDINKLCEEMLDNRATLQAIASEFSSLPSYAAFATA|
+         OBS_sec  |                                                            |
+         PROF_sec |   HHHHHHHHHHHHHHHHHH     HHHHHHHHH   HHHHHHHHHHHH   HHHHHHH|
+         Rel_sec  |677178888899889888630243125688887530420256677654202013566778|
+ subset: SUB_sec  |LLL.HHHHHHHHHHHHHHH.......HHHHHHHH......HHHHHHH.......HHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |beeieebbeibbbbbbbbbbbiibbebeebbeibbeiebbbbbbbeibiebbbbbbbiib|
+         Rel_acc  |022133622494499537621100123142633113020341455222001021233129|
+ subset: SUB_acc  |......b..ibbbbbb.bb.........e.b.........b.bbb..............b|
+
+                   
+                   ....,....397..,....398..,....399..,....400..,....401..,....402 
+         AA       |QEAYEQAVANGDSEVVLKKLKKSLNVAKSEFDRDAAMQRKLEKMADQAMTQMYKQARSED|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHH    HHHHHHHHHHH HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH |
+         Rel_sec  |888888763367725666654321122425446788888888888888988878765220|
+ subset: SUB_sec  |HHHHHHHH..LLL.HHHHHH.........H..HHHHHHHHHHHHHHHHHHHHHHHHH...|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieibeebbeeeeeeeibeebiebbbbbebibiiiibbieibiebbiibbbibbeebieee|
+         Rel_acc  |221323303211234115332300123112112134213264428236712333243301|
+ subset: SUB_acc  |..............e..e.................b....bie.b..bb......b....|
+
+                   
+                   ....,....403..,....404..,....405..,....406..,....407..,....408 
+         AA       |KRAKVTSAMQTMLFTMLRKLDNDALNNIINNARDGCVPLNIIPLTTAAKLMVVIPDYNTY|
+         OBS_sec  |                                                            |
+         PROF_sec |  HHHHHHHHHHHHHHHHH  HHHHHHHHHHHH     EEEEEEE   EEEEEE      |
+         Rel_sec  |201578899988998886317035777886653265222355431133157873364311|
+ subset: SUB_sec  |...HHHHHHHHHHHHHHH..L..HHHHHHHHH..LL....EE.......EEEE..L....|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeiibbbbbbbbbbbbbeebeieibiebbeibiebbbbbbbbbbbbbbibbbbbbiiebb|
+         Rel_acc  |111261459336920753233151722762281101433366342000343976210100|
+ subset: SUB_acc  |....b.bbb..bb..bb.....e.b..bb..b....b...bb.b.....b.bbb......|
+
+                   
+                   ....,....409..,....410..,....411..,....412..,....413..,....414 
+         AA       |KNTCDGTTFTYASALWEIQQVVDADSKIVQLSEISMDNSPNLAWPLIVTALRANSAVKLQ|
+         OBS_sec  |                                                            |
+         PROF_sec |  EEE  EEEEE EEEEEEEEEE    EEEEEEE           EEEEEEE    EEEE|
+         Rel_sec  |100202236650014565444405884242211002467764341367643124421320|
+ subset: SUB_sec  |........EEE....EEE.....LLL...........LLLL.....EEE...........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eiibeiibbbbbbbbbibiibieieeeibebiebeieeeeebbbbbbbbbbiieeebibb|
+         Rel_acc  |212020005233323326223210414222222011210101123748250201020340|
+ subset: SUB_acc  |........b........b......e.e..................bbb.b........b.|
+
+                   
+                   ....,....415..,....416..,....417..,....418..,....419..,....420 
+         AA       |NNELSPVALRQMSCAAGTTQTACTDDNALAYYNTTKGGRFVLALLSDLQDLKWARFPKSD|
+         OBS_sec  |                                                            |
+         PROF_sec |        EEEEEEEE    EEEE    EEEEEE    EEEEEEEE     EEEEEEE  |
+         Rel_sec  |231123310122454201100000134136776036635788776234563035454125|
+ subset: SUB_sec  |.............E...............EEEE..LL.EEEEEEE...LL...E.E...L|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbibieiebiibibibebeeiibieeebibbbiieebiibbbbbbbiieebebbibiiee|
+         Rel_acc  |200101011210031010010001121114110013032546965321131312312213|
+ subset: SUB_acc  |.............................b.........bbbbbb...............|
+
+                   
+                   ....,....421..,....422..,....423..,....424..,....425..,....426 
+         AA       |GTGTIYTELEPPCRFVTDTPKGPKVKYLYFIKGLNNLNRGMVLGSLAATVRLQAGNATEV|
+         OBS_sec  |                                                            |
+         PROF_sec |   EEEEEE    EEEEE     EEEEEEEEE        HHHHHHHHHHH         |
+         Rel_sec  |763488874365213552467723678877514110112202335655310014544312|
+ subset: SUB_sec  |LL..EEEE..LL...EE..LLL..EEEEEEE.............HHHH......L.....|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeiibbbibiiibibbbiieeeiebibbbbbibbiibibbbbbbbbbbbbbbbbbeiiei|
+         Rel_acc  |111161623310023132025112333729700111021336684944281613000011|
+ subset: SUB_acc  |....b.b.............e......b.bb..........bbbbbbb.b.b........|
+
+                   
+                   ....,....427..,....428..,....429..,....430..,....431..,....432 
+         AA       |PANSTVLSFCAFAVDAAKAYKDYLASGGQPITNCVKMLCTHTGTGQAITVTPEANMDQES|
+         OBS_sec  |                                                            |
+         PROF_sec |     EEEEHHH   HHHHHHHHHHH    HHHHHHHHH      EEEEE          |
+         Rel_sec  |333110010010137057788887716761355676442145641245303344566321|
+ subset: SUB_sec  |..............L.HHHHHHHHH.LLL..HHHHH.....LL....E......LLL...|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibbbbbbbbbbbbbbiebbiibbeebiibbibbbibbbeieiebbbbbbiieieieiib|
+         Rel_acc  |010124544433320202452356321020300752070210011164221000100101|
+ subset: SUB_acc  |.....bbbbb........bb..bb.........bb..b........bb............|
+
+                   
+                   ....,....433..,....434..,....435..,....436..,....437..,....438 
+         AA       |FGGASCCLYCRCHIDHPNPKGFCDLKGKYVQIPTTCANDPVGFTLKNTVCTVCGMWKGYG|
+         OBS_sec  |                                                            |
+         PROF_sec |     EEEEEEEE         EEE   EEEE         EEEEE  EEEE        |
+         Rel_sec  |133210100001102557664110011056622554456502454121111001101222|
+ subset: SUB_sec  |...............LLLLL........EEE..LL..LLL...E................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbbbibbbibieiebibibebibbbbbieiieibbibbbiiibbibbiibiiib|
+         Rel_acc  |113356652723021001131112021336362010020111413111021221001010|
+ subset: SUB_acc  |....bbbb.b...................b.b..........b.................|
+
+                   
+                   ....,....439..,....440..,....441..,....442..,....443..,....444 
+         AA       |CSCDQLREPMLQSADAQSFLNRVCGVSAARLTPCGTGTSTDVVYRAFDIYNDKVAGFAKF|
+         OBS_sec  |                                                            |
+         PROF_sec |               HHHHHHHH                   EEEEEEEE      EEEE|
+         Rel_sec  |211112222111111000121101100110134456655440224577540442201334|
+ subset: SUB_sec  |..................................LLLLL......EEEE...........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibiebieeiieeeeieebbeibbbbbebibibieeeiiiiibibbbibbbiebbbbieb|
+         Rel_acc  |011010110011103002032130120102110002100110110151701111313120|
+ subset: SUB_acc  |..............................................b.b...........|
+
+                   
+                   ....,....445..,....446..,....447..,....448..,....449..,....450 
+         AA       |LKTNCCRFQEKDEDDNLIDSYFVVKRHTFSNYQHEETIYNLLKDCPAVAKHDFFKFRIDG|
+         OBS_sec  |                                                            |
+         PROF_sec |EEE EEEEEEE         EEEEEE    HHHHHHHHHHHHH     EEEEEEEEE   |
+         Rel_sec  |320114555302456643313787621431245678888765226750000134442166|
+ subset: SUB_sec  |......EEE....LLL.....EEEE.......HHHHHHHHHH..LLL...........LL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iiiibbibiieeeeeeebibbbbbiiieieeieibiibbeibeeieibbebibbibeiee|
+         Rel_acc  |212012233121212201120469021113112122260305231111121231332022|
+ subset: SUB_acc  |.....................bbb.............b...b..................|
+
+                   
+                   ....,....451..,....452..,....453..,....454..,....455..,....456 
+         AA       |DMVPHISRQRLTKYTMADLVYALRHFDEGNCDTLKEILVTYNCCDDDYFNKKDWYDFVEN|
+         OBS_sec  |                                                            |
+         PROF_sec |  EEEEEE    HHHHHHHHHHHHH     HHHHHHHHHH                    |
+         Rel_sec  |520023303443122556776554225132346777643202333201122222343345|
+ subset: SUB_sec  |L..............HHHHHHHH...L.....HHHHH......................L|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eiiibbbbiibbiibbbbbbbbbiibeeeebeibiibbbbiiibeieibieeeiiiibeb|
+         Rel_acc  |311006311200104734993942020232062732251210001001012101111010|
+ subset: SUB_acc  |.....b........bb.bbb.bb........e.b...b......................|
+
+                   
+                   ....,....457..,....458..,....459..,....460..,....461..,....462 
+         AA       |PDILRVYANLGERVRQALLKTVQFCDAMRNAGIVGVLTLDNQDLNGNWYDFGDFIQTTPG|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH   EEEEEE                     |
+         Rel_sec  |126667887778888888866556667642375047862144345410022222346766|
+ subset: SUB_sec  |..HHHHHHHHHHHHHHHHHHHHHHHHHH...LL..EEE......L...........LLLL|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iebbibbbibbeibiebbbebbebbebbieiebbbbbbbbbbbbibibbbbbbbieeiee|
+         Rel_acc  |112132512533392216024233320933211166968032120213234310000011|
+ subset: SUB_acc  |......b..b...b...b..b......b......bbbbb...........b.........|
+
+                   
+                   ....,....463..,....464..,....465..,....466..,....467..,....468 
+         AA       |SGVPVVDSYYSLLMPILTLTRALTAESHVDTDLTKPYIKWDLLKYDFTEERLKLFDRYFK|
+         OBS_sec  |                                                            |
+         PROF_sec |    HHHHHHHHHHHHHHHHHH               EEEEEEE    HHHHHHHHHHHH|
+         Rel_sec  |553101245655544655542001001223222544100000101332345667776654|
+ subset: SUB_sec  |LL......HHHHH..HHHH..............L................HHHHHHHHH.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iebbbbbbbbbbbbbbbbbbbbbbbiibiiieibeebiebibbeiebeeiibebbiibbe|
+         Rel_acc  |102026245333763645651232000010121031022220022202110130433335|
+ subset: SUB_acc  |.....b.bb...bb.bbbbb..................................b....e|
+
+                   
+                   ....,....469..,....470..,....471..,....472..,....473..,....474 
+         AA       |YWDQTYHPNCVNCLDDRCILHCANFNVLFSTVFPPTSFGPLVRKIFVDGVPFVVSTGYHF|
+         OBS_sec  |                                                            |
+         PROF_sec |HH               EEEEE                    EEEEEE   EEEE   EE|
+         Rel_sec  |311223543113421100122100010002333553445520147540320134212000|
+ subset: SUB_sec  |......L..........................LL...LL....EE..............|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibiiiiiieiiibbiiibbbbbbbbbbbbbbbbbbbbbbibbiibbbbbbbbbbbbiiib|
+         Rel_acc  |211102100011001011663751124323101001010002122350211353220000|
+ subset: SUB_acc  |..................bb.bb...b...................b.....b.......|
+
+                   
+                   ....,....475..,....476..,....477..,....478..,....479..,....480 
+         AA       |RELGVVHNQDVNLHSSRLSFKELLVYAADPAMHAASGNLLLDKRTTCFSVAALTNNVAFQ|
+         OBS_sec  |                                                            |
+         PROF_sec |  EEEEEEE             EEEEE    EEEE          EEEEEEE        |
+         Rel_sec  |101467620121012454500013222164112212331113431024320000232222|
+ subset: SUB_sec  |....EEE.........L.L.........L...............................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibbbbbbbiiieibieeiebeebbibbbbbbbibbbbibbbeiibbbbbbbbbbeeieie|
+         Rel_acc  |103263202001000102112112002111120211010000011133435220100211|
+ subset: SUB_acc  |....b...........................................b.b.........|
+
+                   
+                   ....,....481..,....482..,....483..,....484..,....485..,....486 
+         AA       |TVKPGNFNKDFYDFAVSKGFFKEGSSVELKHFFFAQDGNAAISDYDYYRYNLPTMCDIRQ|
+         OBS_sec  |                                                            |
+         PROF_sec |         HHHHHHHH          EEEEEEEE     HHHHHHHH         HHH|
+         Rel_sec  |234543340023223321332346431023444420442000001110003433223577|
+ subset: SUB_sec  |...L...................L.................................HHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eieiieiieebbibbbieibieebiebebibbbbbiiiebbbibbibbiiiiiibbibbb|
+         Rel_acc  |102000121141124112000310121232124421001021011101110000000103|
+ subset: SUB_acc  |..........b...b.................bb..........................|
+
+                   
+                   ....,....487..,....488..,....489..,....490..,....491..,....492 
+         AA       |LLFVVEVVDKYFDCYDGGCINANQVIVNNLDKSAGFPFNKWGKARLYYDSMSYEDQDALF|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHHHHH                                EEE     HHHHHHHH|
+         Rel_sec  |888899876641012355423332101355545553302333210100003502477888|
+ subset: SUB_sec  |HHHHHHHHHH......LL..........LLL.LLL................L...HHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbibbiebbeiieeeibiieebibieieebbbbbbieibebiibbibbiieibiibb|
+         Rel_acc  |702923072502200200001021010110000010021100102000100222122270|
+ subset: SUB_acc  |b..b...b.e................................................b.|
+
+                   
+                   ....,....493..,....494..,....495..,....496..,....497..,....498 
+         AA       |AYTKRNVIPTITQMNLKYAISAKNRARTVAGVSICSTMTNRQFHQKLLKSIAATRGATVV|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHH      EEEEEEEEEE      EEEEEEHHHHHHHHHHHHHHHHHHHHHH    EE|
+         Rel_sec  |765225553022221112111354411332000123244555423678877641277357|
+ subset: SUB_sec  |HHH..LLL..............L................HHH...HHHHHHH...LL.EE|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ebbeeibbbbbbibbbibbbiieiibbbbbbbbbbbbbbbbibbiebbeibbeiiebbbb|
+         Rel_acc  |303311001123111120111010130465642444434300243234325221021237|
+ subset: SUB_acc  |...........................bbbbb.bbbb.b....b...b..b........b|
+
+                   
+                   ....,....499..,....500..,....501..,....502..,....503..,....504 
+         AA       |IGTSKFYGGWHNMLKTVYSDVENPHLMGWDYPKCDRAMPNMLRIMASLVLARKHTTCCSL|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEE     HHHHHHHH                     HHHHHHHHHHHHHHHH      |
+         Rel_sec  |763013321245665320355554100234542232302677888888775331013554|
+ subset: SUB_sec  |EE.........HHHH....LLLL.......L........HHHHHHHHHHHH......LL.|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbibiiibbebbiibbeeieiiibbbbbbiibbbbbbbbbbbbbbbbbbiebieibbb|
+         Rel_acc  |976410011401172200131310021200001100233276079978664230121000|
+ subset: SUB_acc  |bbbb.....b...b..........................bb.bbbbbbbb.........|
+
+                   
+                   ....,....505..,....506..,....507..,....508..,....509..,....510 
+         AA       |SHRFYRLANECAQVLSEMVMCGGSLYVKPGGTSSGDATTAYANSVFNICQAVTANVNALL|
+         OBS_sec  |                                                            |
+         PROF_sec | HHHHHHHHHHHHHHHHHHEE   EEE         HHHHHHHHHHHHHHHHHHHHHHHH|
+         Rel_sec  |323666788999876423000340431467444431101222245668888888787765|
+ subset: SUB_sec  |...HHHHHHHHHHHH.............LL..............HHHHHHHHHHHHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iiibbibbbbbbibbbbbbbbbbbbbbieebibbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         Rel_acc  |111203462093127203633120300201010230534526366546744946292154|
+ subset: SUB_acc  |......bb..b...b...b.................b.bb.b.bbbbbbbbbbb.b..bb|
+
+                   
+                   ....,....511..,....512..,....513..,....514..,....515..,....516 
+         AA       |STDGNKIADKYVRNLQHRLYECLYRNRDVDTDFVNEFYAYLRKHFSMMILSDDAVVCFNS|
+         OBS_sec  |                                                            |
+         PROF_sec |H      HHHHHHHHHHHHHHHH       HHHHHHHHHHHH  EEEEEE   EEEEE  |
+         Rel_sec  |114553015778888887753100233344457787787531012578851550577403|
+ subset: SUB_sec  |...LL...HHHHHHHHHHHH...........HHHHHHHHH.....EEEEE.LL.EEE...|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbeieeiieebbiibbiibbiibbiiieiiiebbiibbeibieibbbbbbbbbbbbbbii|
+         Rel_acc  |201023112215327423812030100202123533703152112385865115765201|
+ subset: SUB_acc  |...........b..bb..b..............b..b...b.....bbbbb..bbbb...|
+
+                   
+                   ....,....517..,....518..,....519..,....520..,....521..,....522 
+         AA       |TYASQGLVASIKNFKSVLYYQNNVFMSEAKCWTETDLTKGPHEFCSQHTMLVKQGDDYVY|
+         OBS_sec  |                                                            |
+         PROF_sec |       EE  HHHHHHHHHH  EEEE    EEE        EEE  EEEEEE     EE|
+         Rel_sec  |334456211101256764430122430221010035565741000120245402565123|
+ subset: SUB_sec  |....LL.......HHHH..................LLLLL..........E...LLL...|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eibeiibbbbbeibieibbbbibbibiibebbiieeieeibbbbbbbbbbbbieeeeibb|
+         Rel_acc  |100100021113271326010001131002001113112000143411310220330100|
+ subset: SUB_acc  |.............b...b.........................b.b..............|
+
+                   
+                   ....,....523..,....524..,....525..,....526..,....527..,....528 
+         AA       |LPYPDPSRILGAGCFVDDIVKTDGTLMIERFVSLAIDAYPLTKHPNQEYADVFHLYLQYI|
+         OBS_sec  |                                                            |
+         PROF_sec |EE      EEEEEEEE       HHHHHHHHHHHHHHH        HHHHHHHHHHHHHH|
+         Rel_sec  |313461100111245224434442445777887776410101246402467888899889|
+ subset: SUB_sec  |....L.........E...........HHHHHHHHHH........L....HHHHHHHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbiibbbbbbbbbbieiieiiiibbbibbbbbbbbbbbbieieieebiibbibbbebb|
+         Rel_acc  |221011003446452212012011103410885696061111200022202662091208|
+ subset: SUB_acc  |.........bbbbb.............b..bbbbbb.b.............bb..b...b|
+
+                   
+                   ....,....529..,....530..,....531..,....532..,....533..,....534 
+         AA       |RKLHDELTGHMLDMYSVMLTNDNTSRYWEPEFYEAMYTPHTVLQAVGACVLCNSQTSLRC|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHH      HHHHHHHH          HHHHHHHHHHHHHHHHH  EEEEE    EEEE|
+         Rel_sec  |885201231113334321023453322104566643100011100230344046411220|
+ subset: SUB_sec  |HHH...................L.......HHHH...................L......|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eebbeebeeibbibbbbbbieeeieeibieibbeibbeibibbebbibbbbbbbbbbbib|
+         Rel_acc  |342142233140136203211200011021141213111011021011644610020314|
+ subset: SUB_acc  |.e..e.....b...b................b................bbbb.......b|
+
+                   
+                   ....,....535..,....536..,....537..,....538..,....539..,....540 
+         AA       |GACIRRPFLCCKCCYDHVISTSHKLVLSVNPYVCNAPGCDVTDVTQLYLGGMSYYCKSHK|
+         OBS_sec  |                                                            |
+         PROF_sec |           HHHEEEEE     EEEEE   EE          EEEEE  EEEEEE   |
+         Rel_sec  |012244310000000021103550244312530002333334520222021134420135|
+ subset: SUB_sec  |.....................LL.......L...........L................L|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibiiiibbbbibbbibbbiiebibbbbbiiiibibiebebiibbibibiibibbbiiie|
+         Rel_acc  |012120103640363122010212113210011110000100100020110021031110|
+ subset: SUB_acc  |.........bb..b..............................................|
+
+                   
+                   ....,....541..,....542..,....543..,....544..,....545..,....546 
+         AA       |PPISFPLCANGQVFGLYKNTCVGSDNVTDFNAIATCDWTNAGDYILANTCTERLKLFAAE|
+         OBS_sec  |                                                            |
+         PROF_sec |      EE   EEEEEEE         EEEEEEEE         HHH      HHHEE E|
+         Rel_sec  |654431000210110000000133320000000000011221000001010000000000|
+ subset: SUB_sec  |LL..........................................................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeiebibbiiiebbiibiiiiieieeieebieiieieieeieeiibieibeeibiibbii|
+         Rel_acc  |121131001001001102010000210121210212200101111010012210111211|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....547..,....548..,....549..,....550..,....551..,....552 
+         AA       |TLKATEETFKLSYGIATVREVLSDRELHLSWEVGKPRPPLNRNYVFTGYRVTKNSKVQIG|
+         OBS_sec  |                                                            |
+         PROF_sec |E         EEEEEEEEEEEE   EEEEEEE          EEEEEEEEEE   EEEEE|
+         Rel_sec  |000000121001111235553024147775302444321011035665421001023332|
+ subset: SUB_sec  |.................EEE......EEEE..............EEEE............|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibeiieeeieieieiiibiebieeiibbbibeieeeeiebeiibbbibieieeeeeiebi|
+         Rel_acc  |023001111311010120220103123030121022211111100211221131120202|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....553..,....554..,....555..,....556..,....557..,....558 
+         AA       |EYTFEKGDYGDAVVYRGTTTYKLNVGDYFVLTSHTVMPLSAPTLVPQEHYVRITGLYPTL|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEE    EEEEEE    EEE HHHHHHHH                            |
+         Rel_sec  |234430110002444301100000000100000122334465445643323322123334|
+ subset: SUB_sec  |........................................LL..LL..............|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eiibieieeiibbbbiiiiiiibibiibbbiiiiibieieiiiiiieeiiiebiiiiiei|
+         Rel_acc  |102220010110021101010101111010011110001100111112100010011001|
+ subset: SUB_acc  |............................................................|
+
+                   
+                   ....,....559..,....560..,....561..,....562..,....563..,....564 
+         AA       |NISDEFSSNVANYQKVGMQKYSTLQGPPGTGKSHFAIGLALYYPSARIVYTACSHAAVDA|
+         OBS_sec  |                                                            |
+         PROF_sec |   HHHHHHHHHHHHH    EEEEE     HHHHHHHHHHHH    EEEEE   HHHHHH|
+         Rel_sec  |422013466777875124751566346563167889888874058627886054035788|
+ subset: SUB_sec  |.......HHHHHHHH...LL.EEE..LLL..HHHHHHHHHH..LLL.EEEE.L...HHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eieeebiiibbbbiebeeeibbbbbbbibbbibbbbbbbbbbieebibbbbbibiibbii|
+         Rel_acc  |210310020113321210110257030000113166838730112239796511026912|
+ subset: SUB_acc  |......................bb..........bbb.bb.......bbbbb....bb..|
+
+                   
+                   ....,....565..,....566..,....567..,....568..,....569..,....570 
+         AA       |LCEKALKYLPIDKCSRIIPARARVECFDKFKVNSTLEQYVFCTVNALPETTADIVVFDEI|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHH        EE        EEEEEEEEEEEEEEEEEEEEE      EEEEE   |
+         Rel_sec  |888764202323100000011110001000012333322210000012444106876000|
+ subset: SUB_sec  |HHHHH................................................EEEE...|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbeebieiieieeiieiiieiieieiieeieiibbbbbbbbbbbiiieeiebibbbbbbb|
+         Rel_acc  |853240312101201211100010211121203102122222000100201113699415|
+ subset: SUB_acc  |bb..b.................................................bbbb.b|
+
+                   
+                   ....,....571..,....572..,....573..,....574..,....575..,....576 
+         AA       |SMATNYDLSVVNARLRAKHYVYIGDPAQLPAPRTLLTKGTLEPEYFNSVCRLMKTIGPDM|
+         OBS_sec  |                                                            |
+         PROF_sec |         EEHHH    EEEEEE        EEE  HHH   HHHHHHHHHHH     E|
+         Rel_sec  |013332000100002453378850533366411101101103104678888762168712|
+ subset: SUB_sec  |................L..EEEE.L...LL...............HHHHHHHH..LLL..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbiibibbbbbbiiebibbbbbbbbibbbbbbibbeeieieiebbiibbebbeeieieb|
+         Rel_acc  |110010123425101223299975000031111100200112110212903034111010|
+ subset: SUB_acc  |.........b.b.......bbbbb........................b....e......|
+
+                   
+                   ....,....577..,....578..,....579..,....580..,....581..,....582 
+         AA       |FLGTCRRCPAEIVDTVSALVYDNKLKAHKDKSAQCFKMFYKGVITHDVSSAINRPQIGVV|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEE   HHHHH   HHH               EEEEE             HHHHHHH|
+         Rel_sec  |543100133022202110001221123554443300011023112345432445688899|
+ subset: SUB_sec  |E..........................LL..................L.....HHHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbbbibbebbbiibbeiebieieeieiiibibbbeiiiiieiibiibiebbibb|
+         Rel_acc  |173232010015210201130202200112010122111010110010100102236239|
+ subset: SUB_acc  |.b.........b............................................b..b|
+
+                   
+                   ....,....583..,....584..,....585..,....586..,....587..,....588 
+         AA       |REFLTRNPAWRKAVFISPYNSQNAVASKILGLPTQTVDSSQGSEYDYVIFTQTTETAHSC|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHH      EEEEE  HHHHHHHHHH  EEEEEE        EEEEEEEE       |
+         Rel_sec  |999974156453266613235677676422404322203345300168887511333222|
+ subset: SUB_sec  |HHHHH..LL.L..EEE....HHHHHHH..............L....EEEEEE........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibbeeiieiiibbbbbbbibbbeibieibebibibbibbibieiibbbbbbbbbbbbbb|
+         Rel_acc  |135732212011579954020322293301132312310101121179999661212320|
+ subset: SUB_acc  |..bb........bbbbbb.......b....................bbbbbbb.......|
+
+                   
+                   ....,....589..,....590..,....591..,....592..,....593..,....594 
+         AA       |NVNRFNVAITRAKVGILCIMSDRDLYDKLQFTSLEIPRRNVATLQAENVTGLFKDCSKVI|
+         OBS_sec  |                                                            |
+         PROF_sec |    EEEEEHHHH  EEEEE          HHHHHHHHHH          HHHHHHHH  |
+         Rel_sec  |432000111131201267613100133420578888764213200033100012121001|
+ subset: SUB_sec  |................EEE...........HHHHHHHH......................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |biibbbbbbbbbibbbbbbbbiiibieeiibiibbeibeeieibiieebiebbeebieib|
+         Rel_acc  |001143677415121979972101301012112702051221021012011024230420|
+ subset: SUB_acc  |....b.bbbb.b...bbbbb.............b...b...............e...e..|
+
+                   
+                   ....,....595..,....596..,....597..,....598..,....599..,....600 
+         AA       |TGLHPTQAPTHLSVDTKFKTEGLCVDIPGIPKDMTYRRLISMMGFKMNYQVNGYPNMFIT|
+         OBS_sec  |                                                            |
+         PROF_sec |                                      EE                    |
+         Rel_sec  |345655565543333332233320123454555442100001220002345555554335|
+ subset: SUB_sec  |..LLLLLLLL..................L.LLL.................LLLLLL...L|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eeieeeeiiiiieieeeieieeiiieieeieeeieieibbiiieiiiiieieiiieiiii|
+         Rel_acc  |032011100011110021102010111121041210010000011010100001002011|
+ subset: SUB_acc  |...............................e............................|
+
+                   
+                   ....,....601..,....602..,....603..,....604..,....605..,....606 
+         AA       |REEAIRHVRAWIGFDVEGCHATREAVGTNLPLQLGFSTGVNLVAVPTGYVDTPNNTDFSR|
+         OBS_sec  |                                                            |
+         PROF_sec | HHHHHH   EEEEEEEEEEE          EEEEEE   EEEEE   EEE         |
+         Rel_sec  |312222012201231100010133344433101111012002310110120456540000|
+ subset: SUB_sec  |....................................................LLL.....|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieebbeibibbbbbbbbbbbbbieiieiebbbbbbbiibbibbbbiiiiiiieeeieiie|
+         Rel_acc  |221301021213252403210010000011030221010011020101001111102122|
+ subset: SUB_acc  |.............b.b............................................|
+
+                   
+                   ....,....607..,....608..,....609..,....610..,....611..,....612 
+         AA       |VSAKPPPGDQFKHLIPLMYKGLPWNVVRIKIVQMLSDTLKNLSDRVVFVLWAHGFELTSM|
+         OBS_sec  |                                                            |
+         PROF_sec |         HHHHHHHHHH     HHHHHHHHHHHHHHHH     EEEEEE     HHHH|
+         Rel_sec  |134567620235455542024651144787888888753013675378874243335778|
+ subset: SUB_sec  |...LLLL....H.HHH.....LL....HHHHHHHHHHH....LLL.EEEE......HHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieieieeeeibeibbeibieeieiibbiiibbibbbibbeebeeibbbbbbbbiibbibb|
+         Rel_acc  |111311213102170114121121103122832191312511023689993401002149|
+ subset: SUB_acc  |.............b...b............b...b....e.....bbbbb.b......bb|
+
+                   
+                   ....,....613..,....614..,....615..,....616..,....617..,....618 
+         AA       |KYFVKIGPERTCCLCDRRATCFSTASDTYACWHHSIGFDYVYNPFMIDVQQWGFTGNLQS|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHH             EEEEE    EEEEEEE     EEE  EEEEEEEE     HHH|
+         Rel_sec  |887642662210013441135522575032221023543123113443200011220112|
+ subset: SUB_sec  |HHHH..LL............EE..LLL.........L.......................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |iibbeibieiibiibiiibbbbbbieiibbbbbbbiibibbbbbbbbbbbiieiiiebie|
+         Rel_acc  |308141003112102011614331000100721111101052230352701000012211|
+ subset: SUB_acc  |..b.e.............b.b.........b.........b.....b.b...........|
+
+                   
+                   ....,....619..,....620..,....621..,....622..,....623..,....624 
+         AA       |NHDLYCQVHGNAHVASCDAIMTRCLAVHECFVKRVDWTIEYPIIGDELKINAACRKVQHM|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHHH       HHHHHHHHHHHHH       EE               HHHHHHH|
+         Rel_sec  |236554310122332100456665654310111100000134224421000000256778|
+ subset: SUB_sec  |..HHH..............HHHHHHH.............................HHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibibbbbbbbbbbbbbbbbbbbbbbbbbiibbeebebibiibibieeiebbeibiibbbb|
+         Rel_acc  |021056232113002223669939753311112122220001000111111102215212|
+ subset: SUB_acc  |....bb............bbbb.bbb..............................b...|
+
+                   
+                   ....,....625..,....626..,....627..,....628..,....629..,....630 
+         AA       |VVKAALLADKFPVLHDIGNPKAIKCVPQADVEWKFYDAQPCSDKAYKIEELFYSYATHSD|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHH    EEEE       EEE      EEE         HHHHHHHHHHHHHHHH|
+         Rel_sec  |888776423773244144555421320366320200356443321245543210121000|
+ subset: SUB_sec  |HHHHHH...LL.......LLL.......LL.......LL........HH...........|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbiieeiebbbbbbbiebbebbiiieieiibibiieiieeieibeebbiibiibbi|
+         Rel_acc  |550332210322162241002001031003220300000000130234232312212200|
+ subset: SUB_acc  |bb...........b..b..............................b............|
+
+                   
+                   ....,....631..,....632..,....633..,....634..,....635..,....636 
+         AA       |KFTDGVCLFWNCNVDRYPANSIVCRFDTRVLSNLNLPGCDGGSLYVNKHAFHTPAFDKSA|
+         OBS_sec  |                                                            |
+         PROF_sec |HH   EEEEE          EEEEE        EEEE     EEEEE           HH|
+         Rel_sec  |100230221001210023310232002443331011033653255402211365655000|
+ subset: SUB_sec  |.......................................LL..EE.......LLLLL...|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibbibbbbbbbbbbiibbbbbbbbbbieieieebebeiiebbbbbbbibbbibieiieeb|
+         Rel_acc  |220123233221021001013335122001011120000211272730021000012222|
+ subset: SUB_acc  |.......................b...................b.b..............|
+
+                   
+                   ....,....637..,....638..,....639..,....640..,....641..,....642 
+         AA       |FVNLKQLPFFYYSDSPCESHGKQVVSDIDYVPLKSATCITRCNLGGAVCRHHANEYRLYL|
+         OBS_sec  |                                                            |
+         PROF_sec |HH      EEEEE         EEE    EE      EEEE    HHHHHHHHHHHHHHH|
+         Rel_sec  |000132321344046412333302202220014434301102332234466787888889|
+ subset: SUB_sec  |..............L..................................HHHHHHHHHHH|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |beebeebibbbbbibebeeieeebiiiieibibebeibbbibibbbbbbiibbeibiebb|
+         Rel_acc  |112212312443200001000221100120211300103211101124922543363151|
+ subset: SUB_acc  |.........bb....................................bb..bb..b..b.|
+
+                   
+                   ....,....643..,....644..,....645..,....646..,....647..,....648 
+         AA       |DAYNMMISAGFSLWVYKQFDTYNLWNTFTRLQSLENVAFNVVNKGHFDGQQGEVPVSIIN|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHH   EEEEE    HHHHHHHHHHHHHHHHHHHHEEE   EE    EEEEEEE |
+         Rel_sec  |888888741632653043221226787765443443442200024110233213467740|
+ subset: SUB_sec  |HHHHHHH..L..EE.........HHHHHHH.........................EEE..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ibbbbbbbbbbbbbbbeibibbbbbbbbiibbibbbbbbbbbiibibibiebibbbbbbb|
+         Rel_acc  |255119201460936112024126303723300312582253111013002125275510|
+ subset: SUB_acc  |.bb..b...bb.b.b.....b..b...b........bb..b............b.bbb..|
+
+                   
+                   ....,....649..,....650..,....651..,....652..,....653..,....654 
+         AA       |NTVYTKVDGVDVELFENKTTLPVNVAFELWAKRNIKPVPEVKILNNLGVDIAANTVIWDY|
+         OBS_sec  |                                                            |
+         PROF_sec | EEEEEE  EEEEEEE      HHHHHHHHHHHH      HHHHH    EEE  EEEE  |
+         Rel_sec  |327776243035676224555302566777763124675113342134100000012000|
+ subset: SUB_sec  |..EEEE.....EEEE...LLL...HHHHHHHH....LLL.....................|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bibbbiieeieiibbibebibbbbbbbbbbbeiebeibbibibbebbbbibbbibbbbbb|
+         Rel_acc  |023242232121056201003032597023721210000202561143513310156312|
+ subset: SUB_acc  |....b........bb.........bbb...b...........bb..b.b......bb...|
+
+                   
+                   ....,....655..,....656..,....657..,....658..,....659..,....660 
+         AA       |KRDAPAHISTIGVCSMTDIAKKPTETICAPLTVFFDGRVDGQVDLFRNARNGVLITEGSV|
+         OBS_sec  |                                                            |
+         PROF_sec |        EEE EEEEE             EEEEEE      HHHH      EEEEE   |
+         Rel_sec  |113765201110022211465663000023267750554543221001456067740320|
+ subset: SUB_sec  |...LLL.............LLLL........EEEE.LL.L.........LL.EEE.....|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |ieeibbibibibbbbbbbbbeeieeebbbbbbbbbbbibeiiieibiebebbbbbbiieb|
+         Rel_acc  |011101000201342340302201200012558742110002012721011899642010|
+ subset: SUB_acc  |.............b..b.............bbbbb..........b.....bbbbb....|
+
+                   
+                   ....,....661..,....662..,....663..,....664..,....665..,....666 
+         AA       |KGLQPSVGPKQASLNGVTLIGEAVKTQFNYYKKVDGVVQQLPETYFTQSRNLQEFKPRSQ|
+         OBS_sec  |                                                            |
+         PROF_sec |     EE   EEEE  EEEEE     EEEEEEEE  EEEE                   H|
+         Rel_sec  |012210122201332305763000201356653055144302310011321224356522|
+ subset: SUB_sec  |.................EEE........EEEE..LL...................LLL..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |eebeeibibbbbbbbbbbbbbeeeeiibibbiiieiibiebiibbbbbbiibeebeiibe|
+         Rel_acc  |231110011004032333601102422203322221212211111231201010120101|
+ subset: SUB_acc  |...........b......b.....e...................................|
+
+                   
+                   ....,....667..,....668..,....669..,....670..,....671..,....672 
+         AA       |MEIDFLELAMDEFIERYKLEGYAFEHIVYGDFSHSQLGGLHLLIGLAKRFKESPFELEDF|
+         OBS_sec  |                                                            |
+         PROF_sec |HHHHHHHH HHHHHHH       EEEEEEE       HHHHHHHHHHHHH    EEEE  |
+         Rel_sec  |245564201345553202333322567752035443025777666666631685133101|
+ subset: SUB_sec  |..HHH......HHH..........EEEEE...L.....HHHHHHHHHHH..LLL......|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbiibbibbbeibbeebebebbbbbbbbbbbbbiibbbbbbbbbbbbiibeeiebebiib|
+         Rel_acc  |201051112123943333210024158946220210357947995752203302331210|
+ subset: SUB_acc  |....b.......bb.........b.bbbbb.......bbbbbbbbbb.............|
+
+                   
+                   ....,....673..,....674..,....675..,....676..,....677..,....678 
+         AA       |IPMDSTVKNYFITDAQTGSSKCVCSVIDLLLDDFVEIIKSQDLSVVSKVVKVTIDYTEIS|
+         OBS_sec  |                                                            |
+         PROF_sec |      EEEEEEEEE     EEEEEEEHHHHHHHHHHHHH     EEEEEEEEE    EE|
+         Rel_sec  |246551011357763057620467530122311677766204430135778864044025|
+ subset: SUB_sec  |..LLL.....EEEE..LLL...EEE........HHHHHH........EEEEEE......E|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |beiebibibbbbbbbiieiiiibbbbbbbbbiibbebbebiebebbbibbibbbbbeibb|
+         Rel_acc  |001302322145512210001147567042313823392013221043532916011040|
+ subset: SUB_acc  |..........bbb.........bbbbb.b....b...b........b.b..b.b....b.|
+
+                   
+                   ....,....679..,....680..,....681..,....682..,....683..,....684 
+         AA       |FMLWCKDGHVETFYPKLQSSQAWQPGVAMPNLYKMQRMLLEKCDLQNYGDSATLPKGIMM|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEE   EEEE                HHHHHHHHHHH                 EEE|
+         Rel_sec  |666530674334312232200013454430144444433200443234545435653011|
+ subset: SUB_sec  |EEEE..LL.................L......................L.L..LLL....|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbieeebibbbbbbbbeeebibbbbbbbbbibbibbbiebebibbieebebbebbbb|
+         Rel_acc  |879572202224313030111021011022052133102201014100001001011222|
+ subset: SUB_acc  |bbbbb......b...................b............b...............|
+
+                   
+                   ....,....685..,....686..,....687..,....688..,....689..,....690 
+         AA       |NVAKYTQLCQYLNTLTLAVPYNMRVIHFGAGSDKGVAPGTAVLRQWLPTGTLLVDSDLND|
+         OBS_sec  |                                                            |
+         PROF_sec | HHHHHHHHHHHHH  EEE    EEEEE         HHHHHHHHH     EEEE     |
+         Rel_sec  |112345566664102023223324776302353564404677765324572566233000|
+ subset: SUB_sec  |.....HHHHHH.............EEE....L.LL....HHHHHH...LL.EEE......|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbibbbbbbbbiebbbbbbbbbbbbbbbbbbiebbbbbbbbbiibbiebbbbbbbbbii|
+         Rel_acc  |242133497136110034630151997956200121326238920231104698220112|
+ subset: SUB_acc  |.b....bbb..b.....bb...b.bbbbbb........b..bb.......bbbb......|
+
+                   
+                   ....,....691..,....692..,....693..,....694..,....695..,....696 
+         AA       |FVSDADSTLIGDCATVHTANKWDLIISDMYDPKTKNVTKENDSKEGFFTYICGFIQQKLA|
+         OBS_sec  |                                                            |
+         PROF_sec |       EEEE  EEEEE     EEEEE                  HHHHHHHHHHHHHH|
+         Rel_sec  |002323013310012320132116886122553333353355522110123577775530|
+ subset: SUB_sec  |.......................EEEE...LL.....L..LLL........HHHHHHH..|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbibbbbbbbibbibeiebbbbbbbbbibeeeeieeeiebeibbbbbbbibbiiibb|
+         Rel_acc  |122140233330100020011209999350101112111111020134319221922264|
+ subset: SUB_acc  |....b..................bbbb.b..................b..b...b...bb|
+
+                   
+                   ....,....697..,....698..,....699..,....700..,....701..,....702 
+         AA       |LGGSVAIKITEHSWNADLYKLMGHFAWWTAFVTNVNASSSEAFLIGCNYLGKPREQIDGY|
+         OBS_sec  |                                                            |
+         PROF_sec |    EEEEEE    HHHHHHHHHHH  EEEEEEE      HHHEEEEEE      EEE E|
+         Rel_sec  |266157875012211568878753100134442004553112012111115654203001|
+ subset: SUB_sec  |.LL.EEEEE......HHHHHHHH.............LL............LLL.......|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbibbbibbiiibiebbiibbbbbbbbbbbbbbbbbbbbbbbbibbeeeeibibi|
+         Rel_acc  |324366918212210229032712322346765341223316776764031211123131|
+ subset: SUB_acc  |..b.bbb.b........b...b......bbbbb.b......bbbbbbb............|
+
+                   
+                   ....,....703..,....704..,....705..,....706..,....707..,....708 
+         AA       |VMHANYIFWRNTNPIQLSSYSLFDMSKFPLKLRGTAVMSLKEGQINDMILSLLSKGRLII|
+         OBS_sec  |                                                            |
+         PROF_sec |EEEEEEEEEE                         EEEE  HHH  HHHHHHHH   EEE|
+         Rel_sec  |221101342122200011000001010233334302331011001225777663374467|
+ subset: SUB_sec  |...............................................HHHHHH..L..EE|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb|
+         P_3_acc  |bbbbbbbbbbbbbbbbbbbbbbbbbbebebeiebbbbbbbeeeebiibbbbbbeebibbb|
+         Rel_acc  |354855987222112023224431311200001225783521220114930932213679|
+ subset: SUB_acc  |.bbbbbbbb...........bb.............bbb.b.......bb..b.....bbb|
+
+                   
+                   ....,....709..,....710 
+         AA       |RENNRVVISSDVLVNN|
+         OBS_sec  |                |
+         PROF_sec |E    EEEEEEEEE  |
+         Rel_sec  |3287146641022039|
+ subset: SUB_sec  |..LL..EE.......L|
+
+ 3st:    O_3_acc  |bbbbbbbbbbbbbbbb|
+         P_3_acc  |bieeebbbibiibbee|
+         Rel_acc  |0000122311101006|
+ subset: SUB_acc  |...............e|
+
+
+# --------------------------------------------------------------------
+

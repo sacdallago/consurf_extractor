@@ -1,0 +1,78 @@
+# Perl-RDB
+# 
+# PHDhtm_top: prediction of topology for helical transmembrane proteins
+# 
+# PDBID         : query
+# LENGTH        :    38
+# NHTM_BEST     :      1     (number of helices for best model)
+# NHTM_2ND_BEST :      0     (number of helices for second best model)
+# REL_BEST      :  0.000     (reliability of best model =zscore)
+# REL_BEST_DIFF :  0.316     (reliability of best model =1st-2nd)
+# REL_BEST_DPROJ:      9     (reliability of best model projection of (1st-2nd)
+#
+# MODEL         : iteratively adding transmembrane helices (HTM's)
+# MODEL         : N HTM      , Total Score  , Best HTM   ,    C -     N
+# MODEL_DAT     : 1          , 0.7674       , 0.8339     ,    3 -    20
+#
+# HTMTOP_OBS    :  unk       (first loop region)
+# HTMTOP_PRD    :  unk       (first loop region, mode=top_fin)
+# HTMTOP_MODPRD :  unk       (first loop region, mode=PRHL)
+# HTMTOP_RID    :  0.000     (difference num(K+R), even-odd)
+# HTMTOP_RIP    :      0     (reliability index =int(min{9,2*sqrt((DC)^2)}) )
+# 
+# NOTATION No   : residue number 
+# NOTATION AA   : amino acid one letter code
+# NOTATION PHL  : predicted transmembrane helices
+# NOTATION PHL  :    H=helical membrane, L=no helical transmembrane
+# NOTATION RI_S : reliability of secondary structure prediction , 0-9
+# NOTATION pH   : probability of predicting helix, 0-9
+# NOTATION pL   : probability of predicting loop
+# NOTATION OtH  : network output for helix, 0-100
+# NOTATION OtL  : network output for loop
+# NOTATION PRHL : refined prediction (maximum score model)
+# NOTATION PR2HL: refined prediction (second best maximum score model)
+# NOTATION PTHLA: predicted model for maximal charge difference (all)
+# NOTATION PTHLS: predicted model for maximal charge difference (sep)
+# NOTATION PiTo : predicted topology of transmembrane regions
+# NOTATION PiTo :    i=loop inside, T=transmembrane, o=loop outside
+# 
+No	AA	PHL	RI_H	pH	pL	OtH	OtL	PRHL	PR2HL	PiTo
+4N	1S	1S	1N	1N	1N	3N	3N	1S	1S	1S
+   1	M	L	0	4	5	 48	 51	L	L	i
+   2	G	H	0	5	4	 51	 49	L	L	?
+   3	Y	H	1	5	4	 58	 41	H	L	?
+   4	I	H	2	6	3	 61	 38	H	L	?
+   5	N	H	4	7	2	 71	 28	H	L	?
+   6	V	H	5	7	2	 79	 20	H	L	?
+   7	F	H	6	8	1	 83	 16	H	L	?
+   8	A	H	7	8	1	 88	 11	H	L	?
+   9	F	H	8	9	0	 91	  8	H	L	?
+  10	P	H	8	9	0	 91	  8	H	L	?
+  11	F	H	8	9	0	 91	  8	H	L	?
+  12	T	H	8	9	0	 92	  7	H	L	?
+  13	I	H	8	9	0	 91	  8	H	L	?
+  14	Y	H	8	9	0	 92	  7	H	L	?
+  15	S	H	8	9	0	 91	  8	H	L	?
+  16	L	H	8	9	0	 91	  8	H	L	?
+  17	L	H	8	9	0	 90	  9	H	L	?
+  18	L	H	7	8	1	 86	 13	H	L	?
+  19	C	H	5	7	2	 76	 23	H	L	?
+  20	R	H	2	6	3	 64	 35	H	L	?
+  21	M	H	2	6	3	 60	 39	L	L	?
+  22	N	H	0	5	4	 54	 45	L	L	?
+  23	S	L	0	4	5	 48	 51	L	L	?
+  24	R	L	4	2	7	 29	 70	L	L	?
+  25	N	L	2	3	6	 38	 61	L	L	?
+  26	Y	H	0	5	4	 49	 49	L	L	?
+  27	I	H	0	5	4	 51	 48	L	L	?
+  28	A	L	2	3	6	 35	 64	L	L	?
+  29	Q	L	6	1	8	 17	 81	L	L	?
+  30	V	L	7	1	8	 10	 89	L	L	?
+  31	D	L	7	0	9	  9	 89	L	L	?
+  32	V	L	7	1	8	 10	 89	L	L	?
+  33	V	L	8	0	9	  7	 92	L	L	?
+  34	N	L	8	0	9	  7	 92	L	L	?
+  35	F	L	6	1	8	 15	 84	L	L	?
+  36	N	L	6	1	8	 15	 84	L	L	?
+  37	L	L	6	1	8	 16	 84	L	L	?
+  38	T	L	7	1	8	 10	 89	L	L	?

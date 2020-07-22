@@ -1,0 +1,61 @@
+##General
+# No	: Residue number (beginning with 1)
+# AA	: Amino acid
+##Secondary structure
+# PHEL	: Secondary structure (H = Helix, E = Extended/Sheet, L = Loop)
+# RI_S	: Reliability index (0 to 9 (most reliable))
+# pH	: Probability helix (0 to 1)
+# pE	: Probability extended (0 to 1)
+# pL	: Probability loop (0 to 1)
+##Solvent accessibility
+# PACC	: Absolute
+# PREL	: Relative
+# P10	: Relative in 10 states (0 - 9 (most exposed))
+# RI_A	: Reliability index (0 to 9 (most reliable))
+# Pbe	: Two states (b = buried, e = exposed)
+# Pbie	: Three states (b = buried, i = intermediate, e = exposed)
+# 
+No	AA	PHEL	RI_S	pH	pE	pL	PACC	PREL	P10	RI_A	Pbe	Pbie
+1	M	L	9	0	0	99	169	90	9	4	e	e
+2	I	L	6	18	3	78	94	56	7	0	e	e
+3	E	L	4	27	1	70	108	56	7	0	e	e
+4	L	H	6	80	0	18	91	56	7	0	e	e
+5	S	H	6	83	0	15	72	56	7	0	e	e
+6	L	H	9	96	0	3	118	72	8	0	e	e
+7	I	H	9	97	0	2	0	0	0	0	b	b
+8	D	H	9	97	0	2	68	42	6	0	e	e
+9	F	H	9	97	0	2	39	20	4	0	e	i
+10	Y	H	9	95	0	4	44	20	4	0	e	i
+11	L	H	9	96	0	3	0	0	0	1	b	b
+12	C	H	8	94	0	5	0	0	0	4	b	b
+13	F	H	9	96	0	3	0	0	0	1	b	b
+14	L	H	9	96	0	3	0	0	0	1	b	b
+15	A	H	9	95	0	4	0	0	0	1	b	b
+16	F	H	9	95	0	4	0	0	0	0	b	b
+17	L	H	8	94	0	5	0	0	0	1	b	b
+18	L	H	9	95	0	4	0	0	0	1	b	b
+19	F	H	9	96	0	3	0	0	0	0	b	b
+20	L	H	9	96	0	3	0	0	0	0	b	b
+21	V	H	9	96	0	3	0	0	0	2	b	b
+22	L	H	9	96	0	3	0	0	0	1	b	b
+23	I	H	9	97	0	2	0	0	0	1	b	b
+24	M	H	9	97	0	2	0	0	0	0	b	b
+25	L	H	9	97	0	2	0	0	0	1	b	b
+26	I	H	9	96	0	2	0	0	0	3	b	b
+27	I	H	9	97	0	2	0	0	0	3	b	b
+28	F	H	9	96	0	3	0	0	0	1	b	b
+29	W	H	9	96	0	2	0	0	0	2	b	b
+30	F	H	9	96	0	2	0	0	0	1	b	b
+31	S	H	8	92	0	6	39	30	5	0	e	i
+32	L	H	7	86	0	12	0	0	0	0	b	b
+33	E	H	4	69	2	28	108	56	7	0	e	e
+34	L	H	7	89	1	9	32	20	4	0	e	i
+35	Q	H	8	92	1	5	110	56	7	1	e	e
+36	D	H	8	93	1	4	117	72	8	1	e	e
+37	H	H	8	90	0	8	165	90	9	0	e	e
+38	N	H	8	91	0	8	113	72	8	0	e	e
+39	E	H	9	95	0	3	108	56	7	0	e	e
+40	T	H	8	92	0	6	102	72	8	0	e	e
+41	C	H	7	84	1	14	0	0	0	0	b	b
+42	H	L	2	38	0	60	165	90	9	0	e	e
+43	A	L	9	2	0	97	95	90	9	5	e	e
