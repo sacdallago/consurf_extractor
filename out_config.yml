@@ -70,6 +70,10 @@ dictitems:
       end: 180
       region_consurf_average: 6.072222222222222
       start: 1
+    nsp10:
+      end: 4392
+      region_consurf_average: 6.690647482014389
+      start: 4254
     nsp3:
       end: 2763
       region_consurf_average: 4.60668380462725
@@ -86,3 +90,15 @@ dictitems:
       end: 3859
       region_consurf_average: 4.403448275862069
       start: 3570
+    nsp7:
+      end: 3942
+      region_consurf_average: 6.759036144578313
+      start: 3860
+    nsp8:
+      end: 4140
+      region_consurf_average: 6.505050505050505
+      start: 3943
+    nsp9:
+      end: 4253
+      region_consurf_average: 6.150442477876106
+      start: 4141
