@@ -30,6 +30,21 @@ pp1ab:
   nsp10:
     start: 4254
     end: 4392
+  nsp12:
+    start: 4393
+    end: 5324
+  nsp13:
+    start: 5325
+    end: 5925
+  nsp14:
+    start: 5926
+    end: 6452
+  nsp15:
+    start: 6453
+    end: 6798
+  nsp16:
+    start: 6799
+    end: 7096
 nsp1:
   data_dir: "data/P0DTC1"
   2gdt:

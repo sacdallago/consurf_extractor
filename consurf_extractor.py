@@ -1,9 +1,12 @@
 import yaml
+import logging
 
 from copy import deepcopy
 from collections import defaultdict
 from pathlib import Path
 from pandas import DataFrame
+
+logging.basicConfig(format='%(levelname)s: %(message)s', level=logging.DEBUG)
 
 
 def parse_consurf(ppc_root_dir):
@@ -62,12 +65,14 @@ for group in configuration:
         sequence_range = range(len(consurf))
 
         if start not in sequence_range or end not in sequence_range:
-            raise Exception(f"You are tryin to access region {start+1}-{end}, "
-                            f"but consurf prediction is in range {1}-{len(consurf)}")
+            logging.error(f"NO annotations will be produced for {group}/{region}.\n"
+                          f"       You are tryin to access region {start+1}-{end}, "
+                          f"but consurf prediction is in range {1}-{len(consurf)}")
+            current[region]['region_consurf_average'] = None
+        else:
 
-        region_consurf = consurf[start:end]
-
-        current[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
+            region_consurf = consurf[start:end]
+            current[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
 
     current['data_dir'] = data_dir
     output_config[group] = current
