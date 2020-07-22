@@ -6,6 +6,12 @@ dictitems:
       end: 99999999999
       region_consurf_average: null
       start: 1
+  n_protein:
+    data_dir: data/P0DTC9
+    whole:
+      end: 419
+      region_consurf_average: 4.995226730310263
+      start: 1
   nsp1:
     2gdt:
       end: 126
@@ -66,6 +72,18 @@ dictitems:
       end: 3263
       region_consurf_average: 6.021978021978022
       start: 3173
+  orf7a:
+    data_dir: data/P0DTC7
+    whole:
+      end: 99999999999
+      region_consurf_average: null
+      start: 1
+  orf9a:
+    data_dir: data/P0DTD2
+    whole:
+      end: 99999999999
+      region_consurf_average: null
+      start: 1
   pp1a:
     dark_region_with_features:
       end: 11

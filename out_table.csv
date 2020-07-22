@@ -39,3 +39,6 @@ nsp3,final_dark_region,2021,2763,4.920592193808883,data/P0DTC1
 nsp4,nsp4C,3173,3263,6.021978021978022,data/P0DTC1
 spike_glycoprotein,whole,1,1273,5.132757266300079,data/P0DTC2
 e_protein,whole,1,99999999999,,data/P0DTC4
+orf7a,whole,1,99999999999,,data/P0DTC7
+n_protein,whole,1,419,4.995226730310263,data/P0DTC9
+orf9a,whole,1,99999999999,,data/P0DTD2

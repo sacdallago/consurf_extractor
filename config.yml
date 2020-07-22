@@ -134,3 +134,18 @@ e_protein:
   whole:
     start: 1
     end: 99999999999
+orf7a:
+  data_dir: "data/P0DTC7"
+  whole:
+    start: 1
+    end: 99999999999
+n_protein:
+  data_dir: "data/P0DTC9"
+  whole:
+    start: 1
+    end: 419
+orf9a:
+  data_dir: "data/P0DTD2"
+  whole:
+    start: 1
+    end: 99999999999
