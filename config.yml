@@ -3,6 +3,9 @@ pp1ab:
   dark_region_with_features:
     start: 1
     end: 11
+  nsp1:
+    start: 1
+    end: 180
 nsp1:
   data_dir: "data/P0DTC1"
   2gdt:
