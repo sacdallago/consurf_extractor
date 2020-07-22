@@ -1,5 +1,11 @@
 !!python/object/apply:collections.defaultdict
 dictitems:
+  e_protein:
+    data_dir: data/P0DTC4
+    whole:
+      end: 99999999999
+      region_consurf_average: null
+      start: 1
   nsp1:
     2gdt:
       end: 126
@@ -60,7 +66,7 @@ dictitems:
       end: 3263
       region_consurf_average: 6.021978021978022
       start: 3173
-  pp1ab:
+  pp1a:
     dark_region_with_features:
       end: 11
       region_consurf_average: 6.636363636363637
@@ -74,26 +80,6 @@ dictitems:
       end: 4392
       region_consurf_average: 6.690647482014389
       start: 4254
-    nsp12:
-      end: 5324
-      region_consurf_average: null
-      start: 4393
-    nsp13:
-      end: 5925
-      region_consurf_average: null
-      start: 5325
-    nsp14:
-      end: 6452
-      region_consurf_average: null
-      start: 5926
-    nsp15:
-      end: 6798
-      region_consurf_average: null
-      start: 6453
-    nsp16:
-      end: 7096
-      region_consurf_average: null
-      start: 6799
     nsp3:
       end: 2763
       region_consurf_average: 4.60668380462725
@@ -122,3 +108,71 @@ dictitems:
       end: 4253
       region_consurf_average: 6.150442477876106
       start: 4141
+  pp1ab:
+    dark_region_with_features:
+      end: 11
+      region_consurf_average: 5.181818181818182
+      start: 1
+    data_dir: data/P0DTD1
+    nsp1:
+      end: 180
+      region_consurf_average: 5.633333333333334
+      start: 1
+    nsp10:
+      end: 4392
+      region_consurf_average: 5.489208633093525
+      start: 4254
+    nsp12:
+      end: 5324
+      region_consurf_average: 6.482832618025751
+      start: 4393
+    nsp13:
+      end: 5925
+      region_consurf_average: 6.088186356073211
+      start: 5325
+    nsp14:
+      end: 6452
+      region_consurf_average: 5.804554079696395
+      start: 5926
+    nsp15:
+      end: 6798
+      region_consurf_average: 5.265895953757226
+      start: 6453
+    nsp16:
+      end: 7096
+      region_consurf_average: 6.573825503355705
+      start: 6799
+    nsp3:
+      end: 2763
+      region_consurf_average: 4.110539845758355
+      start: 819
+    nsp4:
+      end: 3172
+      region_consurf_average: 3.9388753056234718
+      start: 2764
+    nsp5:
+      end: 3569
+      region_consurf_average: 4.944444444444445
+      start: 3264
+    nsp6:
+      end: 3859
+      region_consurf_average: 2.8551724137931034
+      start: 3570
+    nsp7:
+      end: 3942
+      region_consurf_average: 4.481927710843373
+      start: 3860
+    nsp8:
+      end: 4140
+      region_consurf_average: 4.585858585858586
+      start: 3943
+    nsp9:
+      end: 4253
+      region_consurf_average: 5.212389380530974
+      start: 4141
+  spike_glycoprotein:
+    data_dir: data/P0DTC2
+    whole:
+      end: 1273
+      region_consurf_average: 5.132757266300079
+      start: 1

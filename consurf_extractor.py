@@ -60,6 +60,13 @@ for group in configuration:
     # Iteratively go through every region in the group
     for region in current:
 
+        # If no CONSURF prediction can be found, then don't bother annotating...
+        if len(consurf) < 1:
+            logging.error(f"NO annotations will be produced for {group}/{region}.\n"
+                          f"       No CONSURF scores for {data_dir}")
+            current[region]['region_consurf_average'] = None
+            continue
+
         # Every region MUST have a start
         start = int(current[region]['start'])
 
@@ -72,7 +79,7 @@ for group in configuration:
         end = int(current[region]['end'])
 
         # Make sure that start and end are effectively in sequence range, otherwise log an error!
-        sequence_range = range(len(consurf))
+        sequence_range = range(len(consurf)+1)
         if start not in sequence_range or end not in sequence_range:
             logging.error(f"NO annotations will be produced for {group}/{region}.\n"
                           f"       You are tryin to access region {start+1}-{end}, "

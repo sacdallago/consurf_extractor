@@ -1,5 +1,37 @@
-pp1ab:
+pp1a:
   data_dir: "data/P0DTC1"
+  dark_region_with_features:
+    start: 1
+    end: 11
+  nsp1:
+    start: 1
+    end: 180
+  nsp3:
+    start: 819
+    end: 2763
+  nsp4:
+    start: 2764
+    end: 3172
+  nsp5:
+    start: 3264
+    end: 3569
+  nsp6:
+    start: 3570
+    end: 3859
+  nsp7:
+    start: 3860
+    end: 3942
+  nsp8:
+    start: 3943
+    end: 4140
+  nsp9:
+    start: 4141
+    end: 4253
+  nsp10:
+    start: 4254
+    end: 4392
+pp1ab:
+  data_dir: "data/P0DTD1"
   dark_region_with_features:
     start: 1
     end: 11
@@ -92,3 +124,13 @@ nsp4:
   nsp4C:
     start: 3173
     end: 3263
+spike_glycoprotein:
+  data_dir: "data/P0DTC2"
+  whole:
+    start: 1
+    end: 1273
+e_protein:
+  data_dir: "data/P0DTC4"
+  whole:
+    start: 1
+    end: 99999999999
