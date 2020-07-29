@@ -100,8 +100,8 @@ nsp2:
     start: 104
     end: 562
   dark_region:
-    start: 104
-    end: 562
+    start: 563
+    end: 818
 nsp3:
   data_dir: "data/P0DTC1"
   Ubl1:

@@ -42,9 +42,9 @@ dictitems:
       region_consurf_average: 4.79520697167756
       start: 104
     dark_region:
-      end: 562
-      region_consurf_average: 4.79520697167756
-      start: 104
+      end: 818
+      region_consurf_average: 4.37109375
+      start: 563
     data_dir: data/P0DTC1
   nsp3:
     NAB:
