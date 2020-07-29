@@ -6,7 +6,21 @@ dictitems:
       end: 99999999999
       region_consurf_average: null
       start: 1
+  m_protein:
+    data_dir: data/P0DTC5
+    whole:
+      end: 222
+      region_consurf_average: 5.036036036036036
+      start: 1
   n_protein:
+    CTD:
+      end: 364
+      region_consurf_average: 5.915492957746479
+      start: 294
+    NTD:
+      end: 180
+      region_consurf_average: 5.518248175182482
+      start: 44
     data_dir: data/P0DTC9
     whole:
       end: 419
@@ -24,6 +38,10 @@ dictitems:
     data_dir: data/P0DTC1
   nsp2:
     3ld1:
+      end: 562
+      region_consurf_average: 4.79520697167756
+      start: 104
+    dark_region:
       end: 562
       region_consurf_average: 4.79520697167756
       start: 104
@@ -67,13 +85,57 @@ dictitems:
       region_consurf_average: 4.546391752577319
       start: 930
   nsp4:
+    dark_region:
+      end: 3172
+      region_consurf_average: 4.750611246943765
+      start: 2764
     data_dir: data/P0DTC1
     nsp4C:
       end: 3263
       region_consurf_average: 6.021978021978022
       start: 3173
+  nsp8:
+    data_dir: data/P0DTC1
+    head_domain:
+      end: 4140
+      region_consurf_average: 5.6767676767676765
+      start: 4042
+    helical_segment:
+      end: 4041
+      region_consurf_average: 7.333333333333333
+      start: 3943
+  orf10:
+    data_dir: data/A0A663DJA2
+    whole:
+      end: 99999999999
+      region_consurf_average: null
+      start: 1
+  orf14:
+    data_dir: data/P0DTD3
+    whole:
+      end: 99999999999
+      region_consurf_average: null
+      start: 1
+  orf3a:
+    data_dir: data/P0DTC3
+    whole:
+      end: 99999999999
+      region_consurf_average: null
+      start: 1
+  orf6:
+    data_dir: data/P0DTC6
+    whole:
+      end: 99999999999
+      region_consurf_average: null
+      start: 1
   orf7a:
     data_dir: data/P0DTC7
+    whole:
+      end: 99999999999
+      region_consurf_average: null
+      start: 1
+  orf7b:
+    data_dir: data/P0DTD8
     whole:
       end: 99999999999
       region_consurf_average: null
@@ -98,6 +160,10 @@ dictitems:
       end: 4392
       region_consurf_average: 6.690647482014389
       start: 4254
+    nsp2:
+      end: 818
+      region_consurf_average: 4.564263322884012
+      start: 181
     nsp3:
       end: 2763
       region_consurf_average: 4.60668380462725
@@ -160,6 +226,14 @@ dictitems:
       end: 7096
       region_consurf_average: 6.573825503355705
       start: 6799
+    nsp2:
+      end: 818
+      region_consurf_average: 5.299373040752351
+      start: 181
+    nsp2_dark_region_on_pp1ab:
+      end: 562
+      region_consurf_average: 5.457516339869281
+      start: 104
     nsp3:
       end: 2763
       region_consurf_average: 4.110539845758355

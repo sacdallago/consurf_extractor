@@ -6,6 +6,9 @@ pp1a:
   nsp1:
     start: 1
     end: 180
+  nsp2:
+    start: 181
+    end: 818
   nsp3:
     start: 819
     end: 2763
@@ -38,6 +41,12 @@ pp1ab:
   nsp1:
     start: 1
     end: 180
+  nsp2:
+    start: 181
+    end: 818
+  nsp2_dark_region_on_pp1ab:
+    start: 104
+    end: 562
   nsp3:
     start: 819
     end: 2763
@@ -90,6 +99,9 @@ nsp2:
   3ld1:
     start: 104
     end: 562
+  dark_region:
+    start: 104
+    end: 562
 nsp3:
   data_dir: "data/P0DTC1"
   Ubl1:
@@ -124,6 +136,19 @@ nsp4:
   nsp4C:
     start: 3173
     end: 3263
+  dark_region:
+    start: 2764
+    end: 3172
+nsp8:
+  # [CD] Note: P0DTC8 (nsp8) has *no consurf predictions* + the values below would need remapping.
+  #            I therefore used P0DTC1, which is pp1ab.
+  data_dir: "data/P0DTC1"
+  helical_segment:
+    start: 3943
+    end: 4041
+  head_domain:
+    start: 4042
+    end: 4140
 spike_glycoprotein:
   data_dir: "data/P0DTC2"
   whole:
@@ -134,8 +159,23 @@ e_protein:
   whole:
     start: 1
     end: 99999999999
+orf3a:
+  data_dir: "data/P0DTC3"
+  whole:
+    start: 1
+    end: 99999999999
+orf6:
+  data_dir: "data/P0DTC6"
+  whole:
+    start: 1
+    end: 99999999999
 orf7a:
   data_dir: "data/P0DTC7"
+  whole:
+    start: 1
+    end: 99999999999
+orf7b:
+  data_dir: "data/P0DTD8"
   whole:
     start: 1
     end: 99999999999
@@ -144,8 +184,29 @@ n_protein:
   whole:
     start: 1
     end: 419
+  NTD:
+    start: 44
+    end: 180
+  CTD:
+    start: 294
+    end: 364
+m_protein:
+  data_dir: "data/P0DTC5"
+  whole:
+    start: 1
+    end: 222
 orf9a:
   data_dir: "data/P0DTD2"
+  whole:
+    start: 1
+    end: 99999999999
+orf10:
+  data_dir: "data/A0A663DJA2"
+  whole:
+    start: 1
+    end: 99999999999
+orf14:
+  data_dir: "data/P0DTD3"
   whole:
     start: 1
     end: 99999999999

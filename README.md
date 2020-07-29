@@ -4,4 +4,4 @@ How to use:
 2. Define interesting objects or regions in the `config.yml`
 3. Make sure to include the `data_dir` for each region defined in the config; then make sure each region has a `start` and `end`
 4. Run the python script (`python consurf_extractor.py`)
-5. Results will appear in `out_config.yml`
+5. Results will appear in `out_config.yml` and as flat table in `out_table.csv`.
