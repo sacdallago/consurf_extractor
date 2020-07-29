@@ -164,6 +164,10 @@ dictitems:
       end: 818
       region_consurf_average: 4.564263322884012
       start: 181
+    nsp2_dark_region_on_pp1a:
+      end: 562
+      region_consurf_average: 4.79520697167756
+      start: 104
     nsp3:
       end: 2763
       region_consurf_average: 4.60668380462725
