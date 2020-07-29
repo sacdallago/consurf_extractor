@@ -6,6 +6,9 @@ pp1a:
   nsp1:
     start: 1
     end: 180
+  nsp2_dark_region_on_pp1a:
+    start: 104
+    end: 562
   nsp2:
     start: 181
     end: 818
@@ -41,12 +44,12 @@ pp1ab:
   nsp1:
     start: 1
     end: 180
-  nsp2:
-    start: 181
-    end: 818
   nsp2_dark_region_on_pp1ab:
     start: 104
     end: 562
+  nsp2:
+    start: 181
+    end: 818
   nsp3:
     start: 819
     end: 2763
