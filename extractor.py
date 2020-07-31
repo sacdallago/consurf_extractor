@@ -37,6 +37,36 @@ def parse_consurf(ppc_root_dir):
     return consurf
 
 
+def parse_mdisorder(ppc_root_dir):
+    """
+
+    :param ppc_root_dir: the root dir where to find the predictions
+    :return: a list of chars, where "D" represents disorder
+    """
+    mdisorder_file = Path(ppc_root_dir, 'query.mdisorder')
+
+    if not mdisorder_file.exists():
+        return []
+
+    num_col = -1
+    mdisorder = []
+
+    with mdisorder_file.open('r') as input_file:
+        for line in input_file:
+            if num_col > 0:
+                data = line.split()
+
+                if len(data) == num_col:
+                    mdisorder.append(data[10])
+                else:
+                    break
+            elif line.lstrip().startswith('Number'):
+                data = line.split()
+                num_col = len(data)
+
+    return mdisorder
+
+
 # Open the config file and parse into python dictionary
 with open("./config.yml", 'r') as stream:
     try:
@@ -55,17 +85,23 @@ for group in configuration:
     data_dir = current.pop('data_dir')
 
     # Parse consurf
+    add_consurf = True
     consurf = parse_consurf(data_dir)
+
+    # If no CONSURF prediction can be found, throw an error
+    if len(consurf) < 1:
+        logging.error(f"No CONSURF scores for group: {group}. Data dir: {data_dir}.")
+        add_consurf = False
+
+    # Parse meta-disorder
+    add_mdisorder = True
+    mdisorder = parse_mdisorder(data_dir)
+    if len(mdisorder) < 1:
+        logging.error(f"No meta-disorder predictions for group: {group}. Data dir: {data_dir}.")
+        add_mdisorder = False
 
     # Iteratively go through every region in the group
     for region in current:
-
-        # If no CONSURF prediction can be found, then don't bother annotating...
-        if len(consurf) < 1:
-            logging.error(f"NO annotations will be produced for {group}/{region}.\n"
-                          f"       No CONSURF scores for {data_dir}")
-            current[region]['region_consurf_average'] = None
-            continue
 
         # Every region MUST have a start
         start = int(current[region]['start'])
@@ -78,16 +114,33 @@ for group in configuration:
         # (and considering that end should be +1, that's exactly what we want!)
         end = int(current[region]['end'])
 
-        # Make sure that start and end are effectively in sequence range, otherwise log an error!
-        sequence_range = range(len(consurf)+1)
-        if start not in sequence_range or end not in sequence_range:
-            logging.error(f"NO annotations will be produced for {group}/{region}.\n"
-                          f"       You are tryin to access region {start+1}-{end}, "
-                          f"but consurf prediction is in range {1}-{len(consurf)}")
-            current[region]['region_consurf_average'] = None
-        else:
-            region_consurf = consurf[start:end]
-            current[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
+        current[region]["region_length"] = end - start
+
+        # Get consurf average
+        if add_consurf:
+            # Make sure that start and end are effectively in sequence range, otherwise log an error!
+            consurf_range = range(len(consurf) + 1)
+            if start not in consurf_range or end not in consurf_range:
+                logging.error(f"NO consurf average will be produced for {group}/{region}.\n"
+                              f"       You are trying to access region {start+1}-{end}, "
+                              f"but consurf predictions are in range {1}-{len(consurf)}")
+                current[region]['region_consurf_average'] = None
+            else:
+                region_consurf = consurf[start:end]
+                current[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
+
+        # Count meta-disorder "disorder"
+        if add_mdisorder:
+            # Make sure that start and end are effectively in sequence range, otherwise log an error!
+            mdisorder_range = range(len(mdisorder) + 1)
+            if start not in mdisorder_range or end not in mdisorder_range:
+                logging.error(f"NO meta-disorder count will be produced for {group}/{region}.\n"
+                              f"       You are trying to access region {start+1}-{end}, "
+                              f"but meta-disorder predictions are in range {1}-{len(mdisorder)}")
+                current[region]['meta_disorder_predicted_disorder_count'] = None
+            else:
+                region_mdisorder = mdisorder[start:end]
+                current[region]['meta_disorder_predicted_disorder_count'] = len([m for m in mdisorder if m == "D"])
 
     # Add metadata to the output config for the group
     current['data_dir'] = data_dir
@@ -116,7 +169,7 @@ for group in output_config:
 output_table = DataFrame(flattened_items)
 
 # Reorder for readability
-output_table = output_table[['group', 'region', 'start', 'end', 'region_consurf_average', 'data_dir']]
+output_table = output_table[['group', 'region', 'start', 'end', 'region_length', 'region_consurf_average', 'meta_disorder_predicted_disorder_count', 'data_dir']]
 
 # Store
 output_table.to_csv('out_table.csv', index=None)

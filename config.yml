@@ -161,27 +161,27 @@ e_protein:
   data_dir: "data/P0DTC4"
   whole:
     start: 1
-    end: 99999999999
+    end: 75
 orf3a:
   data_dir: "data/P0DTC3"
   whole:
     start: 1
-    end: 99999999999
+    end: 275
 orf6:
   data_dir: "data/P0DTC6"
   whole:
     start: 1
-    end: 99999999999
+    end: 61
 orf7a:
   data_dir: "data/P0DTC7"
   whole:
     start: 1
-    end: 99999999999
+    end: 121
 orf7b:
   data_dir: "data/P0DTD8"
   whole:
     start: 1
-    end: 99999999999
+    end: 43
 n_protein:
   data_dir: "data/P0DTC9"
   whole:
@@ -202,14 +202,14 @@ orf9a:
   data_dir: "data/P0DTD2"
   whole:
     start: 1
-    end: 99999999999
+    end: 97
 orf10:
   data_dir: "data/A0A663DJA2"
   whole:
     start: 1
-    end: 99999999999
+    end: 38
 orf14:
   data_dir: "data/P0DTD3"
   whole:
     start: 1
-    end: 99999999999
+    end: 73
