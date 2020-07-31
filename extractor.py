@@ -140,7 +140,7 @@ for group in configuration:
                 current[region]['meta_disorder_predicted_disorder_count'] = None
             else:
                 region_mdisorder = mdisorder[start:end]
-                current[region]['meta_disorder_predicted_disorder_count'] = len([m for m in mdisorder if m == "D"])
+                current[region]['meta_disorder_predicted_disorder_count'] = len([m for m in region_mdisorder if m == "D"])
 
     # Add metadata to the output config for the group
     current['data_dir'] = data_dir
