@@ -2,7 +2,7 @@ import yaml
 import logging
 
 from copy import deepcopy
-from collections import defaultdict
+from collections import defaultdict, namedtuple
 from pathlib import Path
 from pandas import DataFrame
 
@@ -100,6 +100,52 @@ def parse_profbval(ppc_root_dir):
     return profbval
 
 
+reprof_prediction_template = namedtuple('reprof_prediction', ['structure', 'accessibility'])
+
+
+def parse_reprof(ppc_root_dir) -> reprof_prediction_template:
+    """
+    structure values:
+        H - Helix
+        E - Strand
+        L - Turn
+
+    accessibility values:
+        e - Exposed
+        i - Intermediate
+        b - Buried
+
+    :param ppc_root_dir: the root dir where to find the predictions
+    :return: touple of lists: (structure, accessibility)
+    """
+    reprof_file = Path(ppc_root_dir, 'query.reprof')
+
+    if not reprof_file.exists():
+        return reprof_prediction_template(accessibility=[], structure=[])
+
+    num_col = -1
+    structure = []
+    accessibility = []
+
+    with reprof_file.open('r') as input_file:
+        for line in input_file:
+            if num_col > 0:
+                data = line.split()
+
+                if len(data) == num_col:
+                    structure.append(data[2])
+                    accessibility.append(data[11])
+                else:
+                    break
+            elif line.lstrip().startswith('#'):
+                continue
+            elif line.lstrip().startswith('No'):
+                data = line.split()
+                num_col = len(data)
+
+    return reprof_prediction_template(accessibility=accessibility, structure=structure)
+
+
 # Open the config file and parse into python dictionary
 with open("./config.yml", 'r') as stream:
     try:
@@ -139,6 +185,13 @@ for group in configuration:
     if len(profbval) < 1:
         logging.error(f"No profbval predictions for group: {group}. Data dir: {data_dir}.")
         add_profbval = False
+
+    # Parse reprof
+    add_reprof = True
+    reprof = parse_reprof(data_dir)
+    if len(reprof.accessibility) < 1:
+        logging.error(f"No reprof accessibility predictions for group: {group}. Data dir: {data_dir}.")
+        add_reprof = False
 
     # Iteratively go through every region in the group
     for region in current:
@@ -194,9 +247,22 @@ for group in configuration:
             else:
                 region_mdisorder = mdisorder[start:end]
                 current[region]['meta_disorder_predicted_disorder_count'] = len([m for m in region_mdisorder if m == "D"])
-                current[region]['meta_disorder_predicted_disorder_fraction'] = current[region][
-                                                                                   'meta_disorder_predicted_disorder_count'] / \
-                                                                               current[region]["region_length"]
+                current[region]['meta_disorder_predicted_disorder_fraction'] = current[region]['meta_disorder_predicted_disorder_count'] / current[region]["region_length"]
+
+        # Count reprof "Exposed"
+        if add_reprof:
+            # Make sure that start and end are effectively in sequence range, otherwise log an error!
+            reprof_range = range(len(reprof.accessibility) + 1)
+            if start not in reprof_range or end not in reprof_range:
+                logging.error(f"NO reprof accessibility count will be produced for {group}/{region}.\n"
+                              f"       You are trying to access region {start + 1}-{end}, "
+                              f"but reprof accessibility predictions are in range {1}-{len(mdisorder)}")
+                current[region]['reprof_predicted_exposed_count'] = None
+            else:
+                region_reprof = reprof.accessibility[start:end]
+                current[region]['reprof_predicted_exposed_count'] = len(
+                    [m for m in region_reprof if m == "e"])
+                current[region]['reprof_predicted_exposed_fraction'] = current[region]['reprof_predicted_exposed_count'] / current[region]["region_length"]
 
     # Add metadata to the output config for the group
     current['data_dir'] = data_dir
@@ -225,7 +291,10 @@ for group in output_config:
 output_table = DataFrame(flattened_items)
 
 # Reorder for readability
-output_table = output_table[['group', 'region', 'start', 'end', 'region_length', 'region_consurf_average', 'region_profbval_average', 'meta_disorder_predicted_disorder_count', 'meta_disorder_predicted_disorder_fraction', 'data_dir']]
+output_table = output_table[['group', 'region', 'start', 'end', 'region_length', 'region_consurf_average',
+                             'region_profbval_average', 'meta_disorder_predicted_disorder_count',
+                             'meta_disorder_predicted_disorder_fraction', 'reprof_predicted_exposed_count',
+                             'reprof_predicted_exposed_fraction', 'data_dir']]
 
 # Store
 output_table.to_csv('out_table.csv', index=None)
