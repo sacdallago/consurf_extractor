@@ -39,7 +39,6 @@ def parse_consurf(ppc_root_dir):
 
 def parse_mdisorder(ppc_root_dir):
     """
-
     :param ppc_root_dir: the root dir where to find the predictions
     :return: a list of chars, where "D" represents disorder
     """
@@ -65,6 +64,40 @@ def parse_mdisorder(ppc_root_dir):
                 num_col = len(data)
 
     return mdisorder
+
+
+def parse_profbval(ppc_root_dir):
+    """
+    Ranges: 0-10 (Very Low)
+            11-30 (Low)
+            31-70 (Intermediate)
+            71-90 (High)
+            91-100 (Very High)
+
+    :param ppc_root_dir: the root dir where to find the predictions
+    :return: list of values (see function definition for interpretation)
+    """
+    profbval_file = Path(ppc_root_dir, 'query.profbval')
+
+    if not profbval_file.exists():
+        return []
+
+    profbval = []
+    read_line = False
+
+    with profbval_file.open('r') as input_file:
+        for line in input_file:
+            if read_line:
+                data = line.split()
+
+                if len(data) == 3:
+                    profbval.append(int(data[1]))
+                else:
+                    break
+            elif line.lstrip().startswith('* out vec: (I8,A1,100I4)'):
+                read_line = True
+
+    return profbval
 
 
 # Open the config file and parse into python dictionary
@@ -100,6 +133,13 @@ for group in configuration:
         logging.error(f"No meta-disorder predictions for group: {group}. Data dir: {data_dir}.")
         add_mdisorder = False
 
+    # Parse profbval
+    add_profbval = True
+    profbval = parse_profbval(data_dir)
+    if len(profbval) < 1:
+        logging.error(f"No profbval predictions for group: {group}. Data dir: {data_dir}.")
+        add_profbval = False
+
     # Iteratively go through every region in the group
     for region in current:
 
@@ -128,6 +168,19 @@ for group in configuration:
             else:
                 region_consurf = consurf[start:end]
                 current[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
+
+        # Get consurf average
+        if add_profbval:
+            # Make sure that start and end are effectively in sequence range, otherwise log an error!
+            profbval_range = range(len(profbval) + 1)
+            if start not in profbval_range or end not in profbval_range:
+                logging.error(f"NO profbval average will be produced for {group}/{region}.\n"
+                              f"       You are trying to access region {start + 1}-{end}, "
+                              f"but profbval predictions are in range {1}-{len(consurf)}")
+                current[region]['region_profbval_average'] = None
+            else:
+                region_profbval = profbval[start:end]
+                current[region]['region_profbval_average'] = sum(region_profbval) / len(region_profbval)
 
         # Count meta-disorder "disorder"
         if add_mdisorder:
@@ -172,7 +225,7 @@ for group in output_config:
 output_table = DataFrame(flattened_items)
 
 # Reorder for readability
-output_table = output_table[['group', 'region', 'start', 'end', 'region_length', 'region_consurf_average', 'meta_disorder_predicted_disorder_count', 'meta_disorder_predicted_disorder_fraction', 'data_dir']]
+output_table = output_table[['group', 'region', 'start', 'end', 'region_length', 'region_consurf_average', 'region_profbval_average', 'meta_disorder_predicted_disorder_count', 'meta_disorder_predicted_disorder_fraction', 'data_dir']]
 
 # Store
 output_table.to_csv('out_table.csv', index=None)

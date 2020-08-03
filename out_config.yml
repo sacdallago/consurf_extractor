@@ -7,6 +7,7 @@ dictitems:
       meta_disorder_predicted_disorder_count: 26
       meta_disorder_predicted_disorder_fraction: 0.3466666666666667
       region_length: 75
+      region_profbval_average: 29.813333333333333
       start: 1
   m_protein:
     data_dir: data/P0DTC5
@@ -16,6 +17,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.05405405405405406
       region_consurf_average: 5.036036036036036
       region_length: 222
+      region_profbval_average: 34.9009009009009
       start: 1
   n_protein:
     CTD:
@@ -24,6 +26,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.1267605633802817
       region_consurf_average: 5.915492957746479
       region_length: 71
+      region_profbval_average: 50.83098591549296
       start: 294
     NTD:
       end: 180
@@ -31,6 +34,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.5328467153284672
       region_consurf_average: 5.518248175182482
       region_length: 137
+      region_profbval_average: 55.48905109489051
       start: 44
     data_dir: data/P0DTC9
     whole:
@@ -39,6 +43,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.6563245823389021
       region_consurf_average: 4.995226730310263
       region_length: 419
+      region_profbval_average: 60.31742243436754
       start: 1
   nsp1:
     2gdt:
@@ -47,6 +52,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.417391304347826
       region_length: 115
+      region_profbval_average: 43.44347826086957
       start: 12
     3ld1:
       end: 562
@@ -54,6 +60,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.79520697167756
       region_length: 459
+      region_profbval_average: 51.553376906318086
       start: 104
     data_dir: data/P0DTC1
   nsp2:
@@ -63,6 +70,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.79520697167756
       region_length: 459
+      region_profbval_average: 51.553376906318086
       start: 104
     dark_region:
       end: 818
@@ -70,6 +78,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.37109375
       region_length: 256
+      region_profbval_average: 60.9375
       start: 563
     data_dir: data/P0DTC1
   nsp3:
@@ -79,6 +88,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.007042253521126761
       region_consurf_average: 4.323943661971831
       region_length: 142
+      region_profbval_average: 53.79577464788732
       start: 1879
     PL-Pro:
       end: 1878
@@ -86,6 +96,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.629746835443038
       region_length: 316
+      region_profbval_average: 46.79113924050633
       start: 1563
     SUD-C:
       end: 1562
@@ -93,6 +104,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.739130434782608
       region_length: 69
+      region_profbval_average: 56.63768115942029
       start: 1494
     SUD-M:
       end: 1493
@@ -100,6 +112,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.695238095238095
       region_length: 105
+      region_profbval_average: 58.55238095238095
       start: 1389
     Ubl1:
       end: 929
@@ -107,6 +120,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.02702702702702703
       region_consurf_average: 3.720720720720721
       region_length: 111
+      region_profbval_average: 60.34234234234234
       start: 819
     dark_region_1027:
       end: 1368
@@ -114,6 +128,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.07602339181286549
       region_consurf_average: 4.277777777777778
       region_length: 342
+      region_profbval_average: 52.51754385964912
       start: 1027
     data_dir: data/P0DTC1
     final_dark_region:
@@ -122,6 +137,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.920592193808883
       region_length: 743
+      region_profbval_average: 42.85195154777927
       start: 2021
     macro_domain_region:
       end: 1193
@@ -129,6 +145,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 3.8682634730538923
       region_length: 167
+      region_profbval_average: 47.18562874251497
       start: 1027
     unnamed_dark_region:
       end: 1026
@@ -136,6 +153,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.4742268041237113
       region_consurf_average: 4.546391752577319
       region_length: 97
+      region_profbval_average: 66.14432989690722
       start: 930
   nsp4:
     dark_region:
@@ -144,6 +162,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.750611246943765
       region_length: 409
+      region_profbval_average: 34.04156479217604
       start: 2764
     data_dir: data/P0DTC1
     nsp4C:
@@ -152,6 +171,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.021978021978022
       region_length: 91
+      region_profbval_average: 42.934065934065934
       start: 3173
   nsp8:
     data_dir: data/P0DTC1
@@ -161,6 +181,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.6767676767676765
       region_length: 99
+      region_profbval_average: 45.343434343434346
       start: 4042
     helical_segment:
       end: 4041
@@ -168,6 +189,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.020202020202020204
       region_consurf_average: 7.333333333333333
       region_length: 99
+      region_profbval_average: 46.515151515151516
       start: 3943
   orf10:
     data_dir: data/A0A663DJA2
@@ -176,6 +198,7 @@ dictitems:
       meta_disorder_predicted_disorder_count: 15
       meta_disorder_predicted_disorder_fraction: 0.39473684210526316
       region_length: 38
+      region_profbval_average: 30.473684210526315
       start: 1
   orf14:
     data_dir: data/P0DTD3
@@ -184,6 +207,7 @@ dictitems:
       meta_disorder_predicted_disorder_count: 52
       meta_disorder_predicted_disorder_fraction: 0.7123287671232876
       region_length: 73
+      region_profbval_average: 36.80821917808219
       start: 1
   orf3a:
     data_dir: data/P0DTC3
@@ -192,6 +216,7 @@ dictitems:
       meta_disorder_predicted_disorder_count: 0
       meta_disorder_predicted_disorder_fraction: 0.0
       region_length: 275
+      region_profbval_average: 34.585454545454546
       start: 1
   orf6:
     data_dir: data/P0DTC6
@@ -200,6 +225,7 @@ dictitems:
       meta_disorder_predicted_disorder_count: 37
       meta_disorder_predicted_disorder_fraction: 0.6065573770491803
       region_length: 61
+      region_profbval_average: 42.131147540983605
       start: 1
   orf7a:
     data_dir: data/P0DTC7
@@ -208,6 +234,7 @@ dictitems:
       meta_disorder_predicted_disorder_count: 14
       meta_disorder_predicted_disorder_fraction: 0.11570247933884298
       region_length: 121
+      region_profbval_average: 33.553719008264466
       start: 1
   orf7b:
     data_dir: data/P0DTD8
@@ -216,6 +243,7 @@ dictitems:
       meta_disorder_predicted_disorder_count: 36
       meta_disorder_predicted_disorder_fraction: 0.8372093023255814
       region_length: 43
+      region_profbval_average: 29.58139534883721
       start: 1
   orf9a:
     data_dir: data/P0DTD2
@@ -224,6 +252,7 @@ dictitems:
       meta_disorder_predicted_disorder_count: 68
       meta_disorder_predicted_disorder_fraction: 0.7010309278350515
       region_length: 97
+      region_profbval_average: 45.16494845360825
       start: 1
   pp1a:
     dark_region_with_features:
@@ -232,6 +261,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.09090909090909091
       region_consurf_average: 6.636363636363637
       region_length: 11
+      region_profbval_average: 59.63636363636363
       start: 1
     data_dir: data/P0DTC1
     nsp1:
@@ -240,6 +270,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.005555555555555556
       region_consurf_average: 6.072222222222222
       region_length: 180
+      region_profbval_average: 49.23888888888889
       start: 1
     nsp10:
       end: 4392
@@ -247,6 +278,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.007194244604316547
       region_consurf_average: 6.690647482014389
       region_length: 139
+      region_profbval_average: 41.568345323741006
       start: 4254
     nsp2:
       end: 818
@@ -254,6 +286,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.564263322884012
       region_length: 638
+      region_profbval_average: 55.18181818181818
       start: 181
     nsp2_dark_region_on_pp1a:
       end: 562
@@ -261,6 +294,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.79520697167756
       region_length: 459
+      region_profbval_average: 51.553376906318086
       start: 104
     nsp3:
       end: 2763
@@ -268,6 +302,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0390745501285347
       region_consurf_average: 4.60668380462725
       region_length: 1945
+      region_profbval_average: 49.62879177377892
       start: 819
     nsp4:
       end: 3172
@@ -275,6 +310,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.750611246943765
       region_length: 409
+      region_profbval_average: 34.04156479217604
       start: 2764
     nsp5:
       end: 3569
@@ -282,6 +318,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.071895424836601
       region_length: 306
+      region_profbval_average: 40.83986928104575
       start: 3264
     nsp6:
       end: 3859
@@ -289,6 +326,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.403448275862069
       region_length: 290
+      region_profbval_average: 22.49310344827586
       start: 3570
     nsp7:
       end: 3942
@@ -296,6 +334,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.759036144578313
       region_length: 83
+      region_profbval_average: 44.10843373493976
       start: 3860
     nsp8:
       end: 4140
@@ -303,6 +342,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.010101010101010102
       region_consurf_average: 6.505050505050505
       region_length: 198
+      region_profbval_average: 45.92929292929293
       start: 3943
     nsp9:
       end: 4253
@@ -310,6 +350,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.150442477876106
       region_length: 113
+      region_profbval_average: 43.415929203539825
       start: 4141
   pp1ab:
     dark_region_with_features:
@@ -318,6 +359,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.09090909090909091
       region_consurf_average: 5.181818181818182
       region_length: 11
+      region_profbval_average: 62.81818181818182
       start: 1
     data_dir: data/P0DTD1
     nsp1:
@@ -326,6 +368,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.005555555555555556
       region_consurf_average: 5.633333333333334
       region_length: 180
+      region_profbval_average: 44.74444444444445
       start: 1
     nsp10:
       end: 4392
@@ -333,6 +376,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.489208633093525
       region_length: 139
+      region_profbval_average: 43.75539568345324
       start: 4254
     nsp12:
       end: 5324
@@ -340,6 +384,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.482832618025751
       region_length: 932
+      region_profbval_average: 44.152360515021456
       start: 4393
     nsp13:
       end: 5925
@@ -347,6 +392,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.088186356073211
       region_length: 601
+      region_profbval_average: 47.447587354409315
       start: 5325
     nsp14:
       end: 6452
@@ -354,6 +400,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.804554079696395
       region_length: 527
+      region_profbval_average: 45.34345351043643
       start: 5926
     nsp15:
       end: 6798
@@ -361,6 +408,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.265895953757226
       region_length: 346
+      region_profbval_average: 42.27745664739884
       start: 6453
     nsp16:
       end: 7096
@@ -368,6 +416,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.573825503355705
       region_length: 298
+      region_profbval_average: 39.90939597315436
       start: 6799
     nsp2:
       end: 818
@@ -375,6 +424,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.299373040752351
       region_length: 638
+      region_profbval_average: 50.10031347962382
       start: 181
     nsp2_dark_region_on_pp1ab:
       end: 562
@@ -382,6 +432,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.457516339869281
       region_length: 459
+      region_profbval_average: 46.26143790849673
       start: 104
     nsp3:
       end: 2763
@@ -389,6 +440,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0416452442159383
       region_consurf_average: 4.110539845758355
       region_length: 1945
+      region_profbval_average: 48.40359897172237
       start: 819
     nsp4:
       end: 3172
@@ -396,6 +448,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 3.9388753056234718
       region_length: 409
+      region_profbval_average: 33.96332518337408
       start: 2764
     nsp5:
       end: 3569
@@ -403,6 +456,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.944444444444445
       region_length: 306
+      region_profbval_average: 42.24183006535948
       start: 3264
     nsp6:
       end: 3859
@@ -410,6 +464,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 2.8551724137931034
       region_length: 290
+      region_profbval_average: 27.448275862068964
       start: 3570
     nsp7:
       end: 3942
@@ -417,6 +472,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.481927710843373
       region_length: 83
+      region_profbval_average: 42.91566265060241
       start: 3860
     nsp8:
       end: 4140
@@ -424,6 +480,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.010101010101010102
       region_consurf_average: 4.585858585858586
       region_length: 198
+      region_profbval_average: 45.92424242424242
       start: 3943
     nsp9:
       end: 4253
@@ -431,6 +488,7 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.212389380530974
       region_length: 113
+      region_profbval_average: 44.14159292035398
       start: 4141
   spike_glycoprotein:
     data_dir: data/P0DTC2
@@ -440,4 +498,5 @@ dictitems:
       meta_disorder_predicted_disorder_fraction: 0.002356637863315004
       region_consurf_average: 5.132757266300079
       region_length: 1273
+      region_profbval_average: 41.54281225451689
       start: 1
