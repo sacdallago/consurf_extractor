@@ -5,6 +5,7 @@ dictitems:
     whole:
       end: 75
       meta_disorder_predicted_disorder_count: 26
+      meta_disorder_predicted_disorder_fraction: 0.3466666666666667
       region_length: 75
       start: 1
   m_protein:
@@ -12,6 +13,7 @@ dictitems:
     whole:
       end: 222
       meta_disorder_predicted_disorder_count: 12
+      meta_disorder_predicted_disorder_fraction: 0.05405405405405406
       region_consurf_average: 5.036036036036036
       region_length: 222
       start: 1
@@ -19,12 +21,14 @@ dictitems:
     CTD:
       end: 364
       meta_disorder_predicted_disorder_count: 9
+      meta_disorder_predicted_disorder_fraction: 0.1267605633802817
       region_consurf_average: 5.915492957746479
       region_length: 71
       start: 294
     NTD:
       end: 180
       meta_disorder_predicted_disorder_count: 73
+      meta_disorder_predicted_disorder_fraction: 0.5328467153284672
       region_consurf_average: 5.518248175182482
       region_length: 137
       start: 44
@@ -32,6 +36,7 @@ dictitems:
     whole:
       end: 419
       meta_disorder_predicted_disorder_count: 275
+      meta_disorder_predicted_disorder_fraction: 0.6563245823389021
       region_consurf_average: 4.995226730310263
       region_length: 419
       start: 1
@@ -39,12 +44,14 @@ dictitems:
     2gdt:
       end: 126
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.417391304347826
       region_length: 115
       start: 12
     3ld1:
       end: 562
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.79520697167756
       region_length: 459
       start: 104
@@ -53,12 +60,14 @@ dictitems:
     3ld1:
       end: 562
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.79520697167756
       region_length: 459
       start: 104
     dark_region:
       end: 818
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.37109375
       region_length: 256
       start: 563
@@ -67,36 +76,42 @@ dictitems:
     NAB:
       end: 2020
       meta_disorder_predicted_disorder_count: 1
+      meta_disorder_predicted_disorder_fraction: 0.007042253521126761
       region_consurf_average: 4.323943661971831
       region_length: 142
       start: 1879
     PL-Pro:
       end: 1878
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.629746835443038
       region_length: 316
       start: 1563
     SUD-C:
       end: 1562
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.739130434782608
       region_length: 69
       start: 1494
     SUD-M:
       end: 1493
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.695238095238095
       region_length: 105
       start: 1389
     Ubl1:
       end: 929
       meta_disorder_predicted_disorder_count: 3
+      meta_disorder_predicted_disorder_fraction: 0.02702702702702703
       region_consurf_average: 3.720720720720721
       region_length: 111
       start: 819
     dark_region_1027:
       end: 1368
       meta_disorder_predicted_disorder_count: 26
+      meta_disorder_predicted_disorder_fraction: 0.07602339181286549
       region_consurf_average: 4.277777777777778
       region_length: 342
       start: 1027
@@ -104,18 +119,21 @@ dictitems:
     final_dark_region:
       end: 2763
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.920592193808883
       region_length: 743
       start: 2021
     macro_domain_region:
       end: 1193
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 3.8682634730538923
       region_length: 167
       start: 1027
     unnamed_dark_region:
       end: 1026
       meta_disorder_predicted_disorder_count: 46
+      meta_disorder_predicted_disorder_fraction: 0.4742268041237113
       region_consurf_average: 4.546391752577319
       region_length: 97
       start: 930
@@ -123,6 +141,7 @@ dictitems:
     dark_region:
       end: 3172
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.750611246943765
       region_length: 409
       start: 2764
@@ -130,6 +149,7 @@ dictitems:
     nsp4C:
       end: 3263
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.021978021978022
       region_length: 91
       start: 3173
@@ -138,12 +158,14 @@ dictitems:
     head_domain:
       end: 4140
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.6767676767676765
       region_length: 99
       start: 4042
     helical_segment:
       end: 4041
       meta_disorder_predicted_disorder_count: 2
+      meta_disorder_predicted_disorder_fraction: 0.020202020202020204
       region_consurf_average: 7.333333333333333
       region_length: 99
       start: 3943
@@ -152,6 +174,7 @@ dictitems:
     whole:
       end: 38
       meta_disorder_predicted_disorder_count: 15
+      meta_disorder_predicted_disorder_fraction: 0.39473684210526316
       region_length: 38
       start: 1
   orf14:
@@ -159,6 +182,7 @@ dictitems:
     whole:
       end: 73
       meta_disorder_predicted_disorder_count: 52
+      meta_disorder_predicted_disorder_fraction: 0.7123287671232876
       region_length: 73
       start: 1
   orf3a:
@@ -166,6 +190,7 @@ dictitems:
     whole:
       end: 275
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_length: 275
       start: 1
   orf6:
@@ -173,6 +198,7 @@ dictitems:
     whole:
       end: 61
       meta_disorder_predicted_disorder_count: 37
+      meta_disorder_predicted_disorder_fraction: 0.6065573770491803
       region_length: 61
       start: 1
   orf7a:
@@ -180,6 +206,7 @@ dictitems:
     whole:
       end: 121
       meta_disorder_predicted_disorder_count: 14
+      meta_disorder_predicted_disorder_fraction: 0.11570247933884298
       region_length: 121
       start: 1
   orf7b:
@@ -187,6 +214,7 @@ dictitems:
     whole:
       end: 43
       meta_disorder_predicted_disorder_count: 36
+      meta_disorder_predicted_disorder_fraction: 0.8372093023255814
       region_length: 43
       start: 1
   orf9a:
@@ -194,12 +222,14 @@ dictitems:
     whole:
       end: 97
       meta_disorder_predicted_disorder_count: 68
+      meta_disorder_predicted_disorder_fraction: 0.7010309278350515
       region_length: 97
       start: 1
   pp1a:
     dark_region_with_features:
       end: 11
       meta_disorder_predicted_disorder_count: 1
+      meta_disorder_predicted_disorder_fraction: 0.09090909090909091
       region_consurf_average: 6.636363636363637
       region_length: 11
       start: 1
@@ -207,66 +237,77 @@ dictitems:
     nsp1:
       end: 180
       meta_disorder_predicted_disorder_count: 1
+      meta_disorder_predicted_disorder_fraction: 0.005555555555555556
       region_consurf_average: 6.072222222222222
       region_length: 180
       start: 1
     nsp10:
       end: 4392
       meta_disorder_predicted_disorder_count: 1
+      meta_disorder_predicted_disorder_fraction: 0.007194244604316547
       region_consurf_average: 6.690647482014389
       region_length: 139
       start: 4254
     nsp2:
       end: 818
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.564263322884012
       region_length: 638
       start: 181
     nsp2_dark_region_on_pp1a:
       end: 562
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.79520697167756
       region_length: 459
       start: 104
     nsp3:
       end: 2763
       meta_disorder_predicted_disorder_count: 76
+      meta_disorder_predicted_disorder_fraction: 0.0390745501285347
       region_consurf_average: 4.60668380462725
       region_length: 1945
       start: 819
     nsp4:
       end: 3172
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.750611246943765
       region_length: 409
       start: 2764
     nsp5:
       end: 3569
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.071895424836601
       region_length: 306
       start: 3264
     nsp6:
       end: 3859
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.403448275862069
       region_length: 290
       start: 3570
     nsp7:
       end: 3942
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.759036144578313
       region_length: 83
       start: 3860
     nsp8:
       end: 4140
       meta_disorder_predicted_disorder_count: 2
+      meta_disorder_predicted_disorder_fraction: 0.010101010101010102
       region_consurf_average: 6.505050505050505
       region_length: 198
       start: 3943
     nsp9:
       end: 4253
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.150442477876106
       region_length: 113
       start: 4141
@@ -274,6 +315,7 @@ dictitems:
     dark_region_with_features:
       end: 11
       meta_disorder_predicted_disorder_count: 1
+      meta_disorder_predicted_disorder_fraction: 0.09090909090909091
       region_consurf_average: 5.181818181818182
       region_length: 11
       start: 1
@@ -281,96 +323,112 @@ dictitems:
     nsp1:
       end: 180
       meta_disorder_predicted_disorder_count: 1
+      meta_disorder_predicted_disorder_fraction: 0.005555555555555556
       region_consurf_average: 5.633333333333334
       region_length: 180
       start: 1
     nsp10:
       end: 4392
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.489208633093525
       region_length: 139
       start: 4254
     nsp12:
       end: 5324
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.482832618025751
       region_length: 932
       start: 4393
     nsp13:
       end: 5925
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.088186356073211
       region_length: 601
       start: 5325
     nsp14:
       end: 6452
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.804554079696395
       region_length: 527
       start: 5926
     nsp15:
       end: 6798
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.265895953757226
       region_length: 346
       start: 6453
     nsp16:
       end: 7096
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 6.573825503355705
       region_length: 298
       start: 6799
     nsp2:
       end: 818
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.299373040752351
       region_length: 638
       start: 181
     nsp2_dark_region_on_pp1ab:
       end: 562
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.457516339869281
       region_length: 459
       start: 104
     nsp3:
       end: 2763
       meta_disorder_predicted_disorder_count: 81
+      meta_disorder_predicted_disorder_fraction: 0.0416452442159383
       region_consurf_average: 4.110539845758355
       region_length: 1945
       start: 819
     nsp4:
       end: 3172
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 3.9388753056234718
       region_length: 409
       start: 2764
     nsp5:
       end: 3569
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.944444444444445
       region_length: 306
       start: 3264
     nsp6:
       end: 3859
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 2.8551724137931034
       region_length: 290
       start: 3570
     nsp7:
       end: 3942
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 4.481927710843373
       region_length: 83
       start: 3860
     nsp8:
       end: 4140
       meta_disorder_predicted_disorder_count: 2
+      meta_disorder_predicted_disorder_fraction: 0.010101010101010102
       region_consurf_average: 4.585858585858586
       region_length: 198
       start: 3943
     nsp9:
       end: 4253
       meta_disorder_predicted_disorder_count: 0
+      meta_disorder_predicted_disorder_fraction: 0.0
       region_consurf_average: 5.212389380530974
       region_length: 113
       start: 4141
@@ -379,6 +437,7 @@ dictitems:
     whole:
       end: 1273
       meta_disorder_predicted_disorder_count: 3
+      meta_disorder_predicted_disorder_fraction: 0.002356637863315004
       region_consurf_average: 5.132757266300079
       region_length: 1273
       start: 1

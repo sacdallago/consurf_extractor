@@ -141,6 +141,9 @@ for group in configuration:
             else:
                 region_mdisorder = mdisorder[start:end]
                 current[region]['meta_disorder_predicted_disorder_count'] = len([m for m in region_mdisorder if m == "D"])
+                current[region]['meta_disorder_predicted_disorder_fraction'] = current[region][
+                                                                                   'meta_disorder_predicted_disorder_count'] / \
+                                                                               current[region]["region_length"]
 
     # Add metadata to the output config for the group
     current['data_dir'] = data_dir
@@ -169,7 +172,7 @@ for group in output_config:
 output_table = DataFrame(flattened_items)
 
 # Reorder for readability
-output_table = output_table[['group', 'region', 'start', 'end', 'region_length', 'region_consurf_average', 'meta_disorder_predicted_disorder_count', 'data_dir']]
+output_table = output_table[['group', 'region', 'start', 'end', 'region_length', 'region_consurf_average', 'meta_disorder_predicted_disorder_count', 'meta_disorder_predicted_disorder_fraction', 'data_dir']]
 
 # Store
 output_table.to_csv('out_table.csv', index=None)
