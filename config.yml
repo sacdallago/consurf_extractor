@@ -1,215 +1,233 @@
 pp1a:
   data_dir: "data/P0DTC1"
-  dark_region_with_features:
-    start: 1
-    end: 11
-  nsp1:
-    start: 1
-    end: 180
-  nsp2_dark_region_on_pp1a:
-    start: 104
-    end: 562
-  nsp2:
-    start: 181
-    end: 818
-  nsp3:
-    start: 819
-    end: 2763
-  nsp4:
-    start: 2764
-    end: 3172
-  nsp5:
-    start: 3264
-    end: 3569
-  nsp6:
-    start: 3570
-    end: 3859
-  nsp7:
-    start: 3860
-    end: 3942
-  nsp8:
-    start: 3943
-    end: 4140
-  nsp9:
-    start: 4141
-    end: 4253
-  nsp10:
-    start: 4254
-    end: 4392
+  regions:
+    dark_region_with_features:
+      start: 1
+      end: 11
+    nsp1:
+      start: 1
+      end: 180
+    nsp2_dark_region_on_pp1a:
+      start: 104
+      end: 562
+    nsp2:
+      start: 181
+      end: 818
+    nsp3:
+      start: 819
+      end: 2763
+    nsp4:
+      start: 2764
+      end: 3172
+    nsp5:
+      start: 3264
+      end: 3569
+    nsp6:
+      start: 3570
+      end: 3859
+    nsp7:
+      start: 3860
+      end: 3942
+    nsp8:
+      start: 3943
+      end: 4140
+    nsp9:
+      start: 4141
+      end: 4253
+    nsp10:
+      start: 4254
+      end: 4392
 pp1ab:
   data_dir: "data/P0DTD1"
-  dark_region_with_features:
-    start: 1
-    end: 11
-  nsp1:
-    start: 1
-    end: 180
-  nsp2_dark_region_on_pp1ab:
-    start: 104
-    end: 562
-  nsp2:
-    start: 181
-    end: 818
-  nsp3:
-    start: 819
-    end: 2763
-  nsp4:
-    start: 2764
-    end: 3172
-  nsp5:
-    start: 3264
-    end: 3569
-  nsp6:
-    start: 3570
-    end: 3859
-  nsp7:
-    start: 3860
-    end: 3942
-  nsp8:
-    start: 3943
-    end: 4140
-  nsp9:
-    start: 4141
-    end: 4253
-  nsp10:
-    start: 4254
-    end: 4392
-  nsp12:
-    start: 4393
-    end: 5324
-  nsp13:
-    start: 5325
-    end: 5925
-  nsp14:
-    start: 5926
-    end: 6452
-  nsp15:
-    start: 6453
-    end: 6798
-  nsp16:
-    start: 6799
-    end: 7096
+  regions:
+    dark_region_with_features:
+      start: 1
+      end: 11
+    nsp1:
+      start: 1
+      end: 180
+    nsp2_dark_region_on_pp1ab:
+      start: 104
+      end: 562
+    nsp2:
+      start: 181
+      end: 818
+    nsp3:
+      start: 819
+      end: 2763
+    nsp4:
+      start: 2764
+      end: 3172
+    nsp5:
+      start: 3264
+      end: 3569
+    nsp6:
+      start: 3570
+      end: 3859
+    nsp7:
+      start: 3860
+      end: 3942
+    nsp8:
+      start: 3943
+      end: 4140
+    nsp9:
+      start: 4141
+      end: 4253
+    nsp10:
+      start: 4254
+      end: 4392
+    nsp12:
+      start: 4393
+      end: 5324
+    nsp13:
+      start: 5325
+      end: 5925
+    nsp14:
+      start: 5926
+      end: 6452
+    nsp15:
+      start: 6453
+      end: 6798
+    nsp16:
+      start: 6799
+      end: 7096
 nsp1:
   data_dir: "data/P0DTC1"
-  2gdt:
-    start: 12
-    end: 126
-  3ld1:
-    start: 104
-    end: 562
+  regions:
+    2gdt:
+      start: 12
+      end: 126
+    3ld1:
+      start: 104
+      end: 562
 nsp2:
   data_dir: "data/P0DTC1"
-  3ld1:
-    start: 104
-    end: 562
-  dark_region:
-    start: 563
-    end: 818
+  regions:
+    3ld1:
+      start: 104
+      end: 562
+    dark_region:
+      start: 563
+      end: 818
 nsp3:
   data_dir: "data/P0DTC1"
-  Ubl1:
-    start: 819
-    end: 929
-  unnamed_dark_region:
-    start: 930
-    end: 1026
-  macro_domain_region:
-    start: 1027
-    end: 1193
-  dark_region_1027:
-    start: 1027
-    end: 1368
-  SUD-M:
-    start: 1389
-    end: 1493
-  SUD-C:
-    start: 1494
-    end: 1562
-  PL-Pro:
-    start: 1563
-    end: 1878
-  NAB:
-    start: 1879
-    end: 2020
-  final_dark_region:
-    start: 2021
-    end: 2763
+  regions:
+    Ubl1:
+      start: 819
+      end: 929
+    unnamed_dark_region:
+      start: 930
+      end: 1026
+    macro_domain_region:
+      start: 1027
+      end: 1193
+    dark_region_1027:
+      start: 1027
+      end: 1368
+    SUD-M:
+      start: 1389
+      end: 1493
+    SUD-C:
+      start: 1494
+      end: 1562
+    PL-Pro:
+      start: 1563
+      end: 1878
+    NAB:
+      start: 1879
+      end: 2020
+    final_dark_region:
+      start: 2021
+      end: 2763
 nsp4:
   data_dir: "data/P0DTC1"
-  nsp4C:
-    start: 3173
-    end: 3263
-  dark_region:
-    start: 2764
-    end: 3172
+  regions:
+    nsp4C:
+      start: 3173
+      end: 3263
+    dark_region:
+      start: 2764
+      end: 3172
 nsp8:
   # [CD] Note: P0DTC8 (nsp8) has *no consurf predictions* + the values below would need remapping.
   #            I therefore used P0DTC1, which is pp1ab.
   data_dir: "data/P0DTC1"
-  helical_segment:
-    start: 3943
-    end: 4041
-  head_domain:
-    start: 4042
-    end: 4140
+  regions:
+    helical_segment:
+      start: 3943
+      end: 4041
+    head_domain:
+      start: 4042
+      end: 4140
 spike_glycoprotein:
   data_dir: "data/P0DTC2"
-  whole:
-    start: 1
-    end: 1273
+  regions:
+    whole:
+      start: 1
+      end: 1273
 e_protein:
   data_dir: "data/P0DTC4"
-  whole:
-    start: 1
-    end: 75
+  regions:
+    whole:
+      start: 1
+      end: 75
 orf3a:
   data_dir: "data/P0DTC3"
-  whole:
-    start: 1
-    end: 275
+  regions:
+    whole:
+      start: 1
+      end: 275
 orf6:
   data_dir: "data/P0DTC6"
-  whole:
-    start: 1
-    end: 61
+  regions:
+    whole:
+      start: 1
+      end: 61
 orf7a:
   data_dir: "data/P0DTC7"
-  whole:
-    start: 1
-    end: 121
+  regions:
+    whole:
+      start: 1
+      end: 121
 orf7b:
   data_dir: "data/P0DTD8"
-  whole:
-    start: 1
-    end: 43
+  regions:
+    whole:
+      start: 1
+      end: 43
 n_protein:
   data_dir: "data/P0DTC9"
-  whole:
-    start: 1
-    end: 419
-  NTD:
-    start: 44
-    end: 180
-  CTD:
-    start: 294
-    end: 364
+  regions:
+    whole:
+      start: 1
+      end: 419
+    NTD:
+      start: 44
+      end: 180
+    CTD:
+      start: 294
+      end: 364
 m_protein:
   data_dir: "data/P0DTC5"
-  whole:
-    start: 1
-    end: 222
+  regions:
+    whole:
+      start: 1
+      end: 222
 orf9a:
   data_dir: "data/P0DTD2"
-  whole:
-    start: 1
-    end: 97
+  regions:
+    whole:
+      start: 1
+      end: 97
 orf10:
   data_dir: "data/A0A663DJA2"
-  whole:
-    start: 1
-    end: 38
+  regions:
+    whole:
+      start: 1
+      end: 38
 orf14:
   data_dir: "data/P0DTD3"
-  whole:
-    start: 1
-    end: 73
+  regions:
+    whole:
+      start: 1
+      end: 73

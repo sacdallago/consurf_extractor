@@ -193,11 +193,13 @@ for group in configuration:
         logging.error(f"No reprof accessibility predictions for group: {group}. Data dir: {data_dir}.")
         add_reprof = False
 
+    regions = current.pop("regions")
+
     # Iteratively go through every region in the group
-    for region in current:
+    for region in regions:
 
         # Every region MUST have a start
-        start = int(current[region]['start'])
+        start = int(regions[region]['start'])
 
         # !!IMPORTANT: UniProt sequence indexing != from CS sequence indexing. 1 = 0
         start -= 1
@@ -205,9 +207,9 @@ for group in configuration:
         # Every region MUST have an end
         # !!IMPORTANT: end doesn't need to be modified, as python slices excluding upper bound
         # (and considering that end should be +1, that's exactly what we want!)
-        end = int(current[region]['end'])
+        end = int(regions[region]['end'])
 
-        current[region]["region_length"] = end - start
+        regions[region]["region_length"] = end - start
 
         # Get consurf average
         if add_consurf:
@@ -217,10 +219,10 @@ for group in configuration:
                 logging.error(f"NO consurf average will be produced for {group}/{region}.\n"
                               f"       You are trying to access region {start+1}-{end}, "
                               f"but consurf predictions are in range {1}-{len(consurf)}")
-                current[region]['region_consurf_average'] = None
+                regions[region]['region_consurf_average'] = None
             else:
                 region_consurf = consurf[start:end]
-                current[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
+                regions[region]['region_consurf_average'] = sum(region_consurf)/len(region_consurf)
 
         # Get consurf average
         if add_profbval:
@@ -230,10 +232,10 @@ for group in configuration:
                 logging.error(f"NO profbval average will be produced for {group}/{region}.\n"
                               f"       You are trying to access region {start + 1}-{end}, "
                               f"but profbval predictions are in range {1}-{len(consurf)}")
-                current[region]['region_profbval_average'] = None
+                regions[region]['region_profbval_average'] = None
             else:
                 region_profbval = profbval[start:end]
-                current[region]['region_profbval_average'] = sum(region_profbval) / len(region_profbval)
+                regions[region]['region_profbval_average'] = sum(region_profbval) / len(region_profbval)
 
         # Count meta-disorder "disorder"
         if add_mdisorder:
@@ -243,11 +245,11 @@ for group in configuration:
                 logging.error(f"NO meta-disorder count will be produced for {group}/{region}.\n"
                               f"       You are trying to access region {start+1}-{end}, "
                               f"but meta-disorder predictions are in range {1}-{len(mdisorder)}")
-                current[region]['meta_disorder_predicted_disorder_count'] = None
+                regions[region]['meta_disorder_predicted_disorder_count'] = None
             else:
                 region_mdisorder = mdisorder[start:end]
-                current[region]['meta_disorder_predicted_disorder_count'] = len([m for m in region_mdisorder if m == "D"])
-                current[region]['meta_disorder_predicted_disorder_fraction'] = current[region]['meta_disorder_predicted_disorder_count'] / current[region]["region_length"]
+                regions[region]['meta_disorder_predicted_disorder_count'] = len([m for m in region_mdisorder if m == "D"])
+                regions[region]['meta_disorder_predicted_disorder_fraction'] = regions[region]['meta_disorder_predicted_disorder_count'] / regions[region]["region_length"]
 
         # Count reprof "Exposed"
         if add_reprof:
@@ -257,14 +259,15 @@ for group in configuration:
                 logging.error(f"NO reprof accessibility count will be produced for {group}/{region}.\n"
                               f"       You are trying to access region {start + 1}-{end}, "
                               f"but reprof accessibility predictions are in range {1}-{len(mdisorder)}")
-                current[region]['reprof_predicted_exposed_count'] = None
+                regions[region]['reprof_predicted_exposed_count'] = None
             else:
                 region_reprof = reprof.accessibility[start:end]
-                current[region]['reprof_predicted_exposed_count'] = len(
+                regions[region]['reprof_predicted_exposed_count'] = len(
                     [m for m in region_reprof if m == "e"])
-                current[region]['reprof_predicted_exposed_fraction'] = current[region]['reprof_predicted_exposed_count'] / current[region]["region_length"]
+                regions[region]['reprof_predicted_exposed_fraction'] = regions[region]['reprof_predicted_exposed_count'] / regions[region]["region_length"]
 
     # Add metadata to the output config for the group
+    current['regions'] = regions
     current['data_dir'] = data_dir
     output_config[group] = current
 
@@ -278,9 +281,10 @@ flattened_items = list()
 for group in output_config:
     current = deepcopy(output_config[group])
     data_dir = current.pop('data_dir')
+    regions = current.pop('regions')
 
-    for region in current:
-        flattened_item = deepcopy(current[region])
+    for region in regions:
+        flattened_item = deepcopy(regions[region])
 
         flattened_item['group'] = group
         flattened_item['data_dir'] = data_dir
